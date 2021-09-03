@@ -28,6 +28,9 @@ menu:
         - name: "Home page"
           url: "https://www.mehvix.com"
           weight: 1
+    after:
+        - name: "Anto's CS61A"
+          url: "https://cs61a.rouxl.es/"
 
 params:
     custom_css: ["css/custom_styling.css"]
