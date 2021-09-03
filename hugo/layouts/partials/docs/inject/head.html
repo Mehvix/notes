@@ -1,0 +1,28 @@
+<link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>"
+/>
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ["$", "$"],
+                [".$", "$"],
+            ],
+        },
+    };
+</script>
+
+<script
+    id="MathJax-script"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
+    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+
+{{ range .Site.Params.custom_css -}}
+<link rel="stylesheet" href="{{ . | absURL }}" />
+{{- end }}

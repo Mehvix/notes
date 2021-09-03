@@ -1,0 +1,3 @@
+{
+    "terminal.integrated.cwd": "docs" // open new terminals to docs dir
+}
