@@ -59,7 +59,7 @@ params:
 
     # Set source repository location.
     # Used for 'Last Modified' and 'Edit this page' links.
-    BookRepo: https://github.com/mehvix/notes
+    BookRepo: https://github.com/Mehvix/notes
     # todo check this^
 
     # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
@@ -72,7 +72,7 @@ params:
     # Enable "Edit this page" links for 'doc' page type.
     # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
     # Edit path must point to root directory of repo.
-    BookEditPath: edit/main/docs
+    BookEditPath: edit/master/hugo
 
     # Configure the date format used on the pages
     # - In git information
