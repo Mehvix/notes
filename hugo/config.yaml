@@ -8,6 +8,10 @@ publishDir: ../docs
 
 mathjax: true
 
+permalinks:
+    docs: "/:sections[last]/:filename"
+    # todo update when to [department][class][file] later
+
 # Book configuration
 disablePathToLower: true
 enableGitInfo: true
@@ -60,7 +64,6 @@ params:
     # Set source repository location.
     # Used for 'Last Modified' and 'Edit this page' links.
     BookRepo: https://github.com/Mehvix/notes
-    # todo check this^
 
     # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
     # commit hash for 'doc' page type.

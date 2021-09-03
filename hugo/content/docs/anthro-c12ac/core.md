@@ -96,7 +96,7 @@
 
 # Biodiversity and Fire as a Selective Variable in Evolution
 
--   .$\C_4$ grass
+-   .$C_4$ grass
     -   Spread during seasonal climate in the tertiary period (when fires became more common)
     -   Fires lead to woodlands and created environments favorable to .$C_4$ grasslands
     -   Since .$C_4$ is high flammability, it would have produced a feedback process that further increased fire activity,
@@ -124,7 +124,6 @@
     -   Protection benefits at night
 -   These factors prompted evolution of brains and bodies, small teeth (due to softer food), modern limb proportions, and other human traits
 -   Allowed humans to colonize colder environments
-
 -   Fire-stick farming
     -   clearing ground for human habitats
     -   facilitating travel

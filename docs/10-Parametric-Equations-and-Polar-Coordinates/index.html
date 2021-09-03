@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Parametric Equations and Polar Coordinates: #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as $(f(t), g(t))$ They define curves (not functions!) Time  $$t \in [t_i, t_f] $$ Initial point: $(f(t_i), g(t_i))$ Terminal point: $(f(t_f), g(t_f))$   For parametric equation in form $(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t))$ on $t \in [0, 2\pi]$, the resulting curve is a circle clockwise centered around the point $(h,k)$  Likewise, $(r \cdot \cos(t), r \cdot \sin(t))$ is counter clockwise    Useful Desmos calculator If we need to graph an equation in form $x=g(y)$, we can use parametric equations $x=g(t)$ and $y=t$  10.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Chapter 10" />
-<meta property="og:description" content="Parametric Equations and Polar Coordinates: #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as $(f(t), g(t))$ They define curves (not functions!) Time  $$t \in [t_i, t_f] $$ Initial point: $(f(t_i), g(t_i))$ Terminal point: $(f(t_f), g(t_f))$   For parametric equation in form $(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t))$ on $t \in [0, 2\pi]$, the resulting curve is a circle clockwise centered around the point $(h,k)$  Likewise, $(r \cdot \cos(t), r \cdot \sin(t))$ is counter clockwise    Useful Desmos calculator If we need to graph an equation in form $x=g(y)$, we can use parametric equations $x=g(t)$ and $y=t$  10." />
+<meta name="description" content="Parametric Equations and Polar Coordinates: #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  $$t \in [t_i, t_f] $$ Initial point: .$(f(t_i), g(t_i))$ Terminal point: .$(f(t_f), g(t_f))$   For parametric equation in form .$(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t))$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="10: Parametric Equations and Polar Coordinates" />
+<meta property="og:description" content="Parametric Equations and Polar Coordinates: #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  $$t \in [t_i, t_f] $$ Initial point: .$(f(t_i), g(t_i))$ Terminal point: .$(f(t_f), g(t_f))$   For parametric equation in form .$(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t))$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://notes.mehvix.com/docs/Math-53-Caclulus-3/content/Chapter-10/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://notes.mehvix.com/10-Parametric-Equations-and-Polar-Coordinates/" /><meta property="article:section" content="docs" />
 
+<meta property="article:modified_time" content="2021-09-03T13:41:38-07:00" />
 
-
-<title>Chapter 10 | Berkeley Notes</title>
+<title>10: Parametric Equations and Polar Coordinates | Berkeley Notes</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.74c05e450483dcdc2920bd31fbbe6f749e9b935f7fea06c69c97860323ec6a86.js" integrity="sha256-dMBeRQSD3NwpIL0x&#43;75vdJ6bk19/6gbGnJeGAyPsaoY=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.fe464a71ff2e3eb920266615df965901da057a4b35d301d5a45fd0473c936f39.js" integrity="sha256-/kZKcf8uPrkgJmYV35ZZAdoFeks10wHVpF/QRzyTbzk=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -27,6 +27,28 @@ https://github.com/alex-shpak/hugo-book
     rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>"
 />
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ["$", "$"],
+                [".$", "$"],
+            ],
+        },
+    };
+</script>
+
+<script
+    id="MathJax-script"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
+    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+
+<link rel="stylesheet" href="http://notes.mehvix.com/css/custom_styling.css" />
 
 </head>
 <body dir="ltr">
@@ -55,6 +77,18 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+  
+<ul>
+  
+  <li>
+    <a href="https://www.mehvix.com" target="_blank" rel="noopener">
+        Home page
+      </a>
+  </li>
+  
+</ul>
+
+
 
 
 
@@ -74,7 +108,10 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <span>Math 53</span>
+    <input type="checkbox" id="section-32aba3efd274a559b3dccd4e800c9d4b" class="toggle" checked />
+    <label for="section-32aba3efd274a559b3dccd4e800c9d4b" class="flex justify-between">
+      <a role="button" class="">Math 53</a>
+    </label>
   
 
           
@@ -87,8 +124,13 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://notes.mehvix.com/docs/Math-53-Caclulus-3/content/Chapter-12/" class="">Chapter 12</a>
+    <a href="http://notes.mehvix.com/10-Parametric-Equations-and-Polar-Coordinates/" class=" active">10: Parametric Equations and Polar Coordinates</a>
   
+
+        </li>
+      
+    
+  </ul>
 
         </li>
       
@@ -100,7 +142,57 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://notes.mehvix.com/docs/Math-53-Caclulus-3/content/Chapter-10/" class=" active">Chapter 10</a>
+    <input type="checkbox" id="section-8114d4adae406600e57f70538001a7cf" class="toggle"  />
+    <label for="section-8114d4adae406600e57f70538001a7cf" class="flex justify-between">
+      <a role="button" class="">Anthro C12AC</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/" class="">Core</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-98c46cabf82aecebcca8f97f2965f738" class="toggle"  />
+    <label for="section-98c46cabf82aecebcca8f97f2965f738" class="flex justify-between">
+      <a role="button" class="">Physics 7B</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/17-Temperature-Thermal-Expansion-Ideal-Gas-Law/" class="">17: Temperature, Thermal Expansion, &amp; Ideal Gas Law</a>
   
 
         </li>
@@ -121,6 +213,18 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://cs61a.rouxl.es/" target="_blank" rel="noopener">
+        Anto&#39;s CS61A
+      </a>
+  </li>
+  
+</ul>
 
 
 
@@ -147,7 +251,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Chapter 10</strong>
+  <strong>10: Parametric Equations and Polar Coordinates</strong>
 
   <label for="toc-control">
     
@@ -212,23 +316,23 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#101-curves-defined-by-parametric-equations">#</a>
 </h2>
 <ul>
-<li>Parametric equations are written as $(f(t), g(t))$</li>
+<li>Parametric equations are written as .$(f(t), g(t))$</li>
 <li>They define curves (not functions!)</li>
 <li>Time
 <ul>
 <li>$$t \in [t_i, t_f] $$</li>
-<li>Initial point: $(f(t_i), g(t_i))$</li>
-<li>Terminal point: $(f(t_f), g(t_f))$</li>
+<li>Initial point: .$(f(t_i), g(t_i))$</li>
+<li>Terminal point: .$(f(t_f), g(t_f))$</li>
 </ul>
 </li>
-<li>For parametric equation in form $(h + r \cdot \sin(t), k + r \cdot \cos(t))$ on $t \in [0, 2\pi]$, the resulting curve is a circle <em>clockwise</em> centered around the point $(h,k)$
+<li>For parametric equation in form .$(h + r \cdot \sin(t), k + r \cdot \cos(t))$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle <em>clockwise</em> centered around the point .$(h,k)$
 <ul>
-<li>Likewise, $(r \cdot \cos(t), r \cdot \sin(t))$ is <em>counter clockwise</em></li>
+<li>Likewise, .$(r \cdot \cos(t), r \cdot \sin(t))$ is <em>counter clockwise</em></li>
 </ul>
 </li>
 <li>
   <a href="https://www.desmos.com/calculator/ksjcpazwa9">Useful Desmos calculator</a></li>
-<li>If we need to graph an equation in form $x=g(y)$, we can use parametric equations $x=g(t)$ and $y=t$</li>
+<li>If we need to graph an equation in form .$x=g(y)$ , we can use parametric equations .$x=g(t)$ and .$y=t$</li>
 </ul>
 <h2 id="102-calculus-with-parametric-curves">
   10.2 Calculus with Parametric Curves
@@ -240,21 +344,21 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <ul>
 <li>
-<p>Given $x=f(t)$ and $y=g(t)$ where both $f$ and $g$ are differentiable, we can get the tangent line to the curve by finding $\frac{dy}{dx}$</p>
+<p>Given .$x=f(t)$ and .$y=g(t)$ where both .$f$ and .$g$ are differentiable, we can get the tangent line to the curve by finding .$\frac{dy}{dx}$</p>
 </li>
 <li>
-<p>We can find $\frac{dy}{dt}$ using the chain rule:
+<p>We can find .$\frac{dy}{dt}$ using the chain rule:
 $$\frac{dy}{dx} \cdot \frac{dx}{dt}$$</p>
 </li>
 <li>
-<p>If $\frac{dx}{dt} \neq 0$, then we can solve $\frac{dy}{dt}$:
+<p>If .$\frac{dx}{dt} \neq 0$ , then we can solve .$\frac{dy}{dt}$ :
 $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</p>
 </li>
 <li>
-<p>Horizontal tangents exist when $\frac{dy}{dt}=0$ (assuming $\frac{dx}{dt} \neq 0$)</p>
+<p>Horizontal tangents exist when .$\frac{dy}{dt}=0$ (assuming .$\frac{dx}{dt} \neq 0$ )</p>
 </li>
 <li>
-<p>Vertical tangents exist when $\frac{dx}{dt}=0$ (assuming $\frac{dy}{dt} \neq 0$)</p>
+<p>Vertical tangents exist when .$\frac{dx}{dt}=0$ (assuming .$\frac{dy}{dt} \neq 0$ )</p>
 </li>
 </ul>
 <h3 id="double-derivative">
@@ -266,55 +370,55 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</p>
   Areas
   <a class="anchor" href="#areas">#</a>
 </h3>
-<p>Given $x=f(t)$ and $y=g(t)$ over $t \in (\alpha, \beta)$, we can calculate the area between $C$ and the $x$-axis with the following equation</p>
+<p>Given .$x=f(t)$ and .$y=g(t)$ over .$t \in (\alpha, \beta)$ , we can calculate the area between .$C$ and the .$x$ -axis with the following equation</p>
 <p>$$A = \int_\alpha^\beta f'(t) \cdot g(t)\ dt $$</p>
-<p>Likewise, between $C$ and the <strong>$y$-axis</strong> we derive the parametric equation for $y$:</p>
+<p>Likewise, between .$C$ and the <strong>.$y$ -axis</strong> we derive the parametric equation for .$y$ :</p>
 <p>$$A = \int_\alpha^\beta f(t) \cdot g'(t)\ dt $$</p>
 <h3 id="arc-length">
   Arc Length
   <a class="anchor" href="#arc-length">#</a>
 </h3>
-<p>To find length $L$ of curve $C$ given in form $x=f(t)$ and $y=g(t)$ on $t \in [\alpha, \beta]$ where $\frac{dx}{dt} = f'(t) &gt; 0$ (meaning that $C$ is traversed once from left to right as $t$ increases from $\alpha$ to $\beta$) and where $f'$ and $g'$ are continuous on $[\alpha, \beta]$:</p>
+<p>To find length .$L$ of curve .$C$ given in form .$x=f(t)$ and .$y=g(t)$ on .$t \in [\alpha, \beta]$ where .$\frac{dx}{dt} = f'(t) &gt; 0$ (meaning that .$C$ is traversed once from left to right as .$t$ increases from .$\alpha$ to .$\beta$ ) and where .$f'$ and .$g'$ are continuous on .$[\alpha, \beta]$ :</p>
 <p>$$L = \int_\alpha^\beta \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
-<p>Note that trig functions ($\sin, \cos, \text{etc.})$) loop every $\frac{pi}{2}$ because of the formula finds the absolute value.</p>
+<p>Note that trig functions (.$\sin, \cos, \text{etc.})$ ) loop every .$\frac{pi}{2}$ because of the formula finds the absolute value.</p>
 <h3 id="surface-area">
   Surface Area
   <a class="anchor" href="#surface-area">#</a>
 </h3>
-<p>Suppose the curve $C$ given the equations $x=f(t)$ and $y=g(t)$ on$\ t \in [\alpha, \beta]$ where $f'$ and $g'$ are continuous, and $g(t) &gt; 0$, is rotated about the $x$-axis. If $C$ is traversed exactly once, then the area of the resulting surface is given by</p>
+<p>Suppose the curve .$C$ given the equations .$x=f(t)$ and .$y=g(t)$ on .$\ t \in [\alpha, \beta]$ where .$f'$ and .$g'$ are continuous, and .$g(t) &gt; 0$ , is rotated about the .$x$ -axis. If .$C$ is traversed exactly once, then the area of the resulting surface is given by</p>
 <p>$$S =  2\pi \int_\alpha^\beta y(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
-<p>Similarly, if instead $C$ is rotated about the $y$-axis instead we use the following:</p>
+<p>Similarly, if instead .$C$ is rotated about the .$y$ -axis instead we use the following:</p>
 <p>$$S =  2\pi \int_\alpha^\beta x(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
 <h2 id="103-polar-coordinates">
   10.3 Polar Coordinates
   <a class="anchor" href="#103-polar-coordinates">#</a>
 </h2>
 <ul>
-<li>Pole = origin; labeled $O$</li>
-<li>Polar axis = line through $O$</li>
-<li>Polar coordinates = $r, \theta$</li>
-<li>$r$ is distance from point $P$ and $O$</li>
-<li>$\theta$ is the angle between the polar axis and the line $OP$</li>
-<li>$(r, \theta) = (-r, \theta + \pi)$</li>
+<li>Pole = origin; labeled .$O$</li>
+<li>Polar axis = line through .$O$</li>
+<li>Polar coordinates = .$r, \theta$</li>
+<li>.$r$ is distance from point .$P$ and .$O$</li>
+<li>.$\theta$ is the angle between the polar axis and the line .$OP$</li>
+<li>.$(r, \theta) = (-r, \theta + \pi)$</li>
 </ul>
 <h3 id="converting-between-cartesian">
   Converting between Cartesian:
   <a class="anchor" href="#converting-between-cartesian">#</a>
 </h3>
 <ul>
-<li>$x=r\cdot \cos\theta$</li>
-<li>$y=r\cdot \sin\theta$</li>
-<li>$r^2 = x^2 + y^2$</li>
-<li>$\tan\theta = \frac{y}{x}$</li>
+<li>.$x=r\cdot \cos\theta$</li>
+<li>.$y=r\cdot \sin\theta$</li>
+<li>.$r^2 = x^2 + y^2$</li>
+<li>.$\tan\theta = \frac{y}{x}$</li>
 </ul>
 <h3 id="symmetry">
   Symmetry:
   <a class="anchor" href="#symmetry">#</a>
 </h3>
 <ul>
-<li>If polar equation is the same when $\theta = -\theta$, the curve is symmetric about the polar axis</li>
-<li>If polar equation is the same when $r = -r$ or when $\theta = \theta + \pi$, the curve is symmetric about the pole</li>
-<li>If polar equation is the same when $\theta = \pi-\theta$, then the curve is symmetric about the vertical line $\theta = \pi/2$</li>
+<li>If polar equation is the same when .$\theta = -\theta$ , the curve is symmetric about the polar axis</li>
+<li>If polar equation is the same when .$r = -r$ or when .$\theta = \theta + \pi$ , the curve is symmetric about the pole</li>
+<li>If polar equation is the same when .$\theta = \pi-\theta$ , then the curve is symmetric about the vertical line .$\theta = \pi/2$</li>
 </ul>
 <h3 id="tangents-1">
   Tangents
@@ -326,9 +430,9 @@ $$y = r \cdot \sin\theta = f(\theta)\sin\theta$$
 We can use the product rule to find the tangent equation
 $$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr}{d\theta} \sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r \sin\theta} $$</p>
 <ul>
-<li>Horizontal Tangent: $\frac{dy}{d\theta} = 0$ (when $\frac{dx}{d\theta} \neq 0$)</li>
-<li>Vertical Tangent: $\frac{dx}{d\theta} = 0$ (when $\frac{dy}{d\theta} \neq 0$)</li>
-<li>Notice that for $r=0$, then $\frac{dy}{dx} = \tan\theta$ if $\frac{dr}{d\theta} \neq 0$</li>
+<li>Horizontal Tangent: .$\frac{dy}{d\theta} = 0$ (when .$\frac{dx}{d\theta} \neq 0$ )</li>
+<li>Vertical Tangent: .$\frac{dx}{d\theta} = 0$ (when .$\frac{dy}{d\theta} \neq 0$ )</li>
+<li>Notice that for .$r=0$ , then .$\frac{dy}{dx} = \tan\theta$ if .$\frac{dr}{d\theta} \neq 0$</li>
 </ul>
 <p>We can then write the full formula:</p>
 <p>$$y-y_0 = \frac{dy}{dx}\Big(\theta\Big)(x-x_0)$$</p>
@@ -340,21 +444,21 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr
   Area of Polar Region
   <a class="anchor" href="#area-of-polar-region">#</a>
 </h3>
-<p>Knowing that the area of a &ldquo;slice&rdquo; can be written as $A = \frac{1}{2}r^2\theta$, we can expand this to the case where the curve is a function $r = f(\theta)$:</p>
+<p>Knowing that the area of a &ldquo;slice&rdquo; can be written as .$A = \frac{1}{2}r^2\theta$ , we can expand this to the case where the curve is a function .$r = f(\theta)$ :</p>
 <p>$$A = \int_a^b \frac{1}{2} r^2\ d\theta$$</p>
 <h3 id="arc-length-of-polar-curve">
   Arc Length of Polar Curve
   <a class="anchor" href="#arc-length-of-polar-curve">#</a>
 </h3>
-<p>Given a polar curve $r=f(\theta), a \leq \theta \leq b$, we can re-write our base equations as</p>
+<p>Given a polar curve .$r=f(\theta), a \leq \theta \leq b$ , we can re-write our base equations as</p>
 <p>$$x = r\cos\theta = f(\theta)\cos\theta$$
 $$y = r\sin\theta = f(\theta)\sin\theta$$</p>
 <p>Thus we can use the product rule when differentiating to get</p>
 <p>$$\frac{dx}{d\theta} = \frac{dr}{d\theta}\cos\theta - r\sin\theta$$
 $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$</p>
-<p>and using $\cos^2\theta + \sin^2\theta = 1$, we have</p>
+<p>and using .$\cos^2\theta + \sin^2\theta = 1$ , we have</p>
 <p>$$\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2 = [\text{ugly stuff, see page 711}] = \Big(\frac{dr}{d\theta}\Big)^2 + r^2$$</p>
-<p>so when $f'$ is continuos, we can write the acc length equation as</p>
+<p>so when .$f'$ is continuos, we can write the acc length equation as</p>
 <p>$$L = \int_a^b \sqrt{\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2} d\theta = \int_a^b \sqrt{r^2 + \Big(\frac{dr}{d\theta}\Big)^2}d\theta$$</p>
 <h3 id="common-shapes">
   Common shapes
@@ -366,17 +470,16 @@ $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$</p>
 </h4>
 <p>
   <img src="https://mathworld.wolfram.com/images/eps-gif/Rose_850.gif" alt="" /></p>
-<p>$$a\cdot
-  <a href="k%5ccdot%5ctheta">\sin \text{or} \cos</a>$$</p>
+<p>$$a\cdot[\sin \text{or} \cos](k\cdot\theta)$$</p>
 <ul>
-<li>$r$ = $a$</li>
-<li>$\sin$ = Symmetry over $\theta = 0$</li>
-<li>$\cos$ = Symmetry over $\theta = \pi/2$</li>
-<li>If $k$ is even, rose will have $2k$ petals.</li>
-<li>If $k$ is odd, rose will have $k$ petals.</li>
-<li>$T = 2\pi/k$ is range of a petal&rsquo;s cycle</li>
-<li>$2\pi/T = k$ cycles displayed in graph</li>
-<li>$A_{\text{petal}} = \frac{\pi a^2}{4k}$</li>
+<li>.$r$ = .$a$</li>
+<li>.$\sin$ = Symmetry over .$\theta = 0$</li>
+<li>.$\cos$ = Symmetry over .$\theta = \pi/2$</li>
+<li>If .$k$ is even, rose will have .$2k$ petals.</li>
+<li>If .$k$ is odd, rose will have .$k$ petals.</li>
+<li>.$T = 2\pi/k$ is range of a petal&rsquo;s cycle</li>
+<li>.$2\pi/T = k$ cycles displayed in graph</li>
+<li>.$A_{\text{petal}} = \frac{\pi a^2}{4k}$</li>
 </ul>
 <h4 id="cardioid">
   Cardioid
@@ -405,10 +508,16 @@ $$L=8a$$</p>
   <div class="flex flex-wrap justify-between">
 
 
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/eddec8282ea53ad8e1dae8ede0ad2395e1b04853" title='Last modified by Max Vogel | September 3, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 3, 2021</span>
+    </a>
+  </div>
+
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/mehvix/notes/edit/main/docs/content/docs/Math%2053:%20Caclulus%203/content/Chapter%2010.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/content/10.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
