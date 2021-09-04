@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kinetic Theory of Gases #  18.1 Ideal Gas Laws and Molecular Interpolation #  Ideal Gas Law Assumptions #   There are a large number of molecules, .$N$, each of mass .$m$ that move in random directions at random speeds Molecules are, on average, sufficiently far away from one another (separation .$\gg$ diameter) Molecules obey classical mechanics so .$KE \gg PE$ when colliding Collisions are perfectly elastic  Micro and Macroscopic views related through Energy #  In a system with .">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="18: Kinetic Theory of Gases" />
+<meta property="og:description" content="Kinetic Theory of Gases #  18.1 Ideal Gas Laws and Molecular Interpolation #  Ideal Gas Law Assumptions #   There are a large number of molecules, .$N$, each of mass .$m$ that move in random directions at random speeds Molecules are, on average, sufficiently far away from one another (separation .$\gg$ diameter) Molecules obey classical mechanics so .$KE \gg PE$ when colliding Collisions are perfectly elastic  Micro and Macroscopic views related through Energy #  In a system with ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.mehvix.com/physics-7b/18/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2021-09-03T13:41:38-07:00" />
+
+<title>18: Kinetic Theory of Gases | Berkeley Notes</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.9c9f030e19a5f8b0e68d61805031bbd92bd5db213aba550b46db3802748a6913.js" integrity="sha256-nJ8DDhml&#43;LDmjWGAUDG72SvV2yE6ulULRts4AnSKaRM=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>"
+/>
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ["$", "$"],
+                [".$", "$"],
+            ],
+        },
+    };
+</script>
+
+<script
+    id="MathJax-script"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
+    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+
+<link rel="stylesheet" href="http://notes.mehvix.com/css/custom_styling.css" />
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Berkeley Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://www.mehvix.com" target="_blank" rel="noopener">
+        Home page
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-32aba3efd274a559b3dccd4e800c9d4b" class="toggle"  />
+    <label for="section-32aba3efd274a559b3dccd4e800c9d4b" class="flex justify-between">
+      <a role="button" class="">Math 53</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Cheat Sheet</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/10/" class="">10: Parametric Equations and Polar Coordinates</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8114d4adae406600e57f70538001a7cf" class="toggle"  />
+    <label for="section-8114d4adae406600e57f70538001a7cf" class="flex justify-between">
+      <a role="button" class="">Anthro C12AC</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/anthro-c12ac/core/" class="">Core</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-98c46cabf82aecebcca8f97f2965f738" class="toggle" checked />
+    <label for="section-98c46cabf82aecebcca8f97f2965f738" class="flex justify-between">
+      <a role="button" class="">Physics 7B</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/17/" class="">17: Temperature, Thermal Expansion, &amp; Ideal Gas Law</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/18/" class=" active">18: Kinetic Theory of Gases</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://cs61a.rouxl.es/" target="_blank" rel="noopener">
+        Anto&#39;s CS61A
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>18: Kinetic Theory of Gases</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#kinetic-theory-of-gases">Kinetic Theory of Gases</a>
+      <ul>
+        <li><a href="#181-ideal-gas-laws-and-molecular-interpolation">18.1 Ideal Gas Laws and Molecular Interpolation</a>
+          <ul>
+            <li><a href="#ideal-gas-law-assumptions">Ideal Gas Law Assumptions</a></li>
+            <li><a href="#micro-and-macroscopic-views-related-through-energy">Micro and Macroscopic views related through Energy</a></li>
+          </ul>
+        </li>
+        <li><a href="#182-distribution-of-molecular-speeds">18.2 Distribution of Molecular Speeds</a>
+          <ul>
+            <li><a href="#important-values">Important Values</a></li>
+          </ul>
+        </li>
+        <li><a href="#183-real-gases-and-phase-changes">18.3 Real Gases and Phase Changes</a></li>
+        <li><a href="#184-vapor-pressure-and-humidity">18.4 Vapor, Pressure, and Humidity</a>
+          <ul>
+            <li><a href="#evaporation">Evaporation</a></li>
+            <li><a href="#vapor-pressure">Vapor Pressure</a></li>
+            <li><a href="#boiling">Boiling</a></li>
+            <li><a href="#partial-pressure-and-humidity">Partial Pressure and Humidity</a></li>
+          </ul>
+        </li>
+        <li><a href="#185-van-der-waals-equation-of-state">18.5 Van der Waals Equation of State</a></li>
+        <li><a href="#186-mean-free-path">18.6 Mean Free Path</a></li>
+        <li><a href="#187-diffussion">18.7 Diffussion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="kinetic-theory-of-gases">
+  Kinetic Theory of Gases
+  <a class="anchor" href="#kinetic-theory-of-gases">#</a>
+</h1>
+<h2 id="181-ideal-gas-laws-and-molecular-interpolation">
+  18.1 Ideal Gas Laws and Molecular Interpolation
+  <a class="anchor" href="#181-ideal-gas-laws-and-molecular-interpolation">#</a>
+</h2>
+<h3 id="ideal-gas-law-assumptions">
+  Ideal Gas Law Assumptions
+  <a class="anchor" href="#ideal-gas-law-assumptions">#</a>
+</h3>
+<ol>
+<li>There are a large number of molecules, .$N$, each of mass .$m$ that move in random directions at random speeds</li>
+<li>Molecules are, on average, sufficiently far away from one another (separation .$\gg$ diameter)</li>
+<li>Molecules obey classical mechanics so .$KE \gg PE$ when colliding</li>
+<li>Collisions are perfectly elastic</li>
+</ol>
+<h3 id="micro-and-macroscopic-views-related-through-energy">
+  Micro and Macroscopic views related through Energy
+  <a class="anchor" href="#micro-and-macroscopic-views-related-through-energy">#</a>
+</h3>
+<p>In a system with .$N$ molecules each of mass .$m$ and average speed .$\bar{v}^2$, we can combine the ideal gas law with the .$K$ equation:</p>
+<p>$$\overline{K} = \frac{1}{2} m \bar{v}^2 = \frac{3}{2}k_bT$$</p>
+<ul>
+<li>This shows .$KE \propto T$ which makes sense intuitively; cold = slow particle motion</li>
+</ul>
+<h4 id="absolute-0">
+  Absolute 0
+  <a class="anchor" href="#absolute-0">#</a>
+</h4>
+<ul>
+<li>Before, we said .$T = 0K$ exists when .$P=0$</li>
+<li>Now we can also see that .$KE = 0$ when .$T=0$ as well. This would mean that at absolute 0, there is no particle movement</li>
+</ul>
+<p>We can then write an equation for the 
+  <a href="https://en.wikipedia.org/wiki/Root_mean_square">root-mean-square</a> (or RMS):</p>
+<p>$$\overline{K} = \frac{3}{2}k_bT \to \frac{1}{2}m\bar{v}^2 = \frac{3}{2}k_bT \to v_{rms} = \sqrt{\bar{v}^2} = \sqrt{\frac{3k_bT}{m}} $$</p>
+<ul>
+<li>.$v_{rms}$ is also called the thermal velocity, .$v_{th}$</li>
+<li>This is the typical velocity of particles that make up the gas/liquid</li>
+<li>Fun fact: Less than 1% of particles of particles exceed .$v_{rms}$</li>
+</ul>
+<h2 id="182-distribution-of-molecular-speeds">
+  18.2 Distribution of Molecular Speeds
+  <a class="anchor" href="#182-distribution-of-molecular-speeds">#</a>
+</h2>
+<p>
+  <img src="https://useruploads.socratic.org/0Pwc9eB1Tn2EFOUeE40A_maxwells-distribution-of-molecular-speeds-html-2c71e084.gif" alt="Maxwell Distribution" /></p>
+<p>$$f(v) = 4\pi N \bigg( \frac{m}{2 \pi k_b T}\bigg)^{3/2} v^2 e^{ -\frac{1}{2} \cdot \frac{mv^2}{k_b T}}$$</p>
+<ul>
+<li>Recognize that .$f(v) \propto T^{-3/2}, v^2$ and <strong>exponentially</strong> .$KE/T$
+<ul>
+<li>If .$T$ increases, so does .$KE$ and .$v$ so the distribution becomes &ldquo;stretched&rdquo; (lower max, thicker tail)</li>
+</ul>
+</li>
+<li>.$f(v)  dv$ represents the number of molecules with .$v \in [v, v+dv]$</li>
+<li>That is, .$\int_0^\infty f(v) dv = N$</li>
+<li>Chemical Reactions
+<ul>
+<li>Some reactions only occur at a certain energy levels (activation energy)</li>
+<li>Warmer conditions lead to faster moving particles which have energy</li>
+<li>That&rsquo;s why reaction speed .$\propto$ temperature</li>
+</ul>
+</li>
+</ul>
+<h3 id="important-values">
+  Important Values
+  <a class="anchor" href="#important-values">#</a>
+</h3>
+<p>$$v_p = 1.41 \sqrt{\frac{k_bT}{m}}$$
+$$v_{avg} = 1.60 \sqrt{\frac{k_bT}{m}}$$
+$$v_{rms} = \sqrt{3} \sqrt{\frac{k_bT}{m}}$$</p>
+<ul>
+<li>Notice how .$v \propto m^{-1/2}$, which explains why it&rsquo;s easier for lighter particles to escape earth&rsquo;s atmosphere!</li>
+</ul>
+<h2 id="183-real-gases-and-phase-changes">
+  18.3 Real Gases and Phase Changes
+  <a class="anchor" href="#183-real-gases-and-phase-changes">#</a>
+</h2>
+<p>
+  <img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/222/2014/12/20104458/Figure_14_05_04.jpg" alt="Phase Change Graph" /></p>
+<blockquote>
+<p>(a) Each curve represents the relationship between P and V at a fixed temperature; the upper curves are at higher temperatures. The lower curves are not hyperbolas, because the gas is no longer an ideal gas. (b) An expanded portion of the diagram for low temperatures, where the phase can change from a gas to a liquid.</p>
+</blockquote>
+<ul>
+<li>At high enough pressures, gases take up less volume than expected.
+<ul>
+<li>This effect is magnified with lower temperatures</li>
+</ul>
+</li>
+<li>At lower temperatures, the .$PE$ attractive forces between particles aren&rsquo;t negligible with respect to .$KE$</li>
+<li>At the critical points, (when .$PV$ curve is horizontal) gases may no longer change to liquid under any pressure
+<ul>
+<li>This point varies by substance</li>
+<li>Gas below the critical point is vapor</li>
+<li>Gas above the critical point is just gas /shrug</li>
+</ul>
+</li>
+<li><em>Sublimation</em>: When substance changes from solid to gas, skipping liquefaction step</li>
+</ul>
+<h2 id="184-vapor-pressure-and-humidity">
+  18.4 Vapor, Pressure, and Humidity
+  <a class="anchor" href="#184-vapor-pressure-and-humidity">#</a>
+</h2>
+<h3 id="evaporation">
+  Evaporation
+  <a class="anchor" href="#evaporation">#</a>
+</h3>
+<ul>
+<li>Molecules in liquid are heald tightly together with attractive forces</li>
+<li>Some molecules may momentarily leave the liquid if their velocity is fast enough
+<ul>
+<li>If velocity isn&rsquo;t too large, the particle will be pulled back to the liquid surface</li>
+<li>If velocity is large enough, the particle will leave the liquid and enter gas form</li>
+</ul>
+</li>
+<li>Because .$v_{\text{particle}} \propto T$, the .$\text{evaporation rate} \propto T$</li>
+<li>As fast moving (thus hot) particles leave the liquid, the liquid&rsquo;s temperature decreases
+<ul>
+<li>That is, evaporation is a cooling process</li>
+</ul>
+</li>
+</ul>
+<h3 id="vapor-pressure">
+  Vapor Pressure
+  <a class="anchor" href="#vapor-pressure">#</a>
+</h3>
+<p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Phase-diag2.svg/620px-Phase-diag2.svg.png" alt="Phase Change Graph" /></p>
+<ul>
+<li>When evaporation particles go from gas to liquid, it&rsquo;s called <em>condensation</em></li>
+<li>The number of particles in vapor increases until the rate of particles condensing is equal to the number of particles becoming vapor (equilibrium!)
+<ul>
+<li>When this state is reached, the space above the water is considered <em>saturated</em></li>
+<li>Pressure of vapor saturation is called <em>(saturated) vapor pressure</em></li>
+</ul>
+</li>
+<li>Saturated Vapor Pressure varies with the volume of container
+<ul>
+<li>If volume above the liquid was reduced, then the density would increase so particles would condense back to liquid</li>
+<li>Assuming .$T = \text{constant}$, vapor pressure would stay constant too</li>
+</ul>
+</li>
+<li>Since at high temperatures there are more particles (entering/already in) the vapor phase, higher pressure is required for equilibrium</li>
+<li>When the volume is large, it&rsquo;s likely that all the liquid evaporates before equilibrium</li>
+</ul>
+<h3 id="boiling">
+  Boiling
+  <a class="anchor" href="#boiling">#</a>
+</h3>
+<ul>
+<li>Boiling occurs when saturated vapor pressure equals external pressure</li>
+<li>Bubbling forms as temperature approaches boiling temperature
+<ul>
+<li>If the pressure in the bubbles are less than the external pressure, the bubbles are crushed</li>
+<li>Otherwise, bubbles are able to rise to surface</li>
+</ul>
+</li>
+<li>Boiling point is proportional to pressure
+<ul>
+<li>Lower pressure = lower temperature required for boiling point</li>
+</ul>
+</li>
+</ul>
+<h3 id="partial-pressure-and-humidity">
+  Partial Pressure and Humidity
+  <a class="anchor" href="#partial-pressure-and-humidity">#</a>
+</h3>
+<ul>
+<li>In gases composed of multiple other gases, the total pressure is the sum of all partial pressures for each of other sub gas</li>
+<li><em>Partial Pressure</em> is the pressure a single gas would excert by itself
+<ul>
+<li>The partial pressure of water in the air can be as low as zero and vary up to a maximum equal to the saturated vapor pressure (of water at the given temperature)</li>
+</ul>
+</li>
+<li><em>Relative Humidity</em>: ratio of partial pressure of water vapor to the saturated vapor pressure at a given temperature
+$$\text{Relative Humidity} = \frac{\text{partial pressure of }H_2O}{\text{saturated vapor pressure of }H_2O} \cdot 100\%$$</li>
+<li><em>Super Saturation</em>: .$P_{\text{partial}} &gt; P_{\text{saturated vapor pressure}}$
+<ul>
+<li>Happens when temperature decreases</li>
+<li>Excess water condenses as dew / mist</li>
+</ul>
+</li>
+</ul>
+<h2 id="185-van-der-waals-equation-of-state">
+  18.5 Van der Waals Equation of State
+  <a class="anchor" href="#185-van-der-waals-equation-of-state">#</a>
+</h2>
+<p>Microscopic View (molecular) accounts for</p>
+<ol>
+<li>Finite size of molecules (before we assumed seperation .$\gg$ diameter, ignoring density)
+<ul>
+<li>Since gas particles aren&rsquo;t negligle in size, we can&rsquo;t use all of our volume</li>
+<li>Particles are solid spheres that can&rsquo;t get closer than .$2r$ to one another
+<ul>
+<li>That means .$V$ is over-estimated, so there are more collisions than expected</li>
+<li>For that reason, pressure is higher than estimated with the ideal gas law</li>
+</ul>
+</li>
+<li>The unavaliable volume due to particles, .$b$, depends on the .$n$umber of moles
+$$ P(V-nb) = nRT \to P\bigg(\frac{V}{n} - b\bigg) = RT$$</li>
+</ul>
+</li>
+<li>Forces between molecules (before we assumed that forces only played an effect in collisions)
+<ul>
+<li>Electric attractive forces aren&rsquo;t 0
+<ul>
+<li>Particles towards the edge are slowed down by the other particles attractive forces</li>
+<li>For that reason, our pressure is lower than estimated with the ideal gas law</li>
+</ul>
+</li>
+<li>&ldquo;Slow down&rdquo; is propotional to the gas density</li>
+<li>Pressure reduced by the following equation where .$n/V$ is the gas density and .$a$ is a constant unique to the gas
+$$ a\bigg( \frac{n}{V}\bigg)^2$$</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>
+<p>Thus, we can rewrite the ideal gas law with the last two equations as
+$$ \bigg(P+ \frac{a}{(V/n)^2}\bigg)\bigg(\frac{V}{n} - b\bigg) = RT \ \ \big[\text{Van der Waals Eq of State}\big]$$</p>
+</li>
+<li>
+<p>Note that these equations aren&rsquo;t amazing, but they&rsquo;re the best generalization we can do to show the relation</p>
+</li>
+<li>
+<p>With low densities, .$a\big/(V/n)^2 \ll P$ and .$b \ll V/n$ so Van der Waals equation reduces to the ideal gas law</p>
+</li>
+</ul>
+<h2 id="186-mean-free-path">
+  18.6 Mean Free Path
+  <a class="anchor" href="#186-mean-free-path">#</a>
+</h2>
+<ul>
+<li>Molocules bumb into each other a lot which slow them down</li>
+<li><em>Mean free path</em>: Average distance between collisions is proportional to .$\rho ^{-1}, r^{-1}$
+$$l_m = \frac{1}{4\pi \sqrt{2}r^2 (N/V)}$$</li>
+</ul>
+<h2 id="187-diffussion">
+  18.7 Diffussion
+  <a class="anchor" href="#187-diffussion">#</a>
+</h2>
+<ul>
+<li>Particles diffuse from high to low concentrations until equilibrium is reached (when .$\rho$ is constant througout)</li>
+<li>Given a tube with a cross section area .$A$, two concentrations, .$C_1$ and .$C_2$, seperated by .$\Delta x$, we can write the rate of diffusion, .$J$, as
+$$J = DA \frac{C_1 - C_2}{\Delta x} = DA \frac{dC}{dx} \ \ \text{[Fick&rsquo;s Law]}$$</li>
+<li>.$D$ is the diffusion constant
+<ul>
+<li>Varies with temperature, viscocity, and particle size</li>
+</ul>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/eddec8282ea53ad8e1dae8ede0ad2395e1b04853" title='Last modified by Max Vogel | September 3, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 3, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/Mehvix/notes/edit/master/hugo/content/docs/physics-7b/content/18.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#kinetic-theory-of-gases">Kinetic Theory of Gases</a>
+      <ul>
+        <li><a href="#181-ideal-gas-laws-and-molecular-interpolation">18.1 Ideal Gas Laws and Molecular Interpolation</a>
+          <ul>
+            <li><a href="#ideal-gas-law-assumptions">Ideal Gas Law Assumptions</a></li>
+            <li><a href="#micro-and-macroscopic-views-related-through-energy">Micro and Macroscopic views related through Energy</a></li>
+          </ul>
+        </li>
+        <li><a href="#182-distribution-of-molecular-speeds">18.2 Distribution of Molecular Speeds</a>
+          <ul>
+            <li><a href="#important-values">Important Values</a></li>
+          </ul>
+        </li>
+        <li><a href="#183-real-gases-and-phase-changes">18.3 Real Gases and Phase Changes</a></li>
+        <li><a href="#184-vapor-pressure-and-humidity">18.4 Vapor, Pressure, and Humidity</a>
+          <ul>
+            <li><a href="#evaporation">Evaporation</a></li>
+            <li><a href="#vapor-pressure">Vapor Pressure</a></li>
+            <li><a href="#boiling">Boiling</a></li>
+            <li><a href="#partial-pressure-and-humidity">Partial Pressure and Humidity</a></li>
+          </ul>
+        </li>
+        <li><a href="#185-van-der-waals-equation-of-state">18.5 Van der Waals Equation of State</a></li>
+        <li><a href="#186-mean-free-path">18.6 Mean Free Path</a></li>
+        <li><a href="#187-diffussion">18.7 Diffussion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
