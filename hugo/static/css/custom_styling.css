@@ -3,3 +3,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+body > main > aside.book-menu > div,
+body > main > aside.book-toc > div,
+body > main > div {
+    padding-top: 10ch !important;
+}
