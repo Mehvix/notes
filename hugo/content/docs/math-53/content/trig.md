@@ -1,7 +1,6 @@
-****---
+---
 title: "Trig Cheat Sheet"
 weight: 1
-# draft: true
 ---
 
 ## Reciprocal Identities

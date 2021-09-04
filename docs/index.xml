@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://notes.mehvix.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Trig Cheat Sheet</title>
+      <link>http://notes.mehvix.com/math-53/trig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.mehvix.com/math-53/trig/</guid>
+      <description>Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}; \cos(x)=\frac{1}{\cot(x)}; \tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$
+Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$ $$1+\tan^2(x) = \sec^2(x)$$ $$1+\cot^2(x)=csc^2(x)$$
+Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
+Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \cos(-x) = \cos(x)$$ $$ \tan(-x) = - \tan(x)$$ $$ \sec(-x) = \sec(x)$$ $$ \csc(-x) = -\csc(x)$$ $$ \cot(-x) = -\cot(x)$$</description>
+    </item>
+    
+    <item>
       <title>10: Parametric Equations and Polar Coordinates</title>
       <link>http://notes.mehvix.com/math-53/10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -31,19 +43,6 @@
       
       <guid>http://notes.mehvix.com/anthro-c12ac/core/</guid>
       <description>Anthropocene: #   The time when human activity began to have an influence on (global) landscape due to our use of fire Large subject used in a range of fields &amp;ndash; no single definition Defining feature: combustion of carbon and greenhouse gases Ice core measurement technique  As ice forms, methane and .$CO_2$ get trapped along with ash/dust/pollen which scientists can measure Ice can be dated so we can compare these variables so we can see change in greenhouse gases over time   Beginning is disputed  Industrial revolution (1780s)  Most popular among scholars   Atomic Testing (1940s) Stages idea:  1.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://notes.mehvix.com/math-53/trig/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://notes.mehvix.com/math-53/trig/</guid>
-      <description>****&amp;mdash; title: &amp;ldquo;Trig Cheat Sheet&amp;rdquo; weight: 1
-draft: true #   Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}; \cos(x)=\frac{1}{\cot(x)}; \tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$
-Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$ $$1+\tan^2(x) = \sec^2(x)$$ $$1+\cot^2(x)=csc^2(x)$$
-Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
-Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \cos(-x) = \cos(x)$$ $$ \tan(-x) = - \tan(x)$$ $$ \sec(-x) = \sec(x)$$ $$ \csc(-x) = -\csc(x)$$ $$ \cot(-x) = -\cot(x)$$</description>
     </item>
     
   </channel>

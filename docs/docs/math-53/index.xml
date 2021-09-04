@@ -7,25 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://notes.mehvix.com/docs/math-53/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Trig Cheat Sheet</title>
+      <link>http://notes.mehvix.com/math-53/trig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.mehvix.com/math-53/trig/</guid>
+      <description>Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}; \cos(x)=\frac{1}{\cot(x)}; \tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$
+Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$ $$1+\tan^2(x) = \sec^2(x)$$ $$1+\cot^2(x)=csc^2(x)$$
+Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
+Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \cos(-x) = \cos(x)$$ $$ \tan(-x) = - \tan(x)$$ $$ \sec(-x) = \sec(x)$$ $$ \csc(-x) = -\csc(x)$$ $$ \cot(-x) = -\cot(x)$$</description>
+    </item>
+    
+    <item>
       <title>10: Parametric Equations and Polar Coordinates</title>
       <link>http://notes.mehvix.com/math-53/10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://notes.mehvix.com/math-53/10/</guid>
       <description>Parametric Equations and Polar Coordinates: #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  $$t \in [t_i, t_f] $$ Initial point: .$(f(t_i), g(t_i))$ Terminal point: .$(f(t_f), g(t_f))$   For parametric equation in form .$(h + r \cdot \sin(t), k + r \cdot \cos(t))$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://notes.mehvix.com/math-53/trig/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://notes.mehvix.com/math-53/trig/</guid>
-      <description>****&amp;mdash; title: &amp;ldquo;Trig Cheat Sheet&amp;rdquo; weight: 1
-draft: true #   Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}; \cos(x)=\frac{1}{\cot(x)}; \tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$
-Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$ $$1+\tan^2(x) = \sec^2(x)$$ $$1+\cot^2(x)=csc^2(x)$$
-Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
-Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \cos(-x) = \cos(x)$$ $$ \tan(-x) = - \tan(x)$$ $$ \sec(-x) = \sec(x)$$ $$ \csc(-x) = -\csc(x)$$ $$ \cot(-x) = -\cot(x)$$</description>
     </item>
     
   </channel>
