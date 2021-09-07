@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/18/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-03T13:41:38-07:00" />
+<meta property="article:modified_time" content="2021-09-04T16:09:35-07:00" />
 
 <title>18: Kinetic Theory of Gases | Berkeley Notes</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.9c9f030e19a5f8b0e68d61805031bbd92bd5db213aba550b46db3802748a6913.js" integrity="sha256-nJ8DDhml&#43;LDmjWGAUDG72SvV2yE6ulULRts4AnSKaRM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.826d9d16db4eb40aa1eb754ad93821e78747fbb45fd6f7adeb6c3177d52d4ab9.js" integrity="sha256-gm2dFttOtAqh63VK2Tgh54dH&#43;7Rf1vet62wxd9UtSrk=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -317,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
         </li>
         <li><a href="#185-van-der-waals-equation-of-state">18.5 Van der Waals Equation of State</a></li>
         <li><a href="#186-mean-free-path">18.6 Mean Free Path</a></li>
-        <li><a href="#187-diffussion">18.7 Diffussion</a></li>
+        <li><a href="#187-diffusion">18.7 Diffusion</a></li>
       </ul>
     </li>
   </ul>
@@ -380,15 +380,17 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#182-distribution-of-molecular-speeds">#</a>
 </h2>
 <p>
-  <img src="https://useruploads.socratic.org/0Pwc9eB1Tn2EFOUeE40A_maxwells-distribution-of-molecular-speeds-html-2c71e084.gif" alt="Maxwell Distribution" /></p>
+  <img src="/docs/physics-7b/imgs/maxwell-distribution.gif" alt="Maxwell Distribution" /></p>
 <p>$$f(v) = 4\pi N \bigg( \frac{m}{2 \pi k_b T}\bigg)^{3/2} v^2 e^{ -\frac{1}{2} \cdot \frac{mv^2}{k_b T}}$$</p>
 <ul>
-<li>Recognize that .$f(v) \propto T^{-3/2}, v^2$ and <strong>exponentially</strong> .$KE/T$
+<li>Recognize that .$f(v) \propto T^{-3/2}, v^2$ and <strong>exponentially</strong> .$\propto KE/T$
 <ul>
 <li>If .$T$ increases, so does .$KE$ and .$v$ so the distribution becomes &ldquo;stretched&rdquo; (lower max, thicker tail)</li>
+<li>Spread of important values (.$v_p, v_{avg}, \text{etc.}$) are spread out further from one another</li>
+<li>Area stays constant (always equal to .$N$)</li>
 </ul>
 </li>
-<li>.$f(v)  dv$ represents the number of molecules with .$v \in [v, v+dv]$</li>
+<li>.$f(v)\ dv$ represents the number of molecules with .$v \in [v, v+dv]$</li>
 <li>That is, .$\int_0^\infty f(v) dv = N$</li>
 <li>Chemical Reactions
 <ul>
@@ -403,8 +405,8 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#important-values">#</a>
 </h3>
 <p>$$v_p = 1.41 \sqrt{\frac{k_bT}{m}}$$
-$$v_{avg} = 1.60 \sqrt{\frac{k_bT}{m}}$$
-$$v_{rms} = \sqrt{3} \sqrt{\frac{k_bT}{m}}$$</p>
+$$v_{\text{avg}} = 1.60 \sqrt{\frac{k_bT}{m}}$$
+$$v_{\text{rms}} = \sqrt{3} \sqrt{\frac{k_bT}{m}}$$</p>
 <ul>
 <li>Notice how .$v \propto m^{-1/2}$, which explains why it&rsquo;s easier for lighter particles to escape earth&rsquo;s atmosphere!</li>
 </ul>
@@ -413,7 +415,7 @@ $$v_{rms} = \sqrt{3} \sqrt{\frac{k_bT}{m}}$$</p>
   <a class="anchor" href="#183-real-gases-and-phase-changes">#</a>
 </h2>
 <p>
-  <img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/222/2014/12/20104458/Figure_14_05_04.jpg" alt="Phase Change Graph" /></p>
+  <img src="/docs/physics-7b/imgs/phase-change-diagram.jpg" alt="Phase Change Graph" /></p>
 <blockquote>
 <p>(a) Each curve represents the relationship between P and V at a fixed temperature; the upper curves are at higher temperatures. The lower curves are not hyperbolas, because the gas is no longer an ideal gas. (b) An expanded portion of the diagram for low temperatures, where the phase can change from a gas to a liquid.</p>
 </blockquote>
@@ -442,11 +444,15 @@ $$v_{rms} = \sqrt{3} \sqrt{\frac{k_bT}{m}}$$</p>
   <a class="anchor" href="#evaporation">#</a>
 </h3>
 <ul>
-<li>Molecules in liquid are heald tightly together with attractive forces</li>
+<li>Molecules in liquid are held tightly together with intermolecular attractive forces (covalent hydrogen bonds)</li>
 <li>Some molecules may momentarily leave the liquid if their velocity is fast enough
 <ul>
-<li>If velocity isn&rsquo;t too large, the particle will be pulled back to the liquid surface</li>
-<li>If velocity is large enough, the particle will leave the liquid and enter gas form</li>
+<li>If velocity isn&rsquo;t too large, then the particle will be pulled back to the liquid surface</li>
+<li>If velocity is large enough, then the particle will break the intermolecular bonds leave the liquid and enter gas form
+<ul>
+<li>low probability</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Because .$v_{\text{particle}} \propto T$, the .$\text{evaporation rate} \propto T$</li>
@@ -461,7 +467,7 @@ $$v_{rms} = \sqrt{3} \sqrt{\frac{k_bT}{m}}$$</p>
   <a class="anchor" href="#vapor-pressure">#</a>
 </h3>
 <p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Phase-diag2.svg/620px-Phase-diag2.svg.png" alt="Phase Change Graph" /></p>
+  <img src="/docs/physics-7b/imgs/phase-diagram.png" alt="Phase Change Graph" /></p>
 <ul>
 <li>When evaporation particles go from gas to liquid, it&rsquo;s called <em>condensation</em></li>
 <li>The number of particles in vapor increases until the rate of particles condensing is equal to the number of particles becoming vapor (equilibrium!)
@@ -503,7 +509,7 @@ $$v_{rms} = \sqrt{3} \sqrt{\frac{k_bT}{m}}$$</p>
 </h3>
 <ul>
 <li>In gases composed of multiple other gases, the total pressure is the sum of all partial pressures for each of other sub gas</li>
-<li><em>Partial Pressure</em> is the pressure a single gas would excert by itself
+<li><em>Partial Pressure</em> is the pressure a single gas would exert by itself
 <ul>
 <li>The partial pressure of water in the air can be as low as zero and vary up to a maximum equal to the saturated vapor pressure (of water at the given temperature)</li>
 </ul>
@@ -523,28 +529,28 @@ $$\text{Relative Humidity} = \frac{\text{partial pressure of }H_2O}{\text{satura
 </h2>
 <p>Microscopic View (molecular) accounts for</p>
 <ol>
-<li>Finite size of molecules (before we assumed seperation .$\gg$ diameter, ignoring density)
+<li>Finite size of molecules (before we assumed separation .$\gg$ diameter, ignoring density)
 <ul>
-<li>Since gas particles aren&rsquo;t negligle in size, we can&rsquo;t use all of our volume</li>
+<li>Since gas particles aren&rsquo;t negligible in size, we can&rsquo;t use all of our volume</li>
 <li>Particles are solid spheres that can&rsquo;t get closer than .$2r$ to one another
 <ul>
-<li>That means .$V$ is over-estimated, so there are more collisions than expected</li>
-<li>For that reason, pressure is higher than estimated with the ideal gas law</li>
+<li>That means .$V$ is over-estimated: .$V_{\text{real}} &lt; V_{\text{ideal}}$</li>
+<li>Lower volume mean more collisions, leading to pressure being higher than estimated with the ideal gas law: .$P_{\text{real}} &gt; P_{\text{ideal}}$</li>
 </ul>
 </li>
-<li>The unavaliable volume due to particles, .$b$, depends on the .$n$umber of moles
-$$ P(V-nb) = nRT \to P\bigg(\frac{V}{n} - b\bigg) = RT$$</li>
+<li>The unavailable volume due to particles, .$b$, depends on the .$n$umber of moles
+$$ P(V-nb) = nRT \to P\bigg(\frac{V}{n} - b\bigg) = RT\ \ \ \big[\text{Clausius Equation of State}\big]$$</li>
 </ul>
 </li>
 <li>Forces between molecules (before we assumed that forces only played an effect in collisions)
 <ul>
-<li>Electric attractive forces aren&rsquo;t 0
+<li>At low .$T$, electric attractive forces aren&rsquo;t 0
 <ul>
 <li>Particles towards the edge are slowed down by the other particles attractive forces</li>
-<li>For that reason, our pressure is lower than estimated with the ideal gas law</li>
+<li>For that reason, our pressure is lower than estimated with the ideal gas law: .$P_{\text{real}} &lt; P_{\text{ideal}}$</li>
 </ul>
 </li>
-<li>&ldquo;Slow down&rdquo; is propotional to the gas density</li>
+<li>&ldquo;Slow down&rdquo; is proportional to the gas density</li>
 <li>Pressure reduced by the following equation where .$n/V$ is the gas density and .$a$ is a constant unique to the gas
 $$ a\bigg( \frac{n}{V}\bigg)^2$$</li>
 </ul>
@@ -556,7 +562,7 @@ $$ a\bigg( \frac{n}{V}\bigg)^2$$</li>
 $$ \bigg(P+ \frac{a}{(V/n)^2}\bigg)\bigg(\frac{V}{n} - b\bigg) = RT \ \ \big[\text{Van der Waals Eq of State}\big]$$</p>
 </li>
 <li>
-<p>Note that these equations aren&rsquo;t amazing, but they&rsquo;re the best generalization we can do to show the relation</p>
+<p>Note that these equations aren&rsquo;t accurate in all cases, but they&rsquo;re the best generalization we can do and they show the relation</p>
 </li>
 <li>
 <p>With low densities, .$a\big/(V/n)^2 \ll P$ and .$b \ll V/n$ so Van der Waals equation reduces to the ideal gas law</p>
@@ -567,21 +573,21 @@ $$ \bigg(P+ \frac{a}{(V/n)^2}\bigg)\bigg(\frac{V}{n} - b\bigg) = RT \ \ \big[\te
   <a class="anchor" href="#186-mean-free-path">#</a>
 </h2>
 <ul>
-<li>Molocules bumb into each other a lot which slow them down</li>
+<li>Molecules bump into each other a lot which slow them down</li>
 <li><em>Mean free path</em>: Average distance between collisions is proportional to .$\rho ^{-1}, r^{-1}$
 $$l_m = \frac{1}{4\pi \sqrt{2}r^2 (N/V)}$$</li>
 </ul>
-<h2 id="187-diffussion">
-  18.7 Diffussion
-  <a class="anchor" href="#187-diffussion">#</a>
+<h2 id="187-diffusion">
+  18.7 Diffusion
+  <a class="anchor" href="#187-diffusion">#</a>
 </h2>
 <ul>
-<li>Particles diffuse from high to low concentrations until equilibrium is reached (when .$\rho$ is constant througout)</li>
-<li>Given a tube with a cross section area .$A$, two concentrations, .$C_1$ and .$C_2$, seperated by .$\Delta x$, we can write the rate of diffusion, .$J$, as
+<li>Particles diffuse from high to low concentrations until equilibrium is reached (when .$\rho$ is constant throughout)</li>
+<li>Given a tube with a cross section area .$A$, two concentrations, .$C_1$ and .$C_2$, separated by .$\Delta x$, we can write the rate of diffusion, .$J$, as
 $$J = DA \frac{C_1 - C_2}{\Delta x} = DA \frac{dC}{dx} \ \ \text{[Fick&rsquo;s Law]}$$</li>
 <li>.$D$ is the diffusion constant
 <ul>
-<li>Varies with temperature, viscocity, and particle size</li>
+<li>Varies with temperature, viscosity, and particle size</li>
 </ul>
 </li>
 </ul>
@@ -594,9 +600,9 @@ $$J = DA \frac{C_1 - C_2}{\Delta x} = DA \frac{dC}{dx} \ \ \text{[Fick&rsquo;s L
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/eddec8282ea53ad8e1dae8ede0ad2395e1b04853" title='Last modified by Max Vogel | September 3, 2021' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/9072d047cc338756248ec712c9a5371071a46087" title='Last modified by Max Vogel | September 4, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>September 3, 2021</span>
+      <span>September 4, 2021</span>
     </a>
   </div>
 
@@ -663,7 +669,7 @@ $$J = DA \frac{C_1 - C_2}{\Delta x} = DA \frac{dC}{dx} \ \ \text{[Fick&rsquo;s L
         </li>
         <li><a href="#185-van-der-waals-equation-of-state">18.5 Van der Waals Equation of State</a></li>
         <li><a href="#186-mean-free-path">18.6 Mean Free Path</a></li>
-        <li><a href="#187-diffussion">18.7 Diffussion</a></li>
+        <li><a href="#187-diffusion">18.7 Diffusion</a></li>
       </ul>
     </li>
   </ul>

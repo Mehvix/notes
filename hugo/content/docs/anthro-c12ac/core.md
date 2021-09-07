@@ -10,11 +10,16 @@
     - Industrial revolution (1780s)
         - Most popular among scholars
     - Atomic Testing (1940s)
-        - Misses forest cutting and grassland conversion -- the two largest spatial transformations of Earth’s surface in human history
+        - The isotopic by-products of bomb testing provide a distinctive marker horizon in ice cores, ocean and lake sediments, and soils
     - Stages idea:
+        - Includes vital events such as forest cutting and grassland conversion: the two largest spatial transformations of Earth’s surface in human history
         1. 1.8 million years ago: When fire was discovered
         2. 6000-4000s years ago: With neolithic agriculture
         3. 1780s: Industrial revolution
+- Identifying fire requirements:
+    1. Evidence of temporal or spatial changes in fire activity and vegetation
+    2. Demonstration that these changes are not predicted by climate parameters alone
+    3. Temporal/spatial coincidence between fire regime changes and changes in the human record
 
 # Pyrogeography
 
@@ -31,6 +36,7 @@
     - Natural fire regime started during this period because it was the first time that the fire triangle came together
     - Fire triangle:
         - _Ignition Source_: (Since beginning) Natural ignition from lightening, volcanoes, (rarely) falling rock sparks
+            - These natural sources tend to only begin fires in the dry season
         - _Oxygen Source_: (Cambrian period) Atmospheric Oxygen (from photosynthetic plants) leads to appearance of photosynthetic organisms
         - _Fuel Source_: (Silurian and Devonian Periods) Enough terrestrial plants in ecosystems to acts as fuel
     - During this time, natural fire regimes evolved
@@ -110,6 +116,7 @@
         - Smoke is a mixture of specific chemicals unique to itself
     - Note that plants become resistant to certain fire regimes, not necessarily all
         - Changes in fire regime can kill off fire resistant plants
+- Even small differences in the deployment of fire outside of natural lightning strikes can alter patterns of forest  succession, fuel availability, and seasonality of ignitions
 
 # Fires Relating to Evolution
 
@@ -121,8 +128,9 @@
     - Cooking takes time, leading to social development
         - Distribution of tasks among group: (collection, preparation, even stealing)
     - Protection benefits at night
-- These factors prompted evolution of brains and bodies, small teeth (due to softer food), modern limb proportions, and other human traits
-- Allowed humans to colonize colder environments
+    - These factors prompted evolution of brains and bodies, small teeth (due to softer food), modern limb proportions, and other human traits
+    - Allowed humans to colonize colder environments
+    - Increase prey abundances, maintain mosaic landscapes, and increase pyrodiversity and succession stage heterogeneity
 - Fire-stick farming
     - clearing ground for human habitats
     - facilitating travel
@@ -132,6 +140,7 @@
 - Woody, closed-canopy shrublands were opened up or entirely displaced
     - Led to spread of fast-growing annual species that provided greater seed resources, travel, and hunting and planting opportunities
     - Ex. CA land was only used for agriculture after burnings, which led to many other alien plants spreading too
+    - Reductions in arboreal cover and woody understory have the most potential to enhance erosion
     - Reshaping of landscapes has posed problems for ecologists trying to understand contemporary landscape patterns
 
 # Overview of Fires in California
