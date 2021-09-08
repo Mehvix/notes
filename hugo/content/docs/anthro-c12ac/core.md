@@ -30,49 +30,81 @@
 
 # Four phases for Pyrogeography
 
-1. Natural Biospheric Fire -- Natural Fire Regime
-    - (Potential) start date for pyrogeography
-    - During [Silurian](https://en.wikipedia.org/wiki/Silurian) and Devonian Periods (440-400 HYA)
-    - Natural fire regime started during this period because it was the first time that the fire triangle came together
-    - Fire triangle:
-        - _Ignition Source_: (Since beginning) Natural ignition from lightening, volcanoes, (rarely) falling rock sparks
-            - These natural sources tend to only begin fires in the dry season
-        - _Oxygen Source_: (Cambrian period) Atmospheric Oxygen (from photosynthetic plants) leads to appearance of photosynthetic organisms
-        - _Fuel Source_: (Silurian and Devonian Periods) Enough terrestrial plants in ecosystems to acts as fuel
-    - During this time, natural fire regimes evolved
-        - As coal became more common (Carboniferous period), fires did too
+## 1. Natural Biospheric Fire -- Natural Fire Regime
 
-2. Wildland Anthropogenic Fire -- Hunter/Gatherer Fire Regime
-    - When people began acting as the _ignition source_
-    - Cooking hypothesis
-    - Primarily used fire for domestic cases
-        - Heating, cooking, warmth, etc.
-    - When people move to a new land
+- (Potential) start date for pyrogeography
+- During [Silurian](https://en.wikipedia.org/wiki/Silurian) and Devonian Periods (440-400 HYA)
+- Natural fire regime started during this period because it was the first time that the fire triangle came together
+- Fire triangle:
+    - _Ignition Source_: (Since beginning) Natural ignition from lightening, volcanoes, (rarely) falling rock sparks
+        - These natural sources tend to only begin fires in the dry season
+    - _Oxygen Source_: (Cambrian period) Atmospheric Oxygen (from photosynthetic plants) leads to appearance of photosynthetic organisms
+    - _Fuel Source_: (Silurian and Devonian Periods) Enough terrestrial plants in ecosystems to acts as fuel
+- During this time, natural fire regimes evolved
+    - As coal became more common (Carboniferous period), fires did too
 
-        - Major changes in fauna, vegetation, and fires (charcoal)
-        - People seem to bring fire with them as they migrate
+## 2. Wildland Anthropogenic Fire -- Hunter/Gatherer Fire Regime
 
-    - Start dates
-        - 40 ka for Australia
-            - 90% of fauna went extinct
-            - Lots of evidence of fire
-        - 45 ka for Highland New Guinea
-        - 50 ka for lowland Borneo
-        - 20 ka for the Americas
-            - Extinctions of many animals and vegetation
-                - Debate: are these because of natural process like climate change (ice age -> post ice age?) or do people play a large role
-            - Native Perspective – Indigenous people have been here since time began
+- When people began acting as the _ignition source_
+- Primarily used fire for domestic cases
+    - Heating, cooking, warmth, etc.
+- When people move to a new land
+    - Major changes in fauna, vegetation, and fires (charcoal)
+    - People seem to bring fire with them as they migrate
 
-3. Agriculture Anthropogenic Fire -- Agricultural Fire Regime
-    - Required fire to alter the natural vegetation from perennial-dominated to annual-dominated landscapes.
-    - People preferred to live in fire-prone places because the burning provides advantages for hunting, foraging, cultivating, and livestock herding
-4. Industrial and Domestic Anthropogenic Fire -- Industrial Fire Regime
-    - Low-severity surface fire regimes are being replaced with low-frequency, high-intensity crown fires that are outside the historical range of variability for these ecosystems
-    - _Western US_: forests have also experienced an increase in hazardous fuels due to highly effective fire suppression policy that excluded fires for much of the 20th century
-    - _Eastern US_: Fire suppression has shifted oak and pine woodlands to mesophytic hardwoods consequently reducing flammability and fire activity
-    - _Globally_: urban areas have steadily expanded into wildland areas
-        - Producing more ignition sources (arson and accidental)
-        - Exposing more people to wildfire
+- Start dates
+    - 40 ka for Australia
+        - 90% of fauna went extinct
+        - Lots of evidence of fire
+    - 45 ka for Highland New Guinea
+    - 50 ka for lowland Borneo
+    - 20 ka for the Americas
+        - Extinctions of many animals and vegetation
+            - Debate: are these because of natural process like climate change (ice age -> post ice age?) or do people play a large role
+        - Native Perspective – Indigenous people have been here since time began
+
+### When did humans actually discover fire?
+
+- Defining the bridge between phase one and two is difficult
+- Definition problems
+    - Do we ask when did (modern humans / hominin ancestors) develop the ability to control and utilize fire?
+    - We also need to distinguish between (1) controlling / utilizing fire and (2) being able to start a fire on a whim
+- Archeological problems
+    - Fire exists naturally, so we can't assume all fire evidence is from human action
+    - Other natural processes can look like fire (e.g. staining by minerals in soil, oxidation causing reddish patches)
+    - Combustion of natural objects (e.g. bushes) can leave charcoal which looks like a human hearth
+        - Additionally, evidence of a hearth doesn't mean that humans started/controlled fire
+- Archaeological Record Analysis
+    - In the field:
+        - Observation and collection of materials
+        - Study the geology of the site
+    - In the lab:
+        - Microscopic analysis to see if there was burning
+        - If so, could the location of the sample been transported after combustion?
+        - Further, how does the history of the burned object associate with cultural items
+
+### How long has fire been **controlled**?
+
+- **Europe**: Strong evidence of 400,000 - 300,000 years ago
+- **Western Asia**: One established case from 780,000 years ago. Other sites are similar to Europe
+- **Africa**: Claims have been made for a cave site that shows fire around 1.5-1.6 million years ago
+- Note that *opportunistic* use of fire could have happened much earlier
+    - Eg. lighting a torch from a natural-starting forest fire
+
+
+## 3. Agriculture Anthropogenic Fire -- Agricultural Fire Regime
+
+- Required fire to alter the natural vegetation from perennial-dominated to annual-dominated landscapes.
+- People preferred to live in fire-prone places because the burning provides advantages for hunting, foraging, cultivating, and livestock herding
+
+## 4. Industrial and Domestic Anthropogenic Fire -- Industrial Fire Regime
+
+- Low-severity surface fire regimes are being replaced with low-frequency, high-intensity crown fires that are outside the historical range of variability for these ecosystems
+- _Western US_: forests have also experienced an increase in hazardous fuels due to highly effective fire suppression policy that excluded fires for much of the 20th century
+- _Eastern US_: Fire suppression has shifted oak and pine woodlands to mesophytic hardwoods consequently reducing flammability and fire activity
+- _Globally_: urban areas have steadily expanded into wildland areas
+    - Producing more ignition sources (arson and accidental)
+    - Exposing more people to wildfire
 
 # Key Factors in Fire Regimes (Discussion 8-30)
 
@@ -121,17 +153,34 @@
 # Fires Relating to Evolution
 
 - Beneficial Attributes
-    - Fire let humans cook food
+    - Cooking hypothesis
+        - Key claim: Fire + cooking started with the Homo erectus. As such, humans have evolved around a cooked diet that they can't live without
         - Led to fitness advantage
-        - More food energy from food
+        - More energy + nutrient from food, enabling body and brain size increase
         - Detoxing effect
-    - Cooking takes time, leading to social development
-        - Distribution of tasks among group: (collection, preparation, even stealing)
-    - Protection benefits at night
-    - These factors prompted evolution of brains and bodies, small teeth (due to softer food), modern limb proportions, and other human traits
+        - Increase digestibility of all food
+        - Cooking takes time, leading to social development
+            - Distribution of tasks among group: (collection, preparation, even stealing)
+        - Cooking accounts for reduction in jaw, tooth size (due to softer food), stomach, and digestive system size
+        - There is no evidence of modern human societies existing without cooked food
+        - Counterpoints:
+            - It's still unclear that Homo erectus controlled fire
+            - There are some sites that show no example of cooking: e.g. Neanderthal sites in cold climates
+            - Energetic effects aren't well quantified
+            - Digestive evolution may not have been linear; other adaptations related to fire occurred after Homo erectus
+    - Protection benefits at night (especially versus the alternative: sleeping in trees)
+    - Allowed much better vision in caves
+        - Enables cave art
+    - Evidence that some hominids could use fire to morph certain woods into tools (e.g. digging sticks, hafted spears)
     - Allowed humans to colonize colder environments
     - Increase prey abundances, maintain mosaic landscapes, and increase pyrodiversity and succession stage heterogeneity
-- Fire-stick farming
+- Social bonding
+    - Led to camp fires
+    - Allows people to stay up later
+    - Fire could be used as a story telling enhancer, means to pass on history, culture, etc.
+    - Provides a sense of intimacy and openness
+    - Opportunity for music
+- [Fire-stick farming](https://en.wikipedia.org/wiki/Fire-stick_farming)
     - clearing ground for human habitats
     - facilitating travel
     - killing vermin, hunting

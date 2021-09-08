@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Parametric Equations and Polar Coordinates #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .">
+<meta name="description" content="10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .$(h,k)$  Likewise, .">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="10: Parametric Equations and Polar Coordinates" />
-<meta property="og:description" content="Parametric Equations and Polar Coordinates #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point ." />
+<meta property="og:description" content="10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h &#43; r \cdot \sin(t), k &#43; r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .$(h,k)$  Likewise, ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://notes.mehvix.com/math-53/10/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-04T16:09:35-07:00" />
+<meta property="article:modified_time" content="2021-09-06T19:22:38-07:00" />
 
 <title>10: Parametric Equations and Polar Coordinates | Berkeley Notes</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.826d9d16db4eb40aa1eb754ad93821e78747fbb45fd6f7adeb6c3177d52d4ab9.js" integrity="sha256-gm2dFttOtAqh63VK2Tgh54dH&#43;7Rf1vet62wxd9UtSrk=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.0af9a41ee766106279a536239abdf3062b68415c82fc302f2889e00ec31f644c.js" integrity="sha256-CvmkHudmEGJ5pTYjmr3zBitoQVyC/DAvKIngDsMfZEw=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -143,6 +143,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/12/" class="">12: Vectors and Geometry of Space</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -224,6 +237,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/19/" class="">19: Heat and the First Law of Thermo</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -293,30 +319,32 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#parametric-equations-and-polar-coordinates">Parametric Equations and Polar Coordinates</a>
+    <li><a href="#101-curves-defined-by-parametric-equations">10.1 Curves Defined by Parametric Equations</a></li>
+    <li><a href="#102-calculus-with-parametric-curves">10.2 Calculus with Parametric Curves</a>
       <ul>
-        <li><a href="#101-curves-defined-by-parametric-equations">10.1 Curves Defined by Parametric Equations</a></li>
-        <li><a href="#102-calculus-with-parametric-curves">10.2 Calculus with Parametric Curves</a>
+        <li><a href="#tangents">Tangents</a></li>
+        <li><a href="#double-derivative">Double Derivative</a></li>
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#arc-length">Arc Length</a></li>
+        <li><a href="#surface-area">Surface Area</a></li>
+      </ul>
+    </li>
+    <li><a href="#103-polar-coordinates">10.3 Polar Coordinates</a>
+      <ul>
+        <li><a href="#converting-between-cartesian">Converting between Cartesian</a></li>
+        <li><a href="#symmetry">Symmetry</a></li>
+        <li><a href="#polar-tangents">Polar Tangents</a></li>
+      </ul>
+    </li>
+    <li><a href="#104-area-and-lengths-in-polar-coordinates">10.4 Area and Lengths in Polar Coordinates</a>
+      <ul>
+        <li><a href="#area-of-polar-region">Area of Polar Region</a></li>
+        <li><a href="#arc-length-of-polar-curve">Arc Length of Polar Curve</a></li>
+        <li><a href="#common-shapes">Common shapes</a>
           <ul>
-            <li><a href="#tangents">Tangents</a></li>
-            <li><a href="#double-derivative">Double Derivative</a></li>
-            <li><a href="#areas">Areas</a></li>
-            <li><a href="#arc-length">Arc Length</a></li>
-            <li><a href="#surface-area">Surface Area</a></li>
-          </ul>
-        </li>
-        <li><a href="#103-polar-coordinates">10.3 Polar Coordinates</a>
-          <ul>
-            <li><a href="#converting-between-cartesian">Converting between Cartesian</a></li>
-            <li><a href="#symmetry">Symmetry</a></li>
-            <li><a href="#polar-tangents">Polar Tangents</a></li>
-          </ul>
-        </li>
-        <li><a href="#104-area-and-lengths-in-polar-coordinates">10.4 Area and Lengths in Polar Coordinates</a>
-          <ul>
-            <li><a href="#area-of-polar-region">Area of Polar Region</a></li>
-            <li><a href="#arc-length-of-polar-curve">Arc Length of Polar Curve</a></li>
-            <li><a href="#common-shapes">Common shapes</a></li>
+            <li><a href="#rose">Rose</a></li>
+            <li><a href="#cardioid">Cardioid</a></li>
+            <li><a href="#limaçon">Limaçon</a></li>
           </ul>
         </li>
       </ul>
@@ -333,14 +361,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="parametric-equations-and-polar-coordinates">
-  Parametric Equations and Polar Coordinates
-  <a class="anchor" href="#parametric-equations-and-polar-coordinates">#</a>
-</h1>
-<h2 id="101-curves-defined-by-parametric-equations">
+  <article class="markdown"><h1 id="101-curves-defined-by-parametric-equations">
   10.1 Curves Defined by Parametric Equations
   <a class="anchor" href="#101-curves-defined-by-parametric-equations">#</a>
-</h2>
+</h1>
 <ul>
 <li>Parametric equations are written as .$(f(t), g(t))$</li>
 <li>They define curves (not functions!)</li>
@@ -360,14 +384,14 @@ https://github.com/alex-shpak/hugo-book
   <a href="https://www.desmos.com/calculator/ksjcpazwa9">Useful Desmos calculator</a></li>
 <li>If we need to graph an equation in form .$x=g(y)$ , we can use parametric equations .$x=g(t)$ and .$y=t$</li>
 </ul>
-<h2 id="102-calculus-with-parametric-curves">
+<h1 id="102-calculus-with-parametric-curves">
   10.2 Calculus with Parametric Curves
   <a class="anchor" href="#102-calculus-with-parametric-curves">#</a>
-</h2>
-<h3 id="tangents">
+</h1>
+<h2 id="tangents">
   Tangents
   <a class="anchor" href="#tangents">#</a>
-</h3>
+</h2>
 <ul>
 <li>
 <p>Given .$x=f(t)$ and .$y=g(t)$ where both .$f$ and .$g$ are differentiable, we can get the tangent line to the curve by finding .$\frac{dy}{dx}$</p>
@@ -387,38 +411,38 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</p>
 <p>Vertical tangents exist when .$\frac{dx}{dt}=0$ (assuming .$\frac{dy}{dt} \neq 0$ )</p>
 </li>
 </ul>
-<h3 id="double-derivative">
+<h2 id="double-derivative">
   Double Derivative
   <a class="anchor" href="#double-derivative">#</a>
-</h3>
+</h2>
 <p>$$\frac{d^2y}{dx^2} = \frac{d}{dx}\Big(\frac{dy}{dx}\Big) = \frac{d}{dt}\cdot\frac{dt}{dx}\Big(\frac{dy}{dx}\Big) = \frac{\frac{d}{dt}\Big(\frac{dy}{dx}\Big)}{\frac{dx}{dt}}$$</p>
-<h3 id="areas">
+<h2 id="areas">
   Areas
   <a class="anchor" href="#areas">#</a>
-</h3>
+</h2>
 <p>Given .$x=f(t)$ and .$y=g(t)$ over .$t \in (\alpha, \beta)$ , we can calculate the area between .$C$ and the .$x$ -axis with the following equation</p>
 <p>$$A = \int_\alpha^\beta f'(t) \cdot g(t)\ dt $$</p>
 <p>Likewise, between .$C$ and the <strong>.$y$ -axis</strong> we derive the parametric equation for .$y$ :</p>
 <p>$$A = \int_\alpha^\beta f(t) \cdot g'(t)\ dt $$</p>
-<h3 id="arc-length">
+<h2 id="arc-length">
   Arc Length
   <a class="anchor" href="#arc-length">#</a>
-</h3>
+</h2>
 <p>To find length .$L$ of curve .$C$ given in form .$x=f(t)$ and .$y=g(t)$ on .$t \in [\alpha, \beta]$ where .$\frac{dx}{dt} = f'(t) &gt; 0$ (meaning that .$C$ is traversed once from left to right as .$t$ increases from .$\alpha$ to .$\beta$ ) and where .$f'$ and .$g'$ are continuous on .$[\alpha, \beta]$ :</p>
 <p>$$L = \int_\alpha^\beta \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
-<p>Note that trig functions (.$\sin, \cos, \text{etc.})$ ) loop every .$\frac{pi}{2}$ because of the formula finds the absolute value.</p>
-<h3 id="surface-area">
+<p>Note that trig functions (.$\sin, \cos, \text{etc.})$ ) loop every .$\frac{\pi}{2}$ because of the formula finds the absolute value.</p>
+<h2 id="surface-area">
   Surface Area
   <a class="anchor" href="#surface-area">#</a>
-</h3>
+</h2>
 <p>Suppose the curve .$C$ given the equations .$x=f(t)$ and .$y=g(t)$ on .$\ t \in [\alpha, \beta]$ where .$f'$ and .$g'$ are continuous, and .$g(t) &gt; 0$ , is rotated about the .$x$ -axis. If .$C$ is traversed exactly once, then the area of the resulting surface is given by</p>
 <p>$$S =  2\pi \int_\alpha^\beta y(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
 <p>Similarly, if instead .$C$ is rotated about the .$y$ -axis instead we use the following:</p>
 <p>$$S =  2\pi \int_\alpha^\beta x(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
-<h2 id="103-polar-coordinates">
+<h1 id="103-polar-coordinates">
   10.3 Polar Coordinates
   <a class="anchor" href="#103-polar-coordinates">#</a>
-</h2>
+</h1>
 <ul>
 <li>Pole = origin; labeled .$O$</li>
 <li>Polar axis = line through .$O$</li>
@@ -427,32 +451,32 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</p>
 <li>.$\theta$ is the angle between the polar axis and the line .$OP$</li>
 <li>.$(r, \theta) = (-r, \theta + \pi)$</li>
 </ul>
-<h3 id="converting-between-cartesian">
+<h2 id="converting-between-cartesian">
   Converting between Cartesian
   <a class="anchor" href="#converting-between-cartesian">#</a>
-</h3>
+</h2>
 <ul>
 <li>.$x=r\cdot \cos\theta$</li>
 <li>.$y=r\cdot \sin\theta$</li>
 <li>.$r^2 = x^2 + y^2$</li>
 <li>.$\tan\theta = \frac{y}{x}$</li>
 </ul>
-<h3 id="symmetry">
+<h2 id="symmetry">
   Symmetry
   <a class="anchor" href="#symmetry">#</a>
-</h3>
+</h2>
 <ul>
 <li>If polar equation is the same when .$\theta = -\theta$ , the curve is symmetric about the polar axis</li>
 <li>If polar equation is the same when .$r = -r$ or when .$\theta = \theta + \pi$ , the curve is symmetric about the pole</li>
 <li>If polar equation is the same when .$\theta = \pi-\theta$ , then the curve is symmetric about the vertical line .$\theta = \pi/2$</li>
 </ul>
-<h3 id="polar-tangents">
+<h2 id="polar-tangents">
   Polar Tangents
   <a class="anchor" href="#polar-tangents">#</a>
-</h3>
+</h2>
 <p>Knowing that
-$$x = r \cdot \cos\theta = f(\theta)\cos\theta$$
-$$y = r \cdot \sin\theta = f(\theta)\sin\theta$$
+$$x = r \cdot \cos\theta = f(\theta)\cdot\cos\theta$$
+$$y = r \cdot \sin\theta = g(\theta)\cdot\sin\theta$$
 We can use the product rule to find the tangent equation
 $$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr}{d\theta} \sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r \sin\theta} $$</p>
 <ul>
@@ -462,20 +486,20 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr
 </ul>
 <p>We can then write the full formula:</p>
 <p>$$y-y_0 = \frac{dy}{dx}\Big(\theta\Big)(x-x_0)$$</p>
-<h2 id="104-area-and-lengths-in-polar-coordinates">
+<h1 id="104-area-and-lengths-in-polar-coordinates">
   10.4 Area and Lengths in Polar Coordinates
   <a class="anchor" href="#104-area-and-lengths-in-polar-coordinates">#</a>
-</h2>
-<h3 id="area-of-polar-region">
+</h1>
+<h2 id="area-of-polar-region">
   Area of Polar Region
   <a class="anchor" href="#area-of-polar-region">#</a>
-</h3>
+</h2>
 <p>Knowing that the area of a &ldquo;slice&rdquo; can be written as .$A = \frac{1}{2}r^2\theta$ , we can expand this to the case where the curve is a function .$r = f(\theta)$ :</p>
 <p>$$A = \int_a^b \frac{1}{2} r^2\ d\theta$$</p>
-<h3 id="arc-length-of-polar-curve">
+<h2 id="arc-length-of-polar-curve">
   Arc Length of Polar Curve
   <a class="anchor" href="#arc-length-of-polar-curve">#</a>
-</h3>
+</h2>
 <p>Given a polar curve .$r=f(\theta), a \leq \theta \leq b$ , we can re-write our base equations as</p>
 <p>$$x = r\cos\theta = f(\theta)\cos\theta$$
 $$y = r\sin\theta = f(\theta)\sin\theta$$</p>
@@ -486,16 +510,16 @@ $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$</p>
 <p>$$\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2 = [\text{ugly stuff, see page 711}] = \Big(\frac{dr}{d\theta}\Big)^2 + r^2$$</p>
 <p>so when .$f'$ is continuos, we can write the acc length equation as</p>
 <p>$$L = \int_a^b \sqrt{\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2} d\theta = \int_a^b \sqrt{r^2 + \Big(\frac{dr}{d\theta}\Big)^2}d\theta$$</p>
-<h3 id="common-shapes">
+<h2 id="common-shapes">
   Common shapes
   <a class="anchor" href="#common-shapes">#</a>
-</h3>
-<h4 id="rose">
+</h2>
+<h3 id="rose">
   Rose
   <a class="anchor" href="#rose">#</a>
-</h4>
+</h3>
 <p>
-  <img src="https://mathworld.wolfram.com/images/eps-gif/Rose_850.gif" alt="Rose" /></p>
+  <img src="/docs/math-53/imgs/rose.gif" alt="Rose" /></p>
 <p>$$a\cdot[\sin \text{or} \cos](k\cdot\theta)$$</p>
 <ul>
 <li>.$r$ = .$a$</li>
@@ -507,21 +531,21 @@ $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$</p>
 <li>.$2\pi/T = k$ cycles displayed in graph</li>
 <li>.$A_{\text{petal}} = \frac{\pi a^2}{4k}$</li>
 </ul>
-<h4 id="cardioid">
+<h3 id="cardioid">
   Cardioid
   <a class="anchor" href="#cardioid">#</a>
-</h4>
+</h3>
 <p>
-  <img src="https://study.com/cimages/multimages/16/cardioid5.jpg" alt="Cardioid" /></p>
+  <img src="/docs/math-53/imgs/cardioid.jpg" alt="Cardioid" /></p>
 <p>$$r(\theta) = a(1-\cos\theta)$$
 $$A = \frac{3}{2}\pi a^2$$
 $$L=8a$$</p>
-<h4 id="limaçon">
+<h3 id="limaçon">
   Limaçon
   <a class="anchor" href="#lima%c3%a7on">#</a>
-</h4>
+</h3>
 <p>
-  <img src="https://mathworld.wolfram.com/images/eps-gif/Limacon_900.gif" alt="Limaçon" /></p>
+  <img src="/docs/math-53/imgs/limacon.gif" alt="Limaçon" /></p>
 <p>$$r=b+a\cos\theta$$</p>
 <p>
   <a href="https://mathworld.wolfram.com/Limacon.html">Other equations I&rsquo;m too lazy to type out</a></p>
@@ -534,9 +558,9 @@ $$L=8a$$</p>
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/9072d047cc338756248ec712c9a5371071a46087" title='Last modified by Max Vogel | September 4, 2021' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/86ec88d4bd0eb412a465ec2981720badc8039428" title='Last modified by Max Vogel | September 6, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>September 4, 2021</span>
+      <span>September 6, 2021</span>
     </a>
   </div>
 
@@ -579,30 +603,32 @@ $$L=8a$$</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#parametric-equations-and-polar-coordinates">Parametric Equations and Polar Coordinates</a>
+    <li><a href="#101-curves-defined-by-parametric-equations">10.1 Curves Defined by Parametric Equations</a></li>
+    <li><a href="#102-calculus-with-parametric-curves">10.2 Calculus with Parametric Curves</a>
       <ul>
-        <li><a href="#101-curves-defined-by-parametric-equations">10.1 Curves Defined by Parametric Equations</a></li>
-        <li><a href="#102-calculus-with-parametric-curves">10.2 Calculus with Parametric Curves</a>
+        <li><a href="#tangents">Tangents</a></li>
+        <li><a href="#double-derivative">Double Derivative</a></li>
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#arc-length">Arc Length</a></li>
+        <li><a href="#surface-area">Surface Area</a></li>
+      </ul>
+    </li>
+    <li><a href="#103-polar-coordinates">10.3 Polar Coordinates</a>
+      <ul>
+        <li><a href="#converting-between-cartesian">Converting between Cartesian</a></li>
+        <li><a href="#symmetry">Symmetry</a></li>
+        <li><a href="#polar-tangents">Polar Tangents</a></li>
+      </ul>
+    </li>
+    <li><a href="#104-area-and-lengths-in-polar-coordinates">10.4 Area and Lengths in Polar Coordinates</a>
+      <ul>
+        <li><a href="#area-of-polar-region">Area of Polar Region</a></li>
+        <li><a href="#arc-length-of-polar-curve">Arc Length of Polar Curve</a></li>
+        <li><a href="#common-shapes">Common shapes</a>
           <ul>
-            <li><a href="#tangents">Tangents</a></li>
-            <li><a href="#double-derivative">Double Derivative</a></li>
-            <li><a href="#areas">Areas</a></li>
-            <li><a href="#arc-length">Arc Length</a></li>
-            <li><a href="#surface-area">Surface Area</a></li>
-          </ul>
-        </li>
-        <li><a href="#103-polar-coordinates">10.3 Polar Coordinates</a>
-          <ul>
-            <li><a href="#converting-between-cartesian">Converting between Cartesian</a></li>
-            <li><a href="#symmetry">Symmetry</a></li>
-            <li><a href="#polar-tangents">Polar Tangents</a></li>
-          </ul>
-        </li>
-        <li><a href="#104-area-and-lengths-in-polar-coordinates">10.4 Area and Lengths in Polar Coordinates</a>
-          <ul>
-            <li><a href="#area-of-polar-region">Area of Polar Region</a></li>
-            <li><a href="#arc-length-of-polar-curve">Arc Length of Polar Curve</a></li>
-            <li><a href="#common-shapes">Common shapes</a></li>
+            <li><a href="#rose">Rose</a></li>
+            <li><a href="#cardioid">Cardioid</a></li>
+            <li><a href="#limaçon">Limaçon</a></li>
           </ul>
         </li>
       </ul>

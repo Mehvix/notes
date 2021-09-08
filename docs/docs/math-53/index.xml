@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://notes.mehvix.com/math-53/trig/</guid>
-      <description>Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}$$  $$\cos(x)=\frac{1}{\sec(x)}$$  $$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$   Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$  $$1+\tan^2(x) = \sec^2(x)$$  $$1+\cot^2(x)=csc^2(x)$$   Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$  $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$  $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$   Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \sec(-x) = \sec(x)$$  $$ \cos(-x) = \cos(x)$$ $$ \csc(-x) = -\csc(x)$$  $$ \tan(-x) = - \tan(x)$$ $$ \cot(-x) = -\cot(x)$$   Sum and Difference Formulas #  $$ \sin(u \pm v) = \sin(u) \cdot \cos(v) \pm \cos(u) \cdot \sin(v)$$ $$ \cos(u \pm v) = \cos(u) \cdot \cos(v) \pm \sin(u) \cdot \sin(v)$$</description>
+      <description>Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}$$  $$\cos(x)=\frac{1}{\sec(x)}$$  $$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$   Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$  $$1+\tan^2(x) = \sec^2(x)$$  $$1+\cot^2(x)=\csc^2(x)$$   Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$  $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$  $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$   Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \sec(-x) = \sec(x)$$  $$ \cos(-x) = \cos(x)$$ $$ \csc(-x) = -\csc(x)$$  $$ \tan(-x) = - \tan(x)$$ $$ \cot(-x) = -\cot(x)$$   Sum and Difference Formulas #  $$ \sin(u \pm v) = \sin(u) \cdot \cos(v) \pm \cos(u) \cdot \sin(v)$$ $$ \cos(u \pm v) = \cos(u) \cdot \cos(v) \pm \sin(u) \cdot \sin(v)$$</description>
     </item>
     
     <item>
@@ -21,7 +21,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://notes.mehvix.com/math-53/10/</guid>
-      <description>Parametric Equations and Polar Coordinates #  10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .</description>
+      <description>10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .$(h,k)$  Likewise, .</description>
+    </item>
+    
+    <item>
+      <title>12: Vectors and Geometry of Space</title>
+      <link>http://notes.mehvix.com/math-53/12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.mehvix.com/math-53/12/</guid>
+      <description>12.1 3D Coordinate Systems #   Right hand rule: Index point to .$x$, thumb to .$z$, and write through .$y$ If you have point .$P(a,b,c)$ and drop a perpendicular dot on the .$xy$-plane at .$a,b,0$, you now have a projection of .$P$ onto the .$xy$-plane The distance .$|P_1 P_2|$ between two points .$P_1(x_1, y_1, z_1)$ and .$P_2(x_2, y_2, z_2)$ is $$|P_1 P_2| = \sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$$ We can define the equation for a sphere with a center at .</description>
     </item>
     
   </channel>

@@ -1,4 +1,12 @@
 {
-    "terminal.integrated.cwd": "hugo",
-    "cSpell.words": ["Fick's", "imgs", "infty", "Waals"] // open new terminals to hugo dir
+	"terminal.integrated.cwd": "hugo",
+	"cSpell.words": [
+		"erectus",
+		"Fick's",
+		"hominin",
+		"imgs",
+		"infty",
+		"pyrodiversity",
+		"Waals"
+	] // open new terminals to hugo dir
 }

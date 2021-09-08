@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="19.1 Heat as Energy Transfer #  Units #   Heat unit is calorie (cal)  The amount of heat needed to raise the temperature of 1 gram of water by 1 celsius $$4.186 \text{ J} = 1 \text{ cal}$$   Kilocalorie (kcal, Calorie) is more common  Amount of heat needed to raise 1 kg of water by 1 celsius $$4.186 \text{ kJ} = 1 \text{ kcal}$$   British system of units has British thermal units (Btu)  One Btu is the heat needed to raise the temperature of 1 lb of water by 1 Fahrenheit $$1 \text{ Btu} = 0.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="19: Heat and the First Law of Thermo" />
+<meta property="og:description" content="19.1 Heat as Energy Transfer #  Units #   Heat unit is calorie (cal)  The amount of heat needed to raise the temperature of 1 gram of water by 1 celsius $$4.186 \text{ J} = 1 \text{ cal}$$   Kilocalorie (kcal, Calorie) is more common  Amount of heat needed to raise 1 kg of water by 1 celsius $$4.186 \text{ kJ} = 1 \text{ kcal}$$   British system of units has British thermal units (Btu)  One Btu is the heat needed to raise the temperature of 1 lb of water by 1 Fahrenheit $$1 \text{ Btu} = 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.mehvix.com/physics-7b/19/" /><meta property="article:section" content="docs" />
+
+
+
+<title>19: Heat and the First Law of Thermo | Berkeley Notes</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.0af9a41ee766106279a536239abdf3062b68415c82fc302f2889e00ec31f644c.js" integrity="sha256-CvmkHudmEGJ5pTYjmr3zBitoQVyC/DAvKIngDsMfZEw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>"
+/>
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ["$", "$"],
+                [".$", "$"],
+            ],
+        },
+    };
+</script>
+
+<script
+    id="MathJax-script"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
+    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+
+<link rel="stylesheet" href="http://notes.mehvix.com/css/custom_styling.css" />
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Berkeley Notes</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://www.mehvix.com" target="_blank" rel="noopener">
+        Home page
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-32aba3efd274a559b3dccd4e800c9d4b" class="toggle"  />
+    <label for="section-32aba3efd274a559b3dccd4e800c9d4b" class="flex justify-between">
+      <a role="button" class="">Math 53</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Cheat Sheet</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/10/" class="">10: Parametric Equations and Polar Coordinates</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/12/" class="">12: Vectors and Geometry of Space</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8114d4adae406600e57f70538001a7cf" class="toggle"  />
+    <label for="section-8114d4adae406600e57f70538001a7cf" class="flex justify-between">
+      <a role="button" class="">Anthro C12AC</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/anthro-c12ac/core/" class="">Core</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-98c46cabf82aecebcca8f97f2965f738" class="toggle" checked />
+    <label for="section-98c46cabf82aecebcca8f97f2965f738" class="flex justify-between">
+      <a role="button" class="">Physics 7B</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/17/" class="">17: Temperature, Thermal Expansion, &amp; Ideal Gas Law</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/18/" class="">18: Kinetic Theory of Gases</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/19/" class=" active">19: Heat and the First Law of Thermo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://cs61a.rouxl.es/" target="_blank" rel="noopener">
+        Anto&#39;s CS61A
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>19: Heat and the First Law of Thermo</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#191-heat-as-energy-transfer">19.1 Heat as Energy Transfer</a>
+      <ul>
+        <li><a href="#units">Units</a></li>
+        <li><a href="#heat">Heat</a></li>
+      </ul>
+    </li>
+    <li><a href="#192-internal-energy">19.2 Internal Energy</a>
+      <ul>
+        <li><a href="#difference-between-temp-heat-and-internal-energy">Difference between Temp, Heat, and Internal Energy</a></li>
+        <li><a href="#calculating-internal-energy">Calculating Internal Energy</a></li>
+      </ul>
+    </li>
+    <li><a href="#193-specific-heat">19.3 Specific Heat</a></li>
+    <li><a href="#194-calorimetry">19.4 Calorimetry</a>
+      <ul>
+        <li><a href="#types-of-systems">Types of Systems</a></li>
+        <li><a href="#calorimeter">Calorimeter</a></li>
+      </ul>
+    </li>
+    <li><a href="#195-latent-heat">19.5 Latent Heat</a>
+      <ul>
+        <li><a href="#evaporation">Evaporation</a></li>
+        <li><a href="#kinetic-theory-of-latent-heats">Kinetic Theory of Latent Heats</a></li>
+      </ul>
+    </li>
+    <li><a href="#196-first-law-of-thermo">19.6 First Law of Thermo</a></li>
+    <li><a href="#197-thermodynamic-process-and-the-1st-law">19.7 Thermodynamic Process and the 1st Law</a>
+      <ul>
+        <li><a href="#isothermal-process-delta-t--0">Isothermal Process (.$\Delta T = 0$)</a></li>
+        <li><a href="#adiabatic-process-delta-t--0">Adiabatic Process (.$\Delta T = 0$)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="191-heat-as-energy-transfer">
+  19.1 Heat as Energy Transfer
+  <a class="anchor" href="#191-heat-as-energy-transfer">#</a>
+</h1>
+<h2 id="units">
+  Units
+  <a class="anchor" href="#units">#</a>
+</h2>
+<ul>
+<li>Heat unit is calorie (cal)
+<ul>
+<li>The amount of heat needed to raise the temperature of 1 gram of water by 1 celsius</li>
+<li>$$4.186 \text{ J} = 1 \text{ cal}$$</li>
+</ul>
+</li>
+<li>Kilocalorie (kcal, Calorie) is more common
+<ul>
+<li>Amount of heat needed to raise 1 kg of water by 1 celsius</li>
+<li>$$4.186 \text{ kJ} = 1 \text{ kcal}$$</li>
+</ul>
+</li>
+<li>British system of units has British thermal units (Btu)
+<ul>
+<li>One Btu is the heat needed to raise the temperature of 1 lb of water by 1 Fahrenheit</li>
+<li>$$1 \text{ Btu} = 0.252 \text{ kcal} = 1056 \text{ J}$$</li>
+<li>Gas companies use the unit therm: .$10^5 \text{ Btu}$</li>
+</ul>
+</li>
+</ul>
+<h2 id="heat">
+  Heat
+  <a class="anchor" href="#heat">#</a>
+</h2>
+<ul>
+<li>Heat is energy transferred from one object to another because of a difference in temperature.
+<ul>
+<li>Energy transfers from hot to cold object until equilibrium</li>
+</ul>
+</li>
+<li>The SI units for heat is the joule:
+<ul>
+<li>This is because heat is a form of energy!</li>
+</ul>
+</li>
+</ul>
+<h1 id="192-internal-energy">
+  19.2 Internal Energy
+  <a class="anchor" href="#192-internal-energy">#</a>
+</h1>
+<ul>
+<li><strong>Internal Energy</strong>: The sum of all the energy of all the molecules in an object
+<ul>
+<li>Sometimes called thermal energy</li>
+</ul>
+</li>
+</ul>
+<h2 id="difference-between-temp-heat-and-internal-energy">
+  Difference between Temp, Heat, and Internal Energy
+  <a class="anchor" href="#difference-between-temp-heat-and-internal-energy">#</a>
+</h2>
+<ul>
+<li>Temperature is the <strong>average</strong> kinetic energy of all of the molecules</li>
+<li>Internal energy is the <strong>sum</strong> of the energy of all of the molecules
+<ul>
+<li>E.x. Two equal-mass iron ingots could the same temperature as a single ingot, but the two would have double the internal energy</li>
+</ul>
+</li>
+<li>Heat refers to the <strong>transfer</strong> of energy from one object to another due to a difference in temperatures
+<ul>
+<li>Direction of transfer depends on temperature, <strong>not</strong> internal energy</li>
+<li>E.x. .$50\text{ g}$ of .$30^\circ\text{ C}$ water mixed with .$200 \text{ g}$ of .$25^\circ \text{ C}$ water results with heat transferring from the smaller sample with less internal energy to the larger sample with more internal energy.</li>
+</ul>
+</li>
+</ul>
+<h2 id="calculating-internal-energy">
+  Calculating Internal Energy
+  <a class="anchor" href="#calculating-internal-energy">#</a>
+</h2>
+<ul>
+<li>Internal energy is the sum of all the <strong>translational</strong> kinetic energy of the molecules in a monatomic gas
+<ul>
+<li><strong>Monatomic</strong>: Gas with one atom per molecule</li>
+</ul>
+</li>
+<li>We can re-write this as the average KE per molecule times the total number of molecules, .$N$</li>
+</ul>
+<p>$$E_{\text{int}} = N \bigg(\frac{1}{2}m\bar{v}^2\bigg) = \frac{3}{2}Nk_bT = \frac{3}{2}nRT$$</p>
+<ul>
+<li>
+<p>We can see that internal energy for a monatomic gas depends only on the temperature and number of moles</p>
+</li>
+<li>
+<p>If a gas isn&rsquo;t monatomic, then we need to consider the rotational and vibrational energy of the molecules</p>
+<ul>
+<li><strong>Non-monatomic</strong> gasses result in a internal energy at a given temperature compared to a monatomic</li>
+</ul>
+</li>
+<li>
+<p>The internal energy of real gases depends mainly on temperature</p>
+<ul>
+<li>There are some exceptions of gases depending on pressure and volume as well</li>
+</ul>
+</li>
+<li>
+<p>Internal energy of liquids and solids is more complex</p>
+<ul>
+<li>It includes electric potential energy of the chemical bonds</li>
+</ul>
+</li>
+</ul>
+<h1 id="193-specific-heat">
+  19.3 Specific Heat
+  <a class="anchor" href="#193-specific-heat">#</a>
+</h1>
+<ul>
+<li>
+<p>Amount of heat required to change the temperature of a material is found with the following:
+$$Q = mc \Delta T$$</p>
+</li>
+<li>
+<p>.$c$ 
+  <a href="https://en.wikipedia.org/wiki/Specific_heat_capacity">specific heat capacity</a> that depends on the material .$[\text{J}/(\text{C}^\circ\text{ kg})]$</p>
+</li>
+<li>
+<p>For water at .$15 ^\circ \text{ C}$ and constant pressure .$1 \text{atm}$, .$c = 4168 \text{ J}/(\text{C}^\circ\text{ kg}) = 1.00 \text{ kcal}/(\text{C}^\circ \text{ kg})$</p>
+<ul>
+<li>.$c$ does vary to some extent with temperature (and slightly pressure), but for small .$\Delta T$ we can say .$c$ is a constant</li>
+</ul>
+</li>
+<li>
+<p>Relative to other materials/substances, water has a high specific heat capacity</p>
+</li>
+</ul>
+<h1 id="194-calorimetry">
+  19.4 Calorimetry
+  <a class="anchor" href="#194-calorimetry">#</a>
+</h1>
+<h2 id="types-of-systems">
+  Types of Systems
+  <a class="anchor" href="#types-of-systems">#</a>
+</h2>
+<ul>
+<li><strong>System</strong>: Any (set of) object(s) we choose to consider</li>
+<li><strong>Closed System</strong>: Mass is constant, but energy may be exchanged within environment
+<ul>
+<li><strong>Isolated</strong>: If no energy in any form passes across its boundaries</li>
+<li>We idealize systems to be closed systems, which is rare in the real world</li>
+<li>Heat will flow from hot to cold region of system until equilibrium</li>
+<li>We can assume that no energy is lost; heat lost in one part = heat gained in another part or .$\Sigma Q = 0$</li>
+</ul>
+</li>
+<li><strong>Open System</strong>: Mass and energy may enter/leave</li>
+</ul>
+<h2 id="calorimeter">
+  Calorimeter
+  <a class="anchor" href="#calorimeter">#</a>
+</h2>
+<ul>
+<li><strong>Calorimetry</strong>: Quantitative measure of heat exchange</li>
+<li>Calorimeter tend to have insulation so that no heat is exchanged with the surrounding air</li>
+<li>Often use thermometer to measure change the temperature</li>
+<li>E.x. a substance sample will be heated up, measured, then quickly placed inside cool water of calorimeter
+<ul>
+<li>The heat lost from the sample will be gained by the water and the calorimeter cup</li>
+<li>Measuring final temperature of the mixture lets us calculate the specific heat</li>
+</ul>
+</li>
+<li>Assume that small masses like the thermometer/stirrer are negligible</li>
+</ul>
+<h1 id="195-latent-heat">
+  19.5 Latent Heat
+  <a class="anchor" href="#195-latent-heat">#</a>
+</h1>
+<ul>
+<li><strong>Change of Phase</strong>: When a material changes from solid to liquid or liquid to gas.
+<ul>
+<li>A certain energy is required for a phase change</li>
+<li>Latent heat is lost during phase change (often in the form of heat)</li>
+</ul>
+</li>
+</ul>
+<p>
+  <img src="/docs/physics-7b/imgs/phase-changes.png" alt="Phase Change from Ice to Gas" /></p>
+<ul>
+<li><strong>Heat of fusion</strong>, .$L_F$: Heat required to change .$1.0 \text{ kg}$ of a substance from solid to liquid state
+<ul>
+<li>Heat fusion of water is .$79.7 \text{kcal/kg} = 333 \text{kJ/kg}$</li>
+</ul>
+</li>
+<li><strong>Heat of Vaporization</strong>, .$L_V$: Heat required to change a substance from liquid to vapor phase
+<ul>
+<li>Heat vaporization is .$539 \text{kcal/kg} = 2260 \text{kJ/kg}$</li>
+</ul>
+</li>
+<li>Heat involved in the phase change depends on the mass and latent heat:
+<ul>
+<li>$$Q = mL$$</li>
+</ul>
+</li>
+</ul>
+<h2 id="evaporation">
+  Evaporation
+  <a class="anchor" href="#evaporation">#</a>
+</h2>
+<ul>
+<li>Heat of Vaporization of water increases slightly with a decrease in Temperature</li>
+<li>At .$20^\circ \text{ C}$, it&rsquo;s .$585 \text{ \text{kcal/kg}}$</li>
+<li>When liquid evaporates, the remaining liquid cools because the heat/energy comes from the water itself</li>
+<li>Therefore, internal energy decreases with evaporation</li>
+</ul>
+<h2 id="kinetic-theory-of-latent-heats">
+  Kinetic Theory of Latent Heats
+  <a class="anchor" href="#kinetic-theory-of-latent-heats">#</a>
+</h2>
+<ul>
+<li>At melting point, the latent heat of fusion <strong>doesn&rsquo;t</strong> increase the average KE / temperature</li>
+<li>Rather, the energy goes into overcoming the PE associated with the forces between the molecules
+<ul>
+<li>Once the molecules in a solid are broken from there lattice formation, they can freely roll over one another as a liquid</li>
+</ul>
+</li>
+<li>More energy is required for liquid to gas phase because the average distance between the molecules is greatly increased
+<ul>
+<li>The larger the distance that the molecules have to be separated, the more work has to be done to pull them apart</li>
+</ul>
+</li>
+</ul>
+<h1 id="196-first-law-of-thermo">
+  19.6 First Law of Thermo
+  <a class="anchor" href="#196-first-law-of-thermo">#</a>
+</h1>
+<ul>
+<li>Heat and work are different
+<ul>
+<li>Heat is the transfer of energy due to a difference in temperature</li>
+<li>Work is the transfer of energy <strong>not</strong> due to a temperature difference</li>
+</ul>
+</li>
+<li>Internal energy and temperature are both proportional to heat and work though with the following equation:
+$$\Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\text{int, 1}} \ \ \ \text{[First Law of Thermo.]}$$</li>
+<li>.$Q$ is net <strong>heat added</strong> to the system
+<ul>
+<li>Heat <em>added</em> is .$\texttt{+}$, heat <em>lost</em> is .$\texttt{-}$,</li>
+</ul>
+</li>
+<li>.$W$ is net <strong>work done by</strong> the system
+<ul>
+<li>Work done <em>by</em> system is .$\texttt{+}$, work done <em>on</em> the system is .$\texttt{-}$,</li>
+</ul>
+</li>
+<li>.$Q$ and .$W$ are <strong>not state variables</strong> in that a static state doesn&rsquo;t have &ldquo;heat&rdquo; or &ldquo;work&rdquo; &ndash; only when the system changes through thermodynamic process can we measure heat/work.
+<ul>
+<li>This is unlike .$P, V, T$ and .$E_{\text{int}}$ which are **state variables** (can be measured at all states)</li>
+</ul>
+</li>
+<li>We can also extend the first law to include systems that have KE and PE:
+$$\Delta K + \Delta U + \Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\text{int, 1}}$$</li>
+</ul>
+<h1 id="197-thermodynamic-process-and-the-1st-law">
+  19.7 Thermodynamic Process and the 1st Law
+  <a class="anchor" href="#197-thermodynamic-process-and-the-1st-law">#</a>
+</h1>
+<h2 id="isothermal-process-delta-t--0">
+  Isothermal Process (.$\Delta T = 0$)
+  <a class="anchor" href="#isothermal-process-delta-t--0">#</a>
+</h2>
+<p>
+  <img src="/docs/physics-7b/imgs/isothermal.png" alt="PV Diagram" /></p>
+<ul>
+<li>When temperature is constant, .$PV = \text{constant}$</li>
+<li>Each label of points in the graph above represent the systems states (it&rsquo;s pressure and temperatures)</li>
+<li><strong>Isotherms</strong>: curves in PV diagram
+<ul>
+<li>At a lower temperature, an isothermal process would be represented by the isotherm .$A&rsquo;B'$</li>
+</ul>
+</li>
+<li>We also assume that the container is a <strong>heat reservoir</strong>: a body whose mass is so big that the temperature doesn&rsquo;t change when heat is exchanged</li>
+<li></li>
+</ul>
+<h2 id="adiabatic-process-delta-t--0">
+  Adiabatic Process (.$\Delta T = 0$)
+  <a class="anchor" href="#adiabatic-process-delta-t--0">#</a>
+</h2>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/Mehvix/notes/edit/master/hugo/content/docs/physics-7b/content/19.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#191-heat-as-energy-transfer">19.1 Heat as Energy Transfer</a>
+      <ul>
+        <li><a href="#units">Units</a></li>
+        <li><a href="#heat">Heat</a></li>
+      </ul>
+    </li>
+    <li><a href="#192-internal-energy">19.2 Internal Energy</a>
+      <ul>
+        <li><a href="#difference-between-temp-heat-and-internal-energy">Difference between Temp, Heat, and Internal Energy</a></li>
+        <li><a href="#calculating-internal-energy">Calculating Internal Energy</a></li>
+      </ul>
+    </li>
+    <li><a href="#193-specific-heat">19.3 Specific Heat</a></li>
+    <li><a href="#194-calorimetry">19.4 Calorimetry</a>
+      <ul>
+        <li><a href="#types-of-systems">Types of Systems</a></li>
+        <li><a href="#calorimeter">Calorimeter</a></li>
+      </ul>
+    </li>
+    <li><a href="#195-latent-heat">19.5 Latent Heat</a>
+      <ul>
+        <li><a href="#evaporation">Evaporation</a></li>
+        <li><a href="#kinetic-theory-of-latent-heats">Kinetic Theory of Latent Heats</a></li>
+      </ul>
+    </li>
+    <li><a href="#196-first-law-of-thermo">19.6 First Law of Thermo</a></li>
+    <li><a href="#197-thermodynamic-process-and-the-1st-law">19.7 Thermodynamic Process and the 1st Law</a>
+      <ul>
+        <li><a href="#isothermal-process-delta-t--0">Isothermal Process (.$\Delta T = 0$)</a></li>
+        <li><a href="#adiabatic-process-delta-t--0">Adiabatic Process (.$\Delta T = 0$)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
