@@ -1,12 +1,19 @@
 {
 	"terminal.integrated.cwd": "hugo",
 	"cSpell.words": [
+		"adia",
+		"Crossdating",
+		"Equipartition",
 		"erectus",
 		"Fick's",
 		"hominin",
 		"imgs",
 		"infty",
+		"Isovolumetric",
+		"latewood",
+		"Phytoliths",
 		"pyrodiversity",
+		"quasistatic",
 		"Waals"
 	] // open new terminals to hugo dir
 }

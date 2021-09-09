@@ -347,3 +347,98 @@
     - (last 10,000 years); you cannot assume
     - That only Natural Fire Regimes existed
     - Must consider the influence of people
+
+# Historical Fire Records in California
+
+## Methods
+
+- **Key Question:** What *methods* can we use to get historical information on fires?
+
+### 1. Coring Lakes
+
+![Lake Coring](/docs/anthro-c12ac/imgs/lake-core.png)
+- Annual layers are laid down in some lakes
+    - Realistically you can date to around fifty years of accuracy
+    - This samples have deeper temporal depth vs other methods
+    -  We can also radiocarbon date these samples to determine the time period
+- What to sample
+    - Charcoal present is indicates fire 
+        - Larger particle tend to travel small distances
+        - Smaller particles can travel much longer distances
+    - Pollen analysis can give you knowledge on what (wind pollinated) plants were common at the time in that area
+    - Phytoliths
+        - Tiny particles formed in many plants
+        - They don't break down -- can stay in soil for hundreds to thousands of years!
+        - Can be used to identify plant species
+
+### 2. Coring Trees 
+
+![Tree Coring](/docs/anthro-c12ac/imgs/tree-core.png)
+
+- You basically jab a metal straw into a tree and get a sample of the tree 
+    - Doesn't harm tree, tree naturally patches the hole itself
+- These sample contain rings 
+- Give us age and growth rate of the tree
+    - Growth increase in rings can allude to neighboring trees being killed
+    - Dead neighboring trees means less canopy blocking sunshine and less trees competing for nutrients
+- Multiple samples can give us an overview of a landscape
+    - Do we see a multi-age forest?
+    - Do we see synchrony in growth rate?
+- **Crossdating**: To identify events, we compare the sample's tree rings to those of other "regular" trees in different areas at the same time
+ 
+![Ring Example](/docs/anthro-c12ac/imgs/tree-ring.png)
+- Note that the example above is a rare occurrence 
+
+
+### 3. Fire Scars
+
+![Scar Example](/docs/anthro-c12ac/imgs/fire-scar.png)
+
+- Fire scars occur when fire kills part of the cambium below bark, leaving a wound 
+- Multiple dated wounds allude to multiple fire occurrences
+- You can also get the seasonality too
+    - Spring trees have warmer water so the scars are lighter in color
+    - Fall/winter trees have slower cell movement, so the scars are darker (this is called "latewood")
+    - Therefore, how deep the scar is in the wood corresponds to the season the fire occurred 
+- Use crossdating for high accuracy and precision 
+- Wedges:
+    - You can take wedges from the tree to get access to the ring view
+    - Both living and dead wood samples can be dated
+    - Pines, redwood, cedar, giant sequoia are all rot resistant thus good species to sample
+    - You ideally want to cut a thin wedge that has a large surface area and includes center of tree
+- Trees heal covering up scars or scars are in an exposed cavity that can be seen
+- Problem when fire interval < 10 years
+    - Most of the time fires aren't severe enough to scare deeply enough 
+    - Only 5% of trees sampled scarred in Sierra Nevada
+
+## Fire History Study Sierra Nevada 
+
+- Two large sampling areas, one north and south Sierra Nevada
+- Systematic fire history sample in mixed conifer forests
+- Important confluence of at least 3 Tribes: Sierra Miwok, Yokut, and Western Mono. 
+    - Burned extensively for multiple objectives
+    - This periodic burning limited severity of fires
+- Fire area did not exceed 1500 ha in any year. 
+    - Approximately 50% of area
+    - This is **tiny** compared to the scale of other fires in California!
+
+## Area burned in California
+- Before 1800
+    - Lightning fire
+    - Indian burning
+        - Burned most of grasslands, wetlands, oak woodlands, some forests
+    - 4.5 million acres/yr. burned 
+
+
+
+
+(Include below + maybe point above with Friday lecture notes?)
+**Chaparral**
+- Stand replacing regime
+- 30-75 yr. interval 
+- High intensity burns
+- Climate driven (droughts) 
+- Low fuel moistures
+- Foehn winds (Santa Ana’s)
+- Fire scars -- few, some bigcone Douglas-fir
+

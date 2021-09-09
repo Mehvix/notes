@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://notes.mehvix.com/math-53/12/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-03T13:41:38-07:00" />
+<meta property="article:modified_time" content="2021-09-07T23:41:44-07:00" />
 
 <title>12: Vectors and Geometry of Space | Berkeley Notes</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.0af9a41ee766106279a536239abdf3062b68415c82fc302f2889e00ec31f644c.js" integrity="sha256-CvmkHudmEGJ5pTYjmr3zBitoQVyC/DAvKIngDsMfZEw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.a5fe0987e33c095047c156e058f2cfdeb166de9097d7de06a4f0cf2275289cbb.js" integrity="sha256-pf4Jh&#43;M8CVBHwVbgWPLP3rFm3pCX194GpPDPInUonLs=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -355,22 +355,38 @@ $$(x-h)^2 + (y-k)^2 + (z-l)^2 = r^2$$</li>
   <a class="anchor" href="#122-vectors">#</a>
 </h1>
 <ul>
-<li>Has <strong>initial point</strong> .$A$ at the tail and the a <strong>terminal point</strong> .$B$ at the tip</li>
 <li>Written as .$\vec{AB}$</li>
+<li>Has <strong>initial point</strong> .$A$ at the tail and the a <strong>terminal point</strong> .$B$ at the tip
+<ul>
+<li>If the initial point .$A$ is at .$(x_1, y_1, z_1)$ and terminal point .$B$ is at .$(x_2, y_2, z_2)$, then we can write .$\vec{AB} = \langle x_2 - x_1, y_2 - y_1, z_2 - z_1\rangle$</li>
+</ul>
+</li>
+<li>Vectors with the same length/magnitude are called equivalent or equal, despite not necessarily having  the same initial/termination points</li>
 <li>Vector addition (order doesn&rsquo;t matter)
 $$ \vec{AC} = \vec{AB} + \vec{BC} = \vec{BC} + \vec{AB}$$
 $$ \vec{u} - \vec{v} = \vec{u} + (- \vec{v})$$
-$$ a + (b + c) = (a + b) + c$$</li>
+$$ \vec{a} + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$</li>
 <li>Vector multiplication
 <ul>
-<li>Given scalar .$c$ and vector .$\vec{v}$, .$c\cdot\vec{v}$ is like .$\vec{v}$ but with length changed by a factor of .$||c||$</li>
+<li>Given scalar .$c$ and vector .$\vec{v}$, .$c\cdot\vec{v}$ is like .$\vec{v}$ but with length changed by a factor of .$\Vert c\Vert$</li>
 <li>If .$c&lt;0$, then the vector is flipped around</li>
-<li>$$c\cdot\vec{v} = (cv_x, cv_y, cv_z)$$</li>
+<li>$$c\cdot\vec{v} = \langle cv_x, cv_y, cv_z\rangle$$</li>
 </ul>
 </li>
-<li>Magnitude for .$\vec{a} = (a_x, a_y, a_z)$:
+<li>Magnitude for .$\vec{a} = \langle a_x, a_y, a_z \rangle$:
 <ul>
-<li>$$ || \vec{a} || = \sqrt{a_x^2 + a_y^2 + a_z^3}$$</li>
+<li>$$ \Vert \vec{a} \Vert = \sqrt{a_x^2 + a_y^2 + a_z^3}$$</li>
+</ul>
+</li>
+<li>Unit vector
+<ul>
+<li>Has length of one</li>
+<li>If .$\vec a \neq 0$ then the unit vector .$\vec u$ in the same direction as .$\vec a$ is:
+<ul>
+<li>$$\vec u = \frac{\vec a}{\Vert \vec a \Vert} = \frac{1}{\Vert \vec a \Vert} \vec a$$</li>
+<li>Notice that .$\frac{1}{\Vert \vec a \Vert}$ is a <em>scalar</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -379,23 +395,40 @@ $$ a + (b + c) = (a + b) + c$$</li>
   <a class="anchor" href="#123-dot-product">#</a>
 </h2>
 <ul>
-<li>Two vectors are perpendicular/orthogonal (.$90^\circ$ from one another) if the dot product is 0</li>
-<li>.$\vec{a} \cdot \vec{b}$ is the length of .$\vec{a}$ times the scalar projection of .$\vec{b}$ onto .$\vec{a}$</li>
+<li>Two vectors are perpendicular/orthogonal (.$90^\circ$ from one another) iff the dot product is 0</li>
+<li>.$\vec{a} \cdot \vec{b}$ is the length of .$\vec{a}$ times the scalar projection of .$\vec{b}$ onto .$\vec{a}$
+$$\langle a_1, a_2, a_3 \rangle \cdot \langle b_1, b_2, b_3 \rangle = a_1b_1 + a_2b_2 + a_3b_3$$
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- begin -->
+<p>$$\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a}\cdot \vec{c}$$
+$$ \vec a \cdot \vec a = \Vert \vec a \Vert ^2$$
+$$ \vec a \cdot \vec b = \vec b \cdot \vec a $$
+$$ (c \vec a) \cdot \vec b = c (\vec a \cdot \vec b) = \vec a \cdot (c \vec b)$$
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- separator -->
+<p>$$\vec{a} \cdot \vec{b} = \Vert\vec{a}\Vert\ \Vert\vec{b}\Vert \cos \theta$$
+$$\Vert\vec{a} - \vec{b} \Vert^2 = \Vert\vec{a}\Vert^2+\Vert\vec{b}\Vert^2 - 2\Vert\vec{a}\Vert\Vert\vec{b}\Vert \cos\theta\ $$
+$$&hellip; = \Vert\vec{a}\Vert\ \Vert\vec{b}\Vert \cos \theta$$
+$$\cos\theta = \frac{\vec{a} \cdot \vec{b}}{\Vert\vec{a}\Vert\ \Vert\vec{b}\Vert}$$
+  </div>
+
+</div>
+</li>
 </ul>
-<p>$$(a_1, a_2, a_3) \cdot (b_1, b_2, b_3) = a_1b_1 + a_2b_2 + a_3b_3$$
-$$\vec{a} \cdot \vec{b} = ||\vec{a}||\ ||\vec{b}|| \cos \theta$$
-$$\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a}\cdot \vec{c}$$
-$$||\vec{a} - \vec{b} ||^2 = ||\vec{a}||^2 + ||\vec{b}||^2 - 2||\vec{a}||\ ||\vec{b}|| \cos\theta = ||\vec{a}||\ ||\vec{b}|| \cos \theta$$
-$$\cos\theta = \frac{\vec{a} \cdot \vec{b}}{||\vec{a}||\ ||\vec{b}||}$$</p>
+<p>$$\cos \theta = \frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \rightarrow \cos^{-1}\bigg(\frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \bigg) = \theta $$</p>
 <h2 id="projections">
   Projections
   <a class="anchor" href="#projections">#</a>
 </h2>
 <ul>
 <li>Scalar projection of .$\vec{b}$ onto .$\vec{a}$:
-$$\text{comp}_\vec{a}\vec{b} = \frac{\vec{a}\cdot\vec{b}}{||\vec{a}||}$$</li>
+$$\text{comp}_\vec{a}\vec{b} = \frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert}$$</li>
 <li>Vector projection of .$\vec{b}$ onto .$\vec{a}$:
-$$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{||\vec{a}||}\bigg)\frac{\vec{a}}{||\vec{a}||} = \frac{\vec{a}\cdot\vec{b}}{||\vec{a}||^2}\vec{a}$$</li>
+$$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert}\bigg)\frac{\vec{a}}{\Vert\vec{a}\Vert} = \frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert^2}\vec{a}$$</li>
 </ul>
 <p>
   <img src="/docs/math-53/imgs/dot.png" alt="Dot Product" /></p>
@@ -408,9 +441,9 @@ $$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{||\vec{a}||}\big
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/eddec8282ea53ad8e1dae8ede0ad2395e1b04853" title='Last modified by Max Vogel | September 3, 2021' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/0b1217e95090ed50c9809780a4241ea7cae733a7" title='Last modified by Max Vogel | September 7, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>September 3, 2021</span>
+      <span>September 7, 2021</span>
     </a>
   </div>
 

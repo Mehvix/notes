@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/19/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2021-09-07T23:41:44-07:00" />
 
 <title>19: Heat and the First Law of Thermo | Berkeley Notes</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.0af9a41ee766106279a536239abdf3062b68415c82fc302f2889e00ec31f644c.js" integrity="sha256-CvmkHudmEGJ5pTYjmr3zBitoQVyC/DAvKIngDsMfZEw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.a5fe0987e33c095047c156e058f2cfdeb166de9097d7de06a4f0cf2275289cbb.js" integrity="sha256-pf4Jh&#43;M8CVBHwVbgWPLP3rFm3pCX194GpPDPInUonLs=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -348,7 +348,24 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#197-thermodynamic-process-and-the-1st-law">19.7 Thermodynamic Process and the 1st Law</a>
       <ul>
         <li><a href="#isothermal-process-delta-t--0">Isothermal Process (.$\Delta T = 0$)</a></li>
-        <li><a href="#adiabatic-process-delta-t--0">Adiabatic Process (.$\Delta T = 0$)</a></li>
+        <li><a href="#adiabatic-process-q--0">Adiabatic Process (.$Q = 0$)</a></li>
+        <li><a href="#isobaric-and-isovolumetric">Isobaric and Isovolumetric</a></li>
+        <li><a href="#work-done-in-volume-changes">Work done in volume changes</a></li>
+        <li><a href="#free-expansion">Free Expansion</a></li>
+      </ul>
+    </li>
+    <li><a href="#198-molar-specific-heats-for-gases-and-equipartition-of-energy">19.8 Molar Specific Heats for Gases and Equipartition of Energy</a>
+      <ul>
+        <li><a href="#molar-specific-heat">Molar Specific Heat</a></li>
+        <li><a href="#equipartition-of-energy">Equipartition of Energy</a></li>
+      </ul>
+    </li>
+    <li><a href="#199-adiabatic-expansion-of-a-gas">19.9 Adiabatic Expansion of a Gas</a></li>
+    <li><a href="#1910-heat-transfer">19.10 Heat Transfer</a>
+      <ul>
+        <li><a href="#conduction">Conduction</a></li>
+        <li><a href="#convection">Convection</a></li>
+        <li><a href="#radiation">Radiation</a></li>
       </ul>
     </li>
   </ul>
@@ -630,7 +647,7 @@ $$\Delta K + \Delta U + \Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\
   <a class="anchor" href="#isothermal-process-delta-t--0">#</a>
 </h2>
 <p>
-  <img src="/docs/physics-7b/imgs/isothermal.png" alt="PV Diagram" /></p>
+  <img src="/docs/physics-7b/imgs/isothermal.png" alt="Isothermal PV Diagram" /></p>
 <ul>
 <li>When temperature is constant, .$PV = \text{constant}$</li>
 <li>Each label of points in the graph above represent the systems states (it&rsquo;s pressure and temperatures)</li>
@@ -640,12 +657,317 @@ $$\Delta K + \Delta U + \Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\
 </ul>
 </li>
 <li>We also assume that the container is a <strong>heat reservoir</strong>: a body whose mass is so big that the temperature doesn&rsquo;t change when heat is exchanged</li>
-<li></li>
+<li>We increase internal energy by doing work, such as by decreasing the volume of the container with by applying a force to a piston over some distance
+<ul>
+<li>We assume that expansion/compression is <strong>
+  <a href="https://en.wikipedia.org/wiki/Quasistatic_process">quasistatic</a></strong>: we decrease the volume slow enough that we can consider it a series of equilibrium states all at the same temperature</li>
 </ul>
-<h2 id="adiabatic-process-delta-t--0">
-  Adiabatic Process (.$\Delta T = 0$)
-  <a class="anchor" href="#adiabatic-process-delta-t--0">#</a>
+</li>
+<li>E.x. if we started with state .$A$ and added heat .$Q$ to the system, the system would reach point .$B$
+<ul>
+<li>If .$T$ remain constant, the volume will expand, both doing work .$W$ on the environment and decreasing the .$P$</li>
+<li>We know .$E_\text{int} = \frac{3}{2}nR\Delta T$, and since .$\Delta T = 0 \rightarrow E_\text{int} = 0$</li>
+<li>Thus, .$E_\text{int} = Q - W \rightarrow W = Q$</li>
+</ul>
+</li>
+</ul>
+<h2 id="adiabatic-process-q--0">
+  Adiabatic Process (.$Q = 0$)
+  <a class="anchor" href="#adiabatic-process-q--0">#</a>
 </h2>
+<p>
+  <img src="/docs/physics-7b/imgs/adia-v-iso.png" alt="Adiabatic vs Isothermal" /></p>
+<ul>
+<li>No heat allowed to flow in our out of system. This can happen if&hellip;
+<ul>
+<li>Process happens so quickly that heat, a slow process, has no time to flow in/out
+<ul>
+<li>E.x. a combustion engine happens quickly it&rsquo;s nearly adiabatic</li>
+</ul>
+</li>
+<li>System is well insulated</li>
+</ul>
+</li>
+<li>If a system experiences an adiabatic process slowly, it will look similar to curve .$AC$</li>
+<li>Since .$Q = 0 \rightarrow \Delta E_\text{int} = -W$</li>
+<li>In a reverse processes represented by .$CA$ (adiabatic compression), work is done <em>on</em> the gas so .$E_\text{int}$ and .$T$ rise</li>
+</ul>
+<h2 id="isobaric-and-isovolumetric">
+  Isobaric and Isovolumetric
+  <a class="anchor" href="#isobaric-and-isovolumetric">#</a>
+</h2>
+<p>
+  <img src="/docs/physics-7b/imgs/iso-bar-vol.png" alt="Isobaric and Isovolumetric" /></p>
+<ul>
+<li><strong>
+  <a href="https://en.wikipedia.org/wiki/Isobaric_process">Isobaric</a></strong>: .$\Delta P = 0 \rightarrow Q = \Delta E_\text{int} + W = \Delta E_\text{int} + P\Delta V$. The heat transferred to the system does work, but also changes the internal energy of the system</li>
+<li><strong>
+  <a href="https://en.wikipedia.org/wiki/Isochoric_process">Isovolumetric</a></strong>: .$\Delta V = 0 \rightarrow W = 0 \rightarrow Q = \Delta E_\text{int}$. The thermodynamic process is the addition or removal of heat.</li>
+<li>First law of thermo holds for both of these processes</li>
+</ul>
+<h2 id="work-done-in-volume-changes">
+  Work done in volume changes
+  <a class="anchor" href="#work-done-in-volume-changes">#</a>
+</h2>
+<ul>
+<li>For quasistatic processes:</li>
+</ul>
+<p>$$dW = \vec{F} \cdot d\vec{l} = PA d\vec{l} = P\ dV \ \ \ \text{(1)}$$
+$$W = \int dW = \int_{V_A}^{V_B} P\ dV \ \ \ \text{(2)}$$</p>
+<ul>
+<li>.$\text{(1)}$ Where .$F = PA$ is the force the gas exerts on the piston and .$d\vec{l}$ is the (small) distance the piston moves</li>
+<li>.$\text{(2)}$ This shows that the work done is the area under the .$PV$ curve
+<ul>
+<li>This equations are valid for work done in any volume change (solid, liquids, gas)</li>
+</ul>
+</li>
+<li>.$W$ (and even .$Q$) depends on the initial and final states and also on the process (or path)</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+     <!-- begin -->
+<div style="text-align: center"><h3 id="isothermal">
+  <strong>Isothermal</strong>
+  <a class="anchor" href="#isothermal">#</a>
+</h3>
+</div>
+$$W = \int_{V_A}^{V_B} P \ dV$$
+$$... = nRT \int_{V_A}^{V_B} \frac{dV}{V}$$
+$$... = nRT \ln{\frac{V_B}{V_A}}$$
+
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- separator -->
+<p>
+  <img src="/docs/physics-7b/imgs/iso-work.png" alt="Isothermal Work" />
+  </div>
+
+</div>
+
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- begin -->
+<div style="text-align: center"><h3 id="isovol-and-isobaric">
+  <strong>Isovol. and Isobaric</strong>
+  <a class="anchor" href="#isovol-and-isobaric">#</a>
+</h3>
+</div>
+<p>$$W_{\text{Isovol.}} = 0$$
+$$W_{\text{Isobaric}} = \int_{V_A}^{V_B} P \ dV$$
+$$&hellip; = P \Delta V$$
+$$&hellip; = P_B(V_B - V_A)$$
+$$&hellip; = = nRT_B(1 - \frac{V_A}{V_B})$$
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- separator -->
+<p>
+  <img src="/docs/physics-7b/imgs/iso-bar-vol-work.png" alt="Isobaric and Isovolumetric Work" />
+  </div>
+
+</div>
+
+<h2 id="free-expansion">
+  Free Expansion
+  <a class="anchor" href="#free-expansion">#</a>
+</h2>
+<ul>
+<li>A type of adiabatic process where gas is allowed to expand in a volume without doing any work</li>
+<li>Must be done with insulated containers so that no heat is able to flow in/out; .$Q = 0$</li>
+<li>No work is done either because no object is moved; .$W = 0$</li>
+<li>Thus, .$\Delta E_\text{int} = 0$</li>
+<li>In reality, we see temperature slightly drops meaning internal energy does depend on pressure or volume as well as temperature.</li>
+</ul>
+<h1 id="198-molar-specific-heats-for-gases-and-equipartition-of-energy">
+  19.8 Molar Specific Heats for Gases and Equipartition of Energy
+  <a class="anchor" href="#198-molar-specific-heats-for-gases-and-equipartition-of-energy">#</a>
+</h1>
+<h2 id="molar-specific-heat">
+  Molar Specific Heat
+  <a class="anchor" href="#molar-specific-heat">#</a>
+</h2>
+<ul>
+<li>Specific heat for gases depends heavily on the process and how it&rsquo;s carried out</li>
+<li>Specific heat for constant pressure and constant volume vary</li>
+<li>We use molar specific heat for gases: .$C_V$ and .$C_P$ which are defined as the heat required to raise .$1 \text{ mol}$ of gas by .$1^\circ \text{ C}$ at a constant volume or pressure respectively.</li>
+<li>We then use .$n$ instead of .$m$ in our heat equations:
+$$Q = nC_V \Delta T\ \ \ \text{[Constant Volume]}$$
+$$Q = nC_P \Delta T\ \ \ \text{[Constant Pressure]}$$</li>
+</ul>
+<p>which we can then relate to the specific heat with .$M$ as the molecular mass of the gas, .$m/n$ in grams/mol:</p>
+<p>$$C_V = Mc_V$$
+$$C_p = Mc_p$$</p>
+<ul>
+<li>
+<p>In a heating process, when .$\Delta V = 0$ then the heat added, .$Q_V$ goes entirely into internal energy: .$Q_V = \Delta E_\text{int}$</p>
+</li>
+<li>
+<p>However, when pressure is constant <strong>work is done</strong>. Thus, heat added, .$Q_P$, goes towards increasing internal energy and work: .$W=P\Delta V$</p>
+<ul>
+<li>Therefore, more heat is needed for a constant pressure system: .$Q_P = \Delta E_\text{int} + P\Delta V$</li>
+</ul>
+</li>
+<li>
+<p>Since .$\Delta E_\text{int}$ is the same for both processes, we can write .$Q_P - Q_V = P \Delta V$</p>
+<ul>
+<li>With an ideal gas, we know .$V = nRT/P$ so .$\Delta V = nR\Delta T/P$ which we can combine with the prior equations to get:
+$$nC_P\Delta T - nC_V \Delta T = P\bigg(\frac{nR\Delta T}{P}\bigg) \rightarrow C_P - C_V = R$$</li>
+</ul>
+</li>
+<li>
+<p>We can also relate internal energy to molar specific heat for monatomic gases at constant volumes:
+$$\Delta E_\text{int} = Q_V \rightarrow \frac{3}{2}nRT = nC_V\Delta T \rightarrow C_V = \frac{3}{2}R$$</p>
+</li>
+<li>
+<p>We can then plug in our new value for .$C_V$ into the second to last equation .$C_P - C_V = R$ to get .$C_P = \frac{5}{2}R$ for a monatomic gas.</p>
+</li>
+</ul>
+<h2 id="equipartition-of-energy">
+  Equipartition of Energy
+  <a class="anchor" href="#equipartition-of-energy">#</a>
+</h2>
+<p>
+  <img src="/docs/physics-7b/imgs/deg-temp.png" alt="Degrees of Freedom related to temperature" /></p>
+<ul>
+<li><strong>Degrees of Freedom</strong>: The number of independent ways a molecule and posses energy
+<ul>
+<li>Degrees of freedom depend on the temperature</li>
+<li>At low temperatures, the only degree of freedom is from translational KE; Diatomic gas: .$C_V = \frac{3}{2}R$</li>
+<li>At &ldquo;regular&rdquo; temperatures, the molecules posses rotation energy. Diatomic gas: .$C_V = \frac{5}{2}R$</li>
+<li>At higher temperatures, the molecules gain energy associated with their vibrations:
+<ul>
+<li>One from KE of the molecules vibrating back and forth</li>
+<li>The second from PE of the vibrational motion (think of this as a spring&rsquo;s PE)</li>
+</ul>
+</li>
+<li>Solids:
+<ul>
+<li>The molar temperature of solids at high temperatures is close to .$3R$.</li>
+<li>At high temperatures, there are six degrees of freedom: three from vibrational KE in the .$x, y,$ and .$z$ axis and three more from spring PE in the same axis</li>
+<li>Some of these degrees of freedom aren&rsquo;t active at lower temperatures</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Principle of Equipartition of Energy</strong>: Energy is shared equally among degrees of freedom and each degrees has energy .$\frac{1}{2}k_bT$
+<ul>
+<li>Thus, for a particle with three degrees of freedom (such as a monatomic gas) .$C_V = \frac{3}{2}R$</li>
+<li>Diatomic gases have five degrees so they have .$C_V = \frac{5}{2}R = 4.97 \text{ cal/(mol K)}$ and have .$E_\text{int} = N(\frac{5}{2}k_BT) = \frac{5}{2}nRT$ where .$n$ is the number of moles and .$N$ is the number of molecules</li>
+</ul>
+</li>
+</ul>
+<h1 id="199-adiabatic-expansion-of-a-gas">
+  19.9 Adiabatic Expansion of a Gas
+  <a class="anchor" href="#199-adiabatic-expansion-of-a-gas">#</a>
+</h1>
+<ul>
+<li>The .$PV$ curve for adiabatic expansion (.$Q=0$) is slightly less steep than isothermal processes (.$\Delta T = 0$)
+<ul>
+<li>This means that for the same change in volume, the pressure will be greater in adiabatic processes</li>
+<li>Therefore, the temperature of a gas must drop in adiabatic expansion and rise in adiabatic compression</li>
+</ul>
+</li>
+<li>We can relate .$P$ and .$V$ for a quasistatic expansion / compression with
+$$PV^\gamma = \text{[constant] for } \gamma = \frac{C_P}{C_V}$$</li>
+</ul>
+<h1 id="1910-heat-transfer">
+  19.10 Heat Transfer
+  <a class="anchor" href="#1910-heat-transfer">#</a>
+</h1>
+<h2 id="conduction">
+  Conduction
+  <a class="anchor" href="#conduction">#</a>
+</h2>
+<ul>
+<li>Conduction can be visualized thinking of molecular collisions
+<ul>
+<li>The hot end of an object has fast moving molecules</li>
+<li>These molecules bump into other molecules, transferring them some of their own KE</li>
+<li>This keeps repeating down the object</li>
+</ul>
+</li>
+<li>Free electrons are the primary source of these collisions</li>
+<li>Heat conduction only occurs when there is a difference in temperatures</li>
+<li>Heat conduction rate is proportional to the difference in temperatures:
+$$\frac{Q}{t} = kA\frac{T_1 - T_2}{l}$$</li>
+<li>Where .$A$ is the cross section area, .$l$ is the distance between the two ends, and .$k$ is a constant called <strong>thermal conductivity</strong> that depends on the material
+<ul>
+<li>Good insulator have a low .$k$</li>
+<li>Building materials sometimes list the thermal resistance, .$R$, which is equal to .$R = \frac{l}{k}$ where .$l$ is the material&rsquo;s thickness
+<ul>
+<li>Larger .$R$ means better insulation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If .$k$ or .$A$ isn&rsquo;t constant, we consider a small thickness:
+$$ \frac{dQ}{dt} = -kA \frac{dT}{dx}$$</li>
+<li>.$\frac{T_1 - T_2}{l} \text{and} \frac{dT}{dx}$ is called the temperature gradient</li>
+<li>We have a negative sign in the equation above because the direction of heat flow is opposite to the temperature gradient</li>
+</ul>
+<h2 id="convection">
+  Convection
+  <a class="anchor" href="#convection">#</a>
+</h2>
+<ul>
+<li>Convection involves heat flowing by the bulk movement of molecules from one place to another</li>
+<li>Whereas conduction involved molecules/electrons moving over small distances, convection involves the movement of a large number of molecules over a long distance</li>
+<li><strong>Natural Convection</strong> occurs in systems where a cold substance (air, water) is warmed and subsequently expands, decreasing density and thus rising</li>
+</ul>
+<h2 id="radiation">
+  Radiation
+  <a class="anchor" href="#radiation">#</a>
+</h2>
+<ul>
+<li>
+<p>Whereas conduction and convection require a medium, radiation doesn&rsquo;t</p>
+<ul>
+<li>The sun&rsquo;s rays are a form of heat and travel through (nearly empty) space
+<ul>
+<li>Radiation of the sun&rsquo;s rays arrive on a clear day at a rate around .$1000 \text{W/m}^2$</li>
+</ul>
+</li>
+<li>Most of the time radiation consists of electromagnetic waves, but infrared (IR) wavelengths are responsible for heating Earth</li>
+</ul>
+</li>
+<li>
+<p>The rate at which energy leaves a radiation object, .$Q/t$, is
+$$ \frac{Q}{t} \epsilon \sigma A T^4$$</p>
+</li>
+<li>
+<p>.$\epsilon$ is called emissivity.</p>
+<ul>
+<li>Between 0 and 1</li>
+<li>Characteristic of the surface of the radiating material</li>
+<li>Black surfaces close to one, shiny metal surfaces close to zero</li>
+<li>Depends slightly on the temperature of the material</li>
+<li>A good absorber is also a good emitter
+<ul>
+<li>A black tee shirt gets very hot because it absorbs nearly all the radiation that hits it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>.$\sigma$ is the Stefan-Boltzmann constant: .$\sigma = 5.67 \cdot 10^{-8} \text{ W/(m}^2 \text{K}^4\text{)}$</p>
+</li>
+<li>
+<p>Objects also absorb heat of surrounding objects. This net heat flow can be found by
+$$ \frac{Q}{t} \epsilon \sigma A (T_1^4 - T_2^4)$$</p>
+</li>
+<li>
+<p>Where .$T_1$ is the object&rsquo;s temperature and .$T_2$ is the surrounding environment&rsquo;s temperature</p>
+</li>
+<li>
+<p>.$T_1 &gt; T_2$: net flow of heat is from object to the surroundings</p>
+</li>
+<li>
+<p>.$T_1 &lt; T_2$: net flow of heat is from surroundings into object, raising the object temperature</p>
+</li>
+</ul>
 </article>
  
       
@@ -654,6 +976,12 @@ $$\Delta K + \Delta U + \Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/0b1217e95090ed50c9809780a4241ea7cae733a7" title='Last modified by Max Vogel | September 7, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 7, 2021</span>
+    </a>
+  </div>
 
 
 
@@ -723,7 +1051,24 @@ $$\Delta K + \Delta U + \Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\
     <li><a href="#197-thermodynamic-process-and-the-1st-law">19.7 Thermodynamic Process and the 1st Law</a>
       <ul>
         <li><a href="#isothermal-process-delta-t--0">Isothermal Process (.$\Delta T = 0$)</a></li>
-        <li><a href="#adiabatic-process-delta-t--0">Adiabatic Process (.$\Delta T = 0$)</a></li>
+        <li><a href="#adiabatic-process-q--0">Adiabatic Process (.$Q = 0$)</a></li>
+        <li><a href="#isobaric-and-isovolumetric">Isobaric and Isovolumetric</a></li>
+        <li><a href="#work-done-in-volume-changes">Work done in volume changes</a></li>
+        <li><a href="#free-expansion">Free Expansion</a></li>
+      </ul>
+    </li>
+    <li><a href="#198-molar-specific-heats-for-gases-and-equipartition-of-energy">19.8 Molar Specific Heats for Gases and Equipartition of Energy</a>
+      <ul>
+        <li><a href="#molar-specific-heat">Molar Specific Heat</a></li>
+        <li><a href="#equipartition-of-energy">Equipartition of Energy</a></li>
+      </ul>
+    </li>
+    <li><a href="#199-adiabatic-expansion-of-a-gas">19.9 Adiabatic Expansion of a Gas</a></li>
+    <li><a href="#1910-heat-transfer">19.10 Heat Transfer</a>
+      <ul>
+        <li><a href="#conduction">Conduction</a></li>
+        <li><a href="#convection">Convection</a></li>
+        <li><a href="#radiation">Radiation</a></li>
       </ul>
     </li>
   </ul>
