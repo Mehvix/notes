@@ -11,12 +11,12 @@
 
 <meta property="article:modified_time" content="2021-09-07T23:41:44-07:00" />
 
-<title>10: Parametric Equations and Polar Coordinates | Berkeley Notes</title>
+<title>10: Parametric Equations and Polar Coordinates | notes.mehvix.com</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5fe0987e33c095047c156e058f2cfdeb166de9097d7de06a4f0cf2275289cbb.js" integrity="sha256-pf4Jh&#43;M8CVBHwVbgWPLP3rFm3pCX194GpPDPInUonLs=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.7fb8140d1fdeac5e0f2a1854b55822c88757b71c565ff51d2549753eaa8777b1.js" integrity="sha256-f7gUDR/erF4PKhhUtVgiyIdXtxxWX/UdJUl1PqqHd7E=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -24,28 +24,28 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   <link
-    rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>"
+	rel="icon"
+	href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
 />
 
 <script>
-    MathJax = {
-        tex: {
-            inlineMath: [
-                ["$", "$"],
-                [".$", "$"],
-            ],
-        },
-    };
+	MathJax = {
+		tex: {
+			inlineMath: [
+				["$", "$"],
+				[".$", "$"],
+			],
+		},
+	};
 </script>
 
 <script
-    id="MathJax-script"
-    async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
-    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+	id="MathJax-script"
+	async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
+	integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
 ></script>
 
 <link rel="stylesheet" href="http://notes.mehvix.com/css/custom_styling.css" />
@@ -60,7 +60,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Berkeley Notes</span>
+  <a class="flex align-center" href="/"><span>notes.mehvix.com</span>
   </a>
 </h2>
 
@@ -124,7 +124,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Cheat Sheet</a>
+    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Identities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/trig-calc/" class="">Trig Calculus</a>
   
 
         </li>
@@ -393,23 +406,13 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#tangents">#</a>
 </h2>
 <ul>
-<li>
-<p>Given .$x=f(t)$ and .$y=g(t)$ where both .$f$ and .$g$ are differentiable, we can get the tangent line to the curve by finding .$\frac{dy}{dx}$</p>
-</li>
-<li>
-<p>We can find .$\frac{dy}{dt}$ using the chain rule:
-$$\frac{dy}{dx} \cdot \frac{dx}{dt}$$</p>
-</li>
-<li>
-<p>If .$\frac{dx}{dt} \neq 0$ , then we can solve .$\frac{dy}{dt}$ :
-$$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</p>
-</li>
-<li>
-<p>Horizontal tangents exist when .$\frac{dy}{dt}=0$ (assuming .$\frac{dx}{dt} \neq 0$ )</p>
-</li>
-<li>
-<p>Vertical tangents exist when .$\frac{dx}{dt}=0$ (assuming .$\frac{dy}{dt} \neq 0$ )</p>
-</li>
+<li>Given .$x=f(t)$ and .$y=g(t)$ where both .$f$ and .$g$ are differentiable, we can get the tangent line to the curve by finding .$\frac{dy}{dx}$</li>
+<li>We can find .$\frac{dy}{dt}$ using the chain rule:
+$$\frac{dy}{dx} \cdot \frac{dx}{dt}$$</li>
+<li>If .$\frac{dx}{dt} \neq 0$ , then we can solve .$\frac{dy}{dt}$ :
+$$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</li>
+<li>Horizontal tangents exist when .$\frac{dy}{dt}=0$ (assuming .$\frac{dx}{dt} \neq 0$ )</li>
+<li>Vertical tangents exist when .$\frac{dx}{dt}=0$ (assuming .$\frac{dy}{dt} \neq 0$ )</li>
 </ul>
 <h2 id="double-derivative">
   Double Derivative
@@ -420,25 +423,25 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</p>
   Areas
   <a class="anchor" href="#areas">#</a>
 </h2>
-<p>Given .$x=f(t)$ and .$y=g(t)$ over .$t \in (\alpha, \beta)$ , we can calculate the area between .$C$ and the .$x$ -axis with the following equation</p>
-<p>$$A = \int_\alpha^\beta f'(t) \cdot g(t)\ dt $$</p>
-<p>Likewise, between .$C$ and the <strong>.$y$ -axis</strong> we derive the parametric equation for .$y$ :</p>
-<p>$$A = \int_\alpha^\beta f(t) \cdot g'(t)\ dt $$</p>
+<p>Given .$x=f(t)$ and .$y=g(t)$ over .$t \in (\alpha, \beta)$ , we can calculate the area between .$C$ and the .$x$ -axis with the following equation
+$$A = \int_\alpha^\beta f'(t) \cdot g(t)\ dt $$
+Likewise, between .$C$ and the **.$y$ -axis** we derive the parametric equation for .$y$ :
+$$A = \int_\alpha^\beta f(t) \cdot g'(t)\ dt $$</p>
 <h2 id="arc-length">
   Arc Length
   <a class="anchor" href="#arc-length">#</a>
 </h2>
-<p>To find length .$L$ of curve .$C$ given in form .$x=f(t)$ and .$y=g(t)$ on .$t \in [\alpha, \beta]$ where .$\frac{dx}{dt} = f'(t) &gt; 0$ (meaning that .$C$ is traversed once from left to right as .$t$ increases from .$\alpha$ to .$\beta$ ) and where .$f'$ and .$g'$ are continuous on .$[\alpha, \beta]$ :</p>
-<p>$$L = \int_\alpha^\beta \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
-<p>Note that trig functions (.$\sin, \cos, \text{etc.})$ ) loop every .$\frac{\pi}{2}$ because of the formula finds the absolute value.</p>
+<p>To find length .$L$ of curve .$C$ given in form .$x=f(t)$ and .$y=g(t)$ on .$t \in [\alpha, \beta]$ where .$\frac{dx}{dt} = f'(t) &gt; 0$ (meaning that .$C$ is traversed once from left to right as .$t$ increases from .$\alpha$ to .$\beta$ ) and where .$f'$ and .$g'$ are continuous on .$[\alpha, \beta]$ :
+$$L = \int_\alpha^\beta \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$
+Note that trig functions (.$\sin, \cos, \text{etc.})$ ) loop every .$\frac{\pi}{2}$ because of the formula finds the absolute value.</p>
 <h2 id="surface-area">
   Surface Area
   <a class="anchor" href="#surface-area">#</a>
 </h2>
-<p>Suppose the curve .$C$ given the equations .$x=f(t)$ and .$y=g(t)$ on .$\ t \in [\alpha, \beta]$ where .$f'$ and .$g'$ are continuous, and .$g(t) &gt; 0$ , is rotated about the .$x$ -axis. If .$C$ is traversed exactly once, then the area of the resulting surface is given by</p>
-<p>$$S =  2\pi \int_\alpha^\beta y(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
-<p>Similarly, if instead .$C$ is rotated about the .$y$ -axis instead we use the following:</p>
-<p>$$S =  2\pi \int_\alpha^\beta x(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
+<p>Suppose the curve .$C$ given the equations .$x=f(t)$ and .$y=g(t)$ on .$\ t \in [\alpha, \beta]$ where .$f'$ and .$g'$ are continuous, and .$g(t) &gt; 0$ , is rotated about the .$x$ -axis. If .$C$ is traversed exactly once, then the area of the resulting surface is given by
+$$S =  2\pi \int_\alpha^\beta y(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$
+Similarly, if instead .$C$ is rotated about the .$y$ -axis instead we use the following:
+$$S =  2\pi \int_\alpha^\beta x(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
 <h1 id="103-polar-coordinates">
   10.3 Polar Coordinates
   <a class="anchor" href="#103-polar-coordinates">#</a>
@@ -484,8 +487,8 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr
 <li>Vertical Tangent: .$\frac{dx}{d\theta} = 0$ (when .$\frac{dy}{d\theta} \neq 0$ )</li>
 <li>Notice that for .$r=0$ , then .$\frac{dy}{dx} = \tan\theta$ if .$\frac{dr}{d\theta} \neq 0$</li>
 </ul>
-<p>We can then write the full formula:</p>
-<p>$$y-y_0 = \frac{dy}{dx}\Big(\theta\Big)(x-x_0)$$</p>
+<p>We can then write the full formula:
+$$y-y_0 = \frac{dy}{dx}\Big(\theta\Big)(x-x_0)$$</p>
 <h1 id="104-area-and-lengths-in-polar-coordinates">
   10.4 Area and Lengths in Polar Coordinates
   <a class="anchor" href="#104-area-and-lengths-in-polar-coordinates">#</a>
@@ -494,22 +497,22 @@ $$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr
   Area of Polar Region
   <a class="anchor" href="#area-of-polar-region">#</a>
 </h2>
-<p>Knowing that the area of a &ldquo;slice&rdquo; can be written as .$A = \frac{1}{2}r^2\theta$ , we can expand this to the case where the curve is a function .$r = f(\theta)$ :</p>
-<p>$$A = \int_a^b \frac{1}{2} r^2\ d\theta$$</p>
+<p>Knowing that the area of a &ldquo;slice&rdquo; can be written as .$A = \frac{1}{2}r^2\theta$ , we can expand this to the case where the curve is a function .$r = f(\theta)$ :
+$$A = \int_a^b \frac{1}{2} r^2\ d\theta$$</p>
 <h2 id="arc-length-of-polar-curve">
   Arc Length of Polar Curve
   <a class="anchor" href="#arc-length-of-polar-curve">#</a>
 </h2>
-<p>Given a polar curve .$r=f(\theta), a \leq \theta \leq b$ , we can re-write our base equations as</p>
-<p>$$x = r\cos\theta = f(\theta)\cos\theta$$
-$$y = r\sin\theta = f(\theta)\sin\theta$$</p>
-<p>Thus we can use the product rule when differentiating to get</p>
-<p>$$\frac{dx}{d\theta} = \frac{dr}{d\theta}\cos\theta - r\sin\theta$$
-$$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$</p>
-<p>and using .$\cos^2\theta + \sin^2\theta = 1$ , we have</p>
-<p>$$\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2 = [\text{ugly stuff, see page 711}] = \Big(\frac{dr}{d\theta}\Big)^2 + r^2$$</p>
-<p>so when .$f'$ is continuos, we can write the acc length equation as</p>
-<p>$$L = \int_a^b \sqrt{\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2} d\theta = \int_a^b \sqrt{r^2 + \Big(\frac{dr}{d\theta}\Big)^2}d\theta$$</p>
+<p>Given a polar curve .$r=f(\theta), a \leq \theta \leq b$ , we can re-write our base equations as
+$$x = r\cos\theta = f(\theta)\cos\theta$$
+$$y = r\sin\theta = f(\theta)\sin\theta$$
+Thus we can use the product rule when differentiating to get
+$$\frac{dx}{d\theta} = \frac{dr}{d\theta}\cos\theta - r\sin\theta$$
+$$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$
+and using .$\cos^2\theta + \sin^2\theta = 1$ , we have
+$$\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2 = [\text{ugly stuff, see page 711}] = \Big(\frac{dr}{d\theta}\Big)^2 + r^2$$
+so when .$f'$ is continuos, we can write the acc length equation as
+$$L = \int_a^b \sqrt{\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2} d\theta = \int_a^b \sqrt{r^2 + \Big(\frac{dr}{d\theta}\Big)^2}d\theta$$</p>
 <h2 id="common-shapes">
   Common shapes
   <a class="anchor" href="#common-shapes">#</a>
@@ -519,8 +522,8 @@ $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$</p>
   <a class="anchor" href="#rose">#</a>
 </h3>
 <p>
-  <img src="/docs/math-53/imgs/rose.gif" alt="Rose" /></p>
-<p>$$a\cdot[\sin \text{or} \cos](k\cdot\theta)$$</p>
+  <img src="/docs/math-53/imgs/rose.gif" alt="Rose" />
+$$a\cdot[\sin \text{or} \cos](k\cdot\theta)$$</p>
 <ul>
 <li>.$r$ = .$a$</li>
 <li>.$\sin$ = Symmetry over .$\theta = 0$</li>
@@ -536,8 +539,8 @@ $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$</p>
   <a class="anchor" href="#cardioid">#</a>
 </h3>
 <p>
-  <img src="/docs/math-53/imgs/cardioid.jpg" alt="Cardioid" /></p>
-<p>$$r(\theta) = a(1-\cos\theta)$$
+  <img src="/docs/math-53/imgs/cardioid.jpg" alt="Cardioid" />
+$$r(\theta) = a(1-\cos\theta)$$
 $$A = \frac{3}{2}\pi a^2$$
 $$L=8a$$</p>
 <h3 id="limaçon">
@@ -545,9 +548,9 @@ $$L=8a$$</p>
   <a class="anchor" href="#lima%c3%a7on">#</a>
 </h3>
 <p>
-  <img src="/docs/math-53/imgs/limacon.gif" alt="Limaçon" /></p>
-<p>$$r=b+a\cos\theta$$</p>
-<p>
+  <img src="/docs/math-53/imgs/limacon.gif" alt="Limaçon" />
+$$r=b+a\cos\theta$$
+
   <a href="https://mathworld.wolfram.com/Limacon.html">Other equations I&rsquo;m too lazy to type out</a></p>
 </article>
  

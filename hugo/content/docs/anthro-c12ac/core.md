@@ -261,7 +261,7 @@
     - Didn't target urban areas
 - Urban Areas
     - Used fire suppression
-        > CA to spawn as AL to wilderness
+        > CA to spawn as AK to wilderness
     - Fires in SoCal rained embers onto cities
     - SoCal retaliated w larger firefighting force
 - New Practices
@@ -283,6 +283,30 @@
     - When there were flames, it was fight or flight
 - Many fire ideas spread from CA
     - Often transformed and simplified
+
+---
+
+- Fires are especially susceptible due to **Scioecological Systems (*SES*)**
+    1. History of fires suppression
+    2. Climate change
+    3. More extreme fire weather
+    4. Expanding development
+    5. Droughts
+- Difficult to predict future fire regimes well
+- Changes in human behavior can amplify, but tend to _cancel out climatic effects_ on fire regimes
+    - For example, humans alter through changing land use, ignitions, fuel conditions, or fire suppression
+    - Fire **activity** is influenced by climate variability
+        - More (less) fire occurred in dry (wet) and warm (cool) years, and high-fire years were preceded by moist and sometimes cool conditions 1–4 y earlier.
+    - (Sierra Nevada) **fire-regime shifts** correlate to **SES changes**, _not shifts in climate_.
+- Are best bet is to look at history and see how fire regimes changed from past changes in socioeconomic variables
+    - Climate increased fire activity on a large-scale **after Native American depopulation** reduced the buffering effect of due to their burnings 
+        - Sierra Nevada tribes were hunter-gatherers who used sophisticated burning practices to manage resources
+        - The fire index nearly doubled after depopulation 
+    - Later Euro-American settlement and fire suppression buffered fire activity from temperature increases
+        - Logging, fire suppression, livestock increase (grazing effects)
+- The overall sensitivity of fire regimes to low-frequency temperature variation is related to temperature-driven vegetation changes that alter fuel structure and fuel type
+    - 
+
 
 # Peopling of North America
 
@@ -430,15 +454,84 @@
     - 4.5 million acres/yr. burned 
 
 
+## Costal California Today
+
+- Large area: scotia to Morro bay
+- Very diverse vegetation type 
+    - From mixed conifer to costal prairie
+    - Fire regimes depend on vegetation, thus they're diverse
+- General ignition sources
+    - At higher mountains, lighting  ignition occurs (still rare, however)
+    - At lower elevations / costal areas, human ignition is the main sources
+        - Looking at history, we see that Indian fires dominated for thousands of years 
+- Sudden oak death (SOD) in Tanoak Forest
+    - Invasive pathogen in Marin Country
+    - Dead trees increase the severity of fires
+- Prescribed fire periods
+    - Done in fall if not drying to damage trees 
+        - Trees are in dormant phase, less damaging
+    - Done in spring if trying to control/limit
+        - Wet spring conditions are easier to manage
 
 
-(Include below + maybe point above with Friday lecture notes?)
-**Chaparral**
-- Stand replacing regime
-- 30-75 yr. interval 
-- High intensity burns
-- Climate driven (droughts) 
-- Low fuel moistures
-- Foehn winds (Santa Ana’s)
-- Fire scars -- few, some bigcone Douglas-fir
+### Location Types
 
+- Costal Prairie
+    - Interval: Short
+        - Frequent fires critical to killing shrubs/trees
+        - Therefore, due to human intervention douglas-fir and shrublands have began to take over prairies
+    - Source: Indian
+    - Type: high -- removes overstory of grass
+    - Size: Small to moderate
+- Coast Redwood
+    - Can re-sprout after fires
+    - Interval: Short up to 1880's
+    - Severity: low
+    - Size: Small to moderate
+    - Source: Indian burnings
+- California Annual Grasslands
+    - Interval: Short
+    - Severity: high -- removes overstory of grass
+    - Size: Moderate to Large
+    - Non-native plants dominate today, very different
+        - Human intervention lead to overgrazing and drought which enhanced ability for mediterranean plants to prosper
+        - It's hard to go back and restore to native ecosystem state
+- Coastal Scrub -- Coyote Bush (Oakland hills)
+    - Interval: Moderate
+    - Severity: High
+    - Size: Moderate
+    - Source: Indian burnings for diverse objectives
+- Oak Woodlands, Mixed Oak Woodland
+    - Frequency: High
+    - Size: Small
+    - Intensity: Low
+    - Naturally dense
+        - Very dense nowadays due to lack of Indian burnings
+    - Mosaic of vegetation patches created that limit fire spread
+- Chaparral
+    - Interval: Moderate
+        - Frequent burnings can lead to (invasive) grassland conversion (especially in SoCal)
+        - Many other "_fire follower_" species begin growing after fires too
+    - Severity: High
+        - Very volatile even in spring (non-dry conditions) 
+    - Size: Moderate to high
+    - Stand replacing regime
+        - 30-75 yr. interval 
+        - Crown fire adapted
+        - High intensity burns
+        - Climate driven 
+            - droughts 
+            - Low fuel moistures
+            - **Foehn winds** -- Winds from east that are generally dry and warm
+    - Fire scars -- not common
+- Knobcone Pine 
+  - Severity: High
+        - High severity required to activate seeds 
+  - Interval: Moderate to long
+  - Size: Moderate to large
+  - Overstory tends to burn completely
+- Douglas-fir in North Coast
+    - Severity: Moderate
+    - Interval: Low to moderate
+    - Size: Moderate
+    - Changed from fire exclusion, harvesting, and fire suppression

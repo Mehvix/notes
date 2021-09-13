@@ -1,6 +1,6 @@
 {
-  "name": "Berkeley Notes",
-  "short_name": "Berkeley Notes",
+  "name": "notes.mehvix.com",
+  "short_name": "notes.mehvix.com",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

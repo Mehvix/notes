@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://notes.mehvix.com/math-53/12/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-07T23:41:44-07:00" />
+<meta property="article:modified_time" content="2021-09-09T00:09:00-07:00" />
 
-<title>12: Vectors and Geometry of Space | Berkeley Notes</title>
+<title>12: Vectors and Geometry of Space | notes.mehvix.com</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5fe0987e33c095047c156e058f2cfdeb166de9097d7de06a4f0cf2275289cbb.js" integrity="sha256-pf4Jh&#43;M8CVBHwVbgWPLP3rFm3pCX194GpPDPInUonLs=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.7fb8140d1fdeac5e0f2a1854b55822c88757b71c565ff51d2549753eaa8777b1.js" integrity="sha256-f7gUDR/erF4PKhhUtVgiyIdXtxxWX/UdJUl1PqqHd7E=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -24,28 +24,28 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   <link
-    rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>"
+	rel="icon"
+	href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
 />
 
 <script>
-    MathJax = {
-        tex: {
-            inlineMath: [
-                ["$", "$"],
-                [".$", "$"],
-            ],
-        },
-    };
+	MathJax = {
+		tex: {
+			inlineMath: [
+				["$", "$"],
+				[".$", "$"],
+			],
+		},
+	};
 </script>
 
 <script
-    id="MathJax-script"
-    async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
-    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+	id="MathJax-script"
+	async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
+	integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
 ></script>
 
 <link rel="stylesheet" href="http://notes.mehvix.com/css/custom_styling.css" />
@@ -60,7 +60,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Berkeley Notes</span>
+  <a class="flex align-center" href="/"><span>notes.mehvix.com</span>
   </a>
 </h2>
 
@@ -124,7 +124,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Cheat Sheet</a>
+    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Identities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/trig-calc/" class="">Trig Calculus</a>
   
 
         </li>
@@ -320,12 +333,14 @@ https://github.com/alex-shpak/hugo-book
 <nav id="TableOfContents">
   <ul>
     <li><a href="#121-3d-coordinate-systems">12.1 3D Coordinate Systems</a></li>
-    <li><a href="#122-vectors">12.2 Vectors</a>
+    <li><a href="#122-vectors">12.2 Vectors</a></li>
+    <li><a href="#123-dot-product">12.3 Dot Product</a>
       <ul>
-        <li><a href="#123-dot-product">12.3 Dot Product</a></li>
+        <li><a href="#direction-vectors">Direction Vectors</a></li>
         <li><a href="#projections">Projections</a></li>
       </ul>
     </li>
+    <li><a href="#124-cross-product">12.4 Cross Product</a></li>
   </ul>
 </nav>
 
@@ -390,14 +405,20 @@ $$ \vec{a} + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$</li>
 </ul>
 </li>
 </ul>
-<h2 id="123-dot-product">
+<h1 id="123-dot-product">
   12.3 Dot Product
   <a class="anchor" href="#123-dot-product">#</a>
-</h2>
+</h1>
 <ul>
-<li>Two vectors are perpendicular/orthogonal (.$90^\circ$ from one another) iff the dot product is 0</li>
-<li>.$\vec{a} \cdot \vec{b}$ is the length of .$\vec{a}$ times the scalar projection of .$\vec{b}$ onto .$\vec{a}$
-$$\langle a_1, a_2, a_3 \rangle \cdot \langle b_1, b_2, b_3 \rangle = a_1b_1 + a_2b_2 + a_3b_3$$
+<li>The dot product measures the extent which two vectors are parallel to one another
+<ul>
+<li>Two vectors are perpendicular/orthogonal .$\perp$ (.$90^\circ$ from one another) iff the dot product is 0</li>
+</ul>
+</li>
+<li>.$\vec{a} \cdot \vec{b}$ is the length of .$\vec{a}$ times the scalar projection of .$\vec{b}$ onto .$\vec{a}$</li>
+<li>Notice that the dot product gives a <em>scalar</em></li>
+</ul>
+<p>$$\langle a_1, a_2, a_3 \rangle \cdot \langle b_1, b_2, b_3 \rangle = a_1b_1 + a_2b_2 + a_3b_3$$
 <div class="book-columns flex flex-wrap">
 
   <div class="flex-even markdown-inner">
@@ -417,9 +438,19 @@ $$\cos\theta = \frac{\vec{a} \cdot \vec{b}}{\Vert\vec{a}\Vert\ \Vert\vec{b}\Vert
   </div>
 
 </div>
-</li>
+
+$$\cos \theta = \frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \Longrightarrow \cos^{-1}\bigg(\frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \bigg) = \theta $$
+
+  <img src="/docs/math-53/imgs/dot-general.png" alt="Dot Product" /></p>
+<h2 id="direction-vectors">
+  Direction Vectors
+  <a class="anchor" href="#direction-vectors">#</a>
+</h2>
+<ul>
+<li>The direction angles of a nonzero vector .$\vec a$ are the .$\alpha, \beta, \gamma$ that a makes with the positive .$x,y,z$-axes respectively
+$$\cos\alpha = \frac{\vec a \cdot \vec i}{\Vert \vec a \Vert \Vert \vec i \Vert} = \frac{a_1}{\Vert \vec a \Vert}$$
+$$\vec a = \Vert \vec a \Vert \langle \cos \alpha, \cos \beta, \cos \gamma \rangle$$</li>
 </ul>
-<p>$$\cos \theta = \frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \rightarrow \cos^{-1}\bigg(\frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \bigg) = \theta $$</p>
 <h2 id="projections">
   Projections
   <a class="anchor" href="#projections">#</a>
@@ -428,10 +459,58 @@ $$\cos\theta = \frac{\vec{a} \cdot \vec{b}}{\Vert\vec{a}\Vert\ \Vert\vec{b}\Vert
 <li>Scalar projection of .$\vec{b}$ onto .$\vec{a}$:
 $$\text{comp}_\vec{a}\vec{b} = \frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert}$$</li>
 <li>Vector projection of .$\vec{b}$ onto .$\vec{a}$:
-$$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert}\bigg)\frac{\vec{a}}{\Vert\vec{a}\Vert} = \frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert^2}\vec{a}$$</li>
+$$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert}\bigg)\frac{\vec{a}}{\Vert\vec{a}\Vert} = \frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert^2}\vec{a}$$
+
+  <img src="/docs/math-53/imgs/dot.png" alt="Dot Product" /></li>
 </ul>
-<p>
-  <img src="/docs/math-53/imgs/dot.png" alt="Dot Product" /></p>
+<h1 id="124-cross-product">
+  12.4 Cross Product
+  <a class="anchor" href="#124-cross-product">#</a>
+</h1>
+<ul>
+<li>The cross product measures how orthogonal two vectors are
+<ul>
+<li>Therefore, .$(\vec a \times \vec b) \cdot \vec b = 0$ because measures how similar (close to .$0^\circ$) two vectors are and cross product outputs a vector orthogonal (.$90^\circ$ to both .$\vec a, \vec b$)</li>
+<li>Two nonzero vectors are only parallel iff their cross product is zero</li>
+<li>The magnitude is also the <strong>area of a parallelogram</strong> formed by the two vectors
+<ul>
+<li>We can find the volume of the 3D parallelogram formed by three vectors with the following equation:
+$$\vec a \cdot (\vec b \times \vec c) = (\vec a \times \vec b) \cdot \vec c$$
+
+  <img src="/docs/math-53/imgs/3d-paral.png" alt="3D Parallelogram" /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Notice that the cross product gives a <em>vector</em> that is orthogonal to both original vectors
+<ul>
+<li>Direction is determined with the right-hand rule</li>
+</ul>
+</li>
+<li>We can also calculate the 
+  <a href="https://en.wikipedia.org/wiki/Determinant">determinant</a> with the unit vectors .$\langle \hat i, \hat j, \hat k \rangle$to find the cross product
+$$\langle a_1, a_2, a_3 \rangle \times \langle b_1, b_2, b_3 \rangle = \langle a_2b_3 - a_3 b_2, -(a1_b3 - a_3 b_1), a_1b_2 - a_2 b_1 \rangle$$
+$$\vec a \times \vec b = \Vert \vec a \Vert \Vert \vec b \Vert \sin\theta$$
+$$(\vec a \times \vec b) \times \vec c \neq \vec a \times (\vec b \times \vec c) \Longrightarrow \vec a \times (\vec b \times \vec c) = (\vec a \cdot \vec c) \vec b - (\vec a \cdot \vec b ) \vec c$$
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- begin -->
+<p>$$\vec a \times \vec b \neq \vec b \times \vec b \Longrightarrow \vec a \times \vec b = - \vec b \times \vec a$$
+$$(c \vec a) \times \vec b = c(\vec a \times \vec b) = \vec a \times (c \vec b)$$
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- separator -->
+<p>$$\vec a \times (\vec b + \vec c) = \vec a \times \vec b + \vec a \times \vec c$$
+$$(\vec a + \vec b) \times \vec c = \vec a \times \vec c + \vec b \times \vec c$$
+  </div>
+
+</div>
+
+$$\Vert \vec a \times \vec b \Vert ^2 = \Vert \vec a \Vert^2 \Vert \vec b \Vert^2 - (\vec a \cdot \vec b)^2 = \Vert \vec a \Vert^2 \Vert \vec b \Vert^2 \sin^2 \theta$$
+$$&hellip; \Longrightarrow \Vert \vec a \times \vec b \Vert \Vert \vec a \Vert \Vert \vec b \Vert \sin \theta$$</li>
+</ul>
 </article>
  
       
@@ -441,9 +520,9 @@ $$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Ver
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/0b1217e95090ed50c9809780a4241ea7cae733a7" title='Last modified by Max Vogel | September 7, 2021' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/aee35994127633559d2e073cbae0e4d643c95d45" title='Last modified by Max Vogel | September 9, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>September 7, 2021</span>
+      <span>September 9, 2021</span>
     </a>
   </div>
 
@@ -487,12 +566,14 @@ $$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Ver
 <nav id="TableOfContents">
   <ul>
     <li><a href="#121-3d-coordinate-systems">12.1 3D Coordinate Systems</a></li>
-    <li><a href="#122-vectors">12.2 Vectors</a>
+    <li><a href="#122-vectors">12.2 Vectors</a></li>
+    <li><a href="#123-dot-product">12.3 Dot Product</a>
       <ul>
-        <li><a href="#123-dot-product">12.3 Dot Product</a></li>
+        <li><a href="#direction-vectors">Direction Vectors</a></li>
         <li><a href="#projections">Projections</a></li>
       </ul>
     </li>
+    <li><a href="#124-cross-product">12.4 Cross Product</a></li>
   </ul>
 </nav>
 

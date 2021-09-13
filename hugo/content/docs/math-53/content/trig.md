@@ -1,5 +1,5 @@
 ---
-title: "Trig Cheat Sheet"
+title: "Trig Identities"
 weight: 1
 ---
 
@@ -40,26 +40,27 @@ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
 
 {{< columns >}} <!-- begin -->
 $$ \sin(-x) = -\sin(x)$$
-$$ \sec(-x) = \sec(x)$$
+$$ \csc(-x) = -\csc(x)$$
 <---> <!-- separator -->
 $$ \cos(-x) = \cos(x)$$
-$$ \csc(-x) = -\csc(x)$$
+$$ \sec(-x) = \sec(x)$$
 <---> <!-- separator -->
 $$ \tan(-x) = - \tan(x)$$
 $$ \cot(-x) = -\cot(x)$$
 {{< /columns >}}
 
-## Sum and Difference Formulas
+{{% center %}}
+Bonus fact: .$\int_{-A}^A \text{[odd]}(x)\ dx = 0$; .$\int_{-A}^A \text{[even]}(x)\ dx = \int_0^A \text{[even]}(x)\ dx$
+{{% /center %}}
 
+## Sum and Difference Formulas
 $$ \sin(u \pm v) = \sin(u) \cdot \cos(v) \pm \cos(u) \cdot \sin(v)$$
 $$ \cos(u \pm v) = \cos(u) \cdot \cos(v) \pm \sin(u) \cdot \sin(v)$$
-
 $$\tan(u \pm v) = \frac{\tan(u) \pm \tan(v)}{1 \mp \tan(u) \tan(v)}$$
 
 ## Double-Angle Formula
 
 {{< columns >}} <!-- begin -->
-
 $$ \sin(2u) = 2 \sin(u) \cos(u)$$
 <---> <!-- separator -->
 $$ \cos(2u) = 2 \cos^2(u) - 1$$

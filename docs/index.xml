@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on Berkeley Notes</title>
+    <title>Home on notes.mehvix.com</title>
     <link>http://notes.mehvix.com/</link>
-    <description>Recent content in Welcome on Berkeley Notes</description>
+    <description>Recent content in Home on notes.mehvix.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://notes.mehvix.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trig Cheat Sheet</title>
+      <title>Trig Identities</title>
       <link>http://notes.mehvix.com/math-53/trig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://notes.mehvix.com/math-53/trig/</guid>
-      <description>Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}$$  $$\cos(x)=\frac{1}{\sec(x)}$$  $$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$   Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$  $$1+\tan^2(x) = \sec^2(x)$$  $$1+\cot^2(x)=\csc^2(x)$$   Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$  $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$  $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$   Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \sec(-x) = \sec(x)$$  $$ \cos(-x) = \cos(x)$$ $$ \csc(-x) = -\csc(x)$$  $$ \tan(-x) = - \tan(x)$$ $$ \cot(-x) = -\cot(x)$$   Sum and Difference Formulas #  $$ \sin(u \pm v) = \sin(u) \cdot \cos(v) \pm \cos(u) \cdot \sin(v)$$ $$ \cos(u \pm v) = \cos(u) \cdot \cos(v) \pm \sin(u) \cdot \sin(v)$$</description>
+      <description>Reciprocal Identities #  $$\sin(x)=\frac{1}{\csc(x)}$$  $$\cos(x)=\frac{1}{\sec(x)}$$  $$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$   Pythagorean Identities #  $$\sin^2(x) + \cos^2(x) = 1$$  $$1+\tan^2(x) = \sec^2(x)$$  $$1+\cot^2(x)=\csc^2(x)$$   Cofunction Identities #  $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$  $$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$  $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$   Even/Odd Identities #  $$ \sin(-x) = -\sin(x)$$ $$ \csc(-x) = -\csc(x)$$  $$ \cos(-x) = \cos(x)$$ $$ \sec(-x) = \sec(x)$$  $$ \tan(-x) = - \tan(x)$$ $$ \cot(-x) = -\cot(x)$$   Bonus fact: .</description>
+    </item>
+    
+    <item>
+      <title>Trig Calculus</title>
+      <link>http://notes.mehvix.com/math-53/trig-calc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.mehvix.com/math-53/trig-calc/</guid>
+      <description>Derivatives #  $$\frac{d}{dx} \tan(x) = 1 + \tan^2(x) = \sec^2(x)$$ $$\frac{d}{dx} \sec(x) = \frac{sin(x)}{\cos^2(x)} = \tan(x) + \sec(x)$$
+Integrals #  </description>
     </item>
     
     <item>
@@ -48,7 +58,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://notes.mehvix.com/physics-7b/18/</guid>
-      <description>18.1 Ideal Gas Laws and Molecular Interpolation #  Ideal Gas Law Assumptions #   There are a large number of molecules, .$N$, each of mass .$m$ that move in random directions at random speeds Molecules are, on average, sufficiently far away from one another (separation .$\gg$ diameter) Molecules obey classical mechanics so .$KE \gg PE$ when colliding Collisions are perfectly elastic  Micro and Macroscopic views related through Energy #  In a system with .</description>
+      <description>18.1 Ideal Gas Laws and Molecular Interpolation #  Ideal Gas Law Assumptions #   There are a large number of molecules, .$N$, each of mass .$m$ that move in random directions at random speeds Molecules are, on average, sufficiently far away from one another (separation .$\gg$ diameter) Molecules obey classical mechanics so .$KE \gg PE$ when colliding Collisions are perfectly elastic  Micro and Macroscopic views related through Energy #   In a system with .</description>
     </item>
     
     <item>

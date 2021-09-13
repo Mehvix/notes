@@ -11,12 +11,12 @@
 
 <meta property="article:modified_time" content="2021-09-07T23:41:44-07:00" />
 
-<title>17: Temperature, Thermal Expansion, &amp; Ideal Gas Law | Berkeley Notes</title>
+<title>17: Temperature, Thermal Expansion, &amp; Ideal Gas Law | notes.mehvix.com</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a5fe0987e33c095047c156e058f2cfdeb166de9097d7de06a4f0cf2275289cbb.js" integrity="sha256-pf4Jh&#43;M8CVBHwVbgWPLP3rFm3pCX194GpPDPInUonLs=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.7fb8140d1fdeac5e0f2a1854b55822c88757b71c565ff51d2549753eaa8777b1.js" integrity="sha256-f7gUDR/erF4PKhhUtVgiyIdXtxxWX/UdJUl1PqqHd7E=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -24,28 +24,28 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   <link
-    rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📒</text></svg>"
+	rel="icon"
+	href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
 />
 
 <script>
-    MathJax = {
-        tex: {
-            inlineMath: [
-                ["$", "$"],
-                [".$", "$"],
-            ],
-        },
-    };
+	MathJax = {
+		tex: {
+			inlineMath: [
+				["$", "$"],
+				[".$", "$"],
+			],
+		},
+	};
 </script>
 
 <script
-    id="MathJax-script"
-    async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
-    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+	id="MathJax-script"
+	async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
+	integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
 ></script>
 
 <link rel="stylesheet" href="http://notes.mehvix.com/css/custom_styling.css" />
@@ -60,7 +60,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Berkeley Notes</span>
+  <a class="flex align-center" href="/"><span>notes.mehvix.com</span>
   </a>
 </h2>
 
@@ -124,7 +124,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Cheat Sheet</a>
+    <a href="http://notes.mehvix.com/math-53/trig/" class="">Trig Identities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/trig-calc/" class="">Trig Calculus</a>
   
 
         </li>
@@ -456,11 +469,9 @@ https://github.com/alex-shpak/hugo-book
 <li>Fahrenheit: Water freezes at 32 and boils at 212 deg</li>
 <li>Celsius: Water freezes at 0 and boils at 100 deg</li>
 <li>Kelvin: Celsius + 273.15K. Written without degree sign. Absolute = 0K</li>
-<li>Conversions:</li>
-</ul>
-<p>$$T(^\circ C) = \frac{5}{9}(T(^\circF)-32)$$</p>
-<p>$$T(^\circ F) = \frac{9}{5}(T(^\circC)) + 32$$</p>
-<ul>
+<li>Conversions:
+$$T(^\circ C) = \frac{5}{9}(T(^\circ F)-32)$$
+$$T(^\circ F) = \frac{9}{5}(T(^\circ C)) + 32$$</li>
 <li>Different materials expand at different rates ro we use constant-volume thermos because it&rsquo;s pressure linearly relates to the temperature</li>
 </ul>
 <h1 id="173-0th-law-of-thermodynamics-pg-480">
@@ -485,44 +496,34 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>Equations (assuming a constant volume .$V$ )</p>
 <ul>
-<li>
-<p>Linear Expansion:
+<li>Linear Expansion:
 $$\frac{dl}{dT} = \alpha(T)\cdot l$$
 $$\Delta l \approxeq \alpha l_0 \cdot \Delta T$$
-$$l_i + \Delta l = l_f = l_0 ( 1 + \alpha\Delta T)$$</p>
+$$l_i + \Delta l = l_f = l_0 ( 1 + \alpha\Delta T)$$
 <ul>
 <li>.$\alpha$ is the coefficient of linear expansion and depends on the material</li>
 <li>If .$\Delta T$ is too large such that the temperature dependence of .$\alpha$ is too large, we can do the following:
 $$\int_{l_i}^{l_f} \frac{1}{l}dl = \int_{T_i}^{T_f} \alpha(T) dT$$</li>
 </ul>
 </li>
-<li>
-<p>Volume Expansion:
+<li>Volume Expansion:
 $$\beta = \frac{1}{V} \frac{dV}{dT}$$
-$$V_f \approxeq V_0 ( 1 + \beta\Delta T)$$</p>
+$$V_f \approxeq V_0 ( 1 + \beta\Delta T)$$
 <ul>
 <li>.$\beta \approx 3\cdot\alpha$ = coefficient of volume expansion.</li>
 </ul>
 </li>
-<li>
-<p>Coefficient of expansion varies at extremely high heats so it only works with small .$\Delta T$ &rsquo;s</p>
-</li>
-<li>
-<p>.$\alpha$ has the units of .$(^\circ C)^{-1}$</p>
-</li>
-<li>
-<p>Materials must be isotropic (have same expansion properties in all directions) for us to say .$\alpha \approx 3\cdot\beta$</p>
-</li>
-<li>
-<p>(Linear) expansion doesn&rsquo;t exist for gas or liquids because they have no fixed space like solids.</p>
-</li>
+<li>Coefficient of expansion varies at extremely high heats so it only works with small .$\Delta T$ &rsquo;s</li>
+<li>.$\alpha$ has the units of .$(^\circ C)^{-1}$</li>
+<li>Materials must be isotropic (have same expansion properties in all directions) for us to say .$\alpha \approx 3\cdot\beta$</li>
+<li>(Linear) expansion doesn&rsquo;t exist for gas or liquids because they have no fixed space like solids.</li>
 </ul>
 </li>
 <li>
 <p>Weird water property</p>
 <ul>
-<li>.$0 - 4 ^\circ C$ : Water increases in density .$\rho^+$ .$\to$ decreases in volume .$V^-$</li>
-<li>.$4^\circC +$ : Water acts &ldquo;normally&rdquo;: increase in volume .$V$ proportional to temperature .$T$</li>
+<li>.$0 - 4 ^\circ C$ : Water increases in density .$\rho^+\Longrightarrow$ decreases in volume .$V^-$</li>
+<li>.$4^\circ C +$ : Water acts &ldquo;normally&rdquo;: increase in volume .$V$ proportional to temperature .$T$</li>
 <li>This explains why pipes burt when frozen and why ice cubes float</li>
 </ul>
 </li>
@@ -558,9 +559,9 @@ $$\frac{F}{A} = \Delta l \cdot E \cdot \frac{l}{l_0} = (\alpha l_0 \Delta T) E \
   <a class="anchor" href="#laws">#</a>
 </h2>
 <p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ideal_gas_law_relationships.svg/300px-Ideal_gas_law_relationships.svg.png" alt="Ideal Gas Law Relation Equation" /></p>
+  <img src="/docs/physics-7b/imgs/ideal.png" alt="Ideal Gas Law Relation Equation" /></p>
 <ul>
-<li>Assume that gasses aren&rsquo;t too dense (so .$P \sim \text{atmospheric pressure}$ ) and that they aren&rsquo;t close to liquefaction (boiling) point either (for oxygen, this is .$~183^\circC$ .</li>
+<li>Assume that gasses aren&rsquo;t too dense (so .$P \sim \text{atmospheric pressure}$ ) and that they aren&rsquo;t close to liquefaction (boiling) point either (for oxygen, this is .$~183^\circ C$ .</li>
 <li><strong>
   <a href="https://en.wikipedia.org/wiki/Boyle%27s_law">Boyle&rsquo;s Law</a></strong>
 <ul>
@@ -588,18 +589,18 @@ $$\frac{F}{A} = \Delta l \cdot E \cdot \frac{l}{l_0} = (\alpha l_0 \Delta T) E \
   17.7 Ideal Gas Law (486)
   <a class="anchor" href="#177-ideal-gas-law-486">#</a>
 </h1>
-<p>$$PV = nRT = n k_b N_a T$$</p>
+<p>$$PV = nRT = n k_B N_a T$$</p>
 <ul>
 <li>.$P$ is the pressure of the gas [Pascals]</li>
 <li>.$V$ is the volume of the gas [Cubic Meters]</li>
 <li>.$n$ is the amount of substance of gas (also known as number of moles) [Moles]</li>
-<li>.$R$ is the ideal, or universal, gas constant, equal to .$k_b \cdot N_a = 8.314 \frac{J}{K\cdot \text{mol}} = 0.0821 \frac{L\cdot atm}{\text{mol}\cdot K}$
+<li>.$R$ is the ideal, or universal, gas constant, equal to .$k_B \cdot N_a = 8.314 \frac{J}{K\cdot \text{mol}} = 0.0821 \frac{L\cdot atm}{\text{mol}\cdot K}$
 <ul>
 <li>Using mass of a gas, different gasses have different proportionality constants</li>
 <li>So we used number of moles, in which case .$R$ becomes the constant for all gasses</li>
 </ul>
 </li>
-<li>.$k_b$ is the 
+<li>.$k_B $ is the 
   <a href="https://en.wikipedia.org/wiki/Boltzmann_constant">Boltzmann constant</a>
 <ul>
 <li>Relates the average relative kinetic energy of particles in a gas with the thermodynamic temperature of the gas</li>
@@ -651,8 +652,8 @@ $$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$</li>
 <li>.$N_a$ is avogadro&rsquo;s number: the number of particles that are contained in one mole of gas (or one gram of hydrogen).</li>
 <li>.$N_a = 6.022 \cdot 10^23 \text{particles/mole}$</li>
 <li>Therefore, if .$N$ is the number of molecules of a gas sample and .$n$ is the number of moles, then
-$$N = n\cdot N_A \to n = \frac{N}{N_A} \to PV = \frac{N}{N_A}RT = Nk_bT$$
-where .$k_b$ is Boltzmann&rsquo;s constant .$\frac{R}{N_A} = 1.38 \cdot 10^{-23} \frac{\text{J}}{\text{K}}$</li>
+$$N = n\cdot N_A \Longrightarrow n = \frac{N}{N_A} \Longrightarrow PV = \frac{N}{N_A}RT = Nk_B T$$
+where .$k_B $ is Boltzmann&rsquo;s constant .$\frac{R}{N_A} = 1.38 \cdot 10^{-23} \frac{\text{J}}{\text{K}}$</li>
 </ul>
 </li>
 </ul>
@@ -661,16 +662,16 @@ where .$k_b$ is Boltzmann&rsquo;s constant .$\frac{R}{N_A} = 1.38 \cdot 10^{-23}
   <a class="anchor" href="#1710-ideal-gas-temperature-pg-490">#</a>
 </h1>
 <p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Phase-diag2.svg/525px-Phase-diag2.svg.png" alt="Phase Diagram" /></p>
+  <img src="/docs/physics-7b/imgs/phase-diagram.png" alt="Phase Diagram" /></p>
 <blockquote>
 <p>A typical phase diagram. The solid green line applies to most substances; the dashed green line gives the anomalous behavior of water</p>
 </blockquote>
 <ul>
 <li><em>Triple point</em>: A precise temperature and pressure where the three phases (gas, liquid, and solid) of a substance can coexist in thermodynamic equilibrium.</li>
-<li>.$P_3 = 4.88\ \text{torr}; T_3 = 0.01^\circC$ for water</li>
+<li>.$P_3 = 4.88\ \text{torr}; T_3 = 0.01^\circ C$ for water
+$$T = (273.16 K)\bigg(\frac{P}{P_3}\bigg)\ \text{[Ideal Gas, constant volume]}$$
+$$T = (273.16 K)\lim_{P_3 \Longrightarrow 0}\bigg(\frac{P}{P_3}\bigg)\ \text{[Constant volume]}$$</li>
 </ul>
-<p>$$T = (273.16 K)\bigg(\frac{P}{P_3}\bigg)\ \text{[Ideal Gas, constant volume]}$$
-$$T = (273.16 K)\lim_{P_3 \to 0}\bigg(\frac{P}{P_3}\bigg)\ \text{[Constant volume]}$$</p>
 </article>
  
       
