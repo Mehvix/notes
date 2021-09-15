@@ -1,0 +1,5 @@
+<ul>
+	{{ range .Params }}{{ with $.Site.GetPage . }}
+	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+	{{ end }}{{ end }}
+</ul>

@@ -2,6 +2,8 @@
 	"terminal.integrated.cwd": "hugo",
 	"cSpell.words": [
 		"adia",
+		"anthro",
+		"Coppicing",
 		"Crossdating",
 		"Equipartition",
 		"erectus",
@@ -16,6 +18,7 @@
 		"Knobcone",
 		"latewood",
 		"mathjax",
+		"Miwok",
 		"Morro",
 		"overstory",
 		"Phytoliths",
@@ -25,6 +28,7 @@
 		"shortcode",
 		"shortcodes",
 		"Tanoak",
-		"Waals"
+		"Waals",
+		"Yokut"
 	] // open new terminals to hugo dir
 }

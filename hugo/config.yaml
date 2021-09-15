@@ -33,7 +33,7 @@ menu:
           url: "https://www.mehvix.com"
           weight: 1
     after:
-        - name: "Anto's CS61A"
+        - name: "CS61A (Anto's)"
           url: "https://cs61a.rouxl.es/"
 
 params:

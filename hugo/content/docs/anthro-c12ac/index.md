@@ -1,3 +1,11 @@
+---
+title: "Anthro C12AC"
+bookFlatSection: true
+bookHidden: false
+bookCollapseSection: false
+---
+
+
 # Anthropocene
 
 - The time when human activity began to have an influence on (global) landscape due to our use of fire
@@ -51,7 +59,6 @@
 - When people move to a new land
     - Major changes in fauna, vegetation, and fires (charcoal)
     - People seem to bring fire with them as they migrate
-
 - Start dates
     - 40 ka for Australia
         - 90% of fauna went extinct
@@ -299,13 +306,13 @@
         - More (less) fire occurred in dry (wet) and warm (cool) years, and high-fire years were preceded by moist and sometimes cool conditions 1–4 y earlier.
     - (Sierra Nevada) **fire-regime shifts** correlate to **SES changes**, _not shifts in climate_.
 - Are best bet is to look at history and see how fire regimes changed from past changes in socioeconomic variables
-    - Climate increased fire activity on a large-scale **after Native American depopulation** reduced the buffering effect of due to their burnings 
+    - Climate increased fire activity on a large-scale **after Native American depopulation** reduced the buffering effect of due to their burnings
         - Sierra Nevada tribes were hunter-gatherers who used sophisticated burning practices to manage resources
         - The fire index nearly doubled after depopulation 
     - Later Euro-American settlement and fire suppression buffered fire activity from temperature increases
         - Logging, fire suppression, livestock increase (grazing effects)
 - The overall sensitivity of fire regimes to low-frequency temperature variation is related to temperature-driven vegetation changes that alter fuel structure and fuel type
-    - 
+
 
 
 # Peopling of North America
@@ -315,9 +322,7 @@
         - People from Asia follow herds of megafauna across Bering Strait ([Beringia](https://en.wikipedia.org/wiki/Beringia))
     - We have found kill sites across America
         - Butchered mammoth, horses, bison, ground sloths, etc.
-
 - New Thoughts about Peopling of Americas: Multiple Migrations of People 20,000-40,000 years ago
-
 - Coastal Migration Model:
     - Use Boats to Come to Americas from Asia
     - Some travels may not have been successful which is why there is less evidence for this theory
@@ -350,6 +355,7 @@
     - Due to...
         - Climate Change
             - Climate change at end of Ice Age
+                - Mega herbivores died after ice age, increasing fuel sources (vegetation) which we can see with charcoal signatures
             - Causes warming + drying (leading to fire)
             - Changes in vegetation and animals because they couldn't adapt
         - Comet
@@ -460,6 +466,7 @@
 - Very diverse vegetation type 
     - From mixed conifer to costal prairie
     - Fire regimes depend on vegetation, thus they're diverse
+    - Likewise, some regions don't consider burning at all and only do suppression whereas others use burnings frequently
 - General ignition sources
     - At higher mountains, lighting  ignition occurs (still rare, however)
     - At lower elevations / costal areas, human ignition is the main sources
@@ -535,3 +542,61 @@
     - Interval: Low to moderate
     - Size: Moderate
     - Changed from fire exclusion, harvesting, and fire suppression
+
+
+## Native Californians
+- Long-History of Human Occupation in CA
+    - Archaeological Evidence: 13,000 years or more 
+- Native communities are still in California
+    - We can learn from them now about how they treated fire over history
+    - 80-100 languages spoken between all tribes
+    - The concentration of native communities is most dense North of Mexico
+- Packed Landscapes: 
+    - Many Tribes (Tribelets) or Small Nations 
+    - 100-1000 people make up polities
+    - Mostly small Tribal territories
+    - Crowded Landscapes
+- Complex Societies
+    - Village Communities have Elaborate Ritual and Political Organizations
+    - Food Storage (Granaries) 
+    - Sophisticated Material Culture: Baskets, Shell Beads, etc.
+- Non-Agrarian People
+    - No formal agriculture practices outside SE CA
+    - Adjacent Areas – people grow corn, beans, squash
+    - But California Indians chose not to practice agriculture
+    - Perception about Non-Agrarian people Changed over time
+      1. Viewed as Passive Hunter-Gathers; UC Berkeley Dept of Anthropology founded 1901; 
+      2. Early Anthropologists:
+            - Argued for passive foragers, minimal impact to environment
+            - Perception of hunter-gathers as simple and primitive; 
+            - Why Indigenous scholars today do not like the term!
+- Indigenous Stewards of Land and Sea
+    - Work as Active Agents to Augment Environmental Productivity and Diversity
+	- **Seascape Stewardship**:  Various ways Native people enhanced the productivity and sustainability of shellfish populations and fisheries 
+    - **Landscape Stewardship**:
+    	- Anthropological Rethinking back to 1940s, picks up steam in 1970s, 1980s that culminates with Anderson 2005 publication
+    	- Various Methods Employed in Landscape Management Practices:  
+        	- Transplanting Water Diversion
+        	- Pruning/Coppicing
+        	- Weeding/Tillage Sowing/Broadcasting Seeds
+      	- **Most Important**: Anthropogenic or Cultural Burning was the key method of stewardship
+          	- Long History in California (Channel Islands)?
+          	- Mediterranean Climate is Fire Enabler
+          	- Native Californians learned to live with fire
+          	- Reasoning for Cultural Burnings:
+            	1. Fires Control Insects/Pests 
+            	2. Remove Detritus, clean-up landscape 
+            	3. Open Pathways
+            	4. Use Fire to Hunt Game and Insects
+            	5. Produce Straight Stems for cordage, baskets
+            	6. Augment Growth/Diversity of Plants and Animals in Territory
+            - How Areas Were Burned
+                - Instigate fire regimes with frequent, small, low-intensity surface burns
+                    - Seasonality of burning very important to minimize risk of catastrophic fires
+                    - Additionally, risk reduced by reduce fuel loads + creating fuel breaks
+                - Burn to increase productivity and stimulate growth of broad spectrum of economic resources
+                    - Notably shrubs with berries, oak woodlands, coniferous 
+                - Intentionally create Patchy Mosaics
+                    - Increase quantity, diversity and sustainability of key plants and animals
+                    - Used for foods, medicines, and raw materials
+                - Control different stages of vegetation succession with different burn intervals
