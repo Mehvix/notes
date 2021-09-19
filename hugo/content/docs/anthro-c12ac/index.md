@@ -248,8 +248,7 @@ bookCollapseSection: false
     - Set standard for fire control
 - Light-burning controversy
     - Pro-burn:
-        - Frontier practices
-            > the Indian way of forest management
+        - Frontier practices (the Indian way of forest management)
         - Advocated for regular burning montane woods and lowlands
         - NoCal
     - Pro-protection
@@ -547,49 +546,55 @@ bookCollapseSection: false
 ## Native Californians
 - Long-History of Human Occupation in CA
     - Archaeological Evidence: 13,000 years or more 
+    - Evidence for multiple immigrations from both sea and land to California
 - Native communities are still in California
+    - 110+ recognized tribes today in CA
     - We can learn from them now about how they treated fire over history
     - 80-100 languages spoken between all tribes
+        - Evidence for multiple immigration waves
     - The concentration of native communities is most dense North of Mexico
 - Packed Landscapes: 
-    - Many Tribes (Tribelets) or Small Nations 
+    - Many Tribes (Tribelets) or Small Nations
     - 100-1000 people make up polities
     - Mostly small Tribal territories
     - Crowded Landscapes
 - Complex Societies
     - Village Communities have Elaborate Ritual and Political Organizations
-    - Food Storage (Granaries) 
+        - Different people would specialize in different areas
+    - Food Storage (Granaries)
     - Sophisticated Material Culture: Baskets, Shell Beads, etc.
 - Non-Agrarian People
     - No formal agriculture practices outside SE CA
-    - Adjacent Areas – people grow corn, beans, squash
-    - But California Indians chose not to practice agriculture
+    - Sustainer primarily by hunting/gathering (use of wild plants and gatherers)
+    - Adjacent Areas – neighboring people would grow corn, beans, squash but Indians chose not to practice agriculture
     - Perception about Non-Agrarian people Changed over time
-      1. Viewed as Passive Hunter-Gathers; UC Berkeley Dept of Anthropology founded 1901; 
-      2. Early Anthropologists:
-            - Argued for passive foragers, minimal impact to environment
-            - Perception of hunter-gathers as simple and primitive; 
-            - Why Indigenous scholars today do not like the term!
+        - (Falsely) Seen initially as passive foragers that minimal impact to environment
 - Indigenous Stewards of Land and Sea
-    - Work as Active Agents to Augment Environmental Productivity and Diversity
-	- **Seascape Stewardship**:  Various ways Native people enhanced the productivity and sustainability of shellfish populations and fisheries 
+    - Better way of describing CA Indians (compared to hunter gatherers)
+    - Indians worked/work as **Active Agents to Augment Environmental Productivity and Diversity**
+	- **Seascape Stewardship**:  Various ways Native people enhanced the productivity and sustainability of shellfish populations and fisheries
     - **Landscape Stewardship**:
     	- Anthropological Rethinking back to 1940s, picks up steam in 1970s, 1980s that culminates with Anderson 2005 publication
-    	- Various Methods Employed in Landscape Management Practices:  
+    	- Various Methods Employed in Landscape Management Practices:
         	- Transplanting Water Diversion
         	- Pruning/Coppicing
         	- Weeding/Tillage Sowing/Broadcasting Seeds
+        	- All for the purpose of enhancing productivity of natural plants/animals
       	- **Most Important**: Anthropogenic or Cultural Burning was the key method of stewardship
           	- Long History in California (Channel Islands)?
           	- Mediterranean Climate is Fire Enabler
-          	- Native Californians learned to live with fire
-          	- Reasoning for Cultural Burnings:
+              	- Wet cool winters lead to high plant production
+              	- Dry and drought-ful summers provide a dry, extensive fuel base
+          	- Native Californians realized that fire was a natural occurrence and learned to live with fire
+          	- Reasoning for Cultural Burnings (Landscape scale)
             	1. Fires Control Insects/Pests 
             	2. Remove Detritus, clean-up landscape 
             	3. Open Pathways
-            	4. Use Fire to Hunt Game and Insects
+            	4. Use Fire to Hunt Game (driving animals into traps/valleys) and Insects
             	5. Produce Straight Stems for cordage, baskets
             	6. Augment Growth/Diversity of Plants and Animals in Territory
+            	7. Increases productivity of nutrient rich plants that animals eat 
+                  	- Deer heard sizes are correlated with burnings 
             - How Areas Were Burned
                 - Instigate fire regimes with frequent, small, low-intensity surface burns
                     - Seasonality of burning very important to minimize risk of catastrophic fires
@@ -597,6 +602,25 @@ bookCollapseSection: false
                 - Burn to increase productivity and stimulate growth of broad spectrum of economic resources
                     - Notably shrubs with berries, oak woodlands, coniferous 
                 - Intentionally create Patchy Mosaics
+                    - Different environments benefit from different style burnings resulting in checkerboard-esque patterns
                     - Increase quantity, diversity and sustainability of key plants and animals
                     - Used for foods, medicines, and raw materials
-                - Control different stages of vegetation succession with different burn intervals
+                    - Minimize risk of catastrophic fires due to reduced fuel loads and fire breaks
+                - Burn areas contained by natural rivers/hills/ridges/basalt flows
+            - Implications of Cultural Burning
+                - Not Pristine Wilderness, but Managed Anthropogenic Landscape -- you have to take into account Indians when looking at CA's landscape
+                - You can't do restoration without bringing in people 
+                    - Now, because of a lack of recent cultural burnings, some habitats are struggling 
+- Controversy regarding cultural burnings
+    - Some argue that cultural fires were small in size, near villages, and had little impact on the larger ecosystem
+    - Rather, natural fires best explain these fires
+    - Short Temporal Depth for cultural burnings
+        - Observations limited primarily to last 250 years 
+    - Limitations arise when primarily referring to Tribal Oral Traditions, Ethnohistoric Observations, Ethnographic Studies
+        - Accounts tend to be spotty, geographically biased and not very detailed
+- Ethnographic Studies (observations made by trained anthropologists)
+    - Fire Exclusion – by Spanish in 1793
+    - Fire Suppression – picks up in 1890s and early 1900s
+    - Implication:  Ethnography done after 1901
+    - Post-dates time that Native people were able to legally implement Cultural Burning
+        - Native people arrested, jailed for cultural burning

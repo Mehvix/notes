@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/18/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2021-09-15T16:24:38-07:00" />
 
 <title>18: Kinetic Theory of Gases | notes.mehvix.com</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.bf67621cb133c6a4f315a4651cf0616f10bf582339ce93e53d2e7e6d210d32d4.js" integrity="sha256-v2diHLEzxqTzFaRlHPBhbxC/WCM5zpPlPS5&#43;bSENMtQ=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b50abe88fec5050c3208bb0796f8b30a2708cc2af4ba1e2de5f7dd375f9e1397.js" integrity="sha256-tQq&#43;iP7FBQwyCLsHlvizCicIzCr0uh4t5ffdN1&#43;eE5c=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -182,6 +182,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/13/" class="">13: Vector Functions</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -237,6 +250,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="http://notes.mehvix.com/physics-7b/19/" class="">19: Heat and the First Law of Thermo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/20/" class="">20: Second Law of Thermo</a>
   
 
         </li>
@@ -367,8 +393,12 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <ul>
 <li>In a system with .$N$ molecules each of mass .$m$ and average speed .$\bar{v}^2$ (also denoted as .$\langle v^2 \rangle$), we can combine the ideal gas law with the .$\overline{KE}$ equation:
-$$\overline{K} = \frac{1}{2} m \bar{v}^2 = \frac{3}{2}k_B T$$</li>
+$$\overline{K} = \frac{1}{2} m \bar{v}^2 = \frac{3}{2}k_B T$$
+<ul>
 <li>This shows .$\overline{KE} \propto T$ which makes sense intuitively; cold = slow particle motion</li>
+<li>E.x: A container is filled with a light and heavy molecule. Which has a greater speed? The lighter molecules do because they are less massive.</li>
+</ul>
+</li>
 <li>And since the system&rsquo;s internal energy .$E_{\text{int}} = N \cdot \overline{K}$ then we can write an important .$PV$ relation + find the gass .$E_{\text{int}}$:
 $$T = \frac{m\bar{v}^2}{3k_B} = \frac{2}{3} \cdot \frac{E_{\text{int}}}{N k_B} \Longrightarrow PV = \frac{2}{3}E_{\text{int}}$$
 $$E_{\text{int}} = N\cdot \frac{1}{2}m\bar{v}^2 \Longrightarrow PV = \frac{Nm}{3}\bar{v}^2 $$</li>
@@ -387,12 +417,19 @@ $$E_{\text{int}} = N\cdot \frac{1}{2}m\bar{v}^2 \Longrightarrow PV = \frac{Nm}{3
 <li>Now we can also see that .$KE = 0$ when .$T=0$ as well. This would mean that at absolute 0, there is no particle movement</li>
 </ul>
 <p>We can then write an equation for the 
-  <a href="https://en.wikipedia.org/wiki/Root_mean_square">root-mean-square</a> (or RMS):</p>
-<p>$$\overline{K} = \frac{3}{2}k_B T \Longrightarrow \frac{1}{2}m\bar{v}^2 = \frac{3}{2}k_B T \Longrightarrow v_{\text{rms}} = \sqrt{\bar{v}^2} = \sqrt{\frac{3k_B T}{m}} $$</p>
+  <a href="https://en.wikipedia.org/wiki/Root_mean_square">root-mean-square</a> (or RMS):
+$$\overline{K} = \frac{3}{2}k_B T \Longrightarrow \frac{1}{2}m\bar{v}^2 = \frac{3}{2}k_B T \Longrightarrow v_{\text{rms}} = \sqrt{\bar{v}^2} = \sqrt{\frac{3k_B T}{m}} $$
+$$\bar v ^2 = \frac{1}{N}\sum_i^N n_i v_i^2 \Longrightarrow v_{\text{rms}} = \frac{1}{\sqrt N} \sqrt{\int_0^\infty n(v)\cdot v^2 dv} $$</p>
 <ul>
 <li>.$v_{\text{rms}}$ is also called the thermal velocity, .$v_{\text{th}}$</li>
 <li>This is the typical velocity of particles that make up the gas/liquid</li>
 <li>Fun fact: Less than 1% of particles of particles exceed .$v_{\text{rms}}$</li>
+<li>Example problems:
+<ul>
+<li>If a sample is quasistatically shrunk to half it&rsquo;s original volume with no change in pressure, the new root-mean-square speed is .$1/sqrt{2}$ times the original rms speed</li>
+<li>If we double the root-mean-square speed (thermal speed) of the molecules of a gas, then its temperature must increase by a factor of 4</li>
+</ul>
+</li>
 </ul>
 <h1 id="182-distribution-of-molecular-speeds">
   18.2 Distribution of Molecular Speeds
@@ -484,7 +521,7 @@ $$f(v) = 4\pi N \bigg( \frac{m}{2 \pi k_B T}\bigg)^{3/2} v^2 e^{ -\frac{1}{2} \c
 <ul>
 <li>Ideal gases would have a straight line along a PV/nRT v. P graph</li>
 <li>Real gases vary don&rsquo;t follow this line and vary more from it proportional to size and weight (resulting in higher .$a$ and .$b$ values respectively &ndash; 
-  <a href="#185-van-der-waals-equation-of-state">see 18.5</a></li>
+  <a href="/physics-7b/18/#185-van-der-waals-equation-of-state">see 18.5</a>)</li>
 </ul>
 <h1 id="184-vapor-pressure-and-humidity">
   18.4 Vapor, Pressure, and Humidity
@@ -655,6 +692,12 @@ $$J = DA \frac{C_1 - C_2}{\Delta x} = DA \frac{dC}{dx} \ \ \text{[Fick&rsquo;s L
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/ad881c12bb46338bbf393d99ce3a83b47232593a" title='Last modified by Max Vogel | September 15, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 15, 2021</span>
+    </a>
+  </div>
 
 
 

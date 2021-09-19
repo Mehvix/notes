@@ -43,5 +43,14 @@ Integrals #  </description>
       <description>12.1 3D Coordinate Systems #   Right hand rule: Index point to .$x$, thumb to .$z$, and write through .$y$ If you have point .$P(a,b,c)$ and drop a perpendicular dot on the .$xy$-plane at .$a,b,0$, you now have a projection of .$P$ onto the .$xy$-plane The distance .$|P_1 P_2|$ between two points .$P_1(x_1, y_1, z_1)$ and .$P_2(x_2, y_2, z_2)$ is $$|P_1 P_2| = \sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$$ We can define the equation for a sphere with a center at .</description>
     </item>
     
+    <item>
+      <title>13: Vector Functions</title>
+      <link>http://notes.mehvix.com/math-53/13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.mehvix.com/math-53/13/</guid>
+      <description>13.1 Vector Functions and Space Curves #  Vector Functions #   We can write a vector function as $$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i + g(t) \hat j + h(t) \hat k$$ The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined The limit of a vector function is $$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$ .</description>
+    </item>
+    
   </channel>
 </rss>

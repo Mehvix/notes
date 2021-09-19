@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://notes.mehvix.com/math-53/12/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2021-09-15T16:24:38-07:00" />
 
 <title>12: Vectors and Geometry of Space | notes.mehvix.com</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.bf67621cb133c6a4f315a4651cf0616f10bf582339ce93e53d2e7e6d210d32d4.js" integrity="sha256-v2diHLEzxqTzFaRlHPBhbxC/WCM5zpPlPS5&#43;bSENMtQ=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b50abe88fec5050c3208bb0796f8b30a2708cc2af4ba1e2de5f7dd375f9e1397.js" integrity="sha256-tQq&#43;iP7FBQwyCLsHlvizCicIzCr0uh4t5ffdN1&#43;eE5c=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -182,6 +182,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/math-53/13/" class="">13: Vector Functions</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -237,6 +250,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="http://notes.mehvix.com/physics-7b/19/" class="">19: Heat and the First Law of Thermo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://notes.mehvix.com/physics-7b/20/" class="">20: Second Law of Thermo</a>
   
 
         </li>
@@ -320,6 +346,19 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#124-cross-product">12.4 Cross Product</a></li>
+    <li><a href="#125-equation-of-lines-and-planes">12.5 Equation of Lines and Planes</a>
+      <ul>
+        <li><a href="#line">Line</a></li>
+        <li><a href="#planes">Planes</a></li>
+      </ul>
+    </li>
+    <li><a href="#126-cylinders-and-quadratic-surfaces">12.6 Cylinders and Quadratic Surfaces</a>
+      <ul>
+        <li><a href="#traces">Traces</a></li>
+        <li><a href="#cylinder">Cylinder</a></li>
+        <li><a href="#quadratic-surfaces">Quadratic Surfaces</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -349,27 +388,27 @@ $$(x-h)^2 + (y-k)^2 + (z-l)^2 = r^2$$</li>
   <a class="anchor" href="#122-vectors">#</a>
 </h1>
 <ul>
-<li>Written as .$\vec{AB}$</li>
+<li>Written as .$\overrightarrow{AB}$</li>
 <li>Has <strong>initial point</strong> .$A$ at the tail and the a <strong>terminal point</strong> .$B$ at the tip
 <ul>
-<li>If the initial point .$A$ is at .$(x_1, y_1, z_1)$ and terminal point .$B$ is at .$(x_2, y_2, z_2)$, then we can write .$\vec{AB} = \langle x_2 - x_1, y_2 - y_1, z_2 - z_1\rangle$</li>
+<li>If the initial point .$A$ is at .$(x_1, y_1, z_1)$ and terminal point .$B$ is at .$(x_2, y_2, z_2)$, then we can write .$\overrightarrow{AB} = \langle x_2 - x_1, y_2 - y_1, z_2 - z_1\rangle$</li>
 </ul>
 </li>
 <li>Vectors with the same length/magnitude are called equivalent or equal, despite not necessarily having  the same initial/termination points</li>
 <li>Vector addition (order doesn&rsquo;t matter)
-$$ \vec{AC} = \vec{AB} + \vec{BC} = \vec{BC} + \vec{AB}$$
-$$ \vec{u} - \vec{v} = \vec{u} + (- \vec{v})$$
-$$ \vec{a} + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$</li>
+$$ \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overrightarrow{AB}$$
+$$ \vec u - \vec v = \vec u + (- \vec v)$$
+$$ \vec a + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$</li>
 <li>Vector multiplication
 <ul>
-<li>Given scalar .$c$ and vector .$\vec{v}$, .$c\cdot\vec{v}$ is like .$\vec{v}$ but with length changed by a factor of .$\Vert c\Vert$</li>
+<li>Given scalar .$c$ and vector .$\vec v$, .$c\cdot\vec v$ is like .$\vec v$ but with length changed by a factor of .$\Vert c\Vert$</li>
 <li>If .$c&lt;0$, then the vector is flipped around</li>
-<li>$$c\cdot\vec{v} = \langle cv_x, cv_y, cv_z\rangle$$</li>
+<li>$$c\cdot\vec v = \langle cv_x, cv_y, cv_z\rangle$$</li>
 </ul>
 </li>
-<li>Magnitude for .$\vec{a} = \langle a_x, a_y, a_z \rangle$:
+<li>Magnitude for .$\vec a = \langle a_x, a_y, a_z \rangle$:
 <ul>
-<li>$$ \Vert \vec{a} \Vert = \sqrt{a_x^2 + a_y^2 + a_z^3}$$</li>
+<li>$$ \Vert \vec a \Vert = \sqrt{a_x^2 + a_y^2 + a_z^3}$$</li>
 </ul>
 </li>
 <li>Unit vector
@@ -394,7 +433,7 @@ $$ \vec{a} + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$</li>
 <li>Two vectors are perpendicular/orthogonal .$\perp$ (.$90^\circ$ from one another) iff the dot product is 0</li>
 </ul>
 </li>
-<li>.$\vec{a} \cdot \vec{b}$ is the length of .$\vec{a}$ times the scalar projection of .$\vec{b}$ onto .$\vec{a}$</li>
+<li>.$\vec a \cdot \vec b$ is the length of .$\vec a$ times the scalar projection of .$\vec b$ onto .$\vec a$</li>
 <li>Notice that the dot product gives a <em>scalar</em></li>
 </ul>
 <p>$$\langle a_1, a_2, a_3 \rangle \cdot \langle b_1, b_2, b_3 \rangle = a_1b_1 + a_2b_2 + a_3b_3$$
@@ -402,7 +441,7 @@ $$ \vec{a} + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$</li>
 
   <div class="flex-even markdown-inner">
     <!-- begin -->
-<p>$$\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a}\cdot \vec{c}$$
+<p>$$\vec a \cdot (\vec b + \vec c) = \vec a \cdot \vec b + \vec a\cdot \vec c$$
 $$ \vec a \cdot \vec a = \Vert \vec a \Vert ^2$$
 $$ \vec a \cdot \vec b = \vec b \cdot \vec a $$
 $$ (c \vec a) \cdot \vec b = c (\vec a \cdot \vec b) = \vec a \cdot (c \vec b)$$
@@ -410,10 +449,10 @@ $$ (c \vec a) \cdot \vec b = c (\vec a \cdot \vec b) = \vec a \cdot (c \vec b)$$
 
   <div class="flex-even markdown-inner">
     <!-- separator -->
-<p>$$\vec{a} \cdot \vec{b} = \Vert\vec{a}\Vert\ \Vert\vec{b}\Vert \cos \theta$$
-$$\Vert\vec{a} - \vec{b} \Vert^2 = \Vert\vec{a}\Vert^2+\Vert\vec{b}\Vert^2 - 2\Vert\vec{a}\Vert\Vert\vec{b}\Vert \cos\theta\ $$
-$$&hellip; = \Vert\vec{a}\Vert\ \Vert\vec{b}\Vert \cos \theta$$
-$$\cos\theta = \frac{\vec{a} \cdot \vec{b}}{\Vert\vec{a}\Vert\ \Vert\vec{b}\Vert}$$
+<p>$$\vec a \cdot \vec b = \Vert\vec a\Vert\ \Vert\vec b\Vert \cos \theta$$
+$$\Vert\vec a - \vec b \Vert^2 = \Vert\vec a\Vert^2+\Vert\vec b\Vert^2 - 2\Vert\vec a\Vert \Vert\vec b\Vert \cos\theta\ $$
+$$&hellip; = \Vert\vec a\Vert\ \Vert\vec b\Vert \cos \theta$$
+$$\cos\theta = \frac{\vec a \cdot \vec b}{\Vert\vec a\Vert\ \Vert\vec b\Vert}$$
   </div>
 
 </div>
@@ -435,10 +474,10 @@ $$\vec a = \Vert \vec a \Vert \langle \cos \alpha, \cos \beta, \cos \gamma \rang
   <a class="anchor" href="#projections">#</a>
 </h2>
 <ul>
-<li>Scalar projection of .$\vec{b}$ onto .$\vec{a}$:
-$$\text{comp}_\vec{a}\vec{b} = \frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert}$$</li>
-<li>Vector projection of .$\vec{b}$ onto .$\vec{a}$:
-$$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert}\bigg)\frac{\vec{a}}{\Vert\vec{a}\Vert} = \frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Vert^2}\vec{a}$$
+<li>Scalar projection of .$\vec b$ onto .$\vec a$:
+$$\text{comp}_\vec a\vec b = \frac{\vec a\cdot\vec b}{\Vert\vec a\Vert}$$</li>
+<li>Vector projection of .$\vec b$ onto .$\vec a$:
+$$\text{proj}_\vec a\vec b = \bigg(\frac{\vec a\cdot\vec b}{\Vert\vec a\Vert}\bigg)\frac{\vec a}{\Vert\vec a\Vert} = \frac{\vec a\cdot\vec b}{\Vert\vec a\Vert^2}\vec a$$
 
   <img src="/docs/math-53/imgs/dot.png" alt="Dot Product" /></li>
 </ul>
@@ -457,6 +496,7 @@ $$\text{proj}_\vec{a}\vec{b} = \bigg(\frac{\vec{a}\cdot\vec{b}}{\Vert\vec{a}\Ver
 $$\vec a \cdot (\vec b \times \vec c) = (\vec a \times \vec b) \cdot \vec c$$
 
   <img src="/docs/math-53/imgs/3d-paral.png" alt="3D Parallelogram" /></li>
+<li>Realize that if the resulting area is .$0$, then all of the points exist on the same plane</li>
 </ul>
 </li>
 </ul>
@@ -490,6 +530,146 @@ $$(\vec a + \vec b) \times \vec c = \vec a \times \vec c + \vec b \times \vec c$
 $$\Vert \vec a \times \vec b \Vert ^2 = \Vert \vec a \Vert^2 \Vert \vec b \Vert^2 - (\vec a \cdot \vec b)^2 = \Vert \vec a \Vert^2 \Vert \vec b \Vert^2 \sin^2 \theta$$
 $$&hellip; \Longrightarrow \Vert \vec a \times \vec b \Vert \Vert \vec a \Vert \Vert \vec b \Vert \sin \theta$$</li>
 </ul>
+<h1 id="125-equation-of-lines-and-planes">
+  12.5 Equation of Lines and Planes
+  <a class="anchor" href="#125-equation-of-lines-and-planes">#</a>
+</h1>
+<h2 id="line">
+  Line
+  <a class="anchor" href="#line">#</a>
+</h2>
+<ul>
+<li>If given a point .$P_0 (x_0, y_0, z_0)$ and a vector .$\vec v = \langle a,b,c \rangle$ that passes through said point (parallel), we can write a line equation as:
+$$\langle x, y, z \rangle = P_0 + t \vec v = \langle x_0 + ta, y_0 +tb, z_0 + tc \rangle;\ \  t \in \mathbb{R}$$</li>
+<li>We can then isolate .$t$ to find the symmetric equation of the line
+$$ t = \frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c} $$</li>
+<li>And we can extrapolate this to write an equation we can use to verify if two points are on a line:
+$$ t = \frac{x-x_0}{x_1-x_0} = \frac{y-y_0}{y_1-y_0} = \frac{z-z_0}{z_1-z_0} $$
+<ul>
+<li><strong>Note</strong>: If we have no change in an axis (such as .$x$), then .$x_1-x_0$ is zero. Therefore, we can write .$x=x_0$ (because we know it never changes) and the other relations for .$y$ and .$z$ still work</li>
+</ul>
+</li>
+<li>We can also write our original equation in vector form as
+$$\vec r(t) = \vec r_0 + t\vec v$$</li>
+<li>Which we can use to write a specific line between point .$A$ and .$B$ from .$t \in [0,1]$ as
+$$\overrightarrow{AB} = \langle x_1 - x_0, y_1 - y_0, z_1 - z_0 \rangle$$
+$$r(t) = \vec A(1-t) + \vec B(t)$$</li>
+<li>3D Lines can be parallel (same direction vector), intersect at one point (.$r_1 = r_2\ @\ t_1, t_2$), or skew (not intersecting nor parallel &ndash; not possible in 2D)</li>
+<li>Two vectors are <strong>equal</strong> iff corresponding components are equal</li>
+</ul>
+<h2 id="planes">
+  Planes
+  <a class="anchor" href="#planes">#</a>
+</h2>
+<ul>
+<li>Planes need a point and direction
+<ul>
+<li>Point .$P_0 (x_0, y_0, z_0)$ is trivial; a plane is a set of various points</li>
+<li>Direction is described by the <strong>normal vector</strong> .$\vec n = \langle a,b,c \rangle$; only one normal unit vector per plane
+<ul>
+<li>Given three points .$P_1, P_2, P_3$ on the plane, we can write two vectors .$\vec a = \overrightarrow{P_1 P_2}, \vec b = \overrightarrow{P_1, P_3}$ as we can find the normal vector as .$\vec n = \vec a \times \vec b$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Knowing this, we can write a vector equation:
+$$ \vec n \cdot \overrightarrow{P_0 P} = 0$$
+$$ \vec n \cdot (\vec r - \vec r_0) = 0$$</li>
+<li>This can also be parameterized  as both the scalar and linear equation respectively:
+$$a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$$
+$$ax + yz + cz + d = 0$$</li>
+<li>Planes are parallel if their normal vectors are parallel</li>
+<li>Otherwise, they intersect and form a straight line</li>
+<li>Intersection point(s) of plane and parametric curve
+<ul>
+<li>Given parametric curve .$C = \langle \alpha + a\cdot t, \beta + b\cdot t, \gamma + c \cdot t \rangle$ and plane equation .$P = x + y + z + d= 0$ &hellip;</li>
+</ul>
+<ol>
+<li>Plug in each component of .$C$ as .$x,y,z$ in the .$P$ equation</li>
+<li>Solve for .$t$(s), then plug (it/them) into the prior equation to get intersection point(s)</li>
+</ol>
+</li>
+<li>Angle between planes
+<ul>
+<li>Given two planes with .$\vec n_1, \vec n_2$ respectively&hellip;</li>
+</ul>
+<ol>
+<li>Use .$\theta = \cos^{-1}\Big(\frac{\vec n_1 \cdot \vec n_2}{\Vert \vec n_1 \Vert \Vert \vec n_2 \Vert}\Big)$ to find .$\theta$</li>
+</ol>
+</li>
+<li>Intersection line of two planes
+<ol>
+<li>Set one of the 3D variables to zero (e.x. .$z=0$) to find where the two planes intersect the remaining plane (in this case the .$z$ plane)</li>
+<li>We find the intersection point .$P (\alpha, \beta, 0)$ by solving when our plane equations in the prior equation are equal</li>
+<li>Since the line .$L$ is orthogonal to both planes, our direction vector is .$\vec v = n_1 \times n_2 = \langle a,b,c \rangle$</li>
+<li>We can then plug in everything into the symmetric equation: .$\frac{x-\alpha}{a} = \frac{y-\beta}{b} = \frac{z-0}{c}$</li>
+</ol>
+</li>
+<li>Distance from point to plane
+<ul>
+<li>Given point .$P_0(x_0, y_0, z_0)$ and plane .$ax+by+cz+d=0$
+$$D = \Vert \text{comp}_{\vec n}{\vec b} \Vert = \frac{\vert ax_1 + by_1 + cz_1 +d\vert}{\sqrt{a^2 + b^2 + c^2}}$$</li>
+</ul>
+</li>
+</ul>
+<h1 id="126-cylinders-and-quadratic-surfaces">
+  12.6 Cylinders and Quadratic Surfaces
+  <a class="anchor" href="#126-cylinders-and-quadratic-surfaces">#</a>
+</h1>
+<h2 id="traces">
+  Traces
+  <a class="anchor" href="#traces">#</a>
+</h2>
+<p>
+  <img src="/docs/math-53/imgs/traces.png" alt="Quadratic Traces" /></p>
+<ul>
+<li>Cross sections of a surface found by taking a three-variable equation and setting one of the equations variables equal to a constant.</li>
+<li>Help us visualize 3D curves by thinking about them from different axis
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- begin -->
+<p>$$z = \frac{x^2}{4} + \frac{y^2}{9} \Longrightarrow k = \frac{x^2}{4} + \frac{y^2}{9}$$
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- separator -->
+<p>$$&hellip; \Longrightarrow z = \frac{x^2}{4} + \frac{k^2}{9}$$
+  </div>
+
+</div>
+
+<ul>
+<li>In  the left example, for every .$z$ value we have a ellipse</li>
+<li>In the right example, we have a parabola for every .$y$ value</li>
+</ul>
+</li>
+</ul>
+<h2 id="cylinder">
+  Cylinder
+  <a class="anchor" href="#cylinder">#</a>
+</h2>
+<ul>
+<li>A cylinder is a surface that consists of all rulings that at parallel to a given line that passes through a given plane curve</li>
+<li>Two variable equation in 3D space
+<ul>
+<li>E.x. .$y=\sin x, z=x^2$</li>
+</ul>
+</li>
+</ul>
+<h2 id="quadratic-surfaces">
+  Quadratic Surfaces
+  <a class="anchor" href="#quadratic-surfaces">#</a>
+</h2>
+<ul>
+<li>A quadric surface is the graph of a second-degree equation with three variables</li>
+<li>Two standard forms (when centered about origin):
+$$Ax^2 + By^2 + Cz^2 + J = 0$$
+$$Ax^2 + By^2 + Iz = 0$$</li>
+</ul>
+<figure><img src="/docs/math-53/imgs/quad.png"/>
+</figure>
+
 </article>
  
       
@@ -498,6 +678,12 @@ $$&hellip; \Longrightarrow \Vert \vec a \times \vec b \Vert \Vert \vec a \Vert \
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/ad881c12bb46338bbf393d99ce3a83b47232593a" title='Last modified by Max Vogel | September 15, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>September 15, 2021</span>
+    </a>
+  </div>
 
 
 
@@ -547,6 +733,19 @@ $$&hellip; \Longrightarrow \Vert \vec a \times \vec b \Vert \Vert \vec a \Vert \
       </ul>
     </li>
     <li><a href="#124-cross-product">12.4 Cross Product</a></li>
+    <li><a href="#125-equation-of-lines-and-planes">12.5 Equation of Lines and Planes</a>
+      <ul>
+        <li><a href="#line">Line</a></li>
+        <li><a href="#planes">Planes</a></li>
+      </ul>
+    </li>
+    <li><a href="#126-cylinders-and-quadratic-surfaces">12.6 Cylinders and Quadratic Surfaces</a>
+      <ul>
+        <li><a href="#traces">Traces</a></li>
+        <li><a href="#cylinder">Cylinder</a></li>
+        <li><a href="#quadratic-surfaces">Quadratic Surfaces</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

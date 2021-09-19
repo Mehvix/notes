@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://notes.mehvix.com/physics-7b/17/</guid>
-      <description>17.1: Atomic Theory (pg 475) #   Atoms are the smallest unit of matter Atomic unit: .$u = 1.66^{-27}$ kg  E.x. Hydrogen weighs .$1.0078 ua$   Molecular mass of a compound is the sum of the particles (atoms) in the compound  Terms #   Element: Substance that cannot be broken down into smaller substances (gold) Molecule: Group of atoms held together by covalent bonds Compound: Substance made from atoms combined in specific ratios  Brownian Motion #   Random movement seen in pollen/dust, as well as atoms Using Brownian motion, Einstein found the size of an atom to be .</description>
+      <description>17.1: Atomic Theory (pg 475) #   Atoms are the smallest unit of matter Atomic unit: .$\text{u} = 1.66\cdot 10^{-27}$ kg  E.x. Hydrogen weighs .$1.0078 \text{u}$   Molecular mass of a compound is the sum of the particles (atoms) in the compound  Terms #   Element: Substance that cannot be broken down into smaller substances (gold) Molecule: Group of atoms held together by covalent bonds Compound: Substance made from atoms combined in specific ratios  Brownian Motion #   Random movement seen in pollen/dust, as well as atoms Using Brownian motion, Einstein found the size of an atom to be .</description>
     </item>
     
     <item>
@@ -31,6 +31,15 @@
       
       <guid>http://notes.mehvix.com/physics-7b/19/</guid>
       <description>19.1 Heat as Energy Transfer #  Units #   Heat unit is calorie (cal)  The amount of heat needed to raise the temperature of 1 gram of water by 1 celsius $$4.186 \text{ J} = 1 \text{ cal}$$   Kilocalorie (kcal, Calorie) is more common  Amount of heat needed to raise 1 kg of water by 1 celsius $$4.186 \text{ kJ} = 1 \text{ kcal}$$   British system of units has British thermal units (Btu)  One Btu is the heat needed to raise the temperature of 1 lb of water by 1 Fahrenheit $$1 \text{ Btu} = 0.</description>
+    </item>
+    
+    <item>
+      <title>20: Second Law of Thermo</title>
+      <link>http://notes.mehvix.com/physics-7b/20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.mehvix.com/physics-7b/20/</guid>
+      <description>20.1 Intro #   Second law states that systems only increase in entropy over time That is, most systems are on directional  E.x. mixing salt and pepper together result in an mixture. No matter how much you keep mixing it, they won&amp;rsquo;t naturally separate and return to the initial state even though it follows first law of thermo (conserving energy)   (Specific) Second Law of Thermo  Heat can flow spontaneously from a hot object to a cold object; heat will not flow spontaneously from a cold object to a hot object.</description>
     </item>
     
   </channel>
