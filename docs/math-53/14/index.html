@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="13.1 Vector Functions and Space Curves #  Vector Functions #   We can write a vector function as $$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i &#43; g(t) \hat j &#43; h(t) \hat k$$ The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined The limit of a vector function is $$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$ .">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="13: Vector Functions" />
-<meta property="og:description" content="13.1 Vector Functions and Space Curves #  Vector Functions #   We can write a vector function as $$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i &#43; g(t) \hat j &#43; h(t) \hat k$$ The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined The limit of a vector function is $$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$ ." />
+<meta name="description" content="14.1 Functions of Several Variables #   In the real world, most things don&rsquo;t depend on a single variable  Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V=\pi r^2 h$   Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="14: Partial Derivatives" />
+<meta property="og:description" content="14.1 Functions of Several Variables #   In the real world, most things don&rsquo;t depend on a single variable  Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V=\pi r^2 h$   Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://notes.mehvix.com/math-53/13/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://notes.mehvix.com/math-53/14/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-09-19T15:36:32-07:00" />
 
-<title>13: Vector Functions | notes.mehvix.com</title>
+
+<title>14: Partial Derivatives | notes.mehvix.com</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
@@ -163,7 +163,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://notes.mehvix.com/math-53/13/" class=" active">13: Vector Functions</a>
+    <a href="http://notes.mehvix.com/math-53/13/" class="">13: Vector Functions</a>
   
 
         </li>
@@ -176,7 +176,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://notes.mehvix.com/math-53/14/" class="">14: Partial Derivatives</a>
+    <a href="http://notes.mehvix.com/math-53/14/" class=" active">14: Partial Derivatives</a>
   
 
         </li>
@@ -334,7 +334,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>13: Vector Functions</strong>
+  <strong>14: Partial Derivatives</strong>
 
   <label for="toc-control">
     
@@ -350,18 +350,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#131-vector-functions-and-space-curves">13.1 Vector Functions and Space Curves</a>
-      <ul>
-        <li><a href="#vector-functions">Vector Functions</a></li>
-        <li><a href="#space-curve">Space Curve</a></li>
-      </ul>
-    </li>
-    <li><a href="#132-derivatives-and-integrals-of-vector-functions">13.2 Derivatives and Integrals of Vector Functions</a>
-      <ul>
-        <li><a href="#derivatives">Derivatives</a></li>
-        <li><a href="#integrals">Integrals</a></li>
-      </ul>
-    </li>
+    <li><a href="#141-functions-of-several-variables">14.1 Functions of Several Variables</a></li>
   </ul>
 </nav>
 
@@ -374,68 +363,33 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="131-vector-functions-and-space-curves">
-  13.1 Vector Functions and Space Curves
-  <a class="anchor" href="#131-vector-functions-and-space-curves">#</a>
+  <article class="markdown"><h1 id="141-functions-of-several-variables">
+  14.1 Functions of Several Variables
+  <a class="anchor" href="#141-functions-of-several-variables">#</a>
 </h1>
-<h2 id="vector-functions">
-  Vector Functions
-  <a class="anchor" href="#vector-functions">#</a>
-</h2>
 <ul>
-<li>We can write a vector function as
-$$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i + g(t) \hat j + h(t) \hat k$$</li>
-<li>The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined</li>
-<li>The limit of a vector function is
-$$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$</li>
-<li>.$\vec r$ is continuous at time .$a$ if .$\lim_{t\to a} \vec r(t) = \vec r(a)$</li>
+<li>In the real world, most things don&rsquo;t depend on a single variable
+<ul>
+<li>Temperature may depend on the .$(x,y)$ (latitude/longitude) position</li>
+<li>Volume of a cylinder depends on radius .$r$ and height .$h$: .$V=\pi r^2 h$</li>
 </ul>
-<h2 id="space-curve">
-  Space Curve
-  <a class="anchor" href="#space-curve">#</a>
-</h2>
+</li>
+<li><strong>Formal Definition</strong>: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .$f(x,y)$. The set .$D$ is the <strong>domain</strong> of .$f$ and its range is the set of values that .$f$ takes on, that is, .$\{f(x,y)\ |\ (x,y) \in D \}$.
 <ul>
-<li>The set .$C$ of all points defined by a vector function .$\vec r$ over interval .$I$ is called a space curve.</li>
-<li>Think of .$C$ as being traced out by a moving particle whose position follows .$\vec r$</li>
-<li>Space curves are parametrized by a vector function but isn&rsquo;t necessarily that vector function!
+<li>E.x. for .$f(x,y) = \frac{\sqrt{x+y+1}}{x-1}$, the domain is .$D= \{(x,y)\ |\ x + y + 1 \geq 0, x \neq 1\}$ which can be graphed with a <em>solid</em> line following .$y=-x-1$ with a <em>dotted</em> line at .$x=1$</li>
+<li>E.x. for .$f(x,y) = x\ln(y^2-x)$, the domain is .$D=\{(x,y)\ |\ x&lt;y^2\}$. This can be graphed with a <em>dotted</em> line following the curve .$x = y^2$</li>
+</ul>
+</li>
+<li>For the equation .$z = f(x,y)$, .$x,y$ are the independent variables and .$z$ is the dependent variable &ndash; similar to single variable equations</li>
+<li>We can visualize functions of two variables (i.e .$f(x,y)$) by graphing them in 3D as .$(x,y,f(x,y))$
 <ul>
-<li>E.x. .$\vec r(t) \langle \cos t, \sin t, t \rangle \neq \vec q(t) = \langle \cos 3t, \sin 3t, 3t \rangle$</li>
-<li>Space curves exist on the same point, but don&rsquo;t grow at the same rate</li>
+<li>We can then write <strong>level curves</strong> for the function by setting .$f(x,y) = k$ for some .$k$onstant in the range of .$f$. This will result in a graph similar to a 
+  <a href="https://en.wikipedia.org/wiki/Topographic_map">Topographic map</a>
+
+  <img src="/docs/math-53/imgs/level-curves.png" alt="Level Curves" /></li>
 </ul>
 </li>
 </ul>
-<h1 id="132-derivatives-and-integrals-of-vector-functions">
-  13.2 Derivatives and Integrals of Vector Functions
-  <a class="anchor" href="#132-derivatives-and-integrals-of-vector-functions">#</a>
-</h1>
-<h2 id="derivatives">
-  Derivatives
-  <a class="anchor" href="#derivatives">#</a>
-</h2>
-<p>$$\frac{d\vec r}{dt} = \vec r'(t) = \lim_{h \to 0} \frac{\vec r(t+h) - r(t)}{h}$$
-$$&hellip; = \big\langle f'(t), g'(t), h'(t) \big\rangle$$</p>
-<ul>
-<li>Note that the last equation only works if each component is differentiable</li>
-<li>The direction is the tangent line and the magnitude is the rate at which the particle is moving at that point</li>
-<li>If we just want the tangent line, we can write the unit tangent vector:
-$$\vec T(t) = \frac{\vec r'(t)}{\Vert \vec r ' (t) \Vert}$$</li>
-<li>Differentiation rules (notice .$f(t)$ is a scalar function)
-$$ \frac{d}{dt} \big[f(t) \vec u(t) \big] = f'(t) \vec u(t) + f(t) \vec u'(t)$$
-$$ \frac{d}{dt}\big[\vec u(t) \cdot \vec v(t)\big] = \vec u'(t) \cdot \vec v(t) + \vec u(t) \cdot \vec v'(t) $$
-$$ \frac{d}{dt} \big[\vec u(t) \times \vec v(t)\big] = \vec u' (t) \times \vec v(t) + \vec u(t) + \vec v'(t)$$
-$$ \frac{d}{dt} \big[ \vec u(f(t)) \big] = f'(t) \vec u' (f(t))$$</li>
-</ul>
-<h2 id="integrals">
-  Integrals
-  <a class="anchor" href="#integrals">#</a>
-</h2>
-<ul>
-<li>Let .$\vec r (t) = \langle f(t), g(t), h(t) \rangle$, then
-$$\int_a^b \vec r(t)\ dt = \bigg\langle \int_a^b f(t)\ dt, \int_a^b g(t) \ dt, \int_a^b h(t)\ dt \bigg\rangle$$</li>
-<li>Fundamental theorem: If .$\vec R(t)$ is an anti-derivative of .$\vec r(t)$, (i.e. .$\vec R'(t) = \vec r(t)$), then
-$$ \int_a^b \vec r(t) \ dt = \Big[\vec R(t)\Big]_a^b = \vec R(b) - \vec R(a)$$</li>
-</ul>
-<!-- # 13.3 Arc Length and Curvature -->
 </article>
  
       
@@ -445,16 +399,10 @@ $$ \int_a^b \vec r(t) \ dt = \Big[\vec R(t)\Big]_a^b = \vec R(b) - \vec R(a)$$</
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/Mehvix/notes/commit/e0fdae17de7d36074994cb8b1bacdfe0ce74d6d5" title='Last modified by Max Vogel | September 19, 2021' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>September 19, 2021</span>
-    </a>
-  </div>
-
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/13.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/14.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -490,18 +438,7 @@ $$ \int_a^b \vec r(t) \ dt = \Big[\vec R(t)\Big]_a^b = \vec R(b) - \vec R(a)$$</
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#131-vector-functions-and-space-curves">13.1 Vector Functions and Space Curves</a>
-      <ul>
-        <li><a href="#vector-functions">Vector Functions</a></li>
-        <li><a href="#space-curve">Space Curve</a></li>
-      </ul>
-    </li>
-    <li><a href="#132-derivatives-and-integrals-of-vector-functions">13.2 Derivatives and Integrals of Vector Functions</a>
-      <ul>
-        <li><a href="#derivatives">Derivatives</a></li>
-        <li><a href="#integrals">Integrals</a></li>
-      </ul>
-    </li>
+    <li><a href="#141-functions-of-several-variables">14.1 Functions of Several Variables</a></li>
   </ul>
 </nav>
 

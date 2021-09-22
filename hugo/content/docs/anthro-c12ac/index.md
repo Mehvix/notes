@@ -602,8 +602,8 @@ bookCollapseSection: false
                 - Burn to increase productivity and stimulate growth of broad spectrum of economic resources
                     - Notably shrubs with berries, oak woodlands, coniferous 
                 - Intentionally create Patchy Mosaics
+                    - Increase **quantity, diversity and sustainability** of key plants and animals
                     - Different environments benefit from different style burnings resulting in checkerboard-esque patterns
-                    - Increase quantity, diversity and sustainability of key plants and animals
                     - Used for foods, medicines, and raw materials
                     - Minimize risk of catastrophic fires due to reduced fuel loads and fire breaks
                 - Burn areas contained by natural rivers/hills/ridges/basalt flows
@@ -614,13 +614,20 @@ bookCollapseSection: false
 - Controversy regarding cultural burnings
     - Some argue that cultural fires were small in size, near villages, and had little impact on the larger ecosystem
     - Rather, natural fires best explain these fires
-    - Short Temporal Depth for cultural burnings
+    - Evidence Types tend to be soft;
+    1. Tribal Oral Traditions have a Short Temporal Depth for cultural burnings
         - Observations limited primarily to last 250 years 
-    - Limitations arise when primarily referring to Tribal Oral Traditions, Ethnohistoric Observations, Ethnographic Studies
-        - Accounts tend to be spotty, geographically biased and not very detailed
-- Ethnographic Studies (observations made by trained anthropologists)
-    - Fire Exclusion – by Spanish in 1793
-    - Fire Suppression – picks up in 1890s and early 1900s
-    - Implication:  Ethnography done after 1901
-    - Post-dates time that Native people were able to legally implement Cultural Burning
-        - Native people arrested, jailed for cultural burning
+    2. Limitations arise when primarily referring to Ethnohistoric Sources
+        - Ethnographic Studies are from (typically Spaniard) explorers and not trained as anthropologists
+        - Accounts tend to be spotty, geographically biased, and not very detailed
+        - Sources don't include key fire regime aspects (freq, seasonality, severity, area, synergy) 
+        - Susceptible to biases, uncertainty, and anecdotes
+    3. Ethnographic Studies (observations made by trained anthropologists)
+        - Information is very brief/general and lacking in our definition of fire regime now
+        - Old archeologists may have viewed Indians as hunter/gatherers (which is wrong!)
+        - Colonizers prevented cultural fires (fire exclusion)
+            - Fire exclusion when fire is removed indirectly from the environment
+            - Whereas fire suppression is mindful + target specifically at fires 
+            - E.x. adding livestock removes fuels, reducing/removing fire
+            - E.x. Colonizers removing Natives (for reasons other than their cultural burnings) removed fires, changing fire regime 
+        - Thus, when we started Ethnographic studies in 1901(ish), we didn't see the history before because current tribes weren't allowed to perform cultural burnings 

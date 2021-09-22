@@ -1,6 +1,6 @@
 ---
 title: "Trig Identities"
-weight: 1
+weight: 99
 ---
 
 ## Reciprocal Identities
