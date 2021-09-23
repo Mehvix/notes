@@ -631,3 +631,6 @@ bookCollapseSection: false
             - E.x. adding livestock removes fuels, reducing/removing fire
             - E.x. Colonizers removing Natives (for reasons other than their cultural burnings) removed fires, changing fire regime 
         - Thus, when we started Ethnographic studies in 1901(ish), we didn't see the history before because current tribes weren't allowed to perform cultural burnings 
+
+
+# [Continue @ 22:02 from 9-21 recording](!!!)
