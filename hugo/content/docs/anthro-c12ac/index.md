@@ -44,12 +44,14 @@ bookCollapseSection: false
 - During [Silurian](https://en.wikipedia.org/wiki/Silurian) and Devonian Periods (440-400 HYA)
 - Natural fire regime started during this period because it was the first time that the fire triangle came together
 - Fire triangle:
-    - _Ignition Source_: (Since beginning) Natural ignition from lightening, volcanoes, (rarely) falling rock sparks
+    - _Ignition Source_: (Since beginning) Natural ignition from lightening (most common), volcanoes, (rarely) falling rock sparks
         - These natural sources tend to only begin fires in the dry season
+        - Lightening is most common in mountain regions (over a costal region)
     - _Oxygen Source_: (Cambrian period) Atmospheric Oxygen (from photosynthetic plants) leads to appearance of photosynthetic organisms
     - _Fuel Source_: (Silurian and Devonian Periods) Enough terrestrial plants in ecosystems to acts as fuel
 - During this time, natural fire regimes evolved
     - As coal became more common (Carboniferous period), fires did too
+- Started long time ago, before humans and dinosaurs 
 
 ## 2. Wildland Anthropogenic Fire -- Hunter/Gatherer Fire Regime
 
@@ -90,7 +92,7 @@ bookCollapseSection: false
         - If so, could the location of the sample been transported after combustion?
         - Further, how does the history of the burned object associate with cultural items
 
-### How long has fire been **controlled**?
+### How long has fire been controlled?
 
 - **Europe**: Strong evidence of 400,000 - 300,000 years ago
 - **Western Asia**: One established case from 780,000 years ago. Other sites are similar to Europe
@@ -424,21 +426,25 @@ bookCollapseSection: false
 ![Scar Example](/docs/anthro-c12ac/imgs/fire-scar.png)
 
 - Fire scars occur when fire kills part of the cambium below bark, leaving a wound 
+    - The scar itself takes ~10 years to show up
 - Multiple dated wounds allude to multiple fire occurrences
 - You can also get the seasonality too
     - Spring trees have warmer water so the scars are lighter in color
     - Fall/winter trees have slower cell movement, so the scars are darker (this is called "latewood")
     - Therefore, how deep the scar is in the wood corresponds to the season the fire occurred 
-- Use crossdating for high accuracy and precision 
+- Use crossdating for high accuracy and precision
+- Pines, White oaks, Sequoia, Redwood, Incense, and Cedars are all good trees to take samples from
 - Wedges:
     - You can take wedges from the tree to get access to the ring view
     - Both living and dead wood samples can be dated
     - Pines, redwood, cedar, giant sequoia are all rot resistant thus good species to sample
     - You ideally want to cut a thin wedge that has a large surface area and includes center of tree
-- Trees heal covering up scars or scars are in an exposed cavity that can be seen
-- Problem when fire interval < 10 years
-    - Most of the time fires aren't severe enough to scare deeply enough 
-    - Only 5% of trees sampled scarred in Sierra Nevada
+- Downsides
+    - Trees heal covering up scars or scars are in an exposed cavity that can be seen
+    - Problem when fire interval < 10 years (such as cultural burnings)
+        - Most of the time fires aren't severe enough to scare deeply enough and if they do scar, it's feint
+        - Only 5% of trees sampled scarred in Sierra Nevada
+    - Fire scars have a finite lifespan (tree lifespan)
 
 ## Fire History Study Sierra Nevada 
 
@@ -490,13 +496,18 @@ bookCollapseSection: false
     - Type: high -- removes overstory of grass
     - Size: Small to moderate
 - Coast Redwood
-    - Can re-sprout after fires
-    - Interval: Short up to 1880's
     - Severity: low
+        - Have thick, adapted bark
+    - Interval: Short up to 1880's
     - Size: Small to moderate
     - Source: Indian burnings
+    - Can re-sprout after fires
+    - Redwoods are very fire and rot resistant so many contain information about fires
+    - Difficult to date because the asynchronous ring structure
 - California Annual Grasslands
     - Interval: Short
+        - Interval needs to be short so that shrubs don't come in
+        - Practicing fire suppression/exclusion results in quick spreading, non-fire resistant plants like douglas-firs taking over
     - Severity: high -- removes overstory of grass
     - Size: Moderate to Large
     - Non-native plants dominate today, very different
@@ -508,9 +519,10 @@ bookCollapseSection: false
     - Size: Moderate
     - Source: Indian burnings for diverse objectives
 - Oak Woodlands, Mixed Oak Woodland
+    - Severity: Low
+        - Have thick, adapted bark
     - Frequency: High
     - Size: Small
-    - Intensity: Low
     - Naturally dense
         - Very dense nowadays due to lack of Indian burnings
     - Mosaic of vegetation patches created that limit fire spread
@@ -538,15 +550,18 @@ bookCollapseSection: false
   - Overstory tends to burn completely
 - Douglas-fir in North Coast
     - Severity: Moderate
+        - Not adapted for fire (have thin bark)
     - Interval: Low to moderate
     - Size: Moderate
     - Changed from fire exclusion, harvesting, and fire suppression
 
 
 ## Native Californians
+
 - Long-History of Human Occupation in CA
     - Archaeological Evidence: 13,000 years or more 
     - Evidence for multiple immigrations from both sea and land to California
+    - Diverse composition of people
 - Native communities are still in California
     - 110+ recognized tribes today in CA
     - We can learn from them now about how they treated fire over history
@@ -569,68 +584,209 @@ bookCollapseSection: false
     - Adjacent Areas – neighboring people would grow corn, beans, squash but Indians chose not to practice agriculture
     - Perception about Non-Agrarian people Changed over time
         - (Falsely) Seen initially as passive foragers that minimal impact to environment
-- Indigenous Stewards of Land and Sea
-    - Better way of describing CA Indians (compared to hunter gatherers)
-    - Indians worked/work as **Active Agents to Augment Environmental Productivity and Diversity**
-	- **Seascape Stewardship**:  Various ways Native people enhanced the productivity and sustainability of shellfish populations and fisheries
-    - **Landscape Stewardship**:
-    	- Anthropological Rethinking back to 1940s, picks up steam in 1970s, 1980s that culminates with Anderson 2005 publication
-    	- Various Methods Employed in Landscape Management Practices:
-        	- Transplanting Water Diversion
-        	- Pruning/Coppicing
-        	- Weeding/Tillage Sowing/Broadcasting Seeds
-        	- All for the purpose of enhancing productivity of natural plants/animals
-      	- **Most Important**: Anthropogenic or Cultural Burning was the key method of stewardship
-          	- Long History in California (Channel Islands)?
-          	- Mediterranean Climate is Fire Enabler
-              	- Wet cool winters lead to high plant production
-              	- Dry and drought-ful summers provide a dry, extensive fuel base
-          	- Native Californians realized that fire was a natural occurrence and learned to live with fire
-          	- Reasoning for Cultural Burnings (Landscape scale)
-            	1. Fires Control Insects/Pests 
-            	2. Remove Detritus, clean-up landscape 
-            	3. Open Pathways
-            	4. Use Fire to Hunt Game (driving animals into traps/valleys) and Insects
-            	5. Produce Straight Stems for cordage, baskets
-            	6. Augment Growth/Diversity of Plants and Animals in Territory
-            	7. Increases productivity of nutrient rich plants that animals eat 
-                  	- Deer heard sizes are correlated with burnings 
-            - How Areas Were Burned
-                - Instigate fire regimes with frequent, small, low-intensity surface burns
-                    - Seasonality of burning very important to minimize risk of catastrophic fires
-                    - Additionally, risk reduced by reduce fuel loads + creating fuel breaks
-                - Burn to increase productivity and stimulate growth of broad spectrum of economic resources
-                    - Notably shrubs with berries, oak woodlands, coniferous 
-                - Intentionally create Patchy Mosaics
-                    - Increase **quantity, diversity and sustainability** of key plants and animals
-                    - Different environments benefit from different style burnings resulting in checkerboard-esque patterns
-                    - Used for foods, medicines, and raw materials
-                    - Minimize risk of catastrophic fires due to reduced fuel loads and fire breaks
-                - Burn areas contained by natural rivers/hills/ridges/basalt flows
-            - Implications of Cultural Burning
-                - Not Pristine Wilderness, but Managed Anthropogenic Landscape -- you have to take into account Indians when looking at CA's landscape
-                - You can't do restoration without bringing in people 
-                    - Now, because of a lack of recent cultural burnings, some habitats are struggling 
-- Controversy regarding cultural burnings
-    - Some argue that cultural fires were small in size, near villages, and had little impact on the larger ecosystem
-    - Rather, natural fires best explain these fires
-    - Evidence Types tend to be soft;
+
+### Indigenous Stewards of Land and Sea
+
+- Better way of describing CA Indians (compared to hunter gatherers)
+- Indians worked/work as **Active Agents to Augment Environmental Productivity and Diversity**
+- **Seascape Stewardship**:  Various ways Native people enhanced the productivity and sustainability of shellfish populations and fisheries
+- **Landscape Stewardship**:
+- Anthropological Rethinking back to 1940s, picks up steam in 1970s, 1980s that culminates with Anderson 2005 publication
+- Various Methods Employed in Landscape Management Practices:
+    - Transplanting Water Diversion
+    - Pruning/Coppicing
+    - Weeding/Tillage Sowing/Broadcasting Seeds
+    - All for the purpose of enhancing productivity of natural plants/animals
+- **Most Important**: Anthropogenic or Cultural Burning was the key method of stewardship
+    - Long History in California (Channel Islands)?
+    - Mediterranean Climate is Fire Enabler
+        - Wet cool winters lead to high plant production
+        - Dry and drought-ful summers provide a dry, extensive fuel base
+    - Native Californians realized that fire was a natural occurrence and learned to live with fire
+    - Reasoning for Cultural Burnings (Landscape scale)
+        1. Fires Control Insects/Pests 
+        2. Remove Detritus, clean-up landscape 
+        3. Open Pathways
+        4. Use Fire to Hunt Game (driving animals into traps/valleys) and Insects
+        5. Produce Straight Stems for cordage, baskets
+        6. Augment Growth/Diversity of Plants and Animals in Territory
+        7. Increases productivity of nutrient rich plants that animals eat 
+            - Deer heard sizes are correlated with burnings
+        8. Stimulate Growth of broad spectrum of economic resources
+            - Through burning in Patchy Mosaics
+    - How Areas Were Burned
+        - Instigate fire regimes with frequent, small, low-intensity surface burns
+            - Seasonality of burning very important to minimize risk of catastrophic fires
+            - Additionally, risk reduced by reduce fuel loads + creating fuel breaks
+        - Burn to increase productivity and stimulate growth of broad spectrum of economic resources
+            - Notably shrubs with berries, oak woodlands, coniferous 
+        - Intentionally create Patchy Mosaics
+            - Increase **quantity, diversity and sustainability** of key plants and animals
+            - Different environments benefit from different style burnings resulting in checkerboard-esque patterns
+            - Used for foods, medicines, and raw materials
+            - Minimize risk of catastrophic fires due to reduced fuel loads and fire breaks
+        - Burn areas contained by natural rivers/hills/ridges/basalt flows
+    - Implications of Cultural Burning
+        - Not Pristine Wilderness, but Managed Anthropogenic Landscape -- you have to take into account Indians when looking at CA's landscape
+        - You can't do restoration without bringing in people 
+            - Now, because of a lack of recent cultural burnings, some habitats are struggling 
+
+### Controversy regarding cultural burnings
+
+- Some argue that cultural fires were small in size, near villages, and had little impact on the larger ecosystem
+- Rather, natural fires best explain these fires
+- Evidence Types tend to be soft;
     1. Tribal Oral Traditions have a Short Temporal Depth for cultural burnings
         - Observations limited primarily to last 250 years 
     2. Limitations arise when primarily referring to Ethnohistoric Sources
-        - Ethnographic Studies are from (typically Spaniard) explorers and not trained as anthropologists
+        - Ethnohistoric Studies are from (typically Spaniard around 1600-1700) explorers and not trained as anthropologists
         - Accounts tend to be spotty, geographically biased, and not very detailed
         - Sources don't include key fire regime aspects (freq, seasonality, severity, area, synergy) 
         - Susceptible to biases, uncertainty, and anecdotes
-    3. Ethnographic Studies (observations made by trained anthropologists)
+    3. Ethnographic Studies
+        - Information is word of mouth history from within the tribe that's passed from one generation to another
+        - Recorded by anthropologists 
         - Information is very brief/general and lacking in our definition of fire regime now
         - Old archeologists may have viewed Indians as hunter/gatherers (which is wrong!)
         - Colonizers prevented cultural fires (fire exclusion)
-            - Fire exclusion when fire is removed indirectly from the environment
-            - Whereas fire suppression is mindful + target specifically at fires 
-            - E.x. adding livestock removes fuels, reducing/removing fire
-            - E.x. Colonizers removing Natives (for reasons other than their cultural burnings) removed fires, changing fire regime 
+            - **Fire exclusion** is when fire is _indirectly removed_ from the environment
+                - E.x. adding livestock removes fuels, reducing/removing fire
+                - E.x. Colonizers removing Natives (for reasons other than their cultural burnings) removed fires, changing fire regime 
+            - Whereas **fire suppression** is mindful + target specifically at _stopping fires_ 
+                - E.x. Using firetrucks, airplanes, etc. to stop a fire from spreading
+                - E.x laws preventing you from creating fires during the dry season
         - Thus, when we started Ethnographic studies in 1901(ish), we didn't see the history before because current tribes weren't allowed to perform cultural burnings 
+- Instead, critics would like to see hard ecological data (fire scars, pollen analysis, charcoal accumulation, phytoliths)
+- Two main reasons to address these criticisms
+    1. Differential impacts due to colonialism in different spaces and at different times
+        - Some areas colonized much earlier than others in the state 
+            - Central and Souther coast colonized 2.5 centuries ago by Spaniards
+            - Others only were colonized during the gold rush)
+        - Some tribes subjected to Fire Exclusion/Suppression policies
+            - Lacking specific information about when these policies were enacted
+            - Tribes colonized during gold rush tend to have more information than those colonized earlier in time
+        - Consequently, some tribes have not been able to practice Cultural burning for generations
+    2. Political Implications
+        - Some scholars argue that there is no real evidence that Native people were good stewards of the land
+            - Point to times when animals/plants went extinct
+        - Consequently, they should not play a special role in decision making Ecological restoration projects today
+            - Nor play much of a role in the management of our public Lands today
 
+### Eco-archaeological Research
+{{< columns >}} <!-- begin -->
 
-# [Continue @ 22:02 from 9-21 recording](!!!)
+- **Eco-archaeological Research:** When we bridge ecological studies with anthropological / archeological studies and native Oral traditions
+- Tries to tackle Major Challenge of Eco-Archaeological Research: Differentiating Natural Fire Regimes from Anthropogenic Fire Regimes
+    - Compare Expected Fire Regime from Lightning Strikes with Observed Fire Regime Based on multiple lines of evidence
+<---> <!-- separator -->
+![Lightening Strikes](/docs/anthro-c12ac/imgs/lightening.png)
+{{< /columns >}} <!-- begin -->
+- Long-Term Diachronic Approach that Employ Multiple Lines of Evidence: 
+    - Native Oral Histories/Traditions; 
+    - Ethnohistorical Accounts
+    - Ethnographic Studies
+    - Ecological Studies of Fire
+    - Archaeological Research
+- Involves Researching with Tribes
+
+### Two Case Studies
+
+#### 1. Sierra Nevada Mountains
+
+- Difficult to carry out research because of high ignition rate due to lightening being common 
+    - Hard to differentiate between natural and anthropogenic fires
+- Research done by Linn Gassaway
+    - Specifically looks at Yosemite Valley which Home of Southern Sierra Miwok people
+    - Utilized Ethnohistory, Ethnography, Archaeology, Dendroecology (Fires Scars)
+- Lightning Fires less Frequent in Valley Floor, more common on mountain peaks
+    - Natural Fire Regime in the valley has a Long Interval Between Lightning Ignited Fires
+- Three Basic Findings By Gassaway:
+    1. Fires more Frequent for prehistoric, protohistoric historic times than expected for Natural Fires Alone
+        - Evidence for potential Cultural Burning
+    2. Still evidence of fire activity in 1800s (When Native peoples were removed)
+        - Miwok people still maintaining traditional fire practices?
+    3. 1890s: Fire frequency reduced when Military takes over administration of Yosemite Valley -- Evidence for Fire Suppression
+
+#### 2. Eco-Archaeological Study of Central Coast of CA
+
+- Research done by John Keeley
+    - Central Coast great place to do study of Cultural Burning
+    - Hypothesis Presented for Strong Likelihood of Cultural Burning Here
+    - Low Frequency of Lightning on Coast
+        - Natural Fire Return Interval around 50 to 100 Years
+        - Greater Bay Area: About 2-5 lightning ignitions per hundred kilometers squared per century
+    - Conditions of high frequency (around 5 years) fire interval (cultural burnings)
+        - Forests dominated by Douglas fir would be suppressed
+        - Redwood (fire adapted) forests would remain dominant, but have a more open understory with less fuel
+        - Shrublands would be suppressed and costal parries would take over
+    - Conditions of low frequency fire interval (natural)
+        - Shrublands and forests would be common
+![Absence of Cultural Burnings](/docs/anthro-c12ac/imgs/absence-of-cultural-burnings.png)
+- Central California Coast Project
+    - Amah Mutsun Tribal Band
+        - Issues of Food Security and Food Sovereignty    
+            - Limited Access to Native Foods
+            - Do not own much property
+        - Tribe has Commitment to Ecological Restoration
+            - Want to return indigenous plants and animals to the land 
+    - Established the Amah Mutsun Land Trust (AMLT)
+        - Purpose is to restore natural resources
+        - Purpose it to steward lands and waters
+        - Return to path of traditional ecological knowledge
+    - AMLT working with resource agencies who own much of the land (CA State Parks, BLM, etc.)
+        - AMLT also working to purchase land for the tribe
+    - Established Native Stewardship Corps
+        - Boots on the ground for ecological restoration
+    - Amah Mutsun Tribe interested in Collaborative Work
+        - Legacy of Colonialism
+        - Tribe working with collaborative team to bring Knowledge of indigenous stewardship practices out of dormancy
+        - Opportunity to integrate Indigenous Science With Western Science
+    - Amah Mutsun work with Team of Scholars from UCB, UCSC, and California State Parks
+    - Three components of project
+        1. Synthesize Previous Work: 
+            - Ethnohistory, Ethnographic Observations, Tribal Oral, Traditions, Historical Fire Ecology
+            - **Cuthrell:** Early Spanish explorers demonstrate extensive grasslands that must have been maintained through prescribed cultural burnings, as well as established Indigenous burning systems
+        2. Undertake Field/Lab work—Fire Ecology Studies: 
+            - Take samples of Fire Scars (Redwoods), Pollen/Charcoal, Phytoliths, Lake Cores
+            - **Cuthrell:** Phytolith Data from soil cores in Quiroste Valley indicate a long term history of grassland vegetation over the last ~1500 years
+        3. Archaeology
+            - Archaeology provides understanding of past cultural practices (e.g., tools, settlements)
+            - Emphasis on recovering floral and faunal remains; evidence of kinds of resources harvested;
+            - Intersection of Archaeology with Fire Ecology; When we see changes in fire regimes, vegetation – Do we see changes in kinds of resources harvested As outcome of landscape stewardship?
+            - Study number of sites:
+                - Middle Holocene (6500-3000 BP)
+                - Late Holocene (3000-500 BP)
+                - Historical (after 500 BP)
+            - Collaborative Field Schools
+                - Involves UCB students, faculty
+                - State Park Archaeologists, ecologists
+                - Amah Mutsun Tribal Band, AMLT
+                - Native Stewardship Corps
+            - Employ Low Impact Methodology
+               - Geophysical survey work (ground penetrating radar)
+            - Examples of Sites
+               - CA-SCR-7 (6500-4000 BP)
+               - CA-SCR-10 (1300-1200 BP)
+               - Bolcoff Adobe (1830s-1840s)
+            - Recovery of Plant and Animal Remains
+               - Excavate Soil
+               - Flotation of Soil to Recover Remains
+               - Laboratory Analysis 
+            - **Cuthrell:** 
+                - Food remains indicate costal prairie seed foods (which came from prairies) were prominent parts of people's diets during the last 1000+ years. 
+                - Charcoal from hearth fires indicates fire-compatible trees such as redwood were the primary fuel sources, while fire-vulnerable trees like Douglas firs were not as common
+    - Our Findings:
+        - Observed fire frequency greater than Expected from Lightning Ignitions Alone
+            - Strong evidence of Cultural Burning
+        - Extensive Cultural Burning:
+            - Begins about 1769-1770 CE
+            - Pattern of frequent, low intensity burns for the past 9-10 Centuries; up to Portola Expedition
+            - Create Coastal Prairie Environments,
+                - Evidence of grasses, clovers, tarweeds, hazelnuts, etc.
+                - Also evidence of plant foods being harvested that required frequent fires to maintain
+        - Patchwork of fires—burning areas every 1 to 5 years or so – maintain coastal grassland
+        - Work in other areas corroborating our Findings
+            1. Other Study Areas
+            2. Coastal Prairies -- extend from California to British Columbia
+        - Conclusion
+            - Key Point for Rest of Class: How can these Lessons from the Past derived from studies Indigenous Landscape Stewardship Practices be employed today?

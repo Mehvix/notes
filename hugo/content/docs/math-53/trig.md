@@ -54,6 +54,7 @@ Bonus fact: .$\int_{-A}^A \text{[odd]}(x)\ dx = 0$; .$\int_{-A}^A \text{[even]}(
 {{% /center %}}
 
 ## Sum and Difference Formulas
+
 $$ \sin(u \pm v) = \sin(u) \cdot \cos(v) \pm \cos(u) \cdot \sin(v)$$
 $$ \cos(u \pm v) = \cos(u) \cdot \cos(v) \pm \sin(u) \cdot \sin(v)$$
 $$\tan(u \pm v) = \frac{\tan(u) \pm \tan(v)}{1 \mp \tan(u) \tan(v)}$$

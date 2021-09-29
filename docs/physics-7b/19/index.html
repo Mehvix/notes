@@ -16,7 +16,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.f4821c3d32257f94c9e9b5972c98d9df14e101e3b18fd09804dcd81e8f5feb65.js" integrity="sha256-9IIcPTIlf5TJ6bWXLJjZ3xThAeOxj9CYBNzYHo9f62U=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.5a6b2e1f77665c9ab4ce7f48d6461b4456aa2a3ce4f2a0cecbfe98c3d16bdf0b.js" integrity="sha256-WmsuH3dmXJq0zn9I1kYbRFaqKjzk8qDOy/6Yw9Fr3ws=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -596,7 +596,12 @@ $$\Delta Q = mc \Delta T$$</li>
 <li>Heat involved in the phase change depends on the mass and latent heat:
 $$\Delta Q = mL$$</li>
 <li>Therefore, when considering the change in a system involving heating a substance to a phase change (e.g. boiling at temperature .$T$), we can write:
-$$\Delta Q_{\text{total}} = mc \Delta T + mL$$</li>
+$$\Delta Q_{\text{total}} = m_L c \Delta T + m_S L$$
+<ul>
+<li>.$m_L$ is the total mass of the substance before the phase change (e.x. initial mass of substance, don&rsquo;t subtract amount that vaporized)</li>
+<li>.$m_S$ is the mass of the substance that underwent a phase change (e.x. mass that vaporized)</li>
+</ul>
+</li>
 </ul>
 <h2 id="evaporation">
   Evaporation
@@ -746,8 +751,11 @@ $$&hellip; = \frac{P_A V_A - P_B V_B}{1-\gamma}$$</p>
 </li>
 <li>We can relate .$P$ and .$V$ for a quasistatic expansion / compression with
 $$PV^\gamma = \text{[constant] for } \gamma = \frac{C_P}{C_V} = 1 + \frac{R}{C_V}$$
-which can also be written as
-$$T_A^{C_V/R} V_A = T_B^{C_V/R} V_B$$</li>
+which can also be written as the following (with .$d$ = degrees of freedom)
+$$T_A^{C_V/R} V_A = T_B^{C_V/R} V_B$$
+$$C_P = \frac{d+2}{2}R$$
+$$C_V = \frac{d}{2}R$$
+$$\gamma = \frac{d+2}{d}$$</li>
 </ul>
 <h3 id="free-expansion">
   Free Expansion
@@ -823,8 +831,8 @@ $$W = \int dW = \int_{V_A}^{V_B} P\ dV \ \ \ \text{(2)}$$</li>
 <li>Specific heat for constant pressure and constant volume vary</li>
 <li>We use molar specific heat for gases: .$C_V$ and .$C_P$ which are defined as the heat required to raise .$1 \text{ mol}$ of gas by .$1^\circ \text{ C}$ at a constant volume or pressure respectively.</li>
 <li>We then use .$n$ instead of .$m$ in our heat equations:
-$$\Delta Q = nC_V \Delta T\ \ \ \text{[Constant Volume]}$$
-$$\Delta Q = nC_P \Delta T\ \ \ \text{[Constant Pressure]}$$
+$$\Delta Q = nC_V \Delta T = mc_V \Delta T\ \ \ \text{[Constant Volume]}$$
+$$\Delta Q = nC_P \Delta T = mc_P \Delta T\ \ \ \text{[Constant Pressure]}$$
 which we can then relate to the specific heat with .$M$ as the molecular mass of the gas, .$m/n$ in grams/mol:
 $$C_V = Mc_V$$
 $$C_p = Mc_p$$</li>
@@ -933,6 +941,7 @@ $$\frac{\Delta Q}{\Delta t} = - kA\frac{T_1 - T_2}{l}$$</li>
 $$ \frac{dQ}{dt} = -kA \frac{dT}{dx}$$</li>
 <li>.$\frac{T_1 - T_2}{l} \text{ and } \frac{dT}{dx}$ are called the temperature gradients</li>
 <li>We have a <strong>negative sign</strong> in the equation above because the direction of heat flow is opposite to the temperature gradient</li>
+<li>A steady system state is reached when heat flow through each layer of an object is equal</li>
 </ul>
 <h2 id="convection">
   Convection
