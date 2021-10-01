@@ -12,7 +12,7 @@ bookCollapseSection: false
 - Large subject used in a range of fields -- no single definition
 - Defining feature: combustion of carbon and greenhouse gases
 - Ice core measurement technique
-    - As ice forms, methane and .$CO_2$ get trapped along with ash/dust/pollen which scientists can measure
+    - As ice forms, methane and .$\text{CO}_2$ get trapped along with ash/dust/pollen which scientists can measure by coring
     - Ice can be dated so we can compare these variables so we can see change in greenhouse gases over time
 - Beginning is disputed
     - Industrial revolution (1780s)
@@ -33,7 +33,7 @@ bookCollapseSection: false
 
 - History of the variation of fire activity over space and time at the landscape scale in different regions of the world
 - Pyrogeography started in [Silurian period](https://en.wikipedia.org/wiki/Silurian) when plant life began
-- Fire requirements: .$13 \\%\ O_2$ in a normal environment and .$30\%$ in damp vegetation.
+- Fire requirements: .$\text{13\% O}_2$ in a normal environment and .$\text{30\%}$ in damp vegetation.
 - Fires are a selection force in the evolution of plants
 
 # Four phases for Pyrogeography
@@ -83,6 +83,7 @@ bookCollapseSection: false
     - Other natural processes can look like fire (e.g. staining by minerals in soil, oxidation causing reddish patches)
     - Combustion of natural objects (e.g. bushes) can leave charcoal which looks like a human hearth
         - Additionally, evidence of a hearth doesn't mean that humans started/controlled fire
+    - Provides a single snapshot, has little temporal depth
 - Archaeological Record Analysis
     - In the field:
         - Observation and collection of materials
@@ -125,7 +126,7 @@ bookCollapseSection: false
     - Ground fires (primarily dead plants) vs crown (burning upper canopy of living trees)
         - Crown fires areas are more difficult to manage because controlled burns still damage natural resources
 3. **Severity**
-    - How destructive a fire is
+    - How destructive a fire is (high mortality = high severity)
     - Change in dominant species / change in ecosystem
     - Quantifiable by how much soil on the ground is visible
 4. **Seasonality**
@@ -142,10 +143,10 @@ bookCollapseSection: false
 
 # Biodiversity and Fire as a Selective Variable in Evolution
 
-- .$C_4$ grass
+- .$\text{C}_4$ grass
     - Spread during seasonal climate in the tertiary period (when fires became more common)
-    - Fires lead to woodlands and created environments favorable to .$C_4$ grasslands
-    - Since .$C_4$ is high flammability, it would have produced a feedback process that further increased fire activity,
+    - Fires lead to woodlands and created environments favorable to .$\text{C}_4$ grasslands
+    - Since .$\text{C}_4$ is high flammability, it would have produced a feedback process that further increased fire activity,
         - Thus maintaining the grassland-dominated landscape
         - This process is similar to the one currently maintaining many of our savannas
 - Plant attributes
@@ -396,11 +397,15 @@ bookCollapseSection: false
     - Charcoal present is indicates fire 
         - Larger particle tend to travel small distances
         - Smaller particles can travel much longer distances
+        - Some plants may be easier/harder to identify than others
     - Pollen analysis can give you knowledge on what (wind pollinated) plants were common at the time in that area
+        - Provides broad perspective of vegetation over time
+        - Pollen can travel far, so resolution isn't great
     - Phytoliths
         - Tiny particles formed in many plants
         - They don't break down -- can stay in soil for hundreds to thousands of years!
         - Can be used to identify plant species
+        - Cons: Not all plants produce them; overrepresented in grasses 
 
 ### 2. Coring Trees 
 
@@ -445,6 +450,7 @@ bookCollapseSection: false
         - Most of the time fires aren't severe enough to scare deeply enough and if they do scar, it's feint
         - Only 5% of trees sampled scarred in Sierra Nevada
     - Fire scars have a finite lifespan (tree lifespan)
+    - Paints picture only of a certain plant in the landscape
 
 ## Fire History Study Sierra Nevada 
 
@@ -525,9 +531,10 @@ bookCollapseSection: false
     - Size: Small
     - Naturally dense
         - Very dense nowadays due to lack of Indian burnings
+        - Dense locations are less productive than managed and open areas
     - Mosaic of vegetation patches created that limit fire spread
 - Chaparral
-    - Interval: Moderate
+    - Interval: Low-Moderate
         - Frequent burnings can lead to (invasive) grassland conversion (especially in SoCal)
         - Many other "_fire follower_" species begin growing after fires too
     - Severity: High
@@ -535,10 +542,10 @@ bookCollapseSection: false
     - Size: Moderate to high
     - Stand replacing regime
         - 30-75 yr. interval 
-        - Crown fire adapted
+        - Crown **fire adapted**
         - High intensity burns
         - Climate driven 
-            - droughts 
+            - Droughts 
             - Low fuel moistures
             - **Foehn winds** -- Winds from east that are generally dry and warm
     - Fire scars -- not common
@@ -682,11 +689,12 @@ bookCollapseSection: false
 ![Lightening Strikes](/docs/anthro-c12ac/imgs/lightening.png)
 {{< /columns >}} <!-- begin -->
 - Long-Term Diachronic Approach that Employ Multiple Lines of Evidence: 
-    - Native Oral Histories/Traditions; 
-    - Ethnohistorical Accounts
-    - Ethnographic Studies
-    - Ecological Studies of Fire
-    - Archaeological Research
+    1. Native Oral Histories/Traditions
+    2. Ethnohistorical Accounts
+    3. Ethnographic Studies
+    4. Ecological Studies of Fire
+    5. Archaeological Research
+    6. [Other methods](index.md#methods)
 - Involves Researching with Tribes
 
 ### Two Case Studies
@@ -790,3 +798,93 @@ bookCollapseSection: false
             2. Coastal Prairies -- extend from California to British Columbia
         - Conclusion
             - Key Point for Rest of Class: How can these Lessons from the Past derived from studies Indigenous Landscape Stewardship Practices be employed today?
+
+# Colonization of California
+
+## Introduction
+
+- Maritime Exploration
+    - The first real instance of Colonization
+    - Happened from 1542-1603 then a long break
+- Spanish Missions, Presidios (forts), Pueblos (civilian settlements) 
+    - Happened from 1769-1823
+    - Primary goal was to Christianize and Civilize
+    - Created large farm areas
+    - Recruited thousands of Natives as labourers
+    - Select locations where existing towns had reduction policies
+        - Reduction policies moved natives into a single village after their land was taken
+- Mexican Missions, Ranchos 
+    - When Mexico took over CA
+    - Happened from 1822-1846
+    - Established huge, private ranches (Ranchos)
+        - Ran by natives
+        - Generated lots of money
+- Colony Ross
+    - Russian Colonization from 1812-1841
+    - Carried out by Russian American Company 
+        - Hunted sea otters
+        - Sold pelts to China
+    - Recruit Native Alaskans who served as primary hunters
+
+## Impact
+
+1. Native population declines
+    - Many deaths due to diseases (some of which hit instantly, some which took time)
+    - Violence and warfare between natives and soldiers
+    - (Sexual) Abuse of young women
+2. Unleashing of Foreign Weeds, Pests (Crosby 2004)
+    - Raised range of new foods on large ranches
+    - Thousands of cattle changed landscape too by overgrazing
+    - Weeds spread aggressively at expense of indigenous plants
+    - Land remains changed even today (90% of biomass in grasslands today isn't native) 
+    - Archaeological Evidence of Spread of Weeds Mission excavations and adobe (mud) bricks
+3. Grazing Economy (Dart-Newton, Erlandson 2006)
+    - Free-Range Grazing (no fences) 
+    - In addition to cattle, brought Sheep, Goats, Horses, and Pigs
+        - Wild pigs are still an issue today
+    - Major impacts to local environments and Native Foods
+        - Overgrazing trample indigenous Ecological habitats
+        - Help spread weeds
+4. Commercial Hunting of Mammals
+    - Terrestrial Fur Trade
+        - Primarily hunted beaver
+            - Pelt used to make hats in Europe
+        - Exterminate beavers from Western North America, Northern California
+        - Major Impacts for wetland habitats
+    - Maritime Fur Trade (Colony Ross)
+        - Use Native Alaskan Hunters Very Efficient
+        - Harvest primarily Sea Otters
+            - Nearly eliminated, otter population still low population today
+        - Major Changes to Kelp Forests which impacted Fisheries of California
+5. Fire Exclusion (Timbrook)
+    - Began in 1793 when the Governor prohibited burning from Natives
+    - Explicit Policies Enacted to Stop Native Peoples from Cultural Burning
+    - Affected both Native Neophytes and so Called Gentile Indians (not part of missions)
+
+## Implications
+
+- Loss of Traditional Ecological Knowledge (TEK)
+    - Amah Mutsun Tribal Band (Lopez 2013)
+        - Could not conduct ceremonies, prayer songs
+        - Could not Steward the land
+        - Unable to pass information to next generation (loss of TEK)
+        - Willing to work with archaeologists, fire ecologists -- bring knowledge out of dormancy
+    		- Working to Restore Landscape Today
+    - Chumash People (Timbrook et al 1993)
+        - Located around Santa Barbara
+        - Ethnohistoric accounts of Native Burning, but largely faded from tribal memory when ethnographic research conducted in 1920-1930s
+- Significant Impact to Local Coastal Environments
+    - Increase of Foreign Plants and Animals
+    - Decline in Diversity and Quantity of Indigenous Flora and Fauna Decreases
+    - Loss of Food Security, Food Sovereignty, Native Medicine, Raw Material, etc. for Natives
+- Many Coastal Tribes Displaced
+    - Colonial Invaders take away Native land
+    - Especially costal land
+- Major Transformation in California Fire Regimes
+    - Cultural Burning on Coast Stopped
+        - Coastal Prairies get overrun by woody vegetation quickly
+        - Even if grazing kept off shrubs, new grasses would begin growing
+    - Some Disturbance keep areas open: Grazing, Colonial Burning?
+    - Altered Fire Regimes due to new plant types
+
+
