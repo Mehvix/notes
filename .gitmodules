@@ -1,3 +1,6 @@
 [submodule "docs/themes/book"]
 	path = docs/themes/book
 	url = https://github.com/alex-shpak/hugo-book
+[submodule "hugo/themes/hugo-book"]
+	path = hugo/themes/hugo-book
+	url = https://github.com/alex-shpak/hugo-book

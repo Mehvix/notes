@@ -3,8 +3,13 @@
 baseURL: http://notes.mehvix.com/
 languageCode: en-us
 title: notes.mehvix.com
-theme: book
+theme: hugo-book
 publishDir: ../docs
+
+# Need for GH Automation
+module:
+    imports:
+        - path: hugo-book
 
 mathjax: true
 
