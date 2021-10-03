@@ -1,0 +1,246 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="13.1 Vector Functions and Space Curves #  Vector Functions #   We can write a vector function as $$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i + g(t) \hat j + h(t) \hat k$$ The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined The limit of a vector function is $$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$ .">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="13: Vector Functions">
+<meta property="og:description" content="13.1 Vector Functions and Space Curves #  Vector Functions #   We can write a vector function as $$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i + g(t) \hat j + h(t) \hat k$$ The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined The limit of a vector function is $$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$ .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/math-53/13/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2021-09-19T15:36:32-07:00">
+<title>13: Vector Functions | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.8f0cb411d5f261a32f96741240737bb831419443d8b55843724db7aa7ee6ee25.js integrity="sha256-jwy0EdXyYaMvlnQSQHN7uDFBlEPYtVhDck23qn7m7iU=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+Home page
+</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle checked>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors and Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/ class=active>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>13: Vector Functions</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#131-vector-functions-and-space-curves>13.1 Vector Functions and Space Curves</a>
+<ul>
+<li><a href=#vector-functions>Vector Functions</a></li>
+<li><a href=#space-curve>Space Curve</a></li>
+</ul>
+</li>
+<li><a href=#132-derivatives-and-integrals-of-vector-functions>13.2 Derivatives and Integrals of Vector Functions</a>
+<ul>
+<li><a href=#derivatives>Derivatives</a></li>
+<li><a href=#integrals>Integrals</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=131-vector-functions-and-space-curves>
+13.1 Vector Functions and Space Curves
+<a class=anchor href=#131-vector-functions-and-space-curves>#</a>
+</h1>
+<h2 id=vector-functions>
+Vector Functions
+<a class=anchor href=#vector-functions>#</a>
+</h2>
+<ul>
+<li>We can write a vector function as
+$$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i + g(t) \hat j + h(t) \hat k$$</li>
+<li>The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined</li>
+<li>The limit of a vector function is
+$$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$</li>
+<li>.$\vec r$ is continuous at time .$a$ if .$\lim_{t\to a} \vec r(t) = \vec r(a)$</li>
+</ul>
+<h2 id=space-curve>
+Space Curve
+<a class=anchor href=#space-curve>#</a>
+</h2>
+<ul>
+<li>The set .$C$ of all points defined by a vector function .$\vec r$ over interval .$I$ is called a space curve.</li>
+<li>Think of .$C$ as being traced out by a moving particle whose position follows .$\vec r$</li>
+<li>Space curves are parametrized by a vector function but isn&rsquo;t necessarily that vector function!
+<ul>
+<li>E.x. .$\vec r(t) \langle \cos t, \sin t, t \rangle \neq \vec q(t) = \langle \cos 3t, \sin 3t, 3t \rangle$</li>
+<li>Space curves exist on the same point, but don&rsquo;t grow at the same rate</li>
+</ul>
+</li>
+</ul>
+<h1 id=132-derivatives-and-integrals-of-vector-functions>
+13.2 Derivatives and Integrals of Vector Functions
+<a class=anchor href=#132-derivatives-and-integrals-of-vector-functions>#</a>
+</h1>
+<h2 id=derivatives>
+Derivatives
+<a class=anchor href=#derivatives>#</a>
+</h2>
+<p>$$\frac{d\vec r}{dt} = \vec r'(t) = \lim_{h \to 0} \frac{\vec r(t+h) - r(t)}{h}$$
+$$&mldr; = \big\langle f'(t), g'(t), h'(t) \big\rangle$$</p>
+<ul>
+<li>Note that the last equation only works if each component is differentiable</li>
+<li>The direction is the tangent line and the magnitude is the rate at which the particle is moving at that point</li>
+<li>If we just want the tangent line, we can write the unit tangent vector:
+$$\vec T(t) = \frac{\vec r'(t)}{\Vert \vec r ' (t) \Vert}$$</li>
+<li>Differentiation rules (notice .$f(t)$ is a scalar function)
+$$ \frac{d}{dt} \big[f(t) \vec u(t) \big] = f'(t) \vec u(t) + f(t) \vec u'(t)$$
+$$ \frac{d}{dt}\big[\vec u(t) \cdot \vec v(t)\big] = \vec u'(t) \cdot \vec v(t) + \vec u(t) \cdot \vec v'(t) $$
+$$ \frac{d}{dt} \big[\vec u(t) \times \vec v(t)\big] = \vec u' (t) \times \vec v(t) + \vec u(t) + \vec v'(t)$$
+$$ \frac{d}{dt} \big[ \vec u(f(t)) \big] = f'(t) \vec u' (f(t))$$</li>
+</ul>
+<h2 id=integrals>
+Integrals
+<a class=anchor href=#integrals>#</a>
+</h2>
+<ul>
+<li>Let .$\vec r (t) = \langle f(t), g(t), h(t) \rangle$, then
+$$\int_a^b \vec r(t)\ dt = \bigg\langle \int_a^b f(t)\ dt, \int_a^b g(t) \ dt, \int_a^b h(t)\ dt \bigg\rangle$$</li>
+<li>Fundamental theorem: If .$\vec R(t)$ is an anti-derivative of .$\vec r(t)$, (i.e. .$\vec R'(t) = \vec r(t)$), then
+$$ \int_a^b \vec r(t) \ dt = \Big[\vec R(t)\Big]_a^b = \vec R(b) - \vec R(a)$$</li>
+</ul>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/e0fdae17de7d36074994cb8b1bacdfe0ce74d6d5 title="Last modified by Max Vogel | September 19, 2021" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>September 19, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/13.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#131-vector-functions-and-space-curves>13.1 Vector Functions and Space Curves</a>
+<ul>
+<li><a href=#vector-functions>Vector Functions</a></li>
+<li><a href=#space-curve>Space Curve</a></li>
+</ul>
+</li>
+<li><a href=#132-derivatives-and-integrals-of-vector-functions>13.2 Derivatives and Integrals of Vector Functions</a>
+<ul>
+<li><a href=#derivatives>Derivatives</a></li>
+<li><a href=#integrals>Integrals</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

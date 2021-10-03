@@ -1,0 +1,30 @@
+html {
+	scroll-behavior: auto !important;
+}
+
+.markdown img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2ch;
+	max-height: 38ch;
+}
+
+.markdown figure > img {
+	max-height: 100%;
+}
+
+body > main > aside.book-menu > div,
+body > main > aside.book-toc > div,
+body > main > div {
+	padding-top: 10ch !important;
+}
+
+.markdown .book-columns > div {
+	margin: 0 !important;
+}
+
+.markdown blockquote {
+	margin: 0.66rem 0 !important;
+	border-radius: 0 !important;
+}
