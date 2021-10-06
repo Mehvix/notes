@@ -8,13 +8,13 @@
 <meta property="og:description" content="14.1 Functions of Several Variables #   In the real world, most things don&rsquo;t depend on a single variable  Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V=\pi r^2 h$   Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/14/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-10-01T14:00:39-07:00">
+<meta property="article:modified_time" content="2021-10-06T10:22:38-07:00">
 <title>14: Partial Derivatives | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.8f0cb411d5f261a32f96741240737bb831419443d8b55843724db7aa7ee6ee25.js integrity="sha256-jwy0EdXyYaMvlnQSQHN7uDFBlEPYtVhDck23qn7m7iU=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.797d7297db6d6ae3185ed14ea5a0524d2067725db690baf49f936357010d06a5.js integrity="sha256-eX1yl9ttauMYXtFOpaBSTSBncl22kLr0n5NjVwENBqU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -141,6 +141,12 @@ CS61A (Anto's)
 <li><a href=#tangent-planes>Tangent Planes</a></li>
 <li><a href=#linear-approximations>Linear Approximations</a></li>
 <li><a href=#differentials>Differentials</a></li>
+</ul>
+</li>
+<li><a href=#145-chain-rule>14.5 Chain Rule</a>
+<ul>
+<li><a href=#chain-rule>Chain Rule</a></li>
+<li><a href=#implicit-differentiation>Implicit Differentiation</a></li>
 </ul>
 </li>
 </ul>
@@ -280,14 +286,15 @@ Tangent Planes
 </li>
 <li>All we need to know to write a tangent plane is a point .$(a,b)$ and direction of the two partial derivatives .$\langle 1,0, f_x(a,b)\rangle, \langle 0,1, f_y(a,b)\rangle$
 <ul>
-<li>Direction vector can be found with .$\langle 1,0, f_x(a,b)\rangle \times \langle 0,1, f_y(a,b)\rangle = \langle -f_x, -f_y, 1 \rangle$ which we can dot with .$\langle x-x_0, y-y_0, z-f(x_0,y_0) \rangle$</li>
-</ul>
-</li>
-</ul>
+<li>Direction vector can be found with .$\langle 1,0, f_x(a,b)\rangle \times \langle 0,1, f_y(a,b)\rangle = \langle -f_x, -f_y, 1 \rangle$ which we can dot with .$\langle x-x_0, y-y_0, z-f(x_0,y_0) \rangle$
 <blockquote class="book-hint info">
 Suppose .$f$ has continuous partial derivatives. An equation of the tangent plane to the surface .$z = f(x, y)$ at the point .$P(x_0,y_0,z_0)$ is
 $$z-f(x_0, y_0) = f_x(x_0,y_0)(x-x_0) + f_y(x_0, y_0)(y-y_0)$$
 </blockquote>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id=linear-approximations>
 Linear Approximations
 <a class=anchor href=#linear-approximations>#</a>
@@ -297,15 +304,19 @@ Linear Approximations
 <ul>
 <li>Thus, we can use it to for making approximations when we are near near .$(a,b)$
 <blockquote class="book-hint info">
-If .$z=f(x,y)$, then .$f$ is differentiable at .$(a,b)$ if .$\Delta z$ can be expressed in the form
+If .$z=f(x,y)$, then .$f$ is <em>differentiable</em> at .$(a,b)$ if .$\Delta z$ can be expressed in the form
 $$\Delta z = f_x(a,b)\Delta x + f_y(a,b)\Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y$$
-where the error terms, .$\varepsilon_1$ and .$\varepsilon_2 \to 0$ as .$(\Delta x, \Delta y) \to (0,0)$.
+where the error terms, .$\varepsilon_1$ and .$\varepsilon_2 \to 0$ as .$(\Delta x, \Delta y) \to (0,0)$ and the other terms are the linearization of the function.
 </blockquote>
 </li>
 </ul>
 </li>
-<li>Rewriting this, we can use the given .$f(x,y,z)$ to write an estimate for point/state .$f(a,b,c)$
-$$f(x,y,z) \approx f(a,b,c) + f_x(a,b,c) (x-a) + f_y(a,b,c)(y-b) + f_z(a,b,c) (z-c)$$</li>
+<li>Rewriting this, we can use the given .$f(x,y)$ to write the <strong>linear approximation</strong> which is an estimate for point/state at .$f(a,b)$
+$$f(x,y) \approx f(a,b) + f_x(a,b) (x-a) + f_y(a,b)(y-b)$$</li>
+<li>We can similarly define the 3D linear approximation, increment of .$w$, and differential .$dw$ as:
+$$f(x,y,z) \approx f(a,b,c) + f_x(a,b,c) (x-a) + f_y(a,b,c)(y-b) + f_z(a,b,c) (z-c)$$
+$$\Delta w = f(x+\Delta x, y + \Delta y, z + \Delta z) - f(x,y,z)$$
+$$dw = \frac{\delta w}{\delta x}dx + \frac{\delta w}{\delta y}dy + \frac{\delta w}{\delta z}dz$$</li>
 </ul>
 <h2 id=differentials>
 Differentials
@@ -317,12 +328,39 @@ Differentials
 $$dz = f_x(x,y)\ dx + f_y(x,y)\ dy = \frac{\delta z}{\delta x}dx + \frac{\delta z}{\delta y}dy$$</li>
 <li>If the partial derivatives .$f_x$ and .$f_y$ exist near .$(a,b)$ and are continuous at .$(a,b)$, then .$f$ is differentiable at .$(a,b)$.</li>
 </ul>
+<h1 id=145-chain-rule>
+14.5 Chain Rule
+<a class=anchor href=#145-chain-rule>#</a>
+</h1>
+<h2 id=chain-rule>
+Chain Rule
+<a class=anchor href=#chain-rule>#</a>
+</h2>
+<blockquote class="book-hint info">
+Suppose that .$z=f(g_1 (x_1,_{\dots}, x_m), g_2 (x_1,_{\dots}, x_m), g_n (x_1,_{\dots}, x_m))$ is a differentiable function of the .$n$ variables .$g_1,_{\dots}, g_n$ and is .$g_j$ is a differentiable function of the .$m$ variables .$x_1,_{\dots}, x_m$. Then .$z$ is a function of .$x_1,_{\dots}, x_m$ and
+$$ \frac{\delta f}{\delta x_i} = \frac{\delta f}{\delta g_1} \frac{\delta g_1}{\delta x_i} + \frac{\delta f}{\delta g_2} \frac{\delta g_2}{\delta x_i} + \dots + \frac{\delta f}{\delta g_m} \frac{\delta g_m}{\delta x_i}$$
+for each .$i= 1,2,\dots,m$
+</blockquote>
+<h2 id=implicit-differentiation>
+Implicit Differentiation
+<a class=anchor href=#implicit-differentiation>#</a>
+</h2>
+<ul>
+<li>
+<p>If .$F(x,y) = 0$ defines .$y$ implicitly as a function of .$x$ (that is, .$y = f(x)$, where .$F(x,f(x))=0$ for all .$x$ in the domain of .$f$), then
+$$ \frac{dy}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta y}} = - \frac{F_x}{F_y}$$</p>
+</li>
+<li>
+<p>If .$F(x,y,z) = 0$ defines .$z$ implicitly as a function of .$x,y$, then</p>
+</li>
+</ul>
+<p>$$ \frac{dz}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta z}} = - \frac{F_x}{F_z};\ \ \frac{dz}{dy} = - \frac{\frac{\delta F}{\delta y}}{ \frac{\delta F}{\delta z}} = - \frac{F_y}{F_z}$$</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/9bb55c3f70b5f8142f332d95147e5319da1134c8 title="Last modified by Max Vogel | October 1, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/1ff9cad2de9dcdbd550a489be2b0e8df92253443 title="Last modified by Max Vogel | October 6, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 1, 2021</span>
+<span>October 6, 2021</span>
 </a>
 </div>
 <div>
@@ -360,6 +398,12 @@ $$dz = f_x(x,y)\ dx + f_y(x,y)\ dy = \frac{\delta z}{\delta x}dx + \frac{\delta 
 <li><a href=#tangent-planes>Tangent Planes</a></li>
 <li><a href=#linear-approximations>Linear Approximations</a></li>
 <li><a href=#differentials>Differentials</a></li>
+</ul>
+</li>
+<li><a href=#145-chain-rule>14.5 Chain Rule</a>
+<ul>
+<li><a href=#chain-rule>Chain Rule</a></li>
+<li><a href=#implicit-differentiation>Implicit Differentiation</a></li>
 </ul>
 </li>
 </ul>
