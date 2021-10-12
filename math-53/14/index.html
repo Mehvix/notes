@@ -8,13 +8,13 @@
 <meta property="og:description" content="14.1 Functions of Several Variables #   In the real world, most things don&rsquo;t depend on a single variable  Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V=\pi r^2 h$   Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/14/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-10-06T10:22:38-07:00">
+<meta property="article:modified_time" content="2021-10-12T14:56:23-07:00">
 <title>14: Partial Derivatives | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.797d7297db6d6ae3185ed14ea5a0524d2067725db690baf49f936357010d06a5.js integrity="sha256-eX1yl9ttauMYXtFOpaBSTSBncl22kLr0n5NjVwENBqU=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.a504b849217aff24208e6230b68f2c8b29153b316b11d03f901776a8200004ba.js integrity="sha256-pQS4SSF6/yQgjmIwto8siykVOzFrEdA/kBd2qCAABLo=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -95,6 +95,9 @@ Home page
 <li>
 <a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
 </li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Gauss's Law</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -147,6 +150,14 @@ CS61A (Anto's)
 <ul>
 <li><a href=#chain-rule>Chain Rule</a></li>
 <li><a href=#implicit-differentiation>Implicit Differentiation</a></li>
+</ul>
+</li>
+<li><a href=#146-directional-derivatives-and-the-gradient-vector>14.6 Directional Derivatives and the Gradient Vector</a>
+<ul>
+<li><a href=#directional-derivatives>Directional Derivatives</a></li>
+<li><a href=#gradient-vector>Gradient Vector</a></li>
+<li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li>
+<li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li>
 </ul>
 </li>
 </ul>
@@ -355,12 +366,79 @@ $$ \frac{dy}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta y}
 </li>
 </ul>
 <p>$$ \frac{dz}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta z}} = - \frac{F_x}{F_z};\ \ \frac{dz}{dy} = - \frac{\frac{\delta F}{\delta y}}{ \frac{\delta F}{\delta z}} = - \frac{F_y}{F_z}$$</p>
+<h1 id=146-directional-derivatives-and-the-gradient-vector>
+14.6 Directional Derivatives and the Gradient Vector
+<a class=anchor href=#146-directional-derivatives-and-the-gradient-vector>#</a>
+</h1>
+<h2 id=directional-derivatives>
+Directional Derivatives
+<a class=anchor href=#directional-derivatives>#</a>
+</h2>
+<blockquote class="book-hint info">
+<strong>Direction Derivative</strong> For function .$f$ at .$(x_0, y_0)$ in the direction of <strong>unit vector</strong> .$\hat u = \langle a, b \rangle$ is
+$$D_{\hat u} f(x_0, y_0) = \lim_{h\to 0} \frac{f(x_0 + ha, y_0 + hb) - f(x_0, y_0)}{h} = f_x (x,y) a + f_y (x,y) b$$
+if the limit exists (for the former) and if .$f$ is a differentiable function of .$x$ and .$y$ (for the latter)
+</blockquote>
+<ul>
+<li>That is, .$\hat u = \hat i = \langle 1, 0 \rangle$ for .$D_\hat{i} = f_x$ and .$\hat u = \hat j = \langle 0, 1 \rangle$ for .$D_\hat{j} = f_y$</li>
+<li><strong>Differentiability</strong> is important because it means that as you approach the surface very closely, it looks more and more like the tangent plane.</li>
+<li>Directional derivatives can be thought of as the slope of the tangent line at a given point</li>
+<li>This definition can be extrapolated to (three variables/higher dimensions) trivially, shown below with gradient vectors</li>
+</ul>
+<h2 id=gradient-vector>
+Gradient Vector
+<a class=anchor href=#gradient-vector>#</a>
+</h2>
+<blockquote class="book-hint info">
+<strong>Gradient:</strong> If .$f$ is a function of variable .$x,y,z$, then the gradient of .$f$ is the vector function .$\nabla f$ defined by
+$$\nabla f(x,y,z) = \big\langle f_x(x,y,z) + f_y (x,y,z) + f_z (x,y,z) \big\rangle = \frac{\delta f}{\delta x}\hat i + \frac{\delta f}{\delta y}\hat j$$
+</blockquote>
+<ul>
+<li>We can now use the gradient to re-write our direction derivative equation as
+$$D_{\hat u} f(x,y,z,\dots) = \nabla f(x,y,z,\dots) \cdot \hat u$$</li>
+<li>We can re-write this using the definition of the dot product as
+$$D_{\hat u} f(x,y,z,\dots) = \vert \nabla f \vert \vert \hat u \vert \cos\theta =\vert \nabla f \vert \cos\theta $$</li>
+</ul>
+<h2 id=maximizing-the-directional-derivative>
+Maximizing the Directional Derivative
+<a class=anchor href=#maximizing-the-directional-derivative>#</a>
+</h2>
+<blockquote class="book-hint info">
+Suppose .$f$ is a differentiable function of two or three variables. The maximum value of the directional derivatives .$D_\hat{u} f(\vec x)$ is .$\vert \nabla f(\vec x ) \vert$ and it occurs when .$\hat u$ has the same direction as the gradient vector .$\nabla f(\vec x)$
+</blockquote>
+<ul>
+<li>We can see from the definition above that since the max of .$\cos\theta$ is .$1$ when .$\theta = 0$, therefore the max of the directional derivative occurs at the same angle (when .$\hat u$ has the same direction of .$\nabla f$ )</li>
+<li>The maximal value is .$D_\hat{u} f(\vec x) = \vert \nabla f \vert$</li>
+</ul>
+<h2 id=tangent-planes-to-level-surfaces>
+Tangent Planes to Level Surfaces
+<a class=anchor href=#tangent-planes-to-level-surfaces>#</a>
+</h2>
+<ul>
+<li>If .$f(x,y) = k$ is a curve, then .$F(x,y,z) = k$ is a surface</li>
+<li>Let .$\vec r(t)$ be a space curve on the surface .$F(x,y,z) = k$
+<ul>
+<li>Let .$\vec r(t_0) = \langle x_0, y_0, z_0 \rangle$ for some .$t_0$ (the space curve passes through some point which is on the surface)</li>
+<li>We know .$F(\vec r(t)) = k$, thus, using the chain rule:
+$$0 = \frac{\delta F}{\delta x} \frac{\delta x}{\delta t} + \frac{\delta F}{\delta y} \frac{\delta y}{\delta t} + \frac{\delta F}{\delta z} \frac{\delta z}{\delta t} = \nabla F(x_0, y_0, z_0) \cdot (\vec r(t_0))'$$</li>
+</ul>
+</li>
+<li>The gradient vector at .$P$, .$F(x_0, y_0, z_0)$, is perpendicular to the tangent vector .$\vec r'(t)$ to any curve .$C$ on .$S$ that passes through .$P$
+<ul>
+<li>In English: The direction of the gradient is always perpendicular to the level surface at every point</li>
+</ul>
+</li>
+<li>We can then define the tangent plane to the level surface .$F(x,y,z) = k$ at .$P(x_0, y_0, z_0)$ as the plane that passes through .$P$ and has normal vector .$\nabla F(x_0, y_0, z_0)$:
+$$\nabla F\big\vert_{(x_0, y_0, z_0)} \cdot \langle x-x_0, y-y_0, z-z_0 \rangle = 0$$</li>
+<li>We can also write this in the symmetric equation form:
+$$\frac{x-x_0}{F_x(x_0, y_0, z_0)} = \frac{y-y_0}{F_y(x_0, y_0, z_0)} = \frac{z-z_0}{F_z(x_0, y_0, z_0)}$$</li>
+</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/1ff9cad2de9dcdbd550a489be2b0e8df92253443 title="Last modified by Max Vogel | October 6, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/a54febc41b887b7c5d9fe846a1c73be8e59abb87 title="Last modified by Max Vogel | October 12, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 6, 2021</span>
+<span>October 12, 2021</span>
 </a>
 </div>
 <div>
@@ -404,6 +482,14 @@ $$ \frac{dy}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta y}
 <ul>
 <li><a href=#chain-rule>Chain Rule</a></li>
 <li><a href=#implicit-differentiation>Implicit Differentiation</a></li>
+</ul>
+</li>
+<li><a href=#146-directional-derivatives-and-the-gradient-vector>14.6 Directional Derivatives and the Gradient Vector</a>
+<ul>
+<li><a href=#directional-derivatives>Directional Derivatives</a></li>
+<li><a href=#gradient-vector>Gradient Vector</a></li>
+<li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li>
+<li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li>
 </ul>
 </li>
 </ul>

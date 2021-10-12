@@ -8,13 +8,13 @@
 <meta property="og:description" content="21.1 Static Electricity; Electric Charge and its Conservation #   &ldquo;Charged&rdquo; objects posses a net electric charge Unlike charges attract; like charges repel  Charges on glass are positive, charges on plastic is negative   Law of Conservation of Electric Charge:  Whenever a certain amount of charge is produced in one object, an equal amount of the opposite type of charge is produced in another object  Charges cannot be destroyed or created   E.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/21/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-10-06T10:22:38-07:00">
+<meta property="article:modified_time" content="2021-10-12T14:56:23-07:00">
 <title>21: Electric Charges & Fields | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.797d7297db6d6ae3185ed14ea5a0524d2067725db690baf49f936357010d06a5.js integrity="sha256-eX1yl9ttauMYXtFOpaBSTSBncl22kLr0n5NjVwENBqU=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.a504b849217aff24208e6230b68f2c8b29153b316b11d03f901776a8200004ba.js integrity="sha256-pQS4SSF6/yQgjmIwto8siykVOzFrEdA/kBd2qCAABLo=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -94,6 +94,9 @@ Home page
 </li>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/21/ class=active>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Gauss's Law</a>
 </li>
 </ul>
 </li>
@@ -245,9 +248,24 @@ CS61A (Anto's)
 </li>
 <li>
 <a href=https://en.wikipedia.org/wiki/Electroscope>Electroscope</a>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
-<li>.$\overrightarrow F \propto \text{angle of deflection}$</li>
+<li>.$\vec F \propto \text{angle of deflection}$</li>
+<li>.$y$-axis: .$F_{T1} \sin \theta_1 = F_{21}$</li>
+<li>.$x$-axis: .$F_{T1} \cos \theta_0 = m_1 g$</li>
+<li>.$F_{21} = m_1 g \tan \theta_1 \approx m_1 g \theta_1$</li>
+<li>.$F_{21} = - F_{12}$ (
+<a href=https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton%27s_third_law>Newton&rsquo;s Third</a>)
+.$ \Longrightarrow \theta_1/\theta_2 = m_2/m_1$</li>
+<li>.$d = l (\theta_1 + \theta_2)$</li>
 </ul>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/physics-7b/imgs/electroscope-diag1.png alt="Forces Diagram">
+<img src=/docs/physics-7b/imgs/electroscope-diag2.png alt=Distance>
+</div>
+</div>
 </li>
 </ul>
 <h1 id=215-coulombs-law>
@@ -317,7 +335,7 @@ $$\overrightarrow E = \lim_{q\to0}\frac{\overrightarrow F}{q} \Longrightarrow \o
 <li>We can combine this with Coulomb&rsquo;s law to get
 $$\overrightarrow E = \frac{kqQ/r^2}{q} = k \frac{Q}{r^2}$$
 <ul>
-<li>We see that .$\overrightarrow E$ is independent of the particle .$q$</li>
+<li>We see that .$\overrightarrow E$ is independent of the non-source particle .$q$</li>
 <li>.$Q$ is the particle that is responsible for the field in the first place</li>
 </ul>
 </li>
@@ -332,7 +350,7 @@ $$\overrightarrow E = \overrightarrow E_1 + \overrightarrow E_2 + &mldr;$$</li>
 <li>We can extend our previous definition to calculus as
 $$\overrightarrow E = \int d \overrightarrow E = \int k\frac{1}{r^2}\ dq$$
 <ul>
-<li>.$dq = \lambda\ dl \text{ (line)} = \sigma\ dA \text{ [(disk)} = \rho\ dV \text{ (sphere)}$</li>
+<li>.$dq = \lambda\ dl \text{ (line)} = \sigma\ dA \text{ (disk)} = \rho\ dV \text{ (sphere)}$</li>
 </ul>
 </li>
 <li>When solving problems, it&rsquo;s a good idea to use symmetry, check charge direction, and (when applicable) use bounds of .$r \in [0, \infty]$</li>
@@ -381,8 +399,7 @@ $$\overrightarrow E=\text{const.} = \frac{\sigma}{\varepsilon_0}=\frac{Q}{\varep
 <br>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
-<p>
-<img src=/docs/physics-7b/imgs/dipole.png alt>
+<img src=/docs/physics-7b/imgs/dipole.png alt=Dipole>
 </div>
 <div class="flex-even markdown-inner">
 <h2 id=electric-dipole>
@@ -478,6 +495,7 @@ $$\overrightarrow F_{12} = k \frac{q_1 q_2}{r^2} \cdot \widehat r_{21}$$
 <li>Realize that the axis are arbitrary</li>
 </ul>
 </li>
+<li>.$\theta = \tan^{-1}\Big(\frac{F_x}{F_y}\Big)$</li>
 </ul>
 </li>
 <li>Charges in Fields
@@ -510,9 +528,9 @@ $$\overrightarrow F_{12} = k \frac{q_1 q_2}{r^2} \cdot \widehat r_{21}$$
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/1ff9cad2de9dcdbd550a489be2b0e8df92253443 title="Last modified by Max Vogel | October 6, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/a54febc41b887b7c5d9fe846a1c73be8e59abb87 title="Last modified by Max Vogel | October 12, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 6, 2021</span>
+<span>October 12, 2021</span>
 </a>
 </div>
 <div>
