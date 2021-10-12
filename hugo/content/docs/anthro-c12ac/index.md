@@ -887,4 +887,202 @@ bookCollapseSection: false
     - Some Disturbance keep areas open: Grazing, Colonial Burning?
     - Altered Fire Regimes due to new plant types
 
+# Timber Owners and Early Use of Fire (10/4)
+
+- **1880**: Advocates for ‘light burning’ in California appear  -- some thought fire was needed to manage forests
+    - Whereas cultural burnings are done for <a href='javascript:document.querySelector("body > main > div > article > ul:nth-child(68) > li:nth-child(7) > ul > li:nth-child(4) > ol").scrollIntoView()'>specific intentional reasons</a>, light burning is done for other reasons such as reducing fuel, increasing food for livestock, and other economic reasons
+    - That is, cultural burning is a form of light burning
+- **1900:** Debate start regarding fire management near Lake Almanor in CA
+    - Private forest land owners practiced ‘light burning’ following early Indian and sheep herder traditions
+    - Most foresters dismissed this proposal as mere ‘Paiute Forestry’ (derogatory term based on an Indian tribe)
+- **1902:**
+    - H.J. Ostrander attacked ‘protectionist’ policy of fire control as worse than effective because it allowed fuel to accumulate
+    - US National Academy of Science committee on forest reserves urged fire control policy
+- **1908:** 
+    - Gene Tolly: Sierra National Forest Ranger from 1905-1912 and cowboy assigned to range management for USFS
+    - Gifford Pinchot: 1st Chief of the USFS
+    - Tolly took Gifford on a back country trip through the Sierra National Forest to try and convince him to allow Indian Burning to keep meadows and forests from getting overgrown but Gifford didn't buy it
+- **1910:**
+    - Sunset magazine was an outlet used for forestry discussion at the time 
+        - G.L. Hoxie wrote in the magazine to advocated light burning claimed it should not be merely acceptable but made mandatory
+        - Made economic, not ecological argument 
+    - Unfortunately at same time, Great Idaho Fire occurred 
+        - Burned 3 million acres and killed 85 people. 
+        - Happened due to drought period with ignitions from lightning, locomotives, and logging
+        - Resulted in national debate:
+            - Senator Weldon Heyburn (R-Idaho) led effort to disband the USFS so that private land owners could manage their own land
+            - Others argued that the newly found US Forest Service (1905) should be expanded so that it could prevent future fires (happened, turns out govt tends to only grow bigger)
+- **1930s:** Two experiments were occurring in northeast CA around this time
+    1. Full Control  
+        - McCloud River Lumber Company
+        - Use trains, hand crews, etc
+    2. Light Burning
+        - Thomas Barlow (T.B.) Walker was raised from Minnesota and ran the Red River Lumber Co. near Lake Almanor 
+        - Clinton Walker (T.B’s son) wrote a letter to the Red River Lumber Company in **1938** (years after he had left the Company) saying:
+            1. The general condition of the forests when the white man first came into CA was very excellent
+            2. Then came the foresters from Yale University and put the tourniquet on the forests
+            3. Would prefer to remove the tourniquet in our timber matters \[which] is the lack of fire 
+            4. I requested permission \[to burn] from the State Forester and the USFS DuBois. Both refused
+            5. We proceeded to burn anyway, and Chief Forester Graves came out from Washington and DuBois and many others with cameras and notebooks to get damaging evidence
+            6. They stayed several days and followed the burning, with comment by Graves that the work was excellent
+            7. DuBois apologized to me for panning me in the newspapers previously
+        - Graves suggested that T.B underwrite a chair of fire protection at Yale University
+            - Walker agreed, contributing .$$$ 100,000 (a huge amount of funding 1900's). Harvey Chapman hired who was huge force in longleaf pine is southeast US
+    - Over the next decade trials done across the US, especially in pine belts of the West and South
+    - Stuart Show (from Stanford btw) looked for light burning area around Mt. Hough, Claremont, Meadow Valley Country 
+        - Found a suitable area near Snake Lake
+        - Commit data/scientific fraud by adding more fuel:    
+            > “Ed and I did 250 acres alone and, except for the long hitch of work, didn’t have any trouble. The only dishonest thing we did was to pile some pine limbwood in big fire scars of a few large pines, with the gratifying result that they burned down and became damage statistics”
+        - Dave Rogers already had made up his mind regarding light burnings
+            > “Went over nonchalantly to reburn Snake Lake (in 1920). It would have been O.K. except that Plumas Supervisor Dave Rogers came out the night of the burn, grabbed a brush burning torch and ended up stringing fire outside the line on two opposite ends. Then he left.”
+            > “You can understand our deep affection for Dave and the Plumas”
+        - **The use of fire in forest management was not given an objective evaluation anywhere in the Western US including Indigenous burning**
+- **1940s:** Harold Biswell was a professor in the Berkeley Forestry Department from 1947 - 1972
+    - Biswell conducted prescribed fire research in the forests of Georgia from 1942 to 1947 when he was a researcher for the US Forest Service Southern Research Station
+    - Began prescribed fire work in Ponderosa pine forests in 1951 (Boggs Mountain near Middletown as well as Teaford Ranch in the Southern Sierra near Bass Lake)
+        - Both of these locations were private land because no government agency would let him burn in public land
+    - Said in his 1958 paper:
+        > "At the time the idea of burning was fairly new to me and I looked upon fire as the arch enemy of forests and forestry"
+    - His 1958 paper showed it was possible to use fire in CA forest management and warned about future problems if fuels were not reduced
+        - His conclusions were very controversial at the time
+        - His PhD students recall
+            > "There was little opposition to him burning in grasslands and shrublands, but when he began burning experiments in ponderosa pine forests, active and open criticism of him and his work exploded. He was referred to as “Harry the Torch,” “Burn-Em-Up Biswell,” and other derisive names, and not always behind his back"
+        - No forestry faculty would work with Biswell. 
+            - UCB Forestry faculty voted to forbid him or his graduate students to work at Blodgett Forest
+            - (Scott's Opinion:) At the very least, some UC Berkeley forestry faculty should have worked cooperatively with Biswell to further explore this topic
+    - In 1973, he was given the Berkeley Citation, awarded for his contribution to the University of California that “go beyond the call of duty and whose achievements exceed the standards of excellence in their fields.”
+        - He was the first UCB forestry professor to get this award
+
+# Early Foresters and Fire (10/6)
+
+- Some debate, but suppression wins in 1910s
+    - However, one exception: Southern US continues to use fire  
+- Pre WWII:
+    - 1933: Civilian Conservation Corps labor (CCC) used to fight fires
+        - Hired many people due to great depression
+    - 1935: 10 AM (National) Policy: All fires should be out by 10AM the day after they're detected before conditions that would make fire more severe arise 
+- During WWII
+    - Firefighting resources (people, machines) tied up with the war 
+        - Consensus objectors put into fire fighting crews
+        - Many were ridiculed but they fought the fire with little technology and overhead
+    - Japanese sub fires shell near Santa Barbara
+        - Fear of Los Padres NF and others being burned
+    - Japanese also launch fire balloons
+        - Hundreds hit the US, but they're kept hidden from public
+    - Public urged to be careful and fire is connected to the war
+    - USFS organizes Cooperative Forest Fire Protection Campaign
+        - Fire protection was framed as National Security through public campaigns
+        - Huge push to save resource during the war
+            - “Careless matches aid the Axis”
+            - “Our carelessness, their secret weapon”
+        - Bambi brought (in 1944)
+            - Movie showed terrible fires started by hunters
+            - Only on loan from Disney for 1 year
+        - Smokey Bear named in 1945
+            - Named after asst. Chief of NYC Fire Dept. 1919-1930 --  “Smokey” Joe Martin
+- Post WWII
+    - Smokey Bear (cont.)
+        - "Only YOU can prevent forest fires!" created in 1947
+        - Canada steals him in 1956.
+        - Focus broadened to appeal to children
+    - 1950: The “Real” Deal
+        - Las Tablas fire breaks out and a bear cub found almost dead
+        - Cub is treated and heals, eventually ends up in D.C. Zoo
+    - Still endearing
+        - One of most recognized figures in U.S. behind Santa and Mickey Mouse
+        - Stamps made (1984)
+        - Own zip code (20252) -- you can write him a letter and get a reply
+        - Office, Web page, Twitter, Facebook, Instagram, YouTube, etc.
+    - Has Smokey’s message been TOO successful?
+        - Original message was very black and white
+
+# Colonialism (10/8)
+
+## Settler Colonialism In The American
+
+### Earlier Colonial Enterprises (1769-1846)
+- <a href='javascript:document.querySelector("body > main > div > article > ul:nth-child(83) > li:nth-child(2)").scrollIntoView()'>Missionary Colonies:  Franciscan Missions</a> -- interested in converting
+- <a href='javascript:document.querySelector("body > main > div > article > ul:nth-child(83) > li:nth-child(4)").scrollIntoView()'>Mercantile Colony: Colony Ross (Fort Ross)</a> -- interested in pelts and profit
+- Common Features to both:
+    - Predate Settler Colonialism
+    - Involved Few Euro-Americans -- workforce was almost all Native people
+    - Self-Contained Agrarian Systems
+    - Native people integral to their success
+- Major Outcomes ([9/27/21 Lecture](index.html#impact))
+    - Loss of Traditional Ecological Knowledge
+    - Significant Environmental Impacts to Coastal CA
+    - Many Coastal Tribes Displaced
+    - Transformations in Fire Regimes 
+
+### Settler Colonies
+- Immigration of European/foreign settlers 
+    - British employed Settler Colonialism in Eastern USA
+    - Establish Permanent Residences 
+- Predicated on Removal of Indigenous People
+- Employed “Logic of Elimination” -- Moral Ground for Taking Land Away
+- After American Revolution -- USA Adopts Settler Colony Practices; Manifest Destiny; Millions of people moved westward
+- Key Dates for California:
+    - 1840s: Movement of settlers along California, Oregon, Mormon Trails
+    - 1846: Mexican-American War, Annexation of CA
+    - 1848: Treaty of Guadalupe Hidalgo Gold Rush
+    - 1850: California became the 31st State
+    - 1869: Transcontinental Railroad Completed
+    - 1850s-1870s:Settler Colonialism really takes off
+
+## Implications Of Settler Colonialism
+
+### 1. Genocide (Madley 2016 Reading)
+
+- 1846-1870s – Dark Ages for Native People
+- Extermination of Indians supported by Governors and other Politicians:
+    - First Governor Peter Burnett proclaimed "_War of Extermination_"
+	- Senator John Weller (Governor in 1858) -- "_White Man Demands Extinction_"
+    - California Legislature passed anti-Indian laws:
+		- Legal slavery of Indian Children
+		- Bounty Hunters paid by the scalp
+		- No rights in Court (couldn't testify against a white person)
+		- Vagrancy Laws, etc. 
+    	- California and Federal Government Supported militias -- volunteer companies (Essentially Death Squads) that removed Indians from their lands
+    	- California and Federal Governments -- allocated over $2 million dollars for this
+- Also diseases, starvation, etc. took a terrible toll on Indians
+- Outcome of Extermination Policies: Native people Decimated, while Colonists Explode in Numbers:
+{{< columns >}}
+- Indian Population:
+    - 1769 = 310,000
+    - 1846 = 150,000
+    - 1900 = 15,000
+<--->
+- Settler Colonist Population:
+    - 1850 = 92,597
+    - 1900 = 1,485,053
+<--->
+
+{{< /columns >}}
+
+### 2. Reservations
+- Unlike other Western States, most California Tribes did not have treaties with the Federal Government (as such, tribes cannot practice cultural burnings!)
+- Abysmal Treaty Record in California
+    - 1851-1852: 18 Treaties Negotiated with Tribes of California; Proposed Reservation Land of 11,700 sq miles (Anderson 2005 Reading)
+    - None of the 18 Treaties Ratified by US Senate even though some Natives already moved
+        - Politicians didn't want to give up good agricultural land
+    - Subsequent attempts to create Reservation Land -- Not very Successful; 
+- 1850s-1870s: Military Reservations 
+- 1870s-1900: 
+    - Federal Funding for Small Land Grants
+    - Influence of Helen Hunt Jackson, Her Book, Ramona, very important in Humanitarian movement
+        - Fictional book told a love story of an Indian chief which became a best seller and brought attention to the situation 
+- 1906-1930: Another period of federal funding for small Land Grants for California Indians **but** it was all tiny sections of land (called _Rancheria_ lands)
+
+### 3. Federal Recognition
+
+- Discuss Importance of Federal Recognition: Housing, legal assistance, Indian Health, food distribution, child welfare, Indian arts and culture development, fund tribal cultural heritage programs, tribal historic preservation officers, NAGPRA, Indian Gaming
+- In California Many Tribes Not Federally Recognized (Unacknowledged Status with Federal Government – No land or status with feds!)
+- Three-Tiered System in California:
+    - Gaming Tribes (Fed Recognized)
+    - Non-Gaming Tribes (Fed Recognized)
+    - Unacknowledged Tribes
+
+
+
+
 
