@@ -70,7 +70,7 @@ bookCollapseSection: false
     - 20 ka for the Americas
         - Extinctions of many animals and vegetation
             - Debate: are these because of natural process like climate change (ice age -> post ice age?) or do people play a large role
-        - Native Perspective – Indigenous people have been here since time began
+        - Native Perspective -- Indigenous people have been here since time began
 
 ### When did humans actually discover fire?
 
@@ -305,7 +305,7 @@ bookCollapseSection: false
 - Changes in human behavior can amplify, but tend to _cancel out climatic effects_ on fire regimes
     - For example, humans alter through changing land use, ignitions, fuel conditions, or fire suppression
     - Fire **activity** is influenced by climate variability
-        - More (less) fire occurred in dry (wet) and warm (cool) years, and high-fire years were preceded by moist and sometimes cool conditions 1–4 y earlier.
+        - More (less) fire occurred in dry (wet) and warm (cool) years, and high-fire years were preceded by moist and sometimes cool conditions 1--4 y earlier.
     - (Sierra Nevada) **fire-regime shifts** correlate to **SES changes**, _not shifts in climate_.
 - Are best bet is to look at history and see how fire regimes changed from past changes in socioeconomic variables
     - Climate increased fire activity on a large-scale **after Native American depopulation** reduced the buffering effect of due to their burnings
@@ -319,7 +319,7 @@ bookCollapseSection: false
 
 # Peopling of North America
 
-- Traditional Perspective – Clovis First Model
+- Traditional Perspective -- Clovis First Model
     - 13,000 ka, there was an ice-free corridor that opened up and let people come to north America
         - People from Asia follow herds of megafauna across Bering Strait ([Beringia](https://en.wikipedia.org/wiki/Beringia))
     - We have found kill sites across America
@@ -588,7 +588,7 @@ bookCollapseSection: false
 - Non-Agrarian People
     - No formal agriculture practices outside SE CA
     - Sustainer primarily by hunting/gathering (use of wild plants and gatherers)
-    - Adjacent Areas – neighboring people would grow corn, beans, squash but Indians chose not to practice agriculture
+    - Adjacent Areas -- neighboring people would grow corn, beans, squash but Indians chose not to practice agriculture
     - Perception about Non-Agrarian people Changed over time
         - (Falsely) Seen initially as passive foragers that minimal impact to environment
 
@@ -611,13 +611,15 @@ bookCollapseSection: false
         - Dry and drought-ful summers provide a dry, extensive fuel base
     - Native Californians realized that fire was a natural occurrence and learned to live with fire
     - Reasoning for Cultural Burnings (Landscape scale)
-        1. Fires Control Insects/Pests 
-        2. Remove Detritus, clean-up landscape 
+        1. Fires Control Insects/Pests
+        2. Remove Detritus, clean-up landscape
+            - Allows light through which leads to healthy growth
         3. Open Pathways
         4. Use Fire to Hunt Game (driving animals into traps/valleys) and Insects
         5. Produce Straight Stems for cordage, baskets
         6. Augment Growth/Diversity of Plants and Animals in Territory
-        7. Increases productivity of nutrient rich plants that animals eat 
+            - Grasslands and other plants may have deeper roots which make them more difficult to kill
+        7. Increases productivity of nutrient rich plants that animals eat
             - Deer heard sizes are correlated with burnings
         8. Stimulate Growth of broad spectrum of economic resources
             - Through burning in Patchy Mosaics
@@ -760,7 +762,7 @@ bookCollapseSection: false
         3. Archaeology
             - Archaeology provides understanding of past cultural practices (e.g., tools, settlements)
             - Emphasis on recovering floral and faunal remains; evidence of kinds of resources harvested;
-            - Intersection of Archaeology with Fire Ecology; When we see changes in fire regimes, vegetation – Do we see changes in kinds of resources harvested As outcome of landscape stewardship?
+            - Intersection of Archaeology with Fire Ecology; When we see changes in fire regimes, vegetation -- Do we see changes in kinds of resources harvested As outcome of landscape stewardship?
             - Study number of sites:
                 - Middle Holocene (6500-3000 BP)
                 - Late Holocene (3000-500 BP)
@@ -792,7 +794,7 @@ bookCollapseSection: false
             - Create Coastal Prairie Environments,
                 - Evidence of grasses, clovers, tarweeds, hazelnuts, etc.
                 - Also evidence of plant foods being harvested that required frequent fires to maintain
-        - Patchwork of fires—burning areas every 1 to 5 years or so – maintain coastal grassland
+        - Patchwork of fires—burning areas every 1 to 5 years or so -- maintain coastal grassland
         - Work in other areas corroborating our Findings
             1. Other Study Areas
             2. Coastal Prairies -- extend from California to British Columbia
@@ -869,7 +871,7 @@ bookCollapseSection: false
         - Could not Steward the land
         - Unable to pass information to next generation (loss of TEK)
         - Willing to work with archaeologists, fire ecologists -- bring knowledge out of dormancy
-    		- Working to Restore Landscape Today
+            - Working to Restore Landscape Today
     - Chumash People (Timbrook et al 1993)
         - Located around Santa Barbara
         - Ethnohistoric accounts of Native Burning, but largely faded from tribal memory when ethnographic research conducted in 1920-1930s
@@ -1033,17 +1035,17 @@ bookCollapseSection: false
 
 ### 1. Genocide (Madley 2016 Reading)
 
-- 1846-1870s – Dark Ages for Native People
+- 1846-1870s -- Dark Ages for Native People
 - Extermination of Indians supported by Governors and other Politicians:
     - First Governor Peter Burnett proclaimed "_War of Extermination_"
-	- Senator John Weller (Governor in 1858) -- "_White Man Demands Extinction_"
+    - Senator John Weller (Governor in 1858) -- "_White Man Demands Extinction_"
     - California Legislature passed anti-Indian laws:
-		- Legal slavery of Indian Children
-		- Bounty Hunters paid by the scalp
-		- No rights in Court (couldn't testify against a white person)
-		- Vagrancy Laws, etc. 
-    	- California and Federal Government Supported militias -- volunteer companies (Essentially Death Squads) that removed Indians from their lands
-    	- California and Federal Governments -- allocated over $2 million dollars for this
+        - Legal slavery of Indian Children
+        - Bounty Hunters paid by the scalp
+        - No rights in Court (couldn't testify against a white person)
+        - Vagrancy Laws, etc. 
+        - California and Federal Government Supported militias -- volunteer companies (Essentially Death Squads) that removed Indians from their lands
+        - California and Federal Governments -- allocated over $2 million dollars for this
 - Also diseases, starvation, etc. took a terrible toll on Indians
 - Outcome of Extermination Policies: Native people Decimated, while Colonists Explode in Numbers:
 {{< columns >}}
@@ -1060,6 +1062,7 @@ bookCollapseSection: false
 {{< /columns >}}
 
 ### 2. Reservations
+
 - Unlike other Western States, most California Tribes did not have treaties with the Federal Government (as such, tribes cannot practice cultural burnings!)
 - Abysmal Treaty Record in California
     - 1851-1852: 18 Treaties Negotiated with Tribes of California; Proposed Reservation Land of 11,700 sq miles (Anderson 2005 Reading)
@@ -1076,13 +1079,75 @@ bookCollapseSection: false
 ### 3. Federal Recognition
 
 - Discuss Importance of Federal Recognition: Housing, legal assistance, Indian Health, food distribution, child welfare, Indian arts and culture development, fund tribal cultural heritage programs, tribal historic preservation officers, NAGPRA, Indian Gaming
-- In California Many Tribes Not Federally Recognized (Unacknowledged Status with Federal Government – No land or status with feds!)
 - Three-Tiered System in California:
-    - Gaming Tribes (Fed Recognized)
-    - Non-Gaming Tribes (Fed Recognized)
-    - Unacknowledged Tribes
+    1. Gaming Tribes (Fed Recognized)
+    2. Non-Gaming Tribes (Fed Recognized)
+    3. Unacknowledged Tribes
+- In California Many Tribes Not Federally Recognized (Unacknowledged Status with Federal Government -- no land or status with feds!) -- **Why is this the case?**
+    - 1851-52: treaties not ratified
+    - 1870s-1900s:
+        - Award Federal Recognition to tribes with strong continuities with Past; Those that maintained Indian cultural practices over time
+        - This was influenced by early anthropologists (i.e. UC Berkeley)
+            - Program of “Ethnographic Salvage”
+            - Tended not to work with Tribes who had undergone major transformations, acculturation
+        - Discuss Spatial Distribution of Fed Recognized Tribes; Many Unacknowledged Tribes in Former Mission Lands
+        - E.x. Ohlone Indians in post-mission times did not disappear
+            - 1840s: In East Bay
+            - 1860s: Lived at Alisal Rancheria well into 1900s
+                - Active Indian community -- inter-marry with other tribes, Hispanics 
+                - Some Anthropologists claim they were “culturally extinct” role that early Anthropology Played in Tribes obtaining Federal Recognition, and those that did not (Lightfoot 2005 Reading)
 
 
+### 4. Environmental Degradation (Anderson 2005 Reading)
+- Commodification of Environment
+- Gold Mining, Hydraulic Mining
+    - Impacted rivers and lakes
+- Commercial Agriculture and Ranching
+    - Drained wetlands
+    - Monocropping
+- Commercial Hunting of Game, Birds, Fishing
+- _Massive_ Timber Harvests
+    - Clear cut total forests
+    - Exploitive -- not forestry
+    - Specifically Redwoods, Sierra Nevada
+- Dam Rivers
+- Unleash Plethora of Foreign Plants/Animals
 
+## Four Outcomes Of Settler Colonialism On Indigenous Landscape Management Practices In California
 
+### 1. Fire Prohibition Policies 
 
+- Initially Directed Against Native People;
+- Racism -- Early Fire Bans Did Not Apply to All Settler Colonists
+    - Settlers, Ranchers, and timber companies still burned land
+- Why Natives Signaled out for Ban?
+    - Fire Suppression –- Component of Settler Colonialism
+    - Strategy to Facilitate the Removal of Natives from their Lands? 
+
+### 2. Minimal Reservation Land Implications for Indigenous Stewardship Practices; 
+
+- Fewer Restrictions on Indian Trust/Reservation Lands
+- However, Lack of Tribal Lands in California
+    - Curtailed ability of tribes to Revitalize Landscape Practices, such as Cultural Burning
+- Compare California with Trust Lands in American Southwest!!
+
+### 3. Native People Lost Access To Resources From Their Tribal Lands
+
+- Major problem for tribes—they were not granted trust land (reservations) AND they had minimal access to resources on Public Lands (California State Parks, BLM, National Park Service, US Forest Service) Until Recently – Tribes not allowed to undertake Stewardship practices on Public Lands
+    - no cultural burning
+    - no harvesting of foods, medicines, raw materials
+
+### 4. Conservation Practices: Exclusion Of Native People (Anderson 2005, Johnson 2014 Readings)
+
+- Influence of John Muir on _Conservation Movement_ in USA in early 1900s
+    - Early debate about conservation practices involving light burning, indigenous stewardship
+    - Believed land was cathedral of nature and should be untouched (so no Indian burning!)
+- John Muir: 
+    - Argued for creations of pristine, natural preserves untouched by people
+    - Did not Advocate for Native Stewardship Practices, such as Cultural Burning
+    - Conservation Model –- Put Fence Around Property and keep people out
+    - Fire Suppression Policies of Settler colonialism
+        - One component of broader package of developments that have kept tribes from revitalizing cultural burning until recently
+- Policies of extermination, genocide; poverty, diseases, food shortages; limited sized reservations; many California tribes unacknowledged; massive environmental destruction of tribal lands
+- Upshot of Discussion, up until the 1960s-1970s, Native Californians had little or no land to call their own, minimal tribal land, little access to resources on Public Lands in California for harvesting foods, medicines, raw materials for baskets, etc.
+- Greatly curtailed ability to undertake Indigenous Landscape Stewardship Practices, such as Cultural Burning

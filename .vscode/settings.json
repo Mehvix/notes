@@ -1,8 +1,9 @@
 {
-	"terminal.integrated.cwd": "hugo",
+	"terminal.integrated.cwd": "hugo", // open new terminals to hugo dir
 	"cSpell.words": [
 		"-esque",
 		"adia",
+		"Alisal",
 		"Almanor",
 		"AMLT",
 		"anthro",
@@ -31,20 +32,25 @@
 		"hominin",
 		"Hoxie",
 		"imgs",
+		"inary",
 		"infty",
 		"Isovolumetric",
 		"katex",
 		"Keeley",
 		"Knobcone",
 		"latewood",
+		"Lightfoot",
 		"limbwood",
 		"linearization",
 		"longleaf",
+		"Madley",
 		"mathjax",
 		"Miwok",
+		"Monocropping",
 		"Morro",
 		"Mutsun",
 		"NAGPRA",
+		"Ohlone",
 		"onstant",
 		"Ostrander",
 		"overstory",
@@ -69,5 +75,5 @@
 		"USFS",
 		"Waals",
 		"Yokut"
-	] // open new terminals to hugo dir
+	]
 }
