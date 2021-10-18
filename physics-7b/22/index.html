@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="21.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$   The number of field lines passing through unit area perpendicular to the field .">
+<meta name=description content="22.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$   The number of field lines passing through unit area perpendicular to the field .">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="22: Gauss's Law">
-<meta property="og:description" content="21.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$   The number of field lines passing through unit area perpendicular to the field .">
+<meta property="og:description" content="22.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$   The number of field lines passing through unit area perpendicular to the field .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/22/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-10-12T14:56:23-07:00">
+<meta property="article:modified_time" content="2021-10-18T10:20:44-07:00">
 <title>22: Gauss's Law | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.a504b849217aff24208e6230b68f2c8b29153b316b11d03f901776a8200004ba.js integrity="sha256-pQS4SSF6/yQgjmIwto8siykVOzFrEdA/kBd2qCAABLo=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.6b0d511536fc6e3bb0ff90ab539b2a22d8ec61e9df7156a3ac1d157766bc63ab.js integrity="sha256-aw1RFTb8bjuw/5CrU5sqItjsYenfcVajrB0Vd2a8Y6s=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -98,6 +98,12 @@ Home page
 <li>
 <a href=http://notes.mehvix.com/physics-7b/22/ class=active>22: Gauss's Law</a>
 </li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -126,22 +132,21 @@ CS61A (Anto's)
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#211-electric-flux>21.1 Electric Flux</a></li>
-<li><a href=#212-gausss-law>21.2 Gauss&rsquo;s Law</a></li>
-<li><a href=#213-applications-of-gausss>21.3 Applications of Gauss&rsquo;s</a>
+<li><a href=#221-electric-flux>22.1 Electric Flux</a></li>
+<li><a href=#222-gausss-law>22.2 Gauss&rsquo;s Law</a></li>
+<li><a href=#223-applications-of-gausss>22.3 Applications of Gauss&rsquo;s</a>
 <ul>
 <li><a href=#uniformly-charged-solid-spherical-conductor>Uniformly Charged Solid Spherical Conductor</a></li>
 <li><a href=#solid-sphere-of-charge>Solid Sphere of Charge</a></li>
 </ul>
 </li>
-<li><a href=#214-experimental-basis-of-gausss-and-coulombs>21.4 Experimental Basis of Gauss&rsquo;s and Coulomb&rsquo;s</a></li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=211-electric-flux>
-21.1 Electric Flux
-<a class=anchor href=#211-electric-flux>#</a>
+<article class=markdown><h1 id=221-electric-flux>
+22.1 Electric Flux
+<a class=anchor href=#221-electric-flux>#</a>
 </h1>
 <ul>
 <li><strong>Electric Flux:</strong> Electric field that passes through a given area
@@ -201,14 +206,14 @@ $$\Phi_\vec{E} = \oint_A \vec E \cdot d\vec A$$</li>
 </ul>
 </li>
 </ul>
-<h1 id=212-gausss-law>
-21.2 Gauss&rsquo;s Law
-<a class=anchor href=#212-gausss-law>#</a>
+<h1 id=222-gausss-law>
+22.2 Gauss&rsquo;s Law
+<a class=anchor href=#222-gausss-law>#</a>
 </h1>
 <ul>
 <li>
 <p><strong>Gauss&rsquo;s Law:</strong> We can relate flux through a surface and net charge enclosed within said surface by
-$$\oint \vec E \cdot d\vec A = \frac{Q_\text{enclosed}}{\varepsilon_0}$$</p>
+$$\Phi = \oint \vec E \cdot d\vec A = \frac{Q_\text{enclosed}}{\varepsilon_0}$$</p>
 <ul>
 <li>This tells us the <strong>difference</strong> between the input and output flux of the electric field over any surface is due to charge within that surface.</li>
 <li>This is because we defined .$1 \text{ Coulomb} = \varepsilon_0^{-1} \text{ field lines}$</li>
@@ -237,9 +242,9 @@ $$\oint_{A_1} \vec E \cdot d \vec A = \oint_{A_2} \vec E \cdot d \vec A = \frac{
 $$\oint \vec E_i \cdot d \vec A = \oint \Big(\Sigma \vec E_i \Big) \cdot d \vec A = \sum \frac{Q_i}{\varepsilon_0} = \frac{Q_\text{enclosed}}{\varepsilon_0}$$</p>
 </li>
 </ul>
-<h1 id=213-applications-of-gausss>
-21.3 Applications of Gauss&rsquo;s
-<a class=anchor href=#213-applications-of-gausss>#</a>
+<h1 id=223-applications-of-gausss>
+22.3 Applications of Gauss&rsquo;s
+<a class=anchor href=#223-applications-of-gausss>#</a>
 </h1>
 <h2 id=uniformly-charged-solid-spherical-conductor>
 Uniformly Charged Solid Spherical Conductor
@@ -274,6 +279,9 @@ $$\Longrightarrow E = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r^2}$$</li>
 </ul>
 </div>
 </div>
+<ul>
+<li>If .$Q \neq 0$, current would flow inside the conductor which would build up charge on the exterior of the conductor. This charge would oppose the field, ultimately (in a few nanoseconds for a metal) canceling the field to zero.</li>
+</ul>
 <h2 id=solid-sphere-of-charge>
 Solid Sphere of Charge
 <a class=anchor href=#solid-sphere-of-charge>#</a>
@@ -309,16 +317,12 @@ $$$$</li>
 </ul>
 </div>
 </div>
-<h1 id=214-experimental-basis-of-gausss-and-coulombs>
-21.4 Experimental Basis of Gauss&rsquo;s and Coulomb&rsquo;s
-<a class=anchor href=#214-experimental-basis-of-gausss-and-coulombs>#</a>
-</h1>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/a54febc41b887b7c5d9fe846a1c73be8e59abb87 title="Last modified by Max Vogel | October 12, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/fbc30ae43e22d52c624dfebb4b90eb20ba230e38 title="Last modified by Max Vogel | October 18, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 12, 2021</span>
+<span>October 18, 2021</span>
 </a>
 </div>
 <div>
@@ -338,15 +342,14 @@ $$$$</li>
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#211-electric-flux>21.1 Electric Flux</a></li>
-<li><a href=#212-gausss-law>21.2 Gauss&rsquo;s Law</a></li>
-<li><a href=#213-applications-of-gausss>21.3 Applications of Gauss&rsquo;s</a>
+<li><a href=#221-electric-flux>22.1 Electric Flux</a></li>
+<li><a href=#222-gausss-law>22.2 Gauss&rsquo;s Law</a></li>
+<li><a href=#223-applications-of-gausss>22.3 Applications of Gauss&rsquo;s</a>
 <ul>
 <li><a href=#uniformly-charged-solid-spherical-conductor>Uniformly Charged Solid Spherical Conductor</a></li>
 <li><a href=#solid-sphere-of-charge>Solid Sphere of Charge</a></li>
 </ul>
 </li>
-<li><a href=#214-experimental-basis-of-gausss-and-coulombs>21.4 Experimental Basis of Gauss&rsquo;s and Coulomb&rsquo;s</a></li>
 </ul>
 </nav>
 </div>

@@ -8,13 +8,13 @@
 <meta property="og:description" content="14.1 Functions of Several Variables #   In the real world, most things don&rsquo;t depend on a single variable  Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V=\pi r^2 h$   Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/14/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-10-12T14:56:23-07:00">
+<meta property="article:modified_time" content="2021-10-18T10:20:44-07:00">
 <title>14: Partial Derivatives | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.a504b849217aff24208e6230b68f2c8b29153b316b11d03f901776a8200004ba.js integrity="sha256-pQS4SSF6/yQgjmIwto8siykVOzFrEdA/kBd2qCAABLo=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.6b0d511536fc6e3bb0ff90ab539b2a22d8ec61e9df7156a3ac1d157766bc63ab.js integrity="sha256-aw1RFTb8bjuw/5CrU5sqItjsYenfcVajrB0Vd2a8Y6s=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -98,6 +98,12 @@ Home page
 <li>
 <a href=http://notes.mehvix.com/physics-7b/22/>22: Gauss's Law</a>
 </li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -158,6 +164,17 @@ CS61A (Anto's)
 <li><a href=#gradient-vector>Gradient Vector</a></li>
 <li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li>
 <li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li>
+</ul>
+</li>
+<li><a href=#147-maximum-and-minimum-values>14.7 Maximum and Minimum Values</a>
+<ul>
+<li><a href=#critical-points>Critical Points</a></li>
+<li><a href=#extreme-points>Extreme Points</a></li>
+</ul>
+</li>
+<li><a href=#148-lagrange-multipliers>14.8 Lagrange Multipliers</a>
+<ul>
+<li><a href=#two-constraints>Two Constraints</a></li>
 </ul>
 </li>
 </ul>
@@ -231,7 +248,7 @@ We say .$f$ is continuous on .$D$ if .$f$ is continuous at every point .$(a,b)$ 
 </blockquote>
 <ul>
 <li>That is, we need the limit to exist ands for .$f(a,b)$ to be defined</li>
-<li>Continuos functions: .$x,y, c, \text{ trig (on domain)}$</li>
+<li>Continuous functions: .$x,y, c, \text{ trig (on domain)}$</li>
 <li>Arithmetic, composition, exponent all preserve continuity (on domain!)</li>
 <li>Dividing doesn&rsquo;t necessarily preserve continuity</li>
 </ul>
@@ -391,24 +408,24 @@ Gradient Vector
 </h2>
 <blockquote class="book-hint info">
 <strong>Gradient:</strong> If .$f$ is a function of variable .$x,y,z$, then the gradient of .$f$ is the vector function .$\nabla f$ defined by
-$$\nabla f(x,y,z) = \big\langle f_x(x,y,z) + f_y (x,y,z) + f_z (x,y,z) \big\rangle = \frac{\delta f}{\delta x}\hat i + \frac{\delta f}{\delta y}\hat j$$
+$$\nabla f(x,y,z) = \big\langle f_x(x,y,z) + f_y (x,y,z) + f_z (x,y,z) \big\rangle = \frac{\delta f}{\delta x}\hat i + \frac{\delta f}{\delta y}\hat j + \frac{\delta f}{\delta z}\hat k$$
 </blockquote>
 <ul>
-<li>We can now use the gradient to re-write our direction derivative equation as
+<li>We can now use the gradient to re-write our directional derivative equation as
 $$D_{\hat u} f(x,y,z,\dots) = \nabla f(x,y,z,\dots) \cdot \hat u$$</li>
 <li>We can re-write this using the definition of the dot product as
-$$D_{\hat u} f(x,y,z,\dots) = \vert \nabla f \vert \vert \hat u \vert \cos\theta =\vert \nabla f \vert \cos\theta $$</li>
+$$D_{\hat u} f(x,y,z,\dots) = \Vert \nabla f \Vert \Vert \hat u \Vert \cos\theta =\Vert \nabla f \Vert \cos\theta $$</li>
 </ul>
 <h2 id=maximizing-the-directional-derivative>
 Maximizing the Directional Derivative
 <a class=anchor href=#maximizing-the-directional-derivative>#</a>
 </h2>
 <blockquote class="book-hint info">
-Suppose .$f$ is a differentiable function of two or three variables. The maximum value of the directional derivatives .$D_\hat{u} f(\vec x)$ is .$\vert \nabla f(\vec x ) \vert$ and it occurs when .$\hat u$ has the same direction as the gradient vector .$\nabla f(\vec x)$
+Suppose .$f$ is a differentiable function of two or three variables. The maximum value of the directional derivatives .$D_\hat{u} f(\vec x)$ is .$\Vert \nabla f(\vec x ) \Vert$ and it occurs when .$\hat u$ has the same direction as the gradient vector .$\nabla f(\vec x)$
 </blockquote>
 <ul>
 <li>We can see from the definition above that since the max of .$\cos\theta$ is .$1$ when .$\theta = 0$, therefore the max of the directional derivative occurs at the same angle (when .$\hat u$ has the same direction of .$\nabla f$ )</li>
-<li>The maximal value is .$D_\hat{u} f(\vec x) = \vert \nabla f \vert$</li>
+<li>TL;DR: The maximal value of .$D_\hat{u} f(\vec x)$ is .$\Vert \nabla f \Vert$</li>
 </ul>
 <h2 id=tangent-planes-to-level-surfaces>
 Tangent Planes to Level Surfaces
@@ -418,7 +435,7 @@ Tangent Planes to Level Surfaces
 <li>If .$f(x,y) = k$ is a curve, then .$F(x,y,z) = k$ is a surface</li>
 <li>Let .$\vec r(t)$ be a space curve on the surface .$F(x,y,z) = k$
 <ul>
-<li>Let .$\vec r(t_0) = \langle x_0, y_0, z_0 \rangle$ for some .$t_0$ (the space curve passes through some point which is on the surface)</li>
+<li>Let .$\vec r(t_0) = \langle x_0, y_0, z_0 \rangle$ for some .$t_0$ (at some time, the space curve passes through some point which is on the surface)</li>
 <li>We know .$F(\vec r(t)) = k$, thus, using the chain rule:
 $$0 = \frac{\delta F}{\delta x} \frac{\delta x}{\delta t} + \frac{\delta F}{\delta y} \frac{\delta y}{\delta t} + \frac{\delta F}{\delta z} \frac{\delta z}{\delta t} = \nabla F(x_0, y_0, z_0) \cdot (\vec r(t_0))'$$</li>
 </ul>
@@ -433,12 +450,130 @@ $$\nabla F\big\vert_{(x_0, y_0, z_0)} \cdot \langle x-x_0, y-y_0, z-z_0 \rangle 
 <li>We can also write this in the symmetric equation form:
 $$\frac{x-x_0}{F_x(x_0, y_0, z_0)} = \frac{y-y_0}{F_y(x_0, y_0, z_0)} = \frac{z-z_0}{F_z(x_0, y_0, z_0)}$$</li>
 </ul>
+<h1 id=147-maximum-and-minimum-values>
+14.7 Maximum and Minimum Values
+<a class=anchor href=#147-maximum-and-minimum-values>#</a>
+</h1>
+<h2 id=critical-points>
+Critical Points
+<a class=anchor href=#critical-points>#</a>
+</h2>
+<blockquote class="book-hint info">
+A function of two variables has a <strong>local maximum</strong> at .$(a,b)$ if .$f(x,y) \leq f(a,b)$ when .$(x,y)$ is near .$(a,b)$ [This means that for .$f(x,y) \leq f(a,b)$ for all points .$(x,y)$ in some disk with center .$(a,b)$.] The number .$f(a,b)$ is called a local maximum <em>value</em>. If .$f(x,y) \geq f(a,b)$ when .$(x,y)$ is near .$(a,b)$, then .$f$ has a <strong>local minimum</strong> at .$(a,b)$ and .$(x,y)$ is a local minimum <em>value</em>.
+</blockquote>
+<ul>
+<li>If the inequalities above hold for all points .$(x,y)$ in the domain of .$f$, then .$f$ has an <strong>absolute maximum</strong> (or absolute <strong>minimum</strong>) at .$(a,b)$</li>
+<li>If .$f$ has a local maximum or minimum at .$(a,b)$ and the first-order partial derivatives of .$f$ exist there, then .$f_x(a,b) = 0$ and .$f_y(a,b) = 0$.
+<ul>
+<li>If the graph of .$f$ has a tangent plane at a local maximum or minimum, then the tangent plane must be horizontal</li>
+</ul>
+</li>
+<li>.$(a,b)$ is a <strong>Critical Point</strong> of .$f$ if .$f_x(a,b) = 0$ and .$f_y(a,b) = 0$, or if one of these partial derivatives does not exist
+<ul>
+<li>Thus, if .$f$ has a local maximum or minimum at .$(a,b)$, then .$(a,b)$ is a critical point of .$f$</li>
+<li>In other words, at a critical point, a function could have a local maximum or a local minimum or neither (saddle point).</li>
+</ul>
+</li>
+</ul>
+<blockquote class="book-hint info">
+<p><strong>Second Derivatives Test:</strong> Suppose the second partial derivatives of .$f$ are continuous on a disk with center .$(a, b)$, and suppose that .$f_x(a, b) = 0$ and .$f_y(a, b) = 0$ (that is, .$(a, b)$ is a critical point of .$f$ ). Let
+$$D = D(a, b) = \begin{vmatrix}f_{xx} & f_{xy}\\ f_{yx} & f_{yy}\end{vmatrix} = f_{xx}(a, b) f_{yy}(a, b) - (f_{xy}(a, b))^2$$</p>
+<ul>
+<li>If .$D > 0$ and .$f_{xx}(a, b) > 0$ (or .$f_{yy}(a, b) > 0$), then .$f(a, b)$ is a local minimum.</li>
+<li>If .$D > 0$ and .$f_{xx}(a, b) &lt; 0$ (or .$f_{yy}(a, b) &lt; 0$), then .$f(a, b)$ is a local maximum.</li>
+<li>If .$D &lt; 0$, then .$f(a, b)$ is a saddle point</li>
+<li>If .$D = 0$, the test gives no information: .$f$ could be any of the above</li>
+</ul>
+</blockquote>
+<ul>
+<li>Note that in the first two tests, it&rsquo;s implied that .$f_{xx}$ and .$f_{yy}$ have the same sign</li>
+<li>The determinant is a
+<a href=https://en.wikipedia.org/wiki/Hessian_matrix#Second-derivative_test>Hessian matrix</a></li>
+</ul>
+<h2 id=extreme-points>
+Extreme Points
+<a class=anchor href=#extreme-points>#</a>
+</h2>
+<p><div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Just as a closed interval contains its endpoints, a <strong>closed set</strong> in .$\mathbb{R}^2$ is one that contains all its boundary points.
+<ul>
+<li>For instance, the disk .$D = \{(x,y) \vert x^2 + y^2 \leq 1 \}$ is a closed set because it contains all of its boundary points (which are the points on the circle .$r=1$)</li>
+<li>But if even one point on the boundary curve were omitted, the set would not be closed</li>
+</ul>
+</li>
+<li>A <strong>bounded set</strong> in .$\mathbb{R}^2$ is one that is contained within some disk &ndash; it is finite in extent</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/sets.png alt=Sets>
+</div>
+</div>
+<blockquote class="book-hint info">
+<strong>Extreme Value Theorem for Functions of Two Variables:</strong> If .$f$ is continuous on a closed, bounded set .$D$ in .$\mathbb{R}^2$, then .$f$ attains an absolute maximum value .$f(x_1, y_1)$ and an absolute minimum value .$f(x_2, y_2)$ at some points .$(x_1, y_1)$ and .$(x_2, y_2)$ in .$D$.
+</blockquote>
+</p>
+<ul>
+<li>If .$f$ has an extreme value at .$(x_1, y_1)$, then .$(x_1, y_1)$ is either a critical point of .$f$ or a boundary point of .$d$.</li>
+<li>To find the absolute maximum and minimum values of a continuous function .$f$ on a closed, bounded set .$D$:
+<ol>
+<li>Find the values of .$f$ at the critical points of .$f$ in .$D$.</li>
+<li>Find the extreme values of .$f$ on the boundary of .$D$.</li>
+<li>The largest of the values from steps 1 and 2 is the absolute maximum value; the smallest of these values is the absolute minimum value.</li>
+</ol>
+</li>
+</ul>
+<h1 id=148-lagrange-multipliers>
+14.8 Lagrange Multipliers
+<a class=anchor href=#148-lagrange-multipliers>#</a>
+</h1>
+<ul>
+<li>We use Lagrange Multipliers to find critical points of a surface .$f$ given some constraining surface .$g$
+<blockquote class="book-hint info">
+<p><strong>Method of Lagrange Multipliers</strong> To find the maximum and minimum values of .$f(x,y,z)$ subject to the constraint .$g(x,y,z) = k$ [assuming that these extreme values exist and .$\nabla \neq 0$ on the surface .$g(x,y,z) = k$]:</p>
+<ul>
+<li>Find all values of .$x, y, z$, and .$\lambda$ such that
+$$\nabla f(x,y,z) = \lambda \nabla g(x,y,z)$$
+$$g(x,y,z) = k$$</li>
+<li>Evaluate .$f$ at all the points .$(x, y, z)$ that result from the first step. The largest of these values is the maximum value of .$f$; the smallest is the minimum value of .$f$.</li>
+</ul>
+</blockquote>
+</li>
+<li>We can decompose the first equation and use the second equation to get
+$$f_x = \lambda g_x;\ \ f_y = \lambda g_y;\ \ f_z = \lambda g_z;\ \ g(x,y,z) = k$$</li>
+<li>Notice we don&rsquo;t care what .$\lambda$ is, only that it exists</li>
+</ul>
+<h2 id=two-constraints>
+Two Constraints
+<a class=anchor href=#two-constraints>#</a>
+</h2>
+<ul>
+<li>We can use Lagrange multipliers for two constraints .$f$ and .$g$ too:
+$$\nabla f(x_0, y_0, z_0) = \lambda \nabla g(x_0, y_0, z_0) + \mu \nabla h(x_0, y_0, z_0)$$</li>
+<li>Likewise, we can decompose the equation above to get the following five equations:
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ol>
+<li>$$f_x = \lambda g_x + \mu h_x$$</li>
+<li>$$f_y = \lambda g_y + \mu h_y$$</li>
+<li>$$f_z = \lambda g_z + \mu h_z$$</li>
+<li>$$g(x,y,z) = k$$</li>
+<li>$$h(x,y,z) = c$$</li>
+</ol>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/two-constr.png alt="Two Constraints">
+</div>
+</div>
+</li>
+</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/a54febc41b887b7c5d9fe846a1c73be8e59abb87 title="Last modified by Max Vogel | October 12, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/fbc30ae43e22d52c624dfebb4b90eb20ba230e38 title="Last modified by Max Vogel | October 18, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 12, 2021</span>
+<span>October 18, 2021</span>
 </a>
 </div>
 <div>
@@ -490,6 +625,17 @@ $$\frac{x-x_0}{F_x(x_0, y_0, z_0)} = \frac{y-y_0}{F_y(x_0, y_0, z_0)} = \frac{z-
 <li><a href=#gradient-vector>Gradient Vector</a></li>
 <li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li>
 <li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li>
+</ul>
+</li>
+<li><a href=#147-maximum-and-minimum-values>14.7 Maximum and Minimum Values</a>
+<ul>
+<li><a href=#critical-points>Critical Points</a></li>
+<li><a href=#extreme-points>Extreme Points</a></li>
+</ul>
+</li>
+<li><a href=#148-lagrange-multipliers>14.8 Lagrange Multipliers</a>
+<ul>
+<li><a href=#two-constraints>Two Constraints</a></li>
 </ul>
 </li>
 </ul>

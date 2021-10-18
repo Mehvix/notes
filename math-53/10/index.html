@@ -8,13 +8,13 @@
 <meta property="og:description" content="10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .$(h,k)$  Likewise, .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/10/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-09-19T15:36:32-07:00">
+<meta property="article:modified_time" content="2021-10-18T10:20:44-07:00">
 <title>10: Parametric Equations and Polar Coordinates | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.a504b849217aff24208e6230b68f2c8b29153b316b11d03f901776a8200004ba.js integrity="sha256-pQS4SSF6/yQgjmIwto8siykVOzFrEdA/kBd2qCAABLo=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.6b0d511536fc6e3bb0ff90ab539b2a22d8ec61e9df7156a3ac1d157766bc63ab.js integrity="sha256-aw1RFTb8bjuw/5CrU5sqItjsYenfcVajrB0Vd2a8Y6s=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -97,6 +97,12 @@ Home page
 </li>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/22/>22: Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
 </li>
 </ul>
 </li>
@@ -297,7 +303,7 @@ $$\frac{dx}{d\theta} = \frac{dr}{d\theta}\cos\theta - r\sin\theta$$
 $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$
 and using .$\cos^2\theta + \sin^2\theta = 1$ , we have
 $$\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2 = [\text{ugly stuff, see page 711}] = \Big(\frac{dr}{d\theta}\Big)^2 + r^2$$
-so when .$f'$ is continuos, we can write the arc length equation as
+so when .$f'$ is continuous, we can write the arc length equation as
 $$L = \int_a^b \sqrt{\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2} d\theta = \int_a^b \sqrt{r^2 + \Big(\frac{dr}{d\theta}\Big)^2}d\theta$$</p>
 <h2 id=common-shapes>
 Common shapes
@@ -340,9 +346,9 @@ $$r=b+a\cos\theta$$
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/e0fdae17de7d36074994cb8b1bacdfe0ce74d6d5 title="Last modified by Max Vogel | September 19, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/fbc30ae43e22d52c624dfebb4b90eb20ba230e38 title="Last modified by Max Vogel | October 18, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>September 19, 2021</span>
+<span>October 18, 2021</span>
 </a>
 </div>
 <div>

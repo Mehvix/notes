@@ -2,20 +2,20 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Chapters #   17: Temperature, Thermal Expansion, & Ideal Gas Law 18: Kinetic Theory of Gases 19: Heat & First Law of Thermo 20: Second Law of Thermo 21: Electric Charges & Fields 22: Gauss's Law 23: Electric Potential 24: Capacitance, Dielectrics, Electric Energy Storage  ">
+<meta name=description content="24.1 Capacitors #   Capacitors are devices that store an electric charge  Normally consists of two conducting objects; plates, sheets  When a voltage is applied, the two plates become charged: one positive, one negative   Conductors are placed near one another, but not touching  This distance is typically due to an insulator between sheets Capacitors are typically rolled so that they take up less room     Two main use cases  Storing energy for later use; e.">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Physics 7B">
-<meta property="og:description" content>
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://notes.mehvix.com/docs/physics-7b/">
-<title>Physics 7B | notes.mehvix.com</title>
+<meta name=color-scheme content="light dark"><meta property="og:title" content="24: Capacitance, Dielectrics, Electric Energy Storage">
+<meta property="og:description" content="24.1 Capacitors #   Capacitors are devices that store an electric charge  Normally consists of two conducting objects; plates, sheets  When a voltage is applied, the two plates become charged: one positive, one negative   Conductors are placed near one another, but not touching  This distance is typically due to an insulator between sheets Capacitors are typically rolled so that they take up less room     Two main use cases  Storing energy for later use; e.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/physics-7b/24/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2021-10-18T10:20:44-07:00">
+<title>24: Capacitance, Dielectrics, Electric Energy Storage | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
 <script defer src=/en.search.min.6b0d511536fc6e3bb0ff90ab539b2a22d8ec61e9df7156a3ac1d157766bc63ab.js integrity="sha256-aw1RFTb8bjuw/5CrU5sqItjsYenfcVajrB0Vd2a8Y6s=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=http://notes.mehvix.com/docs/physics-7b/index.xml title=notes.mehvix.com>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
 <script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
@@ -77,7 +77,7 @@ Home page
 <li>
 <input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle checked>
 <label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/physics-7b/ class=active>Physics 7B</a>
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
 </label>
 <ul>
 <li>
@@ -102,7 +102,7 @@ Home page
 <a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+<a href=http://notes.mehvix.com/physics-7b/24/ class=active>24: Capacitance, Dielectrics, Electric Energy Storage</a>
 </li>
 </ul>
 </li>
@@ -124,7 +124,7 @@ CS61A (Anto's)
 <label for=menu-control>
 <img src=/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Physics 7B</strong>
+<strong>24: Capacitance, Dielectrics, Electric Energy Storage</strong>
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -132,24 +132,99 @@ CS61A (Anto's)
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#chapters>Chapters</a></li>
+<li><a href=#241-capacitors>24.1 Capacitors</a></li>
+<li><a href=#242-determination-of-capacitance>24.2 Determination of Capacitance</a></li>
+<li><a href=#243-capacitors-in-series-and-parallel>24.3 Capacitors in Series and Parallel</a>
+<ul>
+<li><a href=#parallel>Parallel</a></li>
+<li><a href=#series>Series</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=chapters>
-Chapters
-<a class=anchor href=#chapters>#</a>
+<article class=markdown><h1 id=241-capacitors>
+24.1 Capacitors
+<a class=anchor href=#241-capacitors>#</a>
 </h1>
 <ul>
-<li><a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a></li>
-<li><a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a></li>
-<li><a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a></li>
-<li><a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a></li>
-<li><a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a></li>
-<li><a href=http://notes.mehvix.com/physics-7b/22/>22: Gauss's Law</a></li>
-<li><a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a></li>
-<li><a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a></li>
+<li>Capacitors are devices that store an electric charge
+<ul>
+<li>Normally consists of two conducting objects; plates, sheets
+<ul>
+<li>When a voltage is applied, the two plates become charged: one positive, one negative</li>
+</ul>
+</li>
+<li>Conductors are placed near one another, but not touching
+<ul>
+<li>This distance is typically due to an insulator between sheets</li>
+<li>Capacitors are typically rolled so that they take up less room</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Two main use cases
+<ol>
+<li>Storing energy for later use; e.x. camera flash</li>
+<li>Block surges of charge and energy to protect circuits</li>
+</ol>
+</li>
+<li>The amount of charge .$Q$ acquired by each plate is proportional to
+<ol>
+<li>.$V$: The potential difference of the two plates (Volts)</li>
+<li>.$C$: The constant
+<a href=https://en.wikipedia.org/wiki/Capacitance>capacitance</a> of the capacitor (Coulombs per volt &ndash; farad)
+$$Q=CV$$</li>
+</ol>
+</li>
+</ul>
+<h1 id=242-determination-of-capacitance>
+24.2 Determination of Capacitance
+<a class=anchor href=#242-determination-of-capacitance>#</a>
+</h1>
+<ul>
+<li>In the real world, capacitance is determined experimentally by using the prior equations</li>
+<li>For ideal cases where the sheets are separated by a vacuum or air, however, we can use the following equations</li>
+<li>For a parallel-plate capacitor where .$A$ is the area of each plate and .$d$ is the distance between plates:
+$$E = \frac{Q}{\varepsilon_0}$$
+<ul>
+<li>We also know this because .$E = \sigma / \varepsilon_0$ and .$\sigma = Q/A$</li>
+</ul>
+</li>
+<li>Since .$V = \int E\ dl = \frac{Qd}{\varepsilon_0 A}$, we can relate it to .$C$ as
+$$C = \frac{Q}{V} = \varepsilon_0 \cdot \frac{A}{d}$$</li>
+</ul>
+<h1 id=243-capacitors-in-series-and-parallel>
+24.3 Capacitors in Series and Parallel
+<a class=anchor href=#243-capacitors-in-series-and-parallel>#</a>
+</h1>
+<h2 id=parallel>
+Parallel
+<a class=anchor href=#parallel>#</a>
+</h2>
+<ul>
+<li>Voltage (potential difference) is the same across all paths/capacitors
+$$Q = Q_1 + Q_2 + \dots = C_1 V + C_2 V + \dots$$</li>
+<li>Therefore, we can write the equivalent capacitance equation as
+$$Q = C_\text{eq} V = (C_1 + \dots)V \Longrightarrow C_\text{eq} = C_1 + \dots$$</li>
+<li>The net effect of connecting capacitors in parallel is to increase the capacitance
+<ul>
+<li>Makes sense: We&rsquo;re essentially increasing area of the plates</li>
+</ul>
+</li>
+</ul>
+<h2 id=series>
+Series
+<a class=anchor href=#series>#</a>
+</h2>
+<ul>
+<li>The charge on each capacitor has the same magnitude .$Q$</li>
+<li>The total voltage across all capacitors is the sum:
+$$V = V_1 + V_2 + \dots$$</li>
+<li>And since .$V = Q/C$, then
+$$ \frac{Q}{C_\text{eq}} = \frac{Q}{C_1} + \frac{Q}{C_2} + \dots \Longrightarrow \frac{1}{C_\text{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + \dots $$</li>
+<li>Notice that the equivalence capacitance is smaller than the smallest contributing capacitance</li>
 </ul>
 </article>
 <footer class=book-footer>
@@ -160,7 +235,7 @@ Chapters
 </a>
 </div>
 <div>
-<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/physics-7b/_index.md target=_blank rel=noopener>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/physics-7b/24.md target=_blank rel=noopener>
 <img src=/svg/edit.svg class=book-icon alt=Edit>
 <span>Edit this page</span>
 </a>
@@ -176,7 +251,14 @@ Chapters
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#chapters>Chapters</a></li>
+<li><a href=#241-capacitors>24.1 Capacitors</a></li>
+<li><a href=#242-determination-of-capacitance>24.2 Determination of Capacitance</a></li>
+<li><a href=#243-capacitors-in-series-and-parallel>24.3 Capacitors in Series and Parallel</a>
+<ul>
+<li><a href=#parallel>Parallel</a></li>
+<li><a href=#series>Series</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
