@@ -8,13 +8,13 @@
 <meta property="og:description" content="21.1 Static Electricity; Electric Charge and its Conservation #   &ldquo;Charged&rdquo; objects posses a net electric charge Unlike charges attract; like charges repel  Charges on glass are positive, charges on plastic is negative   Law of Conservation of Electric Charge:  Whenever a certain amount of charge is produced in one object, an equal amount of the opposite type of charge is produced in another object  Charges cannot be destroyed or created   E.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/21/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-10-12T14:56:23-07:00">
+<meta property="article:modified_time" content="2021-10-25T11:11:49-07:00">
 <title>21: Electric Charges & Fields | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.6b0d511536fc6e3bb0ff90ab539b2a22d8ec61e9df7156a3ac1d157766bc63ab.js integrity="sha256-aw1RFTb8bjuw/5CrU5sqItjsYenfcVajrB0Vd2a8Y6s=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.d5e812a60b3f548b3361105f6c023537ecd48b7063bbf89aaf151434560fef9f.js integrity="sha256-1egSpgs/VIszYRBfbAI1N+zUi3Bju/iarxUUNFYP758=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -67,6 +67,9 @@ Home page
 <a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
 </li>
 <li>
+<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
+</li>
+<li>
 <a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
 </li>
 <li>
@@ -103,6 +106,9 @@ Home page
 </li>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
 </li>
 </ul>
 </li>
@@ -361,9 +367,16 @@ $$\overrightarrow E = \int d \overrightarrow E = \int k\frac{1}{r^2}\ dq$$
 </li>
 <li>When solving problems, it&rsquo;s a good idea to use symmetry, check charge direction, and (when applicable) use bounds of .$r \in [0, \infty]$</li>
 <li>We can write equation for an infinite plane holding a uniform surface charge density .$\sigma$
-$$\overrightarrow E = \frac{\sigma}{2\varepsilon_0}$$
+$$2A \cdot \overrightarrow E = \frac{\sigma A}{\varepsilon_0} \Longrightarrow \overrightarrow E = \frac{\sigma}{2\varepsilon_0}$$
 <ul>
 <li>This also applies in the case where a charge is close to an infinite surface (so that the distance to the surface is much greater than the distance to the edges)</li>
+<li>In the case where there are two oppositely charged sheets parallel to one another, the field is .$\vec E = \frac{\sigma}{\varepsilon_0}$ since there are two charges creating the field</li>
+</ul>
+</li>
+<li>The case involving an infinitely long wire can be written generally as
+$$\overrightarrow E \cdot 2\pi RL = \frac{\lambda L}{\varepsilon_0} \Longrightarrow \overrightarrow E = \frac{\lambda}{2\pi\varepsilon_0 \cdot r}$$
+<ul>
+<li>.$r$ is the distance from a particle to the wire</li>
 </ul>
 </li>
 </ul>
@@ -534,9 +547,9 @@ $$\overrightarrow F_{12} = k \frac{q_1 q_2}{r^2} \cdot \widehat r_{21}$$
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/a54febc41b887b7c5d9fe846a1c73be8e59abb87 title="Last modified by Max Vogel | October 12, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/e6aeb07d0a4be901857c606926dc3e107390f540 title="Last modified by Max Vogel | October 25, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 12, 2021</span>
+<span>October 25, 2021</span>
 </a>
 </div>
 <div>

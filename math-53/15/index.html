@@ -1,0 +1,318 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="15.1 Double Integrals over Rectangles #   We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$ Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$ To find the volume of this surface, we take a double integral $$V = \iint_R f(x,y)\ dA$$  Fubini’s Theorem: If .">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="15: Multiple Integrals">
+<meta property="og:description" content="15.1 Double Integrals over Rectangles #   We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$ Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$ To find the volume of this surface, we take a double integral $$V = \iint_R f(x,y)\ dA$$  Fubini’s Theorem: If .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/math-53/15/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2021-10-25T11:11:49-07:00">
+<title>15: Multiple Integrals | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.d5e812a60b3f548b3361105f6c023537ecd48b7063bbf89aaf151434560fef9f.js integrity="sha256-1egSpgs/VIszYRBfbAI1N+zUi3Bju/iarxUUNFYP758=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+Home page
+</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle checked>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors and Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/15/ class=active>15: Multiple Integrals</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>15: Multiple Integrals</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#151-double-integrals-over-rectangles>15.1 Double Integrals over Rectangles</a>
+<ul>
+<li><a href=#average-value>Average Value</a></li>
+</ul>
+</li>
+<li><a href=#152-double-integrals-over-general-regions>15.2 Double Integrals over General Regions</a>
+<ul>
+<li><a href=#type-i>Type I</a></li>
+<li><a href=#type-ii>Type II</a></li>
+<li><a href=#properties-of-double-integrals>Properties of Double Integrals</a></li>
+</ul>
+</li>
+<li><a href=#153-double-integrals-in-polar-coordinates>15.3 Double Integrals in Polar Coordinates</a></li>
+<li><a href=#155-surface-area>15.5 Surface Area</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=151-double-integrals-over-rectangles>
+15.1 Double Integrals over Rectangles
+<a class=anchor href=#151-double-integrals-over-rectangles>#</a>
+</h1>
+<ul>
+<li>We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$</li>
+<li>Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$</li>
+<li>To find the volume of this surface, we take a double integral
+$$V = \iint_R f(x,y)\ dA$$</li>
+</ul>
+<blockquote class="book-hint info">
+<strong>Fubini’s Theorem:</strong> If .$f$ is continuous on the rectangle .$R = \{(x,y) \vert a \leq x \leq b, c \leq y \leq d\}$, then
+$$\iint_R f(x,y)\ dA = \int_a^b \int_c^d f(x,y)\ dy\ dx = \int_c^d \int_a^b f(x,y)\ dx\ dy$$
+More generally, this is true if we assume that .$f$ is bounded on .$R$, .$f$ is discontinuous only on a finite number of smooth curves, and the iterated integrals exist.
+</blockquote>
+<h2 id=average-value>
+Average Value
+<a class=anchor href=#average-value>#</a>
+</h2>
+<ul>
+<li>In the 2D case we could write the average as
+$$f_\text{avg} = \frac{1}{b-a} \int_a^b f(x) dx$$</li>
+<li>For 3D, instead of dividing by the change in just .$y$ (which was .$b-a$), we divide over the total area:
+$$f_\text{avg} = \frac{1}{A(R)}\iint_R f(x,y)\ dA$$</li>
+</ul>
+<h1 id=152-double-integrals-over-general-regions>
+15.2 Double Integrals over General Regions
+<a class=anchor href=#152-double-integrals-over-general-regions>#</a>
+</h1>
+<h2 id=type-i>
+Type I
+<a class=anchor href=#type-i>#</a>
+</h2>
+<blockquote class="book-hint info">
+If .$f$ is continuous on a type I region .$D$ such that
+$$D = \{(x,y)\ \vert\ a \leq x \leq b,\ g_1(x) \leq y \leq g_2(x)\ \}$$
+then
+$$\int_D f(x,y)\ dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx$$
+</blockquote>
+<p>
+<img src=/docs/math-53/imgs/type1.png alt="Type I"></p>
+<h2 id=type-ii>
+Type II
+<a class=anchor href=#type-ii>#</a>
+</h2>
+<blockquote class="book-hint info">
+If .$f$ is continuous on a type II region .$D$ such that
+$$D = \{(x,y)\ \vert\ c \leq y \leq d,\ h_1(y) \leq x \leq h_2(y)\ \}$$
+then
+$$\int_D f(x,y)\ dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\ dy$$
+</blockquote>
+<h2 id=properties-of-double-integrals>
+Properties of Double Integrals
+<a class=anchor href=#properties-of-double-integrals>#</a>
+</h2>
+<ol>
+<li>$$\iint_D \Big[ f(x,y) + g(x,y)\Big]\ dA = \iint_{D} f(x,y)\ dA + \iint_{D} g(x,y)\ dA$$</li>
+<li>$$\iint_D c\cdot f(x,y)\ dA = c \iint_D f(x,y)\ dA\ \text{ where $c$ is a constant}$$</li>
+<li>$$\iint_D f(x,y)\ dA \geq \iint_D g(x,y)\ dA \ \text{ if $f(x,y) \geq g(x,y)$ for all $(x,y) \in D$}$$</li>
+<li>$$\iint_D f(x,y)\ dA = \iint_{D_1} f(x,y)\ dA + \iint_{D_2} f(x,y)\ dA\ \text{ for $D = D_1 \cup D_2$}$$</li>
+<li>$$mA(D) \leq \iint_D f(x,y)\ dA \leq MA(D)$$
+<ul>
+<li>If .$m \leq f(x,y) \leq M$ for all .$(x,y) \in D$</li>
+</ul>
+</li>
+</ol>
+<h1 id=153-double-integrals-in-polar-coordinates>
+15.3 Double Integrals in Polar Coordinates
+<a class=anchor href=#153-double-integrals-in-polar-coordinates>#</a>
+</h1>
+<ul>
+<li>Recall that we can convert cartesian to polar with the following equations:
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$r^2=x^2 +y^2$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$x=r\cos\theta$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$y=r\sin\theta$$
+</div>
+</div>
+</li>
+</ul>
+<p><blockquote class="book-hint info">
+If .$f$ is continuous on a polar region of the form
+$$D = \{(r,\theta)\ \vert\ \alpha \leq \theta \leq \beta, h_1(\theta) \leq r \leq h_2(\theta) \}$$
+then
+$$\iint_D f(x,y)\ dA = \int_\alpha^\beta \int_{h_1(\theta}^{h_2(\theta)} r \cdot f(r\cos\theta, r\sin\theta)\ dr\ d\theta$$
+</blockquote>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>We multiply .$r$ because an &ldquo;infinitesimal&rdquo; polar rectangle as an ordinary rectangle with dimensions .$r\ d\theta$ and .$dr$ and therefore has area .$dA = r\ dr\ d\theta$
+<img src=/docs/math-53/imgs/polar-mult.png alt="Polar r factor"></p>
+</blockquote>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/polar-int.png alt="Polar Integral">
+</div>
+</div>
+</p>
+<h1 id=155-surface-area>
+15.5 Surface Area
+<a class=anchor href=#155-surface-area>#</a>
+</h1>
+<blockquote class="book-hint info">
+The area of the surface with equation .$z = f(x,y), (x,y) \in D$, where .$f_x$ and .$f_y$ are continuous, is
+$$A(S) = \iint_D \sqrt{\big[f_x(x,y)\big]^2 + \big[f_y(x,y)\big]^2 + 1}\ dA$$
+</blockquote>
+<ul>
+<li>Notice the similarities between the SA function and the line integral function, .$L = \int_a^b \sqrt{1 + \big( \frac{dy}{dx} \big)^2}\ dx$</li>
+</ul>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/e6aeb07d0a4be901857c606926dc3e107390f540 title="Last modified by Max Vogel | October 25, 2021" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>October 25, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/15.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#151-double-integrals-over-rectangles>15.1 Double Integrals over Rectangles</a>
+<ul>
+<li><a href=#average-value>Average Value</a></li>
+</ul>
+</li>
+<li><a href=#152-double-integrals-over-general-regions>15.2 Double Integrals over General Regions</a>
+<ul>
+<li><a href=#type-i>Type I</a></li>
+<li><a href=#type-ii>Type II</a></li>
+<li><a href=#properties-of-double-integrals>Properties of Double Integrals</a></li>
+</ul>
+</li>
+<li><a href=#153-double-integrals-in-polar-coordinates>15.3 Double Integrals in Polar Coordinates</a></li>
+<li><a href=#155-surface-area>15.5 Surface Area</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
