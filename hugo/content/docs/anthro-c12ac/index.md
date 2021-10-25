@@ -1151,3 +1151,110 @@ bookCollapseSection: false
 - Policies of extermination, genocide; poverty, diseases, food shortages; limited sized reservations; many California tribes unacknowledged; massive environmental destruction of tribal lands
 - Upshot of Discussion, up until the 1960s-1970s, Native Californians had little or no land to call their own, minimal tribal land, little access to resources on Public Lands in California for harvesting foods, medicines, raw materials for baskets, etc.
 - Greatly curtailed ability to undertake Indigenous Landscape Stewardship Practices, such as Cultural Burning
+
+# Outline Fire Suppression Policies of US/CA Governments
+
+- Nathanial Kenny wrote an article on the US Fire Service
+    - Published in 1956 in National Geographic
+    - Argued that at the end of the day, science would be the most crucial role in controlling fires 
+    > "I don’t believe that equipment and development alone will show us how to keep having the relatively few big fires… Researchers must let their imaginations soar for answers that today would seem fantastic"
+- Fire Suppression: 
+    - Begins around 1905
+    - Approximately 80,000 fires/year today
+    - 98-99% of all wildland fires out at less than 5 acres in size
+    - 95% of area burned today is from 1-2% of the fires that escape initial attack 
+        - Often occurs in terrible conditions
+    - 4.5 million acres once burned in CA 
+        - **Over half Tribal burning** -- 10-35% of this area burns today in most years but 2020 will burn this amount for 1st time (Stephens et al. 2007)
+        - Size is only one aspect -- what is the fire mortality? what is the distribution? etc. 
+    - Not just area burned, **burn patterns inside**
+- Historical data yields insight into controls on forest structure in pine-mixed conifer forests
+    - In 1911 photograph and datasets we can see much more sunny forests 
+    - This is due to more frequent, natural/cultural burnings vs today's fire suppression
+    - Kern National Forest Structure and Composition (Stephens et al. 2015)
+- Southern California and Baja Forests (Stephens et al 2003)
+    - Drought from 1999-2002 in southern California and northwestern Mexico
+        - Only 5 inches of rain one year, driest on record in So Cal mountains another year
+    - Fire suppression and past forest harvesting have increased forest density in So Cal (Minnich et al 1995)
+        - Native bark beetle population increased because of weaker trees
+    - Sierra San Pedro Martir / Northern Baja California
+        - Mediterranean climate
+        - Annual precipitation averages 24 in
+        - Area has been grazed by livestock
+        - Similar to southern California and eastern Sierra Nevada
+        - Fire suppression begins in 1970, no harvesting
+        - SSPM Mission in 1794 severely impacted populations
+        - Within the California floristic province
+        - Forested area of around 40,000 acres
+        - Fire suppression and past forest harvesting have increased forest density (Minnich et al. 1995)
+        - Elevation upper plateau 8800 ft
+            - 3 large plateaus, Peninsular Mountains
+        - Jeffrey pine-mixed conifer forests
+            - Similar to souther CA and eastern Sierra Nevada
+            - Fire suppression begins in 1970s, **no harvesting**
+        - 3 indigenous cultures used portions of the SSPM outside the winter: Paipai Kiliwa, Nakipa
+            - SSPM Mission in 1794 severely impacted populations
+            - Mission lasted 8 years due to extreme climate
+    - SSPM wildfire July 4, 2003
+        - Started in chaparral below forest
+        - Fire burned approximately 600 acres
+            - More shrubland than forest burned
+        - Largest fire in 20 years
+            - Occurred at end of sever drought, 1999-2002
+            - Same drought as in SoCal
+                - SoCal drought killed millions of trees w/o fire
+        - Only 20% of trees killed
+            - Jeffrey pine more dominate after fire, trees and seedlings (less white fir, incense-cedar)
+        - Fire was very patchy 
+            - Directly linked to heterogeneity of forest structure and fuels pre-fire
+            - Mortality very low even after 4 year drought and wildfire (Stephens et al. 2008)
+        - Incredible forest resilience!!
+          - Gives us hope in California
+          - To answer Nathanial Kenny -- Fire back, restoration thinning, and stewardship are also key
+
+
+# Implications for Local Ecosystems
+
+- Changes to Grasslands
+    - Encroachment of woody species
+        - Pinyon pine-Juniper in Southwest
+    - Tallgrass prairie
+    - Mountain meadows
+    - Coastal Prairies
+- Fire taken out of system
+    - Fire return intervals increased
+    - Whole ecosystems change
+    - Examples from Montana and Arizona
+- Rim Wildfire
+    - Largest fire in Sierra Nevada
+        - Fifth largest fire in history of CA
+    - Ignited August 17, 2013 
+    - Total area burned: 270,000 acres (102,000 ha )
+    - Fire effects
+        - Very large high severity patches
+    - Cost of suppression : $127.2 million
+- Management Response 
+    - Forest fuel reduction treatments implemented to reduce fire hazards and fire effects
+        - Reduction of surface and ladder fuels critical (Agee and Skinner 2005)
+    - Example of fuel reduction treatments
+        - Research has determined that treatments are effective in reducing potential fire behavior and effects (Fulé et al. 2012)
+- Permanent Backlog: Sierra Nevada
+    - 2.9 million acres (60% of FS acreage) will always remain fuel loaded
+    - 2/3’s of this acreage is pine-dominated and mixed-conifer forest types
+    - This is a disaster! Only gets worse with climate change
+- Summary
+    - Tree density increased 2-3 times in mixed conifer forests since 1911
+    - Forest change has decreased resiliency
+    - Climate change will make this situation worse
+    - Need increased fuel reduction treatments and wildfire for resource benefit frequent fire forests – critical
+    - California legislation $200 Million/yr. through 2028
+    - Fuel treatments on 1 million acres/yr. by 2025
+    - US Forest Service management plans being revised
+        - Best chance in decades to change trajectory
+    - Next 1-2 decades absolutely critical
+    - Leave options available for future managers
+    - We are running out of time!!
+
+
+
+
