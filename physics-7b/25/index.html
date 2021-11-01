@@ -8,13 +8,13 @@
 <meta property="og:description" content="25.1 The Electric Battery #   Batteries produce electricity by transforming chemical energy into electric energy Simple battery (cells) contain two plates or rods of dissimilar metals called electrodes  The portion of rods outside of the solution are called the terminals Anode: The positive electrode Cathode: The negative electrode   These electrodes are emersed in the electrolyte: a solution such as a dilute acid  Chemical Process:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/25/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-10-25T11:11:49-07:00">
+<meta property="article:modified_time" content="2021-11-01T08:01:47-07:00">
 <title>25: Electric Current and Resistance | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.d5e812a60b3f548b3361105f6c023537ecd48b7063bbf89aaf151434560fef9f.js integrity="sha256-1egSpgs/VIszYRBfbAI1N+zUi3Bju/iarxUUNFYP758=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.afddce956e8ddd799e77457581727f4f4f3b19063cf594b5c17ada113ed3d0fe.js integrity="sha256-r93OlW6N3Xmed0V1gXJ/T087GQY89ZS1wXraET7T0P4=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -146,6 +146,16 @@ CS61A (Anto's)
 <li><a href=#temperature>Temperature</a></li>
 </ul>
 </li>
+<li><a href=#255-electric-power>25.5 Electric Power</a></li>
+<li><a href=#257-alternating-current>25.7 Alternating Current</a></li>
+<li><a href=#258-microscopic-view-of-current>25.8 Microscopic View of Current</a>
+<ul>
+<li><a href=#current-density>Current Density</a></li>
+<li><a href=#drift-speed>Drift Speed</a></li>
+<li><a href=#field-inside-a-wire>Field inside a Wire</a></li>
+</ul>
+</li>
+<li><a href=#259-superconductivity>25.9 Superconductivity</a></li>
 </ul>
 </nav>
 </aside>
@@ -308,12 +318,188 @@ $$\rho_T = \rho_0 = \bigg[ 1+ \alpha (T-T_0)\bigg]$$
 </ul>
 </li>
 </ul>
+<h1 id=255-electric-power>
+25.5 Electric Power
+<a class=anchor href=#255-electric-power>#</a>
+</h1>
+<ul>
+<li>Electric energy is transformed into thermal energy (and light) in stove burners, toasters, etc.
+<ul>
+<li>The current creates collisions between the moving electrons and the atoms in the wire</li>
+<li>That is, the KE from the wire&rsquo;s atoms increases meaning the temperature increases too
+$$P = \frac{dU}{dt} = \frac{dq}{dt}\cdot V$$</li>
+</ul>
+</li>
+<li>This is because energy is transformed when a tiny charge .$dq$ moves through a potential difference .$V$ is .$dU = V\ dq$</li>
+<li>The charge that flows per second, .$dq/dt$, is the electric current .$I$:
+$$P= IV = I^2 R = \frac{V^2}{R}$$
+<ul>
+<li>The SI unit for power is the watt: .$\text{1 W = 1 J/s}$</li>
+<li>We get the last two equations by plugging in .$V=IR$</li>
+</ul>
+</li>
+</ul>
+<h1 id=257-alternating-current>
+25.7 Alternating Current
+<a class=anchor href=#257-alternating-current>#</a>
+</h1>
+<ul>
+<li>When a battery is connected to a circuit, the current moves steadily in one direction (DC: Direct Current)</li>
+<li>Electric generators at power plants produce AC: alternating current
+<ul>
+<li>Reverses direction many times per second and is commonly sinusoidal
+$$V = V_0 \sin(2\pi ft) = V_0 \sin(\omega t)$$</li>
+<li>.$\omega$ = .$2\pi f$</li>
+<li>.$f$ is the frequency: number of complete oscillations per second
+<ul>
+<li>Commonly .$\text{60 Hz}$ in NA</li>
+</ul>
+</li>
+<li>Potential .$V$ oscillates between .$\pm V_0$, the <strong>peak voltage</strong></li>
+</ul>
+</li>
+<li>Current equation still works:
+$$I = \frac{V}{R} = \frac{V_0}{R}\sin\omega t = I_0 \sin\omega t$$
+<ul>
+<li>.$I_0 = V_0/R$ is the <strong>peak current</strong></li>
+<li>Avg current is 0; it&rsquo;s positive and negative for an equal amount of time
+<ul>
+<li>Doesn&rsquo;t mean that no heat is created or no power is needed</li>
+<li>Electrons are still moving though!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Power is also consistent
+$$P=I^2R = I_0^2 R \sin\omega t = \frac{V_0^2}{R} \sin\omega t$$
+<ul>
+<li>Power is always positive because current is squared</li>
+<li>Since the .$\sin\dots$ oscillates between 1 and 0, the average power is
+$$\overline P = \frac{1}{2}I_0^2R = \frac{1}{2} \frac{V_0^2}{R}$$</li>
+<li>This can also be calculated by using the RMS values for .$I$ and .$V$
+$$I_\text{rms} = \sqrt{\overline I^2} = \frac{I_0}{\sqrt{2}} \approx 0.707 I_0$$
+$$V_\text{rms} = \sqrt{\overline V^2} = \frac{V_0}{\sqrt{2}} \approx 0.707 V_0$$
+$$\dots \Longrightarrow \overline P = I_\text{rms} V_\text{rms} = I_\text{rms}^2 R = \frac{V_\text{rms}^2}{R}$$</li>
+<li>Fun fact: we can use the rms of a value to find the peak of it, e.x.
+$$V_0 = \sqrt{2} V_\text{rms}$$</li>
+<li>Keep in mind that this is the average power. Instantaneous power varies from .$0$ to .$2\overline P$</li>
+</ul>
+</li>
+</ul>
+<h1 id=258-microscopic-view-of-current>
+25.8 Microscopic View of Current
+<a class=anchor href=#258-microscopic-view-of-current>#</a>
+</h1>
+<ul>
+<li>We&rsquo;ve seen that electric current can be carried by negatively charged electrons in metal wires, and that in liquid solutions current can also be carried by positive and/or negatively charged ions</li>
+<li>When a potential difference is applied to the two ends of a wire, the direction of the electric field .$\vec E$ is parallel to the walls of the wire
+<ul>
+<li>This field within the conducting wire does not contradict our earlier result that .$\vec E = 0$ inside a conductor in the electrostatic case, as we are no longer dealing with the static case.</li>
+<li>That is, charges are free to move in a conductor, and hence can move under the action of the electric field.
+<ul>
+<li>If all the charges are at rest, then .$\vec E = 0$
+<img src=/docs/physics-7b/imgs/wire.png alt="Current flow through a wire"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=current-density>
+Current Density
+<a class=anchor href=#current-density>#</a>
+</h2>
+<ul>
+<li>Current density, .$\vec j$, is the current per area
+$$j = \frac{I}{A} \Longrightarrow I = \int \vec j \cdot d \vec A$$
+<ul>
+<li>.$I$ is the current through the whole surface</li>
+<li>.$d\vec A$ is an element of surface area over which the integration is taken</li>
+<li>Direction of the density is the same direction as .$\vec E$ &ndash; the direction that a positive charge would move</li>
+</ul>
+</li>
+</ul>
+<h2 id=drift-speed>
+Drift Speed
+<a class=anchor href=#drift-speed>#</a>
+</h2>
+<ul>
+<li>Inside a wire, we can imagine the free electrons as moving about randomly at high speeds, bouncing off the metal atoms of the wire
+<ul>
+<li>Somewhat like the molecules of a gas</li>
+</ul>
+</li>
+<li>When an electric field exists in the wire the electrons feel a force and initially begin to accelerate but they soon reach a more or less steady average speed, known as their <strong>drift speed</strong> .$v_d$
+<ul>
+<li>Collisions with atoms in the wire keep them from accelerating further</li>
+<li>The drift speed is normally very much smaller than the electrons’ average random speed inside the metal wire</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Black zagged line represents the motion of an electron in a metal wire due to an electric field. The field .$\vec E$ gives electrons in random motion a net drift velocity .$\vec v_d$. Its direction (the net charge flow) is in the opposite direction of .$\vec E$ because electrons have a negative charge and .$\vec F = q \vec E$
+<img src=/docs/physics-7b/imgs/drift.png alt=Drift></p>
+</blockquote>
+<ul>
+<li>We can relate drift speed with the macroscopic view:
+<ul>
+<li>In some time, the electrons travel (the average) distance .$l = v_d \Delta t$</li>
+<li>In that same time, electrons in volume .$V = Al = A v_d \Delta t$ pass through area .$A$ of the wire</li>
+<li>If there are .$n$ free electrons each of charge .$-e$ per unit volume, then the total electrons is .$N = nV$</li>
+<li>Thus, the charge is
+$$\Delta Q = \text{(number of charges, $N$)$\times$(charge per particle, $-e$)}$$
+$$\dots = (nV)(-e) = -(nAv_d\Delta T)(e)$$</li>
+<li>We can then easily find the current (density):
+$$I = \frac{\Delta Q}{\Delta t} = -neAv_d$$
+$$j = \frac{I}{A} = -nev_d$$</li>
+<li>Notice that the negative sign indicates that the direction of (positive) current flow is opposite to the drift speed of electrons.</li>
+</ul>
+</li>
+</ul>
+<h2 id=field-inside-a-wire>
+Field inside a Wire
+<a class=anchor href=#field-inside-a-wire>#</a>
+</h2>
+<ul>
+<li>Voltage can be written in terms of microscopic values (in addition to the macro: .$V = IR$)</li>
+<li>Resistance is related to density by
+$$R = \rho \frac{l}{A}$$</li>
+<li>We can then write .$V$, .$I$ and .$j$ as
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$V = El = IR = (jA)(\rho \frac{l}{A}) = j \rho l$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$I = jA$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$j = \frac{1}{\rho}E = \sigma E$$
+</div>
+</div>
+<ul>
+<li>.$\sigma$ is the <em>conductivity</em> of the wire</li>
+<li>.$\rho, \sigma$ do not vary with .$V$ and thus neither .$E$</li>
+</ul>
+</li>
+<li>We can then write the microscopic statement of Ohm&rsquo;s Law:
+$$\vec j = \sigma \vec E = \frac{\vec E}{\rho}$$</li>
+</ul>
+<h1 id=259-superconductivity>
+25.9 Superconductivity
+<a class=anchor href=#259-superconductivity>#</a>
+</h1>
+<ul>
+<li>At very low temperatures, the resistivity of certain metals and certain compounds or alloys becomes zero</li>
+<li>Materials in such a state are said to be <strong>superconducting</strong></li>
+<li>In general, superconductors become superconducting only below a certain <strong>transition (critical) temperature</strong>, .$T_C$</li>
+</ul>
+<p>
+<img src=/docs/physics-7b/imgs/super.png alt=Superconductivity></p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/e6aeb07d0a4be901857c606926dc3e107390f540 title="Last modified by Max Vogel | October 25, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/62c9310003b968ddf1facd3c7e48b74552b02492 title="Last modified by Max Vogel | November 1, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 25, 2021</span>
+<span>November 1, 2021</span>
 </a>
 </div>
 <div>
@@ -341,6 +527,16 @@ $$\rho_T = \rho_0 = \bigg[ 1+ \alpha (T-T_0)\bigg]$$
 <li><a href=#temperature>Temperature</a></li>
 </ul>
 </li>
+<li><a href=#255-electric-power>25.5 Electric Power</a></li>
+<li><a href=#257-alternating-current>25.7 Alternating Current</a></li>
+<li><a href=#258-microscopic-view-of-current>25.8 Microscopic View of Current</a>
+<ul>
+<li><a href=#current-density>Current Density</a></li>
+<li><a href=#drift-speed>Drift Speed</a></li>
+<li><a href=#field-inside-a-wire>Field inside a Wire</a></li>
+</ul>
+</li>
+<li><a href=#259-superconductivity>25.9 Superconductivity</a></li>
 </ul>
 </nav>
 </div>
