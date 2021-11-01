@@ -1255,6 +1255,102 @@ bookCollapseSection: false
     - Leave options available for future managers
     - We are running out of time!!
 
+# Leopold and Forest Restoration
+
+## Leopold et al. 1963
+
+- Asked to carry out report by US govt 
+- Carried out in Yellowstone
+- Took view of the whole ecosystem, not just a single issue
+- Animal populations '_protected_' from hunting and habitats '_protected_' from wildfire
+    - Wolfs (predators) were hunted before so that elk could thrive
+    - Elk thrived too much; Elk became hunted because their population grew so high
+- Habitat is not stable that can be set aside and preserved behind a fence
+- Goal of Park Management in the United States
+    - Each park be maintained, or where necessary recreated, in the condition when first visited by the white man
+        - Wilderness isn't devoid of people; need to consider native stewards
+    - A primitive America could be recreated, using skill, judgment, and ecologic sensitivity
+    - The forty-niners poured over the Sierra Nevada and found big trees in gigantic magnificence
+        - Ground was grass parkland, in springtime carpeted with wildflowers (_No mention of indigenous management_)
+        - Today dog-hair thicket of young trees and mature brush—a direct function of protection from **natural fires**
+    - Is it possible that the primitive open forest could be restored? And if so, how? (_Big question even for today_)
+- Policies of Park Management
+    - Research, not intuition, should form the basis for all management 
+    - Agency best to study park management is the National Park Service
+    - Management without knowledge would be a dangerous policy indeed
+- Methods of Habitat Management
+    - Of the methods of manipulating vegetation, controlled use of fire is the most "natural" and the cheapest and _easiest_ to apply (easy?? Maybe in the 1960’s)			
+    - Forest and chaparral areas protected from fire may require careful advance treatment (Harold Biswell influence?)
+    - Trees and mature brush may have to be cut, piled, and burned before ground fire (Harold Biswell did this with his early burning)
+    - Once fuel is reduced, periodic burning can be conducted safely and at low expense (Biswell)
+        - Against wind and down hill results in slowest and least severe fire conditions
+    - "We are calling for a set of ecologic skills unknown in this country today" (Indigenous?)
+    - "It will not be done by passive protection alone" (Big statement at the time, Still important today)
+- Very powerful ideas included, changes NPS course of action (no Indigenous people though)
+
+## Sneeuwjagt et al. 2013 
+
+- Rick was the head of bushfire and prescribed fire in Western Australia which also has a Mediterranean climate
+- Opportunities for improved fire use and management in California: lessons from Western Australia (WA)
+- Treatment size - Prescribed burn units **much larger** than those implemented in the US – make ours bigger
+    - Burns averaging in excess of 5000 ac, with some as large as 25,000 acres in Western Australia
+- Department of Environment and Conservation (DEC) fire managers take advantage of relatively few burn windows to burn large areas
+    - Managers use weekends and nights, if conditions are favorable
+    - Have multiple burn plans in place in each region in order react quickly to conditions
+    - DEC begins training new seasonal crews on prescribed fires in the spring burning season
+    - DEC has responsibility for fire management across all public lands in the state of Western Australia (integrated versus USA system)
+    - Impossible to combine the many county, state, and federal agencies of CA under one agency but we need to do better
+- Similar to California, prescribed fire in Western Australia is a contentious issue, particularly some urban residents who not aware of benefits of prescribed fire
+- Indigenous burning not integrated with DEC burning -- rare across Australia at least in 2013
+- DEC uses a focused outreach effort to the public and politicians -- otherwise, fire program could get cut
+    - Fire program severely tested from an escaped prescribed burn in November 2011 that destroyed 32 houses
+        - Part of Reason Rick retired
+    - The first instance of home loss from a DEC burn in 50 years
+    - More stringent risk management assessment of the program occurred
+    - Despite community anxiety, support for continuation of extensive prescribed burn program remains high (similar to Florida from home losses 5 years ago)
+- These are mature programs, California is in the beginning and we will need patience and the support from the public and politicians
+- We will have problems: Indigenous fire use could help us move forward
+- Hopefully can learn from them and build a program
+
+
+# MT2 Review
+
+- Construction of railroad occurred after statehood of CA
+- Colonization from San Fran do San Diego was unique in that it was primarily to set up missions
+- Paiute Forestry was an offensive term that was directed at light burning, calling it 'primitive' because tribes practiced it
+- Stuart Show manipulated data to make burnings look more dangerous
+- Canopy fires
+    - Higher severity -- upper trees aren't fire adapted like the base of trees
+    - Used to be rare pre-1800s, now more common due to build up of surface fuels
+    - Latter fuels allow fire to travel up fuel, up to canopies
+- Clinton Walker was an advocate of light burning
+- There is little short-term economic gain to do fuel treatment
+- CA's first governor (Peter Burnett) supported the Native American protection act and endorsed the war of extermination
+- At least 4.5 million acres were burned annually pre-colonization (1800s)
+- Ron Good claimed that cultural burning was primarily for cultural reasons + increase value of raw materials and increase visibility
+- Harold Biswell was a UCB professor and was an advocate of prescribed burning when it was taboo
+    - Was ostracized at the time, but is now recognized
+- Early EU explorer period was different from the Spanish missionary period in that the EUs didn't settle down and instead explored/traded while the Spanish established settlements
+- Gifford Pinchot was very against any kind of burnings
+- 1910 fire occurred in Idaho and led to many advocating for fire suppression 
+- Population reversal of CA Indians occurred due to the finishing of the rail road (letting more people in to CA, i.e during the Gold Rush) 
+- Essay Question:
+    - Settler colonialism differed from earlier Missionary trips in that...
+        - Settler missions went inwards + cared primarily about making money
+        - During Missionary trips, Natives were a large part of the workforce and the main purpose to convert them to Christianity   
+    - Two sides of light burning controversy:
+        1. Natives encouraged to burn so that there wasn't fuel build up, etc.
+        2. Foresters who opposed ranchers employing any form of burning, called it _Paiute Forestry_
+    - Settler colonialism impacts
+        - Intersection of many invasive plants/animals that radically altered ecosystem (e.x. cattle)
+        - Draining of lakes/dams to flood areas (altering ecosystem) and other forms of land modification for the purpose of agriculture
+        - Hydrolic mining leading to soil erosion 
+        - Logging + clear cutting of forests
+    - Anderson 2005, settler period
+        - Forceful removal -- through raids, violence, giving false land titles, destroying food/water source
+        - Extermination (killing) -- Genocide (Benjamin Madley)
+        - Assimilation -- Native Children went to school to be whitewashed (re-educated)
+
 
 
 
