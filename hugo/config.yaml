@@ -33,13 +33,19 @@ markup:
     tableOfContents:
         startLevel: 1
 menu:
-    before:
-        - name: "Home page"
-          url: "https://www.mehvix.com"
-          weight: 1
     after:
         - name: "CS61A (Anto's)"
           url: "https://cs61a.rouxl.es/"
+          weight: 1
+        - name: "—"
+          weight: 2
+          url: "#"
+        - name: "mehvix.com"
+          url: "https://www.mehvix.com"
+          weight: 3
+        - name: "pass.mehvix.com"
+          url: "https://pass.mehvix.com"
+          weight: 4
 
 params:
     custom_css: ["css/custom_styling.css"]

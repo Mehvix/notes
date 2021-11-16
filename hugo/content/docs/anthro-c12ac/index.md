@@ -1351,6 +1351,106 @@ bookCollapseSection: false
         - Extermination (killing) -- Genocide (Benjamin Madley)
         - Assimilation -- Native Children went to school to be whitewashed (re-educated)
 
+<!-- MT3 Material -->
+
+# How to plan for prescribed burning, comparison with Florida
+
+- Prescribed fire definition: A wildland fire burning under pre-defined conditions that will accomplish certain planned objectives. Fire is ignited by people by drip torch or helicopter
+    - Whereas cultural burnings exist only for cultural reasons
+- Prescribed burner must integrate:
+    1. Weather (present day and forecast)
+        - Weather has strongest correlation with severity of the fire + it can change rapidly
+    2. Topography
+    3. Fuels (load, moisture content)
+        - Spotting (embers flying across lines) occurs when fuel is very dry
+    4. Ignition patterns (how fair is put on the ground)
+        - Art side -- factor you can control
+        - E.x. head fires, backing fires, strip-head fires
+    5. Crew size and experience, where to assign people
+    6. Safety (highest priority of all fires)
+    7. Risk (all fires have risk, goal is to minimize it and have a plan in place to execute if something goes wrong)
+- Prescribed fire is **both art and science**
+    - You can use science, but it ultimately depends on land/weather
+- Biswell did not take measurements
+    - His graduate student Jan van Wagtendonk developed prescriptions for his PhD at UCB
+
+## Southeast USA
+- Forests, savannas, and grasslands of the southern US, well-established history of fire, whether from lightning, Indigenous ignitions, or Anglo-Europeans
+- Florida, Georgia, Alabama, Carolinas, all have great prescribed burning programs
+    - Carried down from tradition
+        - Burning used to increase productivity of sap for turpentine, decrease hardwoods in timber lots, enhance grazing forage
+        - Became a family tradition
+    - Plant adaptations diverse: closed cones, large terminal buds, sprouting, bark thickness
+        - Longleaf pine
+            - Low intensity, frequent surface fire to reduce competition
+            - Thick, corky insulating bark
+            - Self-pruning at maturity
+            - Large terminal bud
+            - Chapman studied -- Yale
+    - USFS tried to eliminate but not successful
+- Kobziar et al. (2015) conducted survey of eastern US burners from in 2011 - 2012 
+    - Most respondents (75%) were employed by State or Federal forest or wildlife agencies, with the remainder landowners or contractors
+    - Fuels reduction primary goal of prescribed burning overall
+    - Program continues to be successful
+    - Florida burned > 1.2 million acres of forest last year
+        - Longleaf pine in <5 year, low intensity, understory, summer, brown rot
+        - Big shrub (sand pine) 25-100 year, high intensity, crown, spring or summer, large areas
+        - Bald Cypress / tupelo swamp, > 200 years, small area, mixed severity, only during drought
+    - Georgia said it surpassed Florida in terms of acres this year
+    - Prescribed fire in California – Low – maybe 50,000 acres
+- Brown Administration Bill passed to provide $200 million/yr. for fuels management projects - Apply for grants
+- Continues under Newson Administration and funded through 2028
+    - Goal to increase prescribed fire in CA to 1,000,000 acres/yr by 2025: 500k acres State and Private and 500k acres Federal
+- What is our baseline? 
+- Cultural burning combined with Rx fire?
+- Task forces created in State to increase pace and scale of restoration and prescribed fire
+- Public lands managers - limited budget and staffing are impediments, also planning issues
+- We don’t have the experience, crews, or political or institutional support in place today for a large program
+- We need to be patient – will take time
+
+# Managed Wildfire Effects on Water and Forest Health
+
+- Fire and Hydrology in Western US Watersheds – Project Starts 2002
+    - Managed Lighting Fire, Increase Forest Resilience
+- Illilouette Creek Basin, Yosemite National Park
+    - Fires in occur naturally through lightening here every 9 years
+    - 50 years of fire use, 40,000 ac watershed
+- Reburn fires
+- Interactions between adjacent fires
+- Historically open, patchy stands with large trees not everywhere
+    - Evidence of small proportions of stand-replacing fire (5-15%)
+- Show and Kotok (1924):
+    - “…no large fires occur without a certain amount of heat-killing”
+    - “This loss, it should be noted, represents the complete or nearly complete wiping out of small patches of the stand rather than a uniformly distributed loss over the entire area”
+- Vegetation Change from Photos:
+    - Fires Reduced Forest Area by 22%
+    - Wet meadows increased by 200%
+    - Dry meadows increased by 200%
+    - Shrublands increased by 30%
+- In Yosemite amount of stream water leaving watershed has increased or remained stable since 1974 – modeling study increased by 60 mm
+- Three other control watersheds significantly decreased
+    - Flood risk unchanged
+    - Soil water increased 
+    - Lower tree mortality in drought
+- Since fire suppression ended…
+    - Runoff ratio increased or stable
+    - Duration of spring snowmelt longer
+    - Soil water storage increased, less mortality drought
+    - Stream discharge up 3-6%, deep storage up
+    - Use of lightening ignited wildfires in Yosemite has provided several benefits to forest and water
+    - Indigenous fire could complement lightning fire
+- California is water scarce and is experiencing an increasing number of severe wildfires
+    - Despite warming climate, managed wildfires in Illilouette promote a healthy watershed
+    - Increased streamflow from wildfires will persist in a warming climate
+    - Water agencies supportive of bond funding to manage watersheds but not their base budgets – should change
+- 2020 North Complex Fire burned the largest watershed that feeds the largest lake in the State Water Project (Oroville Lake)
+- Next 1-2 decades absolutely critical in California frequent fire forests
+- Optimistic but we must move decisively
+
+# 20th Century Changes in CA Mixed-Conifer Forests
+
+
+
 
 
 
