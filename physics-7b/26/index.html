@@ -1,0 +1,576 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="26.1 EMF and Terminal Voltage #   EMF  To have a current, we need an emf (electromotive force) device to transform one type of energy (chemical, mechanical, light) into electric energy  The term “electromotive force” is a misnomer: it does not refer to a “force,” which is measured in newtons. To avoid confusion, we use the abbreviation, emf.   EMF of the Source: The potential difference between the terminals of a source when no current flows to an external circuit .">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="26: DC Circuits">
+<meta property="og:description" content="26.1 EMF and Terminal Voltage #   EMF  To have a current, we need an emf (electromotive force) device to transform one type of energy (chemical, mechanical, light) into electric energy  The term “electromotive force” is a misnomer: it does not refer to a “force,” which is measured in newtons. To avoid confusion, we use the abbreviation, emf.   EMF of the Source: The potential difference between the terminals of a source when no current flows to an external circuit .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/physics-7b/26/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2021-11-15T19:26:34-08:00">
+<title>26: DC Circuits | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.e136d7fa03224160cf8b96f4336b47ccf4cfceb34c188f3232dd965d315b25cb.js integrity="sha256-4TbX+gMiQWDPi5b0M2tHzPTPzrNMGI8yMt2WXTFbJcs=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors and Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle checked>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/26/ class=active>26: DC Circuits</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+<li>
+<a href=# target=_blank rel=noopener>
+—
+</a>
+</li>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+mehvix.com
+</a>
+</li>
+<li>
+<a href=https://pass.mehvix.com target=_blank rel=noopener>
+pass.mehvix.com
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>26: DC Circuits</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#261-emf-and-terminal-voltage>26.1 EMF and Terminal Voltage</a></li>
+<li><a href=#262-resistors-in-series-and-parallel>26.2 Resistors in Series and Parallel</a>
+<ul>
+<li><a href=#series>Series</a></li>
+<li><a href=#parallel>Parallel</a></li>
+</ul>
+</li>
+<li><a href=#263-kirchhoffs-rules>26.3 Kirchhoff&rsquo;s Rules</a></li>
+<li><a href=#264-emfs-in-series-and-parallel-charging-a-battery>26.4 EMFs in Series and Parallel; Charging a Battery</a></li>
+<li><a href=#265-rc-circuits-resistor--capacitor-in-series>26.5 RC Circuits: Resistor & Capacitor in Series</a>
+<ul>
+<li><a href=#capacitor-charging>Capacitor Charging</a></li>
+<li><a href=#capacitor-discharging>Capacitor Discharging</a></li>
+</ul>
+</li>
+<li><a href=#266-electric-hazards-and-safety>26.6 Electric Hazards and Safety</a></li>
+<li><a href=#267-ammeters-and-voltmeters-measurement-affects-quantity-measured>26.7 Ammeters and Voltmeters: Measurement Affects Quantity Measured</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=261-emf-and-terminal-voltage>
+26.1 EMF and Terminal Voltage
+<a class=anchor href=#261-emf-and-terminal-voltage>#</a>
+</h1>
+<ul>
+<li>EMF
+<ul>
+<li>To have a current, we need an <strong>emf</strong> (electromotive force) device to transform one type of energy (chemical, mechanical, light) into electric energy
+<ul>
+<li>The term “electromotive force” is a misnomer: it does not refer to a “force,” which is measured in newtons. To avoid confusion, we use the abbreviation, emf.</li>
+</ul>
+</li>
+<li><strong>EMF of the Source:</strong> The potential difference between the terminals of a source when no current flows to an external circuit</li>
+<li>.$\mathscr{E}$ is used for emf and it&rsquo;s units is (V)olts</li>
+</ul>
+</li>
+<li>Batteries
+<ul>
+<li>Batteries don&rsquo;t have constant current (it varies with resistance of the circuit)</li>
+<li>Voltage is <em>nearly</em> constant, but decreases when battery cannot supply charge fast enough to maintain full emf
+<ul>
+<li>This occurs because the charge must move between/through the electrodes in the battery</li>
+<li>Additionally, the battery has some <strong>internal resistance</strong>, .$r$</li>
+</ul>
+</li>
+<li>Batteries are treated as a perfect emf .$\mathscr{E}$ in a series with a resistor .$r$
+<ul>
+<li>The terminal voltage is .$V_\text{ab} = V_a - V_b$
+<ul>
+<li>When a battery is being charged, a current is forced to pass through it; we then have to write .$V_\text{ab} = \mathscr{E} + Ir$</li>
+</ul>
+</li>
+<li>When no current is drawn, .$V_\text{ab} = \mathscr{E} - Ir$
+<ul>
+<li>.$Ir$ comes from the fact that when .$I$ flows from the battery it causes an internal voltage drop .$Ir$</li>
+</ul>
+</li>
+<li>Since .$\mathscr{E} - Ir = IR \Longrightarrow \mathscr{E} = I(R+r)$ for .$R$ as the resistance of the circuit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id=262-resistors-in-series-and-parallel>
+26.2 Resistors in Series and Parallel
+<a class=anchor href=#262-resistors-in-series-and-parallel>#</a>
+</h1>
+<h2 id=series>
+Series
+<a class=anchor href=#series>#</a>
+</h2>
+<ul>
+<li>Any charge that passes through one resistor passes through all
+<ul>
+<li>Hence, the same current .$I$ passes through each too (constant)</li>
+<li>If this wasn&rsquo;t true, then it would imply either the charge was not conserved</li>
+</ul>
+</li>
+<li>Voltage from the battery is split between each resistor proportional to .$R$
+$$V = V_1 + V_2 + \dots = I R_1 + I R_2 + \dots = I(R_1 + R_2 + \dots)$$
+<ul>
+<li>Thus, .$R_\text{eq} = R_1 + R_2 + \dots$</li>
+</ul>
+</li>
+<li>Note that when you add more resistance to the circuit&mldr;
+<ul>
+<li>The current that passes through each resistor decreases</li>
+<li>The equivalent resistance increases</li>
+<li>Voltage stays the same since the battery is unaltered</li>
+</ul>
+</li>
+</ul>
+<h2 id=parallel>
+Parallel
+<a class=anchor href=#parallel>#</a>
+</h2>
+<ul>
+<li>Current is split from the source path into branches
+<ul>
+<li>Thus, paths outside of one&rsquo;s branch doesn&rsquo;t impact/interrupt current</li>
+<li>The current from each branch must equal the total current; i.e
+$$I = I_1 + I_2 + \dots$$</li>
+</ul>
+</li>
+<li>Voltage across each resistor is equivalent;
+$$I_1 = \frac{V}{R_1}, I_2 = \frac{V}{R_2}, \dots$$
+$$ \Longrightarrow I = \frac{V}{R_\text{eq}}$$
+<ul>
+<li>Thus, .$R_\text{eq}$ is equal to
+$$ \frac{1}{R_\text{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots$$</li>
+</ul>
+</li>
+<li>Note that when you add another resistor to the circuit&mldr;
+<ul>
+<li>Net resistance goes down
+<ul>
+<li>Adding another resistor adds another path <em>causing current to decrease</em></li>
+</ul>
+</li>
+<li>Voltage stays the same since the battery is unaltered</li>
+<li>Consistent with .$R = \rho l/A$ definition of resistance
+<ul>
+<li>Series is effectively increasing the length</li>
+<li>Parallel increases the area through which current flows</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id=263-kirchhoffs-rules>
+26.3 Kirchhoff&rsquo;s Rules
+<a class=anchor href=#263-kirchhoffs-rules>#</a>
+</h1>
+<ul>
+<li>We use Kirchhoff&rsquo;s two rules when circuits get too complex for trivial analysis</li>
+</ul>
+<blockquote class="book-hint info">
+<strong>1. Junction Rule:</strong>
+At any junction point, the sum of all currents entering the junction must equal the sum of all currents leaving the junction.
+</blockquote>
+<ul>
+<li>That is, what goes out must come back in</li>
+<li>Based on conservation of electric charge</li>
+</ul>
+<blockquote class="book-hint info">
+<strong>2. Loop Rule:</strong>
+The sum of the changes in potential around any closed loop of a circuit must be zero.
+</blockquote>
+<ul>
+<li>That is, what goes up must come back down
+<ul>
+<li>There is as much up as there is down</li>
+<li>At the battery, the gain/loss on each terminal cancel one another along the closed circuit path</li>
+</ul>
+</li>
+<li>Based on conservation of energy</li>
+</ul>
+<h1 id=264-emfs-in-series-and-parallel-charging-a-battery>
+26.4 EMFs in Series and Parallel; Charging a Battery
+<a class=anchor href=#264-emfs-in-series-and-parallel-charging-a-battery>#</a>
+</h1>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>(a) Two similarly arranged batteries in a series sum their voltages; e.x. 3V</li>
+<li>(b) Two oppositely arranged batteries in a series subtract their voltages; e.x. 8V
+<ul>
+<li>How battery charging works</li>
+<li>The 20V source is charging up the 12V battery</li>
+<li>Because of it&rsquo;s greater voltage, the 20V is forcing charge back into the 12V</li>
+</ul>
+</li>
+<li>(c) Two batteries in parallel, which if the emfs are the same, can provide more energy when large currents are needed.
+<ul>
+<li>Each of the cells in parallel has to produce only a fraction of the total current, so the energy loss due to internal resistance is less than for a single cell</li>
+<li>Thus, the batteries will drain less quickly.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>Batteries in series, (a) and (b), and in parallel (c).</p>
+<figure><img src=/docs/physics-7b/imgs/emf-configs.png>
+</blockquote>
+</figure>
+</div>
+</div>
+<h1 id=265-rc-circuits-resistor--capacitor-in-series>
+26.5 RC Circuits: Resistor & Capacitor in Series
+<a class=anchor href=#265-rc-circuits-resistor--capacitor-in-series>#</a>
+</h1>
+<ul>
+<li>RC Circuits differ in that they have <em>varying</em> current</li>
+</ul>
+<h2 id=capacitor-charging>
+Capacitor Charging
+<a class=anchor href=#capacitor-charging>#</a>
+</h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>After the switch .$S$ closes in the <strong>RC circuit</strong> shown in (a), the voltage across the capacitor increases with time as shown in (b), and the current through the resistor decreases with time as shown in (c).</p>
+<figure><img src=/docs/physics-7b/imgs/rc-charge.png>
+</blockquote>
+</figure>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
+<li>(a) When closed, the current starts flowing through the circuit from the negative terminal through .$R$ and accumulate on the upper plate of the capacitor which creates potential difference equal to .$V_C = Q/C$
+<ul>
+<li>Current is then reduced because of this opposing voltage on the capacitor</li>
+</ul>
+</li>
+<li>(b) Eventually, the potential equals the emf, .$\mathscr{E}$, and then no current flows and no potential difference across the resistor
+<ul>
+<li>Potential difference, .$V_C$, across the capacitor is equal to the charge on it, .$V_C = Q/C$</li>
+<li>Because charge increases with time, so does voltage until this point</li>
+<li>The emf .$\mathscr{E}$ of the battery will equal the sum of the voltage drops across the resistor and the capacitor:
+$$\mathscr{E} = IR + \frac{Q}{C}$$
+<ul>
+<li>.$R$ is total circuit resistance, including battery</li>
+<li>.$I$ is current at all points in the circuit at any instant</li>
+<li>.$Q$ is the charge of the capacitor at that same instant</li>
+<li>Notice: .$\mathscr{E}, R, C$ are constants, .$Q, I$ are functions of time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(c) As charge builds up on the capacitor, the current decreases exponentially in time with a time constant .$\tau$ equal to .$RC$</li>
+</ul>
+</div>
+</div>
+<ul>
+<li>The rate at which charge flows thorough the resistor (.$I = dQ/dT$) is equal to the rate at which charge accumulates on the capacitor:
+$$ \mathscr{E} = \bigg(\frac{dQ}{dt}\bigg)R + \frac{1}{C}Q$$</li>
+<li>This can then be used to find an equation of .$Q$:
+$$ \Longrightarrow \frac{dQ}{C\mathscr{E} - Q} = \frac{dt}{RC} \Longrightarrow \int_0^Q \frac{dQ}{C\mathscr{E} - Q} = \frac{1}{RC}\int_0^t dt$$
+$$ \Longrightarrow \ln\bigg(1 - \frac{Q}{C \mathscr{E}}\bigg) = - \frac{t}{RC} \Longrightarrow 1 - \frac{Q}{C\mathscr{E}} = e^{-t/RC}$$
+$$ \Longrightarrow Q = C\mathscr{E}(1-e^{-t/RT}) = Q_0 (1-e^{-t/RT})$$
+<ul>
+<li>.$Q_0 = C \mathscr{E}$ represents the maximum charge on the capacitor
+<ul>
+<li>.$Q_0 \neq \text{charge $(Q)$ at $t=0$}$</li>
+<li>The potential difference across the capacitor is .$V_C = Q/C$ so the maximum value is
+$$ \Longrightarrow V_C = \mathscr{E}(1-e^{-t/RC})$$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>.$\tau = RC$ is the axis units on graph (b) and is aptly called the <strong>time constant</strong> of the circuit
+<ul>
+<li>Represents the time required for the capacitor to reach .$(1-e^{-1}) = 0.63 = 63%$ of its <strong>full charge and voltage</strong>
+<ul>
+<li>Also represents the time for the <strong>current</strong> to drop to .$1/e \approx 0.37$ of it&rsquo;s initial value</li>
+</ul>
+</li>
+<li>Thus, it measures how quickly the capacitor becomes charged</li>
+<li>We use this as a measurement since the maximums only occur as we take .$t \to \infty$, but these values reach 86% of the way in .$2RC = 2\tau$, 95% in .$3\tau$, 98% in .$4\tau$, so on</li>
+</ul>
+</li>
+<li>The current in the circuit at any time can be found by differentiating the following:
+$$I = \frac{dQ}{dt} = \frac{\mathscr{E}}{R}e^{-t/RC}$$
+<ul>
+<li>This is an exponential decay function: when .$t=0$, the current is largest because there is no charge on the capacitor to impede it</li>
+<li>That is, .$I=I_0= \mathscr{E}/R$</li>
+<li>As charge builds up, the current decreases exponentially in time (as shown in (c))</li>
+</ul>
+</li>
+</ul>
+<h2 id=capacitor-discharging>
+Capacitor Discharging
+<a class=anchor href=#capacitor-discharging>#</a>
+</h2>
+<ul>
+<li>Now imagine the opposite case; we start fully charged at .$Q_0$ with voltage .$V_0$ and have to discharge through resistance .$R$</li>
+<li>The voltage across the resistor at any instant equals that across the capacitor:
+$$V = IR = \frac{Q}{C}$$</li>
+<li>We can use this to find the functions for both .$Q_0$ and .$V_C$:
+$$ - \frac{dQ}{dt} R = \frac{Q}{C} \Longrightarrow \frac{dq}{Q} = - \frac{dt}{RC}$$
+$$ \ln \frac{Q}{Q_0} = - (t/RC) \Longrightarrow Q = Q_0 e^{-t/RC}$$
+$$ \dots \Longrightarrow V_C = V_0 e^{-t/RC}$$
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>For the RC circuit shown in (a), the voltage .$V_C$ across the capacitor decreases with time, as shown in (b), after the switch S is closed at .$t=0$. The charge on the capacitor follows the same curve because .$Q \propto V_C$
+<img src=/docs/physics-7b/imgs/rc-discharge.png alt="RC Discharge Diagrams"></p>
+</blockquote>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
+<li>.$V_0 = Q_0 / C$ is the initial voltage, related to initial charge</li>
+<li>We can see the charge on the capacitor, thus the voltage across it, decreases exponentially in time</li>
+<li>Current is found to be
+$$I = - \frac{dQ}{dt} = \frac{Q_0}{RC}e^{-t/RC} = I_0 e^{-t/RC}$$</li>
+<li>The charge on the capacitor, the voltage across it, and the current in the resistor all decrease to 37% of their original value in one time constant .$t = \tau \ RC$</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<h1 id=266-electric-hazards-and-safety>
+26.6 Electric Hazards and Safety
+<a class=anchor href=#266-electric-hazards-and-safety>#</a>
+</h1>
+<ul>
+<li>Current above .$\text{1 mA}$ can be felt</li>
+<li>Current above .$\text{10 mA}$ cause severe contraction of muscles (may not be able to let go of source)</li>
+<li>Current above .$\text{80-100 mA}$ that passes through the torso (passing through the heart for a second) will cause ventricular fibrillation (heart stops pumping blood properly)</li>
+<li>It&rsquo;s current that harms, even though voltage drives the current
+<ul>
+<li>The seriousness of a shock depends on the current and thus the applied voltage and the effective resistance of the body</li>
+<li>More voltage shocks, more current kills</li>
+<li>Wet skin has resistance of .$10^3 \Omega$ while dry skin is around .$10^5 \Omega$</li>
+</ul>
+</li>
+</ul>
+<h1 id=267-ammeters-and-voltmeters-measurement-affects-quantity-measured>
+26.7 Ammeters and Voltmeters: Measurement Affects Quantity Measured
+<a class=anchor href=#267-ammeters-and-voltmeters-measurement-affects-quantity-measured>#</a>
+</h1>
+<ul>
+<li>Measuring is hard to do both precisely and consistently</li>
+<li>Ammeters measure current (amps) and voltmeters measure potential difference or voltage (volts)</li>
+<li>An analog ammeter or voltmeter uses a <strong>galvanometer</strong>
+<ul>
+<li>The full scale sensitivity, .$I_m$, is the electric current required to make the needle deflect a full scale; typically .$50 \mu\text{A}$</li>
+</ul>
+</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>An ammeter is a galvanometer in <em>parallel</em> with a <strong>shunt</strong> resistor with low resistance, .$R_\text{sh}$
+<img src=/docs/physics-7b/imgs/ammeter.png alt=ammeter></p>
+</blockquote>
+</div>
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>A voltmeter is a galvanometer in <em>series</em> with a resistor with high resistance, .$R_\text{ser}$
+<img src=/docs/physics-7b/imgs/voltmeter.png alt=voltmeter></p>
+</blockquote>
+</div>
+</div>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>(b) Because an ammeter is used to measure the current flowing in the circuit, it must be inserted directly into the circuit, <strong>in series</strong> with the other elements. The smaller its internal resistance, the less it affects the circuit.</li>
+<li>(c) A voltmeter is connected “externally,” in parallel with the circuit element across which the voltage is to be measured. It measures the potential difference between two points. Its two wire “leads” (connecting wires) are connected to the two points.
+<ul>
+<li>Only .$R_1$ is being measured above</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/physics-7b/imgs/measuring.png alt=Measuring>
+</div>
+</div>
+<ul>
+<li>If the resistance of a voltmeter is much higher than the resistance of the circuit, it will have little effect and its readings can be more accurate
+<ul>
+<li>At least to the manufactured precision of the meter, which for analog meters is typically 3% to 4% of full-scale deflection.</li>
+</ul>
+</li>
+<li><strong>Sensitivity:</strong> The sensitivity of a voltmeter is specified on its face as, for example, .$10,000\ \Omega/\text{V}$. Then on the .$5\text{V}$ scale, the voltmeter would have a resistance given by .$\text{(5V)(10,000 $\Omega$/V) = 50,000 $\Omega$}$</li>
+<li>Even an ammeter can interfere with a circuit, but the effect is minimal if its resistance is much less than that of the circuit as a whole.</li>
+<li>For both voltmeters and ammeters, the more sensitive the galvanometer, the less effect it will have on the circuit.</li>
+</ul>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c08e8511db44883c19fdf5fc42fe94ed0587fa89 title="Last modified by Max Vogel | November 16, 2021" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>November 16, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/physics-7b/26.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#261-emf-and-terminal-voltage>26.1 EMF and Terminal Voltage</a></li>
+<li><a href=#262-resistors-in-series-and-parallel>26.2 Resistors in Series and Parallel</a>
+<ul>
+<li><a href=#series>Series</a></li>
+<li><a href=#parallel>Parallel</a></li>
+</ul>
+</li>
+<li><a href=#263-kirchhoffs-rules>26.3 Kirchhoff&rsquo;s Rules</a></li>
+<li><a href=#264-emfs-in-series-and-parallel-charging-a-battery>26.4 EMFs in Series and Parallel; Charging a Battery</a></li>
+<li><a href=#265-rc-circuits-resistor--capacitor-in-series>26.5 RC Circuits: Resistor & Capacitor in Series</a>
+<ul>
+<li><a href=#capacitor-charging>Capacitor Charging</a></li>
+<li><a href=#capacitor-discharging>Capacitor Discharging</a></li>
+</ul>
+</li>
+<li><a href=#266-electric-hazards-and-safety>26.6 Electric Hazards and Safety</a></li>
+<li><a href=#267-ammeters-and-voltmeters-measurement-affects-quantity-measured>26.7 Ammeters and Voltmeters: Measurement Affects Quantity Measured</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

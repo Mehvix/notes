@@ -1,0 +1,336 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="16.1 Vector Fields #   A vector field in .$\mathbb{R}^3$ is a function .$\vec F$ on region .$E \in \mathbb{R}^3$ that assigns each point .$(x,y,z)$ a vector .$F(x,y,z)$ .$\vec F$ is made up of component function: .$\vec F(x,y,z) = \langle P(x,y,z)\hat i, Q(x,y,z) \hat j, R(x,y,z) \hat k\rangle$  .$\vec F$ is continuos iff its component vectors are continuos   .$\vec F$ is  conservative (path taken doesn&rsquo;t change work) iff potential function .">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="16: Vector Calculus">
+<meta property="og:description" content="16.1 Vector Fields #   A vector field in .$\mathbb{R}^3$ is a function .$\vec F$ on region .$E \in \mathbb{R}^3$ that assigns each point .$(x,y,z)$ a vector .$F(x,y,z)$ .$\vec F$ is made up of component function: .$\vec F(x,y,z) = \langle P(x,y,z)\hat i, Q(x,y,z) \hat j, R(x,y,z) \hat k\rangle$  .$\vec F$ is continuos iff its component vectors are continuos   .$\vec F$ is  conservative (path taken doesn&rsquo;t change work) iff potential function .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/math-53/16/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2021-11-15T19:26:34-08:00">
+<title>16: Vector Calculus | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.e136d7fa03224160cf8b96f4336b47ccf4cfceb34c188f3232dd965d315b25cb.js integrity="sha256-4TbX+gMiQWDPi5b0M2tHzPTPzrNMGI8yMt2WXTFbJcs=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle checked>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors and Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/16/ class=active>16: Vector Calculus</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+<li>
+<a href=# target=_blank rel=noopener>
+—
+</a>
+</li>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+mehvix.com
+</a>
+</li>
+<li>
+<a href=https://pass.mehvix.com target=_blank rel=noopener>
+pass.mehvix.com
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>16: Vector Calculus</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#161-vector-fields>16.1 Vector Fields</a></li>
+<li><a href=#162-line-integrals>16.2 Line Integrals</a>
+<ul>
+<li><a href=#wrt-variable>wrt variable</a></li>
+<li><a href=#orientation>Orientation</a></li>
+</ul>
+</li>
+<li><a href=#163-fundamental-thm-for-line-integrals>16.3 Fundamental Thm for Line Integrals</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=161-vector-fields>
+16.1 Vector Fields
+<a class=anchor href=#161-vector-fields>#</a>
+</h1>
+<ul>
+<li>A vector field in .$\mathbb{R}^3$ is a function .$\vec F$ on region .$E \in \mathbb{R}^3$ that assigns each point .$(x,y,z)$ a vector .$F(x,y,z)$</li>
+<li>.$\vec F$ is made up of <strong>component function:</strong> .$\vec F(x,y,z) = \langle P(x,y,z)\hat i, Q(x,y,z) \hat j, R(x,y,z) \hat k\rangle$
+<ul>
+<li>.$\vec F$ is continuos iff its component vectors are continuos</li>
+</ul>
+</li>
+<li>.$\vec F$ is <strong>
+<a href=https://en.wikipedia.org/wiki/Conservative_vector_field>conservative</a></strong> (path taken doesn&rsquo;t change work) iff potential function .$f(x,y,z)$ is a partial of .$\vec F$
+$$\vec F = \nabla f$$
+<ul>
+<li>Notice that the gradient lines are always perpendicular to the
+<a href=https://en.wikipedia.org/wiki/Level_set#/media/File:Himmelblau_contour.svg>level sets</a>
+<ul>
+<li>If the function .$f$ is differentiable, .$\nabla f$ at a point is either zero or perpendicular to the level set of .$f$ at that point.</li>
+</ul>
+</li>
+<li>That is, that the gradient of a function is called a gradient field which is always conservative (the fundamental theorem of calculus for line integrals)
+<ul>
+<li>Conversely, a (continuous) conservative vector field is always the gradient of a function</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id=162-line-integrals>
+16.2 Line Integrals
+<a class=anchor href=#162-line-integrals>#</a>
+</h1>
+<ul>
+<li>We know that the distance (length) normally is .$L = \int_a^b \sqrt{(dx/dt)^2 + (dy/dt)^2}\ dt$</li>
+<li>Over a vector field, we can think of the function being the density of the line (or height of particle). Therefore, we say .$ds = \int_a^b \sqrt{(dx/dt)^2 + (dy/dt)^2}\ dt$ and can write
+$$\int_C f(x,y) ds = \int_a^bf(x(t), y(t)) \cdot \sqrt{\bigg(\frac{dx}{dt}\bigg)^2 + \bigg(\frac{dy}{dt}\bigg)^2} dt$$
+and for 3D in a slightly different form:
+$$\int_a^b f (\vec r (t) ) \vert \vec r'(t) \vert \Longrightarrow \int_a^b f(x(t), y(t), z(t)) \cdot \sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2} dt$$
+<img src=/docs/math-53/imgs/line-int.gif alt="Line Integral gif"></li>
+<li>We can write .$\vec a \to \vec b$ as .$(1-t)\vec a + t\vec b$ with .$t\in[0,1]$</li>
+<li>Just like usual, we can break up un-integrable smooth curves, i.e
+$$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots$$</li>
+</ul>
+<h2 id=wrt-variable>
+wrt variable
+<a class=anchor href=#wrt-variable>#</a>
+</h2>
+<p>$$\int_C f(x,y) dx = \int_a^b f(x(t), y(t)) \cdot y'(t) dt$$
+$$\int_C f(x,y) dy = \int_a^b f(x(t), y(t)) \cdot x'(t) dt$$</p>
+<h2 id=orientation>
+Orientation
+<a class=anchor href=#orientation>#</a>
+</h2>
+<ul>
+<li>When we parameterize a curve, we give it a direction</li>
+<li>The orientation represents the direction of the line
+<ul>
+<li>The positive direction corresponding to increasing values of the parameter .$t$</li>
+<li>Doesn&rsquo;t matter for regular line integrals: .$\int_C f(x,y) ds = \int_C f(x,y) ds$
+<ul>
+<li>Deals with distance, .$ds$, which doesn&rsquo;t depend on direction</li>
+</ul>
+</li>
+<li>Does matter for field line integrals: .$\int_C f(x,y) dx \neq \int_C f(x,y) dy$
+<ul>
+<li>Deals with displacement, .$dx/dy$, which depends on direction</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote class="book-hint info">
+Let .$\vec F$ be a continuous vector field defined on a smooth curve .$C$ given by a vector function .$\vec r(t), t\in[a,b]$. Then the line integral of .$F$ along .$C$ is
+$$\int_C \vec F \cdot d\vec r = \int_a^b \vec F ( \vec r (t) ) \cdot \vec r' (t) dt = \int_C \vec F \cdot \vec T ds$$
+</blockquote>
+<ul>
+<li>Then, for a non-conservative force i.e .$F = \langle P(x,y,z), Q(x,y,z), R(x,y,z) \rangle$
+$$W = \int_a^b P(\vec r(t)) \cdot x'(t) + Q(\vec r(t)) \cdot y'(t) + R(\vec r(t)) \cdot z'(t)$$
+$$ \Longrightarrow \int_C P\ dx + Q\ dy + R\ dz$$</li>
+</ul>
+<h1 id=163-fundamental-thm-for-line-integrals>
+16.3 Fundamental Thm for Line Integrals
+<a class=anchor href=#163-fundamental-thm-for-line-integrals>#</a>
+</h1>
+<blockquote class="book-hint info">
+Let .$C$ be a smooth curve given by the vector function .$\vec r (t), t\in[a,b]$. Let .$f$ be a differentiable function of two or three variables whose gradient vector .$\nabla f$ is continuous on .$C$. Then
+$$\int_C \nabla f \cdot d\vec r =\int_C \vec F \cdot d\vec r = f(\vec r(b) ) f(\vec r(a))$$
+</blockquote>
+<ul>
+<li>That is, for conservative fields, path doesn&rsquo;t matter</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<blockquote class="book-hint info">
+Suppose .$\vec F$ is a vector field that is continuous on an <strong>open connected</strong> region .$D$. If .$\int_C \vec F \cdot d\vec r$ is <em>independent</em> of path in .$D$, then .$\vec F$ is a conservative vector field on .$D$; that is, there exists a function .$f$ such that .$\nabla f = \vec F$.
+</blockquote>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/path-d.png alt>
+</div>
+</div>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/curves.png alt=Curves>
+<img src=/docs/math-53/imgs/regions.png alt=Regions>
+</div>
+<div class="flex-even markdown-inner">
+<blockquote class="book-hint info">
+If .$\vec F (x,y) = P(x,y) \hat i + Q(x,y) \hat j$ is a conservative vector field, where .$P$ and .$Q$ have continuous first-order partial derivatives on a domain .$D$, then throughout .$D$ we have
+$$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x}$$
+</blockquote>
+<ul>
+<li>The converse of the theorem above is true on only <strong>simple curves</strong>: curves that don’t intersect itself anywhere between its endpoints</li>
+<li>A <strong>simply-connected</strong> region in the plane is a connected region .$D$ such that every simple closed curve in .$D$ encloses only points that are in .$D$
+<ul>
+<li>Intuitively speaking, a simply-connected region contains no hole and can’t consist of two separate pieces.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<blockquote class="book-hint info">
+.$\vec F = \langle P, Q \rangle$ is a conservative vector field on an open <strong>simply-connected</strong>
+region .$D$ iff both .$P$ and .$Q$ have continuous first-order partial derivatives and
+$$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x} \text{ throughout } D$$
+</blockquote>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c08e8511db44883c19fdf5fc42fe94ed0587fa89 title="Last modified by Max Vogel | November 16, 2021" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>November 16, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/16.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#161-vector-fields>16.1 Vector Fields</a></li>
+<li><a href=#162-line-integrals>16.2 Line Integrals</a>
+<ul>
+<li><a href=#wrt-variable>wrt variable</a></li>
+<li><a href=#orientation>Orientation</a></li>
+</ul>
+</li>
+<li><a href=#163-fundamental-thm-for-line-integrals>16.3 Fundamental Thm for Line Integrals</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
