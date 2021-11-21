@@ -12,7 +12,7 @@ bookCollapseSection: false
 - Large subject used in a range of fields -- no single definition
 - Defining feature: combustion of carbon and greenhouse gases
 - Ice core measurement technique
-    - As ice forms, methane and .$\text{CO}_2$ get trapped along with ash/dust/pollen which scientists can measure by coring
+    - As ice forms, methane and CO2 get trapped along with ash/dust/pollen which scientists can measure by coring
     - Ice can be dated so we can compare these variables so we can see change in greenhouse gases over time
 - Beginning is disputed
     - Industrial revolution (1780s)
@@ -33,7 +33,7 @@ bookCollapseSection: false
 
 - History of the variation of fire activity over space and time at the landscape scale in different regions of the world
 - Pyrogeography started in [Silurian period](https://en.wikipedia.org/wiki/Silurian) when plant life began
-- Fire requirements: .$\text{13\% O}_2$ in a normal environment and .$\text{30\%}$ in damp vegetation.
+- Fire requirements: 13% Oxygen in a normal environment and 30% Oxygen in damp vegetation.
 - Fires are a selection force in the evolution of plants
 
 # Four phases for Pyrogeography
@@ -143,10 +143,10 @@ bookCollapseSection: false
 
 # Biodiversity and Fire as a Selective Variable in Evolution
 
-- .$\text{C}_4$ grass
+- C4 grass
     - Spread during seasonal climate in the tertiary period (when fires became more common)
-    - Fires lead to woodlands and created environments favorable to .$\text{C}_4$ grasslands
-    - Since .$\text{C}_4$ is high flammability, it would have produced a feedback process that further increased fire activity,
+    - Fires lead to woodlands and created environments favorable to C4 grasslands
+    - Since C4 is high flammability, it would have produced a feedback process that further increased fire activity,
         - Thus maintaining the grassland-dominated landscape
         - This process is similar to the one currently maintaining many of our savannas
 - Plant attributes
@@ -929,7 +929,7 @@ bookCollapseSection: false
             6. They stayed several days and followed the burning, with comment by Graves that the work was excellent
             7. DuBois apologized to me for panning me in the newspapers previously
         - Graves suggested that T.B underwrite a chair of fire protection at Yale University
-            - Walker agreed, contributing .$$$ 100,000 (a huge amount of funding 1900's). Harvey Chapman hired who was huge force in longleaf pine is southeast US
+            - Walker agreed, contributing $100,000 (a huge amount of funding 1900's). Harvey Chapman hired who was huge force in longleaf pine is southeast US
     - Over the next decade trials done across the US, especially in pine belts of the West and South
     - Stuart Show (from Stanford btw) looked for light burning area around Mt. Hough, Claremont, Meadow Valley Country 
         - Found a suitable area near Snake Lake
