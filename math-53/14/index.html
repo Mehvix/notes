@@ -8,13 +8,13 @@
 <meta property="og:description" content="14.1 Functions of Several Variables #   In the real world, most things don&rsquo;t depend on a single variable  Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V=\pi r^2 h$   Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/14/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-15T19:26:34-08:00">
+<meta property="article:modified_time" content="2021-11-20T17:58:32-08:00">
 <title>14: Partial Derivatives | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.e136d7fa03224160cf8b96f4336b47ccf4cfceb34c188f3232dd965d315b25cb.js integrity="sha256-4TbX+gMiQWDPi5b0M2tHzPTPzrNMGI8yMt2WXTFbJcs=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.0dec2721bb50051a56c5f25687b037d5ce6311577650d8bd06b699f5ebec305e.js integrity="sha256-DewnIbtQBRpWxfJWh7A31c5jEVd2UNi9BraZ9evsMF4=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -111,6 +111,9 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
 </li>
 </ul>
 </li>
@@ -417,7 +420,8 @@ Directional Derivatives
 </h2>
 <blockquote class="book-hint info">
 <strong>Direction Derivative</strong> For function .$f$ at .$(x_0, y_0)$ in the direction of <strong>unit vector</strong> .$\hat u = \langle a, b \rangle$ is
-$$D_{\hat u} f(x_0, y_0) = \lim_{h\to 0} \frac{f(x_0 + ha, y_0 + hb) - f(x_0, y_0)}{h} = f_x (x,y) a + f_y (x,y) b$$
+$$D_{\hat u} f(x_0, y_0) = \lim_{h\to 0} \frac{f(x_0 + ha, y_0 + hb) - f(x_0, y_0)}{h} = $$
+$$\dots = \nabla f \cdot \hat u = f_x (x,y) a + f_y (x,y) b$$
 if the limit exists (for the former) and if .$f$ is a differentiable function of .$x$ and .$y$ (for the latter)
 </blockquote>
 <ul>
@@ -449,7 +453,7 @@ Suppose .$f$ is a differentiable function of two or three variables. The maximum
 </blockquote>
 <ul>
 <li>We can see from the definition above that since the max of .$\cos\theta$ is .$1$ when .$\theta = 0$, therefore the max of the directional derivative occurs at the same angle (when .$\hat u$ has the same direction of .$\nabla f$ )</li>
-<li>TL;DR: The maximal value of .$D_\hat{u} f(\vec x)$ is .$\Vert \nabla f \Vert$</li>
+<li>TL;DR: .$D_\hat{u} f(\vec x)$ is maximized if .$\vec u = \frac{\nabla f}{\Vert \nabla f \Vert}\bigg\vert_\vec{p}$ at point .$\vec p$</li>
 </ul>
 <h2 id=tangent-planes-to-level-surfaces>
 Tangent Planes to Level Surfaces
@@ -595,9 +599,9 @@ $$\nabla f(x_0, y_0, z_0) = \lambda \nabla g(x_0, y_0, z_0) + \mu \nabla h(x_0, 
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c08e8511db44883c19fdf5fc42fe94ed0587fa89 title="Last modified by Max Vogel | November 16, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/4feef5beca646e9f2874943ee995db61dd03c09e title="Last modified by Max Vogel | November 21, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 16, 2021</span>
+<span>November 21, 2021</span>
 </a>
 </div>
 <div>
