@@ -8,13 +8,13 @@
 <meta property="og:description" content="27.1 Magnets and Magnetic Fields #   Every magnet has two ends or faces called poles which are where the magnetic field is strongest  If a magnet is suspended so it can move freely, one pole will point north Aptly, this side is called the north pole   Magnetic poles aren&rsquo;t like electric charge: Positive or negative charge can easily be isolated, but we can never isolate a magnetic pole  That is, if you cut a magnet is half you don&rsquo;t obtain isolated north and south poles.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/27/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-15T19:26:34-08:00">
+<meta property="article:modified_time" content="2021-11-22T11:13:25-08:00">
 <title>27: Magnetism | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.0dec2721bb50051a56c5f25687b037d5ce6311577650d8bd06b699f5ebec305e.js integrity="sha256-DewnIbtQBRpWxfJWh7A31c5jEVd2UNi9BraZ9evsMF4=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.ce64c808fac6d86c64762b237d6f55e5d50f40bdbed636d553c7aa4b194f8b4b.js integrity="sha256-zmTICPrG2GxkdisjfW9V5dUPQL2+1jbVU8eqSxlPi0s=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -246,7 +246,8 @@ The Earth acts like a huge magnet. But its magnetic poles are not at the geograp
 <li>The direction of the force is always perpendicular to the direction of the current and also perpendicular to the direction of the magnetic field .$\vec B$</li>
 <li>Use right hand rule!
 <img src=/docs/physics-7b/imgs/27/right-hand.png alt="Right Hand Rule">
-$$\vec F = I (\vec l \times \vec B) = I l b \sin\theta \Longrightarrow d \vec F = I (d \vec l \times \vec B)$$</li>
+$$dF_\vec{B} = dq (\vec v \times \vec B) = dq\bigg(\frac{d\vec l}{dt}\times \vec B\bigg) = I (d\vec l \times \vec B)$$
+$$\dots\ \vec F = I (\vec l \times \vec B) = I l b \sin\theta$$</li>
 <li>.$\vec l$ is the vector whose magnitude is the length of the wire its direction is along the (straight) wire in the direction of the conventional (positive) current</li>
 <li>We use the last equation if .$\vec B$ isn&rsquo;t uniform or if the wire doesn&rsquo;t form angle .$\theta$ with .$\vec B$ everywhere</li>
 </ul>
@@ -267,6 +268,7 @@ $$\vec F = I\vec l \times \vec B = (Nq/t)(\vec v t) \times \vec B = Nq\vec v \ti
 $$\vec F = q \vec v \times \vec B = qvB \sin\theta$$</li>
 </ul>
 </li>
+<li>Realize that <strong>we can save a lot of pain</strong> if we know that the <strong>magnetic field is uniform</strong> in which case .$\vec F_\vec{B} = 0$ because the forces on opposite segments (sides) cancel out</li>
 </ul>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
@@ -321,6 +323,15 @@ With Electric Field
 <ul>
 <li><strong>Lorentz Equation:</strong> A particle charge .$q$ moving with velocity .$\vec v$ in the presence of both a magnetic field .$\vec B$ and electric field .$\vec E$ experiences a force
 $$\vec F = q (\vec E + \vec v \times \vec B)$$</li>
+<li>Realize that the magnetic field cannot alter speed (do work), it can only alter the direction!
+<ul>
+<li>To change an objects speed, you must apply a force <em>along</em> the objects direction of motion</li>
+<li>The magnetic field exerts a force on particles moving <em>orthogonal</em> to it</li>
+<li>Therefore, no work can be done because the particle can only move orthogonal to the magnetic field</li>
+<li>That being said, realize that this field is responsible for the circular, constant speed, motion</li>
+<li>This is why earth&rsquo;s magnetic field deflects, but doesn&rsquo;t slow down, charged particles from outer space</li>
+</ul>
+</li>
 </ul>
 <h1 id=275-torque-on-a-current-loop-magnetic-dipole-moment>
 27.5 Torque on a Current Loop; Magnetic Dipole Moment
@@ -329,10 +340,13 @@ $$\vec F = q (\vec E + \vec v \times \vec B)$$</li>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <blockquote>
-<p>Calculating the torque on a current loop in a magnetic field .$\vec B$. . (a) Loop face parallel to .$\vec B$ field lines; (b) top view; (c) loop makes an angle to .$\vec B$, reducing the torque since the lever arm is reduced. The vector .$\vec \mu$ is the “magnetic moment”.</p>
+<p><strong>Calculating the torque on a current loop in a magnetic field</strong> .$\vec B$</p>
 <figure><img src=/docs/physics-7b/imgs/27/torque.png>
 </blockquote>
 </figure>
+<blockquote>
+<p>(a) Loop face parallel to .$\vec B$ field lines; (b) top view; (c) loop makes an angle to .$\vec B$, reducing the torque since the lever arm is reduced. The vector .$\vec \mu$ is the “magnetic moment”.</p>
+</blockquote>
 </div>
 <div class="flex-even markdown-inner">
 <ul>
@@ -447,9 +461,9 @@ $$\mathscr{E}_H = E_H d = v_d B d$$
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c08e8511db44883c19fdf5fc42fe94ed0587fa89 title="Last modified by Max Vogel | November 16, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/9abbc97b6347b88e960abf14781d1521de0ed024 title="Last modified by Max Vogel | November 22, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 16, 2021</span>
+<span>November 22, 2021</span>
 </a>
 </div>
 <div>
