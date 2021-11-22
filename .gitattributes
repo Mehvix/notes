@@ -1,2 +1,2 @@
-*.md diff=tex
+*.md text diff=tex
 
