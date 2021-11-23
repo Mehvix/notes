@@ -1,2 +1,2 @@
-*.md text diff=tex
-
+*.md linguist-detectable=true
+*.md linguist-language=Tex

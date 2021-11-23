@@ -1279,7 +1279,7 @@ bookCollapseSection: false
     - Agency best to study park management is the National Park Service
     - Management without knowledge would be a dangerous policy indeed
 - Methods of Habitat Management
-    - Of the methods of manipulating vegetation, controlled use of fire is the most "natural" and the cheapest and _easiest_ to apply (easy?? Maybe in the 1960’s)			
+    - Of the methods of manipulating vegetation, controlled use of fire is the most "natural" and the cheapest and _easiest_ to apply (easy?? Maybe in the 1960’s)            
     - Forest and chaparral areas protected from fire may require careful advance treatment (Harold Biswell influence?)
     - Trees and mature brush may have to be cut, piled, and burned before ground fire (Harold Biswell did this with his early burning)
     - Once fuel is reduced, periodic burning can be conducted safely and at low expense (Biswell)
@@ -1447,10 +1447,181 @@ bookCollapseSection: false
 - Next 1-2 decades absolutely critical in California frequent fire forests
 - Optimistic but we must move decisively
 
-# 20th Century Changes in CA Mixed-Conifer Forests
+# Case Studies of Cultural Burning
 
+## Background On Tribal Revitalization
 
+- Timeline
+    - 1960s – Watershed time in California
+    - 1963 – Leopold Report “Wildlife Management in National Parks”
+        - bring fire back to National Park Service
+        - Managed Lightning Fires
+        - Prescribed Burning
+    - 1960s – Also Time of Native Activism in CA 
+- Historical Perspective:
+    - By the 1960s tribes facing some real structural challenges:
+    1. Recovering from Genocide
+    2. Little land to call their own Consequence of 1851-52 treaties not being ratified
+    3. Many California tribes not federally recognized
+    4. Tribes denied access to federal/state lands to harvest plants and animals
+    5. Fire Prohibition Policies
+        - Fire Exclusion – Spanish, Mexican and Russian Colonists
+        - Fire Suppression – American period
+            - 1890s – Sequoia and Yosemite
+            - 1900s – Elsewhere in California
+- Upshot for Tribes:
+    - A. Not allowed to implement Indigenous landscape Stewardship practices
+    - B. Poor Health of CA Environments
+        - Fire Suppression Policies:
+            - Major Impacts to indigenous plants and animals
+            - fuel loads increase
+            - less ecological diversity 
+            - loss of patchy mosaic 
+            - Some Native species disappeared 
+            - fire adverse species take over
+            - hydrology affected    
+            - some ecosystems – become endangered  (e.g., coastal prairies)
 
+## Native Activism
+- 1960s – Native Activism, part of broader Civil Rights Movement in USA
+    - Protest series of issues: discrimination, poverty, unemployment, religious freedom, fair housing, broken treaties, lack of resources
+    - Natives not given right to vote until 1924 Snyder Act
+    - Some states did not allow Indians to vote until 1950s, 1960s
+- 1968 – Civil Rights Act signed by President Johnson
+    - Guaranteed rights to not only African-American, but American Indians
+- 1968 – when American Indian Movement Founded (AIM)
+    - Advocate for rights on Native people
+- 1968-1971 – Occupation of Alcatraz Island by tribes
+- Post-1968 – series of protests, demonstrations, marches for American Indian causes
 
+## Tribal Revitalization In California
+- Last few decades – major renaissance with Tribes
+- Keep in mind that Tribes still facing many issues
+    - Poverty
+    - Unemployment – not much of a land base, FAR from urban jobs
+    - Addiction issues – alcohol, drugs
+    - Health issues, such as diabetes, obesity
+    - Gang issues with younger tribal members
+    - Still explicit discrimination 
+- But despite these lingering problems from colonization
+    - Major transformations taking place in many tribal groups
+    - Restoration of local habitats -- Crucial part of this process
+    - But need to look as this within broader context
+    - Tribal revitalization – involves various facets of Native Life TODAY
+1. Native Languages 
+    - Estimated that 80-100 languages spoken in California -- but many languages endangered
+- Legacy of Colonialism
+    - Indian Boarding Schools (late 1800s-mid 1900s)
+    - Assimilation Policy of US Government Carlisle Boarding School, Pennsylvania Sherman Institute, Riverside, CA
+    - “Civilize” Indian Children away from negative influences of parents, tribes
+        - Children forcibly removed from home and sent to Boarding Schools
+        - Taught Western ways
+        - Speaking Native Languages Forbidden! 
+    - By mid-1900s – Many Tribes Facing Crisis with Their Languages
+        - Only half of Native languages in CA still spoken
+    - Leanne Hinton – UC Berkeley
+        - 90% of Native Languages in CA may disappear 
+    - Major Push Today: language training for California tribes
+        - The Advocates for Indigenous California Language Survival
+        - "Breath Of Life" workshop Program
+        - on Berkeley campus
+        - provides training to Indians studying/learning endangered languages
+        - historic linguistic tapes and information in Linguistics Dept, Bancroft Library, Hearst Museum of Anthropology
+        - Tribal scholars relearn how to speak dormant languages (Mutsun, Chochenyo Languages)
+2. Revitalization Of Native Ceremonies, Dances
+   - Many groups involved in reviving spiritual practices
+       - Healers, Indian doctors, spiritual specialists
+       - Create active dance groups, e.x. Su Su Shinal Kashia Pomo
+   - Close Relationship of California Indian religions with Environment
+3. Resurgence Of Native Craftspeople
+   - Resurgence of Native Crafts
+       - Ron Goode – soapstone artifacts
+       - woodcarving – Northwest Coast
+       - Acorn spoons, boxes, 
+   - Basket Weaving
+     - Premier basket makers in world
+     - Baskets served many purposes in Indian households
+     - Challenges for Indian Basket Making
+        - by 1980s – only a few active weavers
+        - Led to Establishment of California Indian Basket Weaver Association
+        - host gatherings, workshops
+        - more than 650 weavers today!
+        - Major Advocate for Indigenous Landscape Stewardship Practices!
+4. Great Interest In Native Foodways
+    - Traditional menus, traditional foods
+        - acorn mush, salmon -- but also seaweed, tar weed, hazel nuts 
+    - Pow Wows
+    - Tribal food security, food sovereignty 
+    - Café Ohlone – Bancroft Way – bring to Cal campus
+5. All Of These Developments – tied into Native Landscapes and Environments
+    - Most tribes interested in ecological restoration of their lands
+    - Implementing some form of indigenous landscape management practices
+        - Bring Fire Back To Landscape -- Tending The Wild and gaining access to various resources on **Public Lands**
+        - Obtain indigenous foods, medicines, dance regalia, raw materials for crafts
 
+##  Ecological Revitalization
 
+Five Case Studies Of Indigenous Stewardship Practices In California
+
+### 1. Fowler et al
+> Fowler, Catherine S., P. Esteves, G. Goad, B. Helmer and K. Watterson 2003    Caring for the Trees: Restoring Timbisha Shoshone Land Management Practices in Death Valley National Park. Ecological Restoration 21(4):302-306.
+
+- Federally Recognized Tribe working with National Park Service
+    - Death Valley National Park
+- Timbisha Shoshone tribe in Southern Deserts
+    - Granted federal recognition in 2000
+        - Obtained **Trust Lands** -- **Federal Recognition**
+- Right to enter traditional management agreements with Federal Agencies (NPS, BLM)
+- Work out co-management agreement with NPS
+- in Death Valley National Park
+- Co-manage Two Key Resources
+    - Honey Mesquite, Single Leaf Pinyon
+    - Both used as food, raw materials, etc. 
+- Timbisha Shoshone
+    - Begin to tend the Mesquite and pine groves in Death Valley 
+    - Had not been tended in years -- in terrible shape!
+- How Undertake Ecological Revitalization
+    - While Tribe used Fire to Tend the Land in the Past
+    - Current work – using Fire Surrogate Methods -- hope to use fire in future
+- Define Study Plots – Leave half of plot as control
+- Other Half of Plot – Tended by Tribe
+    1. Trim lower branches of trees
+    2. Clear ground of underbrush
+    3. Open trees to sunlight
+- Challenges 
+    - Insect infestations
+    - Changes in Hydrology
+
+### 2. Codero-Lamb et al
+
+> Codero-Lamb, Julie, Jared Dahl Aldern and Teresa Romero 2018    Bring Back the Good Fires. News from Native California 31 (Spring):14-17.
+
+- Non-Fed Recognized Tribe
+    - Work on private property
+    - Ecological restoration
+- Southern California
+    - Chumash – Santa Barbara Area -- only one of tribes federally recognized 
+    - Santa Ynez Band of Chumash Mission Indians
+    - article about non-federally recognized CHUMASH
+        - Aftermath of Thomas Fire in Dec 2017
+- Strong Commitment To Bring Back Indigenous Landscape Practices
+    - Bring back good fires
+    - recognize issues of working in Chapparal Environments
+- Paper outline difficulties of doing this when not federally recognized, no tribal land
+    - No current agreements with government agencies to burn
+- instead – burn on small patches of private land
+    - tiny patches tended by Chumash
+- Burn Protocols
+    - based on elders, songs, and Scientific Studies
+- Discuss Frequency Or Timing Of Burns
+    - Springs – Annually
+    - grasses and shrubs for baskets – every 3 years
+    - 10-15 years in chaparral
+- Recognize that they must adjust seasonal timing of burns with CLIMATE CHANGE
+- Strong Advocates for Cultural Burning
+- Important Points:
+    1. For federal and state to restore environment after years of **Fire Suppression**
+        - Need to incorporate local communities (Tribes)
+    2. Get Tribes Involved In All Aspects of Projects
+    3. Must Recognize Tek is Valid
+    4. Strategic Placement of Tended Lands -- can serve as fuel breaks
