@@ -8,13 +8,13 @@
 <meta property="og:description" content="28.1 Magnetic Field Due to a Straight Wire #   Magnetic fields due to the electric current in a long straight wire forms circles with the wire at the center This field is proportional directly with current .$I$ and inversely with distance .$r$: $$B = \frac{\mu_0}{2\pi} \cdot \frac{I}{r}$$  .$\mu_0 = 4\pi \times 10^{-7} \text{ T$\cdot$m/A}$ is the permeability of free space       28.2 Force between Two Parallel Wires #    Since current-carrying wires feel a force in magnetic fields, and because current-carrying wires emit magnetic fields, current-carrying wires exert a force on one another Magnetic field .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/28/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-20T17:58:32-08:00">
+<meta property="article:modified_time" content="2021-11-26T23:52:44-08:00">
 <title>28: Sources of Magnetic Field | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.64e1568f00e1fc0195b27ac10e357855293d5acf2229a00e5f77513ecc14e916.js integrity="sha256-ZOFWjwDh/AGVsnrBDjV4VSk9Ws8iKaAOX3dRPswU6RY=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.e3bdfdf004209ba4e0dcdebf639958dd183fbf74841d661bf3d42b2697e47b19.js integrity="sha256-47398AQgm6Tg3N6/Y5lY3Rg/v3SEHWYb89QrJpfkexk=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -115,6 +115,9 @@
 <li>
 <a href=http://notes.mehvix.com/physics-7b/28/ class=active>28: Sources of Magnetic Field</a>
 </li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -165,9 +168,9 @@ pass.mehvix.com
 <li><a href=#285-magnetic-field-of-a-solenoid-and-a-toroid>28.5 Magnetic Field of a Solenoid and a Toroid</a></li>
 <li><a href=#286-biot-savart-law>28.6 Biot-Savart Law</a></li>
 <li><a href=#287-magnetic-field-due-to-a-single-moving-charge>28.7 Magnetic Field Due to a Single Moving Charge</a></li>
-<li><a href=#288-magnetic-materialsferromagnetism>28.8 Magnetic Materials—Ferromagnetism</a></li>
-<li><a href=#289-electromagnets-and-solenoidsapplications>28.9 Electromagnets and Solenoids—Applications</a></li>
-<li><a href=#2810-magnetic-fields-in-magnetic-materials-hysteresis>28.10 Magnetic Fields in Magnetic Materials; Hysteresis</a></li>
+<li><a href=#288-magnetic-materialsferromagnetism-not-covered>28.8 Magnetic Materials—Ferromagnetism (not covered)</a></li>
+<li><a href=#289-electromagnets-and-solenoidsapplications-not-covered>28.9 Electromagnets and Solenoids—Applications (not covered)</a></li>
+<li><a href=#2810-magnetic-fields-in-magnetic-materials-hysteresis-not-covered>28.10 Magnetic Fields in Magnetic Materials; Hysteresis (not covered)</a></li>
 </ul>
 </nav>
 </aside>
@@ -267,7 +270,7 @@ $$\oint \vec B \cdot d \vec l = \mu_0 I_\text{encl}$$</li>
 </h2>
 <ol>
 <li>Ampère’s law, like Gauss’s law, is always a valid statement. But as a calculation tool it is limited mainly to systems with a high degree of symmetry. The first step in applying Ampère’s law is to identify useful <strong>symmetry</strong>.</li>
-<li>Choose an integration path that reflects the symmetry. Search for paths where .$B$ has constant magnitude along the entire path or along segments of the path. Make sure your integration path passes through the point where you wish to evaluate the magnetic field.</li>
+<li>Choose an integration path that reflects the symmetry. Search for paths where .$\vec B$ has constant magnitude along the entire path or along segments of the path. Make sure your integration path passes through the point where you wish to evaluate the magnetic field.</li>
 <li>Use symmetry to determine the direction of .$\vec B$ along the integration path. With a smart choice of path, .$\vec B$ will be either parallel or perpendicular to the path.</li>
 <li>Determine the enclosed current, .$I_\text{encl}$. Be careful with signs. Let the fingers of your right hand curl along the direction of .$\vec B$ so that your thumb shows the direction of positive current. If you have a solid conductor and your integration path does not enclose the full current, you can use the current density (current per unit area) multiplied by the enclosed area.</li>
 </ol>
@@ -322,7 +325,7 @@ $$B = \mu_0 nI$$</li>
 <li>A current .$I$ flowing in any path can be considered as many tiny current elements, such as .$d \vec l$
 <ul>
 <li>Then, .$d\vec B$ at any point .$P$ in space due to this element of current is given by <strong>Biot-Savart law:</strong>
-$$d\vec B = \frac{\mu_0 I}{4\pi} \frac{d\vec l \times \hat r}{r^2} = \frac{\mu_0 I}{4\pi} \frac{dl \sin\theta}{r^2}$$</li>
+$$d\vec B = \frac{\mu_0 I}{4\pi} \frac{d\vec l \times \hat r}{r^3} = \frac{\mu_0 I}{4\pi} \frac{dl \sin\theta}{r^2}$$</li>
 <li>.$\vec r$ is the displacement vector from the element .$d \vec l$ to the point .$P$</li>
 <li>.$\hat r$ is the unit vector in the direction .$\vec r$</li>
 <li>.$\theta$ is the angle between .$d\vec l$ and .$\vec r$</li>
@@ -339,8 +342,6 @@ The field at P due to current element .$I d\vec l$ is .$d \vec B = (\mu_0 I/4\pi
 </div>
 </div>
 <ul>
-<li>Integrating to find the total magnetic field at point .$P$ is then found by the following:
-$$\vec B = \int d\vec B = \frac{\mu_0 I}{4\pi} \int \frac{d \vec l \times \hat r}{r^2}$$</li>
 <li>An important difference between the Biot-Savart law and Ampère’s law is that the later, .$\oint \vec B \cdot d\vec l = \mu_0 I_\text{encl}$, .$\vec B$ is not necessarily due only to the current enclosed by the path of integration.</li>
 <li>But in the Biot-Savart law the field .$d\vec B$ is due only, and entirely, to the current element .$I d\vec l$ &ndash; that is, to find the total .$\vec B$ at any point in space, it is necessary to include all currents.</li>
 </ul>
@@ -367,9 +368,9 @@ Current Loop
 <p>$$dB = \frac{\mu_0 I dl}{4\pi r^2}$$
 $$d\vec l \perp \vec r; \vert d\vec l \times \hat r \vert = dl$$
 $$B = \int dB \cos \phi = \int dB \frac{R}{r}$$
-$$B = \int dB \frac{R}{(R^2 + x^2)^{\frac{1}{2}}}$$
-$$B = \frac{\mu_0 I}{4\pi}\frac{R}{(R^2 + x^2)^{\frac{3}{2}}} \bigg[L\bigg]_{L = 2\pi R}$$
-$$\dots \ B = \frac{\mu_0 I}{2R}$$
+$$\dots = \int dB \frac{R}{(R^2 + x^2)^{\frac{1}{2}}}$$
+$$\dots = \frac{\mu_0 I}{4\pi}\frac{R}{(R^2 + x^2)^{\frac{3}{2}}} \bigg[L\bigg]_{L = 2\pi R}$$
+$$\dots = \frac{\mu_0 I}{2R}$$
 <img src=/docs/physics-7b/imgs/28/current-loop.png alt="Current Loop"></p>
 <h2 id=quarter-wire-segment>
 Quarter Wire Segment
@@ -377,7 +378,7 @@ Quarter Wire Segment
 </h2>
 <p>$$dB = \frac{\mu_0 I}{4\pi}dl$$
 $$B = \frac{\mu_0 I}{4\pi} \bigg[L\bigg]_{L=\frac{1}{4}\cdot 2\pi R}$$
-$$\dots = B = \frac{\mu_0 I}{8 R}$$</p>
+$$\dots = \frac{\mu_0 I}{8 R}$$</p>
 </div>
 </div>
 <div class="book-columns flex flex-wrap">
@@ -427,9 +428,9 @@ $$B \approx \frac{\mu_0}{2\pi} \frac{\mu}{x^3}$$</li>
 <img src=/docs/physics-7b/imgs/28/particle-fields.png alt="Particle Field">
 What see from the perspective other than the particle: The magnetic field at one single instant due to a single positive charge .$q$ moving at velocity .$\vec v$.</p>
 </blockquote>
-<h1 id=288-magnetic-materialsferromagnetism>
-28.8 Magnetic Materials—Ferromagnetism
-<a class=anchor href=#288-magnetic-materialsferromagnetism>#</a>
+<h1 id=288-magnetic-materialsferromagnetism-not-covered>
+28.8 Magnetic Materials—Ferromagnetism (not covered)
+<a class=anchor href=#288-magnetic-materialsferromagnetism-not-covered>#</a>
 </h1>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
@@ -466,9 +467,9 @@ What see from the perspective other than the particle: The magnetic field at one
 </li>
 <li>Realize that while .$\vec B$ lines form closed loops, .$\vec E$ lines go from a positive to negative electron</li>
 </ul>
-<h1 id=289-electromagnets-and-solenoidsapplications>
-28.9 Electromagnets and Solenoids—Applications
-<a class=anchor href=#289-electromagnets-and-solenoidsapplications>#</a>
+<h1 id=289-electromagnets-and-solenoidsapplications-not-covered>
+28.9 Electromagnets and Solenoids—Applications (not covered)
+<a class=anchor href=#289-electromagnets-and-solenoidsapplications-not-covered>#</a>
 </h1>
 <ul>
 <li>
@@ -514,9 +515,9 @@ Magnetic field of a solenoid. The north pole of this solenoid, thought of as a m
 </ul>
 </li>
 </ul>
-<h1 id=2810-magnetic-fields-in-magnetic-materials-hysteresis>
-28.10 Magnetic Fields in Magnetic Materials; Hysteresis
-<a class=anchor href=#2810-magnetic-fields-in-magnetic-materials-hysteresis>#</a>
+<h1 id=2810-magnetic-fields-in-magnetic-materials-hysteresis-not-covered>
+28.10 Magnetic Fields in Magnetic Materials; Hysteresis (not covered)
+<a class=anchor href=#2810-magnetic-fields-in-magnetic-materials-hysteresis-not-covered>#</a>
 </h1>
 <ul>
 <li>The solenoid field is produced just .$n$ loops per unit length is .$B_0 = \mu_0 n I$</li>
@@ -538,9 +539,9 @@ $$B = \mu n I$$
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/4feef5beca646e9f2874943ee995db61dd03c09e title="Last modified by Max Vogel | November 21, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/ea1a3989098a5b3f16edabd1e8f3a3b1a4aa384f title="Last modified by Max Vogel | November 27, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 21, 2021</span>
+<span>November 27, 2021</span>
 </a>
 </div>
 <div>
@@ -567,9 +568,9 @@ $$B = \mu n I$$
 <li><a href=#285-magnetic-field-of-a-solenoid-and-a-toroid>28.5 Magnetic Field of a Solenoid and a Toroid</a></li>
 <li><a href=#286-biot-savart-law>28.6 Biot-Savart Law</a></li>
 <li><a href=#287-magnetic-field-due-to-a-single-moving-charge>28.7 Magnetic Field Due to a Single Moving Charge</a></li>
-<li><a href=#288-magnetic-materialsferromagnetism>28.8 Magnetic Materials—Ferromagnetism</a></li>
-<li><a href=#289-electromagnets-and-solenoidsapplications>28.9 Electromagnets and Solenoids—Applications</a></li>
-<li><a href=#2810-magnetic-fields-in-magnetic-materials-hysteresis>28.10 Magnetic Fields in Magnetic Materials; Hysteresis</a></li>
+<li><a href=#288-magnetic-materialsferromagnetism-not-covered>28.8 Magnetic Materials—Ferromagnetism (not covered)</a></li>
+<li><a href=#289-electromagnets-and-solenoidsapplications-not-covered>28.9 Electromagnets and Solenoids—Applications (not covered)</a></li>
+<li><a href=#2810-magnetic-fields-in-magnetic-materials-hysteresis-not-covered>28.10 Magnetic Fields in Magnetic Materials; Hysteresis (not covered)</a></li>
 </ul>
 </nav>
 </div>
