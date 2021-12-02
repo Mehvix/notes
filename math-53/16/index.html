@@ -8,13 +8,13 @@
 <meta property="og:description" content="16.1 Vector Fields #   A vector field in .$\mathbb{R}^3$ is a function .$\vec F$ on region .$E \in \mathbb{R}^3$ that assigns each point .$(x,y,z)$ a vector .$F(x,y,z)$ .$\vec F$ is made up of component function: .$\vec F(x,y,z) = \langle P(x,y,z)\hat i, Q(x,y,z) \hat j, R(x,y,z) \hat k\rangle$  .$\vec F$ is continuos iff its component vectors are continuos   .$\vec F$ is  conservative (path taken doesn&rsquo;t change work) iff potential function .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/16/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-20T17:58:32-08:00">
+<meta property="article:modified_time" content="2021-12-01T23:41:39-08:00">
 <title>16: Vector Calculus | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.e3bdfdf004209ba4e0dcdebf639958dd183fbf74841d661bf3d42b2697e47b19.js integrity="sha256-47398AQgm6Tg3N6/Y5lY3Rg/v3SEHWYb89QrJpfkexk=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.b90e0400a2f7b4cb0518e79c226412d450a139f09843e1b6ccfe133c89a01ab8.js integrity="sha256-uQ4EAKL3tMsFGOecImQS1FChOfCYQ+G2zP4TPImgGrg=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -51,7 +51,7 @@
 <a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/math-53/12/>12: Vectors and Geometry of Space</a>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
 </li>
 <li>
 <a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
@@ -118,6 +118,9 @@
 <li>
 <a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
 </li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -168,7 +171,37 @@ pass.mehvix.com
 <li><a href=#orientation>Orientation</a></li>
 </ul>
 </li>
-<li><a href=#163-fundamental-thm-for-line-integrals>16.3 Fundamental Thm for Line Integrals</a></li>
+<li><a href=#163-fundamental-thm-for-line-integrals>16.3 Fundamental Thm for Line Integrals</a>
+<ul>
+<li><a href=#independence-of-path>Independence of Path</a>
+<ul>
+<li><a href=#plane-curves>Plane Curves</a></li>
+<li><a href=#space-curves>Space Curves</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#164-greens-theorem>16.4 Green&rsquo;s Theorem</a>
+<ul>
+<li><a href=#application-finding-area>Application: Finding Area</a></li>
+</ul>
+</li>
+<li><a href=#165-curl-and-divergence>16.5 Curl and Divergence</a>
+<ul>
+<li><a href=#curl>Curl</a></li>
+<li><a href=#divergence>Divergence</a></li>
+<li><a href=#vector-form-of-greens>Vector Form of Green&rsquo;s</a></li>
+</ul>
+</li>
+<li><a href=#166-parametric-surfaces-and-their-area>16.6 Parametric Surfaces and Their Area</a>
+<ul>
+<li><a href=#parametric-surfaces>Parametric Surfaces</a></li>
+<li><a href=#surfaces-of-revolution>Surfaces of Revolution</a></li>
+<li><a href=#tangent-planes>Tangent Planes</a></li>
+<li><a href=#surface-area>Surface Area</a></li>
+<li><a href=#surface-area-of-the-graph-of-a-function>Surface Area of the Graph of a Function</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </aside>
@@ -215,20 +248,28 @@ $$\int_a^b f (\vec r (t) ) \vert \vec r'(t) \vert \Longrightarrow \int_a^b f(x(t
 <img src=/docs/math-53/imgs/line-int.gif alt="Line Integral gif"></li>
 <li>We can write .$\vec a \to \vec b$ as .$(1-t)\vec a + t\vec b$ with .$t\in[0,1]$</li>
 <li>Just like usual, we can break up un-integrable smooth curves, i.e
-$$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots$$</li>
+$$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^z f_n(x,y)$$</li>
 </ul>
 <h2 id=wrt-variable>
 wrt variable
 <a class=anchor href=#wrt-variable>#</a>
 </h2>
+<p>Opposed to the line integrals on .$f$ along .$C$ with respect to .$x$ <strong>both</strong> and .$y$, we can write line integral with respect to arc length as follows:</p>
 <p>$$\int_C f(x,y) dx = \int_a^b f(x(t), y(t)) \cdot y'(t) dt$$
 $$\int_C f(x,y) dy = \int_a^b f(x(t), y(t)) \cdot x'(t) dt$$</p>
+<p>It frequently happens that line integrals with respect to .$x$ and .$y$ occur together which we abbr as</p>
+<p>$$\int_C P(x,y)\ dx + \int_C Q(x,y)\ dy = \int_C P(x,y)\ dx + Q(x,y)\ dy$$</p>
 <h2 id=orientation>
 Orientation
 <a class=anchor href=#orientation>#</a>
 </h2>
 <ul>
-<li>When we parameterize a curve, we give it a direction</li>
+<li>When we parameterize a curve, we give it a direction
+<ul>
+<li><strong>Positive:</strong> Enclosed region .$D$ is always on the <strong>left</strong> as we traverse curve .$C$ (counter-clockwise)</li>
+<li><strong>Negative:</strong> Enclosed region .$D$ is always on the <strong>right</strong> as we traverse curve .$C$ (clockwise)</li>
+</ul>
+</li>
 <li>The orientation represents the direction of the line
 <ul>
 <li>The positive direction corresponding to increasing values of the parameter .$t$</li>
@@ -246,13 +287,36 @@ Orientation
 </li>
 </ul>
 <blockquote class="book-hint info">
-Let .$\vec F$ be a continuous vector field defined on a smooth curve .$C$ given by a vector function .$\vec r(t), t\in[a,b]$. Then the line integral of .$F$ along .$C$ is
-$$\int_C \vec F \cdot d\vec r = \int_a^b \vec F ( \vec r (t) ) \cdot \vec r' (t) dt = \int_C \vec F \cdot \vec T ds$$
+<p>Let .$\vec F$ be a continuous vector field defined on a smooth curve .$C$ given by a vector function .$\vec r(t), t\in[a,b]$. Then the line integral of .$\vec F$ along .$C$ is
+$$W = \int_C \vec F \cdot d\vec r = \int_a^b \vec F ( \vec r (t) ) \cdot (\vec r (t))'\ dt = \int_C \vec F \cdot \vec T\ ds$$</p>
+<ul>
+<li>.$\vec T(x,y,z)$ is the unit tangent vector at the point .$(x,y,z)$ on .$C$</li>
+<li>.$\vec F \cdot \vec T = \vec F(x,y,z) \cdot \vec T(x,y,z)$</li>
+</ul>
 </blockquote>
 <ul>
+<li>This equation says that work is the line integral with respect to arc length of the tangential component of the force.</li>
 <li>Then, for a non-conservative force i.e .$F = \langle P(x,y,z), Q(x,y,z), R(x,y,z) \rangle$
 $$W = \int_a^b P(\vec r(t)) \cdot x'(t) + Q(\vec r(t)) \cdot y'(t) + R(\vec r(t)) \cdot z'(t)$$
 $$ \Longrightarrow \int_C P\ dx + Q\ dy + R\ dz$$</li>
+<li>If we flip the curve&mldr;
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>&mldr;and integrate with respect to just .$x$ or .$y$ then the value flips:
+$$\int_{-C}f(x,y)\ dx = - \int_C f(x,y)\ dx$$</li>
+<li>Since .$\Delta x$ and .$\Delta y$ change sign when we reverse the orientation of .$C$.</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
+<li>&mldr;and integrate with respect to arc length, the value of the line integral does not change when we reverse the orientation of the curve:
+$$\int_{-C}f(x,y)\ ds = \int_C f(x,y)\ ds$$</li>
+<li>This is because .$\Delta s$ is always positive.</li>
+</ul>
+</div>
+</div>
+</li>
 </ul>
 <h1 id=163-fundamental-thm-for-line-integrals>
 16.3 Fundamental Thm for Line Integrals
@@ -262,16 +326,52 @@ $$ \Longrightarrow \int_C P\ dx + Q\ dy + R\ dz$$</li>
 Let .$C$ be a smooth curve given by the vector function .$\vec r (t), t\in[a,b]$. Let .$f$ be a differentiable function of two or three variables whose gradient vector .$\nabla f$ is continuous on .$C$. Then
 $$\int_C \nabla f \cdot d\vec r =\int_C \vec F \cdot d\vec r = f(\vec r(b) ) f(\vec r(a))$$
 </blockquote>
+<h2 id=independence-of-path>
+Independence of Path
+<a class=anchor href=#independence-of-path>#</a>
+</h2>
 <ul>
-<li>That is, for conservative fields, path doesn&rsquo;t matter</li>
+<li>Suppose .$C_1$ and .$C_2$ are two piecewise-smooth curves (which are called paths) that have the same initial point .$A$ and terminal point .$B$.
+<ul>
+<li>Therefore, .$\int_{C_1} \nabla f \cdot d\vec r = \int_{C_2} \nabla f \cdot d\vec r$ whenever .$\nabla f$ is continuous</li>
+<li>In other words, line integrals of conservative vector fields are independent of path (they only depend on the start and end points)</li>
 </ul>
+</li>
+</ul>
+<h3 id=plane-curves>
+Plane Curves
+<a class=anchor href=#plane-curves>#</a>
+</h3>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<blockquote class="book-hint info">
+.$\int_C \vec F \cdot d\vec r$ is independent of path in .$D$ iff .$\int_C \vec F \cdot d\vec r = 0$ for every <strong>closed</strong> path .$C$ in .$D$
+</blockquote>
+<ul>
+<li><strong>Closed:</strong> A curve with the same end and start points: .$\vec r(b) = \vec r(a)$</li>
+<li>That is, only vector fields that are independent of path are conservative.</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/closed-curve.png alt="Closed Curve">
+</div>
+</div>
+<h3 id=space-curves>
+Space Curves
+<a class=anchor href=#space-curves>#</a>
+</h3>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <blockquote class="book-hint info">
 Suppose .$\vec F$ is a vector field that is continuous on an <strong>open connected</strong> region .$D$. If .$\int_C \vec F \cdot d\vec r$ is <em>independent</em> of path in .$D$, then .$\vec F$ is a conservative vector field on .$D$; that is, there exists a function .$f$ such that .$\nabla f = \vec F$.
 </blockquote>
+<ul>
+<li><strong>Open:</strong> For every point .$P$ in .$D$ there is a disk with center .$P$ that lies entirely in .$D$. (So .$D$ doesn’t contain any of its boundary points.)</li>
+<li><strong>Connected:</strong> Any two points in .$D$ can be joined by a path that lies in .$D$.</li>
+</ul>
 </div>
 <div class="flex-even markdown-inner">
+<p>$$$$
 <img src=/docs/math-53/imgs/path-d.png alt>
 </div>
 </div>
@@ -281,11 +381,9 @@ Suppose .$\vec F$ is a vector field that is continuous on an <strong>open connec
 <img src=/docs/math-53/imgs/regions.png alt=Regions>
 </div>
 <div class="flex-even markdown-inner">
-<blockquote class="book-hint info">
-If .$\vec F (x,y) = P(x,y) \hat i + Q(x,y) \hat j$ is a conservative vector field, where .$P$ and .$Q$ have continuous first-order partial derivatives on a domain .$D$, then throughout .$D$ we have
-$$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x}$$
-</blockquote>
 <ul>
+<li>If .$\vec F (x,y) = P(x,y) \hat i + Q(x,y) \hat j$ is a conservative vector field, where .$P$ and .$Q$ have continuous first-order partial derivatives on a domain .$D$, then throughout .$D$ we have
+$$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x}$$</li>
 <li>The converse of the theorem above is true on only <strong>simple curves</strong>: curves that don’t intersect itself anywhere between its endpoints</li>
 <li>A <strong>simply-connected</strong> region in the plane is a connected region .$D$ such that every simple closed curve in .$D$ encloses only points that are in .$D$
 <ul>
@@ -293,19 +391,197 @@ $$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x}$$
 </ul>
 </li>
 </ul>
-</div>
-</div>
 <blockquote class="book-hint info">
-.$\vec F = \langle P, Q \rangle$ is a conservative vector field on an open <strong>simply-connected</strong>
+.$\vec F = \langle P, Q \rangle$ is a <em>conservative</em> vector field on an open <em>simply-connected</em>
 region .$D$ iff both .$P$ and .$Q$ have continuous first-order partial derivatives and
 $$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x} \text{ throughout } D$$
 </blockquote>
+</div>
+</div>
+<h1 id=164-greens-theorem>
+16.4 Green&rsquo;s Theorem
+<a class=anchor href=#164-greens-theorem>#</a>
+</h1>
+<blockquote class="book-hint info">
+<p><strong>Green&rsquo;s Theorem:</strong> Let .$C$ be a <em>positively oriented</em>, piecewise-smooth, <em>simple closed</em> curve in the plane and let .$D$ be the region bounded by .$C$. If .$P$ and .$Q$ have continuous partial derivatives on an <em>open region</em> that contains .$D$, then
+$$\int_C \vec F \cdot d\vec r = \oint_C P\ dx + Q\ dy = \iint_D \bigg(\frac{\delta Q}{\delta x} - \frac{\delta P}{\delta y}\bigg) dA$$</p>
+<ul>
+<li>.$dA = dx\ dy = r \cdot dr\ d\theta = \dots$</li>
+<li>.$\vec F(x,y) = \langle P(x,y), Q(x,y)\rangle$</li>
+<li>.$\oint$ implies an integral over a closed curve</li>
+</ul>
+</blockquote>
+<ul>
+<li>Proof is too much for me to write out here, the book does a good job though
+<ul>
+<li>One important takeaway is the the shape doesn&rsquo;t have to be &ldquo;nice&rdquo; &ndash; we can break up any shape into parts that are either Type I or II. Even though we will have overlapping lines, they cancel one another out (leaving only the boundaries) because of orientation</li>
+</ul>
+</li>
+<li>Green’s Theorem should be regarded as the counterpart of the Fundamental Theorem of Calculus for double integrals
+<ul>
+<li>Recall the Fundamental Theorem of Calculus is .$\int_a^b F'(x)\ dx = F(b) - F(a)$</li>
+<li>In both cases there is an integral involving derivatives (.$F', \delta Q/\delta x, \delta P/\delta y$) on the left side of the equation.</li>
+<li>And in both cases the right side involves the values of the original functions (.$F, Q, P$) only on the boundary of the domain.
+<ul>
+<li>(In the one-dimensional case, the domain is an interval .$[a,b]$ whose boundary consists of just two points, .$a$ and .$b$.)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=application-finding-area>
+Application: Finding Area
+<a class=anchor href=#application-finding-area>#</a>
+</h2>
+<ul>
+<li>Since the area of .$D$ is .$\iint_D 1 dA$, we wish to choose .$P$ and .$Q$ so that
+$$ \frac{\delta Q}{\delta x} - \frac{\delta P}{\delta y} = 1$$</li>
+<li>Some examples of .$P/Q$ combos are
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$P(x,y)=0$$
+$$Q(x,y)=x$$
+$$A = \oint_C x\ dy$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$P(x,y)=-y$$
+$$Q(x,y)=0$$
+$$A = -\oint_C y\ dx$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$P(x,y)=-y/2$$
+$$Q(x,y)=x/2$$
+$$A = \frac{1}{2} \oint_C x\ dy - y\ dx$$
+</div>
+</div>
+</li>
+<li>
+<a href=https://en.wikipedia.org/wiki/Planimeter>Planimeters</a> (a measuring instrument used to determine the area of an arbitrary two-dimensional shape) is an example of an application of Green Theorem</li>
+<li>We can also use Green&rsquo;s to prove <a href='javascript:document.querySelector("body > main > div > article > div:nth-child(22) > div:nth-child(2) > blockquote").scrollIntoView()'>our last equation found in 16.3</a>:
+$$\oint_C \vec F \cdot d \vec r = \oint_C P\ dx + Q\ dy = \iint_R \bigg( \frac{\delta Q}{\delta x} - \frac{\delta P}{\delta y}\bigg)\ dA = \iint_R 0\ dA = 0$$
+<blockquote>
+<p>A curve that is not simple crosses itself at one or more points and can be broken up into a number of simple curves. We have shown that the line integrals of .$\vec F$ around these simple curves are all .$0$ and, adding these integrals, we see that .$\int_C \vec F \cdot d\vec r = 0$ for any closed curve .$C$. Therefore .$\int_C \vec F \cdot d\vec r$ is independent of path in .$D$. It follows that .$F$ is a conservative vector field.</p>
+</blockquote>
+</li>
+</ul>
+<h1 id=165-curl-and-divergence>
+16.5 Curl and Divergence
+<a class=anchor href=#165-curl-and-divergence>#</a>
+</h1>
+<ul>
+<li>Recall that .$\nabla = \langle \frac{\delta}{\delta x} \frac{\delta}{\delta y} \frac{\delta}{\delta z} \rangle$</li>
+<li>
+<a href=https://youtu.be/rB83DpBJQsE>3b1b</a> video going over this section</li>
+</ul>
+<h2 id=curl>
+Curl
+<a class=anchor href=#curl>#</a>
+</h2>
+<ul>
+<li>Vector of the rotation caused by the field at a given point
+$$\nabla \times \vec F(x,y,z) = \begin{bmatrix}\hat i & \hat j & \hat k\\ \frac{\delta}{\delta x} & \frac{\delta}{\delta y} & \frac{\delta}{\delta z}\\ P & Q & R\end{bmatrix} = \dots $$</li>
+<li>If .$\vec F$ is conservative then .$\text{curl($\vec F$) = 0}$
+<ul>
+<li>We know if .$\vec F$ is conservative then .$\vec F = \nabla f$ for some .$f(x,y,z)$</li>
+<li>Crossing .$\nabla F$ with .$\nabla$ we get .$\langle \frac{\delta^2 f}{\delta y \delta z} - \frac{\delta^2 f}{\delta z \delta y}, \dots \rangle = \langle 0, 0,0 \rangle$</li>
+</ul>
+</li>
+</ul>
+<h2 id=divergence>
+Divergence
+<a class=anchor href=#divergence>#</a>
+</h2>
+<ul>
+<li>If .$\vec F (x,y,z)$ is the velocity of a fluid (or gas), then .$\text{div}(\vec F (x,y,z))$ represents the net rate of change (wrt time) of the mass of fluid (or gas) flowing from the point .$(x,y,z)$ per unit volume.
+<ul>
+<li>In other words, .$\text{div}(\vec F (x,y,z))$ measures the tendency of the fluid to diverge from the point .$(x,y,z)$.</li>
+<li>If .$\text{div}(\vec F (x,y,z)) = 0$, then .$F$ is said to be incompressible.</li>
+</ul>
+</li>
+<li>Scalar of the amount of &ldquo;flow&rdquo; at a given point &ndash; how much does the field expand/contract at a given point?
+$$\nabla \cdot \vec F(x,y,z) = \langle \frac{\delta}{\delta x} \frac{\delta}{\delta y} \frac{\delta}{\delta z} \rangle \cdot \langle P, Q, R \rangle$$</li>
+</ul>
+<hr>
+<ul>
+<li>Fun fact: .$\text{(div(curl($\vec F$)))} = \nabla \cdot (\nabla \times \vec F)= 0$
+<img src=/docs/math-53/imgs/div-curl-f.png alt=div(curl(f))>
+<ul>
+<li>We can use this fact to find if there exists a vector field .$\vec G$ such that .$\text{curl($\vec G$)} = \vec H$ because .$\text{div(curl($\vec G$))} = \text{div($\vec H$)} = 0$</li>
+</ul>
+</li>
+</ul>
+<h2 id=vector-form-of-greens>
+Vector Form of Green&rsquo;s
+<a class=anchor href=#vector-form-of-greens>#</a>
+</h2>
+<p>$$\oint_C \vec F \cdot d \vec r= \iint_D \text{(curl ($\vec F$))} \cdot \hat k\ dA = \bigg( \frac{\delta Q}{\delta x} - \frac{\delta P}{\delta y} \bigg) \hat k$$</p>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>This equation expresses the line integral of the tangential component of .$\vec F$ along .$C$ as the double integral of the vertical component of .$\text{curl($\vec F$)}$ over the region .$D$ enclosed by .$C$.</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/green-tan.png alt>
+</div>
+</div>
+<ul>
+<li>We can write this using the normal component of .$\vec F$ too:
+<ul>
+<li>With .$\vec r(t) = \langle x(t), y(t) \rangle; t \in [a,b]$</li>
+<li>Recall the unit tangent vector: .$\vec T(t) = \frac{1}{\vert \vec r ' (t) \vert} \langle x'(t), y'(t) \rangle$</li>
+<li>The outward unit normal vector to .$C$ is given by .$\vec n (t) = \frac{1}{\vert \vec r ' (t) \vert} \langle y'(t), -x'(t) \rangle$</li>
+<li>We can then evaluate
+$$\oint_C \vec F \cdot \vec n\ ds = \int_a^b (\vec F \cdot \vec n)(t) \vert \vec r'(t) \vert\ dt = \iint_D \bigg( \frac{\delta P}{\delta x} - \frac{\delta Q}{\delta y} \bigg)\ dA = \iint_D \text{div $\vec F (x,y)$}\ dA$$</li>
+<li>This says that the line integral of the normal component of .$\vec F$ along .$C$ is equal to the double integral of the divergence of .$\vec F$ over the region .$D$ enclosed by .$C$.</li>
+</ul>
+</li>
+</ul>
+<h1 id=166-parametric-surfaces-and-their-area>
+16.6 Parametric Surfaces and Their Area
+<a class=anchor href=#166-parametric-surfaces-and-their-area>#</a>
+</h1>
+<h2 id=parametric-surfaces>
+Parametric Surfaces
+<a class=anchor href=#parametric-surfaces>#</a>
+</h2>
+<p>
+<img src=/docs/math-53/imgs/param-surfaces.png alt="Parametric Surface"></p>
+<ul>
+<li>Just like how we can describe curves with single parameter (variable) function .$\vec r(t)$, we can describe surfaces with a vector function .$\vec r(u,v) = \langle x(u,v), y(u,v), z(u,v) \rangle$
+<ul>
+<li>.$\vec r(u,v)$ is called a vector-valued function defined on a region .$D$ in the .$uv$-plane</li>
+<li>.$x,y,z$ are the component functions of .$\vec r$, each of which have domain .$D$</li>
+</ul>
+</li>
+<li>In general, a surface given as the graph of a function of .$x$ and .$y$, that is, with an equation of the form .$z=f(x,y)$, can always be regarded as a parametric surface by taking .$x$ and .$y$ as parameters and writing the parametric equations as .$x=x; y=y; z=f(x,y)$
+<ul>
+<li>E.x. the plane with point .$(x_0, y_0, z_0)$ and vectors .$\langle a,b,c \rangle$ .$\langle \alpha,\beta,\gamma \rangle$ is .$\vec r(u,v) = \langle x_0, y_0, z_0 \rangle + u\langle a,b,c \rangle + v\langle \alpha,\beta,\gamma \rangle$ or .$0 = (\langle x - x_0, y - y_0, z - z_0 \rangle) \cdot (\langle a,b,c \rangle \times \langle \alpha,\beta,\gamma \rangle)$</li>
+</ul>
+</li>
+</ul>
+<h2 id=surfaces-of-revolution>
+Surfaces of Revolution
+<a class=anchor href=#surfaces-of-revolution>#</a>
+</h2>
+<h2 id=tangent-planes>
+Tangent Planes
+<a class=anchor href=#tangent-planes>#</a>
+</h2>
+<h2 id=surface-area>
+Surface Area
+<a class=anchor href=#surface-area>#</a>
+</h2>
+<h2 id=surface-area-of-the-graph-of-a-function>
+Surface Area of the Graph of a Function
+<a class=anchor href=#surface-area-of-the-graph-of-a-function>#</a>
+</h2>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/4feef5beca646e9f2874943ee995db61dd03c09e title="Last modified by Max Vogel | November 21, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/8f74d04000bb4b1407a09ff3ce1613d4887980e1 title="Last modified by Max Vogel | December 2, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 21, 2021</span>
+<span>December 2, 2021</span>
 </a>
 </div>
 <div>
@@ -332,7 +608,37 @@ $$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x} \text{ throughout } D$$
 <li><a href=#orientation>Orientation</a></li>
 </ul>
 </li>
-<li><a href=#163-fundamental-thm-for-line-integrals>16.3 Fundamental Thm for Line Integrals</a></li>
+<li><a href=#163-fundamental-thm-for-line-integrals>16.3 Fundamental Thm for Line Integrals</a>
+<ul>
+<li><a href=#independence-of-path>Independence of Path</a>
+<ul>
+<li><a href=#plane-curves>Plane Curves</a></li>
+<li><a href=#space-curves>Space Curves</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#164-greens-theorem>16.4 Green&rsquo;s Theorem</a>
+<ul>
+<li><a href=#application-finding-area>Application: Finding Area</a></li>
+</ul>
+</li>
+<li><a href=#165-curl-and-divergence>16.5 Curl and Divergence</a>
+<ul>
+<li><a href=#curl>Curl</a></li>
+<li><a href=#divergence>Divergence</a></li>
+<li><a href=#vector-form-of-greens>Vector Form of Green&rsquo;s</a></li>
+</ul>
+</li>
+<li><a href=#166-parametric-surfaces-and-their-area>16.6 Parametric Surfaces and Their Area</a>
+<ul>
+<li><a href=#parametric-surfaces>Parametric Surfaces</a></li>
+<li><a href=#surfaces-of-revolution>Surfaces of Revolution</a></li>
+<li><a href=#tangent-planes>Tangent Planes</a></li>
+<li><a href=#surface-area>Surface Area</a></li>
+<li><a href=#surface-area-of-the-graph-of-a-function>Surface Area of the Graph of a Function</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
