@@ -20,7 +20,7 @@ bookCollapseSection: false
     - Atomic Testing (1940s)
         - The isotopic by-products of bomb testing provide a distinctive marker horizon in ice cores, ocean and lake sediments, and soils
     - Stages idea:
-        - Includes vital events such as forest cutting and grassland conversion: the two largest spatial transformations of Earth’s surface in human history
+        - Includes vital events such as forest cutting and grassland conversion: the two largest spatial transformations of Earth's surface in human history
         1. 1.8 million years ago: When fire was discovered
         2. 6000-4000s years ago: With neolithic agriculture
         3. 1780s: Industrial revolution
@@ -51,7 +51,7 @@ bookCollapseSection: false
     - _Fuel Source_: (Silurian and Devonian Periods) Enough terrestrial plants in ecosystems to acts as fuel
 - During this time, natural fire regimes evolved
     - As coal became more common (Carboniferous period), fires did too
-- Started long time ago, before humans and dinosaurs 
+- Started long time ago, before humans and dinosaurs
 
 ## 2. Wildland Anthropogenic Fire -- Hunter/Gatherer Fire Regime
 
@@ -158,7 +158,7 @@ bookCollapseSection: false
         - Smoke is a mixture of specific chemicals unique to itself
     - Note that plants become resistant to certain fire regimes, not necessarily all
         - Changes in fire regime can kill off fire resistant plants
-- Even small differences in the deployment of fire outside of natural lightning strikes can alter patterns of forest  succession, fuel availability, and seasonality of ignitions
+- Even small differences in the deployment of fire outside of natural lightning strikes can alter patterns of forest succession, fuel availability, and seasonality of ignitions
 
 # Fires Relating to Evolution
 
@@ -310,7 +310,7 @@ bookCollapseSection: false
 - Are best bet is to look at history and see how fire regimes changed from past changes in socioeconomic variables
     - Climate increased fire activity on a large-scale **after Native American depopulation** reduced the buffering effect of due to their burnings
         - Sierra Nevada tribes were hunter-gatherers who used sophisticated burning practices to manage resources
-        - The fire index nearly doubled after depopulation 
+        - The fire index nearly doubled after depopulation
     - Later Euro-American settlement and fire suppression buffered fire activity from temperature increases
         - Logging, fire suppression, livestock increase (grazing effects)
 - The overall sensitivity of fire regimes to low-frequency temperature variation is related to temperature-driven vegetation changes that alter fuel structure and fuel type
@@ -373,7 +373,7 @@ bookCollapseSection: false
 - Concluding Points
     - Clearly people knew about fire from earliest times
     - Very Sophisticated Maritime Peoples
-    - (Kent’s opinion) Early for early anthropogenic
+    - (Kent's opinion) Early for early anthropogenic
     - Influenced fire regimes from earliest times
     - Implications: the Holocene Epoch in CA
     - (last 10,000 years); you cannot assume
@@ -392,9 +392,9 @@ bookCollapseSection: false
 - Annual layers are laid down in some lakes
     - Realistically you can date to around fifty years of accuracy
     - This samples have deeper temporal depth vs other methods
-    -  We can also radiocarbon date these samples to determine the time period
+    - We can also radiocarbon date these samples to determine the time period
 - What to sample
-    - Charcoal present is indicates fire 
+    - Charcoal present is indicates fire
         - Larger particle tend to travel small distances
         - Smaller particles can travel much longer distances
         - Some plants may be easier/harder to identify than others
@@ -405,15 +405,15 @@ bookCollapseSection: false
         - Tiny particles formed in many plants
         - They don't break down -- can stay in soil for hundreds to thousands of years!
         - Can be used to identify plant species
-        - Cons: Not all plants produce them; overrepresented in grasses 
+        - Cons: Not all plants produce them; overrepresented in grasses
 
-### 2. Coring Trees 
+### 2. Coring Trees
 
 ![Tree Coring](/docs/anthro-c12ac/imgs/tree-core.png)
 
-- You basically jab a metal straw into a tree and get a sample of the tree 
+- You basically jab a metal straw into a tree and get a sample of the tree
     - Doesn't harm tree, tree naturally patches the hole itself
-- These sample contain rings 
+- These sample contain rings
 - Give us age and growth rate of the tree
     - Growth increase in rings can allude to neighboring trees being killed
     - Dead neighboring trees means less canopy blocking sunshine and less trees competing for nutrients
@@ -423,20 +423,20 @@ bookCollapseSection: false
 - **Crossdating**: To identify events, we compare the sample's tree rings to those of other "regular" trees in different areas at the same time
  
 ![Ring Example](/docs/anthro-c12ac/imgs/tree-ring.png)
-- Note that the example above is a rare occurrence 
+- Note that the example above is a rare occurrence
 
 
 ### 3. Fire Scars
 
 ![Scar Example](/docs/anthro-c12ac/imgs/fire-scar.png)
 
-- Fire scars occur when fire kills part of the cambium below bark, leaving a wound 
+- Fire scars occur when fire kills part of the cambium below bark, leaving a wound
     - The scar itself takes ~10 years to show up
 - Multiple dated wounds allude to multiple fire occurrences
 - You can also get the seasonality too
     - Spring trees have warmer water so the scars are lighter in color
     - Fall/winter trees have slower cell movement, so the scars are darker (this is called "latewood")
-    - Therefore, how deep the scar is in the wood corresponds to the season the fire occurred 
+    - Therefore, how deep the scar is in the wood corresponds to the season the fire occurred
 - Use crossdating for high accuracy and precision
 - Pines, White oaks, Sequoia, Redwood, Incense, and Cedars are all good trees to take samples from
 - Wedges:
@@ -452,7 +452,7 @@ bookCollapseSection: false
     - Fire scars have a finite lifespan (tree lifespan)
     - Paints picture only of a certain plant in the landscape
 
-## Fire History Study Sierra Nevada 
+## Fire History Study Sierra Nevada
 
 - Two large sampling areas, one north and south Sierra Nevada
 - Systematic fire history sample in mixed conifer forests
@@ -468,25 +468,25 @@ bookCollapseSection: false
     - Lightning fire
     - Indian burning
         - Burned most of grasslands, wetlands, oak woodlands, some forests
-    - 4.5 million acres/yr. burned 
+    - 4.5 million acres/yr. burned
 
 
 ## Costal California Today
 
 - Large area: scotia to Morro bay
-- Very diverse vegetation type 
+- Very diverse vegetation type
     - From mixed conifer to costal prairie
     - Fire regimes depend on vegetation, thus they're diverse
     - Likewise, some regions don't consider burning at all and only do suppression whereas others use burnings frequently
 - General ignition sources
-    - At higher mountains, lighting  ignition occurs (still rare, however)
+    - At higher mountains, lighting ignition occurs (still rare, however)
     - At lower elevations / costal areas, human ignition is the main sources
-        - Looking at history, we see that Indian fires dominated for thousands of years 
+        - Looking at history, we see that Indian fires dominated for thousands of years
 - Sudden oak death (SOD) in Tanoak Forest
     - Invasive pathogen in Marin Country
     - Dead trees increase the severity of fires
 - Prescribed fire periods
-    - Done in fall if not drying to damage trees 
+    - Done in fall if not drying to damage trees
         - Trees are in dormant phase, less damaging
     - Done in spring if trying to control/limit
         - Wet spring conditions are easier to manage
@@ -541,17 +541,17 @@ bookCollapseSection: false
         - Very volatile even in spring (non-dry conditions) 
     - Size: Moderate to high
     - Stand replacing regime
-        - 30-75 yr. interval 
+        - 30-75 yr. interval
         - Crown **fire adapted**
         - High intensity burns
-        - Climate driven 
-            - Droughts 
+        - Climate driven
+            - Droughts
             - Low fuel moistures
             - **Foehn winds** -- Winds from east that are generally dry and warm
     - Fire scars -- not common
-- Knobcone Pine 
+- Knobcone Pine
   - Severity: High
-        - High severity required to activate seeds 
+        - High severity required to activate seeds
   - Interval: Moderate to long
   - Size: Moderate to large
   - Overstory tends to burn completely
@@ -566,7 +566,7 @@ bookCollapseSection: false
 ## Native Californians
 
 - Long-History of Human Occupation in CA
-    - Archaeological Evidence: 13,000 years or more 
+    - Archaeological Evidence: 13,000 years or more
     - Evidence for multiple immigrations from both sea and land to California
     - Diverse composition of people
 - Native communities are still in California
@@ -628,7 +628,7 @@ bookCollapseSection: false
             - Seasonality of burning very important to minimize risk of catastrophic fires
             - Additionally, risk reduced by reduce fuel loads + creating fuel breaks
         - Burn to increase productivity and stimulate growth of broad spectrum of economic resources
-            - Notably shrubs with berries, oak woodlands, coniferous 
+            - Notably shrubs with berries, oak woodlands, coniferous
         - Intentionally create Patchy Mosaics
             - Increase **quantity, diversity and sustainability** of key plants and animals
             - Different environments benefit from different style burnings resulting in checkerboard-esque patterns
@@ -637,8 +637,8 @@ bookCollapseSection: false
         - Burn areas contained by natural rivers/hills/ridges/basalt flows
     - Implications of Cultural Burning
         - Not Pristine Wilderness, but Managed Anthropogenic Landscape -- you have to take into account Indians when looking at CA's landscape
-        - You can't do restoration without bringing in people 
-            - Now, because of a lack of recent cultural burnings, some habitats are struggling 
+        - You can't do restoration without bringing in people
+            - Now, because of a lack of recent cultural burnings, some habitats are struggling
 
 ### Controversy regarding cultural burnings
 
@@ -646,7 +646,7 @@ bookCollapseSection: false
 - Rather, natural fires best explain these fires
 - Evidence Types tend to be soft;
     1. Tribal Oral Traditions have a Short Temporal Depth for cultural burnings
-        - Observations limited primarily to last 250 years 
+        - Observations limited primarily to last 250 years
     2. Limitations arise when primarily referring to Ethnohistoric Sources
         - Ethnohistoric Studies are from (typically Spaniard around 1600-1700) explorers and not trained as anthropologists
         - Accounts tend to be spotty, geographically biased, and not very detailed
@@ -654,21 +654,21 @@ bookCollapseSection: false
         - Susceptible to biases, uncertainty, and anecdotes
     3. Ethnographic Studies
         - Information is word of mouth history from within the tribe that's passed from one generation to another
-        - Recorded by anthropologists 
+        - Recorded by anthropologists
         - Information is very brief/general and lacking in our definition of fire regime now
         - Old archeologists may have viewed Indians as hunter/gatherers (which is wrong!)
         - Colonizers prevented cultural fires (fire exclusion)
             - **Fire exclusion** is when fire is _indirectly removed_ from the environment
                 - E.x. adding livestock removes fuels, reducing/removing fire
-                - E.x. Colonizers removing Natives (for reasons other than their cultural burnings) removed fires, changing fire regime 
-            - Whereas **fire suppression** is mindful + target specifically at _stopping fires_ 
+                - E.x. Colonizers removing Natives (for reasons other than their cultural burnings) removed fires, changing fire regime
+            - Whereas **fire suppression** is mindful + target specifically at _stopping fires_
                 - E.x. Using firetrucks, airplanes, etc. to stop a fire from spreading
                 - E.x laws preventing you from creating fires during the dry season
-        - Thus, when we started Ethnographic studies in 1901(ish), we didn't see the history before because current tribes weren't allowed to perform cultural burnings 
+        - Thus, when we started Ethnographic studies in 1901(ish), we didn't see the history before because current tribes weren't allowed to perform cultural burnings
 - Instead, critics would like to see hard ecological data (fire scars, pollen analysis, charcoal accumulation, phytoliths)
 - Two main reasons to address these criticisms
     1. Differential impacts due to colonialism in different spaces and at different times
-        - Some areas colonized much earlier than others in the state 
+        - Some areas colonized much earlier than others in the state
             - Central and Souther coast colonized 2.5 centuries ago by Spaniards
             - Others only were colonized during the gold rush)
         - Some tribes subjected to Fire Exclusion/Suppression policies
@@ -703,7 +703,7 @@ bookCollapseSection: false
 
 #### 1. Sierra Nevada Mountains
 
-- Difficult to carry out research because of high ignition rate due to lightening being common 
+- Difficult to carry out research because of high ignition rate due to lightening being common
     - Hard to differentiate between natural and anthropogenic fires
 - Research done by Linn Gassaway
     - Specifically looks at Yosemite Valley which Home of Southern Sierra Miwok people
@@ -734,11 +734,11 @@ bookCollapseSection: false
 ![Absence of Cultural Burnings](/docs/anthro-c12ac/imgs/absence-of-cultural-burnings.png)
 - Central California Coast Project
     - Amah Mutsun Tribal Band
-        - Issues of Food Security and Food Sovereignty    
+        - Issues of Food Security and Food Sovereignty
             - Limited Access to Native Foods
             - Do not own much property
         - Tribe has Commitment to Ecological Restoration
-            - Want to return indigenous plants and animals to the land 
+            - Want to return indigenous plants and animals to the land
     - Established the Amah Mutsun Land Trust (AMLT)
         - Purpose is to restore natural resources
         - Purpose it to steward lands and waters
@@ -781,7 +781,7 @@ bookCollapseSection: false
             - Recovery of Plant and Animal Remains
                - Excavate Soil
                - Flotation of Soil to Recover Remains
-               - Laboratory Analysis 
+               - Laboratory Analysis
             - **Cuthrell:** 
                 - Food remains indicate costal prairie seed foods (which came from prairies) were prominent parts of people's diets during the last 1000+ years. 
                 - Charcoal from hearth fires indicates fire-compatible trees such as redwood were the primary fuel sources, while fire-vulnerable trees like Douglas firs were not as common
@@ -815,7 +815,7 @@ bookCollapseSection: false
     - Recruited thousands of Natives as labourers
     - Select locations where existing towns had reduction policies
         - Reduction policies moved natives into a single village after their land was taken
-- Mexican Missions, Ranchos 
+- Mexican Missions, Ranchos
     - When Mexico took over CA
     - Happened from 1822-1846
     - Established huge, private ranches (Ranchos)
@@ -823,7 +823,7 @@ bookCollapseSection: false
         - Generated lots of money
 - Colony Ross
     - Russian Colonization from 1812-1841
-    - Carried out by Russian American Company 
+    - Carried out by Russian American Company
         - Hunted sea otters
         - Sold pelts to China
     - Recruit Native Alaskans who served as primary hunters
@@ -891,39 +891,39 @@ bookCollapseSection: false
 
 # Timber Owners and Early Use of Fire (10/4)
 
-- **1880**: Advocates for ‘light burning’ in California appear  -- some thought fire was needed to manage forests
+- **1880**: Advocates for ‘light burning' in California appear  -- some thought fire was needed to manage forests
     - Whereas cultural burnings are done for <a href='javascript:document.querySelector("body > main > div > article > ul:nth-child(68) > li:nth-child(7) > ul > li:nth-child(4) > ol").scrollIntoView()'>specific intentional reasons</a>, light burning is done for other reasons such as reducing fuel, increasing food for livestock, and other economic reasons
     - That is, cultural burning is a form of light burning
 - **1900:** Debate start regarding fire management near Lake Almanor in CA
-    - Private forest land owners practiced ‘light burning’ following early Indian and sheep herder traditions
-    - Most foresters dismissed this proposal as mere ‘Paiute Forestry’ (derogatory term based on an Indian tribe)
+    - Private forest land owners practiced ‘light burning' following early Indian and sheep herder traditions
+    - Most foresters dismissed this proposal as mere ‘Paiute Forestry' (derogatory term based on an Indian tribe)
 - **1902:**
-    - H.J. Ostrander attacked ‘protectionist’ policy of fire control as worse than effective because it allowed fuel to accumulate
+    - H.J. Ostrander attacked ‘protectionist' policy of fire control as worse than effective because it allowed fuel to accumulate
     - US National Academy of Science committee on forest reserves urged fire control policy
 - **1908:** 
     - Gene Tolly: Sierra National Forest Ranger from 1905-1912 and cowboy assigned to range management for USFS
     - Gifford Pinchot: 1st Chief of the USFS
     - Tolly took Gifford on a back country trip through the Sierra National Forest to try and convince him to allow Indian Burning to keep meadows and forests from getting overgrown but Gifford didn't buy it
 - **1910:**
-    - Sunset magazine was an outlet used for forestry discussion at the time 
+    - Sunset magazine was an outlet used for forestry discussion at the time
         - G.L. Hoxie wrote in the magazine to advocated light burning claimed it should not be merely acceptable but made mandatory
-        - Made economic, not ecological argument 
-    - Unfortunately at same time, Great Idaho Fire occurred 
+        - Made economic, not ecological argument
+    - Unfortunately at same time, Great Idaho Fire occurred
         - Burned 3 million acres and killed 85 people. 
         - Happened due to drought period with ignitions from lightning, locomotives, and logging
         - Resulted in national debate:
             - Senator Weldon Heyburn (R-Idaho) led effort to disband the USFS so that private land owners could manage their own land
             - Others argued that the newly found US Forest Service (1905) should be expanded so that it could prevent future fires (happened, turns out govt tends to only grow bigger)
 - **1930s:** Two experiments were occurring in northeast CA around this time
-    1. Full Control  
+    1. Full Control
         - McCloud River Lumber Company
         - Use trains, hand crews, etc
     2. Light Burning
-        - Thomas Barlow (T.B.) Walker was raised from Minnesota and ran the Red River Lumber Co. near Lake Almanor 
-        - Clinton Walker (T.B’s son) wrote a letter to the Red River Lumber Company in **1938** (years after he had left the Company) saying:
+        - Thomas Barlow (T.B.) Walker was raised from Minnesota and ran the Red River Lumber Co. near Lake Almanor
+        - Clinton Walker (T.B's son) wrote a letter to the Red River Lumber Company in **1938** (years after he had left the Company) saying:
             1. The general condition of the forests when the white man first came into CA was very excellent
             2. Then came the foresters from Yale University and put the tourniquet on the forests
-            3. Would prefer to remove the tourniquet in our timber matters \[which] is the lack of fire 
+            3. Would prefer to remove the tourniquet in our timber matters \[which] is the lack of fire
             4. I requested permission \[to burn] from the State Forester and the USFS DuBois. Both refused
             5. We proceeded to burn anyway, and Chief Forester Graves came out from Washington and DuBois and many others with cameras and notebooks to get damaging evidence
             6. They stayed several days and followed the burning, with comment by Graves that the work was excellent
@@ -931,13 +931,13 @@ bookCollapseSection: false
         - Graves suggested that T.B underwrite a chair of fire protection at Yale University
             - Walker agreed, contributing $100,000 (a huge amount of funding 1900's). Harvey Chapman hired who was huge force in longleaf pine is southeast US
     - Over the next decade trials done across the US, especially in pine belts of the West and South
-    - Stuart Show (from Stanford btw) looked for light burning area around Mt. Hough, Claremont, Meadow Valley Country 
+    - Stuart Show (from Stanford btw) looked for light burning area around Mt. Hough, Claremont, Meadow Valley Country
         - Found a suitable area near Snake Lake
         - Commit data/scientific fraud by adding more fuel:    
-            > “Ed and I did 250 acres alone and, except for the long hitch of work, didn’t have any trouble. The only dishonest thing we did was to pile some pine limbwood in big fire scars of a few large pines, with the gratifying result that they burned down and became damage statistics”
+            > "Ed and I did 250 acres alone and, except for the long hitch of work, didn't have any trouble. The only dishonest thing we did was to pile some pine limbwood in big fire scars of a few large pines, with the gratifying result that they burned down and became damage statistics"
         - Dave Rogers already had made up his mind regarding light burnings
-            > “Went over nonchalantly to reburn Snake Lake (in 1920). It would have been O.K. except that Plumas Supervisor Dave Rogers came out the night of the burn, grabbed a brush burning torch and ended up stringing fire outside the line on two opposite ends. Then he left.”
-            > “You can understand our deep affection for Dave and the Plumas”
+            > "Went over nonchalantly to reburn Snake Lake (in 1920). It would have been O.K. except that Plumas Supervisor Dave Rogers came out the night of the burn, grabbed a brush burning torch and ended up stringing fire outside the line on two opposite ends. Then he left."
+            > "You can understand our deep affection for Dave and the Plumas"
         - **The use of fire in forest management was not given an objective evaluation anywhere in the Western US including Indigenous burning**
 - **1940s:** Harold Biswell was a professor in the Berkeley Forestry Department from 1947 - 1972
     - Biswell conducted prescribed fire research in the forests of Georgia from 1942 to 1947 when he was a researcher for the US Forest Service Southern Research Station
@@ -948,23 +948,23 @@ bookCollapseSection: false
     - His 1958 paper showed it was possible to use fire in CA forest management and warned about future problems if fuels were not reduced
         - His conclusions were very controversial at the time
         - His PhD students recall
-            > "There was little opposition to him burning in grasslands and shrublands, but when he began burning experiments in ponderosa pine forests, active and open criticism of him and his work exploded. He was referred to as “Harry the Torch,” “Burn-Em-Up Biswell,” and other derisive names, and not always behind his back"
+            > "There was little opposition to him burning in grasslands and shrublands, but when he began burning experiments in ponderosa pine forests, active and open criticism of him and his work exploded. He was referred to as "Harry the Torch," "Burn-Em-Up Biswell," and other derisive names, and not always behind his back"
         - No forestry faculty would work with Biswell. 
             - UCB Forestry faculty voted to forbid him or his graduate students to work at Blodgett Forest
             - (Scott's Opinion:) At the very least, some UC Berkeley forestry faculty should have worked cooperatively with Biswell to further explore this topic
-    - In 1973, he was given the Berkeley Citation, awarded for his contribution to the University of California that “go beyond the call of duty and whose achievements exceed the standards of excellence in their fields.”
+    - In 1973, he was given the Berkeley Citation, awarded for his contribution to the University of California that "go beyond the call of duty and whose achievements exceed the standards of excellence in their fields."
         - He was the first UCB forestry professor to get this award
 
 # Early Foresters and Fire (10/6)
 
 - Some debate, but suppression wins in 1910s
-    - However, one exception: Southern US continues to use fire  
+    - However, one exception: Southern US continues to use fire
 - Pre WWII:
     - 1933: Civilian Conservation Corps labor (CCC) used to fight fires
         - Hired many people due to great depression
-    - 1935: 10 AM (National) Policy: All fires should be out by 10AM the day after they're detected before conditions that would make fire more severe arise 
+    - 1935: 10 AM (National) Policy: All fires should be out by 10AM the day after they're detected before conditions that would make fire more severe arise
 - During WWII
-    - Firefighting resources (people, machines) tied up with the war 
+    - Firefighting resources (people, machines) tied up with the war
         - Consensus objectors put into fire fighting crews
         - Many were ridiculed but they fought the fire with little technology and overhead
     - Japanese sub fires shell near Santa Barbara
@@ -975,19 +975,19 @@ bookCollapseSection: false
     - USFS organizes Cooperative Forest Fire Protection Campaign
         - Fire protection was framed as National Security through public campaigns
         - Huge push to save resource during the war
-            - “Careless matches aid the Axis”
-            - “Our carelessness, their secret weapon”
+            - "Careless matches aid the Axis"
+            - "Our carelessness, their secret weapon"
         - Bambi brought (in 1944)
             - Movie showed terrible fires started by hunters
             - Only on loan from Disney for 1 year
         - Smokey Bear named in 1945
-            - Named after asst. Chief of NYC Fire Dept. 1919-1930 --  “Smokey” Joe Martin
+            - Named after asst. Chief of NYC Fire Dept. 1919-1930 --  "Smokey" Joe Martin
 - Post WWII
     - Smokey Bear (cont.)
         - "Only YOU can prevent forest fires!" created in 1947
         - Canada steals him in 1956.
         - Focus broadened to appeal to children
-    - 1950: The “Real” Deal
+    - 1950: The "Real" Deal
         - Las Tablas fire breaks out and a bear cub found almost dead
         - Cub is treated and heals, eventually ends up in D.C. Zoo
     - Still endearing
@@ -995,7 +995,7 @@ bookCollapseSection: false
         - Stamps made (1984)
         - Own zip code (20252) -- you can write him a letter and get a reply
         - Office, Web page, Twitter, Facebook, Instagram, YouTube, etc.
-    - Has Smokey’s message been TOO successful?
+    - Has Smokey's message been TOO successful?
         - Original message was very black and white
 
 # Colonialism (10/8)
@@ -1014,14 +1014,14 @@ bookCollapseSection: false
     - Loss of Traditional Ecological Knowledge
     - Significant Environmental Impacts to Coastal CA
     - Many Coastal Tribes Displaced
-    - Transformations in Fire Regimes 
+    - Transformations in Fire Regimes
 
 ### Settler Colonies
-- Immigration of European/foreign settlers 
+- Immigration of European/foreign settlers
     - British employed Settler Colonialism in Eastern USA
-    - Establish Permanent Residences 
+    - Establish Permanent Residences
 - Predicated on Removal of Indigenous People
-- Employed “Logic of Elimination” -- Moral Ground for Taking Land Away
+- Employed "Logic of Elimination" -- Moral Ground for Taking Land Away
 - After American Revolution -- USA Adopts Settler Colony Practices; Manifest Destiny; Millions of people moved westward
 - Key Dates for California:
     - 1840s: Movement of settlers along California, Oregon, Mormon Trails
@@ -1069,11 +1069,11 @@ bookCollapseSection: false
     - None of the 18 Treaties Ratified by US Senate even though some Natives already moved
         - Politicians didn't want to give up good agricultural land
     - Subsequent attempts to create Reservation Land -- Not very Successful; 
-- 1850s-1870s: Military Reservations 
+- 1850s-1870s: Military Reservations
 - 1870s-1900: 
     - Federal Funding for Small Land Grants
     - Influence of Helen Hunt Jackson, Her Book, Ramona, very important in Humanitarian movement
-        - Fictional book told a love story of an Indian chief which became a best seller and brought attention to the situation 
+        - Fictional book told a love story of an Indian chief which became a best seller and brought attention to the situation
 - 1906-1930: Another period of federal funding for small Land Grants for California Indians **but** it was all tiny sections of land (called _Rancheria_ lands)
 
 ### 3. Federal Recognition
@@ -1088,14 +1088,14 @@ bookCollapseSection: false
     - 1870s-1900s:
         - Award Federal Recognition to tribes with strong continuities with Past; Those that maintained Indian cultural practices over time
         - This was influenced by early anthropologists (i.e. UC Berkeley)
-            - Program of “Ethnographic Salvage”
+            - Program of "Ethnographic Salvage"
             - Tended not to work with Tribes who had undergone major transformations, acculturation
         - Discuss Spatial Distribution of Fed Recognized Tribes; Many Unacknowledged Tribes in Former Mission Lands
         - E.x. Ohlone Indians in post-mission times did not disappear
             - 1840s: In East Bay
             - 1860s: Lived at Alisal Rancheria well into 1900s
-                - Active Indian community -- inter-marry with other tribes, Hispanics 
-                - Some Anthropologists claim they were “culturally extinct” role that early Anthropology Played in Tribes obtaining Federal Recognition, and those that did not (Lightfoot 2005 Reading)
+                - Active Indian community -- inter-marry with other tribes, Hispanics
+                - Some Anthropologists claim they were "culturally extinct" role that early Anthropology Played in Tribes obtaining Federal Recognition, and those that did not (Lightfoot 2005 Reading)
 
 
 ### 4. Environmental Degradation (Anderson 2005 Reading)
@@ -1115,13 +1115,13 @@ bookCollapseSection: false
 
 ## Four Outcomes Of Settler Colonialism On Indigenous Landscape Management Practices In California
 
-### 1. Fire Prohibition Policies 
+### 1. Fire Prohibition Policies
 
 - Initially Directed Against Native People;
 - Racism -- Early Fire Bans Did Not Apply to All Settler Colonists
     - Settlers, Ranchers, and timber companies still burned land
 - Why Natives Signaled out for Ban?
-    - Fire Suppression –- Component of Settler Colonialism
+    - Fire Suppression - - Component of Settler Colonialism
     - Strategy to Facilitate the Removal of Natives from their Lands? 
 
 ### 2. Minimal Reservation Land Implications for Indigenous Stewardship Practices; 
@@ -1133,7 +1133,7 @@ bookCollapseSection: false
 
 ### 3. Native People Lost Access To Resources From Their Tribal Lands
 
-- Major problem for tribes—they were not granted trust land (reservations) AND they had minimal access to resources on Public Lands (California State Parks, BLM, National Park Service, US Forest Service) Until Recently – Tribes not allowed to undertake Stewardship practices on Public Lands
+- Major problem for tribes—they were not granted trust land (reservations) AND they had minimal access to resources on Public Lands (California State Parks, BLM, National Park Service, US Forest Service) Until Recently - Tribes not allowed to undertake Stewardship practices on Public Lands
     - no cultural burning
     - no harvesting of foods, medicines, raw materials
 
@@ -1145,7 +1145,7 @@ bookCollapseSection: false
 - John Muir: 
     - Argued for creations of pristine, natural preserves untouched by people
     - Did not Advocate for Native Stewardship Practices, such as Cultural Burning
-    - Conservation Model –- Put Fence Around Property and keep people out
+    - Conservation Model - - Put Fence Around Property and keep people out
     - Fire Suppression Policies of Settler colonialism
         - One component of broader package of developments that have kept tribes from revitalizing cultural burning until recently
 - Policies of extermination, genocide; poverty, diseases, food shortages; limited sized reservations; many California tribes unacknowledged; massive environmental destruction of tribal lands
@@ -1156,20 +1156,20 @@ bookCollapseSection: false
 
 - Nathanial Kenny wrote an article on the US Fire Service
     - Published in 1956 in National Geographic
-    - Argued that at the end of the day, science would be the most crucial role in controlling fires 
-    > "I don’t believe that equipment and development alone will show us how to keep having the relatively few big fires… Researchers must let their imaginations soar for answers that today would seem fantastic"
+    - Argued that at the end of the day, science would be the most crucial role in controlling fires
+    > "I don't believe that equipment and development alone will show us how to keep having the relatively few big fires… Researchers must let their imaginations soar for answers that today would seem fantastic"
 - Fire Suppression: 
     - Begins around 1905
     - Approximately 80,000 fires/year today
     - 98-99% of all wildland fires out at less than 5 acres in size
-    - 95% of area burned today is from 1-2% of the fires that escape initial attack 
+    - 95% of area burned today is from 1-2% of the fires that escape initial attack
         - Often occurs in terrible conditions
-    - 4.5 million acres once burned in CA 
+    - 4.5 million acres once burned in CA
         - **Over half Tribal burning** -- 10-35% of this area burns today in most years but 2020 will burn this amount for 1st time (Stephens et al. 2007)
         - Size is only one aspect -- what is the fire mortality? what is the distribution? etc. 
     - Not just area burned, **burn patterns inside**
 - Historical data yields insight into controls on forest structure in pine-mixed conifer forests
-    - In 1911 photograph and datasets we can see much more sunny forests 
+    - In 1911 photograph and datasets we can see much more sunny forests
     - This is due to more frequent, natural/cultural burnings vs today's fire suppression
     - Kern National Forest Structure and Composition (Stephens et al. 2015)
 - Southern California and Baja Forests (Stephens et al 2003)
@@ -1205,7 +1205,7 @@ bookCollapseSection: false
                 - SoCal drought killed millions of trees w/o fire
         - Only 20% of trees killed
             - Jeffrey pine more dominate after fire, trees and seedlings (less white fir, incense-cedar)
-        - Fire was very patchy 
+        - Fire was very patchy
             - Directly linked to heterogeneity of forest structure and fuels pre-fire
             - Mortality very low even after 4 year drought and wildfire (Stephens et al. 2008)
         - Incredible forest resilience!!
@@ -1228,25 +1228,25 @@ bookCollapseSection: false
 - Rim Wildfire
     - Largest fire in Sierra Nevada
         - Fifth largest fire in history of CA
-    - Ignited August 17, 2013 
+    - Ignited August 17, 2013
     - Total area burned: 270,000 acres (102,000 ha )
     - Fire effects
         - Very large high severity patches
     - Cost of suppression : $127.2 million
-- Management Response 
+- Management Response
     - Forest fuel reduction treatments implemented to reduce fire hazards and fire effects
         - Reduction of surface and ladder fuels critical (Agee and Skinner 2005)
     - Example of fuel reduction treatments
         - Research has determined that treatments are effective in reducing potential fire behavior and effects (Fulé et al. 2012)
 - Permanent Backlog: Sierra Nevada
     - 2.9 million acres (60% of FS acreage) will always remain fuel loaded
-    - 2/3’s of this acreage is pine-dominated and mixed-conifer forest types
+    - 2/3's of this acreage is pine-dominated and mixed-conifer forest types
     - This is a disaster! Only gets worse with climate change
 - Summary
     - Tree density increased 2-3 times in mixed conifer forests since 1911
     - Forest change has decreased resiliency
     - Climate change will make this situation worse
-    - Need increased fuel reduction treatments and wildfire for resource benefit frequent fire forests – critical
+    - Need increased fuel reduction treatments and wildfire for resource benefit frequent fire forests - critical
     - California legislation $200 Million/yr. through 2028
     - Fuel treatments on 1 million acres/yr. by 2025
     - US Forest Service management plans being revised
@@ -1259,7 +1259,7 @@ bookCollapseSection: false
 
 ## Leopold et al. 1963
 
-- Asked to carry out report by US govt 
+- Asked to carry out report by US govt
 - Carried out in Yellowstone
 - Took view of the whole ecosystem, not just a single issue
 - Animal populations '_protected_' from hunting and habitats '_protected_' from wildfire
@@ -1275,11 +1275,11 @@ bookCollapseSection: false
         - Today dog-hair thicket of young trees and mature brush—a direct function of protection from **natural fires**
     - Is it possible that the primitive open forest could be restored? And if so, how? (_Big question even for today_)
 - Policies of Park Management
-    - Research, not intuition, should form the basis for all management 
+    - Research, not intuition, should form the basis for all management
     - Agency best to study park management is the National Park Service
     - Management without knowledge would be a dangerous policy indeed
 - Methods of Habitat Management
-    - Of the methods of manipulating vegetation, controlled use of fire is the most "natural" and the cheapest and _easiest_ to apply (easy?? Maybe in the 1960’s)            
+    - Of the methods of manipulating vegetation, controlled use of fire is the most "natural" and the cheapest and _easiest_ to apply (easy?? Maybe in the 1960's)            
     - Forest and chaparral areas protected from fire may require careful advance treatment (Harold Biswell influence?)
     - Trees and mature brush may have to be cut, piled, and burned before ground fire (Harold Biswell did this with his early burning)
     - Once fuel is reduced, periodic burning can be conducted safely and at low expense (Biswell)
@@ -1288,11 +1288,11 @@ bookCollapseSection: false
     - "It will not be done by passive protection alone" (Big statement at the time, Still important today)
 - Very powerful ideas included, changes NPS course of action (no Indigenous people though)
 
-## Sneeuwjagt et al. 2013 
+## Sneeuwjagt et al. 2013
 
 - Rick was the head of bushfire and prescribed fire in Western Australia which also has a Mediterranean climate
 - Opportunities for improved fire use and management in California: lessons from Western Australia (WA)
-- Treatment size - Prescribed burn units **much larger** than those implemented in the US – make ours bigger
+- Treatment size - Prescribed burn units **much larger** than those implemented in the US - make ours bigger
     - Burns averaging in excess of 5000 ac, with some as large as 25,000 acres in Western Australia
 - Department of Environment and Conservation (DEC) fire managers take advantage of relatively few burn windows to burn large areas
     - Managers use weekends and nights, if conditions are favorable
@@ -1332,19 +1332,19 @@ bookCollapseSection: false
     - Was ostracized at the time, but is now recognized
 - Early EU explorer period was different from the Spanish missionary period in that the EUs didn't settle down and instead explored/traded while the Spanish established settlements
 - Gifford Pinchot was very against any kind of burnings
-- 1910 fire occurred in Idaho and led to many advocating for fire suppression 
+- 1910 fire occurred in Idaho and led to many advocating for fire suppression
 - Population reversal of CA Indians occurred due to the finishing of the rail road (letting more people in to CA, i.e during the Gold Rush) 
 - Essay Question:
     - Settler colonialism differed from earlier Missionary trips in that...
         - Settler missions went inwards + cared primarily about making money
-        - During Missionary trips, Natives were a large part of the workforce and the main purpose to convert them to Christianity   
+        - During Missionary trips, Natives were a large part of the workforce and the main purpose to convert them to Christianity
     - Two sides of light burning controversy:
         1. Natives encouraged to burn so that there wasn't fuel build up, etc.
         2. Foresters who opposed ranchers employing any form of burning, called it _Paiute Forestry_
     - Settler colonialism impacts
         - Intersection of many invasive plants/animals that radically altered ecosystem (e.x. cattle)
         - Draining of lakes/dams to flood areas (altering ecosystem) and other forms of land modification for the purpose of agriculture
-        - Hydrolic mining leading to soil erosion 
+        - Hydrolic mining leading to soil erosion
         - Logging + clear cutting of forests
     - Anderson 2005, settler period
         - Forceful removal -- through raids, violence, giving false land titles, destroying food/water source
@@ -1388,7 +1388,7 @@ bookCollapseSection: false
             - Large terminal bud
             - Chapman studied -- Yale
     - USFS tried to eliminate but not successful
-- Kobziar et al. (2015) conducted survey of eastern US burners from in 2011 - 2012 
+- Kobziar et al. (2015) conducted survey of eastern US burners from in 2011 - 2012
     - Most respondents (75%) were employed by State or Federal forest or wildlife agencies, with the remainder landowners or contractors
     - Fuels reduction primary goal of prescribed burning overall
     - Program continues to be successful
@@ -1397,7 +1397,7 @@ bookCollapseSection: false
         - Big shrub (sand pine) 25-100 year, high intensity, crown, spring or summer, large areas
         - Bald Cypress / tupelo swamp, > 200 years, small area, mixed severity, only during drought
     - Georgia said it surpassed Florida in terms of acres this year
-    - Prescribed fire in California – Low – maybe 50,000 acres
+    - Prescribed fire in California - Low - maybe 50,000 acres
 - Brown Administration Bill passed to provide $200 million/yr. for fuels management projects - Apply for grants
 - Continues under Newson Administration and funded through 2028
     - Goal to increase prescribed fire in CA to 1,000,000 acres/yr by 2025: 500k acres State and Private and 500k acres Federal
@@ -1405,12 +1405,12 @@ bookCollapseSection: false
 - Cultural burning combined with Rx fire?
 - Task forces created in State to increase pace and scale of restoration and prescribed fire
 - Public lands managers - limited budget and staffing are impediments, also planning issues
-- We don’t have the experience, crews, or political or institutional support in place today for a large program
-- We need to be patient – will take time
+- We don't have the experience, crews, or political or institutional support in place today for a large program
+- We need to be patient - will take time
 
 # Managed Wildfire Effects on Water and Forest Health
 
-- Fire and Hydrology in Western US Watersheds – Project Starts 2002
+- Fire and Hydrology in Western US Watersheds - Project Starts 2002
     - Managed Lighting Fire, Increase Forest Resilience
 - Illilouette Creek Basin, Yosemite National Park
     - Fires in occur naturally through lightening here every 9 years
@@ -1420,17 +1420,17 @@ bookCollapseSection: false
 - Historically open, patchy stands with large trees not everywhere
     - Evidence of small proportions of stand-replacing fire (5-15%)
 - Show and Kotok (1924):
-    - “…no large fires occur without a certain amount of heat-killing”
-    - “This loss, it should be noted, represents the complete or nearly complete wiping out of small patches of the stand rather than a uniformly distributed loss over the entire area”
+    - "…no large fires occur without a certain amount of heat-killing"
+    - "This loss, it should be noted, represents the complete or nearly complete wiping out of small patches of the stand rather than a uniformly distributed loss over the entire area"
 - Vegetation Change from Photos:
     - Fires Reduced Forest Area by 22%
     - Wet meadows increased by 200%
     - Dry meadows increased by 200%
     - Shrublands increased by 30%
-- In Yosemite amount of stream water leaving watershed has increased or remained stable since 1974 – modeling study increased by 60 mm
+- In Yosemite amount of stream water leaving watershed has increased or remained stable since 1974 - modeling study increased by 60 mm
 - Three other control watersheds significantly decreased
     - Flood risk unchanged
-    - Soil water increased 
+    - Soil water increased
     - Lower tree mortality in drought
 - Since fire suppression ended…
     - Runoff ratio increased or stable
@@ -1442,7 +1442,7 @@ bookCollapseSection: false
 - California is water scarce and is experiencing an increasing number of severe wildfires
     - Despite warming climate, managed wildfires in Illilouette promote a healthy watershed
     - Increased streamflow from wildfires will persist in a warming climate
-    - Water agencies supportive of bond funding to manage watersheds but not their base budgets – should change
+    - Water agencies supportive of bond funding to manage watersheds but not their base budgets - should change
 - 2020 North Complex Fire burned the largest watershed that feeds the largest lake in the State Water Project (Oroville Lake)
 - Next 1-2 decades absolutely critical in California frequent fire forests
 - Optimistic but we must move decisively
@@ -1452,12 +1452,12 @@ bookCollapseSection: false
 ## Background On Tribal Revitalization
 
 - Timeline
-    - 1960s – Watershed time in California
-    - 1963 – Leopold Report “Wildlife Management in National Parks”
+    - 1960s - Watershed time in California
+    - 1963 - Leopold Report "Wildlife Management in National Parks"
         - bring fire back to National Park Service
         - Managed Lightning Fires
         - Prescribed Burning
-    - 1960s – Also Time of Native Activism in CA 
+    - 1960s - Also Time of Native Activism in CA
 - Historical Perspective:
     - By the 1960s tribes facing some real structural challenges:
     1. Recovering from Genocide
@@ -1465,62 +1465,62 @@ bookCollapseSection: false
     3. Many California tribes not federally recognized
     4. Tribes denied access to federal/state lands to harvest plants and animals
     5. Fire Prohibition Policies
-        - Fire Exclusion – Spanish, Mexican and Russian Colonists
-        - Fire Suppression – American period
-            - 1890s – Sequoia and Yosemite
-            - 1900s – Elsewhere in California
+        - Fire Exclusion - Spanish, Mexican and Russian Colonists
+        - Fire Suppression - American period
+            - 1890s - Sequoia and Yosemite
+            - 1900s - Elsewhere in California
 - Upshot for Tribes:
     - A. Not allowed to implement Indigenous landscape Stewardship practices
     - B. Poor Health of CA Environments
         - Fire Suppression Policies:
             - Major Impacts to indigenous plants and animals
             - fuel loads increase
-            - less ecological diversity 
-            - loss of patchy mosaic 
-            - Some Native species disappeared 
+            - less ecological diversity
+            - loss of patchy mosaic
+            - Some Native species disappeared
             - fire adverse species take over
-            - hydrology affected    
-            - some ecosystems – become endangered  (e.g., coastal prairies)
+            - hydrology affected
+            - some ecosystems - become endangered  (e.g., coastal prairies)
 
 ## Native Activism
-- 1960s – Native Activism, part of broader Civil Rights Movement in USA
+- 1960s - Native Activism, part of broader Civil Rights Movement in USA
     - Protest series of issues: discrimination, poverty, unemployment, religious freedom, fair housing, broken treaties, lack of resources
     - Natives not given right to vote until 1924 Snyder Act
     - Some states did not allow Indians to vote until 1950s, 1960s
-- 1968 – Civil Rights Act signed by President Johnson
+- 1968 - Civil Rights Act signed by President Johnson
     - Guaranteed rights to not only African-American, but American Indians
-- 1968 – when American Indian Movement Founded (AIM)
+- 1968 - when American Indian Movement Founded (AIM)
     - Advocate for rights on Native people
-- 1968-1971 – Occupation of Alcatraz Island by tribes
-- Post-1968 – series of protests, demonstrations, marches for American Indian causes
+- 1968-1971 - Occupation of Alcatraz Island by tribes
+- Post-1968 - series of protests, demonstrations, marches for American Indian causes
 
 ## Tribal Revitalization In California
-- Last few decades – major renaissance with Tribes
+- Last few decades - major renaissance with Tribes
 - Keep in mind that Tribes still facing many issues
     - Poverty
-    - Unemployment – not much of a land base, FAR from urban jobs
-    - Addiction issues – alcohol, drugs
+    - Unemployment - not much of a land base, FAR from urban jobs
+    - Addiction issues - alcohol, drugs
     - Health issues, such as diabetes, obesity
     - Gang issues with younger tribal members
-    - Still explicit discrimination 
+    - Still explicit discrimination
 - But despite these lingering problems from colonization
     - Major transformations taking place in many tribal groups
     - Restoration of local habitats -- Crucial part of this process
     - But need to look as this within broader context
-    - Tribal revitalization – involves various facets of Native Life TODAY
-1. Native Languages 
+    - Tribal revitalization - involves various facets of Native Life TODAY
+1. Native Languages
     - Estimated that 80-100 languages spoken in California -- but many languages endangered
 - Legacy of Colonialism
     - Indian Boarding Schools (late 1800s-mid 1900s)
     - Assimilation Policy of US Government Carlisle Boarding School, Pennsylvania Sherman Institute, Riverside, CA
-    - “Civilize” Indian Children away from negative influences of parents, tribes
+    - "Civilize" Indian Children away from negative influences of parents, tribes
         - Children forcibly removed from home and sent to Boarding Schools
         - Taught Western ways
         - Speaking Native Languages Forbidden! 
-    - By mid-1900s – Many Tribes Facing Crisis with Their Languages
+    - By mid-1900s - Many Tribes Facing Crisis with Their Languages
         - Only half of Native languages in CA still spoken
-    - Leanne Hinton – UC Berkeley
-        - 90% of Native Languages in CA may disappear 
+    - Leanne Hinton - UC Berkeley
+        - 90% of Native Languages in CA may disappear
     - Major Push Today: language training for California tribes
         - The Advocates for Indigenous California Language Survival
         - "Breath Of Life" workshop Program
@@ -1535,25 +1535,25 @@ bookCollapseSection: false
    - Close Relationship of California Indian religions with Environment
 3. Resurgence Of Native Craftspeople
    - Resurgence of Native Crafts
-       - Ron Goode – soapstone artifacts
-       - woodcarving – Northwest Coast
+       - Ron Goode - soapstone artifacts
+       - woodcarving - Northwest Coast
        - Acorn spoons, boxes, 
    - Basket Weaving
      - Premier basket makers in world
      - Baskets served many purposes in Indian households
      - Challenges for Indian Basket Making
-        - by 1980s – only a few active weavers
+        - by 1980s - only a few active weavers
         - Led to Establishment of California Indian Basket Weaver Association
         - host gatherings, workshops
         - more than 650 weavers today!
         - Major Advocate for Indigenous Landscape Stewardship Practices!
 4. Great Interest In Native Foodways
     - Traditional menus, traditional foods
-        - acorn mush, salmon -- but also seaweed, tar weed, hazel nuts 
+        - acorn mush, salmon -- but also seaweed, tar weed, hazel nuts
     - Pow Wows
-    - Tribal food security, food sovereignty 
-    - Café Ohlone – Bancroft Way – bring to Cal campus
-5. All Of These Developments – tied into Native Landscapes and Environments
+    - Tribal food security, food sovereignty
+    - Café Ohlone - Bancroft Way - bring to Cal campus
+5. All Of These Developments - tied into Native Landscapes and Environments
     - Most tribes interested in ecological restoration of their lands
     - Implementing some form of indigenous landscape management practices
         - Bring Fire Back To Landscape -- Tending The Wild and gaining access to various resources on **Public Lands**
@@ -1564,7 +1564,7 @@ bookCollapseSection: false
 Five Case Studies Of Indigenous Stewardship Practices In California
 
 ### 1. Fowler et al
-> Fowler, Catherine S., P. Esteves, G. Goad, B. Helmer and K. Watterson 2003    Caring for the Trees: Restoring Timbisha Shoshone Land Management Practices in Death Valley National Park. Ecological Restoration 21(4):302-306.
+> Fowler, Catherine S., P. Esteves, G. Goad, B. Helmer and K. Watterson 2003 Caring for the Trees: Restoring Timbisha Shoshone Land Management Practices in Death Valley National Park. Ecological Restoration 21(4):302-306.
 
 - Federally Recognized Tribe working with National Park Service
     - Death Valley National Park
@@ -1578,29 +1578,29 @@ Five Case Studies Of Indigenous Stewardship Practices In California
     - Honey Mesquite, Single Leaf Pinyon
     - Both used as food, raw materials, etc. 
 - Timbisha Shoshone
-    - Begin to tend the Mesquite and pine groves in Death Valley 
+    - Begin to tend the Mesquite and pine groves in Death Valley
     - Had not been tended in years -- in terrible shape!
 - How Undertake Ecological Revitalization
     - While Tribe used Fire to Tend the Land in the Past
-    - Current work – using Fire Surrogate Methods -- hope to use fire in future
-- Define Study Plots – Leave half of plot as control
-- Other Half of Plot – Tended by Tribe
+    - Current work - using Fire Surrogate Methods -- hope to use fire in future
+- Define Study Plots - Leave half of plot as control
+- Other Half of Plot - Tended by Tribe
     1. Trim lower branches of trees
     2. Clear ground of underbrush
     3. Open trees to sunlight
-- Challenges 
+- Challenges
     - Insect infestations
     - Changes in Hydrology
 
 ### 2. Codero-Lamb et al
 
-> Codero-Lamb, Julie, Jared Dahl Aldern and Teresa Romero 2018    Bring Back the Good Fires. News from Native California 31 (Spring):14-17.
+> Codero-Lamb, Julie, Jared Dahl Aldern and Teresa Romero 2018 Bring Back the Good Fires. News from Native California 31 (Spring):14-17.
 
 - Non-Fed Recognized Tribe
     - Work on private property
     - Ecological restoration
 - Southern California
-    - Chumash – Santa Barbara Area -- only one of tribes federally recognized 
+    - Chumash - Santa Barbara Area -- only one of tribes federally recognized
     - Santa Ynez Band of Chumash Mission Indians
     - article about non-federally recognized CHUMASH
         - Aftermath of Thomas Fire in Dec 2017
@@ -1609,13 +1609,13 @@ Five Case Studies Of Indigenous Stewardship Practices In California
     - recognize issues of working in Chapparal Environments
 - Paper outline difficulties of doing this when not federally recognized, no tribal land
     - No current agreements with government agencies to burn
-- instead – burn on small patches of private land
+- instead - burn on small patches of private land
     - tiny patches tended by Chumash
 - Burn Protocols
     - based on elders, songs, and Scientific Studies
 - Discuss Frequency Or Timing Of Burns
-    - Springs – Annually
-    - grasses and shrubs for baskets – every 3 years
+    - Springs - Annually
+    - grasses and shrubs for baskets - every 3 years
     - 10-15 years in chaparral
 - Recognize that they must adjust seasonal timing of burns with CLIMATE CHANGE
 - Strong Advocates for Cultural Burning
@@ -1625,3 +1625,382 @@ Five Case Studies Of Indigenous Stewardship Practices In California
     2. Get Tribes Involved In All Aspects of Projects
     3. Must Recognize Tek is Valid
     4. Strategic Placement of Tended Lands -- can serve as fuel breaks
+
+
+### 3. Karuk and Yurok tribes of Northwest California
+
+> Lake, Frank K., and Amy C. Christianson 2019 Indigenous Fire Stewardship. In Encyclopedia of Wildfires and Wildland-Urban Interface (WUI) Fires, edited by Samuel L. Manzello. Springer, Cham. https://doi.org/10.1007/978-3-319-51727-8_225-1.
+> Lake, Frank K., Vita Wright, Penelope Morgan, Mary McFadzen, Dave McWethy and Camille Stevens-Rumann 2017 Returning Fire to the Land: Celebrating Traditional Knowledge and Fire. Journal of Forestry 115(5):343-353.
+> Terence, Malcolm 2016 Unleashing the TREX: Why Officials Think Controlled Burns Can Save California from Wildfire. North Coast Journal (http://www.northcoastjournal.com/humboldt/unleashing-the-trex/content?oid=4132514.
+
+- Federally Recognized Tribe -- work with Federal Agency (USFS)
+- Frank Lake -- key player in bringing Cultural Burning to California
+    - Karuk tribal member and works for USFS
+    - well positioned for making a difference
+    - publishing widely on cultural burning
+    - strong proponent for government agencies, conservation groups
+        - to develop collaborative partnerships with Tribes
+- Makes this point in Lake and Christianson 2019 Reading
+    - How cultural burning can reduce or mediate impacts of wildfires
+    - Important information about burning and stewardship passed down through generations
+    - Significance of Traditional Ecological Knowledge (TEK)
+        - TEK looks at what works, what doesn't, and how things change over time
+        - Important for us to use/employ today in how we can learn to live with fire in California
+- Frank helping to bring cultural burning back to Northwest California
+    - burns taking place on....
+        1. Private land (fewer restrictions)
+        2. Tribal lands -- Yurok have some land
+        3. USFS lands -- control most of traditional tribal lands in the area
+
+#### Five Points to emphasize in burning in Yurok and Karuk lands
+
+1. Karuk and Yurok Tribes
+    - Different process of colonization than Central/Southern California Later in time - post Gold Rush (1848) which is unique
+        - Compared to SoCal, where practices were banned early on, Karuk and Yurok have more recent information
+        - E.x. Bill Crook learned from his grandma who practiced burns pre-gold rush
+    - Considerable Indigenous Knowledge about Cultural
+    - Longer continuation of burning
+2. USFS
+    - Until fairly recently, have not been receptive to Cultural Burning Until fairly recently
+    - Now have Native Californian employees high up in management
+        - Can't be about certain people, should be about policy
+        - Otherwise, if these key people retire then we're screwed!
+    - Signed agreements -- MOUs (Memorandum of Understanding) -- between USFS and Karuk Tribe
+    - Government To Government Relations
+        - Frank Lake et al. 2017 Reading
+        - Importance of developing person-to-person relationships and trust workshops, meetings, importance of communication with tribal leaders
+3. Integration of TEK and WS (Western Science)
+    - Two Different Ways of Knowing
+        1. WS: Prescribed Burning
+            - More utilitarian approach -- can be tailored to smaller area to achieve specific outcome
+            - Emphasize Fuel Reduction
+            - Residential Areas (W/U Interface)
+        2. TEK: Cultural Burning requires a more nuanced, patch-like approach
+            - Need to consider specific resources in a generally large area
+            - E.x. burn early for short basket shoots and later for longer shoots
+    - Frank Lake argues that ... 
+        - Advocate for integrating TEK with scientific disciplines
+        - Use multiple lines of evidence to understand past fire regimes and cultural burning
+4. Federal Agencies - need to respect TEK
+    - Work collaboratively with tribes -- all phases of projects
+5. Need to Provide Sufficient Funding! 
+    - To maintain partnerships, Cultural Burning Programs
+    - Need to follow through and show commitment to tribes
+
+
+### 4. North Fork Mono Tribe
+
+> Ortiz, Beverly R. 2018 Ron Goode:  A Life Lived in Service to Community and Environment. News from Native California 31(3 (Spring):18-26.
+> Goode, Ron W.     2015 Tribal-Traditional Ecological Knowledge. News from Native California Spring 2015:23-28.
+> Long, Jonathan W., Frank K. Lake, Ron W. Goode, and Benrita Mae Burnette 2020 How Traditional Tribal Perspectives Influence Ecosystem Restoration.     Ecopsychology 12(2):71-82
+
+- Case Study: Non-federally recognized tribe work on private lands + also develop agreement with USFS
+- North Fork Mono: Major advocates of Cultural Burning
+1. Ron's knowledge about Cultural Burning comes from his (grand)parents who continued cultural burnings during fire-suppression years
+    - Also works with scientists to teach/learn from them
+    - Involves other tribes with work to get range of perspectives
+2. Cultural Burning -- tied To Spiritual Practices
+    - Tribe's Spiritual Philosophy involves prayers and songs
+    - Mother Earth And Creator
+3. Began burning on private property his family owns 2003 - began working with USFS in partnership
+    - Meadow restoration project in tribal territory
+        - Restore meadow and spring
+        - Enhance deer grass (for baskets)
+    - Long et al 2017 Reading discusses....
+        - Importance of cultural resources (i.e. plants which can be used as medicine)
+        - Archaeology
+        - Culturally important plants, etc.
+        - Differing opinions with USFS
+            - E.x. USFS wants to remove all invasive plants whereas Ron argued to leave a few that the tribe would look over
+- 2017-2021 Has been practicing Cultural Burning on private ranch
+    - Near Mariposa (Yosemite National Park)
+        - Location is associated with major archeological sites
+        - Burn for targeted results, as listed below
+- Specific Reasons for Burning
+    - Burn for positive result to affect outcomes of targeted cultural resources
+        - More than just fuel reduction (which is a trait of prescribed burning)
+    - Ron views Prescribed Burning as Industrial Scale burning
+    - Cultural Burning: more NUANCED kind of burning -- burn treatment depends on cultural resources being enhanced **Sourberry** -- **important plant for food and basketry material**
+    - Pretreatment before burns
+        - Prune vegetation
+        - Create burn piles
+        - Burn small plots
+    - Post-Burn -- mix burned soils with water to create a nutritious soil bed
+
+--- 
+
+### Summary thus far...
+
+1. Tribes -- need to be treated **respectfully**
+    - Need to establish partnerships in CA
+        - Resource agencies, tribes, and researchers
+2. Tribes should be involved in **decision making** concerning fire management strategies
+    - For their traditional lands
+    - Bring in at the outset of revitalization plans
+3. Many tribes working with researchers
+    - Recognition of importance of TEK and WS
+    - Not mutually exclusive! Brought together
+4. Too many regulations in bringing cultural fire back
+    - Need to ease up on RED TAPE (based scott)
+    - Especially at the Federal level, CA is actually pretty good as far as enabling burning
+5. Dealing with Intrusive species
+    - Areas overgrown from Fire Suppression
+        - E.x Chapparal
+6. Need Funding for **Proactive Work** to Manage Environments
+    - Funding for pro-active management
+    - Funding for environmental revitalization
+    - Funding for eco-system corps
+    - Maintain programs over time
+7. Possibility of Incorporating
+    - Prescribed Burning and Cultural Burning?
+
+### 5. Amah Mutsun Tribal Band
+
+> Hannibal, Mary Ellen 2016 Rekindling the Old Ways: The Amah Mutsun and the Recovery of Traditional Ecological Knowledge Bay Nature April-June 2016:28-35.
+> Lightfoot, Kent G., Rob Q. Cuthrell, Cristie M.  Boone, Roger Byrne, Andrea B. Chavez, Laurel Collins, Alicia Cowart, and R. Evett, Fine V.A. Paul,     Diane Gifford-Gonzalez, Mark G. Hylkema, Valentin Lopez,         Tracy M. Misiewicz and Rachel E. B.  Reid
+>2013 Anthropogenic Burning on the Central California Coast in Late Holocene and Early Historical Times: Findings, Implications, and Future Directions. California Archaeology 5(2):371-390.
+
+
+- Valentin Lopez -- Tribal Chair
+- In Week 5 -- discussed eco-archaeological work that UCB and UCSC
+    - Partnering with Amah Mutsun + California State Parks
+- Outlined findings employing different lines of evidence
+    - Fire scar analysis
+    - Pollen/charcoal (wetland coring)
+    - Phytoliths -- tells us the extent of grasslands
+    - Archaeology
+    - Ethnography, ethnohistory, tribal history
+- Our Findings:
+    - **Strong evidence of Cultural Burning**
+    - Observed fire frequency greater than Expected from Lightning Ignitions Alone
+- Extensive Cultural Burning:
+    - Begins about 1300-1200 BP
+    - Pattern of frequent, low intensity burns for 9-10 Centuries up to Portola Expedition in CE (Common Era) 1769-1770
+    - Create Coastal Prairie Environments,
+- Evidence of grasses, clovers, tarweeds, hazelnuts, etc.
+    - Rob Cuthrell talked about this
+- Fire Tenders created a productive, patchy landscape mosaic
+    - Burning some patches one to 5 years or so cycle maintain coastal grassland!
+    - along with neighboring woodlands, wetlands, and forests with fire-adapted species such as hazelnut, California lilac, and redwood
+
+#### What Are We Doing With These Findings?
+
+- Ultimate Goal Of Research Program
+    - How lessons from the past can be **applicable** to contemporary CA?
+    - How these finding may be incorporated into ecological revitalization programs
+        - That are rooted in the deep history of tribal practices
+    - The Amah Mutsun working with California State Parks
+        - Co-managing some lands -- Quiroste Valley Cultural Preserve MOUs (Frank Lake)
+        - Committed to ecological revitalization
+            - Understand limitations of fire suppression
+            - Bringing back Native plants and animals that once flourished
+- Based on findings from our eco-archaeological findings
+    - Tribe -- interested in bringing back patchy landscape mosaics
+        - That includes extensive patches of coastal prairies which have become rare with fire suppression
+            - Encroached on by conifer forests and shrublands
+- Val Lopez and Tribe
+    - Created Amah Mutsun Land Trust
+    - Purpose is to restore lands in their territory
+    - Undertake research
+        - Support Native Stewardship Corps
+        - Boots on the Ground for work
+
+#### How we are doing this:
+
+1. Select Patches Where we **Open up Landscape**
+2. Involves Removing Problematic Invasives
+    - Poison hemlock, milk and Italian thistle, jubata (Pampas Grass)
+3. Fuel Reduction
+    - Use clippers / chainsaws remove brush and small trees
+        - Can be used to make burn piles, biswell-style   
+    - Few places mechanized removal of overgrowth
+4. Where Possible
+    - Implement Cultural Burns
+    - Begin Process Of Bringing Fire Back
+5. Work To Bring Back Culturally Important Plants in Patches        
+    - **Plants** used for food, medicines and raw materials
+    - Based on Eco-Archaeological Work
+        - We have good information about plants recovered
+    - Two Ways:
+        1. Patches selected for revitalization
+            - Undertake **Integrated Cultural Survey**
+                - Reason: Ama Mutsun have a spiritual obligation from Creator to use fire to take care of ancestral land
+                - Goals: (1) To document, protect, and steward cultural and natural resources, (2) locate areas that may be suitable for landscape revitalization + seed collection
+                - Landscape components: (1) Non-biological = archeological sites, natural springs, viewsheds, salmon spawning habitat (2) biological = vegetation type and ethnobotany
+                - Stratified survey approach: focus on broad areas of flat land near water
+            - Include survey to detect ancestral archaeological sites
+                - High density of ethnobotanical and culturally-important vegetation (seed and nut foods, basketry and crafting taxa, hazelnut patches)
+                - Grasslands being converted to shrublands
+            - Also locate other important cultural resources
+                - Food plants, medicinal plants
+        2. AMLT -- Implemented a Native Nursery and Plant Propagation Program
+            - Nursery used to raise thousands of plants identified in eco-arch work
+                - Tarweeds, California Brome Grass, California Canary Grass, Red maids, yarrow, etc.
+            - After propagated in the greenhouse, they plants are moved outside to field beds where they're then "harvested" for their seeds
+            - Enables us to keep rare plants alive
+        - Raise seedlings in nursery
+            - Some then planted in fields these provide seeds for restoration
+        - We will use these seedlings and seeds in our revitalization efforts
+        - In Undertaking This Work Hope To Create Fuel Breaks
+            - Open Areas -- where we can slow down fire, may not stop major fire but provide where calfire can better manage major fire!
+            - Hope to Construct Patchy Landscape Mosaic across tribal territory
+- And if strategically designed and placed, can address three crucial concerns today:
+    1. Enhance Quantity And Diversity of Indigenous Plants And Animals
+    2. Provide Better Food Security For Tribal Members
+        - Provide Places for tribal harvesting of native foods, medicines, Dance regalia, raw materials for making baskets, other crafts
+    3. Create Extensive Fuel Breaks
+        - In critical areas on public lands
+        - Help minimize risk of major fires
+
+## Eco-System Stewardship Work in CA
+1.    Need to Create New Framework for Caring for our Open Spaces
+    - Active Ecosystem Management
+    - Ecological Revitalization
+    - Need a Separate Stewardship Corps
+        - dedicated to this mission
+    - Need to get Tribes and Local Communities Involved!
+    - Marks-Block et al 2021 Reading
+        - Discusses why we cannot rely on Fire Suppression people to do ecosystem management
+2. Requires Locally Situated Practices
+    - No one size or one way to manage landscape of California; 
+3. Employ Various Treatment Plans
+    - Depends on Objectives and Options
+    - Anderson and Barbour 2003 Reading
+        1. Managed Wildfires
+            - Simulated Wilderness Management Model
+        2. Broadscale Prescribed Burning
+        3. Indigenous Landscape Stewardship Practices    
+            - Cultural Burning
+            - Co-Management of Area
+            - Simulated Indigenous Management Model
+4. Integration of Industrial-Scale Prescribed Burning with Indigenous Stewardship Practices (Cultural Burning)? Is it possible?
+    - Prior to Treatment -- Eco-Archaeological Surveys Integrated Approach outlined by Alec
+        1. Identify Locations of Archaeological Sites;
+        2. Identify patches of important Ecological Resources: Plants important to tribes for food, medicines, materials, etc.
+    - If enough time, may be possible to do refined Eco-Archaeological study
+        - Soil samples, flotation, recover plant/animal remains and associated tools from archaeological contexts 
+        - Obtain physical remains of plants and animals that tribes harvested
+    - Areas with Important Arch/Ecological Resources:
+        - May call for additional or different treatments from rest of prescribed burn area
+    - Similar to Cultural Resources Management work in Urban Context
+    - Some Cases -- Prescribed Burning OK
+        - But require additional follow-up treatment
+    - Other Cases -- need pre-treatment before
+        - Prescribed Burn: treat differently from rest of prescribed burn area
+    - Ron Goode -- pruning, vegetation removal around site or patch reduce fuel loads
+    - Scott -- San Vicente Redwoods
+        - Treat oaks differently than redwoods (different burn treatment)
+    - Marks-Block et al 2019
+        - California Hazelnut
+        - Experimentation
+        1. Must Deal with Intrusive Species
+        2. Need to initiate long-term maintenance commitment to the Landscape
+        3. Costs!
+
+
+<!-- # Gonzalez climate change ESPM C22AC (11-19) -->
+
+
+# WUI and Camp Fire (11-22)
+
+> Kramer et al. 2019
+- WUI – Wildland Urban Interface
+    - Interface WUI - "where houses meet"
+    - Intermix WUI - "where houses mingle"
+- U.S. WUI was large in 2010:
+    - WUI Houses: 43.4 million = 33% of total
+        - Around 10% of US population
+    - WUI Area: 770,000 km2 = 9.5% of U.S.
+- U.S. WUI grew rapidly from 1990 to 2010:
+    - WUI Houses: 30.8 to 43.4 million -- 41% growth
+    - WUI Area: 581,000 to 770,000 km2 -- 33% growth
+    - Destruction in WUI skewed and highly variable
+- Destruction rates ranged between 0% and 100% (averaged 25% for fires with burned buildings)
+    - 70% of all destroyed buildings were in the top 20 most destructive fires
+- Firewise communities are well located, but many are reactive after wildfires
+- CA is a risky place – it contained:
+    - 12 of the 20 most destructive fires in U.S.
+    - 46% of buildings threatened by fire in the U.S.
+    - 60% of buildings destroyed by fire in the U.S.
+    - Fire insurance being cancelled
+- Not all buildings are rebuilt
+    - In the U.S., 23% are rebuilt within 5 years 
+    - In CA, 35% are rebuilt within 5 years
+    - In CA, 72% are rebuilt within 20 years    (ranging from 13% to 100%)
+- Big differences between affluent and non-affluent communities – fire insurance
+- Strong growth within all fire perimeters:
+    - 1981 Atlas Creek Fire - 65 homes burned
+    - 2017 Atlas Fire - 781 homes burned
+    - Extreme growth within Tubbs perimeter:
+    - For every home present in 1940, there were 26 homes in 2010 (2600% growth)
+- Lessons from Tubbs Fire:
+    - People likely won't change behavior if incentives are not established
+    - Tubbs was highly destructive, and not the norm, but it also was not an anomaly – 6 of the 10 most destructive fires in CA have occurred since 2000
+    - People are continuing to build in areas where fire risk is high and suppression is difficult
+- Camp Fire – Butte County
+    - Two ignitions related to power lines
+    - 85 lives lost – 149,000 acres, > 18,000 homes
+    - Most expensive natural disaster in world in 2018 in terms of insured losses 
+    - Mixture of ponderosa pine forests, woodlands, shrublands
+        - 2008 BTU Lighting Complex burned before
+- Worst loss of life in a California wildfire
+    - Paradise had practiced evacuating
+    - Thought was one of most prepared cities
+    - Position of Paradise very hazardous with one road in and out
+    - Needs: Better community preparation and forest/woodland management, electrical infrastructure improvements
+- Recommendations:
+    - Don't reduce regulations to speed rebuilding
+    - Mandate good building codes
+    - Provide resources to people beyond a few years – only 2/3 have rebuilt by 5 years
+    - Despite regulations on new building, the best incentive could be from insurance
+    - More engagement of public to prepare
+- Australia a Leader in WUI: They have done a much better job of engaging people who live in the WUI 
+
+---
+
+> Stephens et al. 2009, Gill and Stephens 2009
+- In U.S. mostly done by volunteer groups, better with UC extension employees
+- Prepare, stay, defend, or leave early – Australia
+    - Catastrophic fire danger level with climate change
+- Updated Australia policy after 2009 Black Saturday Fires – 174 people killed
+- Updated Australia Policy
+    - PREPARE your family, home or business – know your risk from bushfire and have a survival plan
+    - ACT on the fire danger ratings - put your preparations into action, do not wait to get message on your phone or tablet
+    - SURVIVE by monitoring conditions if a fire starts
+	- Know bushfire warning alert levels and what you will do if you are caught in a fire
+
+## Summary
+
+- Exposure of human communities to fire in California is huge
+- Communities need to prepare better for fire – UC Cooperative Extension program
+- Forest and woodland management could improve conditions – TEK can assist
+- Chaparral less options
+- Electrical infrastructure needs improvement
+- CA can learn from Australian experience
+- Governor Newson's and California's next move?
+
+
+
+<!-- # Current California Initiatives concerning wildfires (11-29) -->
+
+
+
+
+<!-- # Class Summary - Main Topics Covered (12-1) -->
+
+
+
+
+<!-- # Class Summary and Conclusion (12-3) -->
+
+
+
+
+<!-- # Review Session (12-6) -->
+
+
+
+
+
+
+
