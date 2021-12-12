@@ -8,13 +8,13 @@
 <meta property="og:description" content="16.1 Vector Fields #   A vector field in .$\mathbb{R}^3$ is a function .$\vec F$ on region .$E \in \mathbb{R}^3$ that assigns each point .$(x,y,z)$ a vector .$F(x,y,z)$ .$\vec F$ is made up of component function: .$\vec F(x,y,z) = \langle P(x,y,z)\hat i, Q(x,y,z) \hat j, R(x,y,z) \hat k\rangle$  .$\vec F$ is continuos iff its component vectors are continuos   .$\vec F$ is  conservative (path taken doesn&rsquo;t change work) iff potential function .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/16/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-01T23:41:39-08:00">
+<meta property="article:modified_time" content="2021-12-11T22:19:35-08:00">
 <title>16: Vector Calculus | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.b90e0400a2f7b4cb0518e79c226412d450a139f09843e1b6ccfe133c89a01ab8.js integrity="sha256-uQ4EAKL3tMsFGOecImQS1FChOfCYQ+G2zP4TPImgGrg=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.350c616685085eecc747f1e446f80b826f545b65b12332b8e9750bb6935e3692.js integrity="sha256-NQxhZoUIXuzHR/HkRvgLgm9UW2WxIzK46XULtpNeNpI=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -198,10 +198,23 @@ pass.mehvix.com
 <li><a href=#parametric-surfaces>Parametric Surfaces</a></li>
 <li><a href=#surfaces-of-revolution>Surfaces of Revolution</a></li>
 <li><a href=#tangent-planes>Tangent Planes</a></li>
-<li><a href=#surface-area>Surface Area</a></li>
+<li><a href=#surface-area>Surface Area</a>
+<ul>
 <li><a href=#surface-area-of-the-graph-of-a-function>Surface Area of the Graph of a Function</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href=#167-surface-integral>16.7 Surface Integral</a>
+<ul>
+<li><a href=#surface-integral>Surface Integral</a></li>
+<li><a href=#graphs-of-functions>Graphs of Functions</a></li>
+<li><a href=#oriented-surfaces>Oriented Surfaces</a></li>
+<li><a href=#surface-integrals-of-vector-fields-flux>Surface Integrals of Vector Fields (Flux)</a></li>
+</ul>
+</li>
+<li><a href=#168-stokes-theorem>16.8 Stokes' Theorem</a></li>
+<li><a href=#169-divergence-theorem>16.9 Divergence Theorem</a></li>
 </ul>
 </nav>
 </aside>
@@ -366,7 +379,7 @@ Space Curves
 Suppose .$\vec F$ is a vector field that is continuous on an <strong>open connected</strong> region .$D$. If .$\int_C \vec F \cdot d\vec r$ is <em>independent</em> of path in .$D$, then .$\vec F$ is a conservative vector field on .$D$; that is, there exists a function .$f$ such that .$\nabla f = \vec F$.
 </blockquote>
 <ul>
-<li><strong>Open:</strong> For every point .$P$ in .$D$ there is a disk with center .$P$ that lies entirely in .$D$. (So .$D$ doesn’t contain any of its boundary points.)</li>
+<li><strong>Open:</strong> For every point .$P$ in .$D$ there is a disk with center .$P$ that lies entirely in .$D$. (So .$D$ doesn&rsquo;t contain any of its boundary points.)</li>
 <li><strong>Connected:</strong> Any two points in .$D$ can be joined by a path that lies in .$D$.</li>
 </ul>
 </div>
@@ -384,10 +397,10 @@ Suppose .$\vec F$ is a vector field that is continuous on an <strong>open connec
 <ul>
 <li>If .$\vec F (x,y) = P(x,y) \hat i + Q(x,y) \hat j$ is a conservative vector field, where .$P$ and .$Q$ have continuous first-order partial derivatives on a domain .$D$, then throughout .$D$ we have
 $$ \frac{\delta P}{\delta y} = \frac{\delta Q}{\delta x}$$</li>
-<li>The converse of the theorem above is true on only <strong>simple curves</strong>: curves that don’t intersect itself anywhere between its endpoints</li>
+<li>The converse of the theorem above is true on only <strong>simple curves</strong>: curves that don&rsquo;t intersect itself anywhere between its endpoints</li>
 <li>A <strong>simply-connected</strong> region in the plane is a connected region .$D$ such that every simple closed curve in .$D$ encloses only points that are in .$D$
 <ul>
-<li>Intuitively speaking, a simply-connected region contains no hole and can’t consist of two separate pieces.</li>
+<li>Intuitively speaking, a simply-connected region contains no hole and can&rsquo;t consist of two separate pieces.</li>
 </ul>
 </li>
 </ul>
@@ -412,12 +425,12 @@ $$\int_C \vec F \cdot d\vec r = \oint_C P\ dx + Q\ dy = \iint_D \bigg(\frac{\del
 </ul>
 </blockquote>
 <ul>
-<li>Proof is too much for me to write out here, the book does a good job though
+<li>The proof (for Green&rsquo;s thm + remaining sections) is (are) too much for me to write out here, the book does a good job
 <ul>
 <li>One important takeaway is the the shape doesn&rsquo;t have to be &ldquo;nice&rdquo; &ndash; we can break up any shape into parts that are either Type I or II. Even though we will have overlapping lines, they cancel one another out (leaving only the boundaries) because of orientation</li>
 </ul>
 </li>
-<li>Green’s Theorem should be regarded as the counterpart of the Fundamental Theorem of Calculus for double integrals
+<li>Green&rsquo;s Theorem should be regarded as the counterpart of the Fundamental Theorem of Calculus for double integrals
 <ul>
 <li>Recall the Fundamental Theorem of Calculus is .$\int_a^b F'(x)\ dx = F(b) - F(a)$</li>
 <li>In both cases there is an integral involving derivatives (.$F', \delta Q/\delta x, \delta P/\delta y$) on the left side of the equation.</li>
@@ -564,24 +577,245 @@ Parametric Surfaces
 Surfaces of Revolution
 <a class=anchor href=#surfaces-of-revolution>#</a>
 </h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<img src=/docs/math-53/imgs/param-rev.png alt>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
+<li>We can write surfaces of revolution as parametric equations too</li>
+<li>Consider surface .$S$ obtained by rotating the curve .$y=f(x)$ about the .$x$-axis (with .$f(x) \geq 0$)</li>
+<li>Therefore, we get the following parameterization:</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$x=x$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$y=f(x)\cos\theta$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$z=f(x)\sin\theta$$
+</div>
+</div>
+</div>
+</div>
 <h2 id=tangent-planes>
 Tangent Planes
 <a class=anchor href=#tangent-planes>#</a>
 </h2>
+<ul>
+<li>Employing the same method as before, we can find the tangent plane to a param surface .$S$ by finding the initial point and the normal vector</li>
+<li>Given some parameterization .$\vec r(u,v) = \langle x(u,v), y(u,v), x(u,v) \rangle$ and initial point .$P_0 = (x_0, y_0)$&mldr;
+<ol>
+<li>Find point .$P_0$ by setting .$x(u,v) = x_0, y(u,v) = y_0, \dots$ and solving for .$u_0,v_0$</li>
+<li>Find normal vector .$\vec n$ by deriving to get, then cross, the parameterization: .$\vec n = \vec r_u \times \vec r_v$
+<ul>
+<li>If the normal vector isn&rsquo;t zero, the tangent plane is at .$\vec n (u_0, v_0)$</li>
+<li>If it is, then the surface .$S$ isn&rsquo;t <strong>smooth</strong> (it is at a &ldquo;corner&rdquo;)</li>
+</ul>
+</li>
+<li>The tangent plane can then be expressed as
+$$(\vec r_u \times \vec r_v)_{(u_0, v_0)} \cdot (\langle x,y,z \rangle - \langle x_0, y_0, z_0 \rangle)$$</li>
+</ol>
+</li>
+</ul>
 <h2 id=surface-area>
 Surface Area
 <a class=anchor href=#surface-area>#</a>
 </h2>
-<h2 id=surface-area-of-the-graph-of-a-function>
+<blockquote>
+<p>
+<img src=/docs/math-53/imgs/param-sa.png alt>
+The image of the subrectangle .$R_{ij}$ is the patch .$S_{ij}$.</p>
+</blockquote>
+<ul>
+<li>Recall that the <em>magnitude</em> of the cross product is the area of a parallelogram formed by two vectors</li>
+<li>We can think of this as the jacobian of the transformation</li>
+</ul>
+<blockquote class="book-hint info">
+If a smooth parametric surface .$S$ is given by the equation
+$$\vec r(u,v) = \langle x(u,v), y(u,v), z(u,v) \rangle; (u,v) \in D$$
+and .$S$ is covered just once as .$(u,v)$ ranges throughout the parameter domain .$D$, then the surface area of .$S$ is
+$$A(S) = \iint_D \vert \vec r_u \times \vec r_v \vert\ dA$$
+where
+$$\vec r_u = \langle \frac{\delta x}{\delta u}, \frac{\delta y}{\delta u}, \frac{\delta z}{\delta u} \rangle; \vec r_v = \langle \frac{\delta x}{\delta v}, \frac{\delta y}{\delta v}, \frac{\delta z}{\delta v} \rangle$$
+</blockquote>
+<h3 id=surface-area-of-the-graph-of-a-function>
 Surface Area of the Graph of a Function
 <a class=anchor href=#surface-area-of-the-graph-of-a-function>#</a>
+</h3>
+<ul>
+<li>For the special case of a surface .$S$ with equation .$z=f(x,y)$, where .$(x,y)$ lies in .$D$ and .$f$
+has continuous partial derivatives, we take .$x$ and .$y$ as parameters.
+<ul>
+<li>That is, the parametric equations are .$x=x; y=y; z=f(x,y)$</li>
+<li>Therefore .$\vec r_x = \langle 1, 0, \frac{\delta f}{\delta x} \rangle; \vec r_y = \langle 0, 1, \frac{\delta f}{\delta y};$ and .$\vec n = \sqrt{1 + \frac{\delta f}{\delta x}^2 + \frac{\delta f}{\delta y}^2}$</li>
+<li>Thus, the surface area becomes
+$$A(S) = \iint_D \sqrt{1 + \frac{\delta f}{\delta x}^2 + \frac{\delta f}{\delta y}^2}\ dA$$</li>
+</ul>
+</li>
+<li>Notice the similarity between the surface area formula above and the arc length formula</li>
+</ul>
+<h1 id=167-surface-integral>
+16.7 Surface Integral
+<a class=anchor href=#167-surface-integral>#</a>
+</h1>
+<h2 id=surface-integral>
+Surface Integral
+<a class=anchor href=#surface-integral>#</a>
 </h2>
+<ul>
+<li>The relationship between surface integrals and surface area is much the same as the relationship between line integrals and arc length.
+<ul>
+<li>The arc length is a line integral where the density (or weight) function .$f(x,y,z) = 1$
+<ul>
+<li>That is, .$\int_C f(x,y,z)\ ds = \int_a^b f(\vec r(t)) \vert \vec r'(t) \vert$</li>
+</ul>
+</li>
+<li>Similarly, the surface area is found taking the surface integral with density function .$f(x,y,z) = 1$
+<ul>
+<li>That is, .$\iint_S 1\ dS = \iint_D \vert \vec r_u \times \vec r_v \vert\ dA = A(S)$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If we define .$\vec r(u,v) = \langle x(u,v), y(u,v), z(u,v) \rangle; (u,v) \in D$
+$$\iint_S f(x,y,z)\ dS = \iint_D f(\vec r(u,v)) \vert \vec r_u \times \vec r_v \vert\ dA$$</li>
+</ul>
+<h2 id=graphs-of-functions>
+Graphs of Functions
+<a class=anchor href=#graphs-of-functions>#</a>
+</h2>
+<ul>
+<li>Any surface .$S$ with equation .$z = g(x,y)$ can be regarded as a parametric surface with parametric equations
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$x=x$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$y=y$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$z=g(x,y)$$
+</div>
+</div>
+</li>
+<li>Thus,
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$\vec r_x = \bigg\langle 1, 0, \frac{\delta g}{\delta x}\bigg\rangle$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\vec r_y = \bigg\langle 0, 1, \frac{\delta g}{\delta y}\bigg\rangle$$
+</div>
+</div>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$\vec r_x \times \vec r_y = \bigg\langle -\frac{\delta g}{\delta x}, -\frac{\delta g}{\delta y}, 1\bigg\rangle$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\vec n = \sqrt{\bigg(\frac{\delta z}{\delta x}\bigg)^2 + \bigg(\frac{\delta z}{\delta y}\bigg)^2 + 1}$$
+</div>
+</div>
+</li>
+<li>Therefore,
+$$\iint_S f(x,y,z)\ dS = \iint_D f(x,y,g(x,y)) \sqrt{\bigg(\frac{\delta z}{\delta x}\bigg)^2 + \bigg(\frac{\delta z}{\delta y}\bigg)^2 + 1}\ dA$$
+<ul>
+<li>Similar formulas apply when it is more convenient to project .$S$ onto the .$yz$-plane or .$xz$-plane.</li>
+</ul>
+</li>
+</ul>
+<h2 id=oriented-surfaces>
+Oriented Surfaces
+<a class=anchor href=#oriented-surfaces>#</a>
+</h2>
+<p>
+<img src=/docs/math-53/imgs/surf-or.png alt></p>
+<ul>
+<li>With the exception of the
+<a href=https://en.wikipedia.org/wiki/M%C3%B6bius_strip>Möbius strip</a>, most surfaces are two-sided, meaning they&rsquo;re <strong>Orientable surfaces</strong>
+<ul>
+<li>We start with a surface .$S$ that has a tangent plane at every point .$(x,y,z)$ on .$S$ (except at any boundary point).</li>
+<li>There are two unit normal vectors .$\hat n_1$ and .$\hat n_2 = -\vec n_1$ at .$(x,y,z)$</li>
+<li>If it is possible to choose a unit normal vector .$\hat n$ at every such point .$(x,y,z)$ so that .$\hat n$ varies continuously over .$S$, then .$S$ is called an oriented surface
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>The choice of .$\hat n$ provides .$S$ with an <strong>orientation</strong>.</li>
+<li>There are two possible orientations for any orientable surface</li>
+<li>For a closed surface, the positive orientation has the normal vectors pointing outward and vis-versa</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/math-53/imgs/orientation-dir.png alt>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>If .$S$ is a smooth orientable surface given in parametric form by a vector function .$\vec r (u,v)$ then it is automatically supplied with the orientation of the unit normal vector
+$$\hat n = \frac{\vec r_u \times \vec r_v}{\vert \vec r_u \times \vec r_v \vert}$$</li>
+<li>E.x., going back to a surface .$z=g(x,y)$ given as the graph of .$g$, the normal <strong>unit</strong> vector is
+$$\hat n = \frac{\big\langle -\frac{\delta g}{\delta x}, -\frac{\delta g}{\delta y}, 1\big\rangle}{\sqrt{\big(\frac{\delta z}{\delta x}\big)^2 + \big(\frac{\delta z}{\delta y}\big)^2 + 1}}$$
+<ul>
+<li>Since the .$\hat k$-component is positive, this gives the upward orientation of the surface.</li>
+</ul>
+</li>
+</ul>
+<h2 id=surface-integrals-of-vector-fields-flux>
+Surface Integrals of Vector Fields (Flux)
+<a class=anchor href=#surface-integrals-of-vector-fields-flux>#</a>
+</h2>
+<blockquote class="book-hint info">
+If .$\vec F$ is a continuous vector field defined on an oriented surface .$S$ with unit normal vector .$\hat n$, then the surface integral of .$\vec F$ over .$S$ is
+$$\iint_S \vec F \cdot d\vec S = \iint_S \vec F \cdot \hat n \ dS = \iint_D \vec F \cdot (\vec r_u \times \vec r_v)\ dA$$
+This integral is also called the <strong>flux</strong> of .$\vec F$ across .$S$.
+</blockquote>
+<ul>
+<li>In words, the surface integral of a vector field .$\vec F$ over .$S$ is equal to the surface integral of its normal component over .$S$ (as previously defined).</li>
+<li>We can apply this to fluids:
+<ul>
+<li>Imagine a fluid with density .$\rho (x,y,z)$ and velocity field .$\vec v (x,y,z)$ flowing through .$S$.</li>
+<li>Think of .$S$ as an imaginary surface that doesn&rsquo;t impede the fluid flow, like a fishing net across a stream.</li>
+<li>Then the rate of flow (mass per unit time) per unit area is .$\vec F = \vec v \rho$</li>
+<li>The flux can be interpreted physically as the rate of flow through .$S$.</li>
+</ul>
+</li>
+</ul>
+<h1 id=168-stokes-theorem>
+16.8 Stokes' Theorem
+<a class=anchor href=#168-stokes-theorem>#</a>
+</h1>
+<ul>
+<li>Just as Green&rsquo;s Theorem relates a double integral over a plane region .$D$ to a line integral around its plane boundary curve, Stokes' Theorem relates a surface integral over surface .$S$ to a line integral around the boundary curve of .$S$ (which is a space curve)
+<blockquote class="book-hint info">
+<strong>Stokes' Theorem:</strong> Let .$S$ be an oriented piecewise-smooth surface that is bounded by a simple, closed, piecewise-smooth boundary curve .$C$ with positive orientation. Let .$\vec F$ be a vector field whose components have continuous partial derivatives on an open region in .$\mathbb{R}^3$ that contains .$S$. Then
+$$\int_C \vec F \cdot d \vec r = \iint_S \text{curl } \vec F \cdot d\vec S$$
+</blockquote>
+</li>
+<li>In words, Stokes' Theorem says that the line integral around the boundary curve of .$S$ (some curve.$C$) of the tangential component of .$\vec F$ is equal to the surface integral over .$S$ of the normal component of the curl of .$F$</li>
+<li>This is since
+$$\int_C \vec F \cdot d \vec r = \int_C \vec F \cdot \vec T\ ds \ \ \ \text{ and }\ \ \iint_S \text{curl } \vec F \cdot d\vec S = \iint_S \text{curl } \vec F \cdot \hat n\ dS$$</li>
+</ul>
+<h1 id=169-divergence-theorem>
+16.9 Divergence Theorem
+<a class=anchor href=#169-divergence-theorem>#</a>
+</h1>
+<blockquote class="book-hint info">
+<strong>Divergence Theorem:</strong> Let .$E$ be a simple solid region and .$S$ be the boundary surface of .$E$, given with positive (outward) orientation. Let .$\vec F$ be a vector field whose component functions have continuous partial derivatives on an open region that contains .$E$. Then
+$$\iint_S \vec F \cdot d\vec S = \iiint_E \text{div } \vec F\ dV$$
+</blockquote>
+<ul>
+<li>In words, we can say that the Divergence Theorem says that (under the given conditions) the flux of .$\vec F$ across the boundary surface of .$E$ is equal to the triple integral of the divergence of .$\vec F$ over .$E$.</li>
+</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/8f74d04000bb4b1407a09ff3ce1613d4887980e1 title="Last modified by Max Vogel | December 2, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/2d2c0e16ed72f947566e0c1cbbbd10274b45dd87 title="Last modified by Max Vogel | December 12, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 2, 2021</span>
+<span>December 12, 2021</span>
 </a>
 </div>
 <div>
@@ -635,10 +869,23 @@ Surface Area of the Graph of a Function
 <li><a href=#parametric-surfaces>Parametric Surfaces</a></li>
 <li><a href=#surfaces-of-revolution>Surfaces of Revolution</a></li>
 <li><a href=#tangent-planes>Tangent Planes</a></li>
-<li><a href=#surface-area>Surface Area</a></li>
+<li><a href=#surface-area>Surface Area</a>
+<ul>
 <li><a href=#surface-area-of-the-graph-of-a-function>Surface Area of the Graph of a Function</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href=#167-surface-integral>16.7 Surface Integral</a>
+<ul>
+<li><a href=#surface-integral>Surface Integral</a></li>
+<li><a href=#graphs-of-functions>Graphs of Functions</a></li>
+<li><a href=#oriented-surfaces>Oriented Surfaces</a></li>
+<li><a href=#surface-integrals-of-vector-fields-flux>Surface Integrals of Vector Fields (Flux)</a></li>
+</ul>
+</li>
+<li><a href=#168-stokes-theorem>16.8 Stokes' Theorem</a></li>
+<li><a href=#169-divergence-theorem>16.9 Divergence Theorem</a></li>
 </ul>
 </nav>
 </div>

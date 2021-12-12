@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="15.1 Double Integrals over Rectangles #   We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$ Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$ To find the volume of this surface, we take a double integral $$V = \iint_R f(x,y)\ dA$$  Fubini’s Theorem: If .">
+<meta name=description content="15.1 Double Integrals over Rectangles #   We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$ Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$ To find the volume of this surface, we take a double integral $$V = \iint_R f(x,y)\ dA$$  Fubini&rsquo;s Theorem: If .">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="15: Multiple Integrals">
-<meta property="og:description" content="15.1 Double Integrals over Rectangles #   We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$ Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$ To find the volume of this surface, we take a double integral $$V = \iint_R f(x,y)\ dA$$  Fubini’s Theorem: If .">
+<meta property="og:description" content="15.1 Double Integrals over Rectangles #   We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$ Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$ To find the volume of this surface, we take a double integral $$V = \iint_R f(x,y)\ dA$$  Fubini&rsquo;s Theorem: If .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/15/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-15T19:26:34-08:00">
+<meta property="article:modified_time" content="2021-12-11T22:19:35-08:00">
 <title>15: Multiple Integrals | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.b90e0400a2f7b4cb0518e79c226412d450a139f09843e1b6ccfe133c89a01ab8.js integrity="sha256-uQ4EAKL3tMsFGOecImQS1FChOfCYQ+G2zP4TPImgGrg=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.350c616685085eecc747f1e446f80b826f545b65b12332b8e9750bb6935e3692.js integrity="sha256-NQxhZoUIXuzHR/HkRvgLgm9UW2WxIzK46XULtpNeNpI=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -207,7 +207,7 @@ pass.mehvix.com
 $$V = \iint_R f(x,y)\ dA$$</li>
 </ul>
 <blockquote class="book-hint info">
-<strong>Fubini’s Theorem:</strong> If .$f$ is continuous on the rectangle .$R = \{(x,y) \vert a \leq x \leq b, c \leq y \leq d\}$, then
+<strong>Fubini&rsquo;s Theorem:</strong> If .$f$ is continuous on the rectangle .$R = \{(x,y) \vert a \leq x \leq b, c \leq y \leq d\}$, then
 $$\iint_R f(x,y)\ dA = \int_a^b \int_c^d f(x,y)\ dy\ dx = \int_c^d \int_a^b f(x,y)\ dx\ dy$$
 More generally, this is true if we assume that .$f$ is bounded on .$R$, .$f$ is discontinuous only on a finite number of smooth curves, and the iterated integrals exist.
 </blockquote>
@@ -315,13 +315,13 @@ $$A(S) = \iint_D \sqrt{\big[f_x(x,y)\big]^2 + \big[f_y(x,y)\big]^2 + 1}\ dA$$
 <a class=anchor href=#156-triple-integrals>#</a>
 </h1>
 <blockquote class="book-hint info">
-Fubini’s Theorem for Triple Integrals If f is continuous on the rectangular box B − fa, bg 3 fc, dg 3 fr, sg, then
+Fubini&rsquo;s Theorem for Triple Integrals If f is continuous on the rectangular box B − fa, bg 3 fc, dg 3 fr, sg, then
 $$\iiint_B f(x,y,z)\ dV = \int_r^s\int_c^d\int_a^b f(x,y,z)\ dx\ dy\ dz$$
 </blockquote>
 <ul>
-<li>The iterated integral on the right side of Fubini’s Theorem means that we integrate first with respect to .$x$ (keeping .$y$ and .$z$ fixed), then we integrate with respect to .$y$ (keeping .$z$ fixed), and finally we integrate with respect to .$z$.</li>
+<li>The iterated integral on the right side of Fubini&rsquo;s Theorem means that we integrate first with respect to .$x$ (keeping .$y$ and .$z$ fixed), then we integrate with respect to .$y$ (keeping .$z$ fixed), and finally we integrate with respect to .$z$.</li>
 <li>Note that if .$f$ is separable this just becomes the product of three single-dimensional integrals, or one
-two-dimensional integral and two one-dimensional integrals. Fubini’s theorem still applies.</li>
+two-dimensional integral and two one-dimensional integrals. Fubini&rsquo;s theorem still applies.</li>
 </ul>
 <h2 id=type-1>
 Type 1
@@ -589,9 +589,9 @@ $$ \frac{\delta (x,y,z)}{\delta (u,v,w)} = \begin{vmatrix} \frac{\delta x}{\delt
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c08e8511db44883c19fdf5fc42fe94ed0587fa89 title="Last modified by Max Vogel | November 16, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/2d2c0e16ed72f947566e0c1cbbbd10274b45dd87 title="Last modified by Max Vogel | December 12, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 16, 2021</span>
+<span>December 12, 2021</span>
 </a>
 </div>
 <div>
