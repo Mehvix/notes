@@ -8,13 +8,13 @@
 <meta property="og:description" content="18.1 Ideal Gas Laws and Molecular Interpolation #  Ideal Gas Law Assumptions #   There are a large number of molecules, .$N$, each of mass .$m$ that move in random directions at random speeds Molecules are, on average, sufficiently far away from one another (separation .$\gg$ diameter) Molecules obey classical mechanics so .$KE \gg PE$ when colliding Collisions are perfectly elastic  Micro and Macroscopic views related through Energy #   In a system with .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/18/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-26T23:52:44-08:00">
+<meta property="article:modified_time" content="2021-12-13T13:16:01-08:00">
 <title>18: Kinetic Theory of Gases | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.350c616685085eecc747f1e446f80b826f545b65b12332b8e9750bb6935e3692.js integrity="sha256-NQxhZoUIXuzHR/HkRvgLgm9UW2WxIzK46XULtpNeNpI=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.dd35d0da5f2e70bdc549715d370ac4e0b4d4a7e850ec515f5aa0029e5ff57902.js integrity="sha256-3TXQ2l8ucL3FSXFdNwrE4LTUp+hQ7FFfWqACnl/1eQI=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -218,8 +218,8 @@ $$\overline{K} = \frac{1}{2} m \bar{v}^2 = \frac{3}{2}k_B T$$
 <li>E.x: A container is filled with a light and heavy molecule. Which has a greater speed? The lighter molecules do because they are less massive.</li>
 </ul>
 </li>
-<li>And since the system&rsquo;s internal energy .$E_{\text{int}} = N \cdot \overline{K}$ then we can write an important .$PV$ relation + find the gass .$E_{\text{int}}$:
-$$T = \frac{m\bar{v}^2}{3k_B} = \frac{2}{3} \cdot \frac{E_{\text{int}}}{N k_B} \Longrightarrow PV = \frac{2}{3}E_{\text{int}}$$
+<li>And since the system&rsquo;s internal energy .$E_{\text{int}} = N \cdot \overline{K}$ then we can write an important .$PV$ relation + find the gas.$E_{\text{int}}$:
+$$T = \frac{\frac{1}{2} m\bar{v}^2}{\frac{3}{2}k_B} = \frac{2}{3} \cdot \frac{E_{\text{int}}}{N k_B} \Longrightarrow PV = \frac{2}{3}E_{\text{int}}$$
 $$E_{\text{int}} = N\cdot \frac{1}{2}m\bar{v}^2 \Longrightarrow PV = \frac{Nm}{3}\bar{v}^2 $$</li>
 <li>Which shows us that .$(P,V)$ is a representation of (kinetic) energy!
 <ul>
@@ -232,22 +232,28 @@ Absolute 0
 <a class=anchor href=#absolute-0>#</a>
 </h2>
 <ul>
-<li>Before, we said .$T = 0K$ exists when .$P=0$</li>
-<li>Now we can also see that .$KE = 0$ when .$T=0$ as well. This would mean that at absolute 0, there is no particle movement</li>
-</ul>
+<li>
+<p>Before, we said .$T = 0K$ exists when .$P=0$</p>
+</li>
+<li>
+<p>Now we can also see that .$KE = 0$ when .$T=0$ as well. This would mean that at absolute 0, there is no particle movement</p>
+</li>
+<li>
 <p>We can then write an equation for the
-<a href=https://en.wikipedia.org/wiki/Root_mean_square>root-mean-square</a> (or RMS):</p>
+<a href=https://en.wikipedia.org/wiki/Root_mean_square>root-mean-square</a> (or RMS):
+$$\overline{K} = \frac{3}{2}k_B T \Longrightarrow \frac{1}{2}m\bar{v}^2 = \frac{3}{2}k_B T;\ v_{\text{rms}} = \sqrt{\bar{v}^2} = \sqrt{3k_B\frac{T}{m}} = \sqrt{3 R\frac{T}{M}} $$
+$$\bar v ^2 = \frac{1}{N}\sum_i^N n_i v_i^2 \Longrightarrow v_{\text{rms}} = \frac{1}{\sqrt N} \sqrt{\int_0^\infty n(v)\cdot v^2 dv} $$</p>
 <ul>
-<li>This is the typical velocity of particles that make up the gas/liquid
-$$\overline{K} = \frac{3}{2}k_B T \Longrightarrow \frac{1}{2}m\bar{v}^2 = \frac{3}{2}k_B T \Longrightarrow v_{\text{rms}} = \sqrt{\bar{v}^2} = \sqrt{3k_B\frac{T}{m}} = \sqrt{3 R\frac{T}{M}} $$
-$$\bar v ^2 = \frac{1}{N}\sum_i^N n_i v_i^2 \Longrightarrow v_{\text{rms}} = \frac{1}{\sqrt N} \sqrt{\int_0^\infty n(v)\cdot v^2 dv} $$</li>
+<li>This is the typical velocity of particles that make up the gas/liquid</li>
 <li>.$M$ is the molar mass of the gas [kilograms per mole]</li>
 <li>.$v_{\text{rms}}$ is also called the thermal velocity, .$v_{\text{th}}$</li>
 <li>Fun fact: Less than 1% of particles of particles exceed .$v_{\text{rms}}$</li>
 <li>Example problems:
 <ul>
-<li>If a sample is quasistatically shrunk to half it&rsquo;s original volume with no change in pressure, the new root-mean-square speed is .$1/sqrt{2}$ times the original rms speed</li>
+<li>If a sample is quasistatically shrunk to half it&rsquo;s original volume with no change in pressure, the new root-mean-square speed is .$1/\sqrt{2}$ times the original rms speed</li>
 <li>If we double the root-mean-square speed (thermal speed) of the molecules of a gas, then its temperature must increase by a factor of 4</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -255,9 +261,11 @@ $$\bar v ^2 = \frac{1}{N}\sum_i^N n_i v_i^2 \Longrightarrow v_{\text{rms}} = \fr
 18.2 Distribution of Molecular Speeds
 <a class=anchor href=#182-distribution-of-molecular-speeds>#</a>
 </h1>
+<blockquote class="book-hint info">
 <p>
 <img src=/docs/physics-7b/imgs/maxwell-distribution.gif alt="Maxwell Distribution">
-$$f(v) = 4\pi N \bigg( \frac{m}{2 \pi k_B T}\bigg)^{3/2} v^2 e^{ -\frac{1}{2} \cdot \frac{mv^2}{k_B T}}$$</p>
+$$f(v) = 4\pi N \bigg( \frac{m}{2 \pi k_B T}\bigg)^{3/2} v^2 e^{ -\frac{1}{2} \cdot \frac{mv^2}{k_B T}}$$
+</blockquote>
 <ul>
 <li>Recognize that .$f(v) \propto T^{-3/2}, v^2$ and <strong>exponentially</strong> .$\propto KE/T$
 <ul>
@@ -303,12 +311,11 @@ Important Values
 18.3 Real Gases and Phase Changes
 <a class=anchor href=#183-real-gases-and-phase-changes>#</a>
 </h1>
+<blockquote>
 <p>
 <img src=/docs/physics-7b/imgs/phase-change-diagram.jpg alt="Phase Change Graph">
-<blockquote class="book-hint info">
-(a) Each curve represents the relationship between P and V at a fixed temperature; the upper curves are at higher temperatures. The lower curves are not hyperbolas, because the gas is no longer an ideal gas. (b) An expanded portion of the diagram for low temperatures, where the phase can change from a gas to a liquid.
+(a) Each curve represents the relationship between .$P$ and .$V$ at a fixed temperature; the upper curves are at higher temperatures. The lower curves are not hyperbolas, because the gas is no longer an ideal gas. (b) An expanded portion of the diagram for low temperatures, where the phase can change from a gas to a liquid.</p>
 </blockquote>
-</p>
 <ul>
 <li>Phase changes can only be explained if we&rsquo;re considering the behavior of a real &ndash; not ideal &ndash; gas
 <ul>
@@ -321,11 +328,11 @@ Important Values
 </ul>
 </li>
 <li>At lower temperatures, the .$PE$ attractive forces between particles aren&rsquo;t negligible with respect to .$KE$</li>
-<li>At the critical points, (when .$PV$ curve is horizontal) gases may no longer change to liquid under any pressure
+<li>At the critical points (when .$PV$ curve is horizontal), gases may no longer change to liquid under any pressure
 <ul>
 <li>This point varies by substance</li>
 <li>Gas below the critical point is vapor</li>
-<li>Gas above the critical point is just gas /shrug</li>
+<li>Gas above the critical point is just gas</li>
 </ul>
 </li>
 <li><strong>Sublimation</strong>: When substance changes from solid to gas, skipping liquefaction step</li>
@@ -369,17 +376,22 @@ Evaporation
 Vapor Pressure
 <a class=anchor href=#vapor-pressure>#</a>
 </h2>
-<p>
-<img src=/docs/physics-7b/imgs/phase-diagram.png alt="Phase Change Graph">
-<blockquote class="book-hint info">
+<blockquote>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <p>A typical phase diagram. The solid green line applies to most substances; the dashed green line gives the anomalous behavior of water</p>
 <ul>
 <li>Green line = SL Line; transition between solid .$\iff$ liquid (melting/freezing)</li>
 <li>Red line = SV; transition between solid .$\iff$ vapor (sublimation/deposition)</li>
 <li>Blue line = LV; transition between liquid .$\iff$ vapor (vaporizing/condensing)</li>
 </ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/physics-7b/imgs/phase-diagram.png alt="Phase Change Graph">
+</div>
+</div>
 </blockquote>
-</p>
 <ul>
 <li>When evaporation particles go from gas to liquid, it&rsquo;s called <strong>condensation</strong></li>
 <li>The number of particles in vapor increases until the rate of particles condensing is equal to the number of particles becoming vapor (equilibrium!)
@@ -391,7 +403,7 @@ Vapor Pressure
 <li>Saturated Vapor Pressure varies with the volume of container
 <ul>
 <li>If volume above the liquid was reduced, then the density would increase so particles would condense back to liquid</li>
-<li>Assuming .$T = \text{constant}$, vapor pressure would stay constant too</li>
+<li>Assuming .$T$ is constant, vapor pressure would stay constant too</li>
 </ul>
 </li>
 <li>Since at high temperatures there are more particles (entering/already in) the vapor phase, higher pressure is required for equilibrium</li>
@@ -439,7 +451,7 @@ $$\text{Relative Humidity} = \frac{\text{partial pressure of }H_2O}{\text{satura
 18.5 Van der Waals Equation of State
 <a class=anchor href=#185-van-der-waals-equation-of-state>#</a>
 </h1>
-<p>Microscopic View (molecular) accounts for</p>
+<p>Microscopic (molecular) view accounts for&mldr;</p>
 <ol>
 <li>Finite size of molecules (before we assumed separation .$\gg$ diameter, ignoring density)
 <ul>
@@ -452,7 +464,7 @@ $$\text{Relative Humidity} = \frac{\text{partial pressure of }H_2O}{\text{satura
 </li>
 <li>The unavailable volume due to particles, .$b$, depends on the .$n$umber of moles
 $$ P(V-nb) = nRT \Longrightarrow P\bigg(\frac{V}{n} - b\bigg) = RT\ \ \ \big[\text{Clausius Equation of State}\big]$$</li>
-<li>Where .$b$ is the volume consumed by 1 mol of gas with the units V/mols</li>
+<li>Where .$b$ is the volume consumed by 1 mol of gas with the units .$\text{V/mols}$</li>
 </ul>
 </li>
 <li>Forces between molecules (before we assumed that forces only played an effect in collisions)
@@ -464,7 +476,11 @@ $$ P(V-nb) = nRT \Longrightarrow P\bigg(\frac{V}{n} - b\bigg) = RT\ \ \ \big[\te
 </ul>
 </li>
 <li>On the contrary, with higher temperatures gases appear more ideal because .$KE$ is greater than the intermolecular .$PE$</li>
-<li>&ldquo;Slow down&rdquo; is proportional to the gas density</li>
+<li>&ldquo;Slow down&rdquo; is proportional to the gas density
+<ul>
+<li>M ore dense means more molecules means more intermolecular forces</li>
+</ul>
+</li>
 <li>Pressure reduced by the following equation where .$n/V$ is the gas density and .$a$ is a constant unique to the gas that measures the attractive forces between particles
 $$ a\bigg( \frac{n}{V}\bigg)^2$$</li>
 <li>.$a \propto m$ and boiling point because the lower the boiling point, the less energy is required to break the internal bonds</li>
@@ -473,9 +489,12 @@ $$ a\bigg( \frac{n}{V}\bigg)^2$$</li>
 </ol>
 <ul>
 <li>Thus, we can rewrite the ideal gas law with the last two equations as
-$$ \bigg(P+ \frac{a}{(V/n)^2}\bigg)\bigg(\frac{V}{n} - b\bigg) = RT \ \ \big[\text{Van der Waals Eq of State}\big]$$</li>
+$$ \bigg(P+ \frac{a}{(V/n)^2}\bigg)\bigg(\frac{V}{n} - b\bigg) = RT \ \ \big[\text{Van der Waals Eq of State}\big]$$
+<ul>
 <li>Note that these equations aren&rsquo;t accurate in all cases, but they&rsquo;re the best generalization we can do and they show the relation</li>
 <li>With low densities, .$a\big/(V/n)^2 \ll P$ and .$b \ll V/n$ so Van der Waals equation reduces to the ideal gas law</li>
+</ul>
+</li>
 </ul>
 <h1 id=186-mean-free-path>
 18.6 Mean Free Path
@@ -503,9 +522,9 @@ $$J = DA \frac{C_1 - C_2}{\Delta x} = DA \frac{dC}{dx} \ \ \text{[Fick&rsquo;s L
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/ea1a3989098a5b3f16edabd1e8f3a3b1a4aa384f title="Last modified by Max Vogel | November 27, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/f818f99410b4b8320ec910d38cf9369ee4f8529a title="Last modified by Max Vogel | December 13, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 27, 2021</span>
+<span>December 13, 2021</span>
 </a>
 </div>
 <div>

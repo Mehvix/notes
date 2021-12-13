@@ -8,13 +8,13 @@
 <meta property="og:description" content="17.1: Atomic Theory #   Atoms are the smallest unit of matter Atomic unit: .$\text{u} = 1.66\cdot 10^{-27}$ kg  E.x. Hydrogen weighs .$1.0078 \text{u}$   Molecular mass of a compound is the sum of the particles (atoms) in the compound  Terms #   Element: Substance that cannot be broken down into smaller substances (gold) Molecule: Group of atoms held together by covalent bonds Compound: Substance made from atoms combined in specific ratios  Brownian Motion #   Random movement seen in pollen/dust, as well as atoms Using Brownian motion, Einstein found the size of an atom to be .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/17/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-20T17:58:32-08:00">
+<meta property="article:modified_time" content="2021-12-13T13:16:01-08:00">
 <title>17: Temperature, Thermal Expansion, & Ideal Gas Law | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.350c616685085eecc747f1e446f80b826f545b65b12332b8e9750bb6935e3692.js integrity="sha256-NQxhZoUIXuzHR/HkRvgLgm9UW2WxIzK46XULtpNeNpI=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.dd35d0da5f2e70bdc549715d370ac4e0b4d4a7e850ec515f5aa0029e5ff57902.js integrity="sha256-3TXQ2l8ucL3FSXFdNwrE4LTUp+hQ7FFfWqACnl/1eQI=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -375,48 +375,68 @@ $$\frac{F}{A} = \Delta l \cdot E \cdot \frac{1}{l_0} = (\alpha l_0 \Delta T) E \
 Laws
 <a class=anchor href=#laws>#</a>
 </h2>
-<p>
-<img src=/docs/physics-7b/imgs/ideal.png alt="Ideal Gas Law Relation Equation"></p>
 <ul>
-<li>Assume that gasses aren&rsquo;t too dense (so .$P \sim \text{atmospheric pressure}$ ) and that they aren&rsquo;t close to liquefaction (boiling) point either (for oxygen, this is .$~183^\circ C$ .</li>
+<li>Assume that gasses aren&rsquo;t too dense (so .$P \sim$ atmospheric pressure) and that they aren&rsquo;t close to liquefaction (boiling) point either (for oxygen, this is .$~183^\circ \text{C}$.)</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/physics-7b/imgs/ideal.png alt="Ideal Gas Law Relation Equation">
+</div>
+<div class="flex-even markdown-inner">
+<ul>
 <li><strong>
 <a href=https://en.wikipedia.org/wiki/Boyle%27s_law>Boyle&rsquo;s Law</a></strong>
 <ul>
-<li>.$V \propto P^{-1}\ \text{[Constant Temperature]}$</li>
-<li>.$P$ should be absolute, not gauge, pressure</li>
-<li>Alternatively, .$PV = \text{Constant}$ or .$P_1V_1 = P_2V_2$</li>
+<li>.$V \propto P^{-1}$ [Constant Temperature]</li>
+<li>.$P$ is absolute, not gauge, pressure</li>
+<li>Alternatively, .$PV =$ const or .$P_1V_1 = P_2V_2$</li>
 </ul>
 </li>
 <li><strong>
 <a href=https://en.wikipedia.org/wiki/Charles%27s_law>Charles&rsquo;s Law</a></strong>
 <ul>
-<li>.$V \propto T\ \text{[Constant Pressure]}$</li>
+<li>.$V \propto T$ [Constant Pressure]</li>
 <li>Alternatively, .$\frac{V_1}{T_1} = \frac{V_2}{T_2}$</li>
 </ul>
 </li>
 <li><strong>
 <a href=https://en.wikipedia.org/wiki/Gay-Lussac%27s_law>Gay Lussac&rsquo;s Law</a></strong>
 <ul>
-<li>.$P \propto T\ \text{[Constant Volume]}$</li>
+<li>.$P \propto T$ [Constant Volume]</li>
 <li>Alternatively, .$\frac{P_1}{T_1} = \frac{P_2}{T_2}$</li>
 </ul>
 </li>
 </ul>
+</div>
+</div>
 <h1 id=177-ideal-gas-law>
 17.7 Ideal Gas Law
 <a class=anchor href=#177-ideal-gas-law>#</a>
 </h1>
-<p>$$PV = nRT = n k_B N_a T = N k_B T$$</p>
+<blockquote class="book-hint info">
+<p>$$PV = nRT = n k_B N_a T = N k_B T$$
+</blockquote>
 <ul>
 <li>.$P$ is the pressure of the gas [Pascals]</li>
 <li>.$V$ is the volume of the gas [Cubic Meters]</li>
-<li>.$n$ is the amount of substance of gas (also known as number of moles) [Moles]</li>
-<li>.$R$ is the ideal, or universal, gas constant, equal to .$k_B \cdot N_a = 8.314 \frac{J}{K\cdot \text{mol}} = 0.0821 \frac{L\cdot atm}{\text{mol}\cdot K}$
+<li>.$T$ is the <strong>absolute</strong> temperature of the gas [Kelvins]</li>
+<li>.$N$ is the number of molecules of gas</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>.$n$ is the amount of substance of gas (number of moles) [Moles]</li>
+<li>.$R$ is the ideal, or universal, gas constant, equal to .$k_B \cdot N_a = 8.314 \frac{J}{K\cdot \text{mol}}$
 <ul>
 <li>Using mass of a gas, different gasses have different proportionality constants</li>
 <li>So we used number of moles, in which case .$R$ becomes the constant for all gasses</li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
 <li>.$k_B $ is the
 <a href=https://en.wikipedia.org/wiki/Boltzmann_constant>Boltzmann constant</a>
 <ul>
@@ -430,9 +450,11 @@ Laws
 <li>.$n = N/N_A$</li>
 </ul>
 </li>
-<li>.$N$ is the number of molecules of gas</li>
-<li>.$T$ is the <strong>absolute</strong> temperature of the gas [Kelvins]</li>
-<li><em>Ideal</em> in that the equation only works for gasses around atmospheric pressure and not excessive temperatures</li>
+</ul>
+</div>
+</div>
+<ul>
+<li>This equation is <em>Ideal</em> in that the equation only works for gasses around atmospheric pressure and not excessive temperatures</li>
 </ul>
 <h2 id=moles>
 Moles
@@ -440,7 +462,7 @@ Moles
 </h2>
 <ul>
 <li>Mole is the SI unit for amount of substance</li>
-<li>1 mole = Number of particles in .$12g$ of Carbon</li>
+<li>1 mole = Number of particles in .$\text{12g}$ of Carbon</li>
 <li>1 mole = Number of grams of a substance numerically equal to the molar mass
 $$n \text{(moles)} = \frac{\text{mass (grams)}}{\text{molecular mass (g/mol)}}$$</li>
 </ul>
@@ -483,24 +505,32 @@ where .$k_B $ is Boltzmann&rsquo;s constant .$\frac{R}{N_A} = 1.38 \cdot 10^{-23
 17.10 Ideal Gas Temperature
 <a class=anchor href=#1710-ideal-gas-temperature>#</a>
 </h1>
-<p>
-<img src=/docs/physics-7b/imgs/phase-diagram.png alt="Phase Diagram"></p>
-<blockquote class="book-hint info">
-A typical phase diagram. The solid green line applies to most substances; the dashed green line gives the anomalous behavior of water. For more see
-<a href=/physics-7b/18/#vapor-pressure>18.4</a>
-</blockquote>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
 <li><em>Triple point</em>: A precise temperature and pressure where the three phases (gas, liquid, and solid) of a substance can coexist in thermodynamic equilibrium.</li>
-<li>.$P_3 = 4.88\ \text{torr}; T_3 = 0.01^\circ C$ for water
-$$T = (273.16 K)\bigg(\frac{P}{P_3}\bigg)\ \text{[Ideal Gas, constant volume]}$$
-$$T = (273.16 K)\lim_{P_3 \to 0}\bigg(\frac{P}{P_3}\bigg)\ \text{[Constant volume]}$$</li>
+<li>.$P_3 = 4.88\ \text{torr};\ T_3 = 0.01^\circ C$ for water</li>
+<li>Ideal Gas, constant volume:
+$$T = (273.16 K)\bigg(\frac{P}{P_3}\bigg)$$</li>
+<li>Constant volume:
+$$T = (273.16 K)\lim_{P_3 \to 0}\bigg(\frac{P}{P_3}\bigg)$$</li>
 </ul>
+</div>
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>
+<img src=/docs/physics-7b/imgs/phase-diagram.png alt="Phase Diagram">
+A typical phase diagram. The solid green line applies to most substances; the dashed green line gives the anomalous behavior of water. For more see
+<a href=/physics-7b/18/#vapor-pressure>18.4</a></p>
+</blockquote>
+</div>
+</div>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/4feef5beca646e9f2874943ee995db61dd03c09e title="Last modified by Max Vogel | November 21, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/f818f99410b4b8320ec910d38cf9369ee4f8529a title="Last modified by Max Vogel | December 13, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 21, 2021</span>
+<span>December 13, 2021</span>
 </a>
 </div>
 <div>
