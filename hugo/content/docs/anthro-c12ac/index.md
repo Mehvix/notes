@@ -1901,57 +1901,81 @@ Five Case Studies Of Indigenous Stewardship Practices In California
 <!-- # Gonzalez climate change ESPM C22AC (11-19) -->
 
 
-# WUI and Camp Fire (11-22)
+# Wildland Urban Interface (WUI) and Camp Fire (11-22)
 
 > Kramer et al. 2019
-- WUI – Wildland Urban Interface
-    - Interface WUI - "where houses meet"
-    - Intermix WUI - "where houses mingle"
+- Two types of WUI -- Wildland Urban Interface
+    1. Interface WUI - "where houses meet": 🏠🏠🏠🌲🌲🌲
+    2. Intermix WUI - "where houses mingle" (with vegetation): 🏠🌲🏠🌲🏠🌲
+
+{{< columns >}}<!-- mathjax fix -->
 - U.S. WUI was large in 2010:
     - WUI Houses: 43.4 million = 33% of total
         - Around 10% of US population
+        - Probably has grown in last 10 years
     - WUI Area: 770,000 km2 = 9.5% of U.S.
+        - Concentrated in West
 - U.S. WUI grew rapidly from 1990 to 2010:
     - WUI Houses: 30.8 to 43.4 million -- 41% growth
-    - WUI Area: 581,000 to 770,000 km2 -- 33% growth
-    - Destruction in WUI skewed and highly variable
-- Destruction rates ranged between 0% and 100% (averaged 25% for fires with burned buildings)
+<---><!-- mathjax fix -->
+![](/docs/anthro-c12ac/imgs/wui-map.png)
+{{< /columns >}}
+- WUI Area: 581,000 to 770,000 km2 -- 33% growth
+    - Due primarily due to housing growth (wrt change in vegetation, or both)
+- Destruction in WUI skewed and highly variable
+    - Destruction rates ranged between 0% and 100% (averaged 25% for fires with burned buildings)
     - 70% of all destroyed buildings were in the top 20 most destructive fires
-- Firewise communities are well located, but many are reactive after wildfires
-- CA is a risky place – it contained:
-    - 12 of the 20 most destructive fires in U.S.
-    - 46% of buildings threatened by fire in the U.S.
-    - 60% of buildings destroyed by fire in the U.S.
-    - Fire insurance being cancelled
+{{< columns >}}<!-- mathjax fix -->
+![](/docs/anthro-c12ac/imgs/firewise-map.png)
+<---><!-- mathjax fix -->
+- Firewise communities 
+    - Communities that have principles for fire
+    - Have evacuation / build material standards 
+    - Are well located, but many are reactive only after wildfires
+    - Tends to be run by volunteers -- should aim to try and get more professions / advisors involved
+{{< /columns >}}
+- CA is a risky place; it's contained...
+{{< columns >}}<!-- mathjax fix -->
+- 12 of the 20 most destructive fires in US
+- 46% of buildings threatened by fire in US
+<---><!-- mathjax fix -->
+- 60% of buildings destroyed by fire in US
+- Fire insurance being cancelled
+{{< /columns >}}
 - Not all buildings are rebuilt
-    - In the U.S., 23% are rebuilt within 5 years 
+    - In the US, 23% are rebuilt within 5 years 
     - In CA, 35% are rebuilt within 5 years
-    - In CA, 72% are rebuilt within 20 years    (ranging from 13% to 100%)
-- Big differences between affluent and non-affluent communities – fire insurance
+    - In CA, 72% are rebuilt within 20 years (ranging from 13% to 100%)
+- Big differences between affluent and non-affluent communities -- fire insurance
 - Strong growth within all fire perimeters:
     - 1981 Atlas Creek Fire - 65 homes burned
     - 2017 Atlas Fire - 781 homes burned
     - Extreme growth within Tubbs perimeter:
     - For every home present in 1940, there were 26 homes in 2010 (2600% growth)
 - Lessons from Tubbs Fire:
+    - Occurred due to eastern winds that traveled from high to low pressure, coastal areas
+        - Going downhill means faster winds thus hotter fires
+        - Additionally, winds can speed up as they move through canyons and mountain spaces 
+            - Leads to reoccurring burned areas
     - People likely won't change behavior if incentives are not established
-    - Tubbs was highly destructive, and not the norm, but it also was not an anomaly – 6 of the 10 most destructive fires in CA have occurred since 2000
+    - Tubbs was highly destructive, and not the norm, but it also was not an anomaly: 6 of the 10 most destructive fires in CA have occurred since 2000
     - People are continuing to build in areas where fire risk is high and suppression is difficult
-- Camp Fire – Butte County
+- Camp Fire -- Butte County
+    - Electrical power line started fire which the wind then carried
     - Two ignitions related to power lines
-    - 85 lives lost – 149,000 acres, > 18,000 homes
+    - 85 people died, >18,000 homes lost over 149,000 acres
     - Most expensive natural disaster in world in 2018 in terms of insured losses 
     - Mixture of ponderosa pine forests, woodlands, shrublands
         - 2008 BTU Lighting Complex burned before
-- Worst loss of life in a California wildfire
-    - Paradise had practiced evacuating
-    - Thought was one of most prepared cities
-    - Position of Paradise very hazardous with one road in and out
-    - Needs: Better community preparation and forest/woodland management, electrical infrastructure improvements
+    - Worst loss of life in a California wildfire
+        - Paradise had practiced evacuating
+        - Thought was one of most prepared cities
+        - Position of Paradise very hazardous with one road in and out
+        - Needs: Better community preparation and forest/woodland management, electrical infrastructure improvements
 - Recommendations:
     - Don't reduce regulations to speed rebuilding
     - Mandate good building codes
-    - Provide resources to people beyond a few years – only 2/3 have rebuilt by 5 years
+    - Provide resources to people beyond a few years -- only 2/3 have rebuilt by 5 years
     - Despite regulations on new building, the best incentive could be from insurance
     - More engagement of public to prepare
 - Australia a Leader in WUI: They have done a much better job of engaging people who live in the WUI 
@@ -1960,11 +1984,11 @@ Five Case Studies Of Indigenous Stewardship Practices In California
 
 > Stephens et al. 2009, Gill and Stephens 2009
 - In U.S. mostly done by volunteer groups, better with UC extension employees
-- Prepare, stay, defend, or leave early – Australia
+- Prepare, stay, defend, or leave early -- Australia
     - Catastrophic fire danger level with climate change
-- Updated Australia policy after 2009 Black Saturday Fires – 174 people killed
+- Updated Australia policy after 2009 Black Saturday Fires -- 174 people killed
 - Updated Australia Policy
-    - PREPARE your family, home or business – know your risk from bushfire and have a survival plan
+    - PREPARE your family, home or business -- know your risk from bushfire and have a survival plan
     - ACT on the fire danger ratings - put your preparations into action, do not wait to get message on your phone or tablet
     - SURVIVE by monitoring conditions if a fire starts
 	- Know bushfire warning alert levels and what you will do if you are caught in a fire
@@ -1972,8 +1996,8 @@ Five Case Studies Of Indigenous Stewardship Practices In California
 ## Summary
 
 - Exposure of human communities to fire in California is huge
-- Communities need to prepare better for fire – UC Cooperative Extension program
-- Forest and woodland management could improve conditions – TEK can assist
+- Communities need to prepare better for fire -- UC Cooperative Extension program
+- Forest and woodland management could improve conditions -- TEK can assist
 - Chaparral less options
 - Electrical infrastructure needs improvement
 - CA can learn from Australian experience
@@ -1983,20 +2007,95 @@ Five Case Studies Of Indigenous Stewardship Practices In California
 
 <!-- # Current California Initiatives concerning wildfires (11-29) -->
 
-
+<!-- # Current California Initiatives Concerning  -->
 
 
 <!-- # Class Summary - Main Topics Covered (12-1) -->
 
+# Class Summary 
 
-
+1. As an AC class, a major objective of this course is 
+to examine diverse populations relationship to fire
+in California
+    - Today, while most of us fear wildland fires, that has not always been the case;
+2.  Defining fire regimes for local regions of CA:
+    - fire frequency, fire season, fire area, fire severity, interaction with other factors;
+    - Scott’s Discussions of fire regimes for different CA ecosystems
+    - anthropogenic and natural fire regimes;
+3. Long-Term use of fire by Human populations:
+    - Important component of human evolution
+    - Constructive use of fire over hundreds of thousands of years for cooking, warmth, ceremonial use, etc.
+    - people bring fire with them when they colonized new landscapes and places across the globe, including California probably 13,000-15,000 years ago;
+4. Historical Fire Ecology:
+    - How we study the history of past fire regimes: 
+    - Coring lakes to obtain charcoal, pollen, phytoliths
+    - Coring trees
+    - Wedges from trees for fire scar analysis
+    - Other lines of evidence employed: ethnohistorical accounts, ethnography, Native histories (oral traditions)
+    - Eco-archaeology (flotation to recover plant animal remains from archaeological sites)
+5. Cultural Burning in California
+    - California Indians have lived here more than 13,000 years
+    - Traditionally referred to as “Hunter-Gatherers” in anthropology literature,” but best to Refer to Them as  “Resource Managers or Landscape Stewards”;
+    - Reasons for anthropogenic fires (control pests, remove detritus, open pathways, hunting, habitat revitalization to facilitate growth of tribal foods, medicines, dance regalia, raw materials)
+    - Regular, small-scale burning to enhance productivity, diversity, and sustainability of habitats – produce patchy mosaics
+    - Holocene times – California characterized byanthropogenic landscape, not “Pristine Wilderness”
+    - Controversy about scale and timing of anthropogenic/cultural burning: 
+    - Central California – evidence for creation of coastal prairies by people 800-1400 CE (Rob Cuthrell, Valentin Lopez – eco-arch Research);
+6. Transformations with Colonialism:
+    - Significant impacts of Spanish, Russian, Mexican, and American (settler) colonization: altered fire regimes
+    - environmental degradation
+    - genocide of Native peoples
+    - Loss of land
+    - few reservations granted – mostly very small in size
+    - many tribes not federally recognized
+    - detrimental impacts of  fire exclusion and later fire suppression 
+    - Termination of Indigenous landscape stewardship  practices on any major scale, but timing varied  across state depending on history of colonization
+    - Some loss of Traditional Ecological Knowledge 
+    - TEK (Val Lopez);
+7.  The Advent of Fire Suppression:
+- Debate about “Light Burning” in 1880s-early 1900s
+    - use of fire by sheep herders and by timber companies
+    - establishment of Forest Reserves, USFS (1905)
+    - influence of Gifford Pinchot (trained in Europe as discussed by Jameson Karns)
+    - Light Burning loses out to total fire suppression
+    - influence of 1910 Great Idaho Fire and other factors discussed by Scott
+    - fire suppression really develops in WWII and Post-war years
+    - Smokey the Bear, etc.
+8.  Impact of Fire Suppression on local Ecosystems:
+    - Fire suppression methods very effective: 98-99% of fires out at less than 5 acres in size
+    - Major implications for taking fire out of ecosystem: increase fuel loads (ladder, surface, crown fuels), increase density of vegetation, fewer open areas, vegetation that is more homogeneous, encroachment of shrubs and trees, loss of grasslands, meadows, spring (Scott, Brandon Collins)
 
 <!-- # Class Summary and Conclusion (12-3) -->
 
-
-
-
-<!-- # Review Session (12-6) -->
+9.  Post-Suppression Times: 
+    - Importance of Leopold Report in 1963 for National Parks and otherfederal and state agencies
+    - USFS, NPS and others 
+    - experiment with prescribed burning, managed fires, and various fire proxy methods, including manual thinning, mechanized removal of vegetation, etc. (Jim Agee, Jan van Wagtendonk)
+    - In regard to prescribed burning, California nowhere near what Florida does.  Much more needs to be done here!
+10.  Tribal Revitalization in California
+    - important concern of Tribes: Health of Environment, work to bring back Indigenous Stewardship Practices
+    - ecological restoration of Tribal Lands
+    - push to bring Cultural Burningand other stewardship practices back to the land:  Five Case studies discussed:  Timbisha Shoshone (Death Valley)
+    - Chumash (Santa Barbara)
+    - North Fork Mono  Tribe (southern Sierra Nevada Mts.)
+    - Karuk And Yurok Tribes (Northwest California)
+    - Amah Mutsun Tribal Band (Central Coast of California);
+11. The Future: Rethinking how we manage open spaces, public lands, wildland/urban Interface in California:
+    1. Use of Managed Fires where possible (Yosemite Case Study)
+    2. Need much more prescribed burning to reduce fuel loads, develop fuel breaks, forest restoration, etc.  Also employ manual thinning and mechanized vegetation removal when burning not a viable option;
+    3. Need to bring back Indigenous landscape management practices, including strategic use of Cultural Burning (more nuanced treatment of specific resources)
+        - Create partnerships with Tribes and Federal and State Agencies
+        - Can we combine prescribed burning and cultural Burning in some areas of California? We think so and are working on it...
+    4.  Proposal: Establish a Stewardship Corps for California that is dedicated to active ecosystem management
+        - Implement programs for training and certifying prescribed burn managers (like Florida)
+        - Fund stewardship corps work throughout year (prescribed/cultural burns in winter, spring, late fall)
+        - Create local/regional stewardship districts where corps undertakes regular maintenance of the land (like painting the Golden Gate Bridge) -- tailored to specific local ecosystems
+        - Composition of stewardship  corps would include people from local tribes and  members of local communities – create career Opportunities;
+    5. New policies and regulations: fire insurance, zoning issues (try to decrease further development in Wildland/Urban Interface?)
+       - Mandate good building codes to fire-proof homes and surroundings – especially after major fires
+       - improve electrical infrastructure of California
+       - advocate for more community participation to prepare for fires
+       - increase funding for UC Extension to work with communities to better prepare for fires;
 
 
 
