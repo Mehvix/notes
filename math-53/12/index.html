@@ -8,13 +8,13 @@
 <meta property="og:description" content="12.1 3D Coordinate Systems #   Right hand rule: Index point to .$x$, thumb to .$z$, and write through .$y$ If you have point .$P(a,b,c)$ and drop a perpendicular dot on the .$xy$-plane at .$a,b,0$, you now have a projection of .$P$ onto the .$xy$-plane The distance .$|P_1 P_2|$ between two points .$P_1(x_1, y_1, z_1)$ and .$P_2(x_2, y_2, z_2)$ is $$|P_1 P_2| = \sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$$ We can define the equation for a sphere with a center at .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/12/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-01T23:41:39-08:00">
+<meta property="article:modified_time" content="2021-12-14T13:22:50-08:00">
 <title>12: Vectors & Geometry of Space | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.dd35d0da5f2e70bdc549715d370ac4e0b4d4a7e850ec515f5aa0029e5ff57902.js integrity="sha256-3TXQ2l8ucL3FSXFdNwrE4LTUp+hQ7FFfWqACnl/1eQI=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.17044e670944637f4427b486704d0480e1e45a26220780882a472393b4e7d008.js integrity="sha256-FwROZwlEY39EJ7SGcE0EgOHkWiYiB4CIKkcjk7Tn0Ag=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -137,7 +137,7 @@ CS61A (Anto's)
 </li>
 <li>
 <a href=https://www.mehvix.com target=_blank rel=noopener>
-mehvix.com
+w³.mehvix.com
 </a>
 </li>
 <li>
@@ -351,7 +351,7 @@ $$ t = \frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c} $$</li>
 <li>And we can extrapolate this to write an equation we can use to verify if two points are on a line:
 $$ t = \frac{x-x_0}{x_1-x_0} = \frac{y-y_0}{y_1-y_0} = \frac{z-z_0}{z_1-z_0} $$
 <ul>
-<li><strong>Note</strong>: If we have no change in an axis (such as .$x$), then .$x_1-x_0$ is zero. Therefore, we can write .$x=x_0$ (because we know it never changes) and the other relations for .$y$ and .$z$ still work</li>
+<li><strong>Note</strong>: If we have no change in an axis (such as .$x$), then .$x_1-x_0$ is zero. Therefore, we can write .$x = x_0$ (because we know it never changes) and the other relations for .$y$ and .$z$ still work</li>
 </ul>
 </li>
 <li>We can also write our original equation in vector form as
@@ -393,7 +393,7 @@ Common Questions
 <ul>
 <li>Intersection point(s) of plane and parametric curve
 <ul>
-<li>Given parametric curve .$C = \langle \alpha + a\cdot t, \beta + b\cdot t, \gamma + c \cdot t \rangle$ and plane equation .$P = x + y + z + d= 0$ &mldr;</li>
+<li>Given parametric curve .$C = \langle \alpha + a\cdot t, \beta + b\cdot t, \gamma + c \cdot t \rangle$ and plane equation .$P = x + y + z + d = 0$ &mldr;</li>
 </ul>
 <ol>
 <li>Plug in each component of .$C$ as .$x,y,z$ in the .$P$ equation</li>
@@ -410,7 +410,7 @@ Common Questions
 </li>
 <li>Angle between parametric lines that intercept at point .$P_3$
 <ul>
-<li>Given parametric equations .$L_1 = P_1 + t\vec v_1$ and .$L_2= P_2 + s\vec v_2$</li>
+<li>Given parametric equations .$L_1 = P_1 + t\vec v_1$ and .$L_2 = P_2 + s\vec v_2$</li>
 </ul>
 <ol>
 <li>Find the .$t_3$ and .$s_3$ for when .$L_1 = P_3$ and .$L_2 = P_3$ (point of intersection)</li>
@@ -431,7 +431,7 @@ Common Questions
 </li>
 <li>Intersection line .$L$ of two planes
 <ol>
-<li>Set one of the 3D variables to zero (e.x. .$z=0$) to find where the two planes intersect the remaining plane (in this case the .$z$ plane)</li>
+<li>Set one of the 3D variables to zero (e.x. .$z = 0$) to find where the two planes intersect the remaining plane (in this case the .$z$ plane)</li>
 <li>We find the intersection point .$P (\alpha, \beta, 0)$ by solving when our plane equations in the prior equation are equal</li>
 <li>Since the line .$L$ is orthogonal to both planes' normal vectors, our direction vector is .$\vec v = n_1 \times n_2 = \langle a,b,c \rangle$</li>
 <li>We can then plug in everything into the symmetric equation: .$\frac{x-\alpha}{a} = \frac{y-\beta}{b} = \frac{z-0}{c}$</li>
@@ -439,7 +439,7 @@ Common Questions
 </li>
 <li>Distance from point to plane
 <ul>
-<li>Given point .$P_1(x_1, y_1, z_1)$ and plane .$ax+by+cz+d=0$
+<li>Given point .$P_1(x_1, y_1, z_1)$ and plane .$ax+by+cz+d = 0$
 $$D = \Vert \text{comp}_{\vec n}{\vec b} \Vert = \frac{\vert ax_1 + by_1 + cz_1 +d\vert}{\sqrt{a^2 + b^2 + c^2}}$$</li>
 </ul>
 </li>
@@ -499,7 +499,7 @@ Cylinder
 <li>A cylinder is a surface that consists of all rulings that at parallel to a given line that passes through a given plane curve</li>
 <li>Two variable equation in 3D space
 <ul>
-<li>E.x. .$y=\sin x, z=x^2$</li>
+<li>E.x. .$y =\sin x, z = x^2$</li>
 </ul>
 </li>
 </ul>
@@ -518,9 +518,9 @@ $$Ax^2 + By^2 + Iz = 0$$</li>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/8f74d04000bb4b1407a09ff3ce1613d4887980e1 title="Last modified by Max Vogel | December 2, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/92e0d2114116bea8db6684977f187d08d97528de title="Last modified by Max Vogel | December 14, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 2, 2021</span>
+<span>December 14, 2021</span>
 </a>
 </div>
 <div>

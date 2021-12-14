@@ -8,13 +8,13 @@
 <meta property="og:description" content="20.1 Intro #   Second law states that systems only increase in entropy over time That is, most systems are on directional  E.x. mixing salt and pepper together result in an mixture. No matter how much you keep mixing it, they won&rsquo;t naturally separate and return to the initial state even though it follows first law of thermo (conserving energy)   (Specific) Second Law of Thermo  Heat can flow spontaneously from a hot object to a cold object; heat will not flow spontaneously from a cold object to a hot object.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/20/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-11-26T23:52:44-08:00">
+<meta property="article:modified_time" content="2021-12-14T13:22:50-08:00">
 <title>20: Second Law of Thermo | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.dd35d0da5f2e70bdc549715d370ac4e0b4d4a7e850ec515f5aa0029e5ff57902.js integrity="sha256-3TXQ2l8ucL3FSXFdNwrE4LTUp+hQ7FFfWqACnl/1eQI=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.17044e670944637f4427b486704d0480e1e45a26220780882a472393b4e7d008.js integrity="sha256-FwROZwlEY39EJ7SGcE0EgOHkWiYiB4CIKkcjk7Tn0Ag=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -137,7 +137,7 @@ CS61A (Anto's)
 </li>
 <li>
 <a href=https://www.mehvix.com target=_blank rel=noopener>
-mehvix.com
+w³.mehvix.com
 </a>
 </li>
 <li>
@@ -244,9 +244,9 @@ pass.mehvix.com
 <li>Consist of four processes done in a cycle
 <ol>
 <li>Isothermal expansion (.$\Delta T = 0$) with the addition of heat .$Q_H$ along path .$ab$ at temperature .$T_H$</li>
-<li>Adiabatic expansion (.$Q=0$) lowering temperature to .$T_L$ along path .$bc$</li>
+<li>Adiabatic expansion (.$Q = 0$) lowering temperature to .$T_L$ along path .$bc$</li>
 <li>Isothermal compression (.$\Delta T = 0$) leads to heat .$Q_L$ flowing out along path .$cd$</li>
-<li>Adiabatic compression (.$Q=0$) occurs path .$da$, returning to temperature .$T_H$</li>
+<li>Adiabatic compression (.$Q = 0$) occurs path .$da$, returning to temperature .$T_H$</li>
 </ol>
 </li>
 <li>Each process is reversible; that is, each occurs infinitely slowly so that the process could be considered a series of equilibrium states
@@ -276,6 +276,8 @@ pass.mehvix.com
 20.4 Refrigerators, AC, Heat Pumps
 <a class=anchor href=#204-refrigerators-ac-heat-pumps>#</a>
 </h1>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
 <li>Refrigerators, air conditioners, and heat pumps are just the reverse of heat engines
 <ul>
@@ -287,18 +289,24 @@ pass.mehvix.com
 <p>No device is possible whose sole effect is to transfer heat from one region at a temperature .$T_L$ into a second region at a higher temperature .$T_H$ (<em>Clausius statement</em>)</p>
 </blockquote>
 </li>
-<li>Coefficient of Performance (COP): .$\text{COP} = \frac{Q_L}{W}$
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/physics-7b/imgs/fridge.png alt=Fridge>
+</div>
+</div>
+<ul>
+<li>
+<p>Coefficient of Performance (COP): .$\text{COP} = \frac{Q_L}{W}$</p>
 <ul>
 <li>The more heat .$Q_L$ removed from a fridge for a given amount of work, the more efficient it is</li>
 <li>Energy is conserved, so we can write .$Q_L + W = Q_H$ or .$W = Q_H-Q_L$</li>
 <li>We can then write .$\text{COP} = \frac{Q_L}{W} = \frac{Q_L}{Q_H-Q_L} \Longrightarrow \text{COP}_{\text{ideal}} = \frac{T_L}{T_H-T_L}$</li>
 </ul>
 </li>
-</ul>
-<p>
-<img src=/docs/physics-7b/imgs/fridge.png alt=Fridge></p>
-<ul>
-<li>Heat pump
+<li>
+<p>Heat pump</p>
 <ul>
 <li>Electric motor does work .$W$ to take heat .$Q_L$ from outside at low temperature and delivers heat .$Q_H$ to inside at a hot temperature</li>
 <li>Whereas fridges cool (remove .$Q_L$), heat pumps heat (deliver .$Q_H$)</li>
@@ -329,14 +337,14 @@ $$\Delta S = S_b - S_a = \int_a^b dS = \int_a^b \frac{dQ}{T}$$</li>
 $$\Delta S = \Delta S_H + \Delta S_L = - \frac{Q}{T_{HM}} + \frac{Q}{T_{LM}}$$</li>
 <li>.$T_{HM}$ is the average temperature between .$T_H$ and .$T_M$ where .$T_M$ is the average between .$T_H$ and .$T_L$
 <ul>
-<li>E.x. if .$T_H = 0^\circ C, T_L = 0^\circ C$, then .$T_M = 4^\circ C$ so .$T_{HM} = 6^\circ C$ and .$T_{LM} = 2^\circ C$. Also, we use .$Q=mc \Delta T$ to find heat and use half .$T_{M}$ (in this case .$2^\circ C$) for .$\Delta T$</li>
+<li>E.x. if .$T_H = 0^\circ C, T_L = 0^\circ C$, then .$T_M = 4^\circ C$ so .$T_{HM} = 6^\circ C$ and .$T_{LM} = 2^\circ C$. Also, we use .$Q = mc \Delta T$ to find heat and use half .$T_{M}$ (in this case .$4^\circ C$) for .$\Delta T$</li>
 <li>Since .$T_{HM} > T_{LM}, \Delta S > 0$ is always true</li>
 <li>While one system may decrease in entropy, the other one always increases more so net always increases</li>
 </ul>
 </li>
 <li>For adiabatic processes, we know .$dQ = dW = P dV$, thus
 $$\Delta S_\text{gas} = \int \frac{dQ}{T} = \frac{1}{T} \int_{V_1}^{V_2} P\ dV$$
-and since we know through the idea gas law that .$P=nRT/V$ so
+and since we know through the idea gas law that .$P = nRT/V$ so
 $$&mldr;= \frac{1}{T} \int_{V_1}^{V_2} \frac{nRT}{V}\ dV = nR \ \ln \bigg(\frac{V_2}{V_1}\bigg)$$</li>
 </ul>
 <h1 id=207-order-to-disorder-not-covered>
@@ -439,9 +447,9 @@ $$\frac{Q_L}{Q_H} = \frac{T_L}{T_H}$$</li>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/ea1a3989098a5b3f16edabd1e8f3a3b1a4aa384f title="Last modified by Max Vogel | November 27, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/92e0d2114116bea8db6684977f187d08d97528de title="Last modified by Max Vogel | December 14, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 27, 2021</span>
+<span>December 14, 2021</span>
 </a>
 </div>
 <div>
