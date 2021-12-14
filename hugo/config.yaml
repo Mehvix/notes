@@ -40,7 +40,7 @@ menu:
         - name: "—"
           weight: 2
           url: "#"
-        - name: "mehvix.com"
+        - name: "w³.mehvix.com"
           url: "https://www.mehvix.com"
           weight: 3
         - name: "pass.mehvix.com"
