@@ -8,13 +8,13 @@
 <meta property="og:description" content="24.1 Capacitors #   Capacitors are devices that store an electric charge  Normally consists of two conducting objects; plates, sheets  When a voltage is applied, the two plates become charged: one positive, one negative   Conductors are placed near one another, but not touching  This distance is typically due to an insulator between sheets Capacitors are typically rolled so that they take up less room     Two main use cases  Storing energy for later use; e.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/24/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-14T13:22:50-08:00">
+<meta property="article:modified_time" content="2021-12-16T10:12:25-08:00">
 <title>24: Capacitance, Dielectrics, Electric Energy Storage | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.17044e670944637f4427b486704d0480e1e45a26220780882a472393b4e7d008.js integrity="sha256-FwROZwlEY39EJ7SGcE0EgOHkWiYiB4CIKkcjk7Tn0Ag=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.dcc06b862554387948a0a55a675306812689902f44728b1c994fca64bc9c0546.js integrity="sha256-3MBrhiVUOHlIoKVaZ1MGgSaJkC9EcoscmU/KZLycBUY=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -168,8 +168,8 @@ pass.mehvix.com
 <li><a href=#242-determination-of-capacitance>24.2 Determination of Capacitance</a></li>
 <li><a href=#243-capacitors-in-series-and-parallel>24.3 Capacitors in Series and Parallel</a>
 <ul>
-<li><a href=#parallel>Parallel</a></li>
 <li><a href=#series>Series</a></li>
+<li><a href=#parallel>Parallel</a></li>
 </ul>
 </li>
 <li><a href=#244-storage-of-electric-energy>24.4 Storage of Electric Energy</a></li>
@@ -208,7 +208,7 @@ pass.mehvix.com
 <ol>
 <li>.$V$: The potential difference of the two plates (Volts)</li>
 <li>.$C$: The constant
-<a href=https://en.wikipedia.org/wiki/Capacitance>capacitance</a> of the capacitor (Coulombs per volt &ndash; farad)
+<a href=https://en.wikipedia.org/wiki/Capacitance>capacitance</a> of the capacitor (Coulombs per volt, farad)
 $$Q = CV$$</li>
 </ol>
 </li>
@@ -229,10 +229,37 @@ $$E = \frac{\sigma}{\varepsilon_0} = \frac{Q}{\varepsilon_0 A}$$
 <li>Since .$V = \int E\ dl = \frac{Qd}{\varepsilon_0 A}$, we can relate it to .$C$ as
 $$C = \frac{Q}{V} = \varepsilon_0 \cdot \frac{A}{d}$$</li>
 </ul>
+<blockquote class="book-hint warning">
+<p><strong>Capacitance-finding strategy</strong></p>
+<ol>
+<li>Assign an arbitrary charge .$\pm q$ to the two plates.</li>
+<li>Using Gauss&rsquo;s law or other techniques, calculate the electric field between these two plates</li>
+<li>From that electric field, calculate the potential difference between the plates, .$V = -\int \vec E \cdot d \vec s$</li>
+<li>Calculate the capacitance using .$C = q/V$. The arbitrary charge .$q$ from (1) should cancel out.</li>
+</ol>
+</blockquote>
 <h1 id=243-capacitors-in-series-and-parallel>
 24.3 Capacitors in Series and Parallel
 <a class=anchor href=#243-capacitors-in-series-and-parallel>#</a>
 </h1>
+<h2 id=series>
+Series
+<a class=anchor href=#series>#</a>
+</h2>
+<ul>
+<li>The <strong>current/charge</strong> on each capacitor has the same magnitude:
+$$Q = Q_1 = Q_2 = \dots$$</li>
+</ul>
+<ul>
+<li>The total <strong>voltage</strong> across all capacitors is sumo of the voltage drops of the individual components:
+$$V = V_1 + V_2 + \dots = I(R_1 + R_2 + \dots)$$</li>
+<li>And since .$V = Q/C$, <strong>capacitance</strong> is then
+$$\frac{Q}{C_\text{eq}} = \frac{Q}{C_1} + \frac{Q}{C_2} + \dots \Longrightarrow \frac{1}{C_\text{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + \dots $$
+<ul>
+<li>Notice that the equivalence capacitance is smaller than the smallest contributing capacitance</li>
+</ul>
+</li>
+</ul>
 <h2 id=parallel>
 Parallel
 <a class=anchor href=#parallel>#</a>
@@ -254,24 +281,6 @@ $$Q = C_\text{eq} V = (C_1 + \dots)V \Longrightarrow C_\text{eq} = C_1 + \dots$$
 </ul>
 </li>
 <li>The <em>overall</em> working voltage is always <em>limited by the smallest working voltage</em> of an individual capacitor.</li>
-</ul>
-</li>
-</ul>
-<h2 id=series>
-Series
-<a class=anchor href=#series>#</a>
-</h2>
-<ul>
-<li>The <strong>current/charge</strong> on each capacitor has the same magnitude:
-$$Q = Q_1 = Q_2 = \dots$$</li>
-</ul>
-<ul>
-<li>The total <strong>voltage</strong> across all capacitors is sumo of the voltage drops of the individual components:
-$$V = V_1 + V_2 + \dots = I(R_1 + R_2 + \dots)$$</li>
-<li>And since .$V = Q/C$, <strong>capacitance</strong> is then
-$$\frac{Q}{C_\text{eq}} = \frac{Q}{C_1} + \frac{Q}{C_2} + \dots \Longrightarrow \frac{1}{C_\text{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + \dots $$
-<ul>
-<li>Notice that the equivalence capacitance is smaller than the smallest contributing capacitance</li>
 </ul>
 </li>
 </ul>
@@ -343,9 +352,9 @@ $$u = \frac{1}{2}K \varepsilon_0 E^2 = \frac{1}{2}\varepsilon E^2$$</li>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/92e0d2114116bea8db6684977f187d08d97528de title="Last modified by Max Vogel | December 14, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/515500ea6fc511c07631aba20d199d18389ca020 title="Last modified by Max Vogel | December 16, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 14, 2021</span>
+<span>December 16, 2021</span>
 </a>
 </div>
 <div>
@@ -369,8 +378,8 @@ $$u = \frac{1}{2}K \varepsilon_0 E^2 = \frac{1}{2}\varepsilon E^2$$</li>
 <li><a href=#242-determination-of-capacitance>24.2 Determination of Capacitance</a></li>
 <li><a href=#243-capacitors-in-series-and-parallel>24.3 Capacitors in Series and Parallel</a>
 <ul>
-<li><a href=#parallel>Parallel</a></li>
 <li><a href=#series>Series</a></li>
+<li><a href=#parallel>Parallel</a></li>
 </ul>
 </li>
 <li><a href=#244-storage-of-electric-energy>24.4 Storage of Electric Energy</a></li>

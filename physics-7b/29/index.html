@@ -8,13 +8,13 @@
 <meta property="og:description" content="29–1 Induced EMF #   A changing magnetic field induces an emf  That is, changing .$\vec B$, not .$\vec B$ itself, induces current Constant magnetic fields produce no current in a conductor This process is called electromagnetic induction   It doesn&rsquo;t matter if the magnet or coil moves, only that there is relative motion between the two    (a) A current is induced when a magnet is moved toward a coil, momentarily increasing the magnetic field through the coil.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/29/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-14T13:22:50-08:00">
+<meta property="article:modified_time" content="2021-12-16T10:12:25-08:00">
 <title>29: Electromagnetic Induction & Faraday's Law | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.17044e670944637f4427b486704d0480e1e45a26220780882a472393b4e7d008.js integrity="sha256-FwROZwlEY39EJ7SGcE0EgOHkWiYiB4CIKkcjk7Tn0Ag=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.dcc06b862554387948a0a55a675306812689902f44728b1c994fca64bc9c0546.js integrity="sha256-3MBrhiVUOHlIoKVaZ1MGgSaJkC9EcoscmU/KZLycBUY=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -369,7 +369,7 @@ $$\mathscr{E} = - \frac{d\Phi_B}{dt} = - \frac{d}{dt}\int \vec B \cdot d \vec A 
 </ul>
 </li>
 <li>Since .$\omega = d\theta/dt \Longrightarrow \theta = \theta_0 + \omega t$, we choose .$\theta_0 = 0$ so
-$$\mathscr{E} = - N BA \frac{d}{dt}\big(\cos(\omega t)\big) = N BA \omega \sin (\omega t)$$
+$$\mathscr{E} = - N BA \frac{d}{dt}(\cos(\omega t)) = N BA \omega \sin (\omega t)$$
 <ul>
 <li>.$N$ is the number of loops in the rotating coil, assumed to be .$1$ unless stated otherwise</li>
 <li>Thus, the output wave is sinusoidal
@@ -434,11 +434,11 @@ $$V_S = N_S \frac{d\Phi_B}{dt}$$
 <li>.$\Phi_B/dt$ is the rate at which the magnetic flux changes through each coil</li>
 </ul>
 </li>
-<li>The input voltage, .$V_P$, is related to the rate too this rate too:
+<li>The input voltage, .$V_P$, is related to this rate too:
 $$V_P = N_P \frac{d\Phi_B}{dt}$$
 <ul>
 <li>.$N_P$ is the number of turns in the primary coil</li>
-<li>This follows because the changing flux produce a back emf, .$N_P \Phi_B / dt$, in the primary that exactly balances the applied voltage .$V_P$
+<li>This follows because the changing flux produce a back emf, .$N_P\ d\Phi_B / dt$, in the primary that exactly balances the applied voltage .$V_P$
 <ul>
 <li>This is because of Kirchhoff&rsquo;s rules</li>
 <li>This is only the case if the resistance of the primary can be ignored (which we assume)</li>
@@ -494,16 +494,16 @@ Forces Due to Changing .$\vec B$ are non-conservative
 <a class=anchor href=#forces-due-to-changing-vec-b-are-non-conservative>#</a>
 </h2>
 <ul>
-<li>Electric field lines produced by a Changing magnetic field are continuous; they form closed loops</li>
+<li>Electric field lines produced by a changing magnetic field are continuous; they form closed loops</li>
 <li>That is, while a conservative force (such as a electrostatic magnetic field) integrated over a line integral is zero .$\big(\oint \vec E_\text{electrostatic} \cdot d \vec l = 0\big)$, the electric field created by an magnetic field is not zero: .$\oint \vec E_\text{non-static} \cdot d \vec l = - \frac{d\Phi_B}{dt}$</li>
 <li>This implies that forces due to changing magnetic fields are non-conservative and we can&rsquo;t define a potential energy (or even a potential function!) at a given point in space</li>
 </ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/92e0d2114116bea8db6684977f187d08d97528de title="Last modified by Max Vogel | December 14, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/515500ea6fc511c07631aba20d199d18389ca020 title="Last modified by Max Vogel | December 16, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 14, 2021</span>
+<span>December 16, 2021</span>
 </a>
 </div>
 <div>

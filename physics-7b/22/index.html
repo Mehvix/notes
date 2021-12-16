@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="22.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$   The number of field lines passing through unit area perpendicular to the field .">
+<meta name=description content="22.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$    The .">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="22: Flux & Gauss's Law">
-<meta property="og:description" content="22.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$   The number of field lines passing through unit area perpendicular to the field .">
+<meta property="og:description" content="22.1 Electric Flux #   Electric Flux: Electric field that passes through a given area  E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as $$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$    The .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/22/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-14T13:22:50-08:00">
+<meta property="article:modified_time" content="2021-12-16T10:12:25-08:00">
 <title>22: Flux & Gauss's Law | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.17044e670944637f4427b486704d0480e1e45a26220780882a472393b4e7d008.js integrity="sha256-FwROZwlEY39EJ7SGcE0EgOHkWiYiB4CIKkcjk7Tn0Ag=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.dcc06b862554387948a0a55a675306812689902f44728b1c994fca64bc9c0546.js integrity="sha256-3MBrhiVUOHlIoKVaZ1MGgSaJkC9EcoscmU/KZLycBUY=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -184,12 +184,12 @@ pass.mehvix.com
 <li><strong>Electric Flux:</strong> Electric field that passes through a given area
 <ul>
 <li>E.x. for a uniform field .$\vec E$ passing through an area .$A$ at angle .$\theta$ between the field direction and line perpendicular to the area, the flux is defined as
-$$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$</li>
+$$\Phi_\vec{E} = \vec E_\perp A = \vec EA_\perp = \vec E A \cos \theta = \vec E \cdot \vec A$$
+<img src=/docs/physics-7b/imgs/gauss-ex.png alt="Gauss Example"></li>
 </ul>
 </li>
-<li>The number of field lines passing through unit area perpendicular to the field .$A_\perp$ is proportional to the magnitude of the field .$\vec E$
-$$\vec E \propto N/A_\perp \Longrightarrow N \propto \vec EA_\perp = \Phi_\vec{E}$$
-<img src=/docs/physics-7b/imgs/gauss-ex.png alt="Gauss Example"></li>
+<li>The .$N$umber of field lines passing through unit area perpendicular to the field .$A_\perp$ is proportional to the magnitude of the field .$\vec E$
+$$\vec E \propto N/A_\perp \Longrightarrow N \propto \vec EA_\perp = \Phi_\vec{E}$$</li>
 <li>For <strong>non-uniform fields</strong>:
 <ul>
 <li>We divide up the surface into .$n$ small elements of surface whose areas are .$dA$ where .$dA$ is small enough (1) to be considered flat and (2) so .$E$ varies so little it can considered uniform
@@ -278,6 +278,20 @@ $$\oint \vec E_i \cdot d \vec A = \oint \Big(\Sigma \vec E_i \Big) \cdot d \vec 
 22.3 Applications of Gauss&rsquo;s
 <a class=anchor href=#223-applications-of-gausss>#</a>
 </h1>
+<blockquote class="book-hint warning">
+<p><strong>Gauss&rsquo;s Law to calculate electric fields</strong></p>
+<ol>
+<li>Using symmetry and intuition, draw the electric field lines.</li>
+<li>Enclose all or part of the charge distribution with a Gaussian surface. The electric field should have the same strength at all points on (at least part of) the surface.</li>
+<li>Apply Gauss&rsquo;s law: .$\Phi_\vec{E} = \oint \vec E \cdot d\vec A = \frac{Q_\text{enclosed}}{\varepsilon_0}$. If .$E$ is constant over (part of) the Gaussian surface, you can pull it outside the integral. This simplification is what allows you to solve for the field.
+<ul>
+<li>Recall .$Q_\text{enclosed} = \frac{\text{(total charge)}}{\text{(total area)}}\times \text{(area enclosed by Gaussian surface)}$</li>
+<li>If you can&rsquo;t pull .$E$ outside the flux integral, then Gauss&rsquo;s law don&rsquo;t work! Use the continuous charge distribution strategy from the
+<a href=/physics-7b/21/#217-electric-field-calculations-for-continuous-charge-distributions>prior chapter</a>.</li>
+</ul>
+</li>
+</ol>
+</blockquote>
 <h2 id=uniformly-charged-solid-spherical-conductor>
 Uniformly Charged Solid Spherical Conductor
 <a class=anchor href=#uniformly-charged-solid-spherical-conductor>#</a>
@@ -352,9 +366,9 @@ $$$$</li>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/92e0d2114116bea8db6684977f187d08d97528de title="Last modified by Max Vogel | December 14, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/515500ea6fc511c07631aba20d199d18389ca020 title="Last modified by Max Vogel | December 16, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 14, 2021</span>
+<span>December 16, 2021</span>
 </a>
 </div>
 <div>

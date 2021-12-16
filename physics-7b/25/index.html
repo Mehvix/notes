@@ -8,13 +8,13 @@
 <meta property="og:description" content="25.1 The Electric Battery #   Batteries produce electricity by transforming chemical energy into electric energy Simple battery (cells) contain two plates or rods of dissimilar metals called electrodes  The portion of rods outside of the solution are called the terminals Anode: The positive electrode Cathode: The negative electrode   These electrodes are emersed in the electrolyte: a solution such as a dilute acid  Chemical Process:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/25/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-14T13:22:50-08:00">
+<meta property="article:modified_time" content="2021-12-16T10:12:25-08:00">
 <title>25: Electric Current and Resistance | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.17044e670944637f4427b486704d0480e1e45a26220780882a472393b4e7d008.js integrity="sha256-FwROZwlEY39EJ7SGcE0EgOHkWiYiB4CIKkcjk7Tn0Ag=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.dcc06b862554387948a0a55a675306812689902f44728b1c994fca64bc9c0546.js integrity="sha256-3MBrhiVUOHlIoKVaZ1MGgSaJkC9EcoscmU/KZLycBUY=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -353,10 +353,13 @@ $$\rho_T = \rho_0 = \bigg[ 1+ \alpha (T-T_0)\bigg]$$
 <ul>
 <li>The current creates collisions between the moving electrons and the atoms in the wire</li>
 <li>That is, the KE from the wire&rsquo;s atoms increases meaning the temperature increases too
-$$P = \frac{dU}{dt} = \frac{dq}{dt}\cdot V$$</li>
+$$P = \frac{dU}{dt} = \frac{dq}{dt}\cdot V$$
+<ul>
+<li>This is because energy is transformed when a tiny charge .$dq$ moves through a potential difference .$V$ is .$dU = V\ dq$</li>
 </ul>
 </li>
-<li>This is because energy is transformed when a tiny charge .$dq$ moves through a potential difference .$V$ is .$dU = V\ dq$</li>
+</ul>
+</li>
 <li>The charge that flows per second, .$dq/dt$, is the electric current .$I$:
 $$P = IV = I^2 R = \frac{V^2}{R}$$
 <ul>
@@ -487,12 +490,11 @@ Field inside a Wire
 </h2>
 <ul>
 <li>Voltage can be written in terms of microscopic values (in addition to the macro: .$V = IR$)</li>
-<li>Resistance is related to density by
-$$R = \rho \frac{l}{A}$$</li>
+<li>Recall that resistance is related to density by .$R = \rho \frac{l}{A}$</li>
 <li>We can then write .$V$, .$I$ and .$j$ as
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
-<p>$$V = El = IR = (jA)(\rho \frac{l}{A}) = j \rho l$$
+<p>$$V = El = IR = (jA)\bigg(\rho \frac{l}{A}\bigg) = j \rho l$$
 </div>
 <div class="flex-even markdown-inner">
 <p>$$I = jA$$
@@ -523,9 +525,9 @@ $$\vec j = \sigma \vec E = \frac{\vec E}{\rho}$$</li>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/92e0d2114116bea8db6684977f187d08d97528de title="Last modified by Max Vogel | December 14, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/515500ea6fc511c07631aba20d199d18389ca020 title="Last modified by Max Vogel | December 16, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 14, 2021</span>
+<span>December 16, 2021</span>
 </a>
 </div>
 <div>

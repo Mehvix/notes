@@ -8,13 +8,13 @@
 <meta property="og:description" content="23.1 Electric Potential Energy and Difference #   PE can only be defined for conservative forces  That is, work done by said force is independent of the path taken  Coulomb&rsquo;s Law is conservative because the dependence on position is conservative   Hence, we define .$\Delta U = -W$ with  .$\Delta U = U_b - U_a$ is for a situation where a point charge .$q$ moves from point .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/physics-7b/23/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2021-12-14T13:22:50-08:00">
+<meta property="article:modified_time" content="2021-12-16T10:12:25-08:00">
 <title>23: Electric Potential | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.17044e670944637f4427b486704d0480e1e45a26220780882a472393b4e7d008.js integrity="sha256-FwROZwlEY39EJ7SGcE0EgOHkWiYiB4CIKkcjk7Tn0Ag=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.dcc06b862554387948a0a55a675306812689902f44728b1c994fca64bc9c0546.js integrity="sha256-3MBrhiVUOHlIoKVaZ1MGgSaJkC9EcoscmU/KZLycBUY=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -201,7 +201,7 @@ pass.mehvix.com
 <li>Hence, we define .$\Delta U = -W$ with
 <ul>
 <li>.$\Delta U = U_b - U_a$ is for a situation where a point charge .$q$ moves from point .$a$ to point .$b$</li>
-<li>This is equal to negative work, .$-W = -\vec F d = -(q\vec E) d$ &ndash; (for a uniform .$\vec E$)</li>
+<li>This is equal to negative work, .$-W = -\vec F d = -(q\vec E) d$ (for a uniform .$\vec E$)</li>
 </ul>
 </li>
 </ul>
@@ -248,6 +248,7 @@ $$\Delta U = U_b - U_a = q(V_b - V_a) = qV_{ba}$$</li>
 <div class="flex-even markdown-inner">
 <p>$$V_{ba} = V_b - V_a = - \int_a^b \vec E \cdot d \vec l$$
 $$V_{ba, \text{uniform $\vec E$}} = -E\int_a^b d\vec l = -Ed$$
+&mldr;where .$d$ is the distance of a straight line from point .$a$ to .$b$
 </div>
 </div>
 </li>
@@ -396,31 +397,24 @@ $$V = \frac{1}{4\pi\varepsilon_0} \frac{Ql \cos\theta}{r^2} = \frac{1}{4\pi\vare
 <a class=anchor href=#237-vec-e-determined-from-v>#</a>
 </h1>
 <ul>
-<li>We know that .$V_b - V_a = - \int_a^b \vec E \cdot d\vec l$, which we can write in differential form as .$dV = -\vec E \cdot d\vec l = - E_l dl$. This can be written as</li>
-</ul>
-<p>$$E_l = - \frac{dV}{dl}$$</p>
-<ul>
+<li>We know that .$V_b - V_a = - \int_a^b \vec E \cdot d\vec l$, which we can write in differential form as .$dV = -\vec E \cdot d\vec l = - E_l dl$. This can be written as
+$$E_l = - \frac{dV}{dl}$$</li>
 <li>.$dV$ is the tiny difference in potential between two points a distance .$dl$ apart, and .$E_l$ is the component of the electric field in the direction of the tiny displacement .$d\vec l$</li>
 <li>This is called the gradient of .$V$ in a particular direction: The general case is
-$$\vec E = - \vec \nabla V = - \bigg\langle \frac{\delta V}{\delta x}, \frac{\delta V}{\delta y}, \frac{\delta V}{\delta z} \bigg\rangle$$</li>
+$$\vec E = - \nabla \vec V = - \bigg\langle \frac{\delta V}{\delta x}, \frac{\delta V}{\delta y}, \frac{\delta V}{\delta z} \bigg\rangle$$</li>
+<li>This states that the electric field points &ldquo;downhill&rdquo; towards lower voltages (where there is lower potential)</li>
 </ul>
 <h1 id=238-electrostatic-pe-the-electron-volt>
 23.8 Electrostatic PE; The Electron Volt
 <a class=anchor href=#238-electrostatic-pe-the-electron-volt>#</a>
 </h1>
 <ul>
-<li>
-<p>The electric potential and energy potential due to one point charge .$Q_1$ on another point charge .$Q_2$ separated by .$r_{12}$ are
+<li>The electric potential and energy potential due to one point charge .$Q_1$ on another point charge .$Q_2$ separated by .$r_{12}$ are
 $$V = \frac{1}{4\pi\varepsilon_0} \frac{Q_1}{r_{12}}$$
-$$U = Q_2 V = \frac{1}{4\pi\varepsilon_0} \frac{Q_1 Q_2}{r_{12}}$$</p>
-</li>
-<li>
-<p>The PE is the negative work needed to separate the two charges to infinity.</p>
-</li>
-<li>
-<p>For three points, we can use the superposition principle like we have prior to write
-$$U = \frac{1}{4\pi\varepsilon_0}\bigg( \frac{Q_1 Q_2}{r_{12}}+ \frac{Q_1 Q_3}{r_{13}} + \frac{Q_2 Q_3}{r_{23}} \bigg)$$</p>
-</li>
+$$U = Q_2 V = \frac{1}{4\pi\varepsilon_0} \frac{Q_1 Q_2}{r_{12}}$$</li>
+<li>The PE is the negative work needed to separate the two charges to infinity.</li>
+<li>For three points, we can use the superposition principle like we have prior to write
+$$U = \frac{1}{4\pi\varepsilon_0}\bigg( \frac{Q_1 Q_2}{r_{12}}+ \frac{Q_1 Q_3}{r_{13}} + \frac{Q_2 Q_3}{r_{23}} \bigg)$$</li>
 </ul>
 <h2 id=electron-volt>
 Electron Volt
@@ -497,9 +491,9 @@ $$1 \text{ eV} = 1.6022 \cdot 10^{-19} \text{ J}$$</li>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/92e0d2114116bea8db6684977f187d08d97528de title="Last modified by Max Vogel | December 14, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/515500ea6fc511c07631aba20d199d18389ca020 title="Last modified by Max Vogel | December 16, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>December 14, 2021</span>
+<span>December 16, 2021</span>
 </a>
 </div>
 <div>
