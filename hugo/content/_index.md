@@ -15,6 +15,6 @@ Using [hugo](https://gohugo.io/) + [book](https://github.com/alex-shpak/hugo-boo
 - [ ] Create folders for each department with subfolders for each class 
     - e.g. Math > 53 > \[chapters]
 - [ ] OneDark theme :o
-- [ ] Import old [AP notes](https://github.com/Mehvix/ap-notes)
+- [x] Import old [AP notes](https://github.com/Mehvix/ap-notes)
     - Made in Notion, will need to be cleaned up
 - [ ] HLJS

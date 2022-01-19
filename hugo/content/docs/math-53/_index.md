@@ -5,7 +5,7 @@ bookHidden: false
 bookCollapseSection: true
 aliases:
     - /math-53/
-weight: 2
+weight: 10
 ---
 
 # Chapters
