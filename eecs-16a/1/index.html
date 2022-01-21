@@ -2,19 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Tuesday: Introduction to Imaging #    Slides Example notes 0, 1A   All logistics, no notes">
+<meta name=description content="1-18: Course Introduction #    Slides Example notes 0, 1A   All logistics, no notes!
+Thursday: Imaging. Systems of Linear Equations and Gaussian Elimination. #    Slides    We use devices, such as imagers, that provide information, such as a visual representation of a system  Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Week 1">
-<meta property="og:description" content="Tuesday: Introduction to Imaging #    Slides Example notes 0, 1A   All logistics, no notes">
+<meta property="og:description" content="1-18: Course Introduction #    Slides Example notes 0, 1A   All logistics, no notes!
+Thursday: Imaging. Systems of Linear Equations and Gaussian Elimination. #    Slides    We use devices, such as imagers, that provide information, such as a visual representation of a system  Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-18T16:06:54-08:00">
+<meta property="article:modified_time" content="2022-01-20T19:40:14-08:00">
 <title>Week 1 | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.3ba81b69d8cc17c9b13bf215797bc57f8375e1a11d1c8ba736d47841ac9fac3b.js integrity="sha256-O6gbadjMF8mxO/IVeXvFf4N14aEdHIunNtR4QayfrDs=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.de7ca2836be70b263d67a38c30858d8023c885698c71cc078f33f037332a7c4a.js integrity="sha256-3nyig2vnCyY9Z6OMMIWNgCPIhWmMccwHjzPwNzMqfEo=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -203,14 +205,19 @@ pass.mehvix.com
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#tuesday-introduction-to-imaging>Tuesday: Introduction to Imaging</a></li>
+<li><a href=#1-18-course-introduction>1-18: Course Introduction</a></li>
+<li><a href=#thursday-imaging-systems-of-linear-equations-and-gaussian-elimination>Thursday: Imaging. Systems of Linear Equations and Gaussian Elimination.</a>
+<ul>
+<li><a href=#linear-algebra>Linear Algebra</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=tuesday-introduction-to-imaging>
-Tuesday: Introduction to Imaging
-<a class=anchor href=#tuesday-introduction-to-imaging>#</a>
+<article class=markdown><h1 id=1-18-course-introduction>
+1-18: Course Introduction
+<a class=anchor href=#1-18-course-introduction>#</a>
 </h1>
 <ul>
 <li>
@@ -220,13 +227,88 @@ Tuesday: Introduction to Imaging
 <a href=https://eecs16a.org/lecture/Note1A.pdf>1A</a></li>
 </ul>
 <hr>
-<p>All logistics, no notes</p>
+<p>All logistics, no notes!</p>
+<h1 id=thursday-imaging-systems-of-linear-equations-and-gaussian-elimination>
+Thursday: Imaging. Systems of Linear Equations and Gaussian Elimination.
+<a class=anchor href=#thursday-imaging-systems-of-linear-equations-and-gaussian-elimination>#</a>
+</h1>
+<ul>
+<li>
+<a href=https://eecs16a.org/lecture/Lecture0B_Slides.pdf>Slides</a></li>
+</ul>
+<hr>
+<ul>
+<li>We use <em>devices</em>, such as imagers, that provide <em>information</em>, such as a visual representation of a system
+<ul>
+<li>Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.</li>
+</ul>
+</li>
+<li>When we take projections of images, we tend to need to take multiple measuring (pictures) from differing angles
+<ul>
+<li>Otherwise we have issues with overlap and ambiguity</li>
+<li>To generate 3D models, we need these multiple perspectives</li>
+</ul>
+</li>
+<li>We ideally want to design a system that gives us a set of linear equations
+<ul>
+<li>Some times we can only approximate these linear equations</li>
+<li>Lots of physical processes (i.e xrays!) are exponential so we just slap a log on it
+<ul>
+<li>.$\hat y = p \cdot (e^{x_1} + \dots + e^{x_n})$</li>
+<li>.$y = -\log_e (\hat y \cdot p^{-1}) = x_1 + \dots + x_n$</li>
+<li>.$\hat y$ is our measured energy value</li>
+<li>.$x_n$ is the .$n$th &lsquo;pixel&rsquo;</li>
+<li>.$p$ is the power of the energy source</li>
+</ul>
+</li>
+<li>To solve, we need enough independent equations that do not contain redundant information, otherwise there will be multiple ambiguous solutions</li>
+<li>Different models are made up of different configurations (of the energy source and measuring sensor) and result in different system of equations
+<ul>
+<li>We can obtain equations by moving both the energy source and measuring sensor (think document scanner) to get each individual pixel</li>
+<li>We can could also move the energy source alone instead &ndash; think camera pointed at image with a projector used to light up certain (group of) pixel(s)
+<ul>
+<li>Different patterns have pros/cons &ndash; speed, resolution, accuracy, number of measurements, energy use</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=linear-algebra>
+Linear Algebra
+<a class=anchor href=#linear-algebra>#</a>
+</h2>
+<ul>
+<li>The study of linear functions and linear equations, typically using vectors and matrices</li>
+<li>Linearity is not always applicable, but can be a good first-order approximation</li>
+<li>There exist good fast algorithms to solve these problems (and lots of fun properties!)</li>
+<li>Consider .$f(x_1, \dots, x_n) : \mathbb{R}^n \to \mathbb{R}$; .$f$ is linear if the following hold
+<ol>
+<li>Homogeneity: .$f (\alpha x_1, \dots, \alpha x_n) = \alpha f(x_1, \dots, x_n)$</li>
+<li>Super position (distributivity): if .$x_i = y_i + z_i$ then .$f(y_1 + z_1, \dots, y_n + z_n) = f(y_1, \dots y_n) + f(z_1, \dots z_n)$</li>
+</ol>
+</li>
+<li>Linear functions can always be expressed as .$f(x_1, \dots, x_n) = c_1 x_1 + \dots + c_n x_n$
+<ul>
+<li>For .$\mathbb{R}^2$, that is, .$f(x_1, x_2) = c_1 x_1 + c_2 x_2$</li>
+<li>We know this system is linear so it follows these two rules above. So we should set up an equation where we can apply these properties.
+<blockquote>
+<p>$$x_1 = x_1 y_1 + x_1 z_1;\ x_2 = x_2 y_2 + x_2 z_2$$
+$$\text{Let } y_1 = 1, z_1 = 0; y_2 = 0, z_2 = 1$$
+$$ \Longrightarrow x_1 = 1 \cdot x_1 + 0 \cdot x_2; x_2 = 0 \cdot x_1 + 1 \cdot x_2$$
+$$\text{Therefore, } f(x_1, x_2) = f(x_1, y_1 + x_2$$</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/0982b49aca8ca2b55b0c4da1d9e9d0a30450cb4c title="Last modified by Max Vogel | January 19, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/de47957e730f940a148d309512020a36cddd11c8 title="Last modified by Max Vogel | January 21, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 19, 2022</span>
+<span>January 21, 2022</span>
 </a>
 </div>
 <div>
@@ -246,7 +328,12 @@ Tuesday: Introduction to Imaging
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#tuesday-introduction-to-imaging>Tuesday: Introduction to Imaging</a></li>
+<li><a href=#1-18-course-introduction>1-18: Course Introduction</a></li>
+<li><a href=#thursday-imaging-systems-of-linear-equations-and-gaussian-elimination>Thursday: Imaging. Systems of Linear Equations and Gaussian Elimination.</a>
+<ul>
+<li><a href=#linear-algebra>Linear Algebra</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
