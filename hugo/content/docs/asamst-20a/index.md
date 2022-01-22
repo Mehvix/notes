@@ -93,9 +93,62 @@ __Racial Formation__
         - Gramsci wrote about hegemony as in “how does power operate when there is one party that maintains much of the mechanisms of culture and state?” 
             - You have agency. A consensus that results from an agreement (not so much voluntary, but through negotiation)
 
+__What is a "Race" versus an "Ethnicity"?__
+_Consider the challenge of formally categorizing groups:_
+- The U.S. Census Bureau uses the term "Hispanis"
+    - Who are "Hispanics"?
+    - Who ae "Latinos"?
+    - (incomplete)
 
+__Taki referred to the popular perception of Asian Americans as:__
+1. __Model Minority:__ A trope that gained traction in the 1960s that stresses the prototypical Asian’s high achievement in socioeconomic status and focuses on their culture to explain their “success”; denies racism and other hardships that are experienced by Asian Americans; comparison between one minority group and another 
+2. __Perpetual Foreigner:__ stereotype in which naturalized and even native-born citizens are perceived by some members of the majority as foreign because they belong to a minority ethnic or racial group.
 
+_Twin pillars of how Asian Americans are constructed_
+> How do these sterotypes and categories affect cultural and legal outcomes for Asian Americans?
 
+__The Social Construction of Race__
+- The idea that race is socially constructed emerged as a response to the view that race is based on biology
+    - What does it mean to say that race is _not_ based on biology? Does it mean that there are no biological or genetic bases to difference?
+    - What is the difference between _(incomplete)_ and _race_?
+    - Blood quantum: the idea that if you have any drop of African American ancestry, in that jurisdiction/state, you are legally classified as black
+        - For whites to maintain racial purity, property, power, and __perpetuated the classification/segregation of people on the basis of race__
 
+__Class Question: How has federal jurisdiction driven civil rights protections from the time of early Asian immigrants to the U.S. to the 2020s?__
 
-# Week 2
+- For example, the Interstate Commerce Act addressed the problem of railroad monopolies by setting guidelines for how the railroads could do business.
+
+__Insiders and Outsiders__
+1. As cited in footnote 4 of the U.S. Supreme Court's _Carolene Products the Tainted Milk_, case:
+> “prejudice directed against discrete and insular minorities may call for “more searching judicial inquiry.”
+- Ensured that former slave-holding states would abide by this 14th amendment that said that African Americans had to have citizenship rights
+- Created a legal authority when the former slave-holding states tried to reinstitute some form of slavery 
+2. _Racial formation_ construction? (incomplete)
+
+__Sojourners vs. Immigrants__
+- Labor and capital interests drove demand for cheap labor during U.S. industrialization
+
+__Push and Pull__
+- Geopolitical
+- political economic factors
+
+__Alienation of Migration Guangdong Chinese Women sang__
+> _Dear husband, ever since you sojourned.  
+> In a foreign land.  
+> I've lost interest in all matters.  
+> All day long, I stay inside the bedroom,  
+> My brows knitted; ten thousand  
+> Thoughts bring me endless remorse, in  
+> Grief, in silence.  
+> I cannot fall asleep on my lonely pillow._
+
+__1882 Chinese Exclusion Act__
+- Racialized labor conflict and competition
+- The main landmark that stems from aliens ineligible for citizenship
+
+__Agency, Resistance and Contestation__
+- Yick Wo v. Hopkins, USC 1996
+    - Provides the basis for the important legal evidence standard of "disparate impact"
+    - Supreme Court said that San Francisco zoning law is in violation of the 14th Amendment
+
+__120,000 Americans of Japanese descent on the Western U.S. seaboard were sent to internment camps. 75% of internees were American citizens by birth.__
