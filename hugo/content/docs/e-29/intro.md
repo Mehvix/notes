@@ -1,5 +1,5 @@
 ---
-title: "Week 0"
+title: "Introduction"
 weight: 1
 ---
 
@@ -118,9 +118,17 @@ In this class we will consider multiple families of materials:
 
 # 1-20: Tolerancing principles
 
-- See [why we study tolerancing](1.md#tolerance) from yesterday's notes
+- See [why we study tolerancing](1.md#tolerance) from yesterday's notes. tl;dr: 
 
-## Basic tolerance formats
+> Tolerancing is the practice of specifying the acceptable range of values of a component’s physical parameter, such as a dimension. We need dimensional tolerancing to: 
+> 1. Ensure that components will fit together satisfactorily in a vast majority of cases, and  
+> 2. Communicate to manufacturers of the individual components how much effort they need to put into controlling dimensional variability, so that function is achieved without unnecessary cost. 
+
+## Basic tolerancing
+
+### Tolerance formats
+
+> Conventionally toleranced dimensions define two values between which the size of a feature is allowed to lie. The range is often referred to as the 'tolerance', 'tolerance zone' or 'tolerance band'. Several formats can be used to write the toleranced dimension: 
 
 1. Unilateral
    - e.g. Inches: .$.500^{+0.005}_{-0.000}$, Metric: .$35^{+0.05}_0$ (notice [sigfig](https://en.wikipedia.org/wiki/Significant_figures) notation)
@@ -133,7 +141,9 @@ In this class we will consider multiple families of materials:
    - Given only bounds, not the nominal value
    - e.g. Inches: .$.250, .248$, Metric: .$35.05, 35.00$
 
-## Tolerance buildup
+### Tolerance buildup
+
+> Some dimensions are more critical than others for the operation of a component. It is important that  these are directly toleranced so that they lie within required limits without imposing unduly tight tolerances on other dimensions.
 
 - In the real world we have error, so the way we define dimensions have an impact
 - Best dimensions to label depend on function
@@ -153,7 +163,14 @@ In this class we will consider multiple families of materials:
 {{< /hint >}}
 
 
-## Normal cumulative distribution function
+## Relationship between tolerance and process
+
+- Manufacturing processes have inherent variability that is a characteristic of the process and can come  from various sources 
+    - e.g. operator error, uncontrolled thermal contraction, tool wear, material property  variability, or startup effects such as in injection molding machines
+- This variability can be modeled statistically (often as a normal/Gaussian distribution, although other distributions may be a better fit for some processes). 
+    - If the variability is Gaussian, it can be characterized by the stdiv .$\sigma$ of the distribution. 
+    - The larger the ratio of the standard deviation to the tolerance, the more components will lie outside acceptable values and the more will have to be scrapped or re-worked. 
+    - The **process capability** is the dimensionless ratio of the tolerance to .$6\sigma$
 
 {{< columns >}}<!-- mathjax fix -->
 - Tighter tolerances (closer tolerance limits) are generally more expensive to achieve
@@ -183,7 +200,7 @@ In this class we will consider multiple families of materials:
 {{< /expand >}}
 
 
-## Process capability and tolerancing
+### Process capability and tolerancing
 
 - Sigma, .$\sigma$, is the standard deviation of dimensions actually produced by a process
 - [Six sigma processes](https://en.wikipedia.org/wiki/Six_Sigma)
@@ -193,9 +210,16 @@ In this class we will consider multiple families of materials:
         - You're best off spending money improving the process so the distribution gets tighter 
         - The alternative is either (1) accepting errors (resulting in faulty products) or (2) testing all components to ensure they are 'good' and tossing out the bad ones
     - Process capability: .$C_p = \frac{\text{USL - LSL}}{6\sigma}$
-
+    - Controlling processes to six-sigma levels is now commonplace in precision manufacturing. 
+- **Processes can drift over time**, meaning that its mean output can shift. 
+    - If it does so, a larger proportion of components will fall out of tolerance. 
+    - Process variability (i.e. .$\sigma$) can also change, and if it increases, more components will also fail to meet specifications. 
+    - Under either of these circumstances the process would be described as out of control. 
+    - To know whether a process is in control, we do not necessarily have to measure every single manufactured component; rather, we can periodically sample the output of the process and infer the process mean and variance from these samples.  
 
 ## Classes of Fit
+
+> When components fit together we usually have some requirement for how easily they need to be able to move relative to each other. The American National Standards Institution (ANSI) has defined a series of grades of fit for which tolerance zone sizes are specified in tables, and which are designed for specific applications. These grades and their associated tolerance zones are described and illustrated in the slides. 
 
 - Tolerances should be...
     - Not too tight: tight tolerances are expensive
@@ -205,41 +229,46 @@ In this class we will consider multiple families of materials:
 ![Zones](/docs/e-29/0/zones.png)
 
 1. **Clearance fit:** designed with space left between two components
-    - e.g. a shaft with a bearing need to have some give / free space
+    - e.g. a piston in a cylinder, or a bolt passing through a hole
+    - In this case, a finite space must be left between the components, wherever their manufactured dimensions lie in their tolerance zones. 
 2. **Interference (push) fit:** designed to be touching
     - You may want interference because you want the friction between the components; you want the two pieces to not move/rotate/etc
-    - How? Elastic or even plastic deformation
-    - e.g. two pieces may need to fit tightly with friction as to prevent vibrations
-    - Expansion fit:
+    - This type of fit can be used to achieve precise relative positioning and hold components together
+    - How? Elastic or even plastic deformation. This leads to the components exert load on each other, resisting relative motion
+    - e.g. two pieces may need to fit tightly with friction as to prevent vibrations, or Lego bricks clicking together
+    - **Expansion fit:**
         - If there are large forces/torques acting on these two components so you want them **very tight**
-        - e.g. you may temporarily expand one component (e.x. with heat) to fit on/around the other, then it will shrink down
-    - Shrink fit:
+            - e.g. fitting a cutting tool into a collet for a machine tool, or a gear on to a drive shaft
+        - You may temporarily expand one component (e.x. with heat) to fit on/around the other, then it will shrink down
+    - **Shrink fit:**
         - Same as expansion, but using some cooling process (e.x. liquid nitrogen)
         - Why do this over heat? 
             - It's typically more expensive to cool down
-            - The material may deform / weaken -- e.g. steel will be degraded if heated up
+            - The material may deform / weaken; e.g. steel may be degraded if heated up, [annealing](https://en.wikipedia.org/wiki/Annealing_(materials_science)) may occur
+    - Shrink/expansion fits fit enables a tight fit to be achieved without applying large loads/impulses to the components (e.g. with a hammer) to get them to mate. Thus, the risk of component damage can be reduced compared to a simple force fit
 3. **Transition fit:** complete interchangeability is compromised to allow looser tolerance on individual components.
+    - That is, the tolerance zones of the two components _partially overlap_, so that depending on where particular components lie in their tolerance zones, the fit could be either clearance or interference. 
     - If fit type is not critical.
     - But even then, why not choose one or the other? Because you don't want a large gap and the materials/parts cannot withstand the force needed to assemble them with an interference fit. 
     - The pieces are just for alignment -- think Ikea assembly pegs; they're just to align components. 
     - It's easier to manufacture these parts
 {{< /hint >}}
 
-{{< hint "info" >}}<!-- mathjax fix -->
-### Snap fits
-
-![Snap](/docs/e-29/0/snap.png)
+4. **Snap fits:**
+{{< columns >}}<!-- mathjax fix -->
 - Involves temporary elastic deflection which enables parts to interlock, e.g. involving bending of one component
 - Done often with molded parts
 - Tends to involve Cantilever (e.g. casings), Annular (e.g. pen lids, take-out soup container lids)
-- Designed to be assembled once, and typically not disassembled (multiple times) -- irreversible. 
-- Relatively simple: you don't need screws/glues/etc. -- useful for rapid prototyping since you don't have to consider fasteners
-- Takes advantage of the fact that the material has some elasticity
-    - You need to stay within the elasticity limits of the material
-    - Most 3D plastics have 'enough' give
-    - You (generally) want to design such that the stress is from bending, not stretching
-- [More](https://coloringchaos.github.io/form-fall-16/joints), [additional](https://www.pinterest.com/Gilson_Design/), [extra](https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/), [readings](https://productdesignonline.com/wp-content/uploads/2019/08/Snap-Fit-Design-Manual.pdf)
-{{< /hint >}}
+<---><!-- mathjax fix -->
+![Snap](/docs/e-29/0/snap.png)
+{{< /columns >}}
+    - Designed to be assembled once, and typically not disassembled (multiple times) -- irreversible. 
+    - Relatively simple: you don't need screws/glues/etc. -- useful for rapid prototyping since you don't have to consider fasteners
+    - Takes advantage of the fact that the material has some elasticity
+        - You need to stay within the elasticity limits of the material
+        - Most 3D plastics have 'enough' give
+        - You (generally) want to design such that the stress is from bending, not stretching
+    - [More](https://coloringchaos.github.io/form-fall-16/joints), [additional](https://www.pinterest.com/Gilson_Design/), [extra](https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/), [readings](https://productdesignonline.com/wp-content/uploads/2019/08/Snap-Fit-Design-Manual.pdf)
 
 
 ### Terminology Definitions
@@ -262,7 +291,7 @@ In this class we will consider multiple families of materials:
 {{< /hint >}}
 
 
-## Types of fit
+### Types of fit
 
 - These types are created by ANSI: American National Standards Institute
 - Exact values are tabulated in many source
@@ -317,25 +346,27 @@ In this class we will consider multiple families of materials:
 {{< /expand >}}
 
 
-## Processes, tolerances, and surface quality
+## Process selection
 
 - How do we relate physical processes and tools to these values?
+- A manufacturing process needs to be chosen carefully based on its inherent variability, the required tolerance, and the cost of scrapping or re-working.
 > {{< figure  src="/docs/e-29/0/processes-tol.png" >}}
 > From _MF Ashby, Materials Selection in Mechanical Design_
 
-
 ### Roughness
 
-- How do we define roughness? You may use tool that uses a tiny needle to 'scan' the surface, measuring deflections as you go
+- In some cases, the average value of a dimension (e.g. the diameter of a turned shaft) might be tightly controlled by a skilled operator, but the roughness (variability of surface position within a feature) might still be considerable (e.g. because of machine vibration) and could introduce additional dimensional variability. 
+    - This variability could adversely affect our ability to achieve a desired fit!
+- So, how do we define roughness? You may use tool that uses a tiny needle to 'scan' the surface, measuring deflections as you go
 > {{< figure  src="/docs/e-29/0/roughness.png" >}}
 > From _MF Ashby, Materials Selection in Mechanical Design_
 - **RMS roughness:** root mean square of deviations over the measured surface length
     - i.e.: .$R^2 = L^{-1} \int_0^L y^2\ dx$
     - Usually, tolerance, .$T$, lies between 5R and 1000R
+    - The RMS is a simple and useful metric although it gives no information about the lateral length scales of any roughness.
+- The rule-of-thumb is that the **surface roughness should be no more than about 20% of the tolerance zone**, and ideally 
+considerably less than that. 
 - Generally, if you go high rotation speed and slow translational speed you get less rough surfaces
-{{< expand "RMS Roughness Example" >}}
-{{< figure  src="/docs/e-29/0/rms-ex.png" >}}
-{{< /expand >}}
 
 
 
