@@ -4,7 +4,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="notes #  Using hugo + book theme. Feel free to point out or even correct mistakes by creating an issue/ PR or through reaching out to any of my contacts listed on my website.
- todos #   OneDark theme :o HLJS &ndash; will implement if I ever end up taking notes in a CS class Hugo function to generate preview of each class' notes on the their respective &lsquo;home&rsquo; pages  E.">
+contributing #  Make a pull request on the GitHub repository. You only have to edit the master branch, GH actions generate the site after each push in the gh-pages branch (so ignore it).
+When cloning this repository, you will (probably) have to run the following command to pull the book theme submodule:">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Home">
 <meta property="og:description" content>
@@ -15,7 +16,7 @@
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.eadc7175579f5563f4dc999ebc30fc39d9607c74f093c60a6a4bcdb39ddd43fb.js integrity="sha256-6txxdVefVWP03JmevDD8OdlgfHTwk8YKakvNs53dQ/s=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.400902838ac0401c57f23b865b8aacdd7cb9dcdc6e9ac55f7a3f89ee5490a996.js integrity="sha256-QAkCg4rAQBxX8juGW4qs3Xy53NxumsVfej+J7lSQqZY=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=http://notes.mehvix.com/index.xml title=notes.mehvix.com>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
@@ -41,6 +42,20 @@
 </div>
 <ul>
 <li>
+<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
+<a role=button>CogSci C100</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
+</li>
+</ul>
+</li>
+<li>
 <input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle>
 <label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/eecs-16a/>EECS 16A</a>
@@ -48,6 +63,9 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/eecs-16a/0/>Week 0</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1</a>
 </li>
 </ul>
 </li>
@@ -58,7 +76,13 @@
 </label>
 <ul>
 <li>
-<a href=http://notes.mehvix.com/e-29/0/>Week 1</a>
+<a href=http://notes.mehvix.com/e-29/intro/>Introduction</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/0/>Week 0</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/1/>Week 1</a>
 </li>
 </ul>
 </li>
@@ -208,11 +232,9 @@ pass.mehvix.com
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#notes>notes</a>
-<ul>
+<li><a href=#notes>notes</a></li>
+<li><a href=#contributing>contributing</a></li>
 <li><a href=#todos>todos</a></li>
-</ul>
-</li>
 </ul>
 </nav>
 </aside>
@@ -227,16 +249,23 @@ notes
 <a href=https://github.com/Mehvix/notes/issues/new>issue</a>/
 <a href=https://github.com/Mehvix/notes/compare>PR</a> or through reaching out to any of my contacts listed on
 <a href=https://www.mehvix.com>my website</a>.</p>
-<hr>
-<h2 id=todos>
+<h1 id=contributing>
+contributing
+<a class=anchor href=#contributing>#</a>
+</h1>
+<p>Make a pull request on the
+<a href=https://github.com/Mehvix/notes>GitHub repository</a>. You only have to edit the <code>master</code> branch, GH actions generate the site after each push in the <code>gh-pages</code> branch (so ignore it).</p>
+<p>When cloning this repository, you will (probably) have to run the following command to pull the book theme submodule:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cmd data-lang=cmd>git submodule update --init --recursive
+</code></pre></div><h1 id=todos>
 todos
 <a class=anchor href=#todos>#</a>
-</h2>
+</h1>
 <ul>
 <li><input disabled type=checkbox>
 <a href=https://raw.githubusercontent.com/joshdick/onedark.vim/main/img/color_reference.png>OneDark</a> theme :o</li>
 <li><input disabled type=checkbox> HLJS &ndash; will implement if I ever end up taking notes in a CS class</li>
-<li><input disabled type=checkbox> Hugo function to generate preview of each class' notes on the their respective &lsquo;home&rsquo; pages
+<li><input disabled type=checkbox> Hugo function to generate preview of each class&rsquo;s notes on the their respective &lsquo;home&rsquo; pages
 <ul>
 <li>E.x notes.mehvix.com/e-29/ would show a compilation of every week&rsquo;s table of contents</li>
 </ul>
@@ -254,9 +283,9 @@ todos
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/de47957e730f940a148d309512020a36cddd11c8 title="Last modified by Max Vogel | January 21, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/dec1272289a359e91aea93eb99a091bf4b584bc6 title="Last modified by Max Vogel | January 25, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 21, 2022</span>
+<span>January 25, 2022</span>
 </a>
 </div>
 <div>
@@ -276,11 +305,9 @@ todos
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#notes>notes</a>
-<ul>
+<li><a href=#notes>notes</a></li>
+<li><a href=#contributing>contributing</a></li>
 <li><a href=#todos>todos</a></li>
-</ul>
-</li>
 </ul>
 </nav>
 </div>
