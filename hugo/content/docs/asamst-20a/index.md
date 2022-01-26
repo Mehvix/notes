@@ -152,3 +152,40 @@ __Agency, Resistance and Contestation__
     - Supreme Court said that San Francisco zoning law is in violation of the 14th Amendment
 
 __120,000 Americans of Japanese descent on the Western U.S. seaboard were sent to internment camps. 75% of internees were American citizens by birth.__
+
+# Week 2 (January 25 & 27): The racialization of Asian Americans: contemporary images and historical transformations.
+
+Reading: Okihiro, _Common Ground_, Preface & Ch. 2: “White and Black.”
+
+__Class Question:__ Okihiro writes in his preface that his book _Common Ground_ is about the "creation of the American character and subject."
+
+What does he mean by that?
+- the social construction of the nation
+
+__Binaries as convenient cognitive and socio-political constructs__
+
+- Binaries offer coherence, especially during times of social upheaval. They preserve rule amidst apparaent chaos, and stability amidst rapid change, such as during the late eighteenth, nineteenth, and twntieth centuries (i.e industrial revolution, enlightenment, romanticism). Those periods of American history occasioned social reconstitutions of geographies, race, gender, sexuality and nationality that helped to define and regulate identities, the state, and the social formation.
+
+__Break out question:__ What are some modern-day binaries and what socio-political institutions or relationships and hierarchies do they support?
+- gender norms, environmental conservation, wealth inequality
+
+__What are some binary ideas or myths based on the social construction of an East vs. West divide?__
+- Rudyard Kipling _The Ballad of East and West_, 1889
+    > Oh,  East is East, and West is West, and never the twain shall meet,
+    > Till Earth and Sky stand presently at God's great Judgment Seat;
+    > But there is neither East nor West, Border, nor Breed, nor Birth,
+    > When two strong men stand face to face, though they come from the ends of the earth!
+    - These poems pervade our perceptions and are descriptors for historical moments in time. They are important signifiers of binaries
+
+__Model Minority vs. Perpetual Foreigner__
+- Are these two poles of the social construction of Asian Americans binary?
+- How do they serve to construct the "Asian American subject?"
+
+__Korematsu v. United States__
+> "In response to the Japanese attack on Pearl Harbor during World War II, the U.S. government decided to require Japanese-Americans to move into relocation camps as a matter of national security. President Franklin Roosevelt signed Executive Order 9066 in February 1942, two months after Pearl Harbor. A Japanese-American man living in San Leandro, Fred Korematsu, chose to stay at his residence rather than obey the order to relocate. Korematsu was arrested and convicted of violating the order. He responded by arguing that Executive Order 9066 violated the Fifth Amendment. The Ninth Circuit affirmed Korematsu's conviction." - Oyez
+- __Conclusion:__ The Court ruled against Korematsu. The Court believed that the decision was valid because it was a necessity amid the danger of espionage and sabotage. 
+
+__Common ground vs. Mrgins as the Mainstream__
+- Okihiro writes that his book seeks to reject binaries and to advocate for a "open, borderless" common ground" versus his prior argument that the mainstream norms, rights, values of America were created by the margins.
+    - meaning that the _margins create the mainstream._ 
+
