@@ -8,13 +8,13 @@
 <meta property="og:description" content="1-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-25T12:34:18-08:00">
+<meta property="article:modified_time" content="2022-01-26T11:51:22-08:00">
 <title>Week 1 | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.400902838ac0401c57f23b865b8aacdd7cb9dcdc6e9ac55f7a3f89ee5490a996.js integrity="sha256-QAkCg4rAQBxX8juGW4qs3Xy53NxumsVfej+J7lSQqZY=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.00d25fbebe518e79e0a7470deaae846056cdb95a4d4a71f24725db9cc0766fd8.js integrity="sha256-ANJfvr5Rjnngp0cN6q6EYFbNuVpNSnHyRyXbnMB2b9g=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -55,7 +55,7 @@
 <li>
 <input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
 <label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/eecs-16a/>EECS 16A</a>
+<a role=button>EECS 16A</a>
 </label>
 <ul>
 <li>
@@ -69,12 +69,9 @@
 <li>
 <input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
 <label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/e-29/>Engineering 29</a>
+<a role=button>Engineering 29</a>
 </label>
 <ul>
-<li>
-<a href=http://notes.mehvix.com/e-29/intro/>Introduction</a>
-</li>
 <li>
 <a href=http://notes.mehvix.com/e-29/0/>Week 0</a>
 </li>
@@ -279,8 +276,62 @@ $$\begin{bmatrix}
 <li>The solution is reached when the diagonal is all one, the remaining is zero (excluding the rightmost &lsquo;answer&rsquo; colum)</li>
 </ul>
 </li>
-<li>More general
-<a href=https://en.wikipedia.org/wiki/Row_echelon_form>row echelon form</a> in the notes</li>
+<li>More precisely, a matrix is in
+<a href=https://en.wikipedia.org/wiki/Row_echelon_form>row echelon form</a> when the following criteria are met:
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>All nonzero rows are above all zero rows.</li>
+<li>The leading coefficient of a non-zero row is always to the right of the leading coefficient of the row above it.</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\begin{bmatrix}
+1 & * & * & * & \text{|} & *\\
+0 & 1 & * & * & \text{|} & *\\
+0 & 0 & 0 & 1 & \text{|} & *\\
+0 & 0 & 0 & 0 & \text{|} & 0\\
+\end{bmatrix}$$
+</div>
+</div>
+<ul>
+<li>The leading coefficient of every non-zero row (which we call the pivot, and say is in the pivot position) is 1.
+<ul>
+<li>Some textbooks will require this third property, others don&rsquo;t</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In addition to row echelon form, there is also reduced row echelon form.
+<ul>
+<li>This requires that: In addition, after the upwards propagation of variables in step (3), we will obtain a matrix with the following properties, in addition to the two mentioned above:
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ol>
+<li>The matrix is in row echelon form.</li>
+<li>The leading coefficient of every non-zero row (which we call the pivot, and say is in the pivot position) is 1.</li>
+<li>Each column with an element that is in the pivot position of some row has 0s everywhere else.</li>
+</ol>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\begin{bmatrix}
+1 & 0 & * & 0 & \text{|} & *\\
+0 & 1 & * & 0 & \text{|} & *\\
+0 & 0 & 0 & 1 & \text{|} & *\\
+0 & 0 & 0 & 0 & \text{|} & 0\\
+\end{bmatrix}$$
+</div>
+</div>
+</li>
+<li>Sometimes abbreviated (especially in programming) as <code>rref</code>.</li>
+<li>By construction, the Gaussian elimination algorithm always results in a matrix that is in reduced row echelon form.
+<ul>
+<li>Once an augmented matrix is reduced to reduced row echelon form, variables corresponding to columns containing leading entries are called <strong>basic variables</strong>, and the remaining variables are called <strong>free variables</strong></li>
+</ul>
+</li>
+<li>As will be discussed shortly, the distinction between basic and free variables allows us to characterize all solutions to the system of linear equations (if any exist!).</li>
+</ul>
+</li>
 </ul>
 <div class=book-expand>
 <label>
@@ -306,10 +357,10 @@ $$\begin{bmatrix}
 \end{bmatrix}$$
 </div>
 </div>
-<p>&mldr;and we can row-reduce to upper triangle (Row echelon)</p>
+<p>&mldr;and we can <strong>row-reduce</strong> to upper triangle (Row echelon)</p>
 <figure><img src=/docs/eecs-16a/1/tri.png>
 </figure>
-<p>&mldr;which we can use <a href=https://en.wikipedia.org/wiki/Triangular_matrix#Forward_and_back_substitution>back substitution</a> to solve</p>
+<p>&mldr;which we can use <a href=https://en.wikipedia.org/wiki/Triangular_matrix#Forward_and_back_substitution><strong>back substitution</strong></a> to solve</p>
 <figure><img src=/docs/eecs-16a/1/back.png>
 </figure>
 </div>
@@ -360,9 +411,9 @@ $$\begin{bmatrix}
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/dec1272289a359e91aea93eb99a091bf4b584bc6 title="Last modified by Max Vogel | January 25, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/87f19cf937a771ece289036967692f431dcb7dc3 title="Last modified by Max Vogel | January 26, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 25, 2022</span>
+<span>January 26, 2022</span>
 </a>
 </div>
 <div>
