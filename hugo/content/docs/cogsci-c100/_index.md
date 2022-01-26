@@ -1,9 +1,10 @@
 ---
-title: "EECS 16A"
+title: "CogSci C100"
 bookFlatSection: false
 bookHidden: false
 bookCollapseSection: true
 aliases:
-    - /eecs-16a/
+    - /cogsci-c100/
 weight: 1
 ---
+
