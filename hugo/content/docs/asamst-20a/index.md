@@ -86,7 +86,7 @@ __Racial Formation__
     - Do the courts drive the outcome? Legal institions?
     - 1690: the brewing slave trade
     - 1790: contestation around what “white” meant. Before the slave trade was active, the primary source of labor was young Irish women. Came as indentured servants (a form of labor in which a person is contracted to work without salary for a specific number of years). Example of instability around what being “white” meant. 
-- Sociologists Omi and Winant describe the fluidity of racial constructions over time dependent on political interests and socio-economic (incomplete)
+- Sociologists Omi and Winant describe the fluidity of racial constructions over time dependent on political interests and socio-economic forces, as "racial formation."
 - What is Omi and Winant's concept of "common sense"?
     - “Common sense” derives from Italian philosopher and political economist Antonio Gramsci’s theories on asymmetry in political power and the interest conflicts that may emerge as a result. 
         - I.e. today’s “Common sense” surrounding gender is that gender is a social construct as opposed to one’s sex. 
@@ -98,7 +98,8 @@ _Consider the challenge of formally categorizing groups:_
 - The U.S. Census Bureau uses the term "Hispanis"
     - Who are "Hispanics"?
     - Who ae "Latinos"?
-    - (incomplete)
+- Is "Asian AMerican" a race descriptor?
+- Is "Hmong American" a race or an ethnicity descriptor?
 
 __Taki referred to the popular perception of Asian Americans as:__
 1. __Model Minority:__ A trope that gained traction in the 1960s that stresses the prototypical Asian’s high achievement in socioeconomic status and focuses on their culture to explain their “success”; denies racism and other hardships that are experienced by Asian Americans; comparison between one minority group and another 
@@ -110,7 +111,7 @@ _Twin pillars of how Asian Americans are constructed_
 __The Social Construction of Race__
 - The idea that race is socially constructed emerged as a response to the view that race is based on biology
     - What does it mean to say that race is _not_ based on biology? Does it mean that there are no biological or genetic bases to difference?
-    - What is the difference between _(incomplete)_ and _race_?
+    - What is the difference between _difference_ and _race_?
     - Blood quantum: the idea that if you have any drop of African American ancestry, in that jurisdiction/state, you are legally classified as black
         - For whites to maintain racial purity, property, power, and __perpetuated the classification/segregation of people on the basis of race__
 
@@ -123,7 +124,7 @@ __Insiders and Outsiders__
 > “prejudice directed against discrete and insular minorities may call for “more searching judicial inquiry.”
 - Ensured that former slave-holding states would abide by this 14th amendment that said that African Americans had to have citizenship rights
 - Created a legal authority when the former slave-holding states tried to reinstitute some form of slavery 
-2. _Racial formation_ construction? (incomplete)
+2. _Racial formation_ construction?
 
 __Sojourners vs. Immigrants__
 - Labor and capital interests drove demand for cheap labor during U.S. industrialization
