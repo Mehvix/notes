@@ -95,6 +95,13 @@ weight: 1
 - If the activation of the neuron reaches a certain minimum threshold, the neuron will fire
 {{< /columns >}}
 
+{{< expand "16A Notes" >}}
+>  Because circuit analysis translates to a wide range of fields, we can model many physical systems as electrical circuits, often gaining insight about the system. You may have heard of neural networks, an important machine learning tool that can be used to “learn” tasks such as image and voice recognition from examples instead of explicit programming. Neural networks are modeled after biological neural networks, which are fundamentally circuits operating on electrical signals within a brain:
+> ![](/docs/cogsci-c100/perception/16A.png)
+> In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. ([from EECS16A Note0](https://eecs16a.org/lecture/Note0.pdf))
+{{< /expand >}}
+
+
 {{< columns >}}<!-- mathjax fix -->
 - Artificial neural networks (ANN)
     - The nodes or neurons are organized into layers in much the same way that human neural networks are

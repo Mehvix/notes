@@ -7,7 +7,3 @@ aliases:
     - /eecs-16a/
 weight: 1
 ---
-
-# Weeks:
-
-{{< lst "/eecs-16a/1" >}}

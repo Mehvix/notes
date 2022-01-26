@@ -7,7 +7,3 @@ aliases:
     - /e-29/
 weight: 1
 ---
-
-# Weeks:
-
-{{< lst "/e-29/1" >}}
