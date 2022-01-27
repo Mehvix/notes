@@ -10,13 +10,13 @@
 1-20: Introduction to Imaging, Tomography, and Linear Equations #    Slides Notes 1A, 1B   System Design #   We use devices, such as imagers, that provide information, such as a visual representation of a system  Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/0/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-26T11:51:22-08:00">
+<meta property="article:modified_time" content="2022-01-27T15:40:37-08:00">
 <title>Week 0 | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.f2c172a2808d35fc065baa41d848705bc99d012aea99dcda4a8e58f30890198e.js integrity="sha256-8sFyooCNNfwGW6pB2EhwW8mdASrqmdzaSo5Y8wiQGY4=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.ff7e57e4817c76cbe1139cf1ef51a7a201fbb984137895966d0822dfd071dc9c.js integrity="sha256-/35X5IF8dsvhE5zx71GnogH7uYQTeJWWbQgi39Bx3Jw=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -75,10 +75,13 @@
 </label>
 <ul>
 <li>
-<a href=http://notes.mehvix.com/e-29/0/>Week 0</a>
+<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/e-29/1/>Week 1</a>
+<a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes:</a>
 </li>
 </ul>
 </li>
@@ -233,7 +236,7 @@ pass.mehvix.com
 <ul>
 <li><a href=#system-design>System Design</a></li>
 <li><a href=#linear-algebra>Linear Algebra</a></li>
-<li><a href=#note-1a-extra>Note 1A Extra</a></li>
+<li><a href=#note-1ab-extra>Note 1AB Extra</a></li>
 </ul>
 </li>
 </ul>
@@ -428,9 +431,9 @@ $$(2)\ 8a+9b=10$$
 </ul>
 </li>
 </ul>
-<h2 id=note-1a-extra>
-Note 1A Extra
-<a class=anchor href=#note-1a-extra>#</a>
+<h2 id=note-1ab-extra>
+Note 1AB Extra
+<a class=anchor href=#note-1ab-extra>#</a>
 </h2>
 <ul>
 <li><strong>Affine function:</strong> a function that can be written as a sum of a linear function and a scalar constant, so though .$\beta (x)=2x+1$ is not <em>linear</em>, it is still _affine
@@ -453,17 +456,23 @@ $$a_1x_1 + a_2 x_2 + \dots = a_n x_n + b_f = a_1&rsquo; x_1 + a_2 ' x_2 + \dots 
 <p>A linear equation is one that equates two linear combinations of the unknowns plus a constant term.</p>
 </blockquote>
 </li>
-<li>
-<a href=https://eecs16a.org/hw-practice.html#/set/0>Practice questions</a></li>
 </ul>
 </li>
+<li>Our system will have infinitely many solutions if any two variables are ambiguous</li>
+<li>Our system will have no solutions if we have a row of zeroes followed by a non-zero
+<ul>
+<li>That is, .$\begin{bmatrix}0 & 0 & &mldr; & 0 & \text{|} & \alpha\end{bmatrix} \Longrightarrow 0x_1 + 0x_2 + \dots 0x_n = \alpha y$ is clearly impossible (no solutions) for any non-zero .$\alpha$</li>
+</ul>
+</li>
+<li>
+<a href=https://eecs16a.org/hw-practice.html#/set/0>Practice questions</a></li>
 </ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/87f19cf937a771ece289036967692f431dcb7dc3 title="Last modified by Max Vogel | January 26, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/1269d33d747491641b19c6bbe4f686265780ad0d title="Last modified by Max Vogel | January 27, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 26, 2022</span>
+<span>January 27, 2022</span>
 </a>
 </div>
 <div>
@@ -488,7 +497,7 @@ $$a_1x_1 + a_2 x_2 + \dots = a_n x_n + b_f = a_1&rsquo; x_1 + a_2 ' x_2 + \dots 
 <ul>
 <li><a href=#system-design>System Design</a></li>
 <li><a href=#linear-algebra>Linear Algebra</a></li>
-<li><a href=#note-1a-extra>Note 1A Extra</a></li>
+<li><a href=#note-1ab-extra>Note 1AB Extra</a></li>
 </ul>
 </li>
 </ul>

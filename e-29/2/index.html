@@ -1,0 +1,683 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Modeling of material cutting #    Lathe operations   Turning on a lathe    Nomenclature of cutting process #  Merchant’s circle: cutting forces #   Force diagram that resolves the reaction force exerted by the tool on the work  Relating cutting geometry to cutting forces  Material properties link the geometry of the tool and cutting path to the forces involved. The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 2: Cutting-based Processes & Other Subtractive Processes:">
+<meta property="og:description" content="Modeling of material cutting #    Lathe operations   Turning on a lathe    Nomenclature of cutting process #  Merchant’s circle: cutting forces #   Force diagram that resolves the reaction force exerted by the tool on the work  Relating cutting geometry to cutting forces  Material properties link the geometry of the tool and cutting path to the forces involved. The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/e-29/2/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2022-01-27T15:40:37-08:00">
+<title>Week 2: Cutting-based Processes & Other Subtractive Processes: | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.ff7e57e4817c76cbe1139cf1ef51a7a201fbb984137895966d0822dfd071dc9c.js integrity="sha256-/35X5IF8dsvhE5zx71GnogH7uYQTeJWWbQgi39Bx3Jw=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
+<a role=button>CogSci C100</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle>
+<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
+<a role=button>EECS 16A</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle checked>
+<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
+<a role=button>Engineering 29</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/2/ class=active>Week 2: Cutting-based Processes & Other Subtractive Processes:</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
+</li>
+<li>
+<input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
+<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
+<a role=button>AP Notes</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+<li>
+<a href=# target=_blank rel=noopener>
+—
+</a>
+</li>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+w³.mehvix.com
+</a>
+</li>
+<li>
+<a href=https://pass.mehvix.com target=_blank rel=noopener>
+pass.mehvix.com
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Week 2: Cutting-based Processes & Other Subtractive Processes:</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#modeling-of-material-cutting>Modeling of material cutting</a></li>
+<li><a href=#nomenclature-of-cutting-process>Nomenclature of cutting process</a>
+<ul>
+<li><a href=#merchants-circle-cutting-forces>Merchant’s circle: cutting forces</a></li>
+<li><a href=#how-can-we-predict-shear-strain-gamma>How can we predict shear strain, .$\gamma$</a></li>
+<li><a href=#relationship-between-phi-and-gamma>Relationship between .$\phi$ and .$\gamma$</a></li>
+<li><a href=#cutting-power>Cutting power</a></li>
+<li><a href=#tool-temperatures-and-lifetimes>Tool temperatures and lifetimes</a></li>
+<li><a href=#surface-roughness-in-machining>Surface roughness in machining</a></li>
+<li><a href=#turning-example>Turning example</a></li>
+</ul>
+</li>
+<li><a href=#other-cutting-processes-based-on-plastic-deformation>Other cutting processes based on plastic deformation</a>
+<ul>
+<li><a href=#milling>Milling</a></li>
+<li><a href=#boring>Boring</a></li>
+<li><a href=#broaching>Broaching</a></li>
+<li><a href=#tapping>Tapping</a></li>
+<li><a href=#punching>Punching</a></li>
+</ul>
+</li>
+<li><a href=#other-subtractive-processes-not-based-on-plastic-deformation>Other subtractive processes not based on plastic deformation</a>
+<ul>
+<li><a href=#laser-cutting>Laser cutting</a></li>
+<li><a href=#electrode-discharge-machining-edm>Electrode discharge machining (EDM)</a></li>
+<li><a href=#wire-edm>Wire EDM</a></li>
+<li><a href=#abrasive-jet>Abrasive jet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h2 id=modeling-of-material-cutting>
+Modeling of material cutting
+<a class=anchor href=#modeling-of-material-cutting>#</a>
+</h2>
+<figure><img src=/docs/e-29/1/mat-cut.png>
+</figure>
+<ul>
+<li>Lathe operations
+<figure><img src=/docs/e-29/1/ops.png>
+</figure>
+</li>
+<li>Turning on a lathe
+<figure><img src=/docs/e-29/1/turn.png>
+</figure>
+</li>
+</ul>
+<h2 id=nomenclature-of-cutting-process>
+Nomenclature of cutting process
+<a class=anchor href=#nomenclature-of-cutting-process>#</a>
+</h2>
+<h3 id=merchants-circle-cutting-forces>
+Merchant’s circle: cutting forces
+<a class=anchor href=#merchants-circle-cutting-forces>#</a>
+</h3>
+<ul>
+<li><strong>Force diagram</strong> that resolves the reaction force exerted by the tool on the work
+<img src=/docs/e-29/1/merch.png alt></li>
+<li>Relating cutting geometry to cutting forces
+<ul>
+<li>Material properties link the geometry of the tool and cutting path to the forces involved.</li>
+<li>The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.</li>
+<li>If the material exceeds its ultimate shear strength, the chip becomes more likely to fragment into pieces as it forms (which may help clear waste material away).</li>
+<li>However, the more strain involved in chip formation for a given material, the more work has to be invested in the cutting operation.</li>
+<li>Therefore designing the cutting operation to limit shear strain can help to limit cutting energy required.</li>
+</ul>
+</li>
+</ul>
+<h3 id=how-can-we-predict-shear-strain-gamma>
+How can we predict shear strain, .$\gamma$
+<a class=anchor href=#how-can-we-predict-shear-strain-gamma>#</a>
+</h3>
+<ul>
+<li>Since we wish to limit the amount of shear strain occurring during cutting, we need to understand how it depends on parameters that we can control.
+<ul>
+<li>Parameters we control: .$f, V_\text{cut}, d, \omega, \alpha$.</li>
+<li>Parameters we don’t directly control, but can measure: .$c, F_c , F_t$</li>
+<li>Parameters we don’t directly control and are hard to measure directly: .$\phi \beta$, and forces other than .$F_c$ and .$F_t$</li>
+</ul>
+</li>
+<li>Next, we show (via geometry) how shear strain .$\gamma$ depends on shear angle .$\phi$ (which is hard to measure directly) and on rake angle .$\alpha$ (which is known in advance).
+<ul>
+<li>To predict .$\phi$, we then have two options: • Measure chip thickness, c, and use geometry to work out .$\phi$ in terms of f, c and .$\alpha$, or</li>
+<li>Use Merchant’s shear angle relationship to express .$\phi$ in terms of .$\alpha$ and .$\beta$, and find .$\beta$ by measuring cutting and thrust forces Fc and Ft (e.g. by force sensors on the cutting tool holder)</li>
+</ul>
+</li>
+<li>Then, we can take action to control shear strain and cutting force.</li>
+</ul>
+<h3 id=relationship-between-phi-and-gamma>
+Relationship between .$\phi$ and .$\gamma$
+<a class=anchor href=#relationship-between-phi-and-gamma>#</a>
+</h3>
+<ul>
+<li>Using chip thickness to estimate .$\phi$, Can then use the relationship between .$\phi$ and .$\gamma$ from previous slide to estimate .$\gamma$ Merchant’s shear angle relationship</li>
+<li>Merchant’s shear angle relationship
+<ul>
+<li>We assume that shear stress equals the shear strength of the workpiece material in the shear plane, and that shear stresses are lower elsewhere in the material.</li>
+<li>Also assume that the value of the shear angle .$\phi$ is naturally such that the shear strength, 𝜏𝜏𝑦𝑦, of the workpiece material is reached in the shear plane at the lowest possible cutting force 𝐹𝐹𝑐𝑐.</li>
+<li>If we know the material’s shear strength, the friction angle .$\beta$, and the shear angle .$\phi$, we can (roughly) estimate the required cutting force 𝐹𝐹𝑐𝑐.</li>
+<li>Need to solve for .$\phi$ in terms of parameters we can control: .$\alpha$ (directly through tool geometry) and .$\beta$ (indirectly through lubrication).
+<img src=/docs/e-29/1/eq1.png alt>
+To find value of .$\phi$ for maximum shear stress at a given .$F_c$, set derivative .$\frac{d\tau}{d\phi}$ to zero and solve:
+<img src=/docs/e-29/1/eq1.png alt>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<br>
+<ul>
+<li>To estimate .$\beta$, we can measure .$F_c$ and .$F_t$ and use the force-resolving circle, and then substitute into the expression for .$\phi$:</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\tan(\beta - \alpha) = \frac{F_t}{F_c}$$
+$$\beta = \arctan\bigg(\frac{F_t}{F_c}\bigg) + \alpha$$
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>Insights:
+<ul>
+<li>Increasing the rake angle .$\alpha$ (via tool design) and lowering friction angle .$\beta$ (by application of an appropriate lubricant/coolant – e.g. water/oil mixture) both help to increase shear angle</li>
+<li>However there are limits: for instance, if .$\alpha$ becomes too large, 𝐹𝐹𝑡𝑡 may become negative in which case the tool would dig into the workpiece and result in a very poor finish.</li>
+</ul>
+</li>
+<li>This model is an approximation; alternative models exist Merchant’s circle: examples of process changes</li>
+<li>Merchant’s circle: examples of process changes
+<ul>
+<li>Increasing .$\alpha$? Decreasing .$\beta$?
+<img src=/docs/e-29/1/geo.png alt></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id=cutting-power>
+Cutting power
+<a class=anchor href=#cutting-power>#</a>
+</h3>
+<ul>
+<li>Different workpiece materials are associated with different specific energies, .$U$ (J/mm.$^3$): the work that must be done per unit volume material removed.</li>
+<li>.$U$ approximately folds in work done in the shear plane, work done against friction, and mechanical losses in the lathe – hence each material has a quite wide range for .$U$
+<ul>
+<li>Example values of .$U$ (J/mm.$^3$):</li>
+<li>Aluminum alloys: 0.4 – 1.1</li>
+<li>Titanium alloys: 3.0 – 4.1</li>
+<li>Steels: 2.7 – 9.3</li>
+</ul>
+</li>
+<li>Expression linking .$U$, cutting power .$P_C$, and geometry:</li>
+</ul>
+<h3 id=tool-temperatures-and-lifetimes>
+Tool temperatures and lifetimes
+<a class=anchor href=#tool-temperatures-and-lifetimes>#</a>
+</h3>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/e-29/1/temp2.png alt>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
+<li>Taylor tool life equation:
+$$VT^n = C$$
+<ul>
+<li>.$V$ = cutting speed</li>
+<li>.$T$ = tool lifetime</li>
+<li>.$n, C$ are empirical constants</li>
+</ul>
+</li>
+<li>Example .$n$ values:
+<img src=/docs/e-29/1/ntbl.png alt></li>
+</ul>
+</div>
+</div>
+<ul>
+<li>
+<p>Examples of tool wear
+<img src=/docs/e-29/1/wear.png alt></p>
+</li>
+<li>
+<p>Typical recommended cutting speeds and feeds
+<img src=/docs/e-29/1/recc.png alt></p>
+</li>
+<li>
+<p>Cutting tool design
+<img src=/docs/e-29/1/design.png alt></p>
+<blockquote>
+<p>(a) Schematic illustration of a right-hand cutting tool for turning. Although these tools have traditionally been produced from solid tool-steel bars, they are now replaced by inserts of carbide or other tool materials of various shapes and sizes, as shown in <br>
+(b).</p>
+</blockquote>
+</li>
+</ul>
+<h3 id=surface-roughness-in-machining>
+Surface roughness in machining
+<a class=anchor href=#surface-roughness-in-machining>#</a>
+</h3>
+<p>
+<img src=/docs/e-29/0/roughness.png alt>
+- Peak-to-valley roughness,
+- Example: .$R_n = 0.5 \text{ mm; } f = 0.1 \text{ mm:}$
+- Actual roughness will be up to 2-3 times worse than this ideal value: built-up edge, cracking, scratching from chips, etc</p>
+<h3 id=turning-example>
+Turning example
+<a class=anchor href=#turning-example>#</a>
+</h3>
+<ul>
+<li>
+<a href=https://help.autodesk.com/view/fusion360/ENU/courses/AP-C-FUNDAMENTALS-OF-TURNING>Autodesk computer-aided manufacturing (toolpath planning) demo</a></li>
+<li>
+<a href="https://bcourses.berkeley.edu/files/79640985/download?download_frd=1">Etcheverry Machine Shop manual lathe demo</a>:</li>
+</ul>
+<h2 id=other-cutting-processes-based-on-plastic-deformation>
+Other cutting processes based on plastic deformation
+<a class=anchor href=#other-cutting-processes-based-on-plastic-deformation>#</a>
+</h2>
+<ul>
+<li>Cutting-based operations other than turning
+<ul>
+<li>Milling</li>
+<li>Drilling</li>
+<li>Reaming</li>
+<li>Boring</li>
+<li>Broaching</li>
+<li>Tapping</li>
+<li>Punching</li>
+</ul>
+</li>
+</ul>
+<h3 id=milling>
+Milling
+<a class=anchor href=#milling>#</a>
+</h3>
+<ul>
+<li>
+<a href="https://youtu.be/bdD57NeOuio?t=151">Milling in action</a></li>
+<li>
+<a href="https://bcourses.berkeley.edu/files/79640852/download?download_frd=1">Etcheverry demo video (manual)</a></li>
+<li>
+<a href="https://bcourses.berkeley.edu/files/79641045/download?download_frd=1">Etcheverry demo video (CNC)</a></li>
+<li>Types of milling
+<ul>
+<li><strong>Peripheral (a.k.a. plain) milling</strong>
+<ul>
+<li>Tool axis is parallel to surface being machined</li>
+<li>Slab, slotting, side milling, straddle, form</li>
+</ul>
+</li>
+<li><strong>Face milling</strong>
+<ul>
+<li>Tool axis is perpendicular to surface being machined</li>
+<li>Conventional, partial, end, profile, pocket, surface contouring</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<h3 id=drilling>
+Drilling
+<a class=anchor href=#drilling>#</a>
+</h3>
+<ul>
+<li>
+<a href="https://youtu.be/bdD57NeOuio?t=127">Drilling</a>
+<ul>
+<li>You end up with scratches on the side wall when drilling</li>
+</ul>
+</li>
+<li>Reaming
+<ul>
+<li>Reaming involves enlarge existing holes</li>
+<li>Provide better tolerance and smoother finish than drilling</li>
+<li>Reaming tools: vertical flutes</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/e-29/1/bit.png alt>
+</div>
+</div>
+<img src=/docs/e-29/1/ream.png alt></p>
+<h3 id=boring>
+Boring
+<a class=anchor href=#boring>#</a>
+</h3>
+<ul>
+<li>Boring = “inside turning”</li>
+<li>Single point tool moving along the inside of a rotating workpiece</li>
+</ul>
+<h3 id=broaching>
+Broaching
+<a class=anchor href=#broaching>#</a>
+</h3>
+<figure><img src=/docs/e-29/1/broach.png>
+</figure>
+<blockquote>
+<p><figure><img src=/docs/e-29/1/broach2.png>
+</figure>
+(a) Typical parts finished by internal broaching.<br>
+(b) Parts finished by surface broaching. The heavy lines indicate broached surfaces;<br>
+(c) a vertical broaching machine.</p>
+</blockquote>
+<h3 id=tapping>
+Tapping
+<a class=anchor href=#tapping>#</a>
+</h3>
+<figure><img src=/docs/e-29/1/tap.png>
+</figure>
+<h3 id=punching>
+Punching
+<a class=anchor href=#punching>#</a>
+</h3>
+<ul>
+<li>
+<a href="https://bcourses.berkeley.edu/files/79640739/download?download_frd=1">Video demo</a></li>
+</ul>
+<h2 id=other-subtractive-processes-not-based-on-plastic-deformation>
+Other subtractive processes not based on plastic deformation
+<a class=anchor href=#other-subtractive-processes-not-based-on-plastic-deformation>#</a>
+</h2>
+<h3 id=laser-cutting>
+Laser cutting
+<a class=anchor href=#laser-cutting>#</a>
+</h3>
+<ul>
+<li>Scanning laser beam melts and evaporates target material</li>
+<li>A thin band of material is removed: the <em>kerf</em></li>
+</ul>
+<blockquote>
+<p>
+<img src=/docs/e-29/1/laser.png alt>
+<a href=http://alumni.media.mit.edu/~yarin/laser/physics.html>http://alumni.media.mit.edu/~yarin/laser/physics.html</a></p>
+</blockquote>
+<h3 id=electrode-discharge-machining-edm>
+Electrode discharge machining (EDM)
+<a class=anchor href=#electrode-discharge-machining-edm>#</a>
+</h3>
+<p>
+<img src=/docs/e-29/1/edm.png alt></p>
+<ul>
+<li>Used when you require extreme precision</li>
+</ul>
+<h3 id=wire-edm>
+Wire EDM
+<a class=anchor href=#wire-edm>#</a>
+</h3>
+<blockquote>
+<p>
+<img src=/docs/e-29/1/wire-edm.png alt></p>
+<ul>
+<li>
+<a href=https://www.mdpi.com/2076-3417/10/6/2082/htm>https://www.mdpi.com/2076-3417/10/6/2082/htm</a></li>
+</ul>
+</blockquote>
+<h3 id=abrasive-jet>
+Abrasive jet
+<a class=anchor href=#abrasive-jet>#</a>
+</h3>
+<ul>
+<li>
+<a href="https://bcourses.berkeley.edu/files/79640671/download?download_frd=1">Intro video</a></li>
+</ul>
+<blockquote>
+<p>
+<img src=/docs/e-29/1/jet.png alt></p>
+<ul>
+<li>
+<a href=https://www.omax.com/news/blog/controlling-taper>https://www.omax.com/news/blog/controlling-taper</a></li>
+<li>It&rsquo;s not the water itself, rather, there are tiny particles in the water itself which concentrate the forces enough</li>
+</ul>
+</blockquote>
+<ul>
+<li>Examples of subtractive processes</li>
+<li>Reasons to use/not use subtractive processes</li>
+<li>Principles of cutting</li>
+<li>Application to lathe turning</li>
+<li>Highlights of other subtractive processes</li>
+<li>Credit: Several figures reproduced from: Manufacturing Processes for Engineering Materials, Kalpakjian and Schmid</li>
+</ul>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/1269d33d747491641b19c6bbe4f686265780ad0d title="Last modified by Max Vogel | January 27, 2022" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>January 27, 2022</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/e-29/2.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#modeling-of-material-cutting>Modeling of material cutting</a></li>
+<li><a href=#nomenclature-of-cutting-process>Nomenclature of cutting process</a>
+<ul>
+<li><a href=#merchants-circle-cutting-forces>Merchant’s circle: cutting forces</a></li>
+<li><a href=#how-can-we-predict-shear-strain-gamma>How can we predict shear strain, .$\gamma$</a></li>
+<li><a href=#relationship-between-phi-and-gamma>Relationship between .$\phi$ and .$\gamma$</a></li>
+<li><a href=#cutting-power>Cutting power</a></li>
+<li><a href=#tool-temperatures-and-lifetimes>Tool temperatures and lifetimes</a></li>
+<li><a href=#surface-roughness-in-machining>Surface roughness in machining</a></li>
+<li><a href=#turning-example>Turning example</a></li>
+</ul>
+</li>
+<li><a href=#other-cutting-processes-based-on-plastic-deformation>Other cutting processes based on plastic deformation</a>
+<ul>
+<li><a href=#milling>Milling</a></li>
+<li><a href=#boring>Boring</a></li>
+<li><a href=#broaching>Broaching</a></li>
+<li><a href=#tapping>Tapping</a></li>
+<li><a href=#punching>Punching</a></li>
+</ul>
+</li>
+<li><a href=#other-subtractive-processes-not-based-on-plastic-deformation>Other subtractive processes not based on plastic deformation</a>
+<ul>
+<li><a href=#laser-cutting>Laser cutting</a></li>
+<li><a href=#electrode-discharge-machining-edm>Electrode discharge machining (EDM)</a></li>
+<li><a href=#wire-edm>Wire EDM</a></li>
+<li><a href=#abrasive-jet>Abrasive jet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
