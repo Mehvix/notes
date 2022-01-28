@@ -25,7 +25,7 @@ This are very disjoint notes I took long ago. I would recommend using this for p
 ![/docs/ap/mech/Untitled.png](/docs/ap/mech/Untitled.png)
 <---><!-- mathjax fix -->
 Top is .$x$, middle is .$v$, bottom is .$a$
-![/docs/ap/mech/Untitled%202.png](/docs/ap/mech/Untitled%202.png)
+![/docs/ap/mech/Untitled-2.png](/docs/ap/mech/Untitled-2.png)
 {{< /columns >}}
 
 ## Projectile Motion
@@ -44,30 +44,30 @@ Top is .$x$, middle is .$v$, bottom is .$a$
 ## Practice
 {{< expand "FRQs to study" >}}
 - Graphs
-![/docs/ap/mech/Untitled%203.png](/docs/ap/mech/Untitled%203.png)
+![/docs/ap/mech/Untitled-3.png](/docs/ap/mech/Untitled-3.png)
 - Changing Acceleration / Velocity
-![/docs/ap/mech/Untitled%204.png](/docs/ap/mech/Untitled%204.png)
+![/docs/ap/mech/Untitled-4.png](/docs/ap/mech/Untitled-4.png)
 {{< /expand >}}
 
 {{< expand "Example Qs" >}}
-1.![/docs/ap/mech/Untitled%205.png](/docs/ap/mech/Untitled%205.png)
-![/docs/ap/mech/Untitled%206.png](/docs/ap/mech/Untitled%206.png)
-2.![/docs/ap/mech/Untitled%207.png](/docs/ap/mech/Untitled%207.png)
-![/docs/ap/mech/Untitled%208.png](/docs/ap/mech/Untitled%208.png)
-3.![/docs/ap/mech/Untitled%209.png](/docs/ap/mech/Untitled%209.png)
-![/docs/ap/mech/Untitled%2010.png](/docs/ap/mech/Untitled%2010.png)
-4.![/docs/ap/mech/Untitled%2011.png](/docs/ap/mech/Untitled%2011.png)
-![/docs/ap/mech/Untitled%2012.png](/docs/ap/mech/Untitled%2012.png)
-5.![/docs/ap/mech/Untitled%2013.png](/docs/ap/mech/Untitled%2013.png)
-![/docs/ap/mech/Untitled%2014.png](/docs/ap/mech/Untitled%2014.png)
-6.![/docs/ap/mech/Untitled%2015.png](/docs/ap/mech/Untitled%2015.png)
-![/docs/ap/mech/Untitled%2016.png](/docs/ap/mech/Untitled%2016.png)
-7.![/docs/ap/mech/Untitled%2017.png](/docs/ap/mech/Untitled%2017.png)
-![/docs/ap/mech/Untitled%2018.png](/docs/ap/mech/Untitled%2018.png)
-8.![/docs/ap/mech/Untitled%2019.png](/docs/ap/mech/Untitled%2019.png)
-![/docs/ap/mech/Untitled%2020.png](/docs/ap/mech/Untitled%2020.png)
-1. ![/docs/ap/mech/Untitled%2021.png](/docs/ap/mech/Untitled%2021.png)
-![/docs/ap/mech/Untitled%2022.png](/docs/ap/mech/Untitled%2022.png)
+1.![/docs/ap/mech/Untitled-5.png](/docs/ap/mech/Untitled-5.png)
+![/docs/ap/mech/Untitled-6.png](/docs/ap/mech/Untitled-6.png)
+2.![/docs/ap/mech/Untitled-7.png](/docs/ap/mech/Untitled-7.png)
+![/docs/ap/mech/Untitled-8.png](/docs/ap/mech/Untitled-8.png)
+3.![/docs/ap/mech/Untitled-9.png](/docs/ap/mech/Untitled-9.png)
+![/docs/ap/mech/Untitled-10.png](/docs/ap/mech/Untitled-10.png)
+4.![/docs/ap/mech/Untitled-11.png](/docs/ap/mech/Untitled-11.png)
+![/docs/ap/mech/Untitled-12.png](/docs/ap/mech/Untitled-12.png)
+5.![/docs/ap/mech/Untitled-13.png](/docs/ap/mech/Untitled-13.png)
+![/docs/ap/mech/Untitled-14.png](/docs/ap/mech/Untitled-14.png)
+6.![/docs/ap/mech/Untitled-15.png](/docs/ap/mech/Untitled-15.png)
+![/docs/ap/mech/Untitled-16.png](/docs/ap/mech/Untitled-16.png)
+7.![/docs/ap/mech/Untitled-17.png](/docs/ap/mech/Untitled-17.png)
+![/docs/ap/mech/Untitled-18.png](/docs/ap/mech/Untitled-18.png)
+8.![/docs/ap/mech/Untitled-19.png](/docs/ap/mech/Untitled-19.png)
+![/docs/ap/mech/Untitled-20.png](/docs/ap/mech/Untitled-20.png)
+1. ![/docs/ap/mech/Untitled-21.png](/docs/ap/mech/Untitled-21.png)
+![/docs/ap/mech/Untitled-22.png](/docs/ap/mech/Untitled-22.png)
 {{< /expand >}}
 
 
@@ -100,49 +100,49 @@ $$\text{Acceleration of a Pulley} = \frac{Mg}{m+M} = \frac{Mg-\mu mg}{m+M}$$
 
 ## Drag Force
 - Drag on x-axis:
-    ![/docs/ap/mech/Untitled%2023.png](/docs/ap/mech/Untitled%2023.png)
+    ![/docs/ap/mech/Untitled-23.png](/docs/ap/mech/Untitled-23.png)
 - Drag on y-axis:
-    ![/docs/ap/mech/Untitled%2024.png](/docs/ap/mech/Untitled%2024.png)
-    ![/docs/ap/mech/Untitled%2025.png](/docs/ap/mech/Untitled%2025.png)
+    ![/docs/ap/mech/Untitled-24.png](/docs/ap/mech/Untitled-24.png)
+    ![/docs/ap/mech/Untitled-25.png](/docs/ap/mech/Untitled-25.png)
 
 ## Practice
 
 {{< expand "FRQs to study" >}}
 Drag
-![/docs/ap/mech/Untitled%2026.png](/docs/ap/mech/Untitled%2026.png)
+![/docs/ap/mech/Untitled-26.png](/docs/ap/mech/Untitled-26.png)
 Multiple Bodies (pulleys, carts)
-![/docs/ap/mech/Untitled%2027.png](/docs/ap/mech/Untitled%2027.png)
+![/docs/ap/mech/Untitled-27.png](/docs/ap/mech/Untitled-27.png)
 {{< /expand >}}
 
 {{< expand "Practice Qs" >}}
-1. ![/docs/ap/mech/Untitled%2028.png](/docs/ap/mech/Untitled%2028.png)
-![/docs/ap/mech/Untitled%2029.png](/docs/ap/mech/Untitled%2029.png)
-2. ![/docs/ap/mech/Untitled%2030.png](/docs/ap/mech/Untitled%2030.png)
-![/docs/ap/mech/Untitled%2031.png](/docs/ap/mech/Untitled%2031.png)
-3. ![/docs/ap/mech/Untitled%2032.png](/docs/ap/mech/Untitled%2032.png)
-![/docs/ap/mech/Untitled%2033.png](/docs/ap/mech/Untitled%2033.png)
-4. ![/docs/ap/mech/Untitled%2034.png](/docs/ap/mech/Untitled%2034.png)
-![/docs/ap/mech/Untitled%2035.png](/docs/ap/mech/Untitled%2035.png)
-1. ![/docs/ap/mech/Untitled%2036.png](/docs/ap/mech/Untitled%2036.png)
-![/docs/ap/mech/Untitled%2037.png](/docs/ap/mech/Untitled%2037.png)
-1. ![/docs/ap/mech/Untitled%2038.png](/docs/ap/mech/Untitled%2038.png)
-![/docs/ap/mech/Untitled%2039.png](/docs/ap/mech/Untitled%2039.png)
-7. ![/docs/ap/mech/Untitled%2040.png](/docs/ap/mech/Untitled%2040.png)
-![/docs/ap/mech/Untitled%2041.png](/docs/ap/mech/Untitled%2041.png)
-8. ![/docs/ap/mech/Untitled%2042.png](/docs/ap/mech/Untitled%2042.png)
-![/docs/ap/mech/Untitled%2043.png](/docs/ap/mech/Untitled%2043.png)
-9. ![/docs/ap/mech/Untitled%2044.png](/docs/ap/mech/Untitled%2044.png)
-![/docs/ap/mech/Untitled%2045.png](/docs/ap/mech/Untitled%2045.png)
-10. ![/docs/ap/mech/Untitled%2046.png](/docs/ap/mech/Untitled%2046.png)
-![/docs/ap/mech/Untitled%2047.png](/docs/ap/mech/Untitled%2047.png)
-11. ![/docs/ap/mech/Untitled%2048.png](/docs/ap/mech/Untitled%2048.png)
-![/docs/ap/mech/Untitled%2049.png](/docs/ap/mech/Untitled%2049.png)
-12. ![/docs/ap/mech/Untitled%2050.png](/docs/ap/mech/Untitled%2050.png)
-![/docs/ap/mech/Untitled%2051.png](/docs/ap/mech/Untitled%2051.png)
-13. ![/docs/ap/mech/Untitled%2052.png](/docs/ap/mech/Untitled%2052.png)
-![/docs/ap/mech/Untitled%2053.png](/docs/ap/mech/Untitled%2053.png)
-14. ![/docs/ap/mech/Untitled%2054.png](/docs/ap/mech/Untitled%2054.png)
-![/docs/ap/mech/Untitled%2055.png](/docs/ap/mech/Untitled%2055.png)
+1. ![/docs/ap/mech/Untitled-28.png](/docs/ap/mech/Untitled-28.png)
+![/docs/ap/mech/Untitled-29.png](/docs/ap/mech/Untitled-29.png)
+2. ![/docs/ap/mech/Untitled-30.png](/docs/ap/mech/Untitled-30.png)
+![/docs/ap/mech/Untitled-31.png](/docs/ap/mech/Untitled-31.png)
+3. ![/docs/ap/mech/Untitled-32.png](/docs/ap/mech/Untitled-32.png)
+![/docs/ap/mech/Untitled-33.png](/docs/ap/mech/Untitled-33.png)
+4. ![/docs/ap/mech/Untitled-34.png](/docs/ap/mech/Untitled-34.png)
+![/docs/ap/mech/Untitled-35.png](/docs/ap/mech/Untitled-35.png)
+1. ![/docs/ap/mech/Untitled-36.png](/docs/ap/mech/Untitled-36.png)
+![/docs/ap/mech/Untitled-37.png](/docs/ap/mech/Untitled-37.png)
+1. ![/docs/ap/mech/Untitled-38.png](/docs/ap/mech/Untitled-38.png)
+![/docs/ap/mech/Untitled-39.png](/docs/ap/mech/Untitled-39.png)
+7. ![/docs/ap/mech/Untitled-40.png](/docs/ap/mech/Untitled-40.png)
+![/docs/ap/mech/Untitled-41.png](/docs/ap/mech/Untitled-41.png)
+8. ![/docs/ap/mech/Untitled-42.png](/docs/ap/mech/Untitled-42.png)
+![/docs/ap/mech/Untitled-43.png](/docs/ap/mech/Untitled-43.png)
+9. ![/docs/ap/mech/Untitled-44.png](/docs/ap/mech/Untitled-44.png)
+![/docs/ap/mech/Untitled-45.png](/docs/ap/mech/Untitled-45.png)
+10. ![/docs/ap/mech/Untitled-46.png](/docs/ap/mech/Untitled-46.png)
+![/docs/ap/mech/Untitled-47.png](/docs/ap/mech/Untitled-47.png)
+11. ![/docs/ap/mech/Untitled-48.png](/docs/ap/mech/Untitled-48.png)
+![/docs/ap/mech/Untitled-49.png](/docs/ap/mech/Untitled-49.png)
+12. ![/docs/ap/mech/Untitled-50.png](/docs/ap/mech/Untitled-50.png)
+![/docs/ap/mech/Untitled-51.png](/docs/ap/mech/Untitled-51.png)
+13. ![/docs/ap/mech/Untitled-52.png](/docs/ap/mech/Untitled-52.png)
+![/docs/ap/mech/Untitled-53.png](/docs/ap/mech/Untitled-53.png)
+14. ![/docs/ap/mech/Untitled-54.png](/docs/ap/mech/Untitled-54.png)
+![/docs/ap/mech/Untitled-55.png](/docs/ap/mech/Untitled-55.png)
 {{< /expand >}}
 
 # 3. Energy
@@ -157,7 +157,7 @@ $$F = -\frac{dU}{dx}$$
 - Potential Energy can only depend on position
 - Negative relation with force indicates that the direction of the force is always towards lower PE
 - Derivation
-    ![/docs/ap/mech/Untitled%2056.png](/docs/ap/mech/Untitled%2056.png)
+    ![/docs/ap/mech/Untitled-56.png](/docs/ap/mech/Untitled-56.png)
 
 ## Conservation
 {{< hint "info" >}}<!-- mathjax fix -->
@@ -175,7 +175,7 @@ $$\Delta K + \Delta U + \Delta E_\text{int}= W_\text{ext}$$
     - Mechanical Energy lost; ME > ME'
     - Friction, Air resistance (drag)
 - Internal Energy
-    ![/docs/ap/mech/Untitled%2057.png](/docs/ap/mech/Untitled%2057.png)
+    ![/docs/ap/mech/Untitled-57.png](/docs/ap/mech/Untitled-57.png)
 
 ## Power
 Rate at which work is done
@@ -187,7 +187,7 @@ $$U_\text{spring} = -W_\text{spring}=\frac{1}{2}kx^2$$
 - Springs are most compressed in collisions when velocity of both objects are equal
     - Therefore, we can treat the system as inelastic at that moment
     - Steps
-    ![/docs/ap/mech/Untitled%2058.png](/docs/ap/mech/Untitled%2058.png)
+    ![/docs/ap/mech/Untitled-58.png](/docs/ap/mech/Untitled-58.png)
 
 ## Equilibrium
 - Neutral Equilibrium is where the Potential Energy of the object remains constant regardless of
@@ -198,48 +198,48 @@ equilibrium position. For example, a water bottle being tipped to the side.
 - Unstable Equilibrium is where the Potential Energy of the object decreases as the position of the
 object moves away from the equilibrium position and therefore the object naturally moves away
 from the equilibrium position. For example, a marker being tipped to the side.
-![/docs/ap/mech/Untitled%2059.png](/docs/ap/mech/Untitled%2059.png)
+![/docs/ap/mech/Untitled-59.png](/docs/ap/mech/Untitled-59.png)
 
 ## Practice 
 
 {{< expand "Practice Qs" >}}
-1. ![/docs/ap/mech/Untitled%2060.png](/docs/ap/mech/Untitled%2060.png)
-![/docs/ap/mech/Untitled%2061.png](/docs/ap/mech/Untitled%2061.png)
-2. ![/docs/ap/mech/Untitled%2062.png](/docs/ap/mech/Untitled%2062.png)
-![/docs/ap/mech/Untitled%2063.png](/docs/ap/mech/Untitled%2063.png)
-![/docs/ap/mech/Untitled%2064.png](/docs/ap/mech/Untitled%2064.png)
-3. ![/docs/ap/mech/Untitled%2065.png](/docs/ap/mech/Untitled%2065.png)
-![/docs/ap/mech/Untitled%2066.png](/docs/ap/mech/Untitled%2066.png)
-3. ![/docs/ap/mech/Untitled%2067.png](/docs/ap/mech/Untitled%2067.png)
-![/docs/ap/mech/Untitled%2068.png](/docs/ap/mech/Untitled%2068.png)
-4. ![/docs/ap/mech/Untitled%2069.png](/docs/ap/mech/Untitled%2069.png)
-![/docs/ap/mech/Untitled%2070.png](/docs/ap/mech/Untitled%2070.png)
-4. ![/docs/ap/mech/Untitled%2071.png](/docs/ap/mech/Untitled%2071.png)
-![/docs/ap/mech/Untitled%2072.png](/docs/ap/mech/Untitled%2072.png)
-5. ![/docs/ap/mech/Untitled%2073.png](/docs/ap/mech/Untitled%2073.png)
-![/docs/ap/mech/Untitled%2074.png](/docs/ap/mech/Untitled%2074.png)
-1. ![/docs/ap/mech/Untitled%2075.png](/docs/ap/mech/Untitled%2075.png)
-![/docs/ap/mech/Untitled%2076.png](/docs/ap/mech/Untitled%2076.png)
-7. ![/docs/ap/mech/Untitled%2077.png](/docs/ap/mech/Untitled%2077.png)
-![/docs/ap/mech/Untitled%2078.png](/docs/ap/mech/Untitled%2078.png)
-8. ![/docs/ap/mech/Untitled%2079.png](/docs/ap/mech/Untitled%2079.png)
-![/docs/ap/mech/Untitled%2080.png](/docs/ap/mech/Untitled%2080.png)
-1. ![/docs/ap/mech/Untitled%2081.png](/docs/ap/mech/Untitled%2081.png)
-![/docs/ap/mech/Untitled%2082.png](/docs/ap/mech/Untitled%2082.png)
-10. ![/docs/ap/mech/Untitled%2083.png](/docs/ap/mech/Untitled%2083.png)
-![/docs/ap/mech/Untitled%2084.png](/docs/ap/mech/Untitled%2084.png)
-11. ![/docs/ap/mech/Untitled%2085.png](/docs/ap/mech/Untitled%2085.png)
-![/docs/ap/mech/Untitled%2086.png](/docs/ap/mech/Untitled%2086.png)
-12. ![/docs/ap/mech/Untitled%2087.png](/docs/ap/mech/Untitled%2087.png)
-![/docs/ap/mech/Untitled%2088.png](/docs/ap/mech/Untitled%2088.png)
-1.  ![/docs/ap/mech/Untitled%2089.png](/docs/ap/mech/Untitled%2089.png)
-![/docs/ap/mech/Untitled%2090.png](/docs/ap/mech/Untitled%2090.png)
-1.  ![/docs/ap/mech/Untitled%2091.png](/docs/ap/mech/Untitled%2091.png)
-![/docs/ap/mech/Untitled%2092.png](/docs/ap/mech/Untitled%2092.png)
-15. ![/docs/ap/mech/Untitled%2093.png](/docs/ap/mech/Untitled%2093.png)
-![/docs/ap/mech/Untitled%2094.png](/docs/ap/mech/Untitled%2094.png)
-16. ![/docs/ap/mech/Untitled%2095.png](/docs/ap/mech/Untitled%2095.png)
-![/docs/ap/mech/Untitled%2096.png](/docs/ap/mech/Untitled%2096.png)
+1. ![/docs/ap/mech/Untitled-60.png](/docs/ap/mech/Untitled-60.png)
+![/docs/ap/mech/Untitled-61.png](/docs/ap/mech/Untitled-61.png)
+2. ![/docs/ap/mech/Untitled-62.png](/docs/ap/mech/Untitled-62.png)
+![/docs/ap/mech/Untitled-63.png](/docs/ap/mech/Untitled-63.png)
+![/docs/ap/mech/Untitled-64.png](/docs/ap/mech/Untitled-64.png)
+3. ![/docs/ap/mech/Untitled-65.png](/docs/ap/mech/Untitled-65.png)
+![/docs/ap/mech/Untitled-66.png](/docs/ap/mech/Untitled-66.png)
+3. ![/docs/ap/mech/Untitled-67.png](/docs/ap/mech/Untitled-67.png)
+![/docs/ap/mech/Untitled-68.png](/docs/ap/mech/Untitled-68.png)
+4. ![/docs/ap/mech/Untitled-69.png](/docs/ap/mech/Untitled-69.png)
+![/docs/ap/mech/Untitled-70.png](/docs/ap/mech/Untitled-70.png)
+4. ![/docs/ap/mech/Untitled-71.png](/docs/ap/mech/Untitled-71.png)
+![/docs/ap/mech/Untitled-72.png](/docs/ap/mech/Untitled-72.png)
+5. ![/docs/ap/mech/Untitled-73.png](/docs/ap/mech/Untitled-73.png)
+![/docs/ap/mech/Untitled-74.png](/docs/ap/mech/Untitled-74.png)
+1. ![/docs/ap/mech/Untitled-75.png](/docs/ap/mech/Untitled-75.png)
+![/docs/ap/mech/Untitled-76.png](/docs/ap/mech/Untitled-76.png)
+7. ![/docs/ap/mech/Untitled-77.png](/docs/ap/mech/Untitled-77.png)
+![/docs/ap/mech/Untitled-78.png](/docs/ap/mech/Untitled-78.png)
+8. ![/docs/ap/mech/Untitled-79.png](/docs/ap/mech/Untitled-79.png)
+![/docs/ap/mech/Untitled-80.png](/docs/ap/mech/Untitled-80.png)
+1. ![/docs/ap/mech/Untitled-81.png](/docs/ap/mech/Untitled-81.png)
+![/docs/ap/mech/Untitled-82.png](/docs/ap/mech/Untitled-82.png)
+10. ![/docs/ap/mech/Untitled-83.png](/docs/ap/mech/Untitled-83.png)
+![/docs/ap/mech/Untitled-84.png](/docs/ap/mech/Untitled-84.png)
+11. ![/docs/ap/mech/Untitled-85.png](/docs/ap/mech/Untitled-85.png)
+![/docs/ap/mech/Untitled-86.png](/docs/ap/mech/Untitled-86.png)
+12. ![/docs/ap/mech/Untitled-87.png](/docs/ap/mech/Untitled-87.png)
+![/docs/ap/mech/Untitled-88.png](/docs/ap/mech/Untitled-88.png)
+1.  ![/docs/ap/mech/Untitled-89.png](/docs/ap/mech/Untitled-89.png)
+![/docs/ap/mech/Untitled-90.png](/docs/ap/mech/Untitled-90.png)
+1.  ![/docs/ap/mech/Untitled-91.png](/docs/ap/mech/Untitled-91.png)
+![/docs/ap/mech/Untitled-92.png](/docs/ap/mech/Untitled-92.png)
+15. ![/docs/ap/mech/Untitled-93.png](/docs/ap/mech/Untitled-93.png)
+![/docs/ap/mech/Untitled-94.png](/docs/ap/mech/Untitled-94.png)
+16. ![/docs/ap/mech/Untitled-95.png](/docs/ap/mech/Untitled-95.png)
+![/docs/ap/mech/Untitled-96.png](/docs/ap/mech/Untitled-96.png)
 {{< /expand >}}
 
 
@@ -259,7 +259,7 @@ $$v_2'=\frac{2m_1}{m_1+m_2}v_2$$
 - KE lost
 - Momentum conserved (while no unbalanced ext forces)
 - Maximum speed when m << M
-    ![/docs/ap/mech/Untitled%2097.png](/docs/ap/mech/Untitled%2097.png)
+    ![/docs/ap/mech/Untitled-97.png](/docs/ap/mech/Untitled-97.png)
 
 ## Impulse  — Force and Time
 $$\vec J = \int \vec F dt = \vec F_\text{avg} \Delta t= \Delta \vec p = m \Delta \vec v$$
@@ -275,36 +275,36 @@ $$\Sigma F=ma_\text{cm}$$
 ## Practice
 
 {{< expand "Practice Qs" >}}
-1. ![/docs/ap/mech/Untitled%2098.png](/docs/ap/mech/Untitled%2098.png)
-![/docs/ap/mech/Untitled%2099.png](/docs/ap/mech/Untitled%2099.png)
-1. ![/docs/ap/mech/Untitled%20100.png](/docs/ap/mech/Untitled%20100.png)
-![/docs/ap/mech/Untitled%20101.png](/docs/ap/mech/Untitled%20101.png)
-1. ![/docs/ap/mech/Untitled%20102.png](/docs/ap/mech/Untitled%20102.png)
-![/docs/ap/mech/Untitled%20103.png](/docs/ap/mech/Untitled%20103.png)
-1. ![/docs/ap/mech/Untitled%20104.png](/docs/ap/mech/Untitled%20104.png)
-![/docs/ap/mech/Untitled%20105.png](/docs/ap/mech/Untitled%20105.png)
-![/docs/ap/mech/Untitled%20106.png](/docs/ap/mech/Untitled%20106.png)
-1. ![/docs/ap/mech/Untitled%20107.png](/docs/ap/mech/Untitled%20107.png)
+1. ![/docs/ap/mech/Untitled-98.png](/docs/ap/mech/Untitled-98.png)
+![/docs/ap/mech/Untitled-99.png](/docs/ap/mech/Untitled-99.png)
+1. ![/docs/ap/mech/Untitled-100.png](/docs/ap/mech/Untitled-100.png)
+![/docs/ap/mech/Untitled-101.png](/docs/ap/mech/Untitled-101.png)
+1. ![/docs/ap/mech/Untitled-102.png](/docs/ap/mech/Untitled-102.png)
+![/docs/ap/mech/Untitled-103.png](/docs/ap/mech/Untitled-103.png)
+1. ![/docs/ap/mech/Untitled-104.png](/docs/ap/mech/Untitled-104.png)
+![/docs/ap/mech/Untitled-105.png](/docs/ap/mech/Untitled-105.png)
+![/docs/ap/mech/Untitled-106.png](/docs/ap/mech/Untitled-106.png)
+1. ![/docs/ap/mech/Untitled-107.png](/docs/ap/mech/Untitled-107.png)
 a. Integrate 0m to 4m
-![/docs/ap/mech/Untitled%20108.png](/docs/ap/mech/Untitled%20108.png)
-1. ![/docs/ap/mech/Untitled%20109.png](/docs/ap/mech/Untitled%20109.png)
-![/docs/ap/mech/Untitled%20110.png](/docs/ap/mech/Untitled%20110.png)
-1. ![/docs/ap/mech/Untitled%20111.png](/docs/ap/mech/Untitled%20111.png)
-![/docs/ap/mech/Untitled%20112.png](/docs/ap/mech/Untitled%20112.png)
-![/docs/ap/mech/Untitled%20113.png](/docs/ap/mech/Untitled%20113.png)
-![/docs/ap/mech/Untitled%20114.png](/docs/ap/mech/Untitled%20114.png)
-1. ![/docs/ap/mech/Untitled%20115.png](/docs/ap/mech/Untitled%20115.png)
-![/docs/ap/mech/Untitled%20116.png](/docs/ap/mech/Untitled%20116.png)
-1. ![/docs/ap/mech/Untitled%20117.png](/docs/ap/mech/Untitled%20117.png)
-![/docs/ap/mech/Untitled%20118.png](/docs/ap/mech/Untitled%20118.png)
-1.  ![/docs/ap/mech/Untitled%20119.png](/docs/ap/mech/Untitled%20119.png)
-![/docs/ap/mech/Untitled%20120.png](/docs/ap/mech/Untitled%20120.png)
-1.  ![/docs/ap/mech/Untitled%20121.png](/docs/ap/mech/Untitled%20121.png)
-![/docs/ap/mech/Untitled%20122.png](/docs/ap/mech/Untitled%20122.png)
-1.  ![/docs/ap/mech/Untitled%20123.png](/docs/ap/mech/Untitled%20123.png)
-![/docs/ap/mech/Untitled%20124.png](/docs/ap/mech/Untitled%20124.png)
-1.  ![/docs/ap/mech/Untitled%20125.png](/docs/ap/mech/Untitled%20125.png)
-![/docs/ap/mech/Untitled%20126.png](/docs/ap/mech/Untitled%20126.png)
+![/docs/ap/mech/Untitled-108.png](/docs/ap/mech/Untitled-108.png)
+1. ![/docs/ap/mech/Untitled-109.png](/docs/ap/mech/Untitled-109.png)
+![/docs/ap/mech/Untitled-110.png](/docs/ap/mech/Untitled-110.png)
+1. ![/docs/ap/mech/Untitled-111.png](/docs/ap/mech/Untitled-111.png)
+![/docs/ap/mech/Untitled-112.png](/docs/ap/mech/Untitled-112.png)
+![/docs/ap/mech/Untitled-113.png](/docs/ap/mech/Untitled-113.png)
+![/docs/ap/mech/Untitled-114.png](/docs/ap/mech/Untitled-114.png)
+1. ![/docs/ap/mech/Untitled-115.png](/docs/ap/mech/Untitled-115.png)
+![/docs/ap/mech/Untitled-116.png](/docs/ap/mech/Untitled-116.png)
+1. ![/docs/ap/mech/Untitled-117.png](/docs/ap/mech/Untitled-117.png)
+![/docs/ap/mech/Untitled-118.png](/docs/ap/mech/Untitled-118.png)
+1.  ![/docs/ap/mech/Untitled-119.png](/docs/ap/mech/Untitled-119.png)
+![/docs/ap/mech/Untitled-120.png](/docs/ap/mech/Untitled-120.png)
+1.  ![/docs/ap/mech/Untitled-121.png](/docs/ap/mech/Untitled-121.png)
+![/docs/ap/mech/Untitled-122.png](/docs/ap/mech/Untitled-122.png)
+1.  ![/docs/ap/mech/Untitled-123.png](/docs/ap/mech/Untitled-123.png)
+![/docs/ap/mech/Untitled-124.png](/docs/ap/mech/Untitled-124.png)
+1.  ![/docs/ap/mech/Untitled-125.png](/docs/ap/mech/Untitled-125.png)
+![/docs/ap/mech/Untitled-126.png](/docs/ap/mech/Untitled-126.png)
 {{< /expand >}}
 
 
@@ -320,90 +320,90 @@ $$\ \Delta \theta=\omega_f \Delta t-\frac{1}{2}\alpha \Delta t^2 \text{ -- no } 
 
 
 ## Rotational Inertia 
-![/docs/ap/mech/Untitled%20127.png](/docs/ap/mech/Untitled%20127.png)
+![/docs/ap/mech/Untitled-127.png](/docs/ap/mech/Untitled-127.png)
 
-{{< expand "Pulleys" >}}![/docs/ap/mech/Untitled%20128.png](/docs/ap/mech/Untitled%20128.png)
+{{< expand "Pulleys" >}}![/docs/ap/mech/Untitled-128.png](/docs/ap/mech/Untitled-128.png)
 with finishing with none+blue same time, then green, then red
-![/docs/ap/mech/Untitled%20129.png](/docs/ap/mech/Untitled%20129.png)
-![/docs/ap/mech/Untitled%20130.png](/docs/ap/mech/Untitled%20130.png)
+![/docs/ap/mech/Untitled-129.png](/docs/ap/mech/Untitled-129.png)
+![/docs/ap/mech/Untitled-130.png](/docs/ap/mech/Untitled-130.png)
 {{< /expand >}}
 
 {{< expand "Rolling Down an Incline" >}}
-![/docs/ap/mech/Untitled%20131.png](/docs/ap/mech/Untitled%20131.png)
-![/docs/ap/mech/Untitled%20132.png](/docs/ap/mech/Untitled%20132.png)
-![/docs/ap/mech/Untitled%20133.png](/docs/ap/mech/Untitled%20133.png)
-![/docs/ap/mech/Untitled%20134.png](/docs/ap/mech/Untitled%20134.png)
+![/docs/ap/mech/Untitled-131.png](/docs/ap/mech/Untitled-131.png)
+![/docs/ap/mech/Untitled-132.png](/docs/ap/mech/Untitled-132.png)
+![/docs/ap/mech/Untitled-133.png](/docs/ap/mech/Untitled-133.png)
+![/docs/ap/mech/Untitled-134.png](/docs/ap/mech/Untitled-134.png)
 {{< /expand >}}
 
 {{< expand "Rolling Down an Incline + Slipping" >}}
-![/docs/ap/mech/Untitled%20135.png](/docs/ap/mech/Untitled%20135.png)
-![/docs/ap/mech/Untitled%20136.png](/docs/ap/mech/Untitled%20136.png)
-![/docs/ap/mech/Untitled%20137.png](/docs/ap/mech/Untitled%20137.png)
+![/docs/ap/mech/Untitled-135.png](/docs/ap/mech/Untitled-135.png)
+![/docs/ap/mech/Untitled-136.png](/docs/ap/mech/Untitled-136.png)
+![/docs/ap/mech/Untitled-137.png](/docs/ap/mech/Untitled-137.png)
 {{< /expand >}}
 
 {{< expand "Rolling Up an Incline" >}}
-![/docs/ap/mech/Untitled%20138.png](/docs/ap/mech/Untitled%20138.png)
-![/docs/ap/mech/Untitled%20139.png](/docs/ap/mech/Untitled%20139.png)
-![/docs/ap/mech/Untitled%20140.png](/docs/ap/mech/Untitled%20140.png)
-![/docs/ap/mech/Untitled%20141.png](/docs/ap/mech/Untitled%20141.png)
-![/docs/ap/mech/Untitled%20142.png](/docs/ap/mech/Untitled%20142.png)
+![/docs/ap/mech/Untitled-138.png](/docs/ap/mech/Untitled-138.png)
+![/docs/ap/mech/Untitled-139.png](/docs/ap/mech/Untitled-139.png)
+![/docs/ap/mech/Untitled-140.png](/docs/ap/mech/Untitled-140.png)
+![/docs/ap/mech/Untitled-141.png](/docs/ap/mech/Untitled-141.png)
+![/docs/ap/mech/Untitled-142.png](/docs/ap/mech/Untitled-142.png)
 {{< /expand >}}
 
 <!-- .$\frac{dW}{d}$  -->
 {{< expand "Rolling Up an Incline" >}} 
-![/docs/ap/mech/Untitled%20138.png](/docs/ap/mech/Untitled%20138.png)
-![/docs/ap/mech/Untitled%20139.png](/docs/ap/mech/Untitled%20139.png)
-![/docs/ap/mech/Untitled%20140.png](/docs/ap/mech/Untitled%20140.png)
-![/docs/ap/mech/Untitled%20141.png](/docs/ap/mech/Untitled%20141.png)
-![/docs/ap/mech/Untitled%20142.png](/docs/ap/mech/Untitled%20142.png)
+![/docs/ap/mech/Untitled-138.png](/docs/ap/mech/Untitled-138.png)
+![/docs/ap/mech/Untitled-139.png](/docs/ap/mech/Untitled-139.png)
+![/docs/ap/mech/Untitled-140.png](/docs/ap/mech/Untitled-140.png)
+![/docs/ap/mech/Untitled-141.png](/docs/ap/mech/Untitled-141.png)
+![/docs/ap/mech/Untitled-142.png](/docs/ap/mech/Untitled-142.png)
 {{< /expand >}}
 
 {{< expand "Rolling Up an Incline + Slipping" >}}
-![/docs/ap/mech/Untitled%20143.png](/docs/ap/mech/Untitled%20143.png)
-![/docs/ap/mech/Untitled%20144.png](/docs/ap/mech/Untitled%20144.png)
-![/docs/ap/mech/Untitled%20145.png](/docs/ap/mech/Untitled%20145.png)
+![/docs/ap/mech/Untitled-143.png](/docs/ap/mech/Untitled-143.png)
+![/docs/ap/mech/Untitled-144.png](/docs/ap/mech/Untitled-144.png)
+![/docs/ap/mech/Untitled-145.png](/docs/ap/mech/Untitled-145.png)
 Should be Blue > Green > Red (0)
 {{< /expand >}}
 
 ## Practice Qs
 {{< expand "Practice Qs" >}}
-1. ![/docs/ap/mech/Untitled%20146.png](/docs/ap/mech/Untitled%20146.png)
-![/docs/ap/mech/Untitled%20147.png](/docs/ap/mech/Untitled%20147.png)
-1. ![/docs/ap/mech/Untitled%20148.png](/docs/ap/mech/Untitled%20148.png)
-![/docs/ap/mech/Untitled%20149.png](/docs/ap/mech/Untitled%20149.png)
-1. ![/docs/ap/mech/Untitled%20150.png](/docs/ap/mech/Untitled%20150.png)
-![/docs/ap/mech/Untitled%20151.png](/docs/ap/mech/Untitled%20151.png)
-1. ![/docs/ap/mech/Untitled%20152.png](/docs/ap/mech/Untitled%20152.png)
+1. ![/docs/ap/mech/Untitled-146.png](/docs/ap/mech/Untitled-146.png)
+![/docs/ap/mech/Untitled-147.png](/docs/ap/mech/Untitled-147.png)
+1. ![/docs/ap/mech/Untitled-148.png](/docs/ap/mech/Untitled-148.png)
+![/docs/ap/mech/Untitled-149.png](/docs/ap/mech/Untitled-149.png)
+1. ![/docs/ap/mech/Untitled-150.png](/docs/ap/mech/Untitled-150.png)
+![/docs/ap/mech/Untitled-151.png](/docs/ap/mech/Untitled-151.png)
+1. ![/docs/ap/mech/Untitled-152.png](/docs/ap/mech/Untitled-152.png)
 where green has lower moment of inertia, and red has larger moment of inertia
-![/docs/ap/mech/Untitled%20153.png](/docs/ap/mech/Untitled%20153.png)
-![/docs/ap/mech/Untitled%20154.png](/docs/ap/mech/Untitled%20154.png)
-1. ![/docs/ap/mech/Untitled%20155.png](/docs/ap/mech/Untitled%20155.png)
-![/docs/ap/mech/Untitled%20156.png](/docs/ap/mech/Untitled%20156.png)
-![/docs/ap/mech/Untitled%20157.png](/docs/ap/mech/Untitled%20157.png)
-1. ![/docs/ap/mech/Untitled%20158.png](/docs/ap/mech/Untitled%20158.png)
+![/docs/ap/mech/Untitled-153.png](/docs/ap/mech/Untitled-153.png)
+![/docs/ap/mech/Untitled-154.png](/docs/ap/mech/Untitled-154.png)
+1. ![/docs/ap/mech/Untitled-155.png](/docs/ap/mech/Untitled-155.png)
+![/docs/ap/mech/Untitled-156.png](/docs/ap/mech/Untitled-156.png)
+![/docs/ap/mech/Untitled-157.png](/docs/ap/mech/Untitled-157.png)
+1. ![/docs/ap/mech/Untitled-158.png](/docs/ap/mech/Untitled-158.png)
 - Answer
-![/docs/ap/mech/Untitled%20159.png](/docs/ap/mech/Untitled%20159.png)
-![/docs/ap/mech/Untitled%20160.png](/docs/ap/mech/Untitled%20160.png)
-![/docs/ap/mech/Untitled%20161.png](/docs/ap/mech/Untitled%20161.png)
-![/docs/ap/mech/Untitled%20162.png](/docs/ap/mech/Untitled%20162.png)
-![/docs/ap/mech/Untitled%20163.png](/docs/ap/mech/Untitled%20163.png)
-1. ![/docs/ap/mech/Untitled%20164.png](/docs/ap/mech/Untitled%20164.png)
-![/docs/ap/mech/Untitled%20165.png](/docs/ap/mech/Untitled%20165.png)
-1. ![/docs/ap/mech/Untitled%20166.png](/docs/ap/mech/Untitled%20166.png)
-![/docs/ap/mech/Untitled%20167.png](/docs/ap/mech/Untitled%20167.png)
+![/docs/ap/mech/Untitled-159.png](/docs/ap/mech/Untitled-159.png)
+![/docs/ap/mech/Untitled-160.png](/docs/ap/mech/Untitled-160.png)
+![/docs/ap/mech/Untitled-161.png](/docs/ap/mech/Untitled-161.png)
+![/docs/ap/mech/Untitled-162.png](/docs/ap/mech/Untitled-162.png)
+![/docs/ap/mech/Untitled-163.png](/docs/ap/mech/Untitled-163.png)
+1. ![/docs/ap/mech/Untitled-164.png](/docs/ap/mech/Untitled-164.png)
+![/docs/ap/mech/Untitled-165.png](/docs/ap/mech/Untitled-165.png)
+1. ![/docs/ap/mech/Untitled-166.png](/docs/ap/mech/Untitled-166.png)
+![/docs/ap/mech/Untitled-167.png](/docs/ap/mech/Untitled-167.png)
 9
-![/docs/ap/mech/Untitled%20168.png](/docs/ap/mech/Untitled%20168.png)
-![/docs/ap/mech/Untitled%20169.png](/docs/ap/mech/Untitled%20169.png)
+![/docs/ap/mech/Untitled-168.png](/docs/ap/mech/Untitled-168.png)
+![/docs/ap/mech/Untitled-169.png](/docs/ap/mech/Untitled-169.png)
 10
-![/docs/ap/mech/Untitled%20170.png](/docs/ap/mech/Untitled%20170.png)
-![/docs/ap/mech/Untitled%20171.png](/docs/ap/mech/Untitled%20171.png)
+![/docs/ap/mech/Untitled-170.png](/docs/ap/mech/Untitled-170.png)
+![/docs/ap/mech/Untitled-171.png](/docs/ap/mech/Untitled-171.png)
 11
-![/docs/ap/mech/Untitled%20172.png](/docs/ap/mech/Untitled%20172.png)
-![/docs/ap/mech/Untitled%20173.png](/docs/ap/mech/Untitled%20173.png)
+![/docs/ap/mech/Untitled-172.png](/docs/ap/mech/Untitled-172.png)
+![/docs/ap/mech/Untitled-173.png](/docs/ap/mech/Untitled-173.png)
 12
-![/docs/ap/mech/Untitled%20174.png](/docs/ap/mech/Untitled%20174.png)
-![/docs/ap/mech/Untitled%20175.png](/docs/ap/mech/Untitled%20175.png)
+![/docs/ap/mech/Untitled-174.png](/docs/ap/mech/Untitled-174.png)
+![/docs/ap/mech/Untitled-175.png](/docs/ap/mech/Untitled-175.png)
 13
-![/docs/ap/mech/Untitled%20176.png](/docs/ap/mech/Untitled%20176.png)
-![/docs/ap/mech/Untitled%20177.png](/docs/ap/mech/Untitled%20177.png)
+![/docs/ap/mech/Untitled-176.png](/docs/ap/mech/Untitled-176.png)
+![/docs/ap/mech/Untitled-177.png](/docs/ap/mech/Untitled-177.png)
 {{< /expand >}}

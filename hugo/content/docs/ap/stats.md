@@ -33,19 +33,19 @@ The content of these notes are solid, but formatting is not since they're export
 - A **relative frequency table** shows the proportion or percent of individuals having each value.
 - A **marginal relative frequency** gives the percent or proportion of individuals that have a specific value for one Categorical variable.
     - What percent of people in the sample are environmental club members?
-        ![/docs/ap/stats/Untitled%201.png](/docs/ap/stats/Untitled%201.png)
+        ![/docs/ap/stats/Untitled-1.png](/docs/ap/stats/Untitled-1.png)
     - What proportion of people in the sample never used a snowmobile?
-        ![/docs/ap/stats/Untitled%202.png](/docs/ap/stats/Untitled%202.png)
+        ![/docs/ap/stats/Untitled-2.png](/docs/ap/stats/Untitled-2.png)
 - A **joint relative frequency** gives the percent or proportion of individuals that have a specific value for one Categorical variable and a specific value for another Categorical variable.
     - We can compute marginal relative frequencies for the row totals to give the distribution of snowmobile use for all the individuals in the sample:
-        ![/docs/ap/stats/Untitled%203.png](/docs/ap/stats/Untitled%203.png)
+        ![/docs/ap/stats/Untitled-3.png](/docs/ap/stats/Untitled-3.png)
     - We can compute marginal relative frequencies for the column totals to give the distribution of environmental club membership in the entire sample of 1526 park visitors
-        ![/docs/ap/stats/Untitled%204.png](/docs/ap/stats/Untitled%204.png)
+        ![/docs/ap/stats/Untitled-4.png](/docs/ap/stats/Untitled-4.png)
 - A **conditional relative frequency** gives the percent or proportion of individuals that have a specific value for one Categorical variable among individuals who share the same value of another Categorical variable (the condition).
     - What proportion of snowmobile renters in the sample are not environmental club members?
-        ![/docs/ap/stats/Untitled%205.png](/docs/ap/stats/Untitled%205.png)
+        ![/docs/ap/stats/Untitled-5.png](/docs/ap/stats/Untitled-5.png)
     - What percent of environmental club members in the sample are snowmobile owners?
-        ![/docs/ap/stats/Untitled%206.png](/docs/ap/stats/Untitled%206.png)
+        ![/docs/ap/stats/Untitled-6.png](/docs/ap/stats/Untitled-6.png)
 ## Types of Graphs
 - Pie Chart — Categorical
     - Need frequency  value and corresponding label
@@ -62,7 +62,7 @@ The content of these notes are solid, but formatting is not since they're export
     - How to find percentile
         - Percentile is the percent of people you're better than, or percent of people that are worse than you
         - Find how many points the decided point is ahead of, then divide by sample size
-            ![/docs/ap/stats/Untitled%207.png](/docs/ap/stats/Untitled%207.png)
+            ![/docs/ap/stats/Untitled-7.png](/docs/ap/stats/Untitled-7.png)
             The blue point is greater than 17 points, making it 17/20 —> in the 85% percentile
 - Stemplot  — Quantitative
     - A stemplot shows each data value separated into two parts: a stem, which consists of all but the final digit, and a leaf, the final digit. The stems are ordered from lowest to highest and arranged in a vertical column. The leaves are arranged in increasing order out from the appropriate stems.
@@ -77,7 +77,7 @@ The content of these notes are solid, but formatting is not since they're export
 > Always be sure to include **context** when you are asked to describe a distribution. This means using the variable name, not just the units the variable is measured in.
 > When **comparing** distributions of Quantitative data, it’s not enough just to list values for the center and variability of each distribution. You have to explicitly compare these values, using words like “greater than,” “less than,” or “about the same as.”
 ### Shape (Skew)
-![/docs/ap/stats/Untitled%208.png](/docs/ap/stats/Untitled%208.png)
+![/docs/ap/stats/Untitled-8.png](/docs/ap/stats/Untitled-8.png)
 - A distribution is skewed to the **right** if the right side of the graph is much longer than the left side.
 - A distribution is skewed to the **left** if the left side of the graph is much longer than the right side.
 > The distribution of [context] is [skewed left/right/sym]
@@ -126,7 +126,7 @@ The content of these notes are solid, but formatting is not since they're export
 4. Q3
 5. Max
 ## Standardized score (z-score) — the 'test statistic'
-![/docs/ap/stats/Untitled%209.png](/docs/ap/stats/Untitled%209.png)
+![/docs/ap/stats/Untitled-9.png](/docs/ap/stats/Untitled-9.png)
 > Tells us how many standard deviations from the mean the value falls, and in what direction.
 
 > Values larger than the mean have positive z-scores. Values smaller than the mean have negative z-scores.
@@ -178,7 +178,7 @@ The content of these notes are solid, but formatting is not since they're export
     - The correlation r indicates the direction of a linear relationship by its sign: r > 0 for a positive association and r < 0 for a negative association.
     - The extreme values r = −1 and r = 1 occur only in the case of a perfect linear relationship, when the points lie exactly along a straight line.
     - If the linear relationship is strong, the correlation r will be close to 1 or −1. If the linear relationship is weak, the correlation r will be close to 0.
-        ![/docs/ap/stats/Untitled%2010.png](/docs/ap/stats/Untitled%2010.png)
+        ![/docs/ap/stats/Untitled-10.png](/docs/ap/stats/Untitled-10.png)
 ### Unusual features:
 - outliers
     - that fall outside the overall pattern and distinct clusters of points — doesn't follow trend
@@ -189,14 +189,14 @@ The content of these notes are solid, but formatting is not since they're export
 ## Interpreting
 > There is a [strength — fairly strong/weak], [direction — positive / negative] [form — (non)linear] relationship between [x var] and [y-var] with [any outliers + outlier point].
 ## Residuals
-![/docs/ap/stats/Untitled%2011.png](/docs/ap/stats/Untitled%2011.png)
+![/docs/ap/stats/Untitled-11.png](/docs/ap/stats/Untitled-11.png)
 a = y-int, b = slope, s = s, R-sq = .$r^2$
 ## Least-squares Regression Line (LSRL)
 - A regression line is a line that describes how a response variable y changes as an explanatory variable x changes.
 - Made to reduce the residual
-    ![/docs/ap/stats/Untitled%2012.png](/docs/ap/stats/Untitled%2012.png)
+    ![/docs/ap/stats/Untitled-12.png](/docs/ap/stats/Untitled-12.png)
 - Regression lines are expressed in the form where ŷ(pronounced “y-hat”) is the predicted value of y for a given value of x.
-    ![/docs/ap/stats/Untitled%2013.png](/docs/ap/stats/Untitled%2013.png)
+    ![/docs/ap/stats/Untitled-13.png](/docs/ap/stats/Untitled-13.png)
 - **Extrapolation** is the use of a regression line for prediction far outside the interval of x values used to obtain the line. Such predictions are often not **accurate**.
     - Don’t make predictions using values of x that are much larger or much smaller than those that actually appear in your data.
 - Interpretation  — **NEEDS CONTEXT**
@@ -205,11 +205,11 @@ a = y-int, b = slope, s = s, R-sq = .$r^2$
         - b0
         > For a [context of x-var] with a [x-unit] of 0, the predicted [y-var] is [b0]
     - Slope
-        ![/docs/ap/stats/Untitled%2014.png](/docs/ap/stats/Untitled%2014.png)
+        ![/docs/ap/stats/Untitled-14.png](/docs/ap/stats/Untitled-14.png)
         - b1
         > For every increase of 1 in [x-unit], the predicted [y-unit] increases by [b1] [y-units]
 - Residual
-    ![/docs/ap/stats/Untitled%2015.png](/docs/ap/stats/Untitled%2015.png)
+    ![/docs/ap/stats/Untitled-15.png](/docs/ap/stats/Untitled-15.png)
     - Difference between actual and predicted value
     - Interpretation:
         > The actual [y-var] for a [context] of [x-input & x-units] is [actual value (point we know) - predicted value]  [lower/higher] than predicted by the LSRL.
@@ -218,12 +218,12 @@ a = y-int, b = slope, s = s, R-sq = .$r^2$
         - a scatterplot that displays the residuals on the vertical axis and the explanatory variable on the horizontal axis.
         - To determine whether the regression model is appropriate, look at the residual plot.
             - If there is no leftover curved pattern in the residual plot, the regression model is appropriate.
-                ![/docs/ap/stats/Untitled%2016.png](/docs/ap/stats/Untitled%2016.png)
+                ![/docs/ap/stats/Untitled-16.png](/docs/ap/stats/Untitled-16.png)
                 LSRL is good
             - Interpretation:
                 > Because the residual plot does not show a clear pattern, the linear model **is** appropriate for the data
             - If there is a leftover curved pattern in the residual plot, consider using a regression model with a different form.
-                ![/docs/ap/stats/Untitled%2017.png](/docs/ap/stats/Untitled%2017.png)
+                ![/docs/ap/stats/Untitled-17.png](/docs/ap/stats/Untitled-17.png)
                 LSRL is bad
             - Interpretation:
                 > Because the residual plot shows a clear patter, the linear model **is not** appropriate for the data
@@ -330,7 +330,7 @@ Chapter 4
     - **Block, Randomized block design**
         - A **block** is a group of experimental units that are known before the experiment to be similar in some way that is expected to affect the response to the treatments.
         - In a **randomized block design,** the random assignment of experimental units to treatments is carried out separately within each block.
-            ![/docs/ap/stats/Untitled%2018.png](/docs/ap/stats/Untitled%2018.png)
+            ![/docs/ap/stats/Untitled-18.png](/docs/ap/stats/Untitled-18.png)
     - **Matched Pairs**
         - A matched pairs design is a common experimental design for comparing two treatments that uses blocks of size 2.
         - In some matched pairs designs, two very similar experimental units are paired and the two treatments are randomly assigned within each pair.
@@ -387,7 +387,7 @@ Chapters 5 & 6
         - Perform many trials of the simulation.
         - Use the results of your simulation to answer the question of interest.
         - Example
-            ![/docs/ap/stats/Untitled%2019.png](/docs/ap/stats/Untitled%2019.png)
+            ![/docs/ap/stats/Untitled-19.png](/docs/ap/stats/Untitled-19.png)
 - Probability Model: A description of some chance process that consists of 2 parts:
     1. a list of all possible outcomes
         - **SAMPLE SPACE:** The list of all possible outcomes.
@@ -407,12 +407,12 @@ Chapters 5 & 6
 - Conditional
     - CONDITIONAL PROBABILITY
         - Example
-            ![/docs/ap/stats/Untitled%2020.png](/docs/ap/stats/Untitled%2020.png)
+            ![/docs/ap/stats/Untitled-20.png](/docs/ap/stats/Untitled-20.png)
         - The probability that one event happens given that another event is known to have happened.
         - The conditional probability that event B happens GIVEN that event A has happened is denoted by P(B | A).
 - INDEPENDENT EVENTS
     - A and B are independent events if knowing whether or not one event has occurred does not change the probability that the other event will happen.
-        ![/docs/ap/stats/Untitled%2021.png](/docs/ap/stats/Untitled%2021.png)
+        ![/docs/ap/stats/Untitled-21.png](/docs/ap/stats/Untitled-21.png)
     - In other words, events A and B are independent if
         $$P(A ∣ B) = P(A ∣ B ^c ) = P(A)$$
     - Alternatively, events A and B are independent if
@@ -425,11 +425,11 @@ Chapters 5 & 6
     - A random variable that has an infinite number of outcomes with no gaps.
     - Examples: Temperature; Race Times; Heart Rate, etc.
 - Mean
-    ![/docs/ap/stats/Untitled%2022.png](/docs/ap/stats/Untitled%2022.png)
+    ![/docs/ap/stats/Untitled-22.png](/docs/ap/stats/Untitled-22.png)
 - Variance
-    ![/docs/ap/stats/Untitled%2023.png](/docs/ap/stats/Untitled%2023.png)
+    ![/docs/ap/stats/Untitled-23.png](/docs/ap/stats/Untitled-23.png)
 - Standard Deviation
-    ![/docs/ap/stats/Untitled%2024.png](/docs/ap/stats/Untitled%2024.png)
+    ![/docs/ap/stats/Untitled-24.png](/docs/ap/stats/Untitled-24.png)
 - Transforming  — **only works for independent!**
     - When MULTIPLYING (or DIVIDING) each value in a probability distribution by some number b, the
         ● mean is MULTIPLIED (or DIVIDED) by b
@@ -441,12 +441,12 @@ Chapters 5 & 6
         ● standard deviation STAYS THE SAME
 - Combining — **only works for independent!**
     Suppose we add two normal distributions (X + Y) or we subtract two normal distributions (X – Y). The shape of the resulting distribution will be NORMAL and the mean and standard deviation can be calculated using the RULES.
-    ![/docs/ap/stats/Untitled%2025.png](/docs/ap/stats/Untitled%2025.png)
+    ![/docs/ap/stats/Untitled-25.png](/docs/ap/stats/Untitled-25.png)
     where \row (no ^2)  is standard deviation
 - Difference between the binomial setting and the geometric setting
-    ![/docs/ap/stats/Untitled%2026.png](/docs/ap/stats/Untitled%2026.png)
+    ![/docs/ap/stats/Untitled-26.png](/docs/ap/stats/Untitled-26.png)
 - Binomial
-    ![/docs/ap/stats/Untitled%2027.png](/docs/ap/stats/Untitled%2027.png)
+    ![/docs/ap/stats/Untitled-27.png](/docs/ap/stats/Untitled-27.png)
     - Binomial Setting:
         1. Binary? Each observation falls into 1 of 2 categories: SUCCESS or FAILURE
         2. Independent? The n observations are all INDEPENDENT. (knowing one outcome of a trial has no effect on the other trials)
@@ -462,12 +462,12 @@ Chapters 5 & 6
         - Abbreviation = B (n, p)
     - BINOMIAL COEFFICIENT
         - The number of ways to arrange k successes among n trials; “Combinations”
-            ![/docs/ap/stats/Untitled%2028.png](/docs/ap/stats/Untitled%2028.png)
+            ![/docs/ap/stats/Untitled-28.png](/docs/ap/stats/Untitled-28.png)
     - Binomial Probability Formula
         - `binomialPdf` / `Cdf` also works
-        ![/docs/ap/stats/Untitled%2029.png](/docs/ap/stats/Untitled%2029.png)
+        ![/docs/ap/stats/Untitled-29.png](/docs/ap/stats/Untitled-29.png)
 - Geometric:
-    ![/docs/ap/stats/Untitled%2030.png](/docs/ap/stats/Untitled%2030.png)
+    ![/docs/ap/stats/Untitled-30.png](/docs/ap/stats/Untitled-30.png)
     - The Geometric Setting
         1. Binary? Each observation falls into 1 of 2 categories: SUCCESS or FAILURE
         2. Independent? The n observations are all INDEPENDENT. (knowing one outcome of a trial has no effect on the other trials).
@@ -475,10 +475,10 @@ Chapters 5 & 6
         4. Success? The probability of success, p, is SAME for each trial.
     - Shape
         - skewed right
-        ![/docs/ap/stats/Untitled%2031.png](/docs/ap/stats/Untitled%2031.png)
+        ![/docs/ap/stats/Untitled-31.png](/docs/ap/stats/Untitled-31.png)
     - GEOMETRIC PROBABILITY FORMULA
         - `geometCdf` / `Pdf` also works
-        ![/docs/ap/stats/Untitled%2032.png](/docs/ap/stats/Untitled%2032.png)
+        ![/docs/ap/stats/Untitled-32.png](/docs/ap/stats/Untitled-32.png)
 ---
 # Unit 5: Sampling Distributions
 Chapter 7 + 10
@@ -487,7 +487,7 @@ Chapter 7 + 10
 - Always say “the distribution of [blank],” being careful to distinguish the distribution of the population, the distribution of sample data, and the sampling distribution of a statistic.
 - Sampling distribution of the sample **proportion**
     - The sampling distribution of the sample  proportion p hat describes the distribution of values taken by the sample proportion p hat in all possible samples of the same size from the same population.
-        ![/docs/ap/stats/Untitled%2033.png](/docs/ap/stats/Untitled%2033.png)
+        ![/docs/ap/stats/Untitled-33.png](/docs/ap/stats/Untitled-33.png)
     - Conditions
         - Random: The data must come from a well-designed RANDOM sample or a RANDOMIZED experiment.
         - Normal: The sampling distribution is approximately NORMAL, meaning we can use a z-test statistic.
@@ -497,7 +497,7 @@ Chapter 7 + 10
             - 10% Condition: When sampling **w/o replacement** to verify the use of our standard deviation ( 10n < N )
 - Sampling distribution of the sample **mean**
     - The sampling distribution of the sample mean x describes the distribution of values taken by the sample mean x in all possible samples of the same size from the same population.
-        ![/docs/ap/stats/Untitled%2034.png](/docs/ap/stats/Untitled%2034.png)
+        ![/docs/ap/stats/Untitled-34.png](/docs/ap/stats/Untitled-34.png)
     - Conditions
         - Random: The data must come from a well-designed RANDOM sample or a RANDOMIZED experiment.
         - Normal: The sampling distribution is approximately NORMAL, meaning we can use a z-test/t-test statistic.
@@ -507,12 +507,12 @@ Chapter 7 + 10
                 - The central limit theorem (CLT) says that when n is larger than 30, the sampling distribution of the sample mean x is approximately Normal.
             - Distribution shouldn't be skewed
                 - values above the median are much more variable than the values below the median
-                ![/docs/ap/stats/Untitled%2035.png](/docs/ap/stats/Untitled%2035.png)
+                ![/docs/ap/stats/Untitled-35.png](/docs/ap/stats/Untitled-35.png)
         - Independent:
             - If 2 samples, both samples must be independent
             - 10% Condition: When sampling **w/o replacement** to verify the use of our standard deviation ( 10n < N )  — 10*n_diff < N_diff for paired data
 - Sampling Variability: Sampling variability refers to the fact that different random samples of the same size from the same population produce different values for a statistic.
-![/docs/ap/stats/Untitled%2036.png](/docs/ap/stats/Untitled%2036.png)
+![/docs/ap/stats/Untitled-36.png](/docs/ap/stats/Untitled-36.png)
 - Parameter: A number computed from a **population**
 - Statistic
     - A number computed from a SAMPLE
@@ -520,10 +520,10 @@ Chapter 7 + 10
         1. LOW BIAS (Randomization) High bias is usually because of a poor sampling design (lack of randomness).
         2. LOW VARIABILITY (Sample Size) Reduce the variability of a statistic is to INCREASING SAMPLE SIZE.
 - Difference between proportions
-    ![/docs/ap/stats/Untitled%2037.png](/docs/ap/stats/Untitled%2037.png)
+    ![/docs/ap/stats/Untitled-37.png](/docs/ap/stats/Untitled-37.png)
 - Difference between means
-    ![/docs/ap/stats/Untitled%2038.png](/docs/ap/stats/Untitled%2038.png)
-    ![/docs/ap/stats/Untitled%2039.png](/docs/ap/stats/Untitled%2039.png)
+    ![/docs/ap/stats/Untitled-38.png](/docs/ap/stats/Untitled-38.png)
+    ![/docs/ap/stats/Untitled-39.png](/docs/ap/stats/Untitled-39.png)
 Many students use “accurate” when they really mean “precise.” For example, a response that says “increasing the sample size will make an estimate more accurate” is incorrect
 ---
 ## Paired Data
@@ -531,7 +531,7 @@ Many students use “accurate” when they really mean “precise.” For exampl
 - 2 sets of data that are not independent from each other, then they're paired
 - Analyzing Paired Data:
 - To analyze paired data, start by computing the difference for each pair. Then make a graph of the differences. Use the mean difference x and the standard deviation of the differences as summary statistic.
-![/docs/ap/stats/Untitled%2040.png](/docs/ap/stats/Untitled%2040.png)
+![/docs/ap/stats/Untitled-40.png](/docs/ap/stats/Untitled-40.png)
 ### Confidence Intervals
 - Point estimator:
     - a statistic that provides an estimate of a population parameter.
@@ -544,8 +544,8 @@ Many students use “accurate” when they really mean “precise.” For exampl
     - Interpretation
         > If we were to select many random samples from a population and construct a C% confidence interval using each sample, about C% of the intervals would capture the [parameter in context].
 - Confidence interval
-    ![/docs/ap/stats/Untitled%2041.png](/docs/ap/stats/Untitled%2041.png)
-    ![/docs/ap/stats/Untitled%2042.png](/docs/ap/stats/Untitled%2042.png)
+    ![/docs/ap/stats/Untitled-41.png](/docs/ap/stats/Untitled-41.png)
+    ![/docs/ap/stats/Untitled-42.png](/docs/ap/stats/Untitled-42.png)
     - When interpreting a confidence interval, make sure that you are describing the **parameter** and not the statistic.
     - Interpretation
         > “We are C% **confident** that the interval from [min] to [max] captures the true value of the [parameter in context].”
@@ -561,8 +561,8 @@ Many students use “accurate” when they really mean “precise.” For exampl
     - Z-score when we know stdiv
     - t-score when we don't know stdiv
 - Standard Error (SE)
-    ![/docs/ap/stats/Untitled%2043.png](/docs/ap/stats/Untitled%2043.png)
-    ![/docs/ap/stats/Untitled%2044.png](/docs/ap/stats/Untitled%2044.png)
+    ![/docs/ap/stats/Untitled-43.png](/docs/ap/stats/Untitled-43.png)
+    ![/docs/ap/stats/Untitled-44.png](/docs/ap/stats/Untitled-44.png)
 ### Proportions
 - Four-step process:
     - State
@@ -578,11 +578,11 @@ Many students use “accurate” when they really mean “precise.” For exampl
     - Do
         - Perform the calculations.
         > "Because the conditions are true, we can do our calculations:"
-        ![/docs/ap/stats/Untitled%2041.png](/docs/ap/stats/Untitled%2041.png)
+        ![/docs/ap/stats/Untitled-41.png](/docs/ap/stats/Untitled-41.png)
         - 1 proportion
-            ![/docs/ap/stats/Untitled%2045.png](/docs/ap/stats/Untitled%2045.png)
+            ![/docs/ap/stats/Untitled-45.png](/docs/ap/stats/Untitled-45.png)
         - 2 proportions
-            ![/docs/ap/stats/Untitled%2046.png](/docs/ap/stats/Untitled%2046.png)
+            ![/docs/ap/stats/Untitled-46.png](/docs/ap/stats/Untitled-46.png)
         - where z* is the critical value for the standard Normal curve with C% of its area between −z* and z*.
     - Conclude
         - Interpret your interval in the context of the problem.
@@ -611,21 +611,21 @@ Many students use “accurate” when they really mean “precise.” For exampl
         - Perform the calculations.
         - **z-score**
             > Because we know conditions are true,  can do our calculations
-            ![/docs/ap/stats/Untitled%2041.png](/docs/ap/stats/Untitled%2041.png)
+            ![/docs/ap/stats/Untitled-41.png](/docs/ap/stats/Untitled-41.png)
             - 1 mean
-                ![/docs/ap/stats/Untitled%2047.png](/docs/ap/stats/Untitled%2047.png)
+                ![/docs/ap/stats/Untitled-47.png](/docs/ap/stats/Untitled-47.png)
             - 2 means
-                ![/docs/ap/stats/Untitled%2048.png](/docs/ap/stats/Untitled%2048.png)
+                ![/docs/ap/stats/Untitled-48.png](/docs/ap/stats/Untitled-48.png)
                 with z* score and \row
         - **t-score**
             > Because we know conditions are true, we can say that the t-distribution's degree of freedom (df) is df = n - 1 and we'll carry out a [one/two]-sample t interval for a population mean
-            ![/docs/ap/stats/Untitled%2041.png](/docs/ap/stats/Untitled%2041.png)
+            ![/docs/ap/stats/Untitled-41.png](/docs/ap/stats/Untitled-41.png)
             - 1 mean
-                ![/docs/ap/stats/Untitled%2049.png](/docs/ap/stats/Untitled%2049.png)
+                ![/docs/ap/stats/Untitled-49.png](/docs/ap/stats/Untitled-49.png)
             - 2 means
-                ![/docs/ap/stats/Untitled%2050.png](/docs/ap/stats/Untitled%2050.png)
+                ![/docs/ap/stats/Untitled-50.png](/docs/ap/stats/Untitled-50.png)
             - Difference
-                ![/docs/ap/stats/Untitled%2051.png](/docs/ap/stats/Untitled%2051.png)
+                ![/docs/ap/stats/Untitled-51.png](/docs/ap/stats/Untitled-51.png)
     - Conclude
         - Interpret your interval in the context of the problem.
             > We are [C%] **confident** that the interval of [min] to [max] [units] captures the **true mean** of **all** [context]
@@ -649,7 +649,7 @@ Many students use “accurate” when they really mean “precise.” For exampl
         - Get a reasonable value for the population standard deviation σ from an earlier or pilot study.
         - Find the critical value z* from a standard Normal curve for confidence level C%.
         - Set the expression for the margin of error to be less than or equal to ME and solve for n:
-            ![/docs/ap/stats/Untitled%2052.png](/docs/ap/stats/Untitled%2052.png)
+            ![/docs/ap/stats/Untitled-52.png](/docs/ap/stats/Untitled-52.png)
 ## Tests
 ### Shared Vocab
 - Significance Test
@@ -674,7 +674,7 @@ Many students use “accurate” when they really mean “precise.” For exampl
     - The level at which that, when our p-value falls below it, we consider it to be SIGNIFICANT
     - We consider that our sample is so unlikely to happen IF H0 is true, that it likely did NOT happen by chance
 - error + power
-    ![/docs/ap/stats/Untitled%2053.png](/docs/ap/stats/Untitled%2053.png)
+    ![/docs/ap/stats/Untitled-53.png](/docs/ap/stats/Untitled-53.png)
     - Type 1:
         - When H0 is true, but we REJECT H0
         - P(Type I)  = confidence level α
@@ -693,7 +693,7 @@ Many students use “accurate” when they really mean “precise.” For exampl
             - Make Ha further away from H0
     - STANDARDIZED TEST STATISTIC
         - A standardized test statistic measures how far a sample statistic is from what we would expect if the null hypothesis H0 were true, in standard deviation units.
-            ![/docs/ap/stats/Untitled%2054.png](/docs/ap/stats/Untitled%2054.png)
+            ![/docs/ap/stats/Untitled-54.png](/docs/ap/stats/Untitled-54.png)
 ### Proportions
 - Four-step process
     - State
@@ -709,11 +709,11 @@ Many students use “accurate” when they really mean “precise.” For exampl
     - Do
         - Perform the calculations.
             > Because we know conditions are true,  can do our calculations
-            ![/docs/ap/stats/Untitled%2041.png](/docs/ap/stats/Untitled%2041.png)
+            ![/docs/ap/stats/Untitled-41.png](/docs/ap/stats/Untitled-41.png)
         - 1 sample
-            ![/docs/ap/stats/Untitled%2055.png](/docs/ap/stats/Untitled%2055.png)
+            ![/docs/ap/stats/Untitled-55.png](/docs/ap/stats/Untitled-55.png)
         - 2 sample
-            ![/docs/ap/stats/Untitled%2056.png](/docs/ap/stats/Untitled%2056.png)
+            ![/docs/ap/stats/Untitled-56.png](/docs/ap/stats/Untitled-56.png)
             Proportion Difference
         - find p-value
     - Conclude
@@ -722,7 +722,7 @@ Many students use “accurate” when they really mean “precise.” For exampl
                 > Assuming the [H0] is true, there is a [p-value] probability of getting [statistic found] or [more [and/neither] less  — more for H0 < Ha; less for Ha < H0; both for H0 ≠ Ha] in a sample of [sample size] purely by chance. Because [p-value] is less than [alpha] of [confidence level], we have evidence to reject the null hypothesis, and have some evidence that the null hypothesis may be true, meaning [context]
             - P-value greater than
                 > Assuming the [H0] is true, there is a [p-value] probability of getting [statistic found] or [more [and/neither] less — more for H0 < Ha; less for Ha < H0; both for H0 ≠ Ha] in a sample of [sample size] purely by chance. Because [p-value] is greater than [alpha] of [confidence level], we do not have enough evidence to reject the null hypothesis, meaning [context]
-            ![/docs/ap/stats/Untitled%2057.png](/docs/ap/stats/Untitled%2057.png)
+            ![/docs/ap/stats/Untitled-57.png](/docs/ap/stats/Untitled-57.png)
 ### Means
 - Four-step process
     - State
@@ -738,14 +738,14 @@ Many students use “accurate” when they really mean “precise.” For exampl
     - Do
         - Perform the calculations.
             > Because we know conditions are true,  can do our calculations with (n-1) degrees of freedom
-            ![/docs/ap/stats/Untitled%2041.png](/docs/ap/stats/Untitled%2041.png)
+            ![/docs/ap/stats/Untitled-41.png](/docs/ap/stats/Untitled-41.png)
         - 1 sample
-            ![/docs/ap/stats/Untitled%2058.png](/docs/ap/stats/Untitled%2058.png)
+            ![/docs/ap/stats/Untitled-58.png](/docs/ap/stats/Untitled-58.png)
         - 2 sample
-            ![/docs/ap/stats/Untitled%2059.png](/docs/ap/stats/Untitled%2059.png)
+            ![/docs/ap/stats/Untitled-59.png](/docs/ap/stats/Untitled-59.png)
             Mean Difference
         - Paired
-            ![/docs/ap/stats/Untitled%2060.png](/docs/ap/stats/Untitled%2060.png)
+            ![/docs/ap/stats/Untitled-60.png](/docs/ap/stats/Untitled-60.png)
             Paired
         - find P-value
     - Conclude

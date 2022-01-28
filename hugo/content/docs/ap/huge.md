@@ -47,11 +47,11 @@ I*mpacts and Interactions (IMP)*
                 - dot
                     - display pattern, distribution, dispersion of data in an area
                     - Example
-                        ![/docs/ap/huge/Untitled%201.png](/docs/ap/huge/Untitled%201.png)
+                        ![/docs/ap/huge/Untitled-1.png](/docs/ap/huge/Untitled-1.png)
                 - choropleth
                     - display an average value of data in an area
                     - Example
-                        ![/docs/ap/huge/Untitled%202.png](/docs/ap/huge/Untitled%202.png)
+                        ![/docs/ap/huge/Untitled-2.png](/docs/ap/huge/Untitled-2.png)
     2. Types of spatial patterns represented on maps include absolute and relative distance and direction, clustering, dispersal, and elevation.
         - maps are a special form of model that depicts information in two dimensions and usually on paper. A model is a simplified generalization of something in real life
         - relative distance (scale)
@@ -75,7 +75,7 @@ I*mpacts and Interactions (IMP)*
             - density vs concentration:
                 - Density is the amount of an object within a certain area
                 - concentration is how these objects are distributed.
-                ![/docs/ap/huge/Untitled%203.png](/docs/ap/huge/Untitled%203.png)
+                ![/docs/ap/huge/Untitled-3.png](/docs/ap/huge/Untitled-3.png)
                 - Box A the distribution is dispersed.
                 - There is a clear cluster of stars in the upper left corner for Box C.
                 - Box B has concentrations in the left and right sides
@@ -85,18 +85,18 @@ I*mpacts and Interactions (IMP)*
     3. All maps are selective in information; map projections inevitably distort spatial relationships in shape, area, distance, and direction
         - Maps are 1D representations (projection) of a 2D environment, so they'll inherently have distortion
         - Mercator
-            ![/docs/ap/huge/Untitled%204.png](/docs/ap/huge/Untitled%204.png)
+            ![/docs/ap/huge/Untitled-4.png](/docs/ap/huge/Untitled-4.png)
             - shape: fairly accurate
             - area: distorts area near north and south pole
             - direction: turns curves into straight lines
         - Goode's
-            ![/docs/ap/huge/Untitled%205.png](/docs/ap/huge/Untitled%205.png)
+            ![/docs/ap/huge/Untitled-5.png](/docs/ap/huge/Untitled-5.png)
             - shape: accurate
             - area: accurate
             - direction: accurate
             - hard to understand
         - Goode's
-            ![/docs/ap/huge/Untitled%206.png](/docs/ap/huge/Untitled%206.png)
+            ![/docs/ap/huge/Untitled-6.png](/docs/ap/huge/Untitled-6.png)
             - shape: everything slightly distorted outwards from 0' 0'
             - area: accurate
             - direction: accurate
@@ -160,7 +160,7 @@ spatial patterns.
         - time-space compression (decrease in friction of distance)
             - the increasing sense of connectivity that seems to be bringing people closer together even thought their distances are the same.
             - Space time compression is the solution to distance decay because technology (internet,cell phones) is allowing us to communicate more across longer distances.
-                ![/docs/ap/huge/Untitled%207.png](/docs/ap/huge/Untitled%207.png)
+                ![/docs/ap/huge/Untitled-7.png](/docs/ap/huge/Untitled-7.png)
 ---
 ## 1.5 Human–Environmental Interaction
 > PSO-1 Geographers analyze relationships among and between places to reveal important
@@ -200,8 +200,8 @@ spatial patterns.
         - national — single state, e.g. Wisconsin
         - local — city or town, e.g. Middleton
     2. Scale is what infomation is shown
-        ![/docs/ap/huge/Untitled%208.png](/docs/ap/huge/Untitled%208.png)
-        ![/docs/ap/huge/Untitled%209.png](/docs/ap/huge/Untitled%209.png)
+        ![/docs/ap/huge/Untitled-8.png](/docs/ap/huge/Untitled-8.png)
+        ![/docs/ap/huge/Untitled-9.png](/docs/ap/huge/Untitled-9.png)
 - **Learning Objective**:
     Explain what scales of analysis reveal.
 - **Essential Knowledge:**
@@ -209,7 +209,7 @@ spatial patterns.
         - To understand individual, local, regional, national, and global
         interrelationships, geographers compare and contrasts different scale views.
     - Downsides to large scale
-        ![/docs/ap/huge/Untitled%2010.png](/docs/ap/huge/Untitled%2010.png)
+        ![/docs/ap/huge/Untitled-10.png](/docs/ap/huge/Untitled-10.png)
 ---
 ## 1.7 Regional Analysis
 > SPS 1 Geographers analyze complex issues and relationships with a distinctively spatial perspective
@@ -299,7 +299,7 @@ I*mpacts and Interactions (IMP)*
               - Land inhabited called ecumene
           - most extreme cases occur at small scales
               - countries  vary in size so aren't great for seeing details, but they're better than state
-                  ![/docs/ap/huge/Untitled%2011.png](/docs/ap/huge/Untitled%2011.png)
+                  ![/docs/ap/huge/Untitled-11.png](/docs/ap/huge/Untitled-11.png)
   - **Learning Objective**:
       Define methods geographers use to calculate population density.
   - **Essential Knowledge:**
@@ -321,18 +321,18 @@ I*mpacts and Interactions (IMP)*
       Explain how population distribution and density affect society and the environment.
   - **Essential Knowledge:**
       1. Population distribution and density affects political, economic, and social processes, including the provision of services such as medical care.
-          ![/docs/ap/huge/Untitled%2012.png](/docs/ap/huge/Untitled%2012.png)
+          ![/docs/ap/huge/Untitled-12.png](/docs/ap/huge/Untitled-12.png)
           - redistricting / gerrymandering
-              ![/docs/ap/huge/Untitled%2013.png](/docs/ap/huge/Untitled%2013.png)
+              ![/docs/ap/huge/Untitled-13.png](/docs/ap/huge/Untitled-13.png)
               - Results
-                  ![/docs/ap/huge/Untitled%2014.png](/docs/ap/huge/Untitled%2014.png)
-                  ![/docs/ap/huge/Untitled%2015.png](/docs/ap/huge/Untitled%2015.png)
+                  ![/docs/ap/huge/Untitled-14.png](/docs/ap/huge/Untitled-14.png)
+                  ![/docs/ap/huge/Untitled-15.png](/docs/ap/huge/Untitled-15.png)
           - provision of services such as medical care
               - those closer to medical services are more likely be able to use them
       2. Population distribution and density affect the environment and natural resources; this is known as carrying capacity
           - carrying capacity — how many people an area can support on a sustained basis
           - [sustainability](https://www.notion.so/Unit-5-Agriculture-and-Rural-Land-Use-Patterns-and-Processes-c1b6bf1960914cdcba63567962520145#53a016227c6547099ec601d2c7599a64https://www.notion.so/Unit-5-Agriculture-and-Rural-Land-Use-Patterns-and-Processes-c1b6bf1960914cdcba63567962520145#53a016227c6547099ec601d2c7599a64)
-              ![/docs/ap/huge/Untitled%2016.png](/docs/ap/huge/Untitled%2016.png)
+              ![/docs/ap/huge/Untitled-16.png](/docs/ap/huge/Untitled-16.png)
 ## 2.3 Population Composition
 > PSO-2 Understanding where and how people live is essential to understanding global cultural, political, and economic patterns.
   - **Learning Objective**:
@@ -380,7 +380,7 @@ I*mpacts and Interactions (IMP)*
                   - Capital flow from aging countries shifting global economic power
               - Social Risks
                   - Migration needed to satisfy labor needs
-          ![/docs/ap/huge/Untitled%2017.png](/docs/ap/huge/Untitled%2017.png)
+          ![/docs/ap/huge/Untitled-17.png](/docs/ap/huge/Untitled-17.png)
 ## 2.4 Population Dynamics
 > IMP-2 Changes in population are due to mortality, fertility, and migration, which are influenced by the interplay of environmental, economic, cultural, and political factors.
   - **Learning Objective**:
@@ -391,7 +391,7 @@ I*mpacts and Interactions (IMP)*
               - crude birth rate (CBR) — total live births in a year for every 1,000 people alive in society
               - infant mortality rate (IMR) — annual number of deaths of infants under 1 year of age compared with number of live births
                   - Decrease due to (life expectancy too)
-                      ![/docs/ap/huge/Untitled%2018.png](/docs/ap/huge/Untitled%2018.png)
+                      ![/docs/ap/huge/Untitled-18.png](/docs/ap/huge/Untitled-18.png)
               - total fertility rate (TFR) — average number of children a woman will have throughout her childbearing years (15-49)
           - mortality
               - crude death rate (CDR) — total number of deaths in a year for every 1,000 people alive in society
@@ -400,8 +400,8 @@ I*mpacts and Interactions (IMP)*
       2. Geographers use the rate of natural increase and population-doubling time to explain population growth and decline.
           - Natural increase rate (NIR) — Percentage by  which a population grows in a year
               - CBR - CDR = NIR
-              ![/docs/ap/huge/Untitled%2019.png](/docs/ap/huge/Untitled%2019.png)
-              ![/docs/ap/huge/Untitled%2020.png](/docs/ap/huge/Untitled%2020.png)
+              ![/docs/ap/huge/Untitled-19.png](/docs/ap/huge/Untitled-19.png)
+              ![/docs/ap/huge/Untitled-20.png](/docs/ap/huge/Untitled-20.png)
           - Doubling Time — Number of years needed to double the population (assuming a steady rate of growth), is affected by NIR
       3. Social, cultural, political, and economic factors influence fertility, mortality, and migration rates.
           - Social + cultural
@@ -420,14 +420,14 @@ I*mpacts and Interactions (IMP)*
       1. The demographic transition model can be used to explain population change over time.
           - explains the rising and falling of NIR over time in a country
           - no country has ever reverted back to a previous stage
-              ![/docs/ap/huge/Untitled%2021.png](/docs/ap/huge/Untitled%2021.png)
+              ![/docs/ap/huge/Untitled-21.png](/docs/ap/huge/Untitled-21.png)
               - Stage 1: Hunter-gatherers, scarcity of food
               - Stage 2: Increase in healthcare, still lots of kids
               - Stage 3: Rural to urban, less kids (due to less space / resources in urban area)
               - Stage 4: Developed, stuff balances out
               - Stage 5: Replacement rate isn't enough to sustain population
                   - Reasons for population drop off / decrease
-                      ![/docs/ap/huge/Untitled%2022.png](/docs/ap/huge/Untitled%2022.png)
+                      ![/docs/ap/huge/Untitled-22.png](/docs/ap/huge/Untitled-22.png)
       2. The epidemiological transition explains causes of changing death rates.
           - stage 1 — prestillence and famine (high CDR):
               - principal cause of death: infectious and parasitic diseases
@@ -449,7 +449,7 @@ I*mpacts and Interactions (IMP)*
               - Secondary: Processing or refining of natural resources (e.g., manufacturing finished goods, industry, building construction, assembly, factory work, value-added, blue collar)
               - Tertiary: Provision of services (e.g., healthcare, technology, communications, financial, wholesale and retail trade, transportation, personal, professional, business services, white collar)
           - How these patterns change as courtiers develop
-              ![/docs/ap/huge/Untitled%2023.png](/docs/ap/huge/Untitled%2023.png)
+              ![/docs/ap/huge/Untitled-23.png](/docs/ap/huge/Untitled-23.png)
 ## 2.6 Malthusian Theory
 > IMP-2 Changes in population are due to mortality, fertility, and migration, which are influenced by the interplay of environmental, economic, cultural, and political factors.
   - **Learning Objective**:
@@ -458,8 +458,8 @@ I*mpacts and Interactions (IMP)*
       1. Malthusian theory and its critiques are used to analyze population change and its consequences.
           - Thomas Malthus - proposed in his Essay on the Principle of Population 1798, that the population grows faster than the food supply. He claimed that while population expanded at a geometric or **exponential rate**, food supply increased **arithmetically or linearly**.
           - However, the continued evolution of agriculture has continued to provide the world with an adequate amount of food. **The problem now is distribution of food, not the actual production of it.** Also, the birth rates declined sharply in the latter part of the 20th century, thus the world population expanded to only 6 billion compared to Malthus’s predicted 10.
-              ![/docs/ap/huge/Untitled%2024.png](/docs/ap/huge/Untitled%2024.png)
-              ![/docs/ap/huge/Untitled%2025.png](/docs/ap/huge/Untitled%2025.png)
+              ![/docs/ap/huge/Untitled-24.png](/docs/ap/huge/Untitled-24.png)
+              ![/docs/ap/huge/Untitled-25.png](/docs/ap/huge/Untitled-25.png)
           - Neo-Malthusians
               - **claim that more LDC’s are in stage 2 of the demographic transition than ever before in history, thus putting a larger strain on the food supply.** They also modified Malthus’s theory by stating that the **population growth is out-stripping not just food production, but a wide variety of resources, such as oil, natural gas, etc.**
           - **Critics of Malthus**
@@ -491,7 +491,7 @@ I*mpacts and Interactions (IMP)*
           - contraception
               - less likely for 'accidents'
           - Social status change
-              ![/docs/ap/huge/Untitled%2026.png](/docs/ap/huge/Untitled%2026.png)
+              ![/docs/ap/huge/Untitled-26.png](/docs/ap/huge/Untitled-26.png)
       2. Changing social, economic, and political roles for females have influenced patterns of fertility, mortality, and migration, as illustrated by Ravenstein’s laws of migration.
           - Ravenstein's Laws:
               1. Most migrants move only a short distance.
@@ -539,7 +539,7 @@ I*mpacts and Interactions (IMP)*
                   - Improved safety standards (e.g., sports, transportation, building codes)
               - **Out-migration of Youth**
                   - Out-migration of youth for better lifestyle (e.g., jobs, security)
-      ![/docs/ap/huge/Untitled%2027.png](/docs/ap/huge/Untitled%2027.png)
+      ![/docs/ap/huge/Untitled-27.png](/docs/ap/huge/Untitled-27.png)
 ## 2.1  Causes of Migration
 > IMP-2 Changes in population are due to mortality, fertility, and migration, which are
   influenced by the interplay of environmental, economic, cultural, and political factors.
@@ -574,9 +574,9 @@ I*mpacts and Interactions (IMP)*
               - distance
                   - Distance Decay: Says that migrants try to minimize the friction of distance
                       - migrants will be more inclined to move to locations closer to them; they will be less interested in moving longer distances
-                          ![/docs/ap/huge/Untitled%2028.png](/docs/ap/huge/Untitled%2028.png)
+                          ![/docs/ap/huge/Untitled-28.png](/docs/ap/huge/Untitled-28.png)
                       - has been on the decline
-                          ![/docs/ap/huge/Untitled%2029.png](/docs/ap/huge/Untitled%2029.png)
+                          ![/docs/ap/huge/Untitled-29.png](/docs/ap/huge/Untitled-29.png)
                   - Intervening Opportunity's: Idea that migrants will choose a location closer rather than farther if all other factors are the same
                       - related to other reasons (time and money go up farther you have to travel)
               - climate (push + pull)
@@ -587,7 +587,7 @@ I*mpacts and Interactions (IMP)*
               - no war
               - less corruption
           - age
-              ![/docs/ap/huge/Untitled%2030.png](/docs/ap/huge/Untitled%2030.png)
+              ![/docs/ap/huge/Untitled-30.png](/docs/ap/huge/Untitled-30.png)
 ## 2.1  Forced and Voluntary Migration
 > IMP-2 Changes in population are due to mortality, fertility, and migration, which are
   influenced by the interplay of environmental, economic, cultural, and political factors.
@@ -603,7 +603,7 @@ I*mpacts and Interactions (IMP)*
               - refugee:
                   - A person who flees, is displaced, or is forced to leave his or her home country, often due to religion, ethnicity, race, or political belief
                   - Reasons
-                      ![/docs/ap/huge/Untitled%2031.png](/docs/ap/huge/Untitled%2031.png)
+                      ![/docs/ap/huge/Untitled-31.png](/docs/ap/huge/Untitled-31.png)
               - IDP — Internally Displaced Person:
                   - A person who is forced out of the home region due to war, political, or social unrest, environmental problems, etc.
                   - does not cross any international boarders
@@ -651,16 +651,16 @@ I*mpacts and Interactions (IMP)*
           - cultural
               - visually see change in landscape
               - Chinatown, mosques, etc.
-                  ![/docs/ap/huge/Untitled%2032.png](/docs/ap/huge/Untitled%2032.png)
-                  ![/docs/ap/huge/Untitled%2033.png](/docs/ap/huge/Untitled%2033.png)
+                  ![/docs/ap/huge/Untitled-32.png](/docs/ap/huge/Untitled-32.png)
+                  ![/docs/ap/huge/Untitled-33.png](/docs/ap/huge/Untitled-33.png)
           - political
               - potentially controversial
               - hate crimes
           - economic
               - typically beneficial
               - fill unskilled labor jobs
-                  ![/docs/ap/huge/Untitled%2034.png](/docs/ap/huge/Untitled%2034.png)
-                  ![/docs/ap/huge/Untitled%2035.png](/docs/ap/huge/Untitled%2035.png)
+                  ![/docs/ap/huge/Untitled-34.png](/docs/ap/huge/Untitled-34.png)
+                  ![/docs/ap/huge/Untitled-35.png](/docs/ap/huge/Untitled-35.png)
           - Migration transition
               - identified by Wilbur Zelinsky
               - consists of changes in a society comparable to the demographic transition.
@@ -734,7 +734,7 @@ geography and available resources.
                 - Low meat consumption in Africa and S Asia due to large Hindu population, which don't eat beef because they believe the cow to be sacred
                 - Muslim and Judaism prohibited from eating pork
                 - Somali clans restrict the consumption of fish
-            ![/docs/ap/huge/Untitled%2036.png](/docs/ap/huge/Untitled%2036.png)
+            ![/docs/ap/huge/Untitled-36.png](/docs/ap/huge/Untitled-36.png)
         - Land use:
             - location determines what foods are grown locally and readily available in a particular region of the world
                 - certain states are known for certain foods; Jersey tomatoes, Florida oranges, Georgia peaches
@@ -757,8 +757,8 @@ geography and available resources.
     1. Cultural landscapes are combinations **physical features, agricultural and practices, religious and linguistic characteristics, evidence of sequent occupancy**, and other **expressions of culture** including traditional and postmodern architecture and land-use patterns.
         - Toponyms
             - reflect leaders / people of power / religious figures / in immigrant's native language
-                ![/docs/ap/huge/Untitled%2037.png](/docs/ap/huge/Untitled%2037.png)
-                ![/docs/ap/huge/Untitled%2038.png](/docs/ap/huge/Untitled%2038.png)
+                ![/docs/ap/huge/Untitled-37.png](/docs/ap/huge/Untitled-37.png)
+                ![/docs/ap/huge/Untitled-38.png](/docs/ap/huge/Untitled-38.png)
         - Religious impact
             - Religious architecture
             - sacred spaces
@@ -779,11 +779,11 @@ geography and available resources.
         > "The cultural landscape is fashioned from a natural landscape by a cultural group. Culture is the agent, the natural area is the medium, the cultural landscape is the result." - Carl Sauer
         - Gentrification
             - Positive Impacts
-                ![/docs/ap/huge/Untitled%2039.png](/docs/ap/huge/Untitled%2039.png)
+                ![/docs/ap/huge/Untitled-39.png](/docs/ap/huge/Untitled-39.png)
             - Negative Impacts
-                ![/docs/ap/huge/Untitled%2040.png](/docs/ap/huge/Untitled%2040.png)
+                ![/docs/ap/huge/Untitled-40.png](/docs/ap/huge/Untitled-40.png)
             - How govt can slow down + rpevent
-                ![/docs/ap/huge/Untitled%2041.png](/docs/ap/huge/Untitled%2041.png)
+                ![/docs/ap/huge/Untitled-41.png](/docs/ap/huge/Untitled-41.png)
 - **Learning Objective**:
     Explain how landscape features and land and resource use reflect cultural beliefs and identities
 - **Essential Knowledge:**
@@ -802,15 +802,15 @@ geography and available resources.
         - language
             - dialects
             - phrases
-                ![/docs/ap/huge/Untitled%2042.png](/docs/ap/huge/Untitled%2042.png)
+                ![/docs/ap/huge/Untitled-42.png](/docs/ap/huge/Untitled-42.png)
         - ethnicity
             - immigrants shape neighborhoods
                 - china town
         - sense of place
             - [link](https://www.notion.so/Unit-3-Cultural-Patterns-and-Processes-43ce4a691c4e4d528b81edef704751ce#5de7e1e823bc4644a9749e1ee720a1f9)
         - Bilingualism
-            ![/docs/ap/huge/Untitled%2043.png](/docs/ap/huge/Untitled%2043.png)
-            ![/docs/ap/huge/Untitled%2044.png](/docs/ap/huge/Untitled%2044.png)
+            ![/docs/ap/huge/Untitled-43.png](/docs/ap/huge/Untitled-43.png)
+            ![/docs/ap/huge/Untitled-44.png](/docs/ap/huge/Untitled-44.png)
     2. Language, ethnicity, and religion are factors in creating centripetal and centrifugal forces.
         - countries need a stronger centripetal force than centrifugal force to stay intact
         - forces and produce regionalism or dissimilarity between people in the same country
@@ -824,10 +824,10 @@ geography and available resources.
             - economic equity
             - just and fair legal system
             - nationalism
-            ![/docs/ap/huge/Untitled%2045.png](/docs/ap/huge/Untitled%2045.png)
+            ![/docs/ap/huge/Untitled-45.png](/docs/ap/huge/Untitled-45.png)
             - history — common heritage
-                ![/docs/ap/huge/Untitled%2046.png](/docs/ap/huge/Untitled%2046.png)
-            ![/docs/ap/huge/Untitled%2047.png](/docs/ap/huge/Untitled%2047.png)
+                ![/docs/ap/huge/Untitled-46.png](/docs/ap/huge/Untitled-46.png)
+            ![/docs/ap/huge/Untitled-47.png](/docs/ap/huge/Untitled-47.png)
         - centrifugal forces — apart (repel)
             - Centrifugal forces divide a state (lead to balkanization/devolution, disrupt internal order, destabilize, weaken).
             - cultural diversity
@@ -838,7 +838,7 @@ geography and available resources.
             - nationalism
             - legal restrictions
             - physical features economic stratification
-                ![/docs/ap/huge/Untitled%2048.png](/docs/ap/huge/Untitled%2048.png)
+                ![/docs/ap/huge/Untitled-48.png](/docs/ap/huge/Untitled-48.png)
         - “White flight” is the rapid fleeing of whites from the cities as black families emigrate out of the ghettos, or as the ghetto expands. It was encouraged by blockbusting.
             - **blockbusting**- the real estate practice of scaring whites into selling their homes at low prices by telling them that blacks would soon be moving in and causing property values to fall. The real estate agents then turned around and sold the homes at extremely high prices to blacks that were emigrating from the inner city.
             - **Apartheid**-the physical separation of different races into different geographic areas, i.e. South Africa.
@@ -855,19 +855,19 @@ geography and available resources.
         - not everyone is going to absorb it
         - term: person who uses a term moves to a new location and continues to use the term in the new location, OR a form of media, in which a term is used, is relocated to a new place and the term is used in the new location.
         - Example: Spread of Christianity, when people moved and brought it with them
-            ![/docs/ap/huge/Untitled%2049.png](/docs/ap/huge/Untitled%2049.png)
+            ![/docs/ap/huge/Untitled-49.png](/docs/ap/huge/Untitled-49.png)
     - expansion — hearth stays same place
         - contagious
             - diseases
             - rapid spread
             - term: an individual uses, or individuals use, the new word and then acquaintances (or those in close proximity to them) begin to use the word as well
             - Example: Hinduism spreading throughout the Indian subcontinent
-                ![/docs/ap/huge/Untitled%2050.png](/docs/ap/huge/Untitled%2050.png)
+                ![/docs/ap/huge/Untitled-50.png](/docs/ap/huge/Untitled-50.png)
         - hierarchical
             - intent is to spread selectively
             - term: celebrities start to use the new word and then it spreads to others down the social hierarchy OR people in large cities start to use the word and then the word eventually gets to smaller places or media markets, OR Reverse Hierarchical: minority use of the term spreads up the social ladder to majority group(s).
             - spread by choice, often wealth
-                ![/docs/ap/huge/Untitled%2051.png](/docs/ap/huge/Untitled%2051.png)
+                ![/docs/ap/huge/Untitled-51.png](/docs/ap/huge/Untitled-51.png)
         - stimulus
             - innovative idea diffuses from its hearth outward, but the original idea is changed by the new adopters
             - Example: Different Menu items from McDonalds around the world.
@@ -879,12 +879,12 @@ geography and available resources.
     1. Interactions between and among cultural traits and larger global forces can lead to new forms of cultural expression; for example, creolization and lingua franca.
         - lingua franca
             - a language that is informally agreed upon as the language of business and trade
-                ![/docs/ap/huge/Untitled%2052.png](/docs/ap/huge/Untitled%2052.png)
+                ![/docs/ap/huge/Untitled-52.png](/docs/ap/huge/Untitled-52.png)
             - Reasons for US being lingua franca / dominant
                 - Historical
-                    ![/docs/ap/huge/Untitled%2053.png](/docs/ap/huge/Untitled%2053.png)
+                    ![/docs/ap/huge/Untitled-53.png](/docs/ap/huge/Untitled-53.png)
                 - Globalization
-                    ![/docs/ap/huge/Untitled%2054.png](/docs/ap/huge/Untitled%2054.png)
+                    ![/docs/ap/huge/Untitled-54.png](/docs/ap/huge/Untitled-54.png)
         - creolization
             - mix of languages that form its own language
             - native to some group of people
@@ -905,7 +905,7 @@ geography and available resources.
     1. Cultural ideas and practices are socially constructed and change through both small-scale and large-scale processes such as urbanization and globalization. These processes come to bear on culture through media, technological change, politics, economics, and social relationships.
         - **sense of place** is the special perception we have of a certain place based on our feelings, emotion, and associations with that place.
             - also called distinctive culture
-            ![/docs/ap/huge/Untitled%2055.png](/docs/ap/huge/Untitled%2055.png)
+            ![/docs/ap/huge/Untitled-55.png](/docs/ap/huge/Untitled-55.png)
         - **Placelessness** is he loss of a place's unique favor and identity because of standardizing influence of popular culture and globalization
     2. Communication technologies, such as the internet and the time-space convergence, are reshaping and accelerating interactions among people; changing cultural practices, as in the increasing use of English and the loss of indigenous languages; and creating cultural convergence and divergence.
         - the internet has united us more
@@ -924,7 +924,7 @@ geography and available resources.
         1. Language families, languages, dialects, world religions, ethnic cultures, and gender roles diffuse from cultural hearths.
         2. Diffusion of language families, including Indo-European, and religious patterns and distributions can be visually represented on maps, in charts and toponyms, and in other representations.
     2. Religion
-        ![/docs/ap/huge/Untitled%2056.png](/docs/ap/huge/Untitled%2056.png)
+        ![/docs/ap/huge/Untitled-56.png](/docs/ap/huge/Untitled-56.png)
         1. Hinduism
             1. Hearth: Pakistan in ~2300 BCE
             2. Because Hinduism is an ethnic religion it primarily diffused via relocation diffusion to India and Nepal
@@ -958,7 +958,7 @@ geography and available resources.
                     - In universalizing religions, the holy places are generally locations at which memorable events happened in the founder’s life, such as Mecca is in Islam because it is Muhammad’s birthplace.
                     - Holy places in ethnic religions are often physical features that are closely tied to the religion (For example, in Hindu one of the most important rituals is the bathing of oneself in the Ganges River.)
             - Members actively proselytize, or seek new converts by sending missionaries through the world to spread their beliefs
-                ![/docs/ap/huge/Untitled%2057.png](/docs/ap/huge/Untitled%2057.png)
+                ![/docs/ap/huge/Untitled-57.png](/docs/ap/huge/Untitled-57.png)
                 **Excluding Hinduism**, this shows diffusion of universalizing religions
         3. Ethnic religions, including Hinduism and Judaism, are generally found near the hearth or spread through relocation diffusion.
             - Only really spread from generation to generation
@@ -1025,7 +1025,7 @@ Students also examine forms of government and how forces such as devolution may 
         - multinational states
             - states made up of a two or more ethnic groups
             - United states, Canada, China, Russia, India, Brazil
-                ![/docs/ap/huge/Untitled%2058.png](/docs/ap/huge/Untitled%2058.png)
+                ![/docs/ap/huge/Untitled-58.png](/docs/ap/huge/Untitled-58.png)
         - multistate nations
             - country with two or more nationalities within its borders (a nation that exists in multiple states)
             - Kurds, French, Basque
@@ -1078,9 +1078,9 @@ Students also examine forms of government and how forces such as devolution may 
                 1. Creation of an independent state
                 2. Calls for Autonomy
             - can result in section breaking off
-                ![/docs/ap/huge/Untitled%2059.png](/docs/ap/huge/Untitled%2059.png)
-                ![/docs/ap/huge/Untitled%2060.png](/docs/ap/huge/Untitled%2060.png)
-                ![/docs/ap/huge/Untitled%2061.png](/docs/ap/huge/Untitled%2061.png)
+                ![/docs/ap/huge/Untitled-59.png](/docs/ap/huge/Untitled-59.png)
+                ![/docs/ap/huge/Untitled-60.png](/docs/ap/huge/Untitled-60.png)
+                ![/docs/ap/huge/Untitled-61.png](/docs/ap/huge/Untitled-61.png)
 ---
 ## 4.3 Political Power and Territoriality
 > PSO-4 Explain the processes that have shaped contemporary political geography.
@@ -1098,12 +1098,12 @@ Students also examine forms of government and how forces such as devolution may 
     2. Territoriality is the connection of **people**, their **culture**, and their **economic** systems to the land.
         - boundaries are set to connect people with same/similar **culture** and that want to have an **economic** relation with one anther
     - Stages of Economic Growth and Core Periphery Model (Core-Periphery)
-        ![/docs/ap/huge/Untitled%2062.png](/docs/ap/huge/Untitled%2062.png)
+        ![/docs/ap/huge/Untitled-62.png](/docs/ap/huge/Untitled-62.png)
         Core Periphery
-        ![/docs/ap/huge/Untitled%2063.png](/docs/ap/huge/Untitled%2063.png)
+        ![/docs/ap/huge/Untitled-63.png](/docs/ap/huge/Untitled-63.png)
         - Stages of each
-        ![/docs/ap/huge/Untitled%2064.png](/docs/ap/huge/Untitled%2064.png)
-        ![/docs/ap/huge/Untitled%2065.png](/docs/ap/huge/Untitled%2065.png)
+        ![/docs/ap/huge/Untitled-64.png](/docs/ap/huge/Untitled-64.png)
+        ![/docs/ap/huge/Untitled-65.png](/docs/ap/huge/Untitled-65.png)
         Reasons for economic location
         - Core-periphery leads to uneven spatial distribution of economic, political, or cultural power
 ---
@@ -1121,12 +1121,12 @@ Students also examine forms of government and how forces such as devolution may 
             - boundary imposed by an outside force
             - may not reflect cultural landscape
             - e.g. treaties, Africa during Colonial era
-                ![/docs/ap/huge/Untitled%2066.png](/docs/ap/huge/Untitled%2066.png)
+                ![/docs/ap/huge/Untitled-66.png](/docs/ap/huge/Untitled-66.png)
         - subsequent
             - corresponds to group that is there, often regardless of cultural divide
             - boundary set after the settlements of different groups meet
             - often correspond to ecumene
-                ![/docs/ap/huge/Untitled%2067.png](/docs/ap/huge/Untitled%2067.png)
+                ![/docs/ap/huge/Untitled-67.png](/docs/ap/huge/Untitled-67.png)
                 wall impacts
         - consequent boundaries
             - A boundary line that coincides with some cultural divide, such as religion or language.
@@ -1157,8 +1157,8 @@ Students also examine forms of government and how forces such as devolution may 
                 - totally surrounds another country
                 - can abuse country w trade taxes/tariffs
             - landlocked
-                ![/docs/ap/huge/Untitled%2068.png](/docs/ap/huge/Untitled%2068.png)
-            ![/docs/ap/huge/Untitled%2069.png](/docs/ap/huge/Untitled%2069.png)
+                ![/docs/ap/huge/Untitled-68.png](/docs/ap/huge/Untitled-68.png)
+            ![/docs/ap/huge/Untitled-69.png](/docs/ap/huge/Untitled-69.png)
 ---
 ## 4.5 The Function of Political Boundaries
 > IMP-4. Political boundaries and divisions of governance, between states and within them, reflect balances of power that have been negotiated or imposed.
@@ -1183,7 +1183,7 @@ Students also examine forms of government and how forces such as devolution may 
     3. Land and maritime boundaries and international agreements can influence national or regional identity and encourage or discourage international or internal interactions and disputes over resources.
     4. The United Nations Convention on the Law of the Sea defines the rights and responsibilities of nations in the use of international waters, established territorial seas, and **exclusive economic zones**.
         - UN came up with these zones
-            ![/docs/ap/huge/Untitled%2070.png](/docs/ap/huge/Untitled%2070.png)
+            ![/docs/ap/huge/Untitled-70.png](/docs/ap/huge/Untitled-70.png)
         - EEZ is important because you can tax ships that travel and make money
             - Includes islands too which has put pressure / created conflict at some islands
                 - South China Sea
@@ -1197,7 +1197,7 @@ Students also examine forms of government and how forces such as devolution may 
     1. Voting districts, redistricting, and gerrymandering affect election results at various scales.
         - Voting districts
             - subsections in states specifically for voting
-                ![/docs/ap/huge/Untitled%2071.png](/docs/ap/huge/Untitled%2071.png)
+                ![/docs/ap/huge/Untitled-71.png](/docs/ap/huge/Untitled-71.png)
         - redistricting
             - occurs once in every 10 years in US after census
             - goal is to be drawn fairer and group like people
@@ -1212,16 +1212,16 @@ Students also examine forms of government and how forces such as devolution may 
 - **Essential Knowledge:**
     1. Forms of governance include unitary states and federal states
         - unitary states
-            ![/docs/ap/huge/Untitled%2072.png](/docs/ap/huge/Untitled%2072.png)
+            ![/docs/ap/huge/Untitled-72.png](/docs/ap/huge/Untitled-72.png)
             - most power lies in centralized govt
             - areas far away from central power aren't represented equally
             - can pull a country together
-                ![/docs/ap/huge/Untitled%2073.png](/docs/ap/huge/Untitled%2073.png)
+                ![/docs/ap/huge/Untitled-73.png](/docs/ap/huge/Untitled-73.png)
         - federal states
             - most power lies in local govt
                 - country is split into states / provinces, typically to group like-people
             - can better represent areas
-                ![/docs/ap/huge/Untitled%2074.png](/docs/ap/huge/Untitled%2074.png)
+                ![/docs/ap/huge/Untitled-74.png](/docs/ap/huge/Untitled-74.png)
                 Green = Federal
 - **Learning Objective**:
     Explain how federal and unitary states affect spatial organization.
@@ -1306,7 +1306,7 @@ Students also examine forms of government and how forces such as devolution may 
         - sometimes used for collective defense
         - can make economic stuff easier by opening boarders to member states
         - set standards
-            ![/docs/ap/huge/Untitled%2075.png](/docs/ap/huge/Untitled%2075.png)
+            ![/docs/ap/huge/Untitled-75.png](/docs/ap/huge/Untitled-75.png)
 ---
 ## 4.1  Consequences of Centrifugal and Centripetal Forces
 > SPS-4.Political, economic, cultural, or technological changes can challenge state sovereignty.
@@ -1382,8 +1382,8 @@ I*mpacts and Interactions (IMP)*
                 - highly efficient
                 - tend to be established in or near the tropics
                 - produce a cash crop
-                    ![/docs/ap/huge/Untitled%2076.png](/docs/ap/huge/Untitled%2076.png)
-                    ![/docs/ap/huge/Untitled%2077.png](/docs/ap/huge/Untitled%2077.png)
+                    ![/docs/ap/huge/Untitled-76.png](/docs/ap/huge/Untitled-76.png)
+                    ![/docs/ap/huge/Untitled-77.png](/docs/ap/huge/Untitled-77.png)
             - mixed crop/livestock systems
                 - Both animal and crops are farmed in the same area.
                 - Most common form of agriculture in US
@@ -1440,18 +1440,18 @@ I*mpacts and Interactions (IMP)*
         - metes and bounds
             - A system of land surveying east of the Appalachian Mountains (EU)
             - It is a system that relies on descriptions of land ownership and **natural features** such as streams or trees.
-                ![/docs/ap/huge/Untitled%2078.png](/docs/ap/huge/Untitled%2078.png)
-                ![/docs/ap/huge/Untitled%2079.png](/docs/ap/huge/Untitled%2079.png)
+                ![/docs/ap/huge/Untitled-78.png](/docs/ap/huge/Untitled-78.png)
+                ![/docs/ap/huge/Untitled-79.png](/docs/ap/huge/Untitled-79.png)
         - township and range
             - rectangular land division scheme designed by Thomas Jefferson
             - grid system
             - Intended to disperse settlers evenly across farmlands of the U.S. interior
-                ![/docs/ap/huge/Untitled%2080.png](/docs/ap/huge/Untitled%2080.png)
+                ![/docs/ap/huge/Untitled-80.png](/docs/ap/huge/Untitled-80.png)
         - long lot
             - Distinct regional approach to land surveying found in the Canadian Maritimes, parts of Quebec, Louisiana, and Texas
             - designed to give everyone an equal type of land / soil (one person shouldnt get all poor land / land on a road or river / etc.)
             - Land is divided into narrow parcels stretching back from rivers, roads, or canals.
-                ![/docs/ap/huge/Untitled%2081.png](/docs/ap/huge/Untitled%2081.png)
+                ![/docs/ap/huge/Untitled-81.png](/docs/ap/huge/Untitled-81.png)
 ---
 ## 5.3 Agricultural Origins and Diffusions
 > SPS 5 Agriculture has changed over time because of cultural diffusion and advances in technology.
@@ -1462,7 +1462,7 @@ I*mpacts and Interactions (IMP)*
         - Fertile Crescent (Mesopotamia) — 10,000 years ago
             - 1200 years ago it became good for sedentary agriculture
             - In the Middle East that includes most of Iraq (Known as Mesopotamia in the past), Syria, Lebanon, Israel, and the Nile River basin in Egypt.
-                ![/docs/ap/huge/Untitled%2082.png](/docs/ap/huge/Untitled%2082.png)
+                ![/docs/ap/huge/Untitled-82.png](/docs/ap/huge/Untitled-82.png)
         - Huang He (Yellow) Valley — 10,000 years ago
             - Flooding of rivers resulted in people settling near them and using them to farm
             - Barley, wheat, lentils, and olives
@@ -1474,7 +1474,7 @@ I*mpacts and Interactions (IMP)*
         - Indus River Valley — 4,000 years ago
             - Extended from modern-day northeast Afghanistan to Pakistan and northwest India.
             - Important innovations of this civilization include standardized weights and measures, seal carving, and metallurgy with copper, bronze, lead, and tin.
-                ![/docs/ap/huge/Untitled%2083.png](/docs/ap/huge/Untitled%2083.png)
+                ![/docs/ap/huge/Untitled-83.png](/docs/ap/huge/Untitled-83.png)
         - Central America.
             - Uncertain time period, but probably happened last
             - Some scholars estimate 2000 BC, but may go up to the discovery of the Americas by the Europeans because some Native Tribes had not progressed to the First Agricultural Revolution by that time
@@ -1488,8 +1488,8 @@ I*mpacts and Interactions (IMP)*
     Explain how plants and animals diffused globally.
 - **Essential Knowledge:**
     - Patterns of diffusion, such as the Columbian Exchange and the agricultural revolutions, resulted in the global spread of various plants and animals.
-        ![/docs/ap/huge/Untitled%2084.png](/docs/ap/huge/Untitled%2084.png)
-        ![/docs/ap/huge/Untitled%2085.png](/docs/ap/huge/Untitled%2085.png)
+        ![/docs/ap/huge/Untitled-84.png](/docs/ap/huge/Untitled-84.png)
+        ![/docs/ap/huge/Untitled-85.png](/docs/ap/huge/Untitled-85.png)
 ---
 ## 5.4 The Second Agricultural Revolution
 > SPS 5 Agriculture has changed over time because of cultural diffusion and advances in technology.
@@ -1544,7 +1544,7 @@ I*mpacts and Interactions (IMP)*
 - **Essential Knowledge:**
     1. Agricultural production regions are defined by the extent to which they reflect subsistence or commercial practices (monocropping or monoculture).
         - Subsistence vs Commercial:
-            ![/docs/ap/huge/Untitled%2086.png](/docs/ap/huge/Untitled%2086.png)
+            ![/docs/ap/huge/Untitled-86.png](/docs/ap/huge/Untitled-86.png)
             - Subsistence is :
                 - Food grown for the farmer or farmer’s family/kin
                 - Food grown for local consumption for village/community market
@@ -1559,7 +1559,7 @@ I*mpacts and Interactions (IMP)*
         - **bid-rent:** geographical economic theory: refers to how the price and demand on real estate changes as the distance towards the Central Business District (CBD) increases.
         - **intensive agriculture:** any kind of agriculture activity that involves **effective and efficient use of labor** on **small plots of land** to **maximize crop yield**
         - **extensive agriculture:** an agricultural system characterized by **low inputs of labor** per unit land area
-        ![/docs/ap/huge/Untitled%2087.png](/docs/ap/huge/Untitled%2087.png)
+        ![/docs/ap/huge/Untitled-87.png](/docs/ap/huge/Untitled-87.png)
 ---
 ## 5.7 Spatial Organization of Agriculture
 > PSO Availability of resources and cultural practices influence agricultural practices and land-use patterns.
@@ -1582,24 +1582,24 @@ I*mpacts and Interactions (IMP)*
 - **Essential Knowledge:**
     1. Von Thünen’s model helps to explain rural land use by emphasizing the importance of transportation costs associated with distance from the market; however, regions of specialty farming do not always conform to von Thünen’s concentric rings.
         - The closer the land is to the city, the more expensive it
-            ![/docs/ap/huge/Untitled%2088.png](/docs/ap/huge/Untitled%2088.png)
+            ![/docs/ap/huge/Untitled-88.png](/docs/ap/huge/Untitled-88.png)
             - Because perishable items, e.g. Milk, and difficult to transport items must be grown very closely to their market
                 - Milkshed is ring around market where dairy farming occurs
-                    ![/docs/ap/huge/Untitled%2089.png](/docs/ap/huge/Untitled%2089.png)
-                    ![/docs/ap/huge/Untitled%2090.png](/docs/ap/huge/Untitled%2090.png)
-                    ![/docs/ap/huge/Untitled%2091.png](/docs/ap/huge/Untitled%2091.png)
+                    ![/docs/ap/huge/Untitled-89.png](/docs/ap/huge/Untitled-89.png)
+                    ![/docs/ap/huge/Untitled-90.png](/docs/ap/huge/Untitled-90.png)
+                    ![/docs/ap/huge/Untitled-91.png](/docs/ap/huge/Untitled-91.png)
                     Weberian theory
             - Sort of not true with advances in transportation and that all land is able to support it's designated task
         - Forest resources (needed for fuel) could be grown and harvested further out than fruits/veggies from the market
             - Market example with automobiles
-                ![/docs/ap/huge/Untitled%2092.png](/docs/ap/huge/Untitled%2092.png)
-                ![/docs/ap/huge/Untitled%2093.png](/docs/ap/huge/Untitled%2093.png)
-                ![/docs/ap/huge/Untitled%2094.png](/docs/ap/huge/Untitled%2094.png)
+                ![/docs/ap/huge/Untitled-92.png](/docs/ap/huge/Untitled-92.png)
+                ![/docs/ap/huge/Untitled-93.png](/docs/ap/huge/Untitled-93.png)
+                ![/docs/ap/huge/Untitled-94.png](/docs/ap/huge/Untitled-94.png)
         - Grain could be harvested even further out because it could be grown, harvested, and stored easily and cheaply until needed
         - Limitations
-            ![/docs/ap/huge/Untitled%2095.png](/docs/ap/huge/Untitled%2095.png)
+            ![/docs/ap/huge/Untitled-95.png](/docs/ap/huge/Untitled-95.png)
         - Livestock then could be raised in the outer ring where cheap, larges pastures were pentiful
-            ![/docs/ap/huge/Untitled%2096.png](/docs/ap/huge/Untitled%2096.png)
+            ![/docs/ap/huge/Untitled-96.png](/docs/ap/huge/Untitled-96.png)
 ---
 ## 5.9 The Global System of Agriculture
 > PSO Availability of resources and cultural practices influence agricultural practices and land-use patterns.
@@ -1629,11 +1629,11 @@ I*mpacts and Interactions (IMP)*
             - overgrazing leads to land being perminent damage to land via erosion of unprotected topsoils
         - soil salinization
         - conservation efforts
-            ![/docs/ap/huge/Untitled%2097.png](/docs/ap/huge/Untitled%2097.png)
+            ![/docs/ap/huge/Untitled-97.png](/docs/ap/huge/Untitled-97.png)
             For rice farming
-            ![/docs/ap/huge/Untitled%2098.png](/docs/ap/huge/Untitled%2098.png)
+            ![/docs/ap/huge/Untitled-98.png](/docs/ap/huge/Untitled-98.png)
             For rice farming
-            ![/docs/ap/huge/Untitled%2099.png](/docs/ap/huge/Untitled%2099.png)
+            ![/docs/ap/huge/Untitled-99.png](/docs/ap/huge/Untitled-99.png)
             For mechanization / wheat farming
     2. Agricultural practices—including slash and burn, terraces, irrigation, deforestation, draining wetlands, shifting cultivation, and pastoral nomadism—**alter the landscape**.
         - terraces
@@ -1660,7 +1660,7 @@ I*mpacts and Interactions (IMP)*
             - small land worked fulley
             - commonly use crop rotation
         - shifting cultivation
-            ![/docs/ap/huge/Untitled%20100.png](/docs/ap/huge/Untitled%20100.png)
+            ![/docs/ap/huge/Untitled-100.png](/docs/ap/huge/Untitled-100.png)
             - based on growing crops in different fields on a rotating basis, e.g.
                 - Maya in the Yucatan grow maize by rotating fields (on a seven-year cycle)
             - crops include rice, maize, manioc, millet, sorghum, yams, surgercane, veggies
@@ -1673,7 +1673,7 @@ I*mpacts and Interactions (IMP)*
             - occupies 25% of world's land, but practiced by just 5% of people
             - used to be tradiationally done by village, now mostly private companies
             - being replaced by logging, ranching, and cashcrops (monofarming)
-                ![/docs/ap/huge/Untitled%20101.png](/docs/ap/huge/Untitled%20101.png)
+                ![/docs/ap/huge/Untitled-101.png](/docs/ap/huge/Untitled-101.png)
         - pastoral nomadism
             - animals are herded in a seasonal migratory pattern
             - 200+ million pastoralists in the world
@@ -1687,8 +1687,8 @@ I*mpacts and Interactions (IMP)*
             - food security plays a large role in LDCs
                 - you can't flourish if you're physical and mental power is spent on getting food
             - maps
-                ![/docs/ap/huge/Untitled%20102.png](/docs/ap/huge/Untitled%20102.png)
-                ![/docs/ap/huge/Untitled%20103.png](/docs/ap/huge/Untitled%20103.png)
+                ![/docs/ap/huge/Untitled-102.png](/docs/ap/huge/Untitled-102.png)
+                ![/docs/ap/huge/Untitled-103.png](/docs/ap/huge/Untitled-103.png)
             - [additional notes](https://www.notion.so/Unit-5-Agriculture-and-Rural-Land-Use-Patterns-and-Processes-c1b6bf1960914cdcba63567962520145#a27740cf57334da192cbcf09f38c49e3)
         - role of women in agricultural production
         - economic purpose
@@ -1726,7 +1726,7 @@ I*mpacts and Interactions (IMP)*
             - Meat consumption:
                 - MDCs get 1/3 of protein from meat
                 - LDCs get 1/10 of protein from meat, rely more on grains
-                    ![/docs/ap/huge/Untitled%20104.png](/docs/ap/huge/Untitled%20104.png)
+                    ![/docs/ap/huge/Untitled-104.png](/docs/ap/huge/Untitled-104.png)
     3. Challenges of feeding a global population include lack of food access, as in cases of food insecurity and food deserts; problems with distribution systems; adverse weather; and land use lost to suburbanization.
         - food access (food insecurity and food deserts
         - problems with distribution systems
@@ -1742,13 +1742,13 @@ I*mpacts and Interactions (IMP)*
     1. The role of females in food production, distribution, and consumption varies in many places depending on the type of production involved.
         - Historically, Men gathered the materials and women used these materials to manufacture household objects and maintained there house
         - Obstacles to equality + empowerment
-        ![/docs/ap/huge/Untitled%20105.png](/docs/ap/huge/Untitled%20105.png)
+        ![/docs/ap/huge/Untitled-105.png](/docs/ap/huge/Untitled-105.png)
     - Impact of empowerment
-        ![/docs/ap/huge/Untitled%20106.png](/docs/ap/huge/Untitled%20106.png)
-        ![/docs/ap/huge/Untitled%20107.png](/docs/ap/huge/Untitled%20107.png)
-        ![/docs/ap/huge/Untitled%20108.png](/docs/ap/huge/Untitled%20108.png)
+        ![/docs/ap/huge/Untitled-106.png](/docs/ap/huge/Untitled-106.png)
+        ![/docs/ap/huge/Untitled-107.png](/docs/ap/huge/Untitled-107.png)
+        ![/docs/ap/huge/Untitled-108.png](/docs/ap/huge/Untitled-108.png)
         effects of this women empowerment / equality on **population growth**
-        ![/docs/ap/huge/Untitled%20109.png](/docs/ap/huge/Untitled%20109.png)
+        ![/docs/ap/huge/Untitled-109.png](/docs/ap/huge/Untitled-109.png)
         effects of this women empowerment / equality on **economic development**
-        ![/docs/ap/huge/Untitled%20110.png](/docs/ap/huge/Untitled%20110.png)
+        ![/docs/ap/huge/Untitled-110.png](/docs/ap/huge/Untitled-110.png)
         effects of this women empowerment / equality on **gender roles in the developing world**.

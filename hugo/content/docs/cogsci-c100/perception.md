@@ -6,30 +6,36 @@ weight: 1
 # Definition of sensation and perception
 
 - As humans, we are cognitive beings who...
-    - Acquire information about the world around us
-    - Integrate that information with prior knowledge from our stored memory
-    - Store that knowledge in our memory so we can use it later to help us achieve our goals
+    - **Acquire** information about the world around us (perception)
+    - **Integrate** that information with prior knowledge from our stored memory
+    - **Store** that knowledge in our memory so we can use it later to help us achieve our goals
 - First step in this process of acquiring knowledge about the world involves sensation and perception
-    - **Sensation:** process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into neural impulses. The inherent stimuli. Objective
-    - **Perception:** process of interpreting and organizing sensory information through use of previous knowledge. What gives stimuli meaning. Subjective.
+    - **Sensation:** process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into **neural impulses** (transduction). The inherent stimuli. Objective
+    - **Perception:** process of _interpreting_ and _organizing_ sensory information through use of previous knowledge. What gives stimuli meaning. Subjective.
 
 # Early models of object perception
 
+- Lots of machines are built on these old theories
+- The models aren't respected nowadays, but had useful tid-bits of information (for cogsci, ML, etc)
 
 ## Template matching model
 
+
+{{< columns >}}<!-- mathjax fix -->
 - **Template matching model:** object perception involves a comparison of the stimulus with set of templates or specific patterns stored in memory
+- Static, unchanging
 - _Problem:_ cannot account for complexity and flexibility of object recognition
     - e.g. individual differences in handwriting
-
+<---><!-- mathjax fix -->
 ![Template](/docs/cogsci-c100/perception/template.png)
+{{< /columns >}}
 
 ## Feature analysis model
 
-- Feature-analysis model: discrimination of objects is based on small number of characteristics of stimuli
-    - Are these two the same letter?: `G R P M`
-        - People are faster at deciding whether `G` and `M` are different than `P` and `R`
-    - Supported by neurological evidence – some neurons respond only to horizontal lines, others to diagonals, etc.
+- Feature-analysis model: discrimination of objects is based on _small number of distinct characteristics_ of stimuli
+    - Are these two the same letter?: `G M`  `P R`
+        - People are faster at deciding whether `G` and `M` are different than `P` and `R` because there are fewer similarities
+    - Supported by neurological evidence: some neurons respond only to horizontal lines, others to diagonals, etc.
 - _Problem:_ Cannot explain recognition of complex objects with features that move and distort (e.g., horse or kangaroo)
     ![](/docs/cogsci-c100/perception/roo.png)
 
@@ -38,28 +44,34 @@ weight: 1
 ![](/docs/cogsci-c100/perception/geons.png)
 {{< columns >}}<!-- mathjax fix -->
 - **Recognition-by-components model:** view that an object is represented as an arrangement of simple 3-D shapes called [_geons_](https://en.wikipedia.org/wiki/Geon_(psychology))
-    - Cup/pail composed of cylinder and curved tube geons in a particular arrangement
-![](/docs/cogsci-c100/perception/cup.png)
+- Six main geons above
+>![](/docs/cogsci-c100/perception/cup.png)
+> Cup/pail composed of cylinder and curved tube geons in a particular arrangement
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/rbc-ex.png)    
+> Easier to tell the object from the rightmost column versus the center, despite the latter containing more lines
 {{< /columns >}}
 
 ## David Marr’s Model of Visual Processing
-
+{{< columns >}}<!-- mathjax fix -->
+> Not on Exam
 - The image is then transformed into a 3-D sketch in which the the axes of symmetry and elongation link the object parts
     - **Symmetry axis:**  line that divides an object into mirror image halves
     - **Elongation axis:** line defining direction along which main bulk or mass of a shape is distributed
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/marr.gif)
+{{< /columns >}}
 - The 3-D sketch is object-centered – the object’s parts are described relative to one another and are linked on the basis of shared properties and axes
     - This solves the object constancy problem, allowing recognition of an object presented in different orientations and under different conditions, e.g., lighting changes
 
-![](/docs/cogsci-c100/perception/marr.gif)
 
 ## Prototype model
 
 - **Prototype model:** object perception involves a comparison of the stimulus with ideal, abstract example
     - People are faster at identifying sparrow as a bird than penguin
-- One of the most famous models in all of cognitive psychology
-- It has been hypothesized that our sensory systems act primarily as a selective filtering mechanism
+- One of the most famous models in all of cognitive psychology (and developed at Berkeley!)
+- It has been hypothesized that our sensory systems act primarily as a **selective filtering mechanism**
+    - Prototypes more easily pass this filter
     - This filter sorts things according to a limited number of variables (e.g., warm, unpleasant, green) out of which we construct our world
     - But prototype theory suggests that our minds can also perceive objects in a very different way...
     > _That which is essential is invisible to the eye._ – de Saint-Exupery 
@@ -70,6 +82,7 @@ weight: 1
 - **Alternative modes of perception:** Mindfulness is largely about seeing the “suchness” of things, that is, seeing things directly without conceptual filters
 - What assumptions might you make about this woman if you were told she is from New England? from California?
     - Our preconceived notions prevent us from seeing the real person in front of us
+    - Stereotyping
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/women.png)
 {{< /columns >}}
@@ -84,20 +97,23 @@ weight: 1
 
 ## Neural Networks
 
+> On Quiz 2!
+
 - Artificial Neural Networks in Pattern Recognition
+- Human neurons
 {{< columns >}}<!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/syn.png)
 <---><!-- mathjax fix -->
-- Human neurons
 - Many different neurons connect to the dendrites of each neuron
     - Some produce excitatory effect; others produce inhibitory effect
     - There are also different levels of intensity of these effects
-- If the activation of the neuron reaches a certain minimum threshold, the neuron will fire
+- Around a thousand connections are connected to each neurons 
+    - If the activation of the neuron reaches a certain minimum threshold, the neuron will fire
 {{< /columns >}}
 
 {{< expand "16A Notes" >}}
 >  Because circuit analysis translates to a wide range of fields, we can model many physical systems as electrical circuits, often gaining insight about the system. You may have heard of neural networks, an important machine learning tool that can be used to “learn” tasks such as image and voice recognition from examples instead of explicit programming. Neural networks are modeled after biological neural networks, which are fundamentally circuits operating on electrical signals within a brain:
-> ![](/docs/cogsci-c100/perception/16A.png)
+> {{< figure  src="/docs/cogsci-c100/perception/16A.png" >}}
 > In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. ([from EECS16A Note0](https://eecs16a.org/lecture/Note0.pdf))
 {{< /expand >}}
 
@@ -114,43 +130,66 @@ weight: 1
 > An artificial neural network is an interconnected group of nodes, inspired by a simplification of neurons in a brain. Here, each circular node represents an [artificial neuron](https://en.wikipedia.org/wiki/Artificial_neuron) and an arrow represents a connection from the output of one artificial neuron to the input of another.
 {{< /columns >}}
 
-{{< hint "info" >}}<!-- mathjax fix -->
-{{< youtube "aircAruvnKk" >}}
 
 ### Ex: How might a computer recognize a “9” using neural networks?
 
+{{< youtube "aircAruvnKk" >}}
+
 - There is huge variety of ways in which people write 9’s
-- To simplify things, we can represent the “9” using a grid of 28 x 28 pixels of varying shades of gray
-{{< expand "Steps" >}}
+{{< columns >}}<!-- mathjax fix -->
+- To simplify things, we can represent the “9” by decomposing it to a grid of 28 x 28 pixels of varying shades of gray (between 0 and 1)
 1. First (input) layer of network
     - Starts with bunch of neurons or nodes corresponding to an array of 28 x 28 pixels in the image
     - Each node holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black to 1 for white
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/s1.png)
+{{< /columns >}}
     - This is the neuron’s activation level
     - Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer...
         - This is loosely analogous to how, in biological networks of neuron, some groups of neurons cause other neurons to fire
+
 2. Second layer (or first “hidden layer”)
-    - Each neuron in the second layer might pick up on whether there is an edgein one particular region 
-    - You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
-    - Then you take all the activations from the first layer and compute their weighted sum according to the weights
-        - Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region
-        - To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
-            - Sum is largest when those middle pixels are bright but surrounding pixels are darker 
-    - But maybe you don’t want the neuron to light up anytime the sum is bigger than zero -- maybe you only want it to be active when the sum is bigger than say 10
-    - So you add in some other number (the bias), like -10, to the weighted sum
-        - The bias tells you how high the weighted sum needs to be before the neuron starts getting meaningfully active
+- Each neuron in the second layer might pick up on whether there is an edgein one particular region 
+- You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
+{{< columns >}}<!-- mathjax fix -->
+- Then you take all the activations from the first layer and compute their weighted sum according to the weights
+    - Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region
+    - To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
+        - Sum is largest when those middle pixels are bright but surrounding pixels are darker 
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/s2.png)
+{{< /columns >}}
+{{< columns >}}<!-- mathjax fix -->
+- But maybe you don’t want the neuron to light up anytime the sum is bigger than zero -- maybe you only want it to be active when the sum is bigger than say 10
+- So you add in some other number (the bias), like -10, to the weighted sum
+    - The bias tells you how high the weighted sum needs to be before the neuron starts getting meaningfully active
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/s3.png)
+{{< /columns >}}
+  - The connections between the other layers also have weights and biases associated with them
+
 3. Third layer (or second “hidden layer”)
     - When we recognize digits, we piece together various components
         - e.x: A “9” has a loop near the top and a line on the right whereas an “8” has a loop on the top and one below
-    - Each neuron in the third layer corresponds to one of these subcomponents
-        - e.x: A particular neuron in the third layer might be activated by any generally loopy pattern toward the top 
-    - These subcomponents are made up of the various edges from the second layer
-4. Last (output) layer
-    - Has 10 neurons, each representing one of the digits
-    - The activation in these neurons – some number between 0 and 1 – represents how much the system thinks a given image corresponds with a given digit
-    - Learning is about getting the computer to find a setting for all of the different weights and biases so that it will actually solve the problem at hand
-        - This is done through [**backpropagation**](https://en.wikipedia.org/wiki/Backpropagation) 
-{{< /expand >}}
-{{< /hint >}}
+
+    {{< columns >}}<!-- mathjax fix -->
+- Each neuron in the third layer corresponds to one of these subcomponents
+   - e.x: A particular neuron in the third layer might be activated by any generally loopy pattern toward the top 
+- These subcomponents are made up of the various edges from the second layer
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/s4.png)
+{{< /columns >}}
+
+1. Last (output) layer
+{{< columns >}}<!-- mathjax fix -->
+- Has 10 neurons, each representing one of the digits
+- The activation in these neurons – some number between 0 and 1 – represents how much the system thinks a given image corresponds with a given digit
+- Learning is about getting the computer to find a setting for all of the different weights and biases so that it will actually solve the problem at hand
+   - This is done through [**backpropagation**](https://en.wikipedia.org/wiki/Backpropagation) 
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/s5.png)
+{{< /columns >}}
+
 
 ### Learning in Neural Nets: Backpropagation
 
@@ -161,9 +200,9 @@ weight: 1
     - The basic idea is that each hidden unit connected to an output unit bears a degree of “responsibility” for the error of that output unit
     - If the activation level of an output unit is too low, then the weight between the output unit and each hidden unit connected to it is increased to decrease the error
     - The network then assigns error levels to the next layer of hidden units, so the error is propagated back down through the network until the input layer is reached
+- **tl;dr:** neural networks have to 'learn' by adjusting stimuli weights. When a network gets an answer wrong, it has to recursively pop back each layer and adjust the corresponding weights (increasing correct value weights, decreasing activated incorrect value weights)
 
 ### Other Neural Networks Q&A
-
 
 {{< columns >}}<!-- mathjax fix -->
 **Q:** How many neurons should there be in each hidden layer?<br>
@@ -173,14 +212,16 @@ weight: 1
 **A:** No.  Situations in which performance improves with additional hidden layers are very few.  One hidden layer is sufficient most of the time.
 <---><!-- mathjax fix -->
 **Q:** Why are more hidden layers not necessarily better?<br>
-**A:** Increasing the number of hidden layers much more than the sufficient number will cause the network to overfit the training set. It will learn the training data, but it won’t be able to generalize to new unseen data
+**A:** Increasing the number of hidden layers much more than the sufficient number will cause the network to **overfit** the training set. It will learn the training data, but it won’t be able to generalize to new unseen data.
 {{< /columns >}}
 
-{{< figure  src="/docs/cogsci-c100/perception/fits.png" >}}
+> Overfit Dataset:
+>{{< figure  src="/docs/cogsci-c100/perception/fits.png" >}}
+
 
 # Top-down processing in object recognition
 
-- Limitations of models of object perception discussed above: assumes that perception is always objective and accurate, but in real life, that is often not the case...
+- Limitations of models of object perception discussed above: assumes, in theory, perception is _objective_ and _accurate_; in real life, that is often not the case...
     - What we perceive, the way we perceive, is not always what would be predicted by these models
     - Our **concepts, expectations, and beliefs** play a much bigger role in perception than we usually realize
 - Perception engages both top-down and bottom-up processing
@@ -190,45 +231,65 @@ weight: 1
     - **Top-down processing:** information processing guided by higher-level processes, such as our beliefs, expectations, and memories
         - Our knowledge, beliefs about the world inform our perceptions
         - Emphasizes the importance of information coming from our minds
-- “Objective reality” is often not as objective as we think...
-    > _A fool sees not the same tree that a wise man sees._  --- William Blake
-    - Reversible figures (e.g., Necker cube; vase/profiles); ambiguous figures (e.g., old woman/young woman)
+  - E.x. you see a water bottle on your desk
+      - You know it's a water bottle since it's physically there. You can see, and perhaps touch it
+      - You know it's a water bottle because of it's features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
+          - If you were an alien, or a homosapien from a very long time ago, you wouldn't know that the object was a water bottle (among other things...)
 
-{{< columns >}}<!-- mathjax fix -->
+## “Objective reality” is often not as objective as we think...
+
+> _A fool sees not the same tree that a wise man sees._  --- William Blake
+- Reversible figures (e.g., Necker cube; vase/profiles)
+- Ambiguous figures (e.g., old woman/young woman -- also old people tend to see the old figure first, and vis-versa)
+    > {{< columns >}}<!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/beans.png)
 ![](/docs/cogsci-c100/perception/young-old.png)
 
-- Effect of expectations on perception
-    - Perceptual set brain teasers: SOAK FOLK CROAK
-    - Context effects (e.g., [Presidential illusion](https://www.independent.co.uk/news/science/presidential-optical-illusion-offers-clues-to-how-brain-processes-faces-a191716.html))
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/rubin.png)
 ![](/docs/cogsci-c100/perception/necker.png)
-![](/docs/cogsci-c100/perception/prez.jpg)
 {{< /columns >}}
+
+    > {{< columns >}}<!-- mathjax fix -->
+- Effect of expectations on perception
+    - Perceptual set brain teasers: SOAK FOLK CROAK
+    - Context effects (e.g. bea(r|n), [Presidential illusion](https://www.independent.co.uk/news/science/presidential-optical-illusion-offers-clues-to-how-brain-processes-faces-a191716.html))
+
+![](/docs/cogsci-c100/perception/monster.png)
+---
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/prez.jpg)
+![](/docs/cogsci-c100/perception/doggy.png)
+{{< /columns >}}
+
 
 
 ## Effects of expectations, experience, emotional patterns, and beliefs on perception
 
 - Effects of Prior Experience on Perception
     - Children who have been physically abused are significantly more likely to misperceive a fearful face as angry (Pollak)
+        > ![](/docs/cogsci-c100/perception/fear.png)
 - Cultural effects on perception
     - What is above the woman’s head?
     - Is this an indoor or outdoor scene? (Gregory and Gombrich, 1973)
+        > ![](/docs/cogsci-c100/perception/outside.png)
 - Rorscharch and Thematic Apperception Test (TAT)
-- When angry, people more often perceive neutral objects as guns (Baumann & DeSteno, 2010)
-- Effect of beliefs/preconceived notions on perception 
-    - Rosenhan study on effects of psychological labeling 
+    > {{< columns >}}<!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/woman.png)    
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/ink.png)
+{{< /columns >}}
+    - When angry, people more often perceive neutral objects as guns (Baumann & DeSteno, 2010)
+    - Effect of beliefs/preconceived notions on perception 
+        - Rosenhan study on effects of psychological labeling 
 
 
 ## Self-fulfilling prophecies
 
 - **Self-fulfilling prophecies:** People generally think that it is our experiences and perceptions that create our beliefs, but often, it is actually our beliefs that create our experiences and perceptions 
-
-![](/docs/cogsci-c100/perception/proph.jpg)
-
+    {{< figure  src="/docs/cogsci-c100/perception/proph.jpg" >}}
 - Our beliefs and expectations influence others’ behavior
-    - The Pygmalion effect: study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls 
+    - **The Pygmalion effect:** study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls 
         - Follow-up: If teacher believed that girls learn to read faster than boys, they did
     - Children who were told they were neat and tidy became more neat and tidy than those who were told they should be neat and tidy
         - Follow-up: children who are told that they are good at math showed greater improvements in math scores than those who were told that they should try to become good at math
