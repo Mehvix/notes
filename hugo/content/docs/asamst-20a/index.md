@@ -224,5 +224,35 @@ ___Do the Right Thing_, Spike Lee (1989)__
 __Social construction of race__
 - Systematic racism vs. Individual discrimination
 - Rapid change in federal position over a matter of months
-- (Incomplete)
+1. [Trump Executive Order on Diversity](https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-combating-race-sex-stereotyping/)
+2. [Biden Executive Order on Diversity](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/01/20/executive-order-advancing-racial-equity-and-support-for-underserved-co)
+3. [Biden Executive Order on Asian Americans](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/01/26/memorandum-condemning-and-combating-racism-xenophobia-and-intolerance-against-asian-americans-and-pacific-islanders-in-the-united-states/)
 
+__The 1992 Los Angeles Uprising/Riots__[L.A. Burning: The Riots 25 Years Later](https://www.youtube.com/watch?v=OCYT9Hew9ZU&t=6s)
+- The filmed video of African American Rodney King beating was probably on of the first "viral video" of police excessive force with serious consequences for race relations.
+- Days after the videotaped beating of Rodney King, a Korean American grocery shop owner, Soon Ja Dul, shot and killed a 15 year African American who she mistook for stealing, and grabbed her sweater and backpack and Harlins punched her. Soon Ja Dul went behind the counter to retrieve a shotgun and shot Harlins in the back of her head.
+- Following the acquittal in April of 1992, of Los Angeles Police Department officers on trial for the beating, Los Angeles experienced six days of civil unrest that resulted in the burning of many businesses, including those in Korea town which is located in and near historically black neighborhoods. The Harlins killing has also been attributed as contributing to civil unrest that occurred after the acquittal.
+
+__Sa I Gu__[Sa I Gu (official full version)](https://www.youtube.com/watch?v=G_UyYj-pR8U&t=2s)
+- A very specific view of the 1992 Los Angeles Uprising/Riots from the perspective of (mostly) Korean American women who were shop owners
+- __Afterthoughts:__
+    - Where do the views of the witnesses in this movie sit?
+    - Can we square the views of the Korean American witnesses here with one of diversity and equity?
+    - What racial tensions or divides might exist here between KA and African Americans?
+    - Is this a race issue or a class issue?
+    - Is this a race issue or an immigration issue?
+
+__The Cold War Construction of the Model Minority Myth__
+- What does "model minority" mean? [Why Do We Call Asian Americans The Model Minority? | AJ+](https://www.youtube.com/watch?v=PrDbvSSbxk8)
+- Black/White paradigm:
+    - Does the "model minority" stereotype support the black/white paradigm?
+    - How does it support an assimilationist paradigm?
+- Scholar Robert Lee says that the stereotype supports a view of minorities compliance with "accommodation" to assimilationist and status quo norms rather than militancy.
+    - Lee describes this as a "disjuncture between the newly articulated ideals of racial egalitarianism and the practice of racial discrimination" as evidence by the USC's decisions in the Japanese interment cases.
+
+__Disjuncture?__
+- What does Lee mean by this disjuncture?
+    - How is this supposed "disjuncture" exemplified by Cold War politics?
+        - 1966 NYT's Magazine article on "Success Store: Japanese American Style," and in December of that year, "Success Story of One Minority in the U.S."
+        - At a similar moment, U.S. Senator Daniel Patrick Moynihan published the influential _Report on the Black Family_ (1965) which was an attempty to use data and sociological methods to understand poverty and income inequality in the African American community but which used the term "tangle of pathology" and referenced single parent families in the African American community as a source of the generational poverty.
+        - How are these relevant to this idea of "disjuncture"?
