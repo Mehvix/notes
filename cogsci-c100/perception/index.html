@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Definition of sensation and perception #   As humans, we are cognitive beings who&mldr;  Acquire information about the world around us Integrate that information with prior knowledge from our stored memory Store that knowledge in our memory so we can use it later to help us achieve our goals   First step in this process of acquiring knowledge about the world involves sensation and perception  Sensation: process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into neural impulses.">
+<meta name=description content="Definition of sensation and perception #   As humans, we are cognitive beings who&mldr;  Acquire information about the world around us (perception) Integrate that information with prior knowledge from our stored memory Store that knowledge in our memory so we can use it later to help us achieve our goals   First step in this process of acquiring knowledge about the world involves sensation and perception  Sensation: process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into neural impulses (transduction).">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Perception">
-<meta property="og:description" content="Definition of sensation and perception #   As humans, we are cognitive beings who&mldr;  Acquire information about the world around us Integrate that information with prior knowledge from our stored memory Store that knowledge in our memory so we can use it later to help us achieve our goals   First step in this process of acquiring knowledge about the world involves sensation and perception  Sensation: process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into neural impulses.">
+<meta property="og:description" content="Definition of sensation and perception #   As humans, we are cognitive beings who&mldr;  Acquire information about the world around us (perception) Integrate that information with prior knowledge from our stored memory Store that knowledge in our memory so we can use it later to help us achieve our goals   First step in this process of acquiring knowledge about the world involves sensation and perception  Sensation: process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into neural impulses (transduction).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/cogsci-c100/perception/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-26T11:51:22-08:00">
+<meta property="article:modified_time" content="2022-01-28T00:08:09-08:00">
 <title>Perception | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.fcbcfdab829bbfc977167dd4fe90b74891bdeaf176659ce57222b145ae817678.js integrity="sha256-/Lz9q4Kbv8l3Fn3U/pC3SJG96vF2ZZzlciKxRa6Bdng=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.cef0f84824d3d523ca35e51e80aa5fd4dbcc0a947ea5309439ae86d182f1eca7.js integrity="sha256-zvD4SCTT1SPKNeUegKpf1NvMCpR+pTCUOa6G0YLx7Kc=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -240,6 +240,7 @@ pass.mehvix.com
 <li><a href=#alternative-modes-of-perception>Alternative modes of perception</a></li>
 <li><a href=#neural-networks>Neural Networks</a>
 <ul>
+<li><a href=#ex-how-might-a-computer-recognize-a-9-using-neural-networks>Ex: How might a computer recognize a “9” using neural networks?</a></li>
 <li><a href=#learning-in-neural-nets-backpropagation>Learning in Neural Nets: Backpropagation</a></li>
 <li><a href=#other-neural-networks-qa>Other Neural Networks Q&A</a></li>
 </ul>
@@ -248,6 +249,7 @@ pass.mehvix.com
 </li>
 <li><a href=#top-down-processing-in-object-recognition>Top-down processing in object recognition</a>
 <ul>
+<li><a href=#objective-reality-is-often-not-as-objective-as-we-think>“Objective reality” is often not as objective as we think&mldr;</a></li>
 <li><a href=#effects-of-expectations-experience-emotional-patterns-and-beliefs-on-perception>Effects of expectations, experience, emotional patterns, and beliefs on perception</a></li>
 <li><a href=#self-fulfilling-prophecies>Self-fulfilling prophecies</a></li>
 <li><a href=#perceptual-constancies>Perceptual Constancies</a></li>
@@ -274,15 +276,15 @@ Definition of sensation and perception
 <ul>
 <li>As humans, we are cognitive beings who&mldr;
 <ul>
-<li>Acquire information about the world around us</li>
-<li>Integrate that information with prior knowledge from our stored memory</li>
-<li>Store that knowledge in our memory so we can use it later to help us achieve our goals</li>
+<li><strong>Acquire</strong> information about the world around us (perception)</li>
+<li><strong>Integrate</strong> that information with prior knowledge from our stored memory</li>
+<li><strong>Store</strong> that knowledge in our memory so we can use it later to help us achieve our goals</li>
 </ul>
 </li>
 <li>First step in this process of acquiring knowledge about the world involves sensation and perception
 <ul>
-<li><strong>Sensation:</strong> process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into neural impulses. The inherent stimuli. Objective</li>
-<li><strong>Perception:</strong> process of interpreting and organizing sensory information through use of previous knowledge. What gives stimuli meaning. Subjective.</li>
+<li><strong>Sensation:</strong> process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into <strong>neural impulses</strong> (transduction). The inherent stimuli. Objective</li>
+<li><strong>Perception:</strong> process of <em>interpreting</em> and <em>organizing</em> sensory information through use of previous knowledge. What gives stimuli meaning. Subjective.</li>
 </ul>
 </li>
 </ul>
@@ -290,33 +292,44 @@ Definition of sensation and perception
 Early models of object perception
 <a class=anchor href=#early-models-of-object-perception>#</a>
 </h1>
+<ul>
+<li>Lots of machines are built on these old theories</li>
+<li>The models aren&rsquo;t respected nowadays, but had useful tid-bits of information (for cogsci, ML, etc)</li>
+</ul>
 <h2 id=template-matching-model>
 Template matching model
 <a class=anchor href=#template-matching-model>#</a>
 </h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
 <li><strong>Template matching model:</strong> object perception involves a comparison of the stimulus with set of templates or specific patterns stored in memory</li>
+<li>Static, unchanging</li>
 <li><em>Problem:</em> cannot account for complexity and flexibility of object recognition
 <ul>
 <li>e.g. individual differences in handwriting</li>
 </ul>
 </li>
 </ul>
+</div>
+<div class="flex-even markdown-inner">
 <p>
-<img src=/docs/cogsci-c100/perception/template.png alt=Template></p>
+<img src=/docs/cogsci-c100/perception/template.png alt=Template>
+</div>
+</div>
 <h2 id=feature-analysis-model>
 Feature analysis model
 <a class=anchor href=#feature-analysis-model>#</a>
 </h2>
 <ul>
-<li>Feature-analysis model: discrimination of objects is based on small number of characteristics of stimuli
+<li>Feature-analysis model: discrimination of objects is based on <em>small number of distinct characteristics</em> of stimuli
 <ul>
-<li>Are these two the same letter?: <code>G R P M</code>
+<li>Are these two the same letter?: <code>G M</code> <code>P R</code>
 <ul>
-<li>People are faster at deciding whether <code>G</code> and <code>M</code> are different than <code>P</code> and <code>R</code></li>
+<li>People are faster at deciding whether <code>G</code> and <code>M</code> are different than <code>P</code> and <code>R</code> because there are fewer similarities</li>
 </ul>
 </li>
-<li>Supported by neurological evidence – some neurons respond only to horizontal lines, others to diagonals, etc.</li>
+<li>Supported by neurological evidence: some neurons respond only to horizontal lines, others to diagonals, etc.</li>
 </ul>
 </li>
 <li><em>Problem:</em> Cannot explain recognition of complex objects with features that move and distort (e.g., horse or kangaroo)
@@ -332,17 +345,21 @@ Recognition-by-components model
 <div class="flex-even markdown-inner">
 <ul>
 <li><strong>Recognition-by-components model:</strong> view that an object is represented as an arrangement of simple 3-D shapes called
-<a href=https://en.wikipedia.org/wiki/Geon_%28psychology%29><em>geons</em></a>
-<ul>
-<li>Cup/pail composed of cylinder and curved tube geons in a particular arrangement
-<img src=/docs/cogsci-c100/perception/cup.png alt></li>
+<a href=https://en.wikipedia.org/wiki/Geon_%28psychology%29><em>geons</em></a></li>
+<li>Six main geons above</li>
 </ul>
-</li>
-</ul>
+<blockquote>
+<p>
+<img src=/docs/cogsci-c100/perception/cup.png alt>
+Cup/pail composed of cylinder and curved tube geons in a particular arrangement</p>
+</blockquote>
 </div>
 <div class="flex-even markdown-inner">
 <p>
-<img src=/docs/cogsci-c100/perception/rbc-ex.png alt>
+<img src=/docs/cogsci-c100/perception/rbc-ex.png alt></p>
+<blockquote>
+<p>Easier to tell the object from the rightmost column versus the center, despite the latter containing more lines</p>
+</blockquote>
 </div>
 </div>
 </p>
@@ -350,6 +367,11 @@ Recognition-by-components model
 David Marr’s Model of Visual Processing
 <a class=anchor href=#david-marrs-model-of-visual-processing>#</a>
 </h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>Not on Exam</p>
+</blockquote>
 <ul>
 <li>The image is then transformed into a 3-D sketch in which the the axes of symmetry and elongation link the object parts
 <ul>
@@ -357,14 +379,20 @@ David Marr’s Model of Visual Processing
 <li><strong>Elongation axis:</strong> line defining direction along which main bulk or mass of a shape is distributed</li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/marr.gif alt>
+</div>
+</div>
+<ul>
 <li>The 3-D sketch is object-centered – the object’s parts are described relative to one another and are linked on the basis of shared properties and axes
 <ul>
 <li>This solves the object constancy problem, allowing recognition of an object presented in different orientations and under different conditions, e.g., lighting changes</li>
 </ul>
 </li>
 </ul>
-<p>
-<img src=/docs/cogsci-c100/perception/marr.gif alt></p>
 <h2 id=prototype-model>
 Prototype model
 <a class=anchor href=#prototype-model>#</a>
@@ -375,9 +403,10 @@ Prototype model
 <li>People are faster at identifying sparrow as a bird than penguin</li>
 </ul>
 </li>
-<li>One of the most famous models in all of cognitive psychology</li>
-<li>It has been hypothesized that our sensory systems act primarily as a selective filtering mechanism
+<li>One of the most famous models in all of cognitive psychology (and developed at Berkeley!)</li>
+<li>It has been hypothesized that our sensory systems act primarily as a <strong>selective filtering mechanism</strong>
 <ul>
+<li>Prototypes more easily pass this filter</li>
 <li>This filter sorts things according to a limited number of variables (e.g., warm, unpleasant, green) out of which we construct our world</li>
 <li>But prototype theory suggests that our minds can also perceive objects in a very different way&mldr;</li>
 </ul>
@@ -397,6 +426,7 @@ Alternative modes of perception
 <li>What assumptions might you make about this woman if you were told she is from New England? from California?
 <ul>
 <li>Our preconceived notions prevent us from seeing the real person in front of us</li>
+<li>Stereotyping</li>
 </ul>
 </li>
 </ul>
@@ -417,8 +447,12 @@ Alternative modes of perception
 Neural Networks
 <a class=anchor href=#neural-networks>#</a>
 </h2>
+<blockquote>
+<p>On Quiz 2!</p>
+</blockquote>
 <ul>
-<li>Artificial Neural Networks in Pattern Recognition
+<li>Artificial Neural Networks in Pattern Recognition</li>
+<li>Human neurons
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <p>
@@ -426,14 +460,17 @@ Neural Networks
 </div>
 <div class="flex-even markdown-inner">
 <ul>
-<li>Human neurons</li>
 <li>Many different neurons connect to the dendrites of each neuron
 <ul>
 <li>Some produce excitatory effect; others produce inhibitory effect</li>
 <li>There are also different levels of intensity of these effects</li>
 </ul>
 </li>
+<li>Around a thousand connections are connected to each neurons
+<ul>
 <li>If the activation of the neuron reaches a certain minimum threshold, the neuron will fire</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -448,9 +485,12 @@ Neural Networks
 <input type=checkbox class=hidden>
 <div class="book-expand-content markdown-inner">
 <blockquote>
-<p>Because circuit analysis translates to a wide range of fields, we can model many physical systems as electrical circuits, often gaining insight about the system. You may have heard of neural networks, an important machine learning tool that can be used to “learn” tasks such as image and voice recognition from examples instead of explicit programming. Neural networks are modeled after biological neural networks, which are fundamentally circuits operating on electrical signals within a brain:
-<img src=/docs/cogsci-c100/perception/16A.png alt>
-In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. (<a href=https://eecs16a.org/lecture/Note0.pdf>from EECS16A Note0</a>)</p>
+<p>Because circuit analysis translates to a wide range of fields, we can model many physical systems as electrical circuits, often gaining insight about the system. You may have heard of neural networks, an important machine learning tool that can be used to “learn” tasks such as image and voice recognition from examples instead of explicit programming. Neural networks are modeled after biological neural networks, which are fundamentally circuits operating on electrical signals within a brain:</p>
+<figure><img src=/docs/cogsci-c100/perception/16A.png>
+</blockquote>
+</figure>
+<blockquote>
+<p>In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. (<a href=https://eecs16a.org/lecture/Note0.pdf>from EECS16A Note0</a>)</p>
 </blockquote>
 </div>
 </label>
@@ -484,31 +524,35 @@ An artificial neural network is an interconnected group of nodes, inspired by a 
 </blockquote>
 </div>
 </div>
-<blockquote class="book-hint info">
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/aircAruvnKk style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div>
 <h3 id=ex-how-might-a-computer-recognize-a-9-using-neural-networks>
 Ex: How might a computer recognize a “9” using neural networks?
 <a class=anchor href=#ex-how-might-a-computer-recognize-a-9-using-neural-networks>#</a>
 </h3>
-<ul>
-<li>There is huge variety of ways in which people write 9’s</li>
-<li>To simplify things, we can represent the “9” using a grid of 28 x 28 pixels of varying shades of gray</li>
-</ul>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>Steps</span>
-<span>↕</span>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/aircAruvnKk style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
 </div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
+<ul>
+<li>There is huge variety of ways in which people write 9’s
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>To simplify things, we can represent the “9” by decomposing it to a grid of 28 x 28 pixels of varying shades of gray (between 0 and 1)</li>
+</ul>
 <ol>
 <li>First (input) layer of network
 <ul>
 <li>Starts with bunch of neurons or nodes corresponding to an array of 28 x 28 pixels in the image</li>
 <li>Each node holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black to 1 for white</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/s1.png alt>
+</div>
+</div>
+<ul>
 <li>This is the neuron’s activation level</li>
 <li>Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer&mldr;
 <ul>
@@ -517,10 +561,16 @@ Ex: How might a computer recognize a “9” using neural networks?
 </li>
 </ul>
 </li>
-<li>Second layer (or first “hidden layer”)
+</ul>
+<ol start=2>
+<li>Second layer (or first “hidden layer”)</li>
+</ol>
 <ul>
 <li>Each neuron in the second layer might pick up on whether there is an edgein one particular region</li>
-<li>You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer</li>
+<li>You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
 <li>Then you take all the activations from the first layer and compute their weighted sum according to the weights
 <ul>
 <li>Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region</li>
@@ -531,6 +581,16 @@ Ex: How might a computer recognize a “9” using neural networks?
 </li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/s2.png alt>
+</div>
+</div>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
 <li>But maybe you don’t want the neuron to light up anytime the sum is bigger than zero &ndash; maybe you only want it to be active when the sum is bigger than say 10</li>
 <li>So you add in some other number (the bias), like -10, to the weighted sum
 <ul>
@@ -538,14 +598,30 @@ Ex: How might a computer recognize a “9” using neural networks?
 </ul>
 </li>
 </ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/s3.png alt>
+</div>
+</div>
+<ul>
+<li>The connections between the other layers also have weights and biases associated with them</li>
+</ul>
 </li>
-<li>Third layer (or second “hidden layer”)
+</ul>
+<ol start=3>
+<li>
+<p>Third layer (or second “hidden layer”)</p>
 <ul>
 <li>When we recognize digits, we piece together various components
 <ul>
 <li>e.x: A “9” has a loop near the top and a line on the right whereas an “8” has a loop on the top and one below</li>
 </ul>
 </li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
 <li>Each neuron in the third layer corresponds to one of these subcomponents
 <ul>
 <li>e.x: A particular neuron in the third layer might be activated by any generally loopy pattern toward the top</li>
@@ -553,24 +629,36 @@ Ex: How might a computer recognize a “9” using neural networks?
 </li>
 <li>These subcomponents are made up of the various edges from the second layer</li>
 </ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/s4.png alt>
+</div>
+</div>
 </li>
-<li>Last (output) layer
+<li>
+<p>Last (output) layer
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
 <li>Has 10 neurons, each representing one of the digits</li>
 <li>The activation in these neurons – some number between 0 and 1 – represents how much the system thinks a given image corresponds with a given digit</li>
 <li>Learning is about getting the computer to find a setting for all of the different weights and biases so that it will actually solve the problem at hand
 <ul>
-<li>This is done through <a href=https://en.wikipedia.org/wiki/Backpropagation><strong>backpropagation</strong></a></li>
+<li>This is done through
+<a href=https://en.wikipedia.org/wiki/Backpropagation><strong>backpropagation</strong></a></li>
 </ul>
 </li>
 </ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/s5.png alt>
+</div>
+</div>
+</p>
 </li>
 </ol>
-<pre><code>&lt;/div&gt;
-</code></pre>
-</label>
-</div>
-</blockquote>
 <h3 id=learning-in-neural-nets-backpropagation>
 Learning in Neural Nets: Backpropagation
 <a class=anchor href=#learning-in-neural-nets-backpropagation>#</a>
@@ -589,6 +677,7 @@ Learning in Neural Nets: Backpropagation
 <li>The network then assigns error levels to the next layer of hidden units, so the error is propagated back down through the network until the input layer is reached</li>
 </ul>
 </li>
+<li><strong>tl;dr:</strong> neural networks have to &lsquo;learn&rsquo; by adjusting stimuli weights. When a network gets an answer wrong, it has to recursively pop back each layer and adjust the corresponding weights (increasing correct value weights, decreasing activated incorrect value weights)</li>
 </ul>
 <h3 id=other-neural-networks-qa>
 Other Neural Networks Q&A
@@ -605,17 +694,21 @@ Other Neural Networks Q&A
 </div>
 <div class="flex-even markdown-inner">
 <p><strong>Q:</strong> Why are more hidden layers not necessarily better?<br>
-<strong>A:</strong> Increasing the number of hidden layers much more than the sufficient number will cause the network to overfit the training set. It will learn the training data, but it won’t be able to generalize to new unseen data
+<strong>A:</strong> Increasing the number of hidden layers much more than the sufficient number will cause the network to <strong>overfit</strong> the training set. It will learn the training data, but it won’t be able to generalize to new unseen data.
 </div>
 </div>
+<blockquote>
+<p>Overfit Dataset:
 <figure><img src=/docs/cogsci-c100/perception/fits.png>
 </figure>
+</p>
+</blockquote>
 <h1 id=top-down-processing-in-object-recognition>
 Top-down processing in object recognition
 <a class=anchor href=#top-down-processing-in-object-recognition>#</a>
 </h1>
 <ul>
-<li>Limitations of models of object perception discussed above: assumes that perception is always objective and accurate, but in real life, that is often not the case&mldr;
+<li>Limitations of models of object perception discussed above: assumes, in theory, perception is <em>objective</em> and <em>accurate</em>; in real life, that is often not the case&mldr;
 <ul>
 <li>What we perceive, the way we perceive, is not always what would be predicted by these models</li>
 <li>Our <strong>concepts, expectations, and beliefs</strong> play a much bigger role in perception than we usually realize</li>
@@ -635,39 +728,72 @@ Top-down processing in object recognition
 <li>Emphasizes the importance of information coming from our minds</li>
 </ul>
 </li>
+<li>E.x. you see a water bottle on your desk
+<ul>
+<li>You know it&rsquo;s a water bottle since it&rsquo;s physically there. You can see, and perhaps touch it</li>
+<li>You know it&rsquo;s a water bottle because of it&rsquo;s features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
+<ul>
+<li>If you were an alien, or a homosapien from a very long time ago, you wouldn&rsquo;t know that the object was a water bottle (among other things&mldr;)</li>
 </ul>
 </li>
-<li>“Objective reality” is often not as objective as we think&mldr;
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=objective-reality-is-often-not-as-objective-as-we-think>
+“Objective reality” is often not as objective as we think&mldr;
+<a class=anchor href=#objective-reality-is-often-not-as-objective-as-we-think>#</a>
+</h2>
 <blockquote>
 <p><em>A fool sees not the same tree that a wise man sees.</em> &mdash; William Blake</p>
 </blockquote>
 <ul>
-<li>Reversible figures (e.g., Necker cube; vase/profiles); ambiguous figures (e.g., old woman/young woman)</li>
-</ul>
+<li>
+<p>Reversible figures (e.g., Necker cube; vase/profiles)</p>
 </li>
-</ul>
+<li>
+<p>Ambiguous figures (e.g., old woman/young woman &ndash; also old people tend to see the old figure first, and vis-versa)</p>
+<blockquote>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <p>
 <img src=/docs/cogsci-c100/perception/beans.png alt>
-<img src=/docs/cogsci-c100/perception/young-old.png alt></p>
-<ul>
-<li>Effect of expectations on perception
-<ul>
-<li>Perceptual set brain teasers: SOAK FOLK CROAK</li>
-<li>Context effects (e.g.,
-<a href=https://www.independent.co.uk/news/science/presidential-optical-illusion-offers-clues-to-how-brain-processes-faces-a191716.html>Presidential illusion</a>)</li>
-</ul>
-</li>
-</ul>
+<img src=/docs/cogsci-c100/perception/young-old.png alt>
 </div>
 <div class="flex-even markdown-inner">
 <p>
 <img src=/docs/cogsci-c100/perception/rubin.png alt>
 <img src=/docs/cogsci-c100/perception/necker.png alt>
+</div>
+</div>
+</blockquote>
+<blockquote>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Effect of expectations on perception
+<ul>
+<li>Perceptual set brain teasers: SOAK FOLK CROAK</li>
+<li>Context effects (e.g. bea(r|n),
+<a href=https://www.independent.co.uk/news/science/presidential-optical-illusion-offers-clues-to-how-brain-processes-faces-a191716.html>Presidential illusion</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 id=docscogsci-c100perceptionmonsterpng>
+<img src=/docs/cogsci-c100/perception/monster.png alt>
+<a class=anchor href=#docscogsci-c100perceptionmonsterpng>#</a>
+</h2>
+</div>
+<div class="flex-even markdown-inner">
+<p>
 <img src=/docs/cogsci-c100/perception/prez.jpg alt>
+<img src=/docs/cogsci-c100/perception/doggy.png alt>
 </div>
 </div>
+</blockquote>
+</li>
+</ul>
 <h2 id=effects-of-expectations-experience-emotional-patterns-and-beliefs-on-perception>
 Effects of expectations, experience, emotional patterns, and beliefs on perception
 <a class=anchor href=#effects-of-expectations-experience-emotional-patterns-and-beliefs-on-perception>#</a>
@@ -675,20 +801,45 @@ Effects of expectations, experience, emotional patterns, and beliefs on percepti
 <ul>
 <li>Effects of Prior Experience on Perception
 <ul>
-<li>Children who have been physically abused are significantly more likely to misperceive a fearful face as angry (Pollak)</li>
+<li>Children who have been physically abused are significantly more likely to misperceive a fearful face as angry (Pollak)
+<blockquote>
+<p>
+<img src=/docs/cogsci-c100/perception/fear.png alt></p>
+</blockquote>
+</li>
 </ul>
 </li>
 <li>Cultural effects on perception
 <ul>
 <li>What is above the woman’s head?</li>
-<li>Is this an indoor or outdoor scene? (Gregory and Gombrich, 1973)</li>
+<li>Is this an indoor or outdoor scene? (Gregory and Gombrich, 1973)
+<blockquote>
+<p>
+<img src=/docs/cogsci-c100/perception/outside.png alt></p>
+</blockquote>
+</li>
 </ul>
 </li>
-<li>Rorscharch and Thematic Apperception Test (TAT)</li>
+<li>Rorscharch and Thematic Apperception Test (TAT)
+<blockquote>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/woman.png alt>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/cogsci-c100/perception/ink.png alt>
+</div>
+</div>
+</blockquote>
+<ul>
 <li>When angry, people more often perceive neutral objects as guns (Baumann & DeSteno, 2010)</li>
 <li>Effect of beliefs/preconceived notions on perception
 <ul>
 <li>Rosenhan study on effects of psychological labeling</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -697,14 +848,13 @@ Self-fulfilling prophecies
 <a class=anchor href=#self-fulfilling-prophecies>#</a>
 </h2>
 <ul>
-<li><strong>Self-fulfilling prophecies:</strong> People generally think that it is our experiences and perceptions that create our beliefs, but often, it is actually our beliefs that create our experiences and perceptions</li>
-</ul>
-<p>
-<img src=/docs/cogsci-c100/perception/proph.jpg alt></p>
-<ul>
+<li><strong>Self-fulfilling prophecies:</strong> People generally think that it is our experiences and perceptions that create our beliefs, but often, it is actually our beliefs that create our experiences and perceptions
+<figure><img src=/docs/cogsci-c100/perception/proph.jpg>
+</figure>
+</li>
 <li>Our beliefs and expectations influence others’ behavior
 <ul>
-<li>The Pygmalion effect: study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls
+<li><strong>The Pygmalion effect:</strong> study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls
 <ul>
 <li>Follow-up: If teacher believed that girls learn to read faster than boys, they did</li>
 </ul>
@@ -1186,9 +1336,9 @@ Development of perception
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/87f19cf937a771ece289036967692f431dcb7dc3 title="Last modified by Max Vogel | January 26, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/185e8ff65a799c7d6ebbe1f84dd454efb0ac6c71 title="Last modified by Max Vogel | January 28, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 26, 2022</span>
+<span>January 28, 2022</span>
 </a>
 </div>
 <div>
@@ -1219,6 +1369,7 @@ Development of perception
 <li><a href=#alternative-modes-of-perception>Alternative modes of perception</a></li>
 <li><a href=#neural-networks>Neural Networks</a>
 <ul>
+<li><a href=#ex-how-might-a-computer-recognize-a-9-using-neural-networks>Ex: How might a computer recognize a “9” using neural networks?</a></li>
 <li><a href=#learning-in-neural-nets-backpropagation>Learning in Neural Nets: Backpropagation</a></li>
 <li><a href=#other-neural-networks-qa>Other Neural Networks Q&A</a></li>
 </ul>
@@ -1227,6 +1378,7 @@ Development of perception
 </li>
 <li><a href=#top-down-processing-in-object-recognition>Top-down processing in object recognition</a>
 <ul>
+<li><a href=#objective-reality-is-often-not-as-objective-as-we-think>“Objective reality” is often not as objective as we think&mldr;</a></li>
 <li><a href=#effects-of-expectations-experience-emotional-patterns-and-beliefs-on-perception>Effects of expectations, experience, emotional patterns, and beliefs on perception</a></li>
 <li><a href=#self-fulfilling-prophecies>Self-fulfilling prophecies</a></li>
 <li><a href=#perceptual-constancies>Perceptual Constancies</a></li>
