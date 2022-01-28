@@ -186,7 +186,43 @@ __Korematsu v. United States__
 > "In response to the Japanese attack on Pearl Harbor during World War II, the U.S. government decided to require Japanese-Americans to move into relocation camps as a matter of national security. President Franklin Roosevelt signed Executive Order 9066 in February 1942, two months after Pearl Harbor. A Japanese-American man living in San Leandro, Fred Korematsu, chose to stay at his residence rather than obey the order to relocate. Korematsu was arrested and convicted of violating the order. He responded by arguing that Executive Order 9066 violated the Fifth Amendment. The Ninth Circuit affirmed Korematsu's conviction." - Oyez
 - __Conclusion:__ The Court ruled against Korematsu. The Court believed that the decision was valid because it was a necessity amid the danger of espionage and sabotage. 
 
-__Common ground vs. Mrgins as the Mainstream__
+__Common ground vs. Margins as the Mainstream__
 - Okihiro writes that his book seeks to reject binaries and to advocate for a "open, borderless" common ground" versus his prior argument that the mainstream norms, rights, values of America were created by the margins.
     - meaning that the _margins create the mainstream._ 
+
+__Race Conscious Judicial Review and Black/White Paradigm__
+- Race relations in the United States have rapidly evolved in recent decades however, race scholars often point to a persistent paradigm that views racial difference primarily through the construction of black and white relations.
+
+__Binarism and Black White as a paradigm__
+- Okirhiro says that the American race _paradigm_ views race relations in terms of black and white.
+
+__Separate but Equal: _Plessy v. Ferguson_ (1896)__
+- Louisiana's _Separate Car Act_ challenged under the 14th Amendment
+> "Louisiana enacted the Separate Car Act, which required separate railway cars for blacks and whites. In 1892, Homer Plessy – who was seven-eighths Caucasian – agreed to participate in a test to challenge the Act. He was solicited by the Comite des Citoyens (Committee of Citizens), a group of New Orleans residents who sought to repeal the Act. They asked Plessy, who was technically black under Louisiana law, to sit in a "whites only" car of a Louisiana train...When Plessy was told to vacate the whites-only car, he refused and was arrested...Plessy was convicted." - Oyez
+- __Conclusion__: The Court declared the state law constitutional. In essence, segregation did not constitute unlawful discrimination.
+
+__Constructive blacks__
+- Law scholar Frank Wu argues that our legal system construes "racial groups as white, blacks, "honorary whites or constructive blacks."
+    - What does "constructive" mean?
+        - The legal system has treated Asians, mostly as blacks. Applied the same rules to Asians as they would to Blacks.  
+- He says historically, the U.S. legal system has treated Asians mostly as "constructive blacks."
+    - _People v. Hall_, 1854 (CA state court attributed black status to Asians in enforcing a statue (passed by a legislative body) prohibiting the testimony of blacks, reasoning that "blacks" was a generic term for all nonwhites).
+    - _Gong Lum v. Rice_, 1927 (USC upheld segregated public schools for Asians connoting no difference between segregation for blacks to those of the "yellow races").
+
+__1790 Immigration and Naturalization Act revisited__
+- Held that only "free white persons" of "good moral character" could become naturalized citizens. After the Civil War, African Americans who were former slaves, gained official citizenship status.
+    - _Ozawa v. U.S._, 1922 (USC ruled Japanese American were not white for naturalization but lauded performance of white middle class attributes such as attending Cal, Church, and speaking English at home)
+    - _U.S. v. Thind._, 1923 (USC ruled Asian Indian Immigrants not white for naturalization, noting that though anthropologists deemed Indians "Aryan" this was not the same in the common sense understanding of a white person)
+    - Racial bar for naturalization not lifted until the Immigration and Naturalization Act of 1952 (McCarran-Walter Act), and abolished the race restriction of the 1790 INA, though it retained a quota system for nationalities and regions.
+
+__Are Asians White or Black?__
+___Do the Right Thing_, Spike Lee (1989)__
+- Asians as "Middle Man minority"
+    - i.e. Your grandparents may have businesses in neighborhoods that are African-American or Latinx that are in the grey-economic zone.
+- Asians as Other Non-Whites:
+
+__Social construction of race__
+- Systematic racism vs. Individual discrimination
+- Rapid change in federal position over a matter of months
+- (Incomplete)
 
