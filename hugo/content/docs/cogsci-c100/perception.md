@@ -231,6 +231,8 @@ weight: 1
     - **Top-down processing:** information processing guided by higher-level processes, such as our beliefs, expectations, and memories
         - Our knowledge, beliefs about the world inform our perceptions
         - Emphasizes the importance of information coming from our minds
+    - Note: we use both throughout everyday situations, rarely exclusively either or 
+        - Models can almost be sort of categorized/grouped by which of the two processing model they put emphasis on 
   - E.x. you see a water bottle on your desk
       - You know it's a water bottle since it's physically there. You can see, and perhaps touch it
       - You know it's a water bottle because of it's features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
@@ -263,7 +265,6 @@ weight: 1
 {{< /columns >}}
 
 
-
 ## Effects of expectations, experience, emotional patterns, and beliefs on perception
 
 - Effects of Prior Experience on Perception
@@ -288,14 +289,15 @@ weight: 1
 
 - **Self-fulfilling prophecies:** People generally think that it is our experiences and perceptions that create our beliefs, but often, it is actually our beliefs that create our experiences and perceptions 
     {{< figure  src="/docs/cogsci-c100/perception/proph.jpg" >}}
-- Our beliefs and expectations influence others’ behavior
+- Our beliefs and expectations influence **others’** behavior
     - **The Pygmalion effect:** study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls 
         - Follow-up: If teacher believed that girls learn to read faster than boys, they did
     - Children who were told they were neat and tidy became more neat and tidy than those who were told they should be neat and tidy
         - Follow-up: children who are told that they are good at math showed greater improvements in math scores than those who were told that they should try to become good at math
     - Those who over-idealize romantic partners as having many virtues and few faults tend to have happier and longer-lasting relationships (Miller, Niehuis, & Huston, 2006)
-    - Moreover, the partners who are over-idealized tended to develop those traits over time! (Sandra Murray)
-- Our beliefs and expectations influence our own behavior
+        - Moreover, the partners who are over-idealized tended to develop those traits over time! (Sandra Murray)
+        - People live up to their expectations -- we tend to bring out what we focus on
+- Our beliefs and expectations influence **our own** behavior
     - Study by Mark Snyder found that when a man was led to believe that a woman found him attractive, she was more likely to act as if she did
         > _Assume a virtue if you have it not._ – Shakespeare
 
@@ -306,9 +308,14 @@ weight: 1
         > ![](/docs/cogsci-c100/perception/tile.png)
         > Is Tile A or Tile B darker or are they the same color?
         > - Illusion results from visual system’s attempt to maintain lightness constancy: we perceive an object as having a constant color, even if changing illumination alters the wavelengths reflected by the object
+
+{{< columns >}}<!-- mathjax fix -->
 - **Shape constancy:** we perceive the form of familiar objects as constant even while our retinal images of them change
     - A door casts an increasingly trapezoidal image on our retinas as it opens, yet we still perceive it as rectangular
-
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/door.png)
+{{< /columns >}}
+<br>
 {{< columns >}}<!-- mathjax fix -->
 - Müller-Lyer illusion: 
     - Is line AB or line BC longer?
@@ -344,21 +351,19 @@ weight: 1
     - You are really interested in finding a brand that is considered
         - Durable, strong, and well built (“rugged” condition) OR
         - Classy, attractive, and refined (“sophisticated” condition)
-{{< expand "Which would you choose?" >}}
-![](/docs/cogsci-c100/perception/condoms.png)
-{{< /expand >}}
-{{< expand "Match" >}} 
-{{< columns >}}<!-- mathjax fix -->
-![](/docs/cogsci-c100/perception/match.png)
-<---><!-- mathjax fix -->
+- Which would you choose?
+    ![](/docs/cogsci-c100/perception/condoms.png)
+- Match the colors with the following
+    ![](/docs/cogsci-c100/perception/match.png)
+    {{< columns >}}<!-- mathjax fix -->
 - Sincerity: white, yellow.$^1$
 - Excitement: red, orange.$^1$
 - Competence: blue
+<---><!-- mathjax fix -->
 - Sophistication: black, pink, purple
 - Ruggedness: brown
 - .$^1$Marginally significant
 {{< /columns >}}
-{{< /expand >}}
     
 # Neurological disorders of visual perception
 
@@ -378,12 +383,13 @@ weight: 1
   - Do people tend to perceive men or women more in “parts”? Women (Gervais, Vescio , Forster et al., 2012)
 - **Prosopagnosia:** failure to recognize particular people by the sight of their faces
     - After stroke, sheep rancher could not recognize people but could recognize sheep 
+        - Someone would walk in the room and he wouldn't be able to tell if it was the wife/neighbor/robber/etc
     - Note: the eyes also play a special role in perception
         >![](/docs/cogsci-c100/perception/eyes.png)
-        >- 70-90% of famous portrait paintings sampled from the last five centuries have an eye at or within 5% of the painting’s exact centerline (Christopher W. Tyler)<br><br>
+        > 70-90% of famous portrait paintings sampled from the last five centuries have an eye at or within 5% of the painting’s exact centerline (Christopher W. Tyler)<br><br>
         > _Every man indicates in his eye the exact indication of his rank._  – Emerson
 
-## Modular processing
+## Modular Processing
 
 {{< columns >}}<!-- mathjax fix -->
 - Visual illusions suggest that the mind is at least in part modular (Jerry Fodor)
@@ -396,6 +402,8 @@ weight: 1
 {{< /columns >}}
 
 {{< columns >}}<!-- mathjax fix -->
+<br>
+
 ![](/docs/cogsci-c100/perception/break.png)
 <---><!-- mathjax fix -->
 Modular processes are usually characterized by...
@@ -409,24 +417,24 @@ Modular processes are usually characterized by...
 
 
 ## Other Neurological Disorders Related to Visual Perception
+
 - **Visual agnosia:** inability to recognize/identify visual objects despite relatively good visual perception
     - Usually due to damage in occipital or temporal lobes
         - “Mr. P” in Oliver Sacks’ Man Who Mistook His Wife for a Hat
         - Man with agnosia puzzling over a picture of a cow suddenly found himself making alternating up-and-down movements with fists.  He looked down at his hands and said, “Oh, a cow!”
-- Visual neglect syndrome or unilateral spatial neglect:
+        - Due to some error between vision and verbal communication
+- **Visual neglect syndrome** or **unilateral spatial neglect**:
     - Tendency to ignore – or to be unaware of – information on one half of visual field, usually the left side
     - Typically occurs after damage (e.g., stroke) to right hemisphere, particularly damage to the parietal and frontal lobes
-    - Relatively common
-  
-{{< columns >}}<!-- mathjax fix -->
+    - Relatively common, easy to test for
+    {{< columns >}}<!-- mathjax fix -->
 >![](/docs/cogsci-c100/perception/lines.png)
 > Patients are asked to bisect each line.  Their markings are typically skewed to the right, as if they do not see the leftmost segment
 <---><!-- mathjax fix -->
 >![](/docs/cogsci-c100/perception/drawing.png)
 > Patients are asked to draw from memory or to copy an illustration (Driver & Vuilleumier, 2001)
 {{< /columns >}}
-
-{{< expand "House" >}}
+    {{< expand "House" >}}
 {{< columns >}}<!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/house0.png)
 <---><!-- mathjax fix -->
@@ -437,26 +445,29 @@ Modular processes are usually characterized by...
 > _Experimenter:_ Which house would you prefer to live in?<br>
 > _Patient:_ The left house.
 {{< /expand >}}
+---
 
 - **Capgras syndrome:** characterized by belief that family and/or friends are imposters
     - Damage to pathway between visual cortex and amygdala, which regulates emotions
     - Emotional “glow” that we normally feel around people we are close to is missing
     - Ramachandran argues that this emotional “glow” is, to a large extent, what gives us a sense of continuity in our relationships
+    - Classified as some kind of schizophrenia
 - **Functional blindness** (conversion disorder): unexplained vision loss with no organic basis
     - Cambodian women who had witnessed horrible war atrocities became either partially or wholly blind
-
-{{< columns >}}<!-- mathjax fix -->
+    - Impairs primarily body functions / processes
+        - Psychological defense mechanism
 - **Blindsight:** vision without awareness
-    - Blindness resulting from damage to visual cortex
-    - When presented with various shapes like circles and square, or photos of faces of men and women, patient could not tell (or guess) what his eyes were gazing at
-    - However, when shown pictures of people with angry or happy faces, he was able to guess the emotions expressed, at a rate far better than chance
-    - Patients are also able to correctly “guess” the identity or location of particular objects 
-    - Patients report that they get a “gut” feeling that allows them to perform these tasks
-    - A second pathway of visual perception may account for this phenomenon
+{{< columns >}}<!-- mathjax fix -->
+- Blindness resulting from damage to visual cortex
+- When presented with various shapes like circles and square, or photos of faces of men and women, patient could not tell (or guess) what his eyes were gazing at
+- However, when shown pictures of people with angry or happy faces, he was able to guess the emotions expressed, at a rate far better than chance
+- Patients are also able to correctly “guess” the identity or location of particular objects 
+- Patients report that they get a “gut” feeling that allows them to perform these tasks
 <---><!-- mathjax fix -->
 > ![](/docs/cogsci-c100/perception/wander.png)
 > Blindsight patient was able to meander around all the clutter in a hallway that he was told was empty (Weiskrantz)
 {{< /columns >}}
+    - A second pathway of visual perception may account for this phenomenon
 
 
 ## Two pathways of visual perception
@@ -468,18 +479,17 @@ Modular processes are usually characterized by...
 - Participants were instructed to
     1. Passively allow the target to just “pop” into their minds OR
     2. Actively direct their attention to the target
-- Participants in Group 1 outperformed those in Group 2 (Smilek, Enns, Eastwood et al., 2006)
+- Participants in Passive Group 1 outperformed those in Group 2 (Smilek, Enns, Eastwood et al., 2006)
 {{< /columns >}}
-
-{{< expand "Targets" >}}
+    {{< expand "Targets" >}}
 ![](/docs/cogsci-c100/perception/targets.png)
 - Look for the circle with just one gap, and say whether the gap is on the left or the right
 - Use “relax” strategy, then try active search strategy
 {{< /expand >}}
-- Proposed explanation:
+  - Proposed explanation:
     - Participants who were basically told to relax and go with their gut instinct used a secondary pathway of visual perception that 
-        - Does not go through the visual cortex
-        - Instead simply makes a very short loop through the limbic system: the emotional, instinctual center of the brain
+    - Does not go through the visual cortex
+    - Instead simply makes a very short loop through the limbic system: the emotional, instinctual center of the brain
 ![](/docs/cogsci-c100/perception/proposed.png)
 
 {{< columns >}}<!-- mathjax fix -->
@@ -500,12 +510,14 @@ Modular processes are usually characterized by...
     - Unfortunately, although signals were now reaching his visual cortex, it lacked the experience to interpret them
         - May could not recognize expression, or faces, apart from features such as hair
         - Yet he can see an object in motion
+    - Ended up committing suicide because he found himself in a world he didn't (couldn't) understand or comprehend
 <---><!-- mathjax fix -->
 <br>
 
 - There is a critical period for normal sensory and perceptual development
 - Kittens reared in a cylinder with only vertical black and white stripes later had difficulty perceiving horizontal bars
     - Kitten would play with rod only when it was held upright 
+    - As if they couldn't see the horizontal rod
 <br>
 <br>
 <br>
