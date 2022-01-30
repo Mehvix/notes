@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="1-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
+<meta name=description content="1-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Week 1">
-<meta property="og:description" content="1-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
+<meta property="og:description" content="1-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-27T15:40:37-08:00">
+<meta property="article:modified_time" content="2022-01-29T17:35:57-08:00">
 <title>Week 1 | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.6ab92b593fbbfb98a891ce354bc6575ec8c4c77a8dfdabfb63c5d6a20f280e4f.js integrity="sha256-arkrWT+7+5iokc41S8ZXXsjEx3qN/av7Y8XWog8oDk8=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.f9156f05504fc69529324aeafa77a01466663152bd84582096cf15113de76590.js integrity="sha256-+RVvBVBPxpUpMkrq+negFGZmMVK9hFggls8VET3nZZA=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -232,24 +232,32 @@ pass.mehvix.com
 <li><a href=#1-25-gaussian-elimination-vectors>1-25: Gaussian Elimination, Vectors</a>
 <ul>
 <li><a href=#upper-triangular-systems>Upper Triangular Systems</a></li>
+<li><a href=#row-echelon-form>Row Echelon Form</a>
+<ul>
+<li><a href=#reduced-row-echelon-form>Reduced Row Echelon Form</a></li>
+</ul>
+</li>
+<li><a href=#error>Error</a></li>
+<li><a href=#graphing>Graphing</a></li>
 </ul>
 </li>
 <li><a href=#1-27-vectors-matrices-multiplications-and-span>1-27: Vectors, Matrices, Multiplications, And Span</a>
 <ul>
 <li><a href=#vectors>Vectors</a>
 <ul>
+<li><a href=#vectors-representing-state>Vectors Representing State</a></li>
 <li><a href=#special-vectors>Special vectors</a></li>
 <li><a href=#vector-operations>Vector Operations</a></li>
 </ul>
 </li>
 <li><a href=#matrices>Matrices</a>
 <ul>
-<li><a href=#vectors-as-matrices>Vectors as Matrices</a></li>
 <li><a href=#special-matrices>Special Matrices</a></li>
+<li><a href=#column-vs-row>Column vs Row</a></li>
 <li><a href=#matrix-operations>Matrix Operations</a></li>
-<li><a href=#row-vs-column-perspective>Row vs Column Perspective</a></li>
 </ul>
 </li>
+<li><a href=#span--column-space--range>Span / Column Space / Range</a></li>
 </ul>
 </li>
 </ul>
@@ -282,7 +290,8 @@ $$z=1$$</li>
 </ul>
 </div>
 <div class="flex-even markdown-inner">
-<p>&mldr;which can be represent as
+<p>&mldr;which can be represent as an
+<a href=https://en.wikipedia.org/wiki/Augmented_matrix>augmented matrix</a>:
 $$\begin{bmatrix}
 1 & -1 & 2 & \text{|} & 1\\
 0 & 1 & -1 & \text{|} & 2\\
@@ -292,13 +301,19 @@ $$\begin{bmatrix}
 </div>
 <ul>
 <li>These are called
-<a href=https://en.wikipedia.org/wiki/Triangular_matrix>upper triangle matrices</a> &ndash; they are nice in that they&rsquo;re easy to solve!
+<a href=https://en.wikipedia.org/wiki/Triangular_matrix><strong>upper triangle matrices</strong></a> &ndash; they are nice in that they&rsquo;re easy to solve!
 <ul>
 <li>The solution is reached when the diagonal is all one, the remaining is zero (excluding the rightmost &lsquo;answer&rsquo; colum)</li>
 </ul>
 </li>
+</ul>
+<h2 id=row-echelon-form>
+Row Echelon Form
+<a class=anchor href=#row-echelon-form>#</a>
+</h2>
+<ul>
 <li>More precisely, a matrix is in
-<a href=https://en.wikipedia.org/wiki/Row_echelon_form>row echelon form</a> when the following criteria are met:
+<a href=https://en.wikipedia.org/wiki/Row_echelon_form><strong>row echelon form</strong></a> when the following criteria are met:
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -323,9 +338,14 @@ $$\begin{bmatrix}
 </li>
 </ul>
 </li>
-<li>In addition to row echelon form, there is also reduced row echelon form.
+</ul>
+<h3 id=reduced-row-echelon-form>
+Reduced Row Echelon Form
+<a class=anchor href=#reduced-row-echelon-form>#</a>
+</h3>
 <ul>
-<li>This requires that: In addition, after the upwards propagation of variables in step (3), we will obtain a matrix with the following properties, in addition to the two mentioned above:
+<li><strong>
+<a href=https://en.wikipedia.org/wiki/Row_echelon_form#Reduced_row_echelon_form>Reduced Row Echelon Form</a>:</strong> requires that, in addition to the upwards propagation of variables in step (3), we will obtain a matrix with the following properties, in addition to the two mentioned above:
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ol>
@@ -347,9 +367,8 @@ $$\begin{bmatrix}
 <li>Sometimes abbreviated (especially in programming) as <code>rref</code>.</li>
 <li>By construction, the Gaussian elimination algorithm always results in a matrix that is in reduced row echelon form.
 <ul>
-<li>Once an augmented matrix is reduced to reduced row echelon form, variables corresponding to columns containing leading entries are called <strong>basic variables</strong>, and the remaining variables are called <strong>free variables</strong></li>
-</ul>
-</li>
+<li>Once an augmented matrix is reduced to reduced row echelon form, variables corresponding to columns containing leading entries are called <strong>basic variables</strong>, and the remaining variables are called <strong>
+<a href=https://en.wikipedia.org/wiki/Free_variables_and_bound_variables>free variables</a></strong></li>
 <li>As will be discussed shortly, the distinction between basic and free variables allows us to characterize all solutions to the system of linear equations (if any exist!).</li>
 </ul>
 </li>
@@ -404,26 +423,25 @@ $$\begin{bmatrix}
 </div>
 </label>
 </div>
+<h2 id=error>
+Error
+<a class=anchor href=#error>#</a>
+</h2>
 <ul>
 <li>In real systems, we will always have noise (error) that makes our systems slightly skewed
 <ul>
 <li>So what if we repeat the example above, but have a measurement of .$+0.1$&mldr; are there any solutions?
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>Error Example</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
 <figure><img src=/docs/eecs-16a/1/err.png>
 </figure>
-</div>
-</label>
-</div>
 </li>
 </ul>
 </li>
+</ul>
+<h2 id=graphing>
+Graphing
+<a class=anchor href=#graphing>#</a>
+</h2>
+<ul>
 <li>We can represent our solution as a set of linear equations, meaning we can represent them graphically
 <img src=/docs/eecs-16a/1/single.png alt>
 <img src=/docs/eecs-16a/1/no-sol.png alt>
@@ -436,28 +454,64 @@ $$\begin{bmatrix}
 <ul>
 <li>
 <a href=https://eecs16a.org/lecture/Lecture1B_Slides.pdf>Slides</a></li>
-<li>
-<a href=https://eecs16a.org/lecture/Note3.pdf>Notes 3</a></li>
+<li>Notes
+<a href=https://eecs16a.org/lecture/Note2A.pdf>2A</a>,
+<a href=https://eecs16a.org/lecture/Note2B.pdf>2B</a></li>
 </ul>
+<blockquote>
+<p>Last lecture, we showed how vectors and matrices could be used as a way of writing systems of linear equations more compactly, demonstrating through our tomography example that modeling a set of measurements as a system of equations can be a powerful tool.</p>
+</blockquote>
+<blockquote>
+<p>In these following notes, we are going to more thoroughly discuss how to perform computations with vectors and matrices. In future notes, we will consider additional properties of vectors and matrices and see how these can help us understand real-world systems.</p>
+</blockquote>
 <hr>
 <h2 id=vectors>
 Vectors
 <a class=anchor href=#vectors>#</a>
 </h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
-<li>Given a collection of .$n$ real numbers such as .$x_1, x_2, \dots x_n$, we can represent this collection as a single point in an .$n$-dimensional <em>real space</em> .$\mathbb{R}^n$, denoted as a .$\vec x$:
-$$\vec x = $$
-<ul>
+<li>Given a collection of .$n$ real numbers such as .$x_1, x_2, \dots x_n$, we can represent this collection as a single point in an .$n$-dimensional <em>real space</em> .$\mathbb{R}^n$, denoted as a .$\vec x$</li>
 <li>Each .$x_i$ (for .$i$ between .$1$ and .$n$) is called a <strong>component</strong>, or element, of the vector.</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\vec x = \begin{bmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n
+\end{bmatrix}$$
+</div>
+</div>
+<ul>
 <li>The <strong>size</strong> of a vector is the number of components it contains</li>
 <li>Two vectors .$\vec x$ and .$\vec y$ are said to be <strong>equal</strong>, .$\vec x = \vec y$, if they have the same size and .$x_i = y_i$ for all .$i$</li>
 <li>Vectors are interesting because they can represent any set of numbers
 <ul>
-<li>Representing as vectors lets us apply a lot of operations to them</li>
+<li>Representing as vectors lets us apply a lot of nice operations to them + represent them graphically</li>
+<li>In Tomography, we can write a vector to represent the amount of light absorbed by each bottle in a row or column.</li>
 <li>E.x. color (RGB values), pictures (set of pixels),
-<a href=https://en.wikipedia.org/wiki/Solar_cycle>solar cycles</a></li>
+<a href=https://en.wikipedia.org/wiki/Solar_cycle>solar cycles</a>, Electrical circuit quantities</li>
 </ul>
 </li>
+</ul>
+<h3 id=vectors-representing-state>
+Vectors Representing State
+<a class=anchor href=#vectors-representing-state>#</a>
+</h3>
+<ul>
+<li>Vectors can be used to represent the <strong>state</strong> of a system, defined as follows:
+<blockquote>
+<p><strong>State:</strong> The minimum information you need to completely characterize a system at a given point in time, without any need for more information about the past of the system.</p>
+</blockquote>
+</li>
+<li>State is a powerful concept because it lets us separate the past from the future.
+<ul>
+<li>The state completely captures the present&ndash; and the past can only affect the future through the present</li>
+<li>E.x: Consider modeling the dynamics of a quadrotor. The state of a quadrotor at a particular time can be summarized by its 3D position, angular position, velocity, and angular velocity, which can be represented as a vector .$\vec q \in \mathbb{R^{12}}$, as illustrated:
+<img src=/docs/eecs-16a/1/quad.png alt></li>
 </ul>
 </li>
 </ul>
@@ -467,21 +521,67 @@ Special vectors
 </h3>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
-<p>$$\vec 0 = $$
+<h4 id=zero--one-vector>
+Zero & One Vector:
+<a class=anchor href=#zero--one-vector>#</a>
+</h4>
+<ul>
+<li>You can usually tell the size of the zero from the context: if .$\vec x \in \mathbb{R}^{n}$ is added to .$\vec 0$, then .$\vec 0$ must also be in .$\mathbb{R}^{n}$</li>
+</ul>
 </div>
 <div class="flex-even markdown-inner">
-<p>$$\vec 1 = $$
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$\vec 0 = \begin{bmatrix}
+0 \\
+0 \\
+\vdots \\
+0
+\end{bmatrix}$$
 </div>
 <div class="flex-even markdown-inner">
-<p>$$\vec e_1 = $$
+<p>$$\vec 1 = \begin{bmatrix}
+1 \\
+1 \\
+\vdots \\
+1
+\end{bmatrix}$$
+</div>
+</div>
+</div>
+</div>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<h4 id=standard-unit-vector>
+Standard Unit Vector:
+<a class=anchor href=#standard-unit-vector>#</a>
+</h4>
+<ul>
+<li>A standard unit vector is a vector with all components equal to .$0$ except for one element, which is equal to .$1$. A standard unit vector where the .$i$th position is equal to .$1$ is written as .$\vec e_i$</li>
+</ul>
 </div>
 <div class="flex-even markdown-inner">
-<p>$$\vec e_2 = $$
+<p>$$\vec e_1 = \begin{bmatrix}
+1 \\
+0 \\
+\vdots \\
+0
+\end{bmatrix},\ \vec e_2 = \begin{bmatrix}
+0 \\
+1 \\
+\vdots \\
+0
+\end{bmatrix},\ \vec e_n = \begin{bmatrix}
+0 \\
+0 \\
+\vdots \\
+1
+\end{bmatrix}$$
 </div>
-<div class="flex-even markdown-inner">
-<p>$$\vec e_n = $$
 </div>
-</div>
+<ul>
+<li>When talking about standard unit vectors in the context of states, we might also use the word “pure” to refer to such states. This is because they only have one kind of component in them. Other states are mixtures of pure states.</li>
+</ul>
 <h3 id=vector-operations>
 Vector Operations
 <a class=anchor href=#vector-operations>#</a>
@@ -497,58 +597,130 @@ Addition
 <li>Many of the properties of addition you are already familiar with when adding individual numbers hold for vector addition as well. For three vectors .$\vec x, \vec y, \vec z \in \mathbb{R}^n$ (and .$\vec 0 \in \mathbb{R}^n$), the following properties hold:
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
-<p>Commutativity: .$\vec x + \vec y = \vec y + vec x$
+<ul>
+<li>Commutativity:
+$$\vec x + \vec y = \vec y + \vec x$$</li>
+<li>Additive identity:
+$$\vec x + 0 = \vec x$$</li>
+</ul>
 </div>
 <div class="flex-even markdown-inner">
-<p>Associativity: .$(\vec x + \vec y) + \vec z = \vec x + (\vec y + \vec z)$$
-</div>
-<div class="flex-even markdown-inner">
-<p>Additive identity: .$\vec x + 0 = \vec x$
-</div>
-<div class="flex-even markdown-inner">
-<p>Additive inverse: .$\vec x + (- \vec x) = 0$
+<ul>
+<li>Associativity:
+$$(\vec x + \vec y) + \vec z = \vec x + (\vec y + \vec z)$$</li>
+<li>Additive inverse:
+$$\vec x + (- \vec x) = 0$$</li>
+</ul>
 </div>
 </div>
 </li>
 </ul>
 </li>
+<li>Vector addition can be performed graphically as well:
+<img src=/docs/eecs-16a/1/add.png alt></li>
 </ul>
 <h4 id=scalar-multiplication>
 Scalar Multiplication
 <a class=anchor href=#scalar-multiplication>#</a>
 </h4>
+<ul>
+<li>We can multiply a vector by a number, called a scalar:
+<blockquote>
+<p><strong>Scalar:</strong> a number. In mathematics and physics, scalars can be used to describe magnitude or used to scale things (e.g. cut every element of a vector in half by multiplying by 0.5, or flip the signs of each element in a vector by multiplying by −1).</p>
+</blockquote>
+</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>In general, for a scalar .$\alpha$ and vector .$\vec x$, this looks like this:
+$$\alpha \begin{bmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n
+\end{bmatrix} = \begin{bmatrix}
+\alpha x_1 \\
+\alpha x_2 \\
+\vdots \\
+\alpha x_n
+\end{bmatrix} $$</li>
+<li>We can obtain the zero vector by multiplying any vector by 0:
+$$0\vec x = \vec 0$$</li>
+<li>Properties:
+<ul>
+<li>Associative, distributive, and multiplicative identity hold &ndash; trivial</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
+<li>As an example, we can scale a vector .$\vec x \in \mathbb{R}^{2}$ by 2 or -2:
+<img src=/docs/eecs-16a/1/2x.png alt></li>
+</ul>
+</div>
+</div>
 <h4 id=vector-transpose>
 Vector Transpose
 <a class=anchor href=#vector-transpose>#</a>
 </h4>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
-<li>.$\vec x$ is always a column vector</li>
-<li>To convert (represent) a row vector, we apply the transpose: .$\vec x^T$</li>
+<li>.$\vec x$ is always a column vector, so to convert (represent) a row vector, we apply the transpose: .$\vec x^T$</li>
 <li>If the elements of the matrix .$A \in \mathbb{R}^{N \times M}$ are .$a_{ij}$</li>
 <li>The elements of .$A^T \in \mathbb{R}^{M \times N}$ are .$a_{ji}$</li>
 <li>Matrix transpose is not (generally) an inverse!</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\vec x = \begin{bmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n
+\end{bmatrix},$$
+$$\vec x^T = \begin{bmatrix} x_1 & x_2 & \dots & x_n \end{bmatrix} $$
+</div>
+</div>
+<ul>
+<li>The transpose of a row vector is a column vector
+<ul>
+<li>Thus, the transpose of the transpose of a vector recovers the original vector.</li>
+</ul>
+</li>
+<li>It is important to recognize that, though the transpose of a vector contains the same elements as the original vector, it is still a different vector!
+<ul>
+<li>That is to say, for any vector .$\vec x$ (with at least two components), .$\vec x ^T \neq \vec x$</li>
+</ul>
+</li>
 </ul>
 <h4 id=vector-vector-multiplication>
 Vector-Vector Multiplication
 <a class=anchor href=#vector-vector-multiplication>#</a>
 </h4>
 <ul>
+<li>By convention, a row vector can only be multiplied by a column vector (and vice versa).</li>
 <li>Multiplication is valid only for specific matching dimensions!
 <ul>
 <li>Width of the first, matches length of the second&rsquo;s transpose</li>
 <li>e.x. given .$\vec x, \vec y \in \mathbb{R}^{N\times 1}$
 <ul>
 <li>We can take the transpose of .$y$ and multiply by .$\vec x$:
-$$\vec y^T \vec x = y_1 x_1 + y_2 x_2 + \dots + y_N x_N = \text{some scalar} \in \mathbb{R}^{1\times1}$$
 <ul>
 <li>This is also known as inner product or dot product</li>
+<li>Commutative for real numbers (this ceases to be true when we start working with complex numbers in 16B)
+$$\vec y^T \vec x = y_1 x_1 + y_2 x_2 + \dots + y_N x_N = \text{some scalar} \in \mathbb{R}^{1\times1}$$
+<img src=/docs/eecs-16a/1/dotp.png alt></li>
 </ul>
 </li>
 <li>Alternatively, we can take .$\vec x$ and multiply by the transpose of .$y$
-$$\vec x \vec y^T = \text{some matrix} \in \mathbb{R}^{N \times N}$$
 <ul>
-<li>Do not commute!</li>
 <li>Also known as outer product</li>
+<li>Do not commute!
+$$\vec x \vec y^T = \text{some matrix} \in \mathbb{R}^{N \times N}$$
+<img src=/docs/eecs-16a/1/outerp.png alt></li>
 </ul>
 </li>
 </ul>
@@ -560,26 +732,87 @@ $$\vec x \vec y^T = \text{some matrix} \in \mathbb{R}^{N \times N}$$
 Matrices
 <a class=anchor href=#matrices>#</a>
 </h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
 <li>A collection of numbers in a rectangular form
 <ul>
-<li>Or a collection of .$M$, .$N$-length vectors</li>
+<li>Or, given .$\mathbb{R}^{M \times N}$, a collection of .$M$ rows and .$N$ column vectors</li>
 </ul>
 </li>
-<li>Remark. Matrices are often represented by capital letters (e.g. .$A$),</li>
+<li>Remark: Matrices are often represented by capital letters (e.g. .$A$),</li>
 </ul>
-<h3 id=vectors-as-matrices>
-Vectors as Matrices
-<a class=anchor href=#vectors-as-matrices>#</a>
-</h3>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$A = \begin{bmatrix}
+a_{11} & \dots & a_{1N} \\
+\vdots & \ddots & \vdots\\
+a_{M1} & \dots & a_{MN}
+\end{bmatrix}$$
+</div>
+</div>
+<ul>
+<li>A matrix is said to be <strong>square</strong> if .$M=N$ (that is, if the number of rows and number of columns are equal).</li>
+<li>Relation between scalars, vectors, and matrices
 <ul>
 <li>A vector is a <em>degenerate</em> matrix, that is, .$\vec x \in \mathbb{R}^{n \times 1}$</li>
 <li>A scalar is a <em>degenerate</em> vector or matrix, that is, .$a \in \mathbb{R}^{1 \times 1} $</li>
+</ul>
+</li>
+<li><strong>Transpose:</strong>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Just as we could compute the <strong>transpose</strong> of a vector by transforming rows into columns, we can compute the transpose of a matrix, .$A^T$ , where the rows of .$A^T$ are the (transposed) columns of .$A$</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$A^T = \begin{bmatrix}
+a_{11} & \dots & a_{M1} \\
+\vdots & \ddots & \vdots\\
+a_{1N} & \dots & a_{NM}
+\end{bmatrix}$$
+</div>
+</div>
+<ul>
+<li>Mathematically, .$A^T$ is the .$N\times M$ matrix given by .$A^T_{ij}$</li>
+<li>A square matrix is said to be <strong>symmetric</strong> if .$A = A^T$ , which means that .$A_{ij} = A_{ji}$ for all .$i, j$.</li>
+</ul>
+</li>
 </ul>
 <h3 id=special-matrices>
 Special Matrices
 <a class=anchor href=#special-matrices>#</a>
 </h3>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li><strong>Zero Matrix:</strong> Trivial</li>
+<li><strong>Identity Matrix:</strong> Square matrix whose diagonal elements are .$1$ and whose off-diagonal elements are all .$0$</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$I_3 = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & 0 & 0\\
+0 & 0 & 1
+\end{bmatrix}$$
+</div>
+</div>
+<ul>
+<li>Note that the column vectors (and the transpose of the row vectors) of an .$N \times N$ identity matrix are the unit vectors in .$ \mathbb{R}^{N}$. The identity matrix is useful because multiplying it with a vector .$\vec x$ will leave the vector unchanged: .$I \vec x = \vec x$.
+<ul>
+<li>In fact, we will see that multiplying a square matrix by an identity matrix of the same size will yield the same initial matrix: .$AI = IA = A$</li>
+</ul>
+</li>
+</ul>
+<h3 id=column-vs-row>
+Column vs Row
+<a class=anchor href=#column-vs-row>#</a>
+</h3>
+<blockquote>
+<p>The interpretation of rows and columns that come from the system-of-linear-equations perspective of doing experiments. There, each row of the matrix represents a particular experiment that took one particular measurement. For a given row, the coefficient entries represent how much the corresponding state variable affects the outcome of this <em>particular</em> experiment. In contrast, the columns represent the influence of a particular state variable on the <em>collection</em> of experiments taken together. These perspectives come in handy in interpreting matrix multiplication.</p>
+</blockquote>
 <h3 id=matrix-operations>
 Matrix Operations
 <a class=anchor href=#matrix-operations>#</a>
@@ -588,21 +821,23 @@ Matrix Operations
 Matrix Addition
 <a class=anchor href=#matrix-addition>#</a>
 </h4>
-<h4 id=scalar-matrix-multiplication>
-Scalar-Matrix Multiplication
-<a class=anchor href=#scalar-matrix-multiplication>#</a>
-</h4>
+<ul>
+<li>Two matrices of the same size can be added together by adding their corresponding components. For instance, we can add two matrices A and B (both in .$ \mathbb{R}^{m \times n}$) as follows:
+<img src=/docs/eecs-16a/1/madd.png alt></li>
+</ul>
 <h4 id=matrix-vector-multiplication>
 Matrix-Vector Multiplication
 <a class=anchor href=#matrix-vector-multiplication>#</a>
 </h4>
 <ul>
-<li>Given .$A \in \mathbb{R}^{M \times N}, \vec x = \mathbb{R}^{N\times 1}$
-$$A\vec x = [ a_{11} a_{12} \dots a_{1N} ] \vec x = \vec y^T _1 \vec x$$
-<ul>
-<li>Notice we end with some <em>vector</em> .$\in \mathbb{R}^{M\times 1}$
-<img src=slides alt></li>
-</ul>
+<li>Given .$A \in \mathbb{R}^{M \times N}, \vec x = \mathbb{R}^{N\times 1}$, we end with some <em>vector</em> .$\in \mathbb{R}^{M\times 1}$
+<img src=/docs/eecs-16a/1/mvm.png alt>
+<details><summary>Visual View</summary>
+<div class=markdown-inner>
+<figure><img src=/docs/eecs-16a/1/mvm2.png>
+</figure>
+</div>
+</details>
 </li>
 </ul>
 <h4 id=matrix-matrix-multiplication>
@@ -610,29 +845,50 @@ Matrix-Matrix Multiplication
 <a class=anchor href=#matrix-matrix-multiplication>#</a>
 </h4>
 <ul>
-<li>Given .$A \in \mathbb{R}^{M \times N}, B = \mathbb{R}^{N\times L}$
-$$AB = $$
+<li>Matrix-Matrix multiplication involves multiplying each row vector in .$A$ with each column vector in .$B$, starting from the top row of matrix .$A$ and leftmost column of matrix .$B$.
 <ul>
-<li>Notice we end with some <em>matrix</em> .$\in \mathbb{R}^{M \times L}$</li>
+<li>Effectively, the left matrix is multiplied by each column vector in the second matrix to produce a new column of .$AB$</li>
 </ul>
 </li>
-<li>Matrix multiplication does not commute!</li>
+<li>Given .$A \in \mathbb{R}^{M \times N},\ B = \mathbb{R}^{N\times L}$, we end with some <em>matrix</em> .$\in \mathbb{R}^{M \times L}$
+<img src=/docs/eecs-16a/1/mmm.png alt></li>
+<li>Matrix multiplication does not commute!
+<ul>
+<li>That is .$A \times B \neq B \times A$</li>
+<li>In fact, both quantities can only be calculated if the number of rows in .$A$ equals the number of columns in .$B$ <em>and</em> the number of rows in .$B$ equals the number of columns in .$A$.</li>
+</ul>
+</li>
+<li>Matrix Multiplication is Associative
+<ul>
+<li>3B1B has a good video on this I will link here if I recall later&mldr;</li>
+</ul>
+</li>
 <li>Fun fact: Computers have to do so many multiply and add operations that it&rsquo;s
 <a href=https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation>optimized at a processor level</a> (leaned about this is 61C)</li>
 </ul>
-<h3 id=row-vs-column-perspective>
-Row vs Column Perspective
-<a class=anchor href=#row-vs-column-perspective>#</a>
-</h3>
+<h2 id=span--column-space--range>
+Span / Column Space / Range
+<a class=anchor href=#span--column-space--range>#</a>
+</h2>
 <ul>
-<li>Each row</li>
+<li>Span of the columns of .$A$ is the set of all vectors .$\vec b$ such that .$A\vec x = \vec b$ has a solution
+<ul>
+<li>i.e. the set of all vectors that can be reached by all possible linear combinations of the columns of .$A$</li>
+<li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & 1 \\ 1 & -1\\
+\end{bmatrix}$?
+$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix} + \beta \begin{bmatrix} 1\\ -1\\ \end{bmatrix}; \alpha, \beta \in \mathbb{R}\bigg\} = \mathbb{R}^{2}$$</li>
+<li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & -1 \\ 1 & -1\\
+\end{bmatrix}$?
+$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix}; \alpha \in \mathbb{R}\bigg\} = \text{line } x_1 = x_2$$</li>
+</ul>
+</li>
 </ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/1269d33d747491641b19c6bbe4f686265780ad0d title="Last modified by Max Vogel | January 27, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/338078a023d5691d69752fce1c538e9f16460506 title="Last modified by Max Vogel | January 30, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 27, 2022</span>
+<span>January 30, 2022</span>
 </a>
 </div>
 <div>
@@ -655,24 +911,32 @@ Row vs Column Perspective
 <li><a href=#1-25-gaussian-elimination-vectors>1-25: Gaussian Elimination, Vectors</a>
 <ul>
 <li><a href=#upper-triangular-systems>Upper Triangular Systems</a></li>
+<li><a href=#row-echelon-form>Row Echelon Form</a>
+<ul>
+<li><a href=#reduced-row-echelon-form>Reduced Row Echelon Form</a></li>
+</ul>
+</li>
+<li><a href=#error>Error</a></li>
+<li><a href=#graphing>Graphing</a></li>
 </ul>
 </li>
 <li><a href=#1-27-vectors-matrices-multiplications-and-span>1-27: Vectors, Matrices, Multiplications, And Span</a>
 <ul>
 <li><a href=#vectors>Vectors</a>
 <ul>
+<li><a href=#vectors-representing-state>Vectors Representing State</a></li>
 <li><a href=#special-vectors>Special vectors</a></li>
 <li><a href=#vector-operations>Vector Operations</a></li>
 </ul>
 </li>
 <li><a href=#matrices>Matrices</a>
 <ul>
-<li><a href=#vectors-as-matrices>Vectors as Matrices</a></li>
 <li><a href=#special-matrices>Special Matrices</a></li>
+<li><a href=#column-vs-row>Column vs Row</a></li>
 <li><a href=#matrix-operations>Matrix Operations</a></li>
-<li><a href=#row-vs-column-perspective>Row vs Column Perspective</a></li>
 </ul>
 </li>
+<li><a href=#span--column-space--range>Span / Column Space / Range</a></li>
 </ul>
 </li>
 </ul>
