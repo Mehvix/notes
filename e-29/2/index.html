@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Modeling of material cutting #    Lathe operations   Turning on a lathe    Nomenclature of cutting process #  Merchant’s circle: cutting forces #   Force diagram that resolves the reaction force exerted by the tool on the work  Relating cutting geometry to cutting forces  Material properties link the geometry of the tool and cutting path to the forces involved. The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.">
+<meta name=description content="Modeling of material cutting #    Lathe operations   Turning on a lathe    Nomenclature of cutting process #   Merchant’s circle: cutting forces #   Force diagram that resolves the reaction force exerted by the tool on the work  Relating cutting geometry to cutting forces  Material properties link the geometry of the tool and cutting path to the forces involved. The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 2: Cutting-based Processes & Other Subtractive Processes:">
-<meta property="og:description" content="Modeling of material cutting #    Lathe operations   Turning on a lathe    Nomenclature of cutting process #  Merchant’s circle: cutting forces #   Force diagram that resolves the reaction force exerted by the tool on the work  Relating cutting geometry to cutting forces  Material properties link the geometry of the tool and cutting path to the forces involved. The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 2: Cutting-based Processes & Other Subtractive Processes">
+<meta property="og:description" content="Modeling of material cutting #    Lathe operations   Turning on a lathe    Nomenclature of cutting process #   Merchant’s circle: cutting forces #   Force diagram that resolves the reaction force exerted by the tool on the work  Relating cutting geometry to cutting forces  Material properties link the geometry of the tool and cutting path to the forces involved. The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/e-29/2/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-27T15:40:37-08:00">
-<title>Week 2: Cutting-based Processes & Other Subtractive Processes: | notes.mehvix.com</title>
+<meta property="article:modified_time" content="2022-01-31T16:19:58-08:00">
+<title>Week 2: Cutting-based Processes & Other Subtractive Processes | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.f9156f05504fc69529324aeafa77a01466663152bd84582096cf15113de76590.js integrity="sha256-+RVvBVBPxpUpMkrq+negFGZmMVK9hFggls8VET3nZZA=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.52e60d7617902bdd54987b01ecabe67f5b47ff9a08952373ba049bc4bf44ede5.js integrity="sha256-UuYNdheQK91UmHsB7Kvmf1tH/5oIlSNzugSbxL9E7eU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -59,10 +59,13 @@
 </label>
 <ul>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0</a>
+<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1</a>
+<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence</a>
 </li>
 </ul>
 </li>
@@ -79,7 +82,7 @@
 <a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/e-29/2/ class=active>Week 2: Cutting-based Processes & Other Subtractive Processes:</a>
+<a href=http://notes.mehvix.com/e-29/2/ class=active>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
 </li>
 </ul>
 </li>
@@ -221,7 +224,7 @@ pass.mehvix.com
 <label for=menu-control>
 <img src=/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Week 2: Cutting-based Processes & Other Subtractive Processes:</strong>
+<strong>Week 2: Cutting-based Processes & Other Subtractive Processes</strong>
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -235,8 +238,10 @@ pass.mehvix.com
 <li><a href=#nomenclature-of-cutting-process>Nomenclature of cutting process</a>
 <ul>
 <li><a href=#merchants-circle-cutting-forces>Merchant’s circle: cutting forces</a></li>
-<li><a href=#how-can-we-predict-shear-strain-gamma>How can we predict shear strain, .$\gamma$</a></li>
+<li><a href=#predicting-shear-strain-gamma>Predicting shear strain .$\gamma$</a></li>
 <li><a href=#relationship-between-phi-and-gamma>Relationship between .$\phi$ and .$\gamma$</a></li>
+<li><a href=#using-chip-thickness-to-estimate-phi>Using chip thickness to estimate .$\phi$</a></li>
+<li><a href=#merchants-shear-angle-relationship>Merchant’s shear angle relationship</a></li>
 <li><a href=#cutting-power>Cutting power</a></li>
 <li><a href=#tool-temperatures-and-lifetimes>Tool temperatures and lifetimes</a></li>
 <li><a href=#surface-roughness-in-machining>Surface roughness in machining</a></li>
@@ -286,6 +291,8 @@ Modeling of material cutting
 Nomenclature of cutting process
 <a class=anchor href=#nomenclature-of-cutting-process>#</a>
 </h2>
+<figure><img src=/docs/e-29/1/nomen.png>
+</figure>
 <h3 id=merchants-circle-cutting-forces>
 Merchant’s circle: cutting forces
 <a class=anchor href=#merchants-circle-cutting-forces>#</a>
@@ -299,13 +306,14 @@ Merchant’s circle: cutting forces
 <li>The material being cut needs to exceed its shear yield stress to start deforming (cutting) and creating a chip.</li>
 <li>If the material exceeds its ultimate shear strength, the chip becomes more likely to fragment into pieces as it forms (which may help clear waste material away).</li>
 <li>However, the more strain involved in chip formation for a given material, the more work has to be invested in the cutting operation.</li>
-<li>Therefore designing the cutting operation to limit shear strain can help to limit cutting energy required.</li>
+<li>Therefore designing the cutting operation to limit shear strain can help to limit cutting energy required.
+<img src=/docs/e-29/1/geom.png alt></li>
 </ul>
 </li>
 </ul>
-<h3 id=how-can-we-predict-shear-strain-gamma>
-How can we predict shear strain, .$\gamma$
-<a class=anchor href=#how-can-we-predict-shear-strain-gamma>#</a>
+<h3 id=predicting-shear-strain-gamma>
+Predicting shear strain .$\gamma$
+<a class=anchor href=#predicting-shear-strain-gamma>#</a>
 </h3>
 <ul>
 <li>Since we wish to limit the amount of shear strain occurring during cutting, we need to understand how it depends on parameters that we can control.
@@ -327,17 +335,26 @@ How can we predict shear strain, .$\gamma$
 Relationship between .$\phi$ and .$\gamma$
 <a class=anchor href=#relationship-between-phi-and-gamma>#</a>
 </h3>
-<ul>
-<li>Using chip thickness to estimate .$\phi$, Can then use the relationship between .$\phi$ and .$\gamma$ from previous slide to estimate .$\gamma$ Merchant’s shear angle relationship</li>
-<li>Merchant’s shear angle relationship
+<figure><img src=/docs/e-29/1/rel.png>
+</figure>
+<h3 id=using-chip-thickness-to-estimate-phi>
+Using chip thickness to estimate .$\phi$
+<a class=anchor href=#using-chip-thickness-to-estimate-phi>#</a>
+</h3>
+<figure><img src=/docs/e-29/1/phi.png>
+</figure>
+<h3 id=merchants-shear-angle-relationship>
+Merchant’s shear angle relationship
+<a class=anchor href=#merchants-shear-angle-relationship>#</a>
+</h3>
 <ul>
 <li>We assume that shear stress equals the shear strength of the workpiece material in the shear plane, and that shear stresses are lower elsewhere in the material.</li>
-<li>Also assume that the value of the shear angle .$\phi$ is naturally such that the shear strength, 𝜏𝜏𝑦𝑦, of the workpiece material is reached in the shear plane at the lowest possible cutting force 𝐹𝐹𝑐𝑐.</li>
-<li>If we know the material’s shear strength, the friction angle .$\beta$, and the shear angle .$\phi$, we can (roughly) estimate the required cutting force 𝐹𝐹𝑐𝑐.</li>
+<li>Also assume that the value of the shear angle .$\phi$ is naturally such that the shear strength, .$\tau_y$, of the workpiece material is reached in the shear plane at the lowest possible cutting force .$F_c$.</li>
+<li>If we know the material’s shear strength, the friction angle .$\beta$, and the shear angle .$\phi$, we can (roughly) estimate the required cutting force .$F_c$.</li>
 <li>Need to solve for .$\phi$ in terms of parameters we can control: .$\alpha$ (directly through tool geometry) and .$\beta$ (indirectly through lubrication).
 <img src=/docs/e-29/1/eq1.png alt>
 To find value of .$\phi$ for maximum shear stress at a given .$F_c$, set derivative .$\frac{d\tau}{d\phi}$ to zero and solve:
-<img src=/docs/e-29/1/eq1.png alt>
+<img src=/docs/e-29/1/eq2.png alt>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <br>
@@ -351,8 +368,6 @@ $$\beta = \arctan\bigg(\frac{F_t}{F_c}\bigg) + \alpha$$
 </div>
 </div>
 </li>
-</ul>
-</li>
 <li>Insights:
 <ul>
 <li>Increasing the rake angle .$\alpha$ (via tool design) and lowering friction angle .$\beta$ (by application of an appropriate lubricant/coolant – e.g. water/oil mixture) both help to increase shear angle</li>
@@ -360,11 +375,8 @@ $$\beta = \arctan\bigg(\frac{F_t}{F_c}\bigg) + \alpha$$
 </ul>
 </li>
 <li>This model is an approximation; alternative models exist Merchant’s circle: examples of process changes</li>
-<li>Merchant’s circle: examples of process changes
-<ul>
-<li>Increasing .$\alpha$? Decreasing .$\beta$?
-<img src=/docs/e-29/1/geo.png alt></li>
-</ul>
+<li>Examples of process changes
+<img src=/docs/e-29/1/geo.png alt>
 </li>
 </ul>
 <hr>
@@ -382,7 +394,8 @@ Cutting power
 <li>Steels: 2.7 – 9.3</li>
 </ul>
 </li>
-<li>Expression linking .$U$, cutting power .$P_C$, and geometry:</li>
+<li>Expression linking .$U$, cutting power .$P_C$, and geometry:
+<img src=/docs/e-29/1/u-eq.png alt></li>
 </ul>
 <h3 id=tool-temperatures-and-lifetimes>
 Tool temperatures and lifetimes
@@ -390,21 +403,23 @@ Tool temperatures and lifetimes
 </h3>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/temp2.png alt>
-</div>
-<div class="flex-even markdown-inner">
 <ul>
 <li>Taylor tool life equation:
 $$VT^n = C$$
 <ul>
-<li>.$V$ = cutting speed</li>
+<li>.$V$ = cutting speed = .$V_\text{cut}$</li>
 <li>.$T$ = tool lifetime</li>
-<li>.$n, C$ are empirical constants</li>
+<li>.$n, C$ are empirical constants
+<img src=/docs/e-29/1/temp2.png alt></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
 <li>Example .$n$ values:
-<img src=/docs/e-29/1/ntbl.png alt></li>
+<img src=/docs/e-29/1/ntbl.png alt>
+<img src=/docs/e-29/1/ideal-n.png alt></li>
 </ul>
 </div>
 </div>
@@ -431,10 +446,12 @@ Surface roughness in machining
 <a class=anchor href=#surface-roughness-in-machining>#</a>
 </h3>
 <p>
-<img src=/docs/e-29/0/roughness.png alt>
-- Peak-to-valley roughness,
-- Example: .$R_n = 0.5 \text{ mm; } f = 0.1 \text{ mm:}$
-- Actual roughness will be up to 2-3 times worse than this ideal value: built-up edge, cracking, scratching from chips, etc</p>
+<img src=/docs/e-29/1/rugg.png alt></p>
+<ul>
+<li>.$R_P$: Peak-to-valley roughness</li>
+<li>Example: .$R_n = 0.5 \text{ mm; } f = 0.1 \text{ mm:}$</li>
+<li>Actual roughness will be up to 2-3 times worse than this ideal value: built-up edge, cracking, scratching from chips, etc</li>
+</ul>
 <h3 id=turning-example>
 Turning example
 <a class=anchor href=#turning-example>#</a>
@@ -478,13 +495,15 @@ Milling
 <li><strong>Peripheral (a.k.a. plain) milling</strong>
 <ul>
 <li>Tool axis is parallel to surface being machined</li>
-<li>Slab, slotting, side milling, straddle, form</li>
+<li>Slab, slotting, side milling, straddle, form
+<img src=/docs/e-29/1/perim.png alt></li>
 </ul>
 </li>
 <li><strong>Face milling</strong>
 <ul>
 <li>Tool axis is perpendicular to surface being machined</li>
-<li>Conventional, partial, end, profile, pocket, surface contouring</li>
+<li>Conventional, partial, end, profile, pocket, surface contouring
+<img src=/docs/e-29/1/facem.png alt></li>
 </ul>
 </li>
 </ul>
@@ -526,6 +545,8 @@ Boring
 <li>Boring = “inside turning”</li>
 <li>Single point tool moving along the inside of a rotating workpiece</li>
 </ul>
+<p>
+<img src=/docs/e-29/1/bore.png alt></p>
 <h3 id=broaching>
 Broaching
 <a class=anchor href=#broaching>#</a>
@@ -553,6 +574,8 @@ Punching
 <li>
 <a href="https://bcourses.berkeley.edu/files/79640739/download?download_frd=1">Video demo</a></li>
 </ul>
+<figure><img src=/docs/e-29/1/punch.png>
+</figure>
 <h2 id=other-subtractive-processes-not-based-on-plastic-deformation>
 Other subtractive processes not based on plastic deformation
 <a class=anchor href=#other-subtractive-processes-not-based-on-plastic-deformation>#</a>
@@ -619,9 +642,9 @@ Abrasive jet
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/1269d33d747491641b19c6bbe4f686265780ad0d title="Last modified by Max Vogel | January 27, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/83595894d016c990d44d4699c538c266a080680d title="Last modified by Max Vogel | February 1, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 27, 2022</span>
+<span>February 1, 2022</span>
 </a>
 </div>
 <div>
@@ -647,8 +670,10 @@ Abrasive jet
 <li><a href=#nomenclature-of-cutting-process>Nomenclature of cutting process</a>
 <ul>
 <li><a href=#merchants-circle-cutting-forces>Merchant’s circle: cutting forces</a></li>
-<li><a href=#how-can-we-predict-shear-strain-gamma>How can we predict shear strain, .$\gamma$</a></li>
+<li><a href=#predicting-shear-strain-gamma>Predicting shear strain .$\gamma$</a></li>
 <li><a href=#relationship-between-phi-and-gamma>Relationship between .$\phi$ and .$\gamma$</a></li>
+<li><a href=#using-chip-thickness-to-estimate-phi>Using chip thickness to estimate .$\phi$</a></li>
+<li><a href=#merchants-shear-angle-relationship>Merchant’s shear angle relationship</a></li>
 <li><a href=#cutting-power>Cutting power</a></li>
 <li><a href=#tool-temperatures-and-lifetimes>Tool temperatures and lifetimes</a></li>
 <li><a href=#surface-roughness-in-machining>Surface roughness in machining</a></li>

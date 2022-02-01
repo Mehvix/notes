@@ -8,13 +8,13 @@
 <meta property="og:description" content="Definition of sensation and perception #   As humans, we are cognitive beings who&mldr;  Acquire information about the world around us (perception) Integrate that information with prior knowledge from our stored memory Store that knowledge in our memory so we can use it later to help us achieve our goals   First step in this process of acquiring knowledge about the world involves sensation and perception  Sensation: process by which our sensory receptors and nervous system receive stimulus energies from the environment and transduce them into neural impulses (transduction).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/cogsci-c100/perception/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-29T17:35:57-08:00">
+<meta property="article:modified_time" content="2022-01-31T16:19:58-08:00">
 <title>Perception | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.f9156f05504fc69529324aeafa77a01466663152bd84582096cf15113de76590.js integrity="sha256-+RVvBVBPxpUpMkrq+negFGZmMVK9hFggls8VET3nZZA=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.52e60d7617902bdd54987b01ecabe67f5b47ff9a08952373ba049bc4bf44ede5.js integrity="sha256-UuYNdheQK91UmHsB7Kvmf1tH/5oIlSNzugSbxL9E7eU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -59,10 +59,13 @@
 </label>
 <ul>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0</a>
+<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1</a>
+<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence</a>
 </li>
 </ul>
 </li>
@@ -79,7 +82,7 @@
 <a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes:</a>
+<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
 </li>
 </ul>
 </li>
@@ -476,25 +479,19 @@ Neural Networks
 </div>
 </li>
 </ul>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>16A Notes</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
+<details><summary>16A Notes</summary>
+<div class=markdown-inner>
 <blockquote>
 <p>Because circuit analysis translates to a wide range of fields, we can model many physical systems as electrical circuits, often gaining insight about the system. You may have heard of neural networks, an important machine learning tool that can be used to “learn” tasks such as image and voice recognition from examples instead of explicit programming. Neural networks are modeled after biological neural networks, which are fundamentally circuits operating on electrical signals within a brain:</p>
 <figure><img src=/docs/cogsci-c100/perception/16A.png>
 </blockquote>
 </figure>
 <blockquote>
-<p>In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. (<a href=https://eecs16a.org/lecture/Note0.pdf>from EECS16A Note0</a>)</p>
+<p>In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. (
+<a href=https://eecs16a.org/lecture/Note0.pdf>from EECS16A Note0</a>)</p>
 </blockquote>
 </div>
-</label>
-</div>
+</details>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -532,20 +529,19 @@ Ex: How might a computer recognize a “9” using neural networks?
 <iframe src=https://www.youtube.com/embed/aircAruvnKk style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
 </div>
 <ul>
-<li>There is huge variety of ways in which people write 9’s
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
+<li>There is huge variety of ways in which people write 9’s</li>
 <li>To simplify things, we can represent the “9” by decomposing it to a grid of 28 x 28 pixels of varying shades of gray (between 0 and 1)</li>
 </ul>
 <ol>
 <li>First (input) layer of network
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
 <li>Starts with bunch of neurons or nodes corresponding to an array of 28 x 28 pixels in the image</li>
 <li>Each node holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black to 1 for white</li>
+<li>This is the neuron’s activation level</li>
+<li>Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer&mldr;</li>
 </ul>
-</li>
-</ol>
 </div>
 <div class="flex-even markdown-inner">
 <p>
@@ -553,32 +549,21 @@ Ex: How might a computer recognize a “9” using neural networks?
 </div>
 </div>
 <ul>
-<li>This is the neuron’s activation level</li>
-<li>Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer&mldr;
-<ul>
 <li>This is loosely analogous to how, in biological networks of neuron, some groups of neurons cause other neurons to fire</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-<ol start=2>
-<li>Second layer (or first “hidden layer”)</li>
-</ol>
+<li>Second layer (or first “hidden layer”)
 <ul>
-<li>Each neuron in the second layer might pick up on whether there is an edgein one particular region</li>
-<li>You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
+<li>Each neuron in the second layer might pick up on whether there is an edge in one particular region</li>
+<li>You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer</li>
+<li>Then you take all the activations from the first layer and compute their weighted sum according to the weights
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
-<ul>
-<li>Then you take all the activations from the first layer and compute their weighted sum according to the weights
 <ul>
 <li>Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region</li>
 <li>To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
 <ul>
 <li>Sum is largest when those middle pixels are bright but surrounding pixels are darker</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -604,21 +589,15 @@ Ex: How might a computer recognize a “9” using neural networks?
 <img src=/docs/cogsci-c100/perception/s3.png alt>
 </div>
 </div>
-<ul>
+</li>
 <li>The connections between the other layers also have weights and biases associated with them</li>
 </ul>
 </li>
-</ul>
-<ol start=3>
-<li>
-<p>Third layer (or second “hidden layer”)</p>
+<li>Third layer (or second “hidden layer”)
 <ul>
 <li>When we recognize digits, we piece together various components
 <ul>
-<li>e.x: A “9” has a loop near the top and a line on the right whereas an “8” has a loop on the top and one below</li>
-</ul>
-</li>
-</ul>
+<li>e.x: A “9” has a loop near the top and a line on the right whereas an “8” has a loop on the top and one below
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -636,8 +615,11 @@ Ex: How might a computer recognize a “9” using neural networks?
 </div>
 </div>
 </li>
-<li>
-<p>Last (output) layer
+</ul>
+</li>
+</ul>
+</li>
+<li>Last (output) layer
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -656,7 +638,6 @@ Ex: How might a computer recognize a “9” using neural networks?
 <img src=/docs/cogsci-c100/perception/s5.png alt>
 </div>
 </div>
-</p>
 </li>
 </ol>
 <h3 id=learning-in-neural-nets-backpropagation>
@@ -746,6 +727,24 @@ Top-down processing in object recognition
 </ul>
 </li>
 </ul>
+<details><summary>Optional: Deductive versus Inductive Reasoning</summary>
+<div class=markdown-inner>
+<ol>
+<li><strong>Deductive reasoning</strong> works from the more general to the more specific, i.e., “top-down” approach.
+<ul>
+<li>In deductive reasoning there is usually a first premise, then a second premise (both of which are proven through observations), and finally an inference.</li>
+<li>Ex: All men are mortal. Smerdley is a man. Therefore, Smerdley is mortal.</li>
+</ul>
+</li>
+<li>Inductive reasoning works the other way, moving from specific observations to broader generalizations and theories, i.e., “bottom-up” approach
+<ul>
+<li>Inductive reasoning extracts a likely (but not certain) premise from specific and limited observations.</li>
+<li>Ex: I have a bag of many coins, and I’ve pulled 10 at random and they’ve all been pennies, therefore this is probably a bag full of pennies.</li>
+</ul>
+</li>
+</ol>
+</div>
+</details>
 <h2 id=objective-reality-is-often-not-as-objective-as-we-think>
 “Objective reality” is often not as objective as we think&mldr;
 <a class=anchor href=#objective-reality-is-often-not-as-objective-as-we-think>#</a>
@@ -879,7 +878,9 @@ Self-fulfilling prophecies
 </li>
 <li>Our beliefs and expectations influence <strong>our own</strong> behavior
 <ul>
-<li>Study by Mark Snyder found that when a man was led to believe that a woman found him attractive, she was more likely to act as if she did
+<li>Study by Mark Snyder found that when a man was led to believe that a woman found him attractive, she was more likely to act as if she did</li>
+<li>&ldquo;
+<a href="https://www.youtube.com/watch?v=bDt90EyZnWA&t=1295s">Gus Hansen refused to acknowledge the odds and the odds disappear</a>&rdquo;
 <blockquote>
 <p><em>Assume a virtue if you have it not.</em> – Shakespeare</p>
 </blockquote>
@@ -1165,14 +1166,8 @@ Patients are asked to draw from memory or to copy an illustration (Driver & Vuil
 </blockquote>
 </div>
 </div>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>House</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
+<details><summary>House</summary>
+<div class=markdown-inner>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <p>
@@ -1190,8 +1185,7 @@ Patients are asked to draw from memory or to copy an illustration (Driver & Vuil
 <em>Patient:</em> The left house.</p>
 </blockquote>
 </div>
-</label>
-</div>
+</details>
 </li>
 </ul>
 </li>
@@ -1262,22 +1256,16 @@ Two pathways of visual perception
 </ul>
 </div>
 </div>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>Targets</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
-<p><img src=/docs/cogsci-c100/perception/targets.png alt></p>
+<details><summary>Targets</summary>
+<div class=markdown-inner>
+<p>
+<img src=/docs/cogsci-c100/perception/targets.png alt></p>
 <ul>
 <li>Look for the circle with just one gap, and say whether the gap is on the left or the right</li>
 <li>Use “relax” strategy, then try active search strategy</li>
 </ul>
 </div>
-</label>
-</div>
+</details>
 </p>
 <ul>
 <li>Proposed explanation:
@@ -1350,9 +1338,9 @@ Development of perception
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/338078a023d5691d69752fce1c538e9f16460506 title="Last modified by Max Vogel | January 30, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/83595894d016c990d44d4699c538c266a080680d title="Last modified by Max Vogel | February 1, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 30, 2022</span>
+<span>February 1, 2022</span>
 </a>
 </div>
 <div>

@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="1-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
+<meta name=description content="01-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 1">
-<meta property="og:description" content="1-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 1: Gaussian Elim. & Matrices + Vectors">
+<meta property="og:description" content="01-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-29T17:35:57-08:00">
-<title>Week 1 | notes.mehvix.com</title>
+<meta property="article:modified_time" content="2022-01-31T16:19:58-08:00">
+<title>Week 1: Gaussian Elim. & Matrices + Vectors | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.f9156f05504fc69529324aeafa77a01466663152bd84582096cf15113de76590.js integrity="sha256-+RVvBVBPxpUpMkrq+negFGZmMVK9hFggls8VET3nZZA=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.52e60d7617902bdd54987b01ecabe67f5b47ff9a08952373ba049bc4bf44ede5.js integrity="sha256-UuYNdheQK91UmHsB7Kvmf1tH/5oIlSNzugSbxL9E7eU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -59,10 +59,13 @@
 </label>
 <ul>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0</a>
+<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/1/ class=active>Week 1</a>
+<a href=http://notes.mehvix.com/eecs-16a/1/ class=active>Week 1: Gaussian Elim. & Matrices + Vectors</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence</a>
 </li>
 </ul>
 </li>
@@ -79,7 +82,7 @@
 <a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes:</a>
+<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
 </li>
 </ul>
 </li>
@@ -221,7 +224,7 @@ pass.mehvix.com
 <label for=menu-control>
 <img src=/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Week 1</strong>
+<strong>Week 1: Gaussian Elim. & Matrices + Vectors</strong>
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -229,7 +232,7 @@ pass.mehvix.com
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#1-25-gaussian-elimination-vectors>1-25: Gaussian Elimination, Vectors</a>
+<li><a href=#01-25-gaussian-elimination-vectors>01-25: Gaussian Elimination, Vectors</a>
 <ul>
 <li><a href=#upper-triangular-systems>Upper Triangular Systems</a></li>
 <li><a href=#row-echelon-form>Row Echelon Form</a>
@@ -241,7 +244,7 @@ pass.mehvix.com
 <li><a href=#graphing>Graphing</a></li>
 </ul>
 </li>
-<li><a href=#1-27-vectors-matrices-multiplications-and-span>1-27: Vectors, Matrices, Multiplications, And Span</a>
+<li><a href=#01-27-vectors-matrices-multiplications-and-span>01-27: Vectors, Matrices, Multiplications, And Span</a>
 <ul>
 <li><a href=#vectors>Vectors</a>
 <ul>
@@ -257,16 +260,15 @@ pass.mehvix.com
 <li><a href=#matrix-operations>Matrix Operations</a></li>
 </ul>
 </li>
-<li><a href=#span--column-space--range>Span / Column Space / Range</a></li>
 </ul>
 </li>
 </ul>
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=1-25-gaussian-elimination-vectors>
-1-25: Gaussian Elimination, Vectors
-<a class=anchor href=#1-25-gaussian-elimination-vectors>#</a>
+<article class=markdown><h1 id=01-25-gaussian-elimination-vectors>
+01-25: Gaussian Elimination, Vectors
+<a class=anchor href=#01-25-gaussian-elimination-vectors>#</a>
 </h1>
 <ul>
 <li>
@@ -331,7 +333,8 @@ Row Echelon Form
 </div>
 </div>
 <ul>
-<li>The leading coefficient of every non-zero row (which we call the pivot, and say is in the pivot position) is 1.
+<li>The leading coefficient of every non-zero row (which we call the <strong>
+<a href=https://en.wikipedia.org/wiki/Pivot_element>pivot</a></strong>, and say is in the pivot position) is 1.
 <ul>
 <li>Some textbooks will require this third property, others don&rsquo;t</li>
 </ul>
@@ -368,19 +371,17 @@ Reduced Row Echelon Form
 <li>By construction, the Gaussian elimination algorithm always results in a matrix that is in reduced row echelon form.
 <ul>
 <li>Once an augmented matrix is reduced to reduced row echelon form, variables corresponding to columns containing leading entries are called <strong>basic variables</strong>, and the remaining variables are called <strong>
-<a href=https://en.wikipedia.org/wiki/Free_variables_and_bound_variables>free variables</a></strong></li>
-<li>As will be discussed shortly, the distinction between basic and free variables allows us to characterize all solutions to the system of linear equations (if any exist!).</li>
+<a href=https://en.wikipedia.org/wiki/Free_variables_and_bound_variables>free variables</a></strong>
+<ul>
+<li>If there just isn&rsquo;t enough information and the equations do not contradict each other, then there exist an infinite number of solutions.</li>
+<li>When this happens, choose some variable (ideally, which is in most of the equations) and then solve each equation in terms of that variable (e.x. .$z$ is in all equations, so now write .$x,y,\dots$ in terms of .$z$).</li>
 </ul>
 </li>
 </ul>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>Example</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
+</li>
+</ul>
+<details><summary>Example</summary>
+<div class=markdown-inner>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <p>We start with the following system:
@@ -400,20 +401,14 @@ $$\begin{bmatrix}
 <p>&mldr;and we can <strong>row-reduce</strong> to upper triangle (Row echelon)</p>
 <figure><img src=/docs/eecs-16a/1/tri.png>
 </figure>
-<p>&mldr;which we can use <a href=https://en.wikipedia.org/wiki/Triangular_matrix#Forward_and_back_substitution><strong>back substitution</strong></a> to solve</p>
+<p>&mldr;which we can use
+<a href=https://en.wikipedia.org/wiki/Triangular_matrix#Forward_and_back_substitution><strong>back substitution</strong></a> to solve</p>
 <figure><img src=/docs/eecs-16a/1/back.png>
 </figure>
 </div>
-</label>
-</div>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>Tomograph Example</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
+</details>
+<details><summary>Tomograph Example</summary>
+<div class=markdown-inner>
 <figure><img src=/docs/eecs-16a/1/tom1.png>
 </figure>
 <figure><img src=/docs/eecs-16a/1/tom2.png>
@@ -421,8 +416,7 @@ $$\begin{bmatrix}
 <figure><img src=/docs/eecs-16a/1/tom3.png>
 </figure>
 </div>
-</label>
-</div>
+</details>
 <h2 id=error>
 Error
 <a class=anchor href=#error>#</a>
@@ -447,9 +441,9 @@ Graphing
 <img src=/docs/eecs-16a/1/no-sol.png alt>
 <img src=/docs/eecs-16a/1/inf.png alt></li>
 </ul>
-<h1 id=1-27-vectors-matrices-multiplications-and-span>
-1-27: Vectors, Matrices, Multiplications, And Span
-<a class=anchor href=#1-27-vectors-matrices-multiplications-and-span>#</a>
+<h1 id=01-27-vectors-matrices-multiplications-and-span>
+01-27: Vectors, Matrices, Multiplications, And Span
+<a class=anchor href=#01-27-vectors-matrices-multiplications-and-span>#</a>
 </h1>
 <ul>
 <li>
@@ -852,6 +846,8 @@ Matrix-Matrix Multiplication
 </li>
 <li>Given .$A \in \mathbb{R}^{M \times N},\ B = \mathbb{R}^{N\times L}$, we end with some <em>matrix</em> .$\in \mathbb{R}^{M \times L}$
 <img src=/docs/eecs-16a/1/mmm.png alt></li>
+<li>We can also interpret the .$A \vec x$ product in the context of .$A$’s columns:
+<img src=/docs/eecs-16a/1/mmcol.png alt></li>
 <li>Matrix multiplication does not commute!
 <ul>
 <li>That is .$A \times B \neq B \times A$</li>
@@ -866,29 +862,12 @@ Matrix-Matrix Multiplication
 <li>Fun fact: Computers have to do so many multiply and add operations that it&rsquo;s
 <a href=https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation>optimized at a processor level</a> (leaned about this is 61C)</li>
 </ul>
-<h2 id=span--column-space--range>
-Span / Column Space / Range
-<a class=anchor href=#span--column-space--range>#</a>
-</h2>
-<ul>
-<li>Span of the columns of .$A$ is the set of all vectors .$\vec b$ such that .$A\vec x = \vec b$ has a solution
-<ul>
-<li>i.e. the set of all vectors that can be reached by all possible linear combinations of the columns of .$A$</li>
-<li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & 1 \\ 1 & -1\\
-\end{bmatrix}$?
-$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix} + \beta \begin{bmatrix} 1\\ -1\\ \end{bmatrix}; \alpha, \beta \in \mathbb{R}\bigg\} = \mathbb{R}^{2}$$</li>
-<li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & -1 \\ 1 & -1\\
-\end{bmatrix}$?
-$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix}; \alpha \in \mathbb{R}\bigg\} = \text{line } x_1 = x_2$$</li>
-</ul>
-</li>
-</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/338078a023d5691d69752fce1c538e9f16460506 title="Last modified by Max Vogel | January 30, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/83595894d016c990d44d4699c538c266a080680d title="Last modified by Max Vogel | February 1, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 30, 2022</span>
+<span>February 1, 2022</span>
 </a>
 </div>
 <div>
@@ -908,7 +887,7 @@ $$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#1-25-gaussian-elimination-vectors>1-25: Gaussian Elimination, Vectors</a>
+<li><a href=#01-25-gaussian-elimination-vectors>01-25: Gaussian Elimination, Vectors</a>
 <ul>
 <li><a href=#upper-triangular-systems>Upper Triangular Systems</a></li>
 <li><a href=#row-echelon-form>Row Echelon Form</a>
@@ -920,7 +899,7 @@ $$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\
 <li><a href=#graphing>Graphing</a></li>
 </ul>
 </li>
-<li><a href=#1-27-vectors-matrices-multiplications-and-span>1-27: Vectors, Matrices, Multiplications, And Span</a>
+<li><a href=#01-27-vectors-matrices-multiplications-and-span>01-27: Vectors, Matrices, Multiplications, And Span</a>
 <ul>
 <li><a href=#vectors>Vectors</a>
 <ul>
@@ -936,7 +915,6 @@ $$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\
 <li><a href=#matrix-operations>Matrix Operations</a></li>
 </ul>
 </li>
-<li><a href=#span--column-space--range>Span / Column Space / Range</a></li>
 </ul>
 </li>
 </ul>
