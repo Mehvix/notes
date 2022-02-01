@@ -42,14 +42,14 @@ Top is .$x$, middle is .$v$, bottom is .$a$
 
 
 ## Practice
-{{< expand "FRQs to study" >}}
+{{< details "FRQs to study" >}}
 - Graphs
 ![/docs/ap/mech/Untitled-3.png](/docs/ap/mech/Untitled-3.png)
 - Changing Acceleration / Velocity
 ![/docs/ap/mech/Untitled-4.png](/docs/ap/mech/Untitled-4.png)
-{{< /expand >}}
+{{< /details >}}
 
-{{< expand "Example Qs" >}}
+{{< details "Example Qs" >}}
 1.![/docs/ap/mech/Untitled-5.png](/docs/ap/mech/Untitled-5.png)
 ![/docs/ap/mech/Untitled-6.png](/docs/ap/mech/Untitled-6.png)
 2.![/docs/ap/mech/Untitled-7.png](/docs/ap/mech/Untitled-7.png)
@@ -68,7 +68,7 @@ Top is .$x$, middle is .$v$, bottom is .$a$
 ![/docs/ap/mech/Untitled-20.png](/docs/ap/mech/Untitled-20.png)
 1. ![/docs/ap/mech/Untitled-21.png](/docs/ap/mech/Untitled-21.png)
 ![/docs/ap/mech/Untitled-22.png](/docs/ap/mech/Untitled-22.png)
-{{< /expand >}}
+{{< /details >}}
 
 
 # 2. Forces
@@ -107,14 +107,14 @@ $$\text{Acceleration of a Pulley} = \frac{Mg}{m+M} = \frac{Mg-\mu mg}{m+M}$$
 
 ## Practice
 
-{{< expand "FRQs to study" >}}
+{{< details "FRQs to study" >}}
 Drag
 ![/docs/ap/mech/Untitled-26.png](/docs/ap/mech/Untitled-26.png)
 Multiple Bodies (pulleys, carts)
 ![/docs/ap/mech/Untitled-27.png](/docs/ap/mech/Untitled-27.png)
-{{< /expand >}}
+{{< /details >}}
 
-{{< expand "Practice Qs" >}}
+{{< details "Practice Qs" >}}
 1. ![/docs/ap/mech/Untitled-28.png](/docs/ap/mech/Untitled-28.png)
 ![/docs/ap/mech/Untitled-29.png](/docs/ap/mech/Untitled-29.png)
 2. ![/docs/ap/mech/Untitled-30.png](/docs/ap/mech/Untitled-30.png)
@@ -143,7 +143,7 @@ Multiple Bodies (pulleys, carts)
 ![/docs/ap/mech/Untitled-53.png](/docs/ap/mech/Untitled-53.png)
 14. ![/docs/ap/mech/Untitled-54.png](/docs/ap/mech/Untitled-54.png)
 ![/docs/ap/mech/Untitled-55.png](/docs/ap/mech/Untitled-55.png)
-{{< /expand >}}
+{{< /details >}}
 
 # 3. Energy
 
@@ -202,7 +202,7 @@ from the equilibrium position. For example, a marker being tipped to the side.
 
 ## Practice 
 
-{{< expand "Practice Qs" >}}
+{{< details "Practice Qs" >}}
 1. ![/docs/ap/mech/Untitled-60.png](/docs/ap/mech/Untitled-60.png)
 ![/docs/ap/mech/Untitled-61.png](/docs/ap/mech/Untitled-61.png)
 2. ![/docs/ap/mech/Untitled-62.png](/docs/ap/mech/Untitled-62.png)
@@ -240,7 +240,7 @@ from the equilibrium position. For example, a marker being tipped to the side.
 ![/docs/ap/mech/Untitled-94.png](/docs/ap/mech/Untitled-94.png)
 16. ![/docs/ap/mech/Untitled-95.png](/docs/ap/mech/Untitled-95.png)
 ![/docs/ap/mech/Untitled-96.png](/docs/ap/mech/Untitled-96.png)
-{{< /expand >}}
+{{< /details >}}
 
 
 # 4. Momentum
@@ -274,7 +274,7 @@ $$\Sigma F=ma_\text{cm}$$
 
 ## Practice
 
-{{< expand "Practice Qs" >}}
+{{< details "Practice Qs" >}}
 1. ![/docs/ap/mech/Untitled-98.png](/docs/ap/mech/Untitled-98.png)
 ![/docs/ap/mech/Untitled-99.png](/docs/ap/mech/Untitled-99.png)
 1. ![/docs/ap/mech/Untitled-100.png](/docs/ap/mech/Untitled-100.png)
@@ -305,7 +305,7 @@ a. Integrate 0m to 4m
 ![/docs/ap/mech/Untitled-124.png](/docs/ap/mech/Untitled-124.png)
 1.  ![/docs/ap/mech/Untitled-125.png](/docs/ap/mech/Untitled-125.png)
 ![/docs/ap/mech/Untitled-126.png](/docs/ap/mech/Untitled-126.png)
-{{< /expand >}}
+{{< /details >}}
 
 
 # 5. Rotation
@@ -322,51 +322,51 @@ $$\ \Delta \theta=\omega_f \Delta t-\frac{1}{2}\alpha \Delta t^2 \text{ -- no } 
 ## Rotational Inertia 
 ![/docs/ap/mech/Untitled-127.png](/docs/ap/mech/Untitled-127.png)
 
-{{< expand "Pulleys" >}}![/docs/ap/mech/Untitled-128.png](/docs/ap/mech/Untitled-128.png)
+{{< details "Pulleys" >}}![/docs/ap/mech/Untitled-128.png](/docs/ap/mech/Untitled-128.png)
 with finishing with none+blue same time, then green, then red
 ![/docs/ap/mech/Untitled-129.png](/docs/ap/mech/Untitled-129.png)
 ![/docs/ap/mech/Untitled-130.png](/docs/ap/mech/Untitled-130.png)
-{{< /expand >}}
+{{< /details >}}
 
-{{< expand "Rolling Down an Incline" >}}
+{{< details "Rolling Down an Incline" >}}
 ![/docs/ap/mech/Untitled-131.png](/docs/ap/mech/Untitled-131.png)
 ![/docs/ap/mech/Untitled-132.png](/docs/ap/mech/Untitled-132.png)
 ![/docs/ap/mech/Untitled-133.png](/docs/ap/mech/Untitled-133.png)
 ![/docs/ap/mech/Untitled-134.png](/docs/ap/mech/Untitled-134.png)
-{{< /expand >}}
+{{< /details >}}
 
-{{< expand "Rolling Down an Incline + Slipping" >}}
+{{< details "Rolling Down an Incline + Slipping" >}}
 ![/docs/ap/mech/Untitled-135.png](/docs/ap/mech/Untitled-135.png)
 ![/docs/ap/mech/Untitled-136.png](/docs/ap/mech/Untitled-136.png)
 ![/docs/ap/mech/Untitled-137.png](/docs/ap/mech/Untitled-137.png)
-{{< /expand >}}
+{{< /details >}}
 
-{{< expand "Rolling Up an Incline" >}}
+{{< details "Rolling Up an Incline" >}}
 ![/docs/ap/mech/Untitled-138.png](/docs/ap/mech/Untitled-138.png)
 ![/docs/ap/mech/Untitled-139.png](/docs/ap/mech/Untitled-139.png)
 ![/docs/ap/mech/Untitled-140.png](/docs/ap/mech/Untitled-140.png)
 ![/docs/ap/mech/Untitled-141.png](/docs/ap/mech/Untitled-141.png)
 ![/docs/ap/mech/Untitled-142.png](/docs/ap/mech/Untitled-142.png)
-{{< /expand >}}
+{{< /details >}}
 
 <!-- .$\frac{dW}{d}$  -->
-{{< expand "Rolling Up an Incline" >}} 
+{{< details "Rolling Up an Incline" >}} 
 ![/docs/ap/mech/Untitled-138.png](/docs/ap/mech/Untitled-138.png)
 ![/docs/ap/mech/Untitled-139.png](/docs/ap/mech/Untitled-139.png)
 ![/docs/ap/mech/Untitled-140.png](/docs/ap/mech/Untitled-140.png)
 ![/docs/ap/mech/Untitled-141.png](/docs/ap/mech/Untitled-141.png)
 ![/docs/ap/mech/Untitled-142.png](/docs/ap/mech/Untitled-142.png)
-{{< /expand >}}
+{{< /details >}}
 
-{{< expand "Rolling Up an Incline + Slipping" >}}
+{{< details "Rolling Up an Incline + Slipping" >}}
 ![/docs/ap/mech/Untitled-143.png](/docs/ap/mech/Untitled-143.png)
 ![/docs/ap/mech/Untitled-144.png](/docs/ap/mech/Untitled-144.png)
 ![/docs/ap/mech/Untitled-145.png](/docs/ap/mech/Untitled-145.png)
 Should be Blue > Green > Red (0)
-{{< /expand >}}
+{{< /details >}}
 
 ## Practice Qs
-{{< expand "Practice Qs" >}}
+{{< details "Practice Qs" >}}
 1. ![/docs/ap/mech/Untitled-146.png](/docs/ap/mech/Untitled-146.png)
 ![/docs/ap/mech/Untitled-147.png](/docs/ap/mech/Untitled-147.png)
 1. ![/docs/ap/mech/Untitled-148.png](/docs/ap/mech/Untitled-148.png)
@@ -406,4 +406,4 @@ where green has lower moment of inertia, and red has larger moment of inertia
 13
 ![/docs/ap/mech/Untitled-176.png](/docs/ap/mech/Untitled-176.png)
 ![/docs/ap/mech/Untitled-177.png](/docs/ap/mech/Untitled-177.png)
-{{< /expand >}}
+{{< /details >}}

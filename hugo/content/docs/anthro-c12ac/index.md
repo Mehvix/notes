@@ -697,7 +697,7 @@ weight: 11
     3. Ethnographic Studies
     4. Ecological Studies of Fire
     5. Archaeological Research
-    6. [Other methods](index.md#methods)
+    6. [Other methods](../anthro-c12ac/index.md#methods)
 - Involves Researching with Tribes
 
 ### Two Case Studies
@@ -1011,7 +1011,7 @@ weight: 11
     - Involved Few Euro-Americans -- workforce was almost all Native people
     - Self-Contained Agrarian Systems
     - Native people integral to their success
-- Major Outcomes ([9/27/21 Lecture](index.html#impact))
+- Major Outcomes ([9/27/21 Lecture](../anthro-c12ac/index.html#impact))
     - Loss of Traditional Ecological Knowledge
     - Significant Environmental Impacts to Coastal CA
     - Many Coastal Tribes Displaced

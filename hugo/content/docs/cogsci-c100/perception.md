@@ -111,11 +111,11 @@ weight: 1
     - If the activation of the neuron reaches a certain minimum threshold, the neuron will fire
 {{< /columns >}}
 
-{{< expand "16A Notes" >}}
+{{< details "16A Notes" >}}
 >  Because circuit analysis translates to a wide range of fields, we can model many physical systems as electrical circuits, often gaining insight about the system. You may have heard of neural networks, an important machine learning tool that can be used to “learn” tasks such as image and voice recognition from examples instead of explicit programming. Neural networks are modeled after biological neural networks, which are fundamentally circuits operating on electrical signals within a brain:
 > {{< figure  src="/docs/cogsci-c100/perception/16A.png" >}}
 > In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. ([from EECS16A Note0](https://eecs16a.org/lecture/Note0.pdf))
-{{< /expand >}}
+{{< /details >}}
 
 
 {{< columns >}}<!-- mathjax fix -->
@@ -134,28 +134,27 @@ weight: 1
 ### Ex: How might a computer recognize a “9” using neural networks?
 
 {{< youtube "aircAruvnKk" >}}
-
 - There is huge variety of ways in which people write 9’s
-{{< columns >}}<!-- mathjax fix -->
 - To simplify things, we can represent the “9” by decomposing it to a grid of 28 x 28 pixels of varying shades of gray (between 0 and 1)
+
 1. First (input) layer of network
-    - Starts with bunch of neurons or nodes corresponding to an array of 28 x 28 pixels in the image
-    - Each node holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black to 1 for white
+{{< columns >}}<!-- mathjax fix -->
+- Starts with bunch of neurons or nodes corresponding to an array of 28 x 28 pixels in the image
+- Each node holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black to 1 for white
+- This is the neuron’s activation level
+- Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer...
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s1.png)
 {{< /columns >}}
-    - This is the neuron’s activation level
-    - Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer...
-        - This is loosely analogous to how, in biological networks of neuron, some groups of neurons cause other neurons to fire
-
+    - This is loosely analogous to how, in biological networks of neuron, some groups of neurons cause other neurons to fire
 2. Second layer (or first “hidden layer”)
-- Each neuron in the second layer might pick up on whether there is an edgein one particular region 
-- You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
-{{< columns >}}<!-- mathjax fix -->
-- Then you take all the activations from the first layer and compute their weighted sum according to the weights
-    - Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region
-    - To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
-        - Sum is largest when those middle pixels are bright but surrounding pixels are darker 
+   - Each neuron in the second layer might pick up on whether there is an edge in one particular region 
+   - You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
+   - Then you take all the activations from the first layer and compute their weighted sum according to the weights
+    {{< columns >}}<!-- mathjax fix -->
+- Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region
+- To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
+    - Sum is largest when those middle pixels are bright but surrounding pixels are darker 
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s2.png)
 {{< /columns >}}
@@ -166,12 +165,10 @@ weight: 1
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s3.png)
 {{< /columns >}}
-  - The connections between the other layers also have weights and biases associated with them
-
+    - The connections between the other layers also have weights and biases associated with them
 3. Third layer (or second “hidden layer”)
     - When we recognize digits, we piece together various components
         - e.x: A “9” has a loop near the top and a line on the right whereas an “8” has a loop on the top and one below
-
     {{< columns >}}<!-- mathjax fix -->
 - Each neuron in the third layer corresponds to one of these subcomponents
    - e.x: A particular neuron in the third layer might be activated by any generally loopy pattern toward the top 
@@ -179,8 +176,7 @@ weight: 1
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s4.png)
 {{< /columns >}}
-
-1. Last (output) layer
+4. Last (output) layer
 {{< columns >}}<!-- mathjax fix -->
 - Has 10 neurons, each representing one of the digits
 - The activation in these neurons – some number between 0 and 1 – represents how much the system thinks a given image corresponds with a given digit
@@ -189,7 +185,6 @@ weight: 1
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s5.png)
 {{< /columns >}}
-
 
 ### Learning in Neural Nets: Backpropagation
 
@@ -233,10 +228,20 @@ weight: 1
         - Emphasizes the importance of information coming from our minds
     - Note: we use both throughout everyday situations, rarely exclusively either or 
         - Models can almost be sort of categorized/grouped by which of the two processing model they put emphasis on 
-  - E.x. you see a water bottle on your desk
-      - You know it's a water bottle since it's physically there. You can see, and perhaps touch it
-      - You know it's a water bottle because of it's features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
-          - If you were an alien, or a homosapien from a very long time ago, you wouldn't know that the object was a water bottle (among other things...)
+    - E.x. you see a water bottle on your desk
+        - You know it's a water bottle since it's physically there. You can see, and perhaps touch it
+        - You know it's a water bottle because of it's features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
+            - If you were an alien, or a homosapien from a very long time ago, you wouldn't know that the object was a water bottle (among other things...)
+
+{{< details "Optional: Deductive versus Inductive Reasoning" >}}
+1. **Deductive reasoning** works from the more general to the more specific, i.e., “top-down” approach.
+    - In deductive reasoning there is usually a first premise, then a second premise (both of which are proven through observations), and finally an inference.  
+    - Ex: All men are mortal. Smerdley is a man. Therefore, Smerdley is mortal.
+2. Inductive reasoning works the other way, moving from specific observations to broader generalizations and theories, i.e., “bottom-up” approach
+    - Inductive reasoning extracts a likely (but not certain) premise from specific and  limited observations.
+    - Ex: I have a bag of many coins, and I’ve pulled 10 at random and they’ve all been pennies, therefore this is probably a bag full of pennies.
+{{< /details >}}
+
 
 ## “Objective reality” is often not as objective as we think...
 
@@ -299,6 +304,7 @@ weight: 1
         - People live up to their expectations -- we tend to bring out what we focus on
 - Our beliefs and expectations influence **our own** behavior
     - Study by Mark Snyder found that when a man was led to believe that a woman found him attractive, she was more likely to act as if she did
+    - "[Gus Hansen refused to acknowledge the odds and the odds disappear](https://www.youtube.com/watch?v=bDt90EyZnWA&t=1295s)"
         > _Assume a virtue if you have it not._ – Shakespeare
 
 ## Perceptual Constancies
@@ -434,7 +440,7 @@ Modular processes are usually characterized by...
 >![](/docs/cogsci-c100/perception/drawing.png)
 > Patients are asked to draw from memory or to copy an illustration (Driver & Vuilleumier, 2001)
 {{< /columns >}}
-    {{< expand "House" >}}
+    {{< details "House" >}}
 {{< columns >}}<!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/house0.png)
 <---><!-- mathjax fix -->
@@ -444,7 +450,7 @@ Modular processes are usually characterized by...
 > _Patient:_ The same.<br>
 > _Experimenter:_ Which house would you prefer to live in?<br>
 > _Patient:_ The left house.
-{{< /expand >}}
+{{< /details >}}
 ---
 
 - **Capgras syndrome:** characterized by belief that family and/or friends are imposters
@@ -481,11 +487,11 @@ Modular processes are usually characterized by...
     2. Actively direct their attention to the target
 - Participants in Passive Group 1 outperformed those in Group 2 (Smilek, Enns, Eastwood et al., 2006)
 {{< /columns >}}
-    {{< expand "Targets" >}}
+    {{< details "Targets" >}}
 ![](/docs/cogsci-c100/perception/targets.png)
 - Look for the circle with just one gap, and say whether the gap is on the left or the right
 - Use “relax” strategy, then try active search strategy
-{{< /expand >}}
+{{< /details >}}
   - Proposed explanation:
     - Participants who were basically told to relax and go with their gut instinct used a secondary pathway of visual perception that 
     - Does not go through the visual cortex
