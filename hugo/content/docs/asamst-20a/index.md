@@ -69,7 +69,7 @@ __Aliens Ineligible for Citizenship and the 14th Amendment__
 - At the same time the __14th Amendment__ was passed in 1867 as an important legal tool against discrimination by state and local governments.
     - Included an important clause stating that states cannot treat people differently on the basis of race (now it includes gender)
         > "Simply stated, all persons must be treated equally without regard to their race, color, or national origin."
-- Legislation in 1965: Effectively ended the immigration restrictions and quotas against many Asian immigrants
+- Legislation in 1965: Effectively ended the immigration restrictions and quotas against many Asian immigrants. Removed race and national origin as a restriction for naturalization.
 
 __As you move through the readings...__
 - Consider what "power", "agency" and "contestation" mean in the context of the history that you reading.
@@ -256,3 +256,51 @@ __Disjuncture?__
         - 1966 NYT's Magazine article on "Success Store: Japanese American Style," and in December of that year, "Success Story of One Minority in the U.S."
         - At a similar moment, U.S. Senator Daniel Patrick Moynihan published the influential _Report on the Black Family_ (1965) which was an attempty to use data and sociological methods to understand poverty and income inequality in the African American community but which used the term "tangle of pathology" and referenced single parent families in the African American community as a source of the generational poverty.
         - How are these relevant to this idea of "disjuncture"?
+
+# Week 3 (February 1 & 3): U.S.-Asia relations and early immigration.
+
+- __Discussion topics:__
+    - (incomplete)
+
+- __Overblown with Hope__
+    - _Gam Saan_ = "gold mountain"
+        - 1848 shortly after the discovery of gold at John Sutter's Mill, a young man in Canton China wrote to his brother in Boston,
+        > "Good many Americans speak of California. Oh! Very rich country! I hear good many Americans and Europeans go there. Oh! They find hold very quickly, so I hear ... I feel as if I should like to go there very much. I think I shall go to California next summer"
+    
+    - __Immigrant Labor__
+        - _Contract Laborers_
+            - Emigration brokers representing sugar planters provided "free passage" where immigrants would sign labor contracts with a planter for 5 years with wages, shelter, food and medical care.
+        - _Free Laborers_
+            - A credit-ticket system,  a broker lends money to a migrant for the ticket for passage. The migrant would pay off the loan with interest out of his earnings in the U.S.
+
+    - __Chung Kun Ai on money lending__
+        > "One condition of his loan of $60 was that each borrower was to pay back $120 as soon as he was able to do so. In all, grandfather must have helped 70 young men from our village and nearby villages to migrate to North and South American and also Australia."
+
+    - (incomplete)
+
+    - __How did tradtional Chinese culture affect the gender demographics of Chinese labor migrants?__
+        - wives in a subordinate positon
+        - wives served as an incentive for their husband to return
+
+    - Hawaii vs. U.S. Mainland
+
+    - __Complexity in Chinese immigrants__
+        1. Hakka did not practice footbinding
+        2. Hawaii made some efforts to promote migration of Chinese women.
+
+- __"A Race so Different from Our Own"__
+        - Justice Harlan, dissenting, [_Plessy v. Ferguson_](https://www.oyez.org/cases/1850-1900/163us537)
+
+- __Segregation under the law__
+    - Citizenship Rights are the primary pivot for access to recognition by government and thus rights attached to citizenship
+    - Segregation upheld only _separation_ but negative status associated with slavery
+    - [Randall Kennedy on One Drop Rule](https://www.youtube.com/watch?v=tR3Sw085Bhg) and the complexity of Black identity
+
+- __Early Segregation Historical Milestones__
+
+- [__Dred Scott v. Stafford__ (1857)](https://www.oyez.org/cases/1850-1900/60us393)
+    - The Court denies citizenship on the basis of deference to the political branches.
+    - Pre-Civil War the Supreme Court reified negative status of Blacks
+    - Court holds Blacks are not citizens and are thus subject to legislative laws on slaves as chattel (property)
+
+- ... Congress has 'planery power' over who can enter and exit the U.S.
