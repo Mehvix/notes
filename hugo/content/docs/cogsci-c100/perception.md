@@ -111,11 +111,11 @@ weight: 1
     - If the activation of the neuron reaches a certain minimum threshold, the neuron will fire
 {{< /columns >}}
 
-{{< expand "16A Notes" >}}
+{{< details "16A Notes" >}}
 >  Because circuit analysis translates to a wide range of fields, we can model many physical systems as electrical circuits, often gaining insight about the system. You may have heard of neural networks, an important machine learning tool that can be used to “learn” tasks such as image and voice recognition from examples instead of explicit programming. Neural networks are modeled after biological neural networks, which are fundamentally circuits operating on electrical signals within a brain:
 > {{< figure  src="/docs/cogsci-c100/perception/16A.png" >}}
 > In a general sense, studying circuits provides you with the conceptual and mathematical tools needed to analyze such networks. More broadly, circuit concepts are relevant to understanding network analysis and signal flows in systems, which can be applied to areas ranging from transportation analysis to social network analysis. ([from EECS16A Note0](https://eecs16a.org/lecture/Note0.pdf))
-{{< /expand >}}
+{{< /details >}}
 
 
 {{< columns >}}<!-- mathjax fix -->
@@ -134,28 +134,27 @@ weight: 1
 ### Ex: How might a computer recognize a “9” using neural networks?
 
 {{< youtube "aircAruvnKk" >}}
-
 - There is huge variety of ways in which people write 9’s
-{{< columns >}}<!-- mathjax fix -->
 - To simplify things, we can represent the “9” by decomposing it to a grid of 28 x 28 pixels of varying shades of gray (between 0 and 1)
+
 1. First (input) layer of network
-    - Starts with bunch of neurons or nodes corresponding to an array of 28 x 28 pixels in the image
-    - Each node holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black to 1 for white
+{{< columns >}}<!-- mathjax fix -->
+- Starts with bunch of neurons or nodes corresponding to an array of 28 x 28 pixels in the image
+- Each node holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black to 1 for white
+- This is the neuron’s activation level
+- Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer...
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s1.png)
 {{< /columns >}}
-    - This is the neuron’s activation level
-    - Activations in one layer bring about activations in the next layer, which in turn bring about activations in the next layer...
-        - This is loosely analogous to how, in biological networks of neuron, some groups of neurons cause other neurons to fire
-
+    - This is loosely analogous to how, in biological networks of neuron, some groups of neurons cause other neurons to fire
 2. Second layer (or first “hidden layer”)
-- Each neuron in the second layer might pick up on whether there is an edgein one particular region 
-- You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
-{{< columns >}}<!-- mathjax fix -->
-- Then you take all the activations from the first layer and compute their weighted sum according to the weights
-    - Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region
-    - To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
-        - Sum is largest when those middle pixels are bright but surrounding pixels are darker 
+   - Each neuron in the second layer might pick up on whether there is an edge in one particular region 
+   - You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
+   - Then you take all the activations from the first layer and compute their weighted sum according to the weights
+    {{< columns >}}<!-- mathjax fix -->
+- Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region
+- To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
+    - Sum is largest when those middle pixels are bright but surrounding pixels are darker 
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s2.png)
 {{< /columns >}}
@@ -166,12 +165,10 @@ weight: 1
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s3.png)
 {{< /columns >}}
-  - The connections between the other layers also have weights and biases associated with them
-
+    - The connections between the other layers also have weights and biases associated with them
 3. Third layer (or second “hidden layer”)
     - When we recognize digits, we piece together various components
         - e.x: A “9” has a loop near the top and a line on the right whereas an “8” has a loop on the top and one below
-
     {{< columns >}}<!-- mathjax fix -->
 - Each neuron in the third layer corresponds to one of these subcomponents
    - e.x: A particular neuron in the third layer might be activated by any generally loopy pattern toward the top 
@@ -179,8 +176,7 @@ weight: 1
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s4.png)
 {{< /columns >}}
-
-1. Last (output) layer
+4. Last (output) layer
 {{< columns >}}<!-- mathjax fix -->
 - Has 10 neurons, each representing one of the digits
 - The activation in these neurons – some number between 0 and 1 – represents how much the system thinks a given image corresponds with a given digit
@@ -189,7 +185,6 @@ weight: 1
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s5.png)
 {{< /columns >}}
-
 
 ### Learning in Neural Nets: Backpropagation
 
@@ -231,10 +226,22 @@ weight: 1
     - **Top-down processing:** information processing guided by higher-level processes, such as our beliefs, expectations, and memories
         - Our knowledge, beliefs about the world inform our perceptions
         - Emphasizes the importance of information coming from our minds
-  - E.x. you see a water bottle on your desk
-      - You know it's a water bottle since it's physically there. You can see, and perhaps touch it
-      - You know it's a water bottle because of it's features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
-          - If you were an alien, or a homosapien from a very long time ago, you wouldn't know that the object was a water bottle (among other things...)
+    - Note: we use both throughout everyday situations, rarely exclusively either or 
+        - Models can almost be sort of categorized/grouped by which of the two processing model they put emphasis on 
+    - E.x. you see a water bottle on your desk
+        - You know it's a water bottle since it's physically there. You can see, and perhaps touch it
+        - You know it's a water bottle because of it's features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
+            - If you were an alien, or a homosapien from a very long time ago, you wouldn't know that the object was a water bottle (among other things...)
+
+{{< details "Optional: Deductive versus Inductive Reasoning" >}}
+1. **Deductive reasoning** works from the more general to the more specific, i.e., “top-down” approach.
+    - In deductive reasoning there is usually a first premise, then a second premise (both of which are proven through observations), and finally an inference.  
+    - Ex: All men are mortal. Smerdley is a man. Therefore, Smerdley is mortal.
+2. Inductive reasoning works the other way, moving from specific observations to broader generalizations and theories, i.e., “bottom-up” approach
+    - Inductive reasoning extracts a likely (but not certain) premise from specific and  limited observations.
+    - Ex: I have a bag of many coins, and I’ve pulled 10 at random and they’ve all been pennies, therefore this is probably a bag full of pennies.
+{{< /details >}}
+
 
 ## “Objective reality” is often not as objective as we think...
 
@@ -263,7 +270,6 @@ weight: 1
 {{< /columns >}}
 
 
-
 ## Effects of expectations, experience, emotional patterns, and beliefs on perception
 
 - Effects of Prior Experience on Perception
@@ -288,15 +294,17 @@ weight: 1
 
 - **Self-fulfilling prophecies:** People generally think that it is our experiences and perceptions that create our beliefs, but often, it is actually our beliefs that create our experiences and perceptions 
     {{< figure  src="/docs/cogsci-c100/perception/proph.jpg" >}}
-- Our beliefs and expectations influence others’ behavior
+- Our beliefs and expectations influence **others’** behavior
     - **The Pygmalion effect:** study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls 
         - Follow-up: If teacher believed that girls learn to read faster than boys, they did
     - Children who were told they were neat and tidy became more neat and tidy than those who were told they should be neat and tidy
         - Follow-up: children who are told that they are good at math showed greater improvements in math scores than those who were told that they should try to become good at math
     - Those who over-idealize romantic partners as having many virtues and few faults tend to have happier and longer-lasting relationships (Miller, Niehuis, & Huston, 2006)
-    - Moreover, the partners who are over-idealized tended to develop those traits over time! (Sandra Murray)
-- Our beliefs and expectations influence our own behavior
+        - Moreover, the partners who are over-idealized tended to develop those traits over time! (Sandra Murray)
+        - People live up to their expectations -- we tend to bring out what we focus on
+- Our beliefs and expectations influence **our own** behavior
     - Study by Mark Snyder found that when a man was led to believe that a woman found him attractive, she was more likely to act as if she did
+    - "[Gus Hansen refused to acknowledge the odds and the odds disappear](https://www.youtube.com/watch?v=bDt90EyZnWA&t=1295s)"
         > _Assume a virtue if you have it not._ – Shakespeare
 
 ## Perceptual Constancies
@@ -306,9 +314,14 @@ weight: 1
         > ![](/docs/cogsci-c100/perception/tile.png)
         > Is Tile A or Tile B darker or are they the same color?
         > - Illusion results from visual system’s attempt to maintain lightness constancy: we perceive an object as having a constant color, even if changing illumination alters the wavelengths reflected by the object
+
+{{< columns >}}<!-- mathjax fix -->
 - **Shape constancy:** we perceive the form of familiar objects as constant even while our retinal images of them change
     - A door casts an increasingly trapezoidal image on our retinas as it opens, yet we still perceive it as rectangular
-
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/perception/door.png)
+{{< /columns >}}
+<br>
 {{< columns >}}<!-- mathjax fix -->
 - Müller-Lyer illusion: 
     - Is line AB or line BC longer?
@@ -344,21 +357,19 @@ weight: 1
     - You are really interested in finding a brand that is considered
         - Durable, strong, and well built (“rugged” condition) OR
         - Classy, attractive, and refined (“sophisticated” condition)
-{{< expand "Which would you choose?" >}}
-![](/docs/cogsci-c100/perception/condoms.png)
-{{< /expand >}}
-{{< expand "Match" >}} 
-{{< columns >}}<!-- mathjax fix -->
-![](/docs/cogsci-c100/perception/match.png)
-<---><!-- mathjax fix -->
+- Which would you choose?
+    ![](/docs/cogsci-c100/perception/condoms.png)
+- Match the colors with the following
+    ![](/docs/cogsci-c100/perception/match.png)
+    {{< columns >}}<!-- mathjax fix -->
 - Sincerity: white, yellow.$^1$
 - Excitement: red, orange.$^1$
 - Competence: blue
+<---><!-- mathjax fix -->
 - Sophistication: black, pink, purple
 - Ruggedness: brown
 - .$^1$Marginally significant
 {{< /columns >}}
-{{< /expand >}}
     
 # Neurological disorders of visual perception
 
@@ -378,12 +389,13 @@ weight: 1
   - Do people tend to perceive men or women more in “parts”? Women (Gervais, Vescio , Forster et al., 2012)
 - **Prosopagnosia:** failure to recognize particular people by the sight of their faces
     - After stroke, sheep rancher could not recognize people but could recognize sheep 
+        - Someone would walk in the room and he wouldn't be able to tell if it was the wife/neighbor/robber/etc
     - Note: the eyes also play a special role in perception
         >![](/docs/cogsci-c100/perception/eyes.png)
-        >- 70-90% of famous portrait paintings sampled from the last five centuries have an eye at or within 5% of the painting’s exact centerline (Christopher W. Tyler)<br><br>
+        > 70-90% of famous portrait paintings sampled from the last five centuries have an eye at or within 5% of the painting’s exact centerline (Christopher W. Tyler)<br><br>
         > _Every man indicates in his eye the exact indication of his rank._  – Emerson
 
-## Modular processing
+## Modular Processing
 
 {{< columns >}}<!-- mathjax fix -->
 - Visual illusions suggest that the mind is at least in part modular (Jerry Fodor)
@@ -396,6 +408,8 @@ weight: 1
 {{< /columns >}}
 
 {{< columns >}}<!-- mathjax fix -->
+<br>
+
 ![](/docs/cogsci-c100/perception/break.png)
 <---><!-- mathjax fix -->
 Modular processes are usually characterized by...
@@ -409,24 +423,24 @@ Modular processes are usually characterized by...
 
 
 ## Other Neurological Disorders Related to Visual Perception
+
 - **Visual agnosia:** inability to recognize/identify visual objects despite relatively good visual perception
     - Usually due to damage in occipital or temporal lobes
         - “Mr. P” in Oliver Sacks’ Man Who Mistook His Wife for a Hat
         - Man with agnosia puzzling over a picture of a cow suddenly found himself making alternating up-and-down movements with fists.  He looked down at his hands and said, “Oh, a cow!”
-- Visual neglect syndrome or unilateral spatial neglect:
+        - Due to some error between vision and verbal communication
+- **Visual neglect syndrome** or **unilateral spatial neglect**:
     - Tendency to ignore – or to be unaware of – information on one half of visual field, usually the left side
     - Typically occurs after damage (e.g., stroke) to right hemisphere, particularly damage to the parietal and frontal lobes
-    - Relatively common
-  
-{{< columns >}}<!-- mathjax fix -->
+    - Relatively common, easy to test for
+    {{< columns >}}<!-- mathjax fix -->
 >![](/docs/cogsci-c100/perception/lines.png)
 > Patients are asked to bisect each line.  Their markings are typically skewed to the right, as if they do not see the leftmost segment
 <---><!-- mathjax fix -->
 >![](/docs/cogsci-c100/perception/drawing.png)
 > Patients are asked to draw from memory or to copy an illustration (Driver & Vuilleumier, 2001)
 {{< /columns >}}
-
-{{< expand "House" >}}
+    {{< details "House" >}}
 {{< columns >}}<!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/house0.png)
 <---><!-- mathjax fix -->
@@ -436,27 +450,30 @@ Modular processes are usually characterized by...
 > _Patient:_ The same.<br>
 > _Experimenter:_ Which house would you prefer to live in?<br>
 > _Patient:_ The left house.
-{{< /expand >}}
+{{< /details >}}
+---
 
 - **Capgras syndrome:** characterized by belief that family and/or friends are imposters
     - Damage to pathway between visual cortex and amygdala, which regulates emotions
     - Emotional “glow” that we normally feel around people we are close to is missing
     - Ramachandran argues that this emotional “glow” is, to a large extent, what gives us a sense of continuity in our relationships
+    - Classified as some kind of schizophrenia
 - **Functional blindness** (conversion disorder): unexplained vision loss with no organic basis
     - Cambodian women who had witnessed horrible war atrocities became either partially or wholly blind
-
-{{< columns >}}<!-- mathjax fix -->
+    - Impairs primarily body functions / processes
+        - Psychological defense mechanism
 - **Blindsight:** vision without awareness
-    - Blindness resulting from damage to visual cortex
-    - When presented with various shapes like circles and square, or photos of faces of men and women, patient could not tell (or guess) what his eyes were gazing at
-    - However, when shown pictures of people with angry or happy faces, he was able to guess the emotions expressed, at a rate far better than chance
-    - Patients are also able to correctly “guess” the identity or location of particular objects 
-    - Patients report that they get a “gut” feeling that allows them to perform these tasks
-    - A second pathway of visual perception may account for this phenomenon
+{{< columns >}}<!-- mathjax fix -->
+- Blindness resulting from damage to visual cortex
+- When presented with various shapes like circles and square, or photos of faces of men and women, patient could not tell (or guess) what his eyes were gazing at
+- However, when shown pictures of people with angry or happy faces, he was able to guess the emotions expressed, at a rate far better than chance
+- Patients are also able to correctly “guess” the identity or location of particular objects 
+- Patients report that they get a “gut” feeling that allows them to perform these tasks
 <---><!-- mathjax fix -->
 > ![](/docs/cogsci-c100/perception/wander.png)
 > Blindsight patient was able to meander around all the clutter in a hallway that he was told was empty (Weiskrantz)
 {{< /columns >}}
+    - A second pathway of visual perception may account for this phenomenon
 
 
 ## Two pathways of visual perception
@@ -468,18 +485,17 @@ Modular processes are usually characterized by...
 - Participants were instructed to
     1. Passively allow the target to just “pop” into their minds OR
     2. Actively direct their attention to the target
-- Participants in Group 1 outperformed those in Group 2 (Smilek, Enns, Eastwood et al., 2006)
+- Participants in Passive Group 1 outperformed those in Group 2 (Smilek, Enns, Eastwood et al., 2006)
 {{< /columns >}}
-
-{{< expand "Targets" >}}
+    {{< details "Targets" >}}
 ![](/docs/cogsci-c100/perception/targets.png)
 - Look for the circle with just one gap, and say whether the gap is on the left or the right
 - Use “relax” strategy, then try active search strategy
-{{< /expand >}}
-- Proposed explanation:
+{{< /details >}}
+  - Proposed explanation:
     - Participants who were basically told to relax and go with their gut instinct used a secondary pathway of visual perception that 
-        - Does not go through the visual cortex
-        - Instead simply makes a very short loop through the limbic system: the emotional, instinctual center of the brain
+    - Does not go through the visual cortex
+    - Instead simply makes a very short loop through the limbic system: the emotional, instinctual center of the brain
 ![](/docs/cogsci-c100/perception/proposed.png)
 
 {{< columns >}}<!-- mathjax fix -->
@@ -500,12 +516,14 @@ Modular processes are usually characterized by...
     - Unfortunately, although signals were now reaching his visual cortex, it lacked the experience to interpret them
         - May could not recognize expression, or faces, apart from features such as hair
         - Yet he can see an object in motion
+    - Ended up committing suicide because he found himself in a world he didn't (couldn't) understand or comprehend
 <---><!-- mathjax fix -->
 <br>
 
 - There is a critical period for normal sensory and perceptual development
 - Kittens reared in a cylinder with only vertical black and white stripes later had difficulty perceiving horizontal bars
     - Kitten would play with rod only when it was held upright 
+    - As if they couldn't see the horizontal rod
 <br>
 <br>
 <br>

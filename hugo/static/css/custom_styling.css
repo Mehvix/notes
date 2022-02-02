@@ -28,3 +28,12 @@ body > main > div {
     margin: 0.66rem 0 !important;
     border-radius: 0 !important;
 }
+
+h3 {
+    font-size: 1.3em !important;
+}
+
+h4 {
+    font-size: 1.2em !important;
+    font-weight: normal !important;
+}
