@@ -260,7 +260,15 @@ __Disjuncture?__
 # Week 3 (February 1 & 3): U.S.-Asia relations and early immigration.
 
 - __Discussion topics:__
-    - (incomplete)
+    - Were al the national/ethnic groups who are considered "white" today considered "white" in the 1800's?
+    - What was the connection between a person's labor/class status and their racial identity according ot Tataki?
+    - What does it mean to "perform" a racial identity. Are you just who you are racially?
+    - Are race relations in the U.S. based on a black and white framework?
+    - How do Asian Americans fit into a black and white framework?
+    - How do Asian Americans not fit into a black and white framework?
+    - What is legal discrimination?
+    - What is "disparate impact" versus "intentional motivation" or "animus"?
+    - What is "color-blind" legla doctrine?
 
 - __Overblown with Hope__
     - _Gam Saan_ = "gold mountain"
@@ -276,13 +284,13 @@ __Disjuncture?__
     - __Chung Kun Ai on money lending__
         > "One condition of his loan of $60 was that each borrower was to pay back $120 as soon as he was able to do so. In all, grandfather must have helped 70 young men from our village and nearby villages to migrate to North and South American and also Australia."
 
-    - (incomplete)
+    - __Gender and Migrant Labor: Chinese traditional Culture, Labor and Capital Strucutres, Geopolitics, and race__
+        - How did traditional Chinese culture affect the gender demographics of Chinese labor migrants?
+            - the wife was in a subordinate positon
+            - the wife served as an incentive for their husband to return
 
-    - __How did tradtional Chinese culture affect the gender demographics of Chinese labor migrants?__
-        - wives in a subordinate positon
-        - wives served as an incentive for their husband to return
-
-    - Hawaii vs. U.S. Mainland
+    - __Hawaii vs. U.S. Mainland__
+        - Hawaii encouraged the husband to bring their families over, whereas the U.S. Mainland (California) only wanted the men.
 
     - __Complexity in Chinese immigrants__
         1. Hakka did not practice footbinding
@@ -297,10 +305,36 @@ __Disjuncture?__
     - [Randall Kennedy on One Drop Rule](https://www.youtube.com/watch?v=tR3Sw085Bhg) and the complexity of Black identity
 
 - __Early Segregation Historical Milestones__
+    - __1790:__ Immigration and Naturalization Act
+    - __1857:__ Dred Scott v. Sandford
+    - __1862:__ Emancipation Proclamation Executive Order 
+    - __1865:__ Civil War ends
+    - __1882:__ Chinese Exclusion Act
+    - __1886:__ Yick Wo v. Hopkins
+    - __1889:__ Chae Chan Ping v. U.S.
+    - __1896:__ Plessy v. Ferguson
 
 - [__Dred Scott v. Stafford__ (1857)](https://www.oyez.org/cases/1850-1900/60us393)
     - The Court denies citizenship on the basis of deference to the political branches.
     - Pre-Civil War the Supreme Court reified negative status of Blacks
     - Court holds Blacks are not citizens and are thus subject to legislative laws on slaves as chattel (property)
 
-- ... Congress has 'planery power' over who can enter and exit the U.S.
+- [__Plessy v. Ferguson__](https://www.oyez.org/cases/1850-1900/163us537)
+    - A legal caste system based on race is created on a fiction of separate but equal.
+    - Post-Civil War Supreme Court, holds that segregation of African Americans and Whites does not violate the Fourteenth Amendment.  Harlan’s Dissent raises the contradiction of assumedly not segregating Chinese who are excluded from naturalized citizenship while segregating of African Americans who “fought for the union.”   
+
+- [__Yick Wo v. Hopkins__](https://www.oyez.org/cases/1850-1900/118us356)
+    - A theory of  evidence for systemic discrimination is created. 
+    - Supreme Court established disparateoutcome (impact) as basis for establishing racial discrimination.
+
+- [__Chae Chan Ping v. United States__](https://en.wikipedia.org/wiki/Chae_Chan_Ping_v._United_States)
+    - Supreme Court held that Chinese Exclusion Act of 1882, passed while Chinese man was abroad, applied and revoked his re-entry permit)
+
+- __With law the past is _always_ in the present__
+    - [Why is Chae Chan Ping relevant today?](https://www.theatlantic.com/politics/archive/2018/01/ghost-haunting-immigration/551015/)
+
+- __Plenary Power Doctrine__
+    - "The plenary power doctrine protects the federal government from claims that it is violating an individual's constitutional right to equal protection when it imposes discriminatory burdens on non-US citizens." - [CUNY School of Law](https://www.law.cuny.edu/legal-writing/forum/immigration-law-essays/goyal/#:~:text=The%20plenary%20power%20doctrine%20protects,burdens%20on%20non%2DUS%20citizens.)
+        - i.e. Congress has 'planery power' over who can enter and exit the U.S.
+
+
