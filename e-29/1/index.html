@@ -10,13 +10,13 @@ Evolution of graphical visualization #   Hand drawing Instrument drawing (using 
 Evolution of graphical visualization #   Hand drawing Instrument drawing (using mechanical things to measure distances) 2D CAD (initially only able to draw side views) 3D CAD (solid modeling)  Automatic generation of 2D working drawings Enable easy communication of measurements between designer and manufacturer Created with the assumption that manufactured objects are made up of elementary objects, geons?">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/e-29/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-31T16:19:58-08:00">
+<meta property="article:modified_time" content="2022-02-04T16:31:15-08:00">
 <title>Week 1: Fundamentals of Graphical Communication & Subtractive Processes | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.c6961cef566494f69059475a564afeb3643fbf8c415630f81b1722091aaf6c72.js integrity="sha256-xpYc71ZklPaQWUdaVkr+s2Q/v4xBVjD4GxciCRqvbHI=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.e2eb406887565d6cc3fc77f0cbbc93ea6cbeab2493f9bc8605cd5e1e935d53e5.js integrity="sha256-4utAaIdWXWzD/Hfwy7yT6my+qyST+byGBc1eHpNdU+U=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -51,6 +51,9 @@ Evolution of graphical visualization #   Hand drawing Instrument drawing (using 
 </li>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
 </li>
 </ul>
 </li>
@@ -268,7 +271,9 @@ pass.mehvix.com
 </li>
 <li><a href=#mechanics-of-lathe-turning-of-metals>Mechanics of lathe turning of metals</a>
 <ul>
+<li><a href=#terminology>Terminology</a></li>
 <li><a href=#a-close-look-at-a-metal-cutting-operation>A close look at a metal cutting operation</a></li>
+<li><a href=#material-removed>Material Removed</a></li>
 <li><a href=#cutting-depends-on-material-properties>Cutting depends on material properties</a></li>
 </ul>
 </li>
@@ -689,6 +694,9 @@ Possible ways of enhancing 3D sketches
 Subtractive manufacturing processes
 <a class=anchor href=#subtractive-manufacturing-processes>#</a>
 </h1>
+<ul>
+<li>Subtractive processes are those that begin with standard stock material (in rod, bar, sheet, plate form etc) and remove material to impart shape</li>
+</ul>
 <h2 id=types-of-subtractive-process>
 Types of subtractive process
 <a class=anchor href=#types-of-subtractive-process>#</a>
@@ -726,11 +734,9 @@ How can we cut away material? Some possibilities:
 <li>Collectively: “machining”</li>
 </ul>
 </li>
-<li>Abrasion &ndash; loads of cutting edges
+<li>Electric field
 <ul>
-<li>Grinding, sanding, lapping, polishing, filing</li>
-<li>Abrasive jet (water jet)
-- Sand blasting</li>
+<li>Electrical discharge machining (EDM): electrode, wire</li>
 </ul>
 </li>
 </ul>
@@ -745,11 +751,6 @@ How can we cut away material? Some possibilities:
 <li><em>Aside:</em> is melting really subtractive?</li>
 </ul>
 </li>
-<li>Electric field
-<ul>
-<li>Electrical discharge machining (EDM): electrode, wire</li>
-</ul>
-</li>
 <li>Misc
 <ul>
 <li>Chemical methods (
@@ -761,6 +762,15 @@ How can we cut away material? Some possibilities:
 </ul>
 </div>
 </div>
+<ul>
+<li>Abrasion &ndash; rough, abrasive wheels rotate at high speed across the surface of the component, removing particles of the workpiece. This approach is well suited even to the hardest of materials, although control of geometry is not as great as in cutting operations, for example.
+<ul>
+<li>Grinding, sanding, lapping, polishing, filing</li>
+<li>Abrasive jet (water jet)
+- Sand blasting</li>
+</ul>
+</li>
+</ul>
 <h3 id=why-would-we-choose-a-subtractive-process>
 Why would we choose a subtractive process
 <a class=anchor href=#why-would-we-choose-a-subtractive-process>#</a>
@@ -775,12 +785,13 @@ Some possible reasons to:
 <a class=anchor href=#some-possible-reasons-to>#</a>
 </h4>
 <ul>
-<li>Need tight tolerance</li>
+<li>Stock materials tend to be readily available (and inexpensive compared with the specialist powders that are used in some additive processes such as selective laser melting</li>
+<li>Precision and finish are exceptionally good – probably better than any other family of processes</li>
 <li>Need strength / structure</li>
 <li>Material cannot be molded (it&rsquo;s the only feasible process)</li>
 <li>Doesn&rsquo;t alter heat treatment (if feed and speed isn&rsquo;t too high)</li>
 <li>Short runs &ndash; no <em>specialized</em> tooling costs</li>
-<li>More control for iterative product development
+<li>Easy customization & More control for iterative product development – every component produced can be different if needed
 <ul>
 <li>All you need is to generate new <code>.gcode</code>; versus a whole mold</li>
 </ul>
@@ -793,13 +804,18 @@ Why not choose subtractive?
 <a class=anchor href=#why-not-choose-subtractive>#</a>
 </h4>
 <ul>
-<li>Slow for large run sizes compared to forming processes</li>
-<li>Fairly costly in comparison
+<li>Slow for large run sizes compared to forming processes
 <ul>
-<li>Large amount of waste generated</li>
+<li>Most processes are “serial”, meaning that each feature on the component needs to be produced sequentially, making the processes slow. This is in contrast, for example, to molding/casting operations where the entire component is produced in approximately one step.</li>
 </ul>
 </li>
-<li>Cuts across metal grains &ndash; not as strong as forged or possibly cast components Focus on material cutting Cutting operations rely on wedge-shaped teeth</li>
+<li>Fairly costly in comparison
+<ul>
+<li>Large amount of waste generated (low efficiency)</li>
+<li>High operator skill is often demanded, raising processing costs</li>
+</ul>
+</li>
+<li>Cuts across metal grains &ndash; not as strong as forged or possibly cast components focus on material cutting Cutting operations rely on wedge-shaped teeth</li>
 </ul>
 </div>
 </div>
@@ -808,12 +824,32 @@ Mechanics of lathe turning of metals
 <a class=anchor href=#mechanics-of-lathe-turning-of-metals>#</a>
 </h2>
 <ul>
+<li>To understand the key concepts of metal cutting, we focus specifically on lathe turning
+<ul>
+<li>i.e. a reduction in the diameter of a cylindrical component using a cutting tool.</li>
+</ul>
+</li>
+<li>We focus on the turning of metals and their alloys, although turning is also widely used to process polymeric materials and even composite materials (wood being one “composite” that is regularly turned).</li>
 <li>Cutting operations rely on wedge-shaped teeth
 <blockquote>
 <p>
 <img src=/docs/e-29/1/teeth.png alt>
 Lectures 4 and 5 will focus on cutting-based operations; Lecture 6 will look at some of the others A close look at a metal cutting operation</p>
 </blockquote>
+</li>
+</ul>
+<h3 id=terminology>
+Terminology
+<a class=anchor href=#terminology>#</a>
+</h3>
+<ul>
+<li>The workpiece (or simply work — the solid material that is to be reduced in diameter) is held firmly at one end in a chuck, whose jaws are tightened against the workpiece enough that the friction between the work and the chuck is always enough to resist the torques experienced by the work during cutting.</li>
+<li>The work is rotated, using an electric motor, at angular velocity .$\omega$, which is typically hundreds or even thousands of revolutions per minute. Let us call the axis of rotation z. If the radius of the workpiece is a at the location of cutting, then the linear, tangential velocity of the work relative to the tool is .$V_\text{cut} = \omega a$, provided that .$\omega$ is expressed in radians/second (to convert from rev/min to rad/sec multiply by .$2\pi/50$).</li>
+<li>The cutting tool is mounted on a <em>cross-slide/carriage</em> assembly, which enables precise control of the cutting edge along the z axis and also radially outwards from the z axis (let us call this radial direction the x axis). The carriage and cross-slide could be moved by manual screws or by computer-controlled motors with positional feedback.</li>
+<li>Once the work is rotating at its target speed, the tool is positioned slightly to the right of the end of the work and the tool is moved inwards in the x direction (towards the rotational z axis) by a distance .$d$, called the <em>depth of cut</em>. The tool is then moved from right to left along the workpiece at a velocity called the <em>feed rate</em> given by .$V_\text{feed} = f\omega$, where .$f$ is the feed, or the distance moved by the tool along the z axis in one revolution of the work.
+<ul>
+<li>Feed rate is a velocity, while feed is a distance per revolution — this subtlety of terminology is important to note. Note that in almost any turning process, .$V_\text{cut} &#187; V_\text{feed}$</li>
+</ul>
 </li>
 </ul>
 <h3 id=a-close-look-at-a-metal-cutting-operation>
@@ -833,10 +869,10 @@ A close look at a metal cutting operation
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>Vertical (.$\alpha$ = 0): material piles up and lot of heat is generated</li>
+<li>Rake angle vertical (.$\alpha = 0$): material piles up and lot of heat is generated</li>
 <li>Rake angle too large: tool is fragile, can dig into material</li>
 <li>Rake angle just right: cutting happens close to tool</li>
-<li>What is “just right” for the rake angle?
+<li>What is “just right” for the rake angle .$\alpha$?
 <ul>
 <li>.$30^\circ$ is a good
 <a href=https://en.wikipedia.org/wiki/Magic_number_%28programming%29>magic</a> starting value</li>
@@ -856,12 +892,22 @@ A close look at a metal cutting operation
 </div>
 </li>
 </ul>
+<h3 id=material-removed>
+Material Removed
+<a class=anchor href=#material-removed>#</a>
+</h3>
+<ul>
+<li>The metal that is cut, or shaved, away from the workpiece is called the chip, and depending on (1) how brittle or ductile the work material is, (2) the shape of the cutting tool, and (3) the speed of cutting, the chip may be either a fairly continuous spiral or a series of small chips that regularly fracture.</li>
+<li>Many small chips are desirable from a practical perspective because, unlike very long continuous chips, they do not tend to become tangled around the work and potentially scratch it.</li>
+<li>Cutting tools will often have protrusions on their front surface that are designed to break up a chip as it comes off the workpiece.</li>
+<li>So in turning, a spiral of material is being removed from the work that has initial cross-section .$d \times f$ and with the tool sweeping through the material with velocity .$V$. Thus, the volumetric removal rate of material is .$R_\text{MR} = Vdf$.</li>
+</ul>
 <h3 id=cutting-depends-on-material-properties>
 Cutting depends on material properties
 <a class=anchor href=#cutting-depends-on-material-properties>#</a>
 </h3>
 <ul>
-<li>More ductile materials (aluminum, mild steel, copper etc): long, spiral-shaped chips of material</li>
+<li>More <em>ductile</em> materials (aluminum, mild steel, copper etc): long, spiral-shaped chips of material</li>
 <li>More brittle materials (e.g. cast iron): comes off in short chips
 <blockquote>
 <p><figure><img src=/docs/e-29/1/mat.png>
@@ -882,9 +928,9 @@ Basic types of chips produced in metal cutting and their micrographs:<br>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/83595894d016c990d44d4699c538c266a080680d title="Last modified by Max Vogel | February 1, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/44c9e0c197dbad740567d49025075d7dd80ad7a9 title="Last modified by Max Vogel | February 5, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 1, 2022</span>
+<span>February 5, 2022</span>
 </a>
 </div>
 <div>
@@ -938,7 +984,9 @@ Basic types of chips produced in metal cutting and their micrographs:<br>
 </li>
 <li><a href=#mechanics-of-lathe-turning-of-metals>Mechanics of lathe turning of metals</a>
 <ul>
+<li><a href=#terminology>Terminology</a></li>
 <li><a href=#a-close-look-at-a-metal-cutting-operation>A close look at a metal cutting operation</a></li>
+<li><a href=#material-removed>Material Removed</a></li>
 <li><a href=#cutting-depends-on-material-properties>Cutting depends on material properties</a></li>
 </ul>
 </li>

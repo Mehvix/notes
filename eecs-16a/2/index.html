@@ -8,13 +8,13 @@
 <meta property="og:description" content="02-01: Linear (in)dependance, Matrix Transformations #    Slides  Note 3   Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/2/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-31T16:19:58-08:00">
+<meta property="article:modified_time" content="2022-02-04T16:31:15-08:00">
 <title>Week 2: (In)dependence | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.c6961cef566494f69059475a564afeb3643fbf8c415630f81b1722091aaf6c72.js integrity="sha256-xpYc71ZklPaQWUdaVkr+s2Q/v4xBVjD4GxciCRqvbHI=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.e2eb406887565d6cc3fc77f0cbbc93ea6cbeab2493f9bc8605cd5e1e935d53e5.js integrity="sha256-4utAaIdWXWzD/Hfwy7yT6my+qyST+byGBc1eHpNdU+U=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -49,6 +49,9 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
 </li>
 </ul>
 </li>
@@ -242,6 +245,13 @@ pass.mehvix.com
 </li>
 <li><a href=#row-perspective>Row Perspective</a></li>
 <li><a href=#span>Span</a></li>
+</ul>
+</li>
+<li><a href=#02-03-intro-to-circuit-analysis>02-03: Intro to Circuit Analysis</a>
+<ul>
+<li><a href=#tiny-bit-of-solid-state-physics>Tiny Bit of Solid-State Physics</a></li>
+<li><a href=#electrical-quantities>Electrical Quantities</a></li>
+<li><a href=#circuit-diagram>Circuit Diagram</a></li>
 </ul>
 </li>
 </ul>
@@ -465,7 +475,12 @@ Row Perspective
 </ul>
 </li>
 <li>This intuition suggests that the <strong>number of variables we can recover is equal to the number of unique measurements</strong>, or the number of linearly independent rows &ndash; this formal proof will come in a later note when we talk about rank.</li>
-<li>Now have two perspectives: in the matrix, each row represents a measurement, while each column corresponds to a variable. Therefore, if the columns are linearly dependent, then we have at least one redundant variable. From the perspective of rows, linear dependency tells us that we have one or more redundant measurements.</li>
+<li>Now have two perspectives: in the matrix, each row represents a measurement, while each column corresponds to a variable.
+<ul>
+<li>Therefore, if the columns are linearly dependent, then we have at least one redundant variable.</li>
+<li>From the perspective of rows, linear dependency tells us that we have one or more redundant measurements.</li>
+</ul>
+</li>
 </ul>
 <h2 id=span>
 Span
@@ -474,11 +489,15 @@ Span
 <ul>
 <li>Span of the columns of .$A$ is the set of <em>all</em> linear combinations of vectors .$\vec b$ such that .$A\vec x = \vec b$ has a solution
 <ul>
-<li>Mathematically, .$\text{span}(\vec v_1, \dots \vec v_2) = \bigg\{\sum_{i=1}^N \alpha_i \vec v_i\ |\ \alpha_i \in \mathbb{R}\bigg\}$</li>
-<li>i.e. the set of all vectors that can be reached by all possible linear combinations of the columns of .$A$</li>
+<li>.$\exists \vec x$ s.t. .$A \vec x = \vec b \Longrightarrow \vec b \in \text{span(cols}(A))$</li>
 </ul>
 </li>
-<li>A set of vectors is linearly dependent if any one of the vectors is in the span of the remaining vectors.</li>
+<li>That is, the set of all vectors that can be reached by all possible linear combinations of the columns of .$A$
+<ul>
+<li>Formally, .$\text{span}(\vec v_1, \dots, \vec v_N) = \bigg\{\sum_{i=1}^N \alpha_i \vec v_i\ |\ \alpha_i \in \mathbb{R},\ \vec a_i \in \mathbb{R}^{M}\bigg\}$</li>
+</ul>
+</li>
+<li>A set of vectors is <em>linearly dependent</em> if any one of the vectors is in the span of the remaining vectors.</li>
 <li>span, range, and column space of .$A$ all refer to the span of the columns of .$A$
 <div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
 <iframe src=https://www.youtube.com/embed/k7RM-ot2NWY style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
@@ -491,18 +510,128 @@ Span
 $$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix} + \beta \begin{bmatrix} 1\\ -1\\ \end{bmatrix}; \alpha, \beta \in \mathbb{R}\bigg\} = \mathbb{R}^{2}$$</li>
 <li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & -1 \\ 1 & -1\\
 \end{bmatrix}$?
-$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix}; \alpha \in \mathbb{R}\bigg\} = \text{line } x_1 = x_2$$</li>
+$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix}; \alpha \in \mathbb{R}\bigg\} = \text{line } (x_1 = x_2)$$</li>
 </ul>
 </div>
 </details>
 </li>
 </ul>
+<h1 id=02-03-intro-to-circuit-analysis>
+02-03: Intro to Circuit Analysis
+<a class=anchor href=#02-03-intro-to-circuit-analysis>#</a>
+</h1>
+<ul>
+<li>
+<a href=https://eecs16a.org/lecture/Lecture2B_Slides.pdf>Slides</a></li>
+<li>Note 11
+<a href=https://eecs16a.org/lecture/Note11A.pdf>A</a>,
+<a href=https://eecs16a.org/lecture/Note11B.pdf>B</a></li>
+</ul>
+<hr>
+<p>
+<img src=/docs/eecs-16a/2/four.png alt></p>
+<ul>
+<li>There are four main steps involved when designing information devices and systems
+<ol>
+<li>Analog World</li>
+<li>Sensor Input</li>
+<li>Data Processing</li>
+<li>Actuation (16B)</li>
+</ol>
+</li>
+</ul>
+<h2 id=tiny-bit-of-solid-state-physics>
+Tiny Bit of Solid-State Physics
+<a class=anchor href=#tiny-bit-of-solid-state-physics>#</a>
+</h2>
+<p>
+<img src=/docs/eecs-16a/2/ssp.png alt></p>
+<ul>
+<li>Conductors have lots of electrons
+<ul>
+<li>Move around very easily</li>
+<li>E.x. copper, gold, silver, water</li>
+</ul>
+</li>
+<li>Conductors have lots of electrons
+<ul>
+<li>But they are at an energy level where they need to be given some energy level (e.x 1 eV) to move</li>
+<li>E.x. solar cell, diodes</li>
+</ul>
+</li>
+<li>Insulators do not let electrons pass through them
+<ul>
+<li>E.x. capacitors have a big insulator in the middle, that is, current only goes through a capacitor when the magic smoke is released</li>
+</ul>
+</li>
+</ul>
+<h2 id=electrical-quantities>
+Electrical Quantities
+<a class=anchor href=#electrical-quantities>#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Symbol</th>
+<th>Units</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current</td>
+<td>I</td>
+<td>Amperes, .$A$</td>
+<td>Flows through an element</td>
+</tr>
+<tr>
+<td>Voltage</td>
+<td>V</td>
+<td>Volts, .$V$</td>
+<td>Applied across an element</td>
+</tr>
+<tr>
+<td>Resistance</td>
+<td>R</td>
+<td>Ohms, .$\Omega$</td>
+<td>Opposition to current flow</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>These are all related via <strong>Ohm&rsquo;s Law:</strong> .$V_\text{element} = R \cdot I_\text{element}$</li>
+<li>Voltage .$\pm$ depends on <em>reference point</em></li>
+<li>Current .$\pm$ depends on <em>direction</em></li>
+</ul>
+<h2 id=circuit-diagram>
+Circuit Diagram
+<a class=anchor href=#circuit-diagram>#</a>
+</h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Collection of elements, where each element has some voltage across it and some current through it</li>
+<li>Two main elements:
+<ol>
+<li><strong>Notes:</strong> Points where <em>elements</em> meet</li>
+<li><strong>Junctions:</strong> Points where different <em>material</em> meet</li>
+</ol>
+</li>
+<li>Voltage = difference of two potential</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/eecs-16a/2/diag.png alt>
+</div>
+</div>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/83595894d016c990d44d4699c538c266a080680d title="Last modified by Max Vogel | February 1, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/44c9e0c197dbad740567d49025075d7dd80ad7a9 title="Last modified by Max Vogel | February 5, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 1, 2022</span>
+<span>February 5, 2022</span>
 </a>
 </div>
 <div>
@@ -532,6 +661,13 @@ $$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\
 </li>
 <li><a href=#row-perspective>Row Perspective</a></li>
 <li><a href=#span>Span</a></li>
+</ul>
+</li>
+<li><a href=#02-03-intro-to-circuit-analysis>02-03: Intro to Circuit Analysis</a>
+<ul>
+<li><a href=#tiny-bit-of-solid-state-physics>Tiny Bit of Solid-State Physics</a></li>
+<li><a href=#electrical-quantities>Electrical Quantities</a></li>
+<li><a href=#circuit-diagram>Circuit Diagram</a></li>
 </ul>
 </li>
 </ul>
