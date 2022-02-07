@@ -8,13 +8,13 @@
 <meta property="og:description" content="01-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-31T16:19:58-08:00">
+<meta property="article:modified_time" content="2022-02-06T17:17:46-08:00">
 <title>Week 1: Gaussian Elim. & Matrices + Vectors | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.e2eb406887565d6cc3fc77f0cbbc93ea6cbeab2493f9bc8605cd5e1e935d53e5.js integrity="sha256-4utAaIdWXWzD/Hfwy7yT6my+qyST+byGBc1eHpNdU+U=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.450eb660f97f6c078ddd36c6d3991aa695400e9f32173038859ed3d33d8d1a9b.js integrity="sha256-RQ62YPl/bAeN3TbG05kappVADp8yFzA4hZ7T0z2NGps=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -52,6 +52,12 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/attn/>Attention</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
 </li>
 </ul>
 </li>
@@ -555,6 +561,7 @@ Standard Unit Vector:
 </h4>
 <ul>
 <li>A standard unit vector is a vector with all components equal to .$0$ except for one element, which is equal to .$1$. A standard unit vector where the .$i$th position is equal to .$1$ is written as .$\vec e_i$</li>
+<li>The system .$e_1, \dots, e_n \in \mathbb{R}^{n}$ is called the <em>standard basis</em> in .$\mathbb{R}^{n}$</li>
 </ul>
 </div>
 <div class="flex-even markdown-inner">
@@ -676,9 +683,9 @@ Vector Transpose
 x_1 \\
 x_2 \\
 \vdots \\
-x_n
-\end{bmatrix},$$
-$$\vec x^T = \begin{bmatrix} x_1 & x_2 & \dots & x_n \end{bmatrix} $$
+x_N
+\end{bmatrix}; \vec x \in \mathbb{R}^{N \times 1}$$
+$$\vec x^T = \begin{bmatrix} x_1 & x_2 & \dots & x_N \end{bmatrix}; \vec x^T \in \mathbb{R}^{1 \times N} $$
 </div>
 </div>
 <ul>
@@ -692,6 +699,7 @@ $$\vec x^T = \begin{bmatrix} x_1 & x_2 & \dots & x_n \end{bmatrix} $$
 <li>That is to say, for any vector .$\vec x$ (with at least two components), .$\vec x ^T \neq \vec x$</li>
 </ul>
 </li>
+<li>The transpose of a matrix has a very nice interpretation in terms of linear transformations, namely it gives the so-called <em>adjoint</em> transformation.</li>
 </ul>
 <h4 id=vector-vector-multiplication>
 Vector-Vector Multiplication
@@ -868,9 +876,9 @@ Matrix-Matrix Multiplication
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/83595894d016c990d44d4699c538c266a080680d title="Last modified by Max Vogel | February 1, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/66ef7758a1c6d298f0d29e475391f39fbce7077a title="Last modified by Max Vogel | February 7, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 1, 2022</span>
+<span>February 7, 2022</span>
 </a>
 </div>
 <div>
