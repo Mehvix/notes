@@ -337,4 +337,66 @@ __Disjuncture?__
     - "The plenary power doctrine protects the federal government from claims that it is violating an individual's constitutional right to equal protection when it imposes discriminatory burdens on non-US citizens." - [CUNY School of Law](https://www.law.cuny.edu/legal-writing/forum/immigration-law-essays/goyal/#:~:text=The%20plenary%20power%20doctrine%20protects,burdens%20on%20non%2DUS%20citizens.)
         - i.e. Congress has 'planery power' over who can enter and exit the U.S.
 
+- __Demographic Complexity/An Explosion of Immigrants__
+    - Asian Immigrants
+        - (incomplete)
+        - 370,000 "arrivals" of Chinese to Hawaii and CA from late 1940's and early 1880's.
+        - 1880's to about 1910: 400,000 "arrivals" of Japnese to Hawaii and the West Coast.
+        - 1900-1933: 7,000 "arrivals" of Korean, 7,000 Asian Indian, 180,000 Filipinos to Hawaii and mainland.
+    - European Immigrants
+        - 1850-1930: 35 million European immigrants.
+
+- __Geoolitics and Push and Pull__
+    - __Colonialism and internal instability__
+        - European colnial involvement
+        - American colonial involvement
+        - Internal instability in the modern nation-state era
+    - __Labor and Capital__
+        - Racialization of Labor allegations of unfair wage and job competition increases.
+
+- __War and internal instability in China__
+    - _Anglo-Chinese War of 1856-60_
+        - Piracy change against British citizen leading to war
+        - Ports and missionaries
+    - _Taiping Rebellion 1850-1864_
+        - Christianized Chinese believing brother of Jesus led rebellion across Central and South China, impacting Guangdong in particular. Estimated 10 million deaths.
+
+- __Inequity at home tied to colonialism pushes and pulls Filipinos out__
+    - Spanish-American War of 1898; and resultant Treaty of Paris resulted in U.S. possession of Phillipines. Takaki writes that Filipino peasants found that the rich rice lands they cultivated were becoming  owned by wealthy men, turning them into sharecroppers.
+
+- __Immigration Laws and Challenges__
+    - __Labor and Capital__
+        - As Chan notes, colonial administrators needed cheap physical labor for their projects, thus the migrants to such colonies were disproportionately young men.  In the U.S. mainland context this resulted in labor competition with European Americans in particular, in the immediate post-Civil War era.
+    - __Legal Outcomes__
+        - The Chinese Exclusion Act triggered a range of challenges by Asian Americans, Chinese in particular early on, supported by funds from co-ethnic organizations such as the Chinatown based Chinese Benevolent Association.
+    
+- __Citizenship: Assimilation vs. Segregation__
+    - What does the exclusion exeprience of Asian Americans (early Chinese in particular) from citizenship say about the segregation of African Americans and vice versa?
+
+- __A "neutral principle" in the "Rule of Law" and the assertion of Fourteenth Amendment protections for _Carolene Products_ 'discrete and insular minorities'"__
+    - __Neutral Principle__
+        - "Rule of Law": Often stated as a broader checks and balances based principle with strong consideration of the authirity of each branch as well as the limitations on such authority. Historically asserted by the judicial branch to avoid ruling on "political" questions.
+    - __Fourteenth Amendment__
+        - As a tool to remedy discrimination, (specifically race early in U.S. history). _Carolene Products'_ asserted view that allegations of discrimination against "discrete and insular minorities" requires _close scrutiny_ by courts. This lead into the standard applied in _Korematsu (1944)_.
+
+- __The American Federation of Labor's "Meat vs. Rice: American Manhood vs. Asiatic Cooliesim"__
+    - Labor and Capital Conflict
+        - Social Construction of __Race, Gender, and Class__
+        - Close tie between rise of American unionism and trade associations with racialization through Samual Gompers-elected first president of the AFl in 1886.
+
+- __AFK-CIO June 17, 2020 "Condemning and Combatting Anti-Asian Racism" statement__
+    > "As a labor movement, we must acknowledge our own painful past on this and other racial justice issues. In 1882, then-American Federation of Labor (AFL) President Samuel Gompers pushed for the passage of the Chinese Exclusion Act, citing the dangers of "Asiatic" men in an essay published by the AFL and submitted as Senate testimony. Fear among White workers propelled this legislation, the first to bar an entire race from legslly entering the United States.
+
+- __The "Citizenship Clause"__
+    - Section 1: "All persons born or naturalized in the United States and subject to the jurisdiction thereof, are citizens of the United States and of the State wehrein they reside."
+
+- __The Fourteenth Amendment's "Citizenship Clause": Asian American citizenship rights tied again to slavery and citizenship rights__
+    - Prior to the 14th Amendment's passage on June 8. 1866:
+        - _Dred Scott v. Sandford (1857)_, triggered federal legislative response with
+        - _Civil Rights Act of 1866_, asserting all persons born in U.S. or naturalized were citizens of U.S. and residence state
+        - Wong Kim Ark challenges his citizenship exlcusion 1898.
+
+- __Born in the USA: [_Wong Kim Ark, 1898_](https://www.oyez.org/cases/1850-1900/169us649) Another Chinese Exlcusion Act Case__
+    - Given the Chinese Exclusion Act of 1882, was a born in the USA person of Chinese descent a citizen?
+        > "Because Wong was born in the United States and his parents were not “employed in any diplomatic or official capacity under the Emperor of China,” the Citizenship Clause of the Fourteenth Amendment automatically makes him a U.S. citizen." - Oyez
 
