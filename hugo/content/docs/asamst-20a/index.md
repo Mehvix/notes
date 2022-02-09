@@ -400,3 +400,81 @@ __Disjuncture?__
     - Given the Chinese Exclusion Act of 1882, was a born in the USA person of Chinese descent a citizen?
         > "Because Wong was born in the United States and his parents were not “employed in any diplomatic or official capacity under the Emperor of China,” the Citizenship Clause of the Fourteenth Amendment automatically makes him a U.S. citizen." - Oyez
 
+## Discussion: Week 4
+
+- __Major Themes__
+    - Early Asian Immigration/Emigration
+        - Influx of Asians to the U.S. start during the mid-19th century
+            - 370,000 Chinese (early 1840s - late 1940s)
+            - 400,000 Japanese (1880s)
+            - 7,000 Koreans (early 1900s to mid-1900s)
+            - 7,000 Asian Indians (early 1800s)
+            - (incomplete)
+
+- __Push and Pull Factors__
+    - By definition: _factors that caused large groups to emigrate out of a country and or immigrate to another country._
+    - __China__
+        - Push
+            - Economic Instability:
+                - First Opium Wars (1839 - 1842)
+                - Second Opium Wars (1857 - 1859)
+            - Internal instability
+                - Taiping Rebellion
+            - Natural Disasters:
+                - Drought in Henan Province (1847)
+                - Flooding of Yangtze River
+                - Famine in Guangdong
+            - (incomplete)
+
+- __Japan__
+    - Push: Economic instability
+    - Pull: Job opportunity (i.e. farming, fishing)
+
+- __Philippines__
+    - Push: Internal Instability (i.e. Spanish-American War of 1898 and the Treaty of Paris)
+    - Pull: Economic opportunities (incomplete)
+
+- __U.S. taking advantage of early Asian migrants__
+    - Cheap labor and capital
+        - mostly men
+        - cheap physical labor
+        labor competition with European Americans
+
+- __U.S. - Asia Relations__
+    - In early 19th century, white nativists spread xenophobic propaganda -> __Chinese Exclusion Act__
+        - First law in the U.S. that barred immigration based on race
+    - With World War II, President Roosevelt passed __Executive Order 9066__
+        - Japanese Americans were incarcerated, many of whom were naturalized citizens
+
+- __Current Event 1: _How Covid-19 reignited long-standing xenophobia against Asians (Specifically Chinese)___
+    - "Forever Foreigner" stereotype persists
+    - Anti-Chinese Rhetoric from political leaders fuels the fire
+    - Violence rates against Asians rose after Covid-19 hit the US
+    - (incomplete)
+
+- __Current Event 2: _The Model Minority Myth of Asian-American Workers Today___
+    - Many Asian-Americans in workforce; less in higher positions
+    - "Bamboo Ceiling" - glass ceiling for Asian Americans
+    - Model Minority Myth: Asians painted as hardworking, smart and faithful but also deeemed workers who lacked the ambition, creativity and confidence that being a leader requires
+    - _Where do we go from here?_
+        - Change the qualities of what someone in leadership looks like
+        - Give more positions to Asian-Americans
+        - _What happens when there are more Asian-Amerians in the workplace?_
+            - Studies show a better environment
+
+- __Current Event 3: _Biden-Harris Administration Advances Equality and Opportunity for Asian American, Native Hawaiian, and Pacific Islander (incomplete)___
+    - __Advancing safety for Asian Americans__
+        - Combating hate and violence
+        - COVID-19 Hate Crimes Act
+            1. Helps local and state law enforcement accurately report hate crimes to the FBI
+            2. Helps combat the potential language barrier stopping AAPI community members from reporting hate crimes
+        - Research and Education (NSF)
+    - __Advancing Immigration Reform__
+        - United States Citizenship Act
+        - Promoting naturalization
+        - Addressing the backlog for U Visa Petitioners
+
+
+
+
+
