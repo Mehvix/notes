@@ -10,13 +10,13 @@
 01-20: Introduction to Imaging, Tomography, and Linear Equations #    Slides Notes 1A, 1B   System Design #   We use devices, such as imagers, that provide information, such as a visual representation of a system  Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/0/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-01-31T16:19:58-08:00">
+<meta property="article:modified_time" content="2022-02-10T10:56:14-08:00">
 <title>Week 0: System Design & Linear Equations | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.b4337ffad35e1edff140f4e6359c7a5477c4b90d76be03fa2e83a9ae203f4f0d.js integrity="sha256-tDN/+tNeHt/xQPTmNZx6VHfEuQ12vgP6LoOpriA/Tw0=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.4451149535cd05797a9bb3de6e76c2bf0e60e7c4f383cf825b490553d962d9a9.js integrity="sha256-RFEUlTXNBXl6m7PebnbCvw5g58Tzg8+CW0kFU9li2ak=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -76,7 +76,10 @@
 <a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence</a>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
 </li>
 </ul>
 </li>
@@ -94,6 +97,9 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes</a>
 </li>
 </ul>
 </li>
@@ -357,7 +363,13 @@ Linear Algebra
 <li>Pass the summation of value 1 and value 2 through the system to get a result.</li>
 </ol>
 </li>
-<li>If the result of both approaches are equal, then distributivity holds. Otherwise, distributivity does not hold.</li>
+<li>If the result of both approaches are equal, then distributivity holds. Otherwise, distributivity does not hold.
+<blockquote class="book-hint info">
+<p>We can account for both Homogeneity and Super position by proving the function holds under the following equation:
+$$\alpha_1 f(x_1, \dots x_n) + \dots + \alpha_n f(y_1, \dots, y_n) = f(\alpha_1 x_1 +\alpha_n y_1, \dots, \alpha_1 x_n + \alpha_n y_n)$$
+where .$y_n$ is a some scalar
+</blockquote>
+</li>
 </ul>
 </li>
 </ol>
@@ -436,7 +448,7 @@ Note 1AB Extra
 <ul>
 <li><strong>Affine function:</strong> a function that can be written as a sum of a linear function and a scalar constant, so though .$\beta (x)=2x+1$ is not <em>linear</em>, it is still <em>affine</em>
 <ul>
-<li>Notice that the definition of affine functions includes all linear functions (by setting the scalar constant to 0), so every linear function is also affine, though not vice-versa.
+<li>Notice that the definition of affine functions includes all linear functions (by setting the scalar constant to 0), so <strong>every linear function is affine</strong>, but not all linear functions are affine.
 <blockquote class="book-hint warning">
 <p>These definitions mean that while all functions describing a line can be shown to be affine, not all of them are linear. This has the unfortunate consequence that, in informal conversation, affine functions may be called linear, since both describe a line. This usage, though common, is <strong>wrong!</strong>, as seen with .$\beta (x)$ above
 </blockquote>
@@ -468,9 +480,9 @@ $$a_1x_1 + a_2 x_2 + \dots = a_n x_n + b_f = a_1&rsquo; x_1 + a_2 ' x_2 + \dots 
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/83595894d016c990d44d4699c538c266a080680d title="Last modified by Max Vogel | February 1, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/0028320e30108cf9d65cc7f5844c376ca6a249d0 title="Last modified by Max Vogel | February 10, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 1, 2022</span>
+<span>February 10, 2022</span>
 </a>
 </div>
 <div>

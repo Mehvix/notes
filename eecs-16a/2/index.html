@@ -4,17 +4,17 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="02-01: Linear (in)dependance, Matrix Transformations #    Slides  Note 3   Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable.">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 2: (In)dependence">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 2: (In)dependence & Circuit Analysis">
 <meta property="og:description" content="02-01: Linear (in)dependance, Matrix Transformations #    Slides  Note 3   Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/2/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-06T17:17:46-08:00">
-<title>Week 2: (In)dependence | notes.mehvix.com</title>
+<meta property="article:modified_time" content="2022-02-10T10:56:14-08:00">
+<title>Week 2: (In)dependence & Circuit Analysis | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.b4337ffad35e1edff140f4e6359c7a5477c4b90d76be03fa2e83a9ae203f4f0d.js integrity="sha256-tDN/+tNeHt/xQPTmNZx6VHfEuQ12vgP6LoOpriA/Tw0=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.4451149535cd05797a9bb3de6e76c2bf0e60e7c4f383cf825b490553d962d9a9.js integrity="sha256-RFEUlTXNBXl6m7PebnbCvw5g58Tzg8+CW0kFU9li2ak=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -74,7 +74,10 @@
 <a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/2/ class=active>Week 2: (In)dependence</a>
+<a href=http://notes.mehvix.com/eecs-16a/2/ class=active>Week 2: (In)dependence & Circuit Analysis</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
 </li>
 </ul>
 </li>
@@ -92,6 +95,9 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes</a>
 </li>
 </ul>
 </li>
@@ -233,7 +239,7 @@ pass.mehvix.com
 <label for=menu-control>
 <img src=/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Week 2: (In)dependence</strong>
+<strong>Week 2: (In)dependence & Circuit Analysis</strong>
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -422,6 +428,7 @@ Theorem 3.2
 </div>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
+<br>
 <ul>
 <li>By the definition of matrix-vector multiplication, we can compactly write the expression above:</li>
 </ul>
@@ -698,6 +705,15 @@ Resistor
 <img src=/docs/eecs-16a/2/resist.png alt>
 </div>
 </div>
+<ul>
+<li>Limit check
+<ul>
+<li>The slope is proportional to .$R^{-1}$, that is, the larger the resistance the lower the slope</li>
+<li>.$\lim_{R \to 0}$ results in an wire (above)</li>
+<li>.$\lim_{R \to \infty}$ results in an open circuit (below)</li>
+</ul>
+</li>
+</ul>
 <h4 id=open-circuit>
 Open Circuit:
 <a class=anchor href=#open-circuit>#</a>
@@ -804,49 +820,36 @@ $$\sum_\text{loop} V_k = 0$$</li>
 <img src=/docs/eecs-16a/2/kvl.png alt>
 </div>
 </div>
+<h4 id=height-analogy>
+Height Analogy
+<a class=anchor href=#height-analogy>#</a>
+</h4>
 <blockquote>
 <p>If you walk in a circle (a loop) so that you end up back where you started, than your total change in elevation must be zero, no matter how much you go up or down.
 If you walk in a line, ending up somewhere different, than your total change in elevation is equal to the sum of all of the elevation changes along the way.
-<img src=/docs/eecs-16a/2/kvl2.png alt></p>
+<img src=/docs/eecs-16a/2/kvl2.png alt>
+| > | Real World | Analogy |
+| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- |
+| The sum of voltages across the elements connected in a loop must be equal to zero | “what goes up must come down” |
+| If the arrow corresponding to the loop goes into the “+” of an element, we subtract the voltage across that element. | We went “downhill” from higher voltage to lower voltage so we lost “elevation.” |
+| If the arrow goes into the “-” of an element, we add the voltage across that element | This is like going “uphill” |</p>
 </blockquote>
-<table>
-<thead>
-<tr>
-<th>Real World</th>
-<th>Analogy</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The sum of voltages across the elements connected in a loop must be equal to zero</td>
-<td>“what goes up must come down”</td>
-</tr>
-<tr>
-<td>If the arrow corresponding to the loop goes into the “+” of an element, we subtract the voltage across that element.</td>
-<td>We went “downhill” from higher voltage to lower voltage so we lost “elevation.”</td>
-</tr>
-<tr>
-<td>If the arrow goes into the “-” of an element, we add the voltage across that element</td>
-<td>This is like going “uphill”</td>
-</tr>
-</tbody>
-</table>
 <h3 id=ohms-law-and-resistors>
 Ohm’s Law and Resistors
 <a class=anchor href=#ohms-law-and-resistors>#</a>
 </h3>
 <p>$$V_\text{element} = I_\text{element}R$$</p>
 <ul>
-<li>The unit of .$R$ is Volts/Amperes, or more commonly “Ohms” .$\Omega$.</li>
+<li>The unit of .$R$ is Volts/Amperes, called Ohms .$\Omega$.</li>
 <li>See also:
 <a href=/physics-7b/25/#253-ohms-law-resistance-and-resistors>25.3 Ohm’s Law: Resistance and Resistors</a></li>
 </ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/66ef7758a1c6d298f0d29e475391f39fbce7077a title="Last modified by Max Vogel | February 7, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/0028320e30108cf9d65cc7f5844c376ca6a249d0 title="Last modified by Max Vogel | February 10, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 7, 2022</span>
+<span>February 10, 2022</span>
 </a>
 </div>
 <div>

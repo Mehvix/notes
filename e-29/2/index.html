@@ -8,13 +8,13 @@
 <meta property="og:description" content="02-01 Cutting-based Processes #  Modeling of material cutting #    Chips are created and separated from the work by plastic deformation, i.e. shearing, of the work.  Sheer plane is created by the tool (teal segment) Throughout the shear plane, the shear stress must equal or exceed the shear strength of the work material for cutting to proceed. The value of the shear angle is not something that we directly control, but depends on several factors.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/e-29/2/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-04T16:31:15-08:00">
+<meta property="article:modified_time" content="2022-02-10T10:56:14-08:00">
 <title>Week 2: Cutting-based Processes & Other Subtractive Processes | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.b4337ffad35e1edff140f4e6359c7a5477c4b90d76be03fa2e83a9ae203f4f0d.js integrity="sha256-tDN/+tNeHt/xQPTmNZx6VHfEuQ12vgP6LoOpriA/Tw0=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.4451149535cd05797a9bb3de6e76c2bf0e60e7c4f383cf825b490553d962d9a9.js integrity="sha256-RFEUlTXNBXl6m7PebnbCvw5g58Tzg8+CW0kFU9li2ak=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -74,7 +74,10 @@
 <a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence</a>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
 </li>
 </ul>
 </li>
@@ -92,6 +95,9 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/e-29/2/ class=active>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes</a>
 </li>
 </ul>
 </li>
@@ -264,7 +270,11 @@ pass.mehvix.com
 <ul>
 <li><a href=#milling>Milling</a></li>
 <li><a href=#boring>Boring</a></li>
-<li><a href=#broaching>Broaching</a></li>
+<li><a href=#broaching>Broaching</a>
+<ul>
+<li><a href=#example-geometry>Example Geometry</a></li>
+</ul>
+</li>
 <li><a href=#tapping>Tapping</a></li>
 <li><a href=#punching>Punching</a></li>
 <li><a href=#other-subtractive-processes-not-based-on-plastic-deformation>Other subtractive processes not based on plastic deformation</a>
@@ -758,7 +768,8 @@ Drilling
 <li>
 <a href="https://youtu.be/bdD57NeOuio?t=127">Drilling</a>
 <ul>
-<li>You end up with scratches on the side wall when drilling</li>
+<li>Flutes carry away material</li>
+<li>However, you end up with scratches on the side wall when drilling</li>
 </ul>
 </li>
 <li>Reaming
@@ -793,7 +804,8 @@ Broaching
 <ul>
 <li>Tool used to get square (or non-circle) holes
 <ul>
-<li>How keyways are put into gears
+<li>How keyways are put into gears</li>
+<li>Cut per tooth is analogous to the feed
 <figure><img src=/docs/e-29/1/broach.png>
 </figure>
 </li>
@@ -801,6 +813,10 @@ Broaching
 </li>
 </ul>
 <blockquote>
+<h3 id=example-geometry>
+Example Geometry
+<a class=anchor href=#example-geometry>#</a>
+</h3>
 <p><figure><img src=/docs/e-29/1/broach2.png>
 </figure>
 (a) Typical parts finished by internal broaching.<br>
@@ -812,7 +828,13 @@ Tapping
 <a class=anchor href=#tapping>#</a>
 </h2>
 <ul>
-<li>Creates an internal (though external of possible, just uncommon) thread
+<li>Creates an internal (though external of possible, just uncommon) threads with no pitch nor diameter</li>
+<li>You start by creating a hole a bit smaller than the minor diameter, then drive the tap in
+<ul>
+<li>Tend to be treated to ensure they&rsquo;re strong enough</li>
+</ul>
+</li>
+<li>Notice that the diameter tapers off, so you&rsquo;re progressively enlarging the hole
 <figure><img src=/docs/e-29/1/tap.png>
 </figure>
 </li>
@@ -822,9 +844,11 @@ Punching
 <a class=anchor href=#punching>#</a>
 </h2>
 <ul>
-<li>Creates an edge using shear forces &ndash; think industrial hole punch
+<li>Comes in a set including both the punch and die</li>
+<li>Creates an edge using shear forces &ndash; think industrial hole puncher
 <ul>
-<li>There has to be a gap between the punch and die; around 6-10% of the desired hole size</li>
+<li>There has to be a gap between the punch and die; around 6-10% of the desired hole size (varies with type of material)</li>
+<li>Otherwise tool or medium can be damaged</li>
 </ul>
 </li>
 <li>
@@ -841,9 +865,21 @@ Laser cutting
 <a class=anchor href=#laser-cutting>#</a>
 </h3>
 <ul>
-<li>In laser cutting, an intense beam of light imparts heat locally to the material and converts the solid either to liquid or directly to vapor to form an edge. In ablation, a laser beam vaporizes material from the surface of a component to shape it without cutting all the way through it.</li>
-<li>Scanning laser beam melts and evaporates target material</li>
-<li>A thin band of material is removed: the <em>kerf</em></li>
+<li>In laser cutting, an intense beam of light imparts heat locally to the material and converts the solid either to liquid or directly to vapor to form an edge
+<ul>
+<li>Where this melted material goes (may) matter depending on the job</li>
+<li>Extremely quick</li>
+<li>With the right type of laser you can cut many materials</li>
+</ul>
+</li>
+<li>In ablation, a laser beam vaporizes material from the surface of a component to shape it without cutting all the way through it.</li>
+<li>A thin band of material is removed: the <em>kerf</em>
+<ul>
+<li>Has some thickness, maybe a thousandth, which may matter</li>
+<li>The cut isn&rsquo;t completely vertical &ndash; intensity isn&rsquo;t uniform, and beam may not be completely orthogonal (and even then there is some geometry of the
+<a href=https://en.wikipedia.org/wiki/Laser_beam_quality>focal-spot</a>)</li>
+</ul>
+</li>
 </ul>
 <blockquote>
 <p>
@@ -854,21 +890,30 @@ Laser cutting
 Electrode discharge machining (EDM)
 <a class=anchor href=#electrode-discharge-machining-edm>#</a>
 </h3>
-<p>
-<img src=/docs/e-29/1/edm.png alt></p>
 <ul>
-<li>An electrical field is applied between a high-melting-point electrode and the material that is to be shaped, usually submerged in water.
+<li>An electrical field is applied between a high-melting-point electrode (which creates sparks, plasma) and the material that that is to be shaped is usually submerged in water.
 <ul>
 <li>The gap breaks down electrically and a high current flows, heating and vaporizing the work material.</li>
 <li>The electrode might be made of a wire (for profiling operations) or might be a custom-shaped electrode (e.g. made of graphite) to enable parallel transfer of a complex geometries to a workpiece.</li>
 </ul>
 </li>
-<li>Used when you require extreme precision</li>
+<li>Used when you require extreme precision
+<ul>
+<li>Wire has a constant width, there&rsquo;s no focusing issues like with laser cutting
+<figure><img src=/docs/e-29/1/edm.png>
+</figure>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id=wire-edm>
 Wire EDM
 <a class=anchor href=#wire-edm>#</a>
 </h3>
+<ul>
+<li>Not obvious in this example, but the wire can be adjusted about the .$z$-axis too</li>
+<li>Rate limitation is a function of how quickly you can cut + remove the material</li>
+</ul>
 <blockquote>
 <p>
 <img src=/docs/e-29/1/wire-edm.png alt></p>
@@ -884,6 +929,10 @@ Abrasive jet
 <ul>
 <li>
 <a href="https://bcourses.berkeley.edu/files/79640671/download?download_frd=1">Intro video</a></li>
+<li>A high-pressure (≫ 100 MPa) jet of water containing fine, hard particles (usually garnet) impact a sheet of material and cut through it.</li>
+<li>It&rsquo;s not the water itself, rather, there are tiny particles in the water itself which concentrate the forces enough</li>
+<li>Material must be emersed under water</li>
+<li>Surface finish will be more rough (matt texture) than EDM or laser cutting</li>
 </ul>
 <blockquote>
 <p>
@@ -891,39 +940,14 @@ Abrasive jet
 <ul>
 <li>
 <a href=https://www.omax.com/news/blog/controlling-taper>https://www.omax.com/news/blog/controlling-taper</a></li>
-<li>It&rsquo;s not the water itself, rather, there are tiny particles in the water itself which concentrate the forces enough</li>
 </ul>
 </blockquote>
-<ul>
-<li>
-<p>A high-pressure (≫ 100 MPa) jet of water containing fine, hard
-particles (usually garnet) impact a sheet of material and cut through it.</p>
-</li>
-<li>
-<p>Examples of subtractive processes</p>
-</li>
-<li>
-<p>Reasons to use/not use subtractive processes</p>
-</li>
-<li>
-<p>Principles of cutting</p>
-</li>
-<li>
-<p>Application to lathe turning</p>
-</li>
-<li>
-<p>Highlights of other subtractive processes</p>
-</li>
-<li>
-<p>Credit: Several figures reproduced from: Manufacturing Processes for Engineering Materials, Kalpakjian and Schmid</p>
-</li>
-</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/44c9e0c197dbad740567d49025075d7dd80ad7a9 title="Last modified by Max Vogel | February 5, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/0028320e30108cf9d65cc7f5844c376ca6a249d0 title="Last modified by Max Vogel | February 10, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 5, 2022</span>
+<span>February 10, 2022</span>
 </a>
 </div>
 <div>
@@ -966,7 +990,11 @@ particles (usually garnet) impact a sheet of material and cut through it.</p>
 <ul>
 <li><a href=#milling>Milling</a></li>
 <li><a href=#boring>Boring</a></li>
-<li><a href=#broaching>Broaching</a></li>
+<li><a href=#broaching>Broaching</a>
+<ul>
+<li><a href=#example-geometry>Example Geometry</a></li>
+</ul>
+</li>
 <li><a href=#tapping>Tapping</a></li>
 <li><a href=#punching>Punching</a></li>
 <li><a href=#other-subtractive-processes-not-based-on-plastic-deformation>Other subtractive processes not based on plastic deformation</a>
