@@ -474,7 +474,92 @@ __Disjuncture?__
         - Promoting naturalization
         - Addressing the backlog for U Visa Petitioners
 
+# Week 4 (February 8 &10): Chinese in the labor market. The context for exclusion: broad changes in the economy and polity of the United States.
 
+__The Context for Exclusion__
+    - Labor and Capital Conflicts
+        - Intersectional across, race, class, and gender and situated in geopolitics and a pre-existing domestic race politics
+
+__Early Segregation Historical Milestones__
+    - __1790:__ Immigration and Naturalization Act
+    - __1857:__ Dred Scott v. Sandford
+    - __1862:__ Emancipation Proclamation Executive Order 
+    - __1865:__ Civil War ends; Start of Reconstruction
+    - __1868:__ 14th Amendment
+    - __1875:__ Page Act
+    - __1877:__ End of Reconstruction
+    - __1882:__ Chinese Exclusion Act
+    - __1886:__ Yick Wo v. Hopkins
+    - __1889:__ Chae Chan Ping v. U.S.
+    - __1896:__ Plessy v. Ferguson
+
+__Revisiting: Citizenship: Assimilation vs. Segregtion__
+    - What does the exclusion experience of Asian Americans (early Chinese in particular) from citizenship say about the segregation of African Americans and vice versa?
+
+__Fourteenth Amendment 1868 Reminder__
+    - All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws
+
+__Where does power lie?__
+    - Agency and contestation by “discrete and insular minorities” 
+
+__Revisiting: A ”neutral principle” in the “Rule of Law” and the assertion of Fourteenth Amendment protections for Carolene Products’ FN 4 ”discrete and insular minorities”__
+    - __Neutral Principle _"Rule of Law"_:__
+        - Often stated as a broader checks and balances based principle with strong consideration of the authority of each branch as well as the limitations on such authority. Historically asserted by the judicial branch to avoid ruling on ”political” questions.
+    - __Fourteenth Amendment__
+        - As a tool to remedy discrimination, (specifically race early in U.S. history). _Carolene Products’_ asserted view that allegations of discrimination against “discrete and insular minorities” requires close scrutiny by courts.  This lead into the standard developed in _Korematsu (1944)._
+
+__What Happened to the Women?__
+    - Race and sex sterotypes; Asian women
+
+__A long history of Asian American (women) activists__
+    - How does history socially construct mainstream understandings of what it means to be an Asian American female?
+    - [Prof. Um and Fujino on Asian American activism:](https://www.youtube.com/watch?v=XZr1DzaMmiI)
+
+__Centering Women as Active Subjects of History__
+    - Hune writes that one constructive approach to situating Asian American women in history  is  to view them “as active participants in history and agents of social change, negotiating complex structures of power”
+
+__Alternative spaces where agency was exercised__
+    - Dominant historiography of Asian women focused on issues of work, control of labor by the husband’s family and immigration restrictions but other reasons explain absence of Chinese and Indian women in the U.S. 
+    - They had “separate lives” with ties to kin, friends, and their own cultural worlds important to them which has been obscured by the dominant telling of history.
+
+__Little is known; Focus on the family unit as the "normative model" of migration should be questioned__
+    - Migration of women along with their men “was the exception rather than the rule” 
+
+__Social Construction of Asian Women as “Orientalized Chinese women as passive victims of culture and patriarchy.”__
+    - Hune writes that little is known about the lives of Cantonese, Punjabi migrant women that is likely because many of our images of these women’s lives come from the nine-tenth century writings of European-American missionaries.  
+
+__Male preference cultures in China and Punjab &Divergent economies of the home counties created _complexity_ for class status of women affecting female migration__
+    - Evolving patriarchal relations at a time when migrants from a range of counties (Shunde, Zhongshan, Panyu and Nanhai) became merchants in the Chinese American community while “Sze Yup migrants were often laborers and domestics.”
+
+__Chinese women presumptively sex workers__
+    - __Page Act of 1875__ (Sect. 141, 18 Stat. 477, 3 March 1875)
+        - A pre-Chinese Exclusion Act exclusionary law specifically based on gender
+
+__Chinese women immigration early on; Prostitution as ”yellow slavery”Race, culture and religion__
+    -  Page Act introduced by Representative Horace Page to  "end the danger of cheap Chinese labor and immoral Chinese women” barring “undesirable” immigrants defined as:
+        1. Forced laborer
+        2. East Asian women engaged in prostitution
+        3. Convicts
+
+__Immigration review and requirements in Hong Kong Wives vs. Prostitutes__
+    - American consul reviewed background of Chinese women applying for immigration from Hong Kong with document and questions:
+        - Photographic Identification
+        - Official declaration of purpose of emigration and personal morality statement. Review by hospital staff for character review.
+        - A multi-level review process from American consul in HK officials back to American consul day of departure.
+        - Questions about who fathers and husbands were.
+        
+__Break out Questions__
+    1. Was the Page Act protective of trafficked Chinese women or was it exclusionary?
+    2. What were the domestic and geopolitical factors that played a role in Chinese female sex workers and concubines?
+    3. What are the factors that may have driven the concern around "yellow slavery"
+
+__Class Question__
+    1. How did political and socio-economic conflicts in Asia affect the migration of South Asians to the U.S.?
+    2. How did political and socio-economic conflicts in Asia affect the migration of Chinese to the U.S.?
+    
+
+
+ 
 
 
 
