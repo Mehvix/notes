@@ -90,6 +90,7 @@ weight: 5
 - Many studies have indicated that CBT is just as effective as sleep meds and has more lasting overall benefit
 
 #### Other helpful practices:
+
 - Exercise daily (preferably in late afternoon), but not right before bed
 - No caffeine after 5PM
 - Relax and dim lights hour or two before bedtime
@@ -108,12 +109,9 @@ weight: 5
 - Medical students trained on traditional schedule, rather than alternative schedule with fewer weekly hours, made 5.6 times more diagnostic errors (Landrigan, Rothschild, Cronin et al., 2004) 
 
 
-### Sleep debt
+### Sleep Debt & Napping
 
 - **Sleep debt:** “The brain keeps an accurate count of sleep debt for at least two weeks”
-
-### Napping
-
 - Potential benefits of napping
     - Federal Aviation Administration study found that pilots who took a 20-minute nap early in their 9-to-12-hour flight were significantly more alert as measured by reaction-time task
     - Research indicates that a
@@ -138,40 +136,40 @@ weight: 5
 
 # REM sleep and dreams
 
-![](/docs/cogsci-c100/sleep/pattrns.png)
-![](/docs/cogsci-c100/sleep/patt2.png)
-
-
 ## Stages of sleep
 
+{{< columns >}}<!-- mathjax fix -->
 - Waking state
-    - Beta activity: irregular, low-amplitude waves of 13–30 Hz; associated with a state of arousal or alertness
     - Alpha activity: regular, medium-frequency waves of 8–12 Hz; associated with a state of relaxation
+    - Beta activity: irregular, low-amplitude waves of 13–30 Hz; associated with a state of arousal or alertness
 - Stage 1 Sleep
-    - Theta activity: transition between sleep and wakefulness (hynagogic stage)
+    - Theta activity: transition between sleep and wakefulness (nodding off, hynagogic stage)
 - Stage 2 Sleep
-    - Characterized by sleep spindles (bursts of waves) and K-complexes (sudden sharp waveforms)
+    - Characterized by sleep spindles: bursts of waves, thought to be important in cognitive processing and...
+    - K-complexes: sudden sharp waveforms when you hear a loud noise--you brains senses remain active
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/sleep/pattrns.png)
+![](/docs/cogsci-c100/sleep/patt2.png)
+    {{< /columns >}}
 - Stages 3 and 4 Sleep (slow-wave sleep)
     - Delta activity: regular, low-frequency, high-amplitude waves of less than 4 Hz; occurs during deepest stages of sleep
-    - Person cannot be easily awakened, and when awakened, s/he acts groggy and confused
-
+    - Person cannot be easily awakened, and when awakened, s/he acts groggy and confused (you don't think you're sleeping in stage 3)
 - Sleep cycles
 {{< columns >}}<!-- mathjax fix -->
 - Each cycle of REM and non-REM sleep lasts approximately 90 minutes
     - Most slow wave sleep occurs during first half of night
     - Later cycles contain more stage 2 and REM sleep
-- 90-minute cycles of rest and activity (basic rest-activity cycle) have also been found for activities such as infant feeding, eating, drinking, smoking, heart rate, oxygen consumption, etc.
+- 90-minute cycles of rest and activity ([basic rest-activity cycle](https://en.wikipedia.org/wiki/Basic_rest%E2%80%93activity_cycle)) have also been found for activities such as infant feeding, eating, drinking, smoking, heart rate, oxygen consumption, etc.
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/sleep/cycle.png)
 {{< /columns >}}
     - It is actually impossible to totally deprive someone of sleep for prolonged period
         - EEG shows that people start to have “microsleeps” of two or three seconds
-
-
 - Dreams and REM sleep
-    - Dreams occur during REM sleep: even those who claim they don’t dream, if awakened during REM, will usually recall a dream when awakened from REM
+    - **Dreams occur during REM sleep**: even those who claim they don’t dream, if awakened during REM, will usually recall a dream when awakened from REM
     - Dreams also occur in non-REM (NREM) sleep
-    - However, REM sleep is associated more with “true dreams” that have vivid sensory and motor imagery and sense that “you are there”; NREM dreams tends to focus more on a thought (e.g., solving a problem), image, or emotion
+    - However, REM sleep is associated more with “true dreams” that have vivid sensory and motor imagery and sense that “you are there”; 
+        - NREM dreams tends to focus more on a thought (e.g., solving a problem), image, or emotion
     - Amount of time spent in REM during each cycle increases as night progresses
     - Dreams during second half of sleep become more bizarre and emotionally intense; lucid dreams tend to occur in early morning hours
     - Dreams are quickly lost from memory unless we catch them and think about them immediately upon awakening
@@ -180,60 +178,67 @@ weight: 5
 
 ## Functions of dreams
 
-- Why Do We Dream?
+
+- Why Do We Dream? Theories through the times...
+
+{{< columns >}}<!-- mathjax fix -->
+
 - Freud’s wish-fulfillment theory of dreams: dreams are a safety valve that discharges otherwise unacceptable feelings/desires
 - Modern psychodynamic view
     - Dreams reflect what is going on in our lives, our hidden impulses and desires, and underlying conflicts
     - Dreams give clues to the solution of our underlying conflicts and problems
 - Hobson & McCarley’s activation-synthesis hypothesis
-    - Dreams serve no purpose         - just side effect of random firing of neurons that serve to develop and preserve neural pathways through stimulation
+    - Dreams serve no purpose -- just side effect of random firing of neurons that serve to develop and preserve neural pathways through stimulation
+        - Not scientific, can't disprove -- same with Freudian views
     - Pons sends randomly generated electrical signals to the frontal cortex (activation). The frontal cortex then weaves these signals into a coherent story (synthesis)
-
+<---><!-- mathjax fix -->
 - Cognitive development theory of dreams
     - The neural activation associated with dreaming aids cognitive development
         - Peak of REM sleep occurs in 30-week-old fetus, who spends almost 24 hours a day in this state
-
 - Memory consolidation view
     - Participants who were trained on visual search task or word learning, then deprived of REM sleep, performed significantly worse than control participants the next morning
     - REM sleep increases following stressful experiences or periods of intense learning (e.g., graduate student studying for Qualifying Exams)
-
+{{< /columns >}}
 - Hypnagogic dreams and learning and memory
     - These dreams are characterized by:
         - High rate of incorporation of memories of events from the day or from older related memories
-        - When researchers had participants play Tetris for 7 hours, then repeatedly awakened them during their first hour of sleep, three-fourths reported experiencing images of the game’s falling blocks
+            - When researchers had participants play Tetris for 7 hours, then repeatedly awakened them during their first hour of sleep, three-fourths reported experiencing images of the game’s falling blocks
         - A preference for emotionally salient material but without high dream affect
     - Hypnagogic dreams normally lack the bizarreness, selfrepresentation, emotions, and narrative complexities common to REM dreams
-
-- Slow-wave sleep early in the night may aid in consolidation of declarative memory tasks while REM sleep may enhance the processing of emotional memories
-    - REM sleep involves activation of the amygdala and limbic forebrain structures         - structures that are associated with regulation of emotions
-!Participants deprived of REM sleep show
-        - Greater amygdala and less frontal activation after viewing emotionally distressing film
-        - Less reduction in negative affect upon second viewing (Rosales-LaGarde, Armony, del Rio-Portilla et al., 2012)
+- Slow-wave sleep early in the night may aid in consolidation of declarative memory tasks while REM sleep may enhance the processing of **emotional** memories
+    - REM sleep involves activation of the amygdala and limbic forebrain structures -- structures that are associated with regulation of emotions
+        - Participants deprived of REM sleep show
+            - Greater amygdala and less frontal activation after viewing emotionally distressing film
+            - Less reduction in negative affect upon second viewing (Rosales-LaGarde, Armony, del Rio-Portilla et al., 2012)
+            - You can't process new emotions when sleep deprived
 
 
 > “Sleep knits up the raveled sleeve of care.”         - Shakespeare
 
-- Unconscious problem solving
-    - Great discoveries and inventions have often come to people through dreams
-        - Man who discovered the structure of the benzene molecule had dream of snake chasing its own tail
-        - The tune for "Yesterday" came to Paul McCartney in a dream
+- Case Studies: Unconscious problem solving
+
+{{< columns >}}<!-- mathjax fix -->
+- Great discoveries and inventions have often come to people through dreams
+    - The tune for "Yesterday" came to Paul McCartney in a dream
+    - Man who discovered the structure of the benzene molecule had dream of snake chasing its own tail
 ![](/docs/cogsci-c100/sleep/benz.png)
-- In 1845, Elias Howe had an idea for inventing a sewing machine, but he couldn’t figure out how to connect the needle to the thread. Then one night he dreamt that he was taken prisoner by a group of natives who were dancing around him with spears. The spears all had holes near their tips…
-        - Madame Walker, the first female American self-made millionaire, founded and built a highly successful African-American cosmetic company in the 1890’s that made her a millionaire many times over: the formula for her original product, which included ingredients that could only be obtained from Africa, came to her in a dream
 ![](/docs/cogsci-c100/sleep/walker.png)
-![](/docs/cogsci-c100/sleep/needlepng)
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/sleep/needle.png)
+- In 1845, Elias Howe had an idea for inventing a sewing machine, but he couldn’t figure out how to connect the needle to the thread. Then one night he dreamt that he was taken prisoner by a group of natives who were dancing around him with spears. The spears all had holes near their tips…
+- Madame Walker, the first female American self-made millionaire, founded and built a highly successful African-American cosmetic company in the 1890’s that made her a millionaire many times over: the formula for her original product, which included ingredients that could only be obtained from Africa, came to her in a dream
+{{< /columns >}}
 
 ## Content of dreams
 
-- Repetition dimension continuum: traumatic dreams # recurrent dreams # repetitive themes within long dream series # frequent elements in dreams
+- Repetition dimension continuum: traumatic dreams => recurrent dreams => repetitive themes within long dream series => frequent elements in dreams
     - All of these may be viewed as attempts by the dreamer to work through emotional preoccupations, “fixations,” “hang-ups”
-        - Evidence that dreams can be an effective way of working through emotional preoccupations, fixations, or “hang-ups”:
-- Patients with depression are more likely to be in remission a year later if:
-    - They show high eye movement density and high affect strength during their first REM period    - They report more negative dreams at the beginning of the night and fewer negative dreams at the end of the night
-        -  This research suggests that negative dreams occurring at the end of the night are indicative of person’s failure to work through problems and self-regulate mood
-- These dreams can potentially be addressed in therapy, particularly as the last dreams of the night are those that a person is most likely to recall
-
-### Traumatic Dreams
+- Evidence that dreams can be an effective way of working through emotional preoccupations, fixations, or “hang-ups”:
+    - Patients with depression are more likely to be in remission a year later if:
+        - They show high eye movement density and high affect strength during their first REM period    
+        - They report more negative dreams at the beginning of the night and fewer negative dreams at the end of the night
+            -  This research suggests that negative dreams occurring at the end of the night are indicative of person’s failure to work through problems and self-regulate mood
+    - These dreams can potentially be addressed in therapy, particularly as the last dreams of the night are those that a person is most likely to recall
 - Traumatic dreams (PTSD)
     - Repetition of the traumatic event in all its emotional detail and horror
     - Dreams change over time as person recovers, incorporating other elements and becoming less like the exact experience
@@ -249,8 +254,7 @@ weight: 5
         - Most frequent content theme of recurrent dreams is being attacked or chased
     - Recurrent dreamers tend to score significantly lower on measures of wellbeing than either former recurrent dreamers or non-recurrent dreamers
     - Dream work as a way to resolve problem of recurrent dreams
-- Recurrent dreams may be watered-down versions of traumatic dreams
-
+    - _Recurrent dreams may be watered-down versions of traumatic dreams_
 - Those who are prone to nightmares…
     - Often do not recall any obvious traumas
     - Instead, they tend to be relatively normal people who work mainly as artists, teachers, and therapists -- tend to be creative and service oriented
@@ -260,38 +264,41 @@ weight: 5
 
 ### Repetitive Dream Themes
 
-- We tend to think of dreams as irregular and infinitely varied, but this is not in fact true         
-    - Content analysis has revealed that dreams are much more repetitive than most people think…
-- Dorothea:
-    - Kept dream journal from 1912 (when she was 25 years old) to 1963
-    - Analysis revealed that same basic themes appeared throughout 50 years:
-        - Eating or thinking of food appeared in 1 out of every 5 dreams
-        - Loss of an object, usually her purse, occurred in 1 out of every 6 dreams
-        - She was in a small or disorderly room, or her room was being invaded by others, in 10% of her dreams
-        - Mother appeared in another 10% of her dreams
-        - She was going to the toilet in 1 out of every 12 dreams
-        - She was late, concerned about being late, or missing a bus or train in 1 out of every 16 dreams
-- Jeffrey
-    - Moved from one coast to the other, left his wife, “came out” as gay, and retired from his teaching position
-    - However, as in case of Dorothea, dream themes/elements tended to remain constant over 25 year period
-- Research has indicated that themes and emotions of dreams do not tend to change much over the course of a person’s life
-- However, if person experiences period of profound change, dreams can change dramatically
-
-
-# Six themes appeared in about 70% of her dreams
+- We tend to think of dreams as irregular and infinitely varied, but this is not in fact true -- **content analysis** has revealed that dreams are much more repetitive than most people think…
+    - Dorothea:
+        - Kept dream journal from 1912 (when she was 25 years old) to 1963
+        - Analysis revealed that same basic themes appeared throughout 50 years:
+            - Eating or thinking of food appeared in 1 out of every 5 dreams
+            - Loss of an object, usually her purse, occurred in 1 out of every 6 dreams
+            - She was in a small or disorderly room, or her room was being invaded by others, in 10% of her dreams
+            - Mother appeared in another 10% of her dreams
+            - She was going to the toilet in 1 out of every 12 dreams
+            - She was late, concerned about being late, or missing a bus or train in 1 out of every 16 dreams
+        - Six themes appeared in about 70% of her dreams
+    - Jeffrey
+        - Moved from one coast to the other, left his wife, “came out” as gay, and retired from his teaching position
+        - However, as in case of Dorothea, dream themes/elements tended to remain constant over 25 year period
+    - Research has indicated that themes and emotions of dreams do not tend to change much over the course of a person’s life
+    - However, if person experiences period of profound change, dreams can change dramatically
 
 
 ## Dream analysis
 
-Content analysis: systematic analysis of dream elements and themes
+- **Content analysis:** systematic analysis of dream elements and themes
     - Analysis of dream elements in tens of thousands of dreams in countries across the world has allowed for the establishment of certain “norms”
-!Domhoff and his colleagues at the UC Santa
-Cruz have meticulously cataloged and posted more than 20,000 dreams (dreambank.net)
+        - Domhoff and his colleagues at the UC Santa Cruz have meticulously cataloged and posted more than 20,000 dreams (dreambank.net)
 
-### Content analysis
-
-Most common dreams among college students -- percentage of students who have had each of following types of dreams:
-
+{{< columns >}}<!-- mathjax fix -->
+- Cross-cultural differences
+    - Americans tend to dream more about animals and food while Brazilians have more sexual and emotional dreams
+    - Far lower levels of physical aggression in dreams of Dutch men and women than among American men and women
+        - Mirrored by the fact that the US is one of the most violent industrialized nation in the world and the Netherlands one of the least violent, according to crime statistics
+    - Another study found the following rates of aggression in dreamers from different regions of the US:
+        - East Coast: 40%
+        - Midwest: 10%
+        - West Coast: 22%
+<---><!-- mathjax fix -->
+- Most common dreams among college students -- percentage of students who have had each of following types of dreams:
 | Theme                             | %   |
 | --------------------------------- | --- |
 | Falling                           | 83% |
@@ -301,19 +308,11 @@ Most common dreams among college students -- percentage of students who have had
 | Sexual experiences                | 66% |
 | Arriving too late                 | 64% |
 | Eating                            | 62% |
+{{< /columns >}}
 
----
-
-- Cross-cultural differences
-    - Americans tend to dream more about animals and food while
-Brazilians have more sexual and emotional dreams
-    - Far lower levels of physical aggression in dreams of Dutch men and women than among American men and women
-- Mirrored by the fact that the US is one of the most violent industrialized nation in the world and the Netherlands one of the least violent, according to crime statistics
-    - Another study found the following rates of aggression in dreamers from different regions of the US:
-    - East Coast: 40%
-    - Midwest: 10%
-    - West Coast: 22%
 - Gender differences
+    - Men tend to dream about sex and violence
+    - Women tend to dream more about weddings 
 - **Continuity hypothesis** of dreams: “the dream life reflects the waking life”
     - People generally dream about the same people, places, objects, activities, wishes, and fears that dominate their waking-life
 
@@ -333,38 +332,39 @@ Brazilians have more sexual and emotional dreams
             - Sanders described her mother as “an angry, isolating person… sharp and critical and negative and physically distant”
         - Favorite brother
             - Percentage of aggressive to friendly interactions with him is 25% – almost the mirror opposite of her relationship with her mother
+    - _When you tend to have a good dream about someone, then you tend to have positive interactions with them; and vice-versa_
 - Use of Content Analysis in Clinical Diagnosis
-    - Analysis of 1,368 dreams from a four-year period reported by a man in his mid-thirties who was undergoing psychotherapy         - analyst (Calvin Hall) knew nothing about subject beyond his age and fact that he was seeing a therapist
+    - Analysis of 1,368 dreams from a four-year period reported by a man in his mid-thirties who was undergoing psychotherapy -- analyst (Calvin Hall) knew nothing about subject beyond his age and fact that he was seeing a therapist
     - Repeated themes:
         - Wide range of sexual practices and objects
         - Friendly and sexual interactions with children, with a greater focus on girls than boys
         - Urinating and defecating
         - Women with penises or beards, or who disguised themselves as men
         - Various kinds of holes, openings, and tunnels, which the dreamer usually entered and explored in some way with great curiosity
-    - Based on this analysis, Hall concluded that man had poor impulse control, confusion about gender, and a particular concern with the nature of female genitals (symbolic interpretation of holes and tunnels)         - and that he was a child molester whose primary desire was to look at the genitals of little girls
+    - Based on this analysis, Hall concluded that man had poor impulse control, confusion about gender, and a particular concern with the nature of female genitals (symbolic interpretation of holes and tunnels) -- and that he was a child molester whose primary desire was to look at the genitals of little girls
     - All of these inferences proved correct according to the therapist and the dreamer
-- Also, total lack of any reference to father in dreams, in contrast to a disproportionate number of dreams about his mother and sister
-    - Led Hall to suspect either absence of a father or a traumatic experience with father
-    - To check for the latter, Hall searched for possible symbolic substitutes for father         - correctly concluded from following dream that the dreamer had himself been molested as a child by the father:
-        > “A bull that seemed to have human intelligence came behind me and held me against him. I did not like his advances and I sensed that he wanted to have sexual relations with me. So I broke away from him.”
+    - Also, total lack of any reference to father in dreams, in contrast to a disproportionate number of dreams about his mother and sister
+        - Led Hall to suspect either absence of a father or a traumatic experience with father
+        - To check for the latter, Hall searched for possible symbolic substitutes for father -- correctly concluded from following dream that the dreamer had himself been molested as a child by the father:
+            > “A bull that seemed to have human intelligence came behind me and held me against him. I did not like his advances and I sensed that he wanted to have sexual relations with me. So I broke away from him.”
 
 ### Dream work
 
 - Basic technique:
     1. Recall dream in as much detail as possible as soon as you awaken
         - To enhance dream recall, try not to move: stay in same position
-        - Try to fully recall emotions of the dream
+        - Try to fully recall emotions of the dream -- not the day ahead
     2. Keep a scribble pad by your bed and take notes
     3. Interpret dream
         - In general, dream dictionaries are of limited value: we all have our own unique symbols
-        - Focus on emotional interpretation         - not academic interpretation (What did you feel in dream? Where do you feel like that in your life?)
+        - Focus on emotional interpretation -- not academic interpretation (What did you feel in dream? Where do you feel like that in your life?)
 - "Dreams are all about emotions (activation of the limbic system)
-    - In our dreams, we may access immensely positive emotions that we may never even have experienced before in waking life
-    - Focusing on those emotions can potentially cause situations to manifest that naturally elicit those emotions
+    - In our dreams, we may access _immensely positive emotions_ that we may never even have experienced before in waking life
+        - Focusing on those emotions can potentially cause situations to manifest that naturally elicit those emotions
 
 
 {{< hint "info" >}}<!-- mathjax fix -->
-**Extra:** Jungian Dream Analysis
+## *Extra:* Jungian Dream Analysis
 
 - Jung maintained that the figures in our dreams represent aspects of ourselves that we have disowned
     - Through projection, we see in others what we fail to see in ourselves
@@ -409,7 +409,7 @@ Brazilians have more sexual and emotional dreams
         - There is a sense of clarity and exhilaration that is based on a transformation of the way we normally attend to things and in our self-concept
 - Practice dream recall
     - Research has shown that people who recall dreams at least once a night report having at least one lucid dream a month
-    - Learn to recognize your most frequent or characteristic dreamsigns – elements of dreams that indicate that you are dreaming (e.g., miraculous flight, purple cats, malfunctioning devices, and meeting deceased people)
+    - Learn to recognize your most frequent or characteristic **dreamsigns** -- elements of dreams that indicate that you are dreaming (e.g., miraculous flight, purple cats, malfunctioning devices, and meeting deceased people)
 - Get ample sleep
     - The relative likelihood of lucid dreaming continuously increases with each successive REM period
     - If you sleep 8 hours, the probability of your having a lucid dream during the last 2 hours of sleep is more than twice as great as the probability of your having a lucid dream in the previous 6 hours
@@ -425,12 +425,11 @@ Brazilians have more sexual and emotional dreams
         - Try flying
         - Find some writing or a digital watch and read it once, look away, then reread it, checking to see if it stays the same
             - In dreams, text changes 75% of the time it is re-read once; 95% of the time that it is re-read twice
-        - Try to turn on a light – this usually cannot be done in a dream
+        - Try to turn on a light -- this usually cannot be done in a dream
         - In general, things are much more changeable in dreams than in waking life: oftentimes all you have to do is look around for unusual transmutations
         - Lastly, anytime you find yourself seriously suspecting that you just might be dreaming you probably are
 
 ## Induction techniques
-
 
 - Use autosuggestion/dream inoculation
     - Imagine as vividly as possible that your surroundings are a dream
@@ -444,8 +443,7 @@ Brazilians have more sexual and emotional dreams
 - **MILD** (Mnemonic Induction of Lucid Dreams) technique
     - Preliminary training: prospective memory exercise
         - Look for certain pre-specified targets each day for at least a week and do a reality test as soon as you notice the target
-    - When you awaken from a dream period
-    - Recall as many details as possible from your dream
+    - When you awaken from a dream period, recall as many details as possible from your dream
     - See yourself becoming lucid: Imagine that you are back in the dream from which you have just awakened, but this time you recognize that it is a dream
     - Focus your intent: tell yourself “Next time I’m dreaming, I want to remember I’m dreaming” – and really mean it!
     - Repeat procedure till you fall back asleep
@@ -458,11 +456,11 @@ Brazilians have more sexual and emotional dreams
         - During REM, the voluntary muscles of the body are paralyzed
         - Independent neural systems cause muscular paralysis, blockade of sensory input, and cortical activation – sometimes these don’t turn on or off at the same time, resulting in sleep paralysis
         - Sometimes people panic when they experience sleep paralysis and struggle to move or to fully wake up, but such reactions are actually likely to stimulate the limbic areas of the brain and cause the REM to persist
-            - Solution:
-    - Remember it is a dream and therefore harmless
-    - Relax and adopt an attitude of interest and curiosity about what happens
-        - Dreams that proceed from paralysis experiences are often quite intense and wonderful
-    - About 20%of people who experience sleep paralysis say they really enjoy it
+    - Solution:
+        - Remember it is a dream and therefore harmless
+        - Relax and adopt an attitude of interest and curiosity about what happens
+            - Dreams that proceed from paralysis experiences are often quite intense and wonderful
+        - About 20% of people who experience sleep paralysis say they really enjoy it
 
 ## Preventing Premature Awakening
 
@@ -506,8 +504,12 @@ Brazilians have more sexual and emotional dreams
 
 - Transforming Nightmares
 - Case examples:
-        - T-rex dream
-        - Dream of being chased by hostile figure
+    - T-rex dream
+    - Dream of being chased by hostile figure
+
+----
+
+
 - Lucid dream therapy (LDT)
     - Client is trained in progressive muscle relaxation, then rehearses recurrent dream in as much detail as possible
     - Client selects a part of the recurrent dream that is emotionally and/or visually salient and during which he can imagine carrying out a particular task
@@ -533,7 +535,7 @@ Brazilians have more sexual and emotional dreams
     - It can be very difficult to tell if one is dreaming or awake
     - It is primarily emotions that create dreams
 - What characterizes REM/dream sleep neurologically is principally activation of the limbic system
--Unreal:
+- Unreal:
     - Time does not speed up in dreams
     - It is unclear that shared dreams can occur
     - Lucid dreams do not tend to manifest as intense nightmares since by definition one is aware that it is only a dream and can exert at least minimal control over the dream
