@@ -2,19 +2,19 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="02-08: Additive processes: overview, and extrusion-based processes #  Reasons to use additive manufacturing #   Geometry needs customization  Medical implants and prostheses; dental aligners, crowns, bridges, surgical guides, footwear   Run size too small for custom tooling  e.x. Aircraft cabin components (e.g. ducting, seats); titanium alloy turbine blades; mounting brackets; engine fuel nozzles   Supply chain is challenging in some way (geographically or temporally)  Enables more decentralized/distributed production e.">
+<meta name=description content="The rise of additive manufacturing #   Additive manufacturing or “3D printing” has been receiving enormous attention both in industry and as a tool for education and design. Something that sets additive manufacturing apart from other families of processes is the enormous rate of innovation in process technology and machine design, together with the fact that much of this innovation is done by small start-up companies and even by individuals, with the development in some cases being crowd-funded.">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 3: Additive Processes">
-<meta property="og:description" content="02-08: Additive processes: overview, and extrusion-based processes #  Reasons to use additive manufacturing #   Geometry needs customization  Medical implants and prostheses; dental aligners, crowns, bridges, surgical guides, footwear   Run size too small for custom tooling  e.x. Aircraft cabin components (e.g. ducting, seats); titanium alloy turbine blades; mounting brackets; engine fuel nozzles   Supply chain is challenging in some way (geographically or temporally)  Enables more decentralized/distributed production e.">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 3: Additive Processes: Intro & Extrusion">
+<meta property="og:description" content="The rise of additive manufacturing #   Additive manufacturing or “3D printing” has been receiving enormous attention both in industry and as a tool for education and design. Something that sets additive manufacturing apart from other families of processes is the enormous rate of innovation in process technology and machine design, together with the fact that much of this innovation is done by small start-up companies and even by individuals, with the development in some cases being crowd-funded.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/e-29/3/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-10T10:56:14-08:00">
-<title>Week 3: Additive Processes | notes.mehvix.com</title>
+<meta property="article:modified_time" content="2022-02-10T19:53:30-08:00">
+<title>Week 3: Additive Processes: Intro & Extrusion | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.4451149535cd05797a9bb3de6e76c2bf0e60e7c4f383cf825b490553d962d9a9.js integrity="sha256-RFEUlTXNBXl6m7PebnbCvw5g58Tzg8+CW0kFU9li2ak=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.cb4c1819ca3346436472a75e42b4007d616d3a1c4d98ccff402371d47ca5efae.js integrity="sha256-y0wYGcozRkNkcqdeQrQAfWFtOhxNmMz/QCNx1Hyl764=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -97,7 +97,10 @@
 <a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/e-29/3/ class=active>Week 3: Additive Processes</a>
+<a href=http://notes.mehvix.com/e-29/3/ class=active>Week 3: Additive Processes: Intro & Extrusion</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
 </li>
 </ul>
 </li>
@@ -239,7 +242,7 @@ pass.mehvix.com
 <label for=menu-control>
 <img src=/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Week 3: Additive Processes</strong>
+<strong>Week 3: Additive Processes: Intro & Extrusion</strong>
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -247,40 +250,24 @@ pass.mehvix.com
 <aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#02-08-additive-processes-overview-and-extrusion-based-processes>02-08: Additive processes: overview, and extrusion-based processes</a>
-<ul>
-<li><a href=#reasons-to-use-additive-manufacturing>Reasons to use additive manufacturing</a>
-<ul>
-<li><a href=#working-principles-for-additive-manufacturing>Working principles for additive manufacturing</a></li>
-</ul>
-</li>
-<li><a href=#details-and-capabilities-of-additive-processes>Details and capabilities of additive processes</a>
+<li><a href=#the-rise-of-additive-manufacturing>The rise of additive manufacturing</a></li>
+<li><a href=#reasons-to-use-additive-manufacturing>Reasons to use additive manufacturing</a></li>
+<li><a href=#working-principles-for-additive-manufacturing>Working principles for additive manufacturing</a>
 <ul>
 <li><a href=#simple-model-for-extrusion>Simple model for extrusion</a></li>
 <li><a href=#considerations>Considerations</a></li>
 </ul>
 </li>
-<li><a href=#methods-for-polymers>Methods for polymers</a>
+<li><a href=#types-of-additive-process>Types of additive process</a>
 <ul>
-<li><a href=#fused-deposition-modeling-fdm>Fused deposition modeling (FDM)</a></li>
+<li><a href=#fused-deposition-modeling-fdm>Fused deposition modeling (FDM)</a>
+<ul>
+<li><a href=#support-structures-and-extrusion-diameter>Support structures and extrusion diameter</a></li>
+<li><a href=#stress-line-additive-manufacturing-slam>Stress Line Additive Manufacturing (SLAM)</a></li>
+<li><a href=#fdm-of-metal-powderpolymer-mixtures>FDM of metal powder/polymer mixtures</a></li>
+</ul>
+</li>
 <li><a href=#direct-ink-writing>Direct ink writing</a></li>
-<li><a href=#stereolithography>Stereolithography</a></li>
-<li><a href=#poly-jet-printing>“Poly Jet” printing</a></li>
-<li><a href=#powderbinder-methods>Powder/binder methods</a></li>
-<li><a href=#selective-laser-meltingsintering-sls>Selective laser melting/sintering (SLS)</a></li>
-<li><a href=#electron-beam-melting>Electron-beam melting</a></li>
-<li><a href=#hybrid-subtractiveadditive-manufacturing>Hybrid subtractive/additive manufacturing</a></li>
-<li><a href=#powder-binder-method>Powder-binder method</a></li>
-<li><a href=#emerging-methods>Emerging methods</a></li>
-</ul>
-</li>
-<li><a href=#design-for-additive-manufacturing>Design for additive manufacturing</a>
-<ul>
-<li><a href=#tuning-material-properties-with-structure>Tuning material properties with structure</a></li>
-<li><a href=#current-challenges-with-3d-printing>Current challenges with 3D printing</a></li>
-</ul>
-</li>
-<li><a href=#potential-future-applications-of-3d-printing>Potential future applications of 3D printing</a></li>
 </ul>
 </li>
 </ul>
@@ -288,47 +275,60 @@ pass.mehvix.com
 </aside>
 </header>
 <article class=markdown>
-<h1 id=02-08-additive-processes-overview-and-extrusion-based-processes>
-02-08: Additive processes: overview, and extrusion-based processes
-<a class=anchor href=#02-08-additive-processes-overview-and-extrusion-based-processes>#</a>
+<h1 id=the-rise-of-additive-manufacturing>
+The rise of additive manufacturing
+<a class=anchor href=#the-rise-of-additive-manufacturing>#</a>
 </h1>
-<h2 id=reasons-to-use-additive-manufacturing>
+<blockquote>
+<p>Additive manufacturing or “3D printing” has been receiving enormous attention both in industry and as a tool for education and design. Something that sets additive manufacturing apart from other families of processes is the enormous rate of innovation in process technology and machine design, together with the fact that much of this innovation is done by small start-up companies and even by individuals, with the development in some cases being crowd-funded. There are huge differences between the versatility and achievable tolerances of “maker-grade” (or consumer-grade) and industry-grade tools, and in this part of the course we will describe and analyze some of the processes that are available, and provide a framework for analyzing new additive manufacturing tools as they become available.</p>
+</blockquote>
+<blockquote>
+<p>The richness of innovation in machine design has been helped by the fact that the established players in 2D printing (HP, Epson, etc.) have until very recently been largely absent from 3D printing. This situation has begun to change, especially with the introduction of HP’s “Multi Jet Fusion” systems, but there is no doubt that the market is highly fragmented, and to understand it, one needs knowledge of the underlying material processing principles.</p>
+</blockquote>
+<h1 id=reasons-to-use-additive-manufacturing>
 Reasons to use additive manufacturing
 <a class=anchor href=#reasons-to-use-additive-manufacturing>#</a>
-</h2>
+</h1>
+<blockquote>
+<p>Additive manufacturing has conventionally been seen as a means of prototyping components that would then be mass-produced with some other, faster, process. Prototyping remains an important application, but there are many reasons why one would produce final, functional components additively. Reasons for selecting an additive process over another kind of process include:</p>
+</blockquote>
 <ul>
-<li>Geometry needs customization
+<li>Geometry needs customization, &ldquo;mass customization&rdquo;
 <ul>
-<li>Medical implants and prostheses; dental aligners, crowns, bridges, surgical guides, footwear</li>
+<li>Medical implants and prostheses; dental aligners, crowns, bridges, surgical guides, clothing, footwear</li>
 </ul>
 </li>
 <li>Run size too small for custom tooling
 <ul>
+<li>There are some components where machining would require too much time and/or labor to be economical, and mass-production techniques such as casting or injection molding would incur considerable tooling costs (complex injection molds can cost tens of thousands of dollars)</li>
 <li>e.x.
 <a href=https://www.tctmagazine.com/3d-printing-news/british-airways-top-ten-applications-3d-printing/>Aircraft cabin components</a> (e.g. ducting, seats); titanium alloy turbine blades; mounting brackets;
 <a href=http://www.bloomberg.com/bw/articles/2013-11-27/general-electric-turns-to-3d-printers-for-plane-parts>engine fuel nozzles</a></li>
 </ul>
 </li>
+<li>The desired geometry cannot be made in any other way
+<ul>
+<li>Multi-material, graded stiffness or color</li>
+<li>Internal porosity for reduced mass</li>
+<li>The idea of “complexity as practical” or that “complexity is free” is often talked about as a distinctive advantage of additive manufacturing.</li>
+<li>Reasons for geometrically complex designs: particular aesthetic goals, to improve the aerodynamic performance of a vehicle, or to optimize mechanical properties (e.g. stiffness-to-weight ratio, or compressibility) of a component by introducing fine porous structures that mimic geometries found in nature (e.g. bone, cork, and branched tree-like structures).</li>
+</ul>
+</li>
 <li>Supply chain is challenging in some way (geographically or temporally)
 <ul>
 <li>Enables more decentralized/distributed production</li>
-<li>e.x.
-<a href=https://spectrum.ieee.org/aerospace/space-flight/4-products-that-make-sense-to-manufacture-in-orbit>Space Station</a>; food preparation</li>
+<li>
+<a href=https://spectrum.ieee.org/aerospace/space-flight/4-products-that-make-sense-to-manufacture-in-orbit>Space Station</a>: producing spare parts on the International Space Station — see the start-up company Made in Space that is developing fused deposition modeling tools to work in vacuum and zero-gravity, as well as recycling machines for the printable material, the idea being to produce components on demand without having to wait for a new spacecraft to be launched from Earth to deliver them;</li>
+<li>Producing spare parts for military use in theaters of war, where components are frequently needed more quickly than they could be shipped, installing a full machine shop in the field may not be practical, and carrying a comprehensive array of spare parts would be cumbersome</li>
+<li>Printing of food, where freshness is important and people decide what they would like to eat just minutes before they eat it.</li>
 </ul>
 </li>
-<li>No other manufacturing processes exist that can deliver the required geometry or properties
+<li>Assembly costs can be significantly reduced.
 <ul>
-<li>Multimaterial</li>
-<li>Graded stiffness or color</li>
-<li>Internal porosity for reduced mass</li>
+<li>Items that would necessitate the use of many components if made with traditional manufacturing approaches could be produced in a single piece by exploiting the extra geometrical flexibility allowed by additive manufacturing, thus saving assembly costs.</li>
+<li>Less workers (human controllers) required &ndash; cheaper, less (human) error</li>
 </ul>
 </li>
-<li>Need fast feedback on a geometry (rapid prototyping)
-<ul>
-<li>e.g. Architectural models, Microsoft Surface</li>
-</ul>
-</li>
-<li>Less workers (human controllers) required &ndash; cheaper, less error</li>
 <li>Why Not:
 <ul>
 <li>Potentially waste more material</li>
@@ -336,23 +336,25 @@ Reasons to use additive manufacturing
 </ul>
 </li>
 </ul>
-<h3 id=working-principles-for-additive-manufacturing>
+<h1 id=working-principles-for-additive-manufacturing>
 Working principles for additive manufacturing
 <a class=anchor href=#working-principles-for-additive-manufacturing>#</a>
-</h3>
+</h1>
+<blockquote>
+<p>New additive processes and tools enter the market every month, so any detailed description of process technology will rapidly become outdated. Perhaps the most useful way to think about additive manufacturing technology is to isolate the different functions that are involved in any additive process, and consider the multiple independent ways in which each function might be fulfilled. Printing tools could be conceived that combine those solution principles in many different ways:</p>
+</blockquote>
+<blockquote>
+<p><figure><img src=/docs/e-29/3/tbl.png>
+</figure>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
 <ul>
-<li>This is a very rapidly developing field</li>
 <li>Material supply:
 <ul>
 <li>Gas (semiconductor manufacturing)</li>
 <li>Solution (Electroplating)</li>
 <li>Laminae (sheets of material), i.e
 <a href=https://fabrisonic.com/technology/>Fabrisonic</a></li>
-</ul>
-</li>
-<li>Conversion:
-<ul>
-<li>Laser (temporarily) melting</li>
 </ul>
 </li>
 <li>Energy:
@@ -362,6 +364,10 @@ Working principles for additive manufacturing
 <li>Plasma</li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
 <li>Spatial:
 <ul>
 <li>moving tool versus moving work</li>
@@ -372,68 +378,81 @@ Working principles for additive manufacturing
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>Some of these seem unrealistic, and they may be, right now. But technology is rapidly increasing and what is unfeasible today may be feasible very soon. Think neural networks&ndash; we&rsquo;ve known the underlying concepts since
-<a href=https://en.wikipedia.org/wiki/Neural_network#History>1873</a> but only now has technology become fast enough for it to become feasible</p>
+</div>
+</div>
+</p>
 </blockquote>
-<figure><img src=/docs/e-29/3/tbl.png>
-</figure>
-<h2 id=details-and-capabilities-of-additive-processes>
-Details and capabilities of additive processes
-<a class=anchor href=#details-and-capabilities-of-additive-processes>#</a>
-</h2>
-<h3 id=simple-model-for-extrusion>
+<ul>
+<li>This is a very rapidly developing field. Some of these seem unrealistic, and they may be, but only for now.Technology is rapidly increasing and what is unfeasible today may be feasible very soon. Think neural networks&ndash; we&rsquo;ve known the underlying concepts since
+<a href=https://en.wikipedia.org/wiki/Neural_network#History>1873</a> but only now has technology become fast enough for it to become feasible</li>
+</ul>
+<h2 id=simple-model-for-extrusion>
 Simple model for extrusion
 <a class=anchor href=#simple-model-for-extrusion>#</a>
-</h3>
+</h2>
 <figure><img src=/docs/e-29/3/base.png>
 </figure>
 <ul>
 <li>Material must able to heat up and cool down while maintaining it&rsquo;s key properties</li>
 <li>Higher the temperature, more energy required, lower the viscosity</li>
+<li>Radius matters
+<ul>
+<li>Narrow is significantly harder</li>
+<li>Typical nozzle diameters are in the range 100–250 μm</li>
+<li>So more resolution is harder to achieve</li>
 </ul>
-<h3 id=considerations>
+</li>
+<li>Distance to drive wheel and extruder block needs to be short enough so the material doesn&rsquo;t buckle</li>
+</ul>
+<h2 id=considerations>
 Considerations
 <a class=anchor href=#considerations>#</a>
-</h3>
+</h2>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
 <li>Turning corners
 <ul>
-<li>Need to synchronize extrusion rate
-<img src=/docs/e-29/3/cura.png alt></li>
+<li>Need to synchronize extrusion rate</li>
+<li>If .$Q$ is too high, then you&rsquo;ll end up with corner bulges</li>
 </ul>
 </li>
 </ul>
+<figure><img src=/docs/e-29/3/cura.png>
+</figure>
 </div>
 <div class="flex-even markdown-inner">
 <ul>
 <li>Volume conservation
 <ul>
-<li>Voids/porosity
-<img src=/docs/e-29/3/holes.png alt></li>
-</ul>
-</li>
-<li>Thermal gradients
-<ul>
-<li>Can cause warping</li>
-<li>Heat the component during printing</li>
+<li>Voids/porosity</li>
+<li>If material isn&rsquo;t hot enough to remain molten, then it won&rsquo;t fill the voids</li>
 </ul>
 </li>
 </ul>
 <p>
-<img src=/docs/e-29/3/cure.png alt>
+<img src=/docs/e-29/3/holes.png alt></p>
+<ul>
+<li>Thermal gradients (difference in temperatures)
+<ul>
+<li>Can cause warping</li>
+<li>Heat the component during printing</li>
+<li>Heated beds (or &lsquo;ovens&rsquo; &ndash; used in industrial machines) can help prevent this</li>
+</ul>
+</li>
+</ul>
+<p>
+<img src=/docs/e-29/3/cure.png alt></p>
 </div>
 </div>
-<h2 id=methods-for-polymers>
-Methods for polymers
-<a class=anchor href=#methods-for-polymers>#</a>
-</h2>
-<h3 id=fused-deposition-modeling-fdm>
+<h1 id=types-of-additive-process>
+Types of additive process
+<a class=anchor href=#types-of-additive-process>#</a>
+</h1>
+<h2 id=fused-deposition-modeling-fdm>
 Fused deposition modeling (FDM)
 <a class=anchor href=#fused-deposition-modeling-fdm>#</a>
-</h3>
+</h2>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -443,32 +462,40 @@ Fused deposition modeling (FDM)
 <ul>
 <li>Machine,</li>
 <li>Component size/geometry,</li>
-<li>In-fill strategy
-<img src=/docs/e-29/3/fdm2.png alt></li>
+<li>In-fill strategy</li>
 </ul>
 </li>
 </ul>
+<figure><img src=/docs/e-29/3/fdm2.png>
+</figure>
 </div>
 <div class="flex-even markdown-inner">
 <figure><img src=/docs/e-29/3/fdm.png>
 </figure>
+<ul>
+<li>After CAD is complete, model is ran through software (i.e. cura) which turns the model into a series of triangles, which is then used to generate some tool path that forms the model
+<ul>
+<li>There&rsquo;s some information loss throughout this process</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <ul>
-<li>Variations
+<li>Variations at Jacobs
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>Type A
+<li>Type A &ndash; most basic & common
 <ul>
-<li>Single extrusion nozzle</li>
-<li>PLA</li>
+<li>Single extrusion nozzle (one material)</li>
+<li>PLA: Poly Lactic Acid &ndash; plant-based, recyclable, but not industrial-grade due to it&rsquo;s brittleness</li>
 </ul>
 </li>
 <li>Ultimaker 3
 <ul>
-<li>PLA, PETG</li>
-<li>Dual nozzle</li>
+<li>PLA, PETG (tougher, bit more flexible than PLA)</li>
+<li>Dual nozzle &ndash; capable of support material (or just various colors)</li>
 </ul>
 </li>
 </ul>
@@ -482,32 +509,58 @@ Fused deposition modeling (FDM)
 </li>
 <li>Stratasys Fortus 380 MC
 <ul>
-<li>ABS; others possible</li>
+<li>ABS (reasonably tough: lego-brick material); others possible (i.e nylon)</li>
 <li>Soluble support</li>
 </ul>
 </li>
 <li>Markforged X7
 <ul>
-<li>Carbon fiber-reinforced nylon</li>
+<li>One of the first printers that enables you to include carbon fiber-reinforced nylon
+<ul>
+<li>Printed composite</li>
+</ul>
+</li>
+<li>Stiffer than many aluminum alloys</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 </li>
-<li>Examples of usages
-<ol>
-<li>Curtain headers, internal brackets for Airbus A350; air duct components.</li>
-<li>(“Ultem”: polyetherimide); PEEK; nylon</li>
-</ol>
-</li>
-<li>Support structures and extrusion diameter
-<img src=/docs/e-29/3/supp.png alt></li>
+<li>Industrial usage
+<ul>
+<li>Examples: Curtain headers,
+<a href="https://www.engineering.com/3DPrinting/3DPrintingArticles/ArticleID/15281/Airbus-Takes-on-Stratasys-3D-Printing-for-Serial-Part-Production.aspx?utm_content=buffer9f328&utm_medium=social&utm_source=pinterest.com&utm_campaign=buffer">internal brackets for Airbus A350</a>;
+<a href=https://www.diehl.com/aviation/en/>air duct components</a>.</li>
+<li>Material: “Ultem” (polyetherimide), PEEK, nylon</li>
+<li>Used due to the ability to rapidly manufacture in bulk + light weight compared to alternatives</li>
 </ul>
-<h4 id=stress-line-additive-manufacturing-slam>
+</li>
+</ul>
+<h3 id=support-structures-and-extrusion-diameter>
+Support structures and extrusion diameter
+<a class=anchor href=#support-structures-and-extrusion-diameter>#</a>
+</h3>
+<figure><img src=/docs/e-29/3/supp.png>
+</figure>
+<ul>
+<li>Stair-step effect
+<ul>
+<li>You can fix this with post-processing processes</li>
+<li>i.e. acetone vapor, sanding</li>
+</ul>
+</li>
+<li>Some FDM machines have two or more extrusion dies which can deposit different materials independently.
+<ul>
+<li>One of these extrusion heads might be set up to deposit dedicated support material, which is often soluble in water or a weak NaOH solution and can thus be readily removed from the printed part</li>
+<li>A widely used rule of thumb is that an overhang with an angle of up to 45° can be printed without any support material.</li>
+</ul>
+</li>
+</ul>
+<h3 id=stress-line-additive-manufacturing-slam>
 Stress Line Additive Manufacturing (SLAM)
 <a class=anchor href=#stress-line-additive-manufacturing-slam>#</a>
-</h4>
+</h3>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -522,40 +575,83 @@ Stress Line Additive Manufacturing (SLAM)
 <img src=/docs/e-29/3/slam.png alt>
 </div>
 </div>
-<h4 id=fdm-of-metal-powderpolymer-mixtures>
+<h3 id=fdm-of-metal-powderpolymer-mixtures>
 FDM of metal powder/polymer mixtures
 <a class=anchor href=#fdm-of-metal-powderpolymer-mixtures>#</a>
-</h4>
+</h3>
+<blockquote>
+<p>The filament material itself is crucial in determining the performance of the printed object. Filaments with new properties enter the market all the time. Materials with widely varying elasticity are available. It is possible to buy filaments with embedded metal particles, wood particles, carbon powder or even graphene (sheets of few-atom-thick carbon with exceptional in-plane thermal and electrical conductivity). These additives control the optical properties (e.g. reflectivity), and, with a post-printing sintering step, electrical conductivity (enabling printing of e.g. circuit boards) and possibly even thermal conductivity.</p>
+</blockquote>
+<blockquote>
+<p>Nevertheless, the working principle of FDM is that a thermoplastic material is temporarily softened inside the print head and then extruded layer by layer on to the emerging component. So it is likely that the largest constituent by volume of any FDM filament will continue to need to be a thermoplastic material. At the moment, organic thermoplastic polymers are the primary ingredient of most filament materials. However, we have already seen the working principle of FDM translated from organic thermoplastic polymers to metals and to glass, which can be extruded in a sufficiently viscous form that it holds its shape long enough to be deposited on to a component.</p>
+</blockquote>
+<ul>
+<li>A heated nozzle brings the feedstock filament close to its melting point, then an electrical current passed through the filament and into the substrate further heats the material causing it to fuse on to the substrate.
+<ul>
+<li>It has also been demonstrated with bulk metallic glasses, which are special alloys that remain amorphous at readily attainable cooling rates – i.e. they do not crystallize and can therefore achieve a desirable combination of hardness and toughness.</li>
+<li>Meanwhile, use of arc welding in conjunction with robotics to deposit metal has been demonstrated as a lower-resolution, but much faster, way of depositing material</li>
+</ul>
+</li>
+<li>Filament ~85 wt% metal powder; polylactic acid (PLA) binder</li>
+</ul>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>Filament ~85 wt% metal powder; polylactic acid (PLA) binder</li>
-<li>Print component by standard FDM</li>
 <li>Sinter at 980 °C (copper) or 830 °C (bronze) to fuse particles</li>
+<li>If you get high enough pressure, then the metal atoms themselves will fuse
+<ul>
+<li>You&rsquo;re not melting the object; shape is retained</li>
+<li>Same side of the coin: pores still exist
+<ul>
+<li>&ldquo;Pores are just cracks waiting to grow&rdquo; due to their sharp edges</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Quench; pickle or polish</li>
 </ul>
 </div>
 <div class="flex-even markdown-inner">
 <p>
-<img src=/docs/e-29/3/pow.png alt>
+<img src=/docs/e-29/3/pow.png alt></p>
+<blockquote>
+<p>Left: After printing; Right: After Polishing</p>
+</blockquote>
 </div>
 </div>
-<h3 id=direct-ink-writing>
+<h2 id=direct-ink-writing>
 Direct ink writing
 <a class=anchor href=#direct-ink-writing>#</a>
-</h3>
+</h2>
+<ul>
+<li>This is a hybrid between FDM and sintering, and involves extruding a paste containing particles of the structural material in a solvent.
+<ul>
+<li>The material can be extruded successfully through syringe needles as small as a micrometer in diameter.
 <ul>
 <li>Lead zirconium titanate ceramic particles in a solvent dispensed via nozzle</li>
 <li>Piezoelectric material</li>
-<li>Sintered to fuse particles and drive off binder
+</ul>
+</li>
+<li>The material paste is
+<a href=https://en.wikipedia.org/wiki/Thixotropy>thixotropic</a>, or shear-thinning, which means that when it is loaded and starts to flow, its apparent viscosity falls enabling it to be squeezed through the needle.
+<ul>
+<li>Versus than thermally softening polymer (like squeezing toothpaste from a tube)</li>
+</ul>
+</li>
+<li>When its shear strain rate falls again, its viscosity rises, so the extruded structure retains its shape and does not deform significantly under the action of gravity or surface tension.</li>
+<li>Once the structure has been printed, heat is applied to drive of the solvent and sinter the particles.</li>
+<li>Applications include making micro-scale sensors and actuators, and tissue scaffolds.</li>
+</ul>
+</li>
+</ul>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <p>
 <img src=/docs/e-29/3/ink2.png alt></p>
 <ul>
-<li>Material flow is achieved by using a thixotropic (shear- thinning) ink rather than thermally softening polymer (like squeezing toothpaste from a tube)</li>
+<li>Material flow is achieved by using a (shear- thinning) ink</li>
 <li>Features down to ~ 1 micrometer possible by extrusion through fine needles</li>
-<li>Advantages: heat not required; more material possibilities
+<li>Advantages: heat not required; more material possibilities (notably ceramics)
 <img src=/docs/e-29/3/istress.png alt></li>
 </ul>
 </div>
@@ -563,382 +659,23 @@ Direct ink writing
 <p>
 <img src=/docs/e-29/3/ink1.png alt></p>
 <ul>
-<li>Shear stress in material, 𝜏𝜏, is defined by: .$\tau = \tau_y + K \dot \gamma ^n$</li>
+<li>Shear stress in material, .$\tau$, is defined by:
+$$\tau = \tau_y + K \dot \gamma ^n$$</li>
 <li>.$\tau_y$ is zero-shear-rate yield stress (Pa)</li>
 <li>.$K$ is a material constant</li>
-<li>.$\hat \gamma$ is shear rate (1/s)</li>
+<li>.$\hat \gamma$ is shear (deformation) rate (1/s)</li>
 <li>.$n$ is shear-thinning exponent (&lt;1 for this process to work)</li>
 </ul>
 <figure><img src=/docs/e-29/3/igraph.png>
 </figure>
 </div>
 </div>
-</li>
-</ul>
-<h3 id=stereolithography>
-Stereolithography
-<a class=anchor href=#stereolithography>#</a>
-</h3>
-<p><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>A bath/“vat” or tray of photo- curable liquid is locally crosslinked (solidified) with a scanning laser beam or projected light pattern, usually violet (~405 nm) or ultraviolet (~365 nm)</li>
-<li>Absorption of photons as they pass through the liquid limits crosslinking to a small layer (typically tens of μm thick) at a time</li>
-<li>Two machine design approaches:
-<ul>
-<li>Light shines down onto liquid surface; platform moves down into the vat as the part builds up</li>
-<li>Light shines up through a window; part gradually drawn up out of a tray of resin</li>
-</ul>
-</li>
-<li>Stereolithography using a light projector</li>
-<li>Machines from Carbon, Formlabs, 3D Systems…</li>
-<li>Inverted setup:
-<ul>
-<li>Printed object drawn upwards out of tray of resin</li>
-<li>Separation from tray: peeling or O2-inhibited dead layer</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
-<figure><img src=/docs/e-29/3/stero.png>
-</figure>
-</div>
-</div>
-<figure><img src=/docs/e-29/3/proj.png>
-</figure>
-</p>
-<h4 id=resin-solidification-in-stereolithography>
-Resin solidification in stereolithography
-<a class=anchor href=#resin-solidification-in-stereolithography>#</a>
-</h4>
-<figure><img src=/docs/e-29/3/solid.png>
-</figure>
-<ul>
-<li>Absorption of the illuminating light means that exposure dose .$E(z)$ decreases exponentially with depth below resin surface .$z$:
-$$E(z) = E_0 e^{-z/D_p}$$
-<ul>
-<li>.$D_p$ is the penetration depth, a resin property</li>
-<li>Dose is the time integral of power intensity</li>
-<li>In projector-based systems, .$E_0 = I_0 t_\text{layer}$</li>
-<li>In laser-scanning systems, .$E_0$ is a function of illumination power intensity (W/m.$^2$), beam diameter w (m), and scanning speed, v (m/s):</li>
-</ul>
-</li>
-</ul>
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Gelation just occurs at the curing depth, .$D_c$ where the resin receives the curing dose, .$E_c$:
-$$E_c = E_0 e^{-D_c/D_p} \Longrightarrow D_c = D_p \ln \bigg( \frac{E_0}{E_c} \bigg)$$</li>
-<li>Cured material may not be very strong at curing depth, so layers typically overlap in z direction to ensure material is all well-gelled</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/3/gelpoint.png alt>
-</div>
-</div>
-<ul>
-<li>Thermoforming molds made using stereolithography, i.e Invisalign Orthodontic Aligners</li>
-</ul>
-<h4 id=hydrodynamic-stresses-in-dead-zone>
-Hydrodynamic stresses in dead zone
-<a class=anchor href=#hydrodynamic-stresses-in-dead-zone>#</a>
-</h4>
-<figure><img src=/docs/e-29/3/hydro.png>
-</figure>
-<h4 id=thermal-management-for-high-print-speeds>
-Thermal management for high print speeds
-<a class=anchor href=#thermal-management-for-high-print-speeds>#</a>
-</h4>
-<p><figure><img src=/docs/e-29/3/thm2.png>
-</figure>
-<figure><img src=/docs/e-29/3/thm.png>
-</figure>
-</p>
-<h4 id=computed-axial-lithography>
-Computed Axial Lithography
-<a class=anchor href=#computed-axial-lithography>#</a>
-</h4>
-<ul>
-<li>Tomographic synthesis of 3D light dose</li>
-</ul>
-<p><figure><img src=/docs/e-29/3/cal.png>
-</figure>
-<figure><img src=/docs/e-29/3/cal2.png>
-</figure>
-</p>
-<h3 id=poly-jet-printing>
-“Poly Jet” printing
-<a class=anchor href=#poly-jet-printing>#</a>
-</h3>
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Inkjet-dispensed polymer inks are built up layer by layer and photocured (crosslinked). Layers down to ~16 𝜇𝜇𝜇𝜇 thick.</li>
-<li>Elastic modulus and color can be varied spatially by mixing inks</li>
-<li>A wide range of mechanical properties (including elastomers) are now possible</li>
-<li>Note that these are “simulated” materials: the printed inks are photocured whereas the final production material may be, e.g., thermoplastic</li>
-<li>Electrically conductive materials are beginning to emerge</li>
-</ul>
-<hr>
-<ul>
-<li>Available in Jacobs Hall:
-<ul>
-<li>Objet260 Connex3</li>
-<li>Objet350 Connex3</li>
-<li>Interchangeable ink cartridges</li>
-</ul>
-</li>
-<li>Soft, rubbery, tacky:
-<ul>
-<li>Tango range</li>
-<li>~ few MPa Young’s Modulus</li>
-</ul>
-</li>
-<li>Rigid:
-<ul>
-<li>Vero (white, black, yellow, magenta, cyan, clear available)</li>
-<li>Digital ABS</li>
-<li>~ few GPaYoung’s Modulus</li>
-</ul>
-</li>
-<li>Soluble support:
-<ul>
-<li>FullCure705</li>
-<li>Remove by hand, water or NaOH solution</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/3/polyj.png alt></p>
-<figure><img src=/docs/e-29/3/polje.png>
-</figure>
-</div>
-</div>
-<h3 id=powderbinder-methods>
-Powder/binder methods
-<a class=anchor href=#powderbinder-methods>#</a>
-</h3>
-<h3 id=selective-laser-meltingsintering-sls>
-Selective laser melting/sintering (SLS)
-<a class=anchor href=#selective-laser-meltingsintering-sls>#</a>
-</h3>
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Processes powders layer by layer</li>
-<li>Can be applied to thermoplastic polymers (esp. Nylon), metals, and even ceramics</li>
-<li>Powder particles are heated enough that surfaces mel.t Atoms/molecules at their surfaces interdiffuse, bonding the particles.</li>
-<li>Parts usually retain some porosity</li>
-</ul>
-<figure><img src=/docs/e-29/3/slm2.png>
-</figure>
-</div>
-<div class="flex-even markdown-inner">
-<figure><img src=/docs/e-29/3/slm.png>
-</figure>
-<ul>
-<li>Scanning laser beam completely melts the powder during processing</li>
-<li>Greater control of grain structure and lower porosity than with selective laser sintering</li>
-<li>Fully dense structures achievable</li>
-<li>Sometimes called Direct Metal Laser Melting or Directed Energy Deposition</li>
-</ul>
-</div>
-</div>
-<h4 id=examples-of-components>
-Examples of components
-<a class=anchor href=#examples-of-components>#</a>
-</h4>
-<ul>
-<li>3D printed gas turbine blades
-<ul>
-<li>Polycrystalline nickel superalloy</li>
-<li>Layer by layer powder fusion</li>
-<li>Survived 13,000 rpm at 1250 °C
-<figure><img src=/docs/e-29/3/slmex.png>
-</figure>
-</li>
-</ul>
-</li>
-<li>Application: pressure sensor housing in General Electric jet engine compressor
-<ul>
-<li>Co-Cr alloy</li>
-<li>19 of them in the GE LEAP engine</li>
-<li>Replaces a casting process</li>
-<li>Development time up to a year faster than using casting</li>
-<li>Made using SLM</li>
-</ul>
-</li>
-<li>Example of remanufacturing with SLM
-<img src=/docs/e-29/3/reman.png alt></li>
-</ul>
-<h3 id=electron-beam-melting>
-Electron-beam melting
-<a class=anchor href=#electron-beam-melting>#</a>
-</h3>
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Like SLM, produces fully dense parts</li>
-<li>Operates in vacuum
-<ul>
-<li>In contrast, SLM uses an inert gas atmosphere</li>
-<li>Vacuum allows higher temperatures to be used (> 800 K)</li>
-<li>Reduces oxidation and porosity due to adsorbed gases</li>
-</ul>
-</li>
-<li>Materials more limited than SLM
-<ul>
-<li>Examples: Ti grade 2, Ti6Al4V, Inconel 718, CoCrMo</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/3/ebeam.png alt>
-<img src=/docs/e-29/3/ebeam1.png alt>
-</div>
-</div>
-<h3 id=hybrid-subtractiveadditive-manufacturing>
-Hybrid subtractive/additive manufacturing
-<a class=anchor href=#hybrid-subtractiveadditive-manufacturing>#</a>
-</h3>
-<ul>
-<li>Laser deposition welding</li>
-<li>Conventional milling and turning</li>
-</ul>
-<figure><img src=/docs/e-29/3/hyb.png>
-</figure>
-<h3 id=powder-binder-method>
-Powder-binder method
-<a class=anchor href=#powder-binder-method>#</a>
-</h3>
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Polymer powder and deposited binder (may be colored).</li>
-<li>Left: schematic illustration of the threedimensional-printing process. Source: After E. Sachs and M. Cima.</li>
-<li>Can also be applied to binders with metal powders, which are later sintered/fused (Desktop Metal, Markforged…)</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
-<figure><img src=/docs/e-29/3/powd.png>
-</figure>
-</div>
-</div>
-<h3 id=emerging-methods>
-Emerging methods
-<a class=anchor href=#emerging-methods>#</a>
-</h3>
-<ul>
-<li>Directly fuse thermoplastic powders layer-by-layer</li>
-<li>Something like a 3D photocopier
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://player.vimeo.com/video/486454759 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-</li>
-</ul>
-<h4 id=powdered-materials>
-Powdered materials
-<a class=anchor href=#powdered-materials>#</a>
-</h4>
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Polymer powder production
-<ul>
-<li>Ball milling: grind below glass transition</li>
-</ul>
-</li>
-<li>Metal powder production
-<ul>
-<li>Solid-state reduction: crush ore, pass through furnace</li>
-<li>Atomization:rapidly freeze molten spray</li>
-<li>Electrolysis: deposition in powder form (e.g. Cu)</li>
-<li>Chemical, e.g. precipitation from solution</li>
-</ul>
-</li>
-<li>Size distributions typically Gaussian
-<ul>
-<li>SLM: typical average ~ 30 microns</li>
-<li>The more spherical, the more easily it flows</li>
-<li>Some powders more porous</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
-<figure><img src=/docs/e-29/3/powm.png>
-</figure>
-</div>
-</div>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/NFF0QQIQDXE style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div>
-<h2 id=design-for-additive-manufacturing>
-Design for additive manufacturing
-<a class=anchor href=#design-for-additive-manufacturing>#</a>
-</h2>
-<ul>
-<li>Stretch-dominated lattices
-<ul>
-<li>e.g. octet truss structure</li>
-<li>One of the stiffest structures known</li>
-<li>Produced, e.g., by projection microstereolithography</li>
-</ul>
-</li>
-</ul>
-<figure><img src=/docs/e-29/3/struct.png>
-</figure>
-<h3 id=tuning-material-properties-with-structure>
-Tuning material properties with structure
-<a class=anchor href=#tuning-material-properties-with-structure>#</a>
-</h3>
-<ul>
-<li>Printed cellular structures can offer new classes of material
-<figure><img src=/docs/e-29/3/turning.png>
-</figure>
-</li>
-</ul>
-<h3 id=current-challenges-with-3d-printing>
-Current challenges with 3D printing
-<a class=anchor href=#current-challenges-with-3d-printing>#</a>
-</h3>
-<ul>
-<li>Speed – for a single material and non-freeform geometry, machining is still probably quicker; injection molding is certainly faster</li>
-<li>Lower mechanical strength – directionality, porosity, surface flaws</li>
-<li>Surface finish – roughness often of many microns</li>
-<li>Resolution – from ~ 0.25 mm for basic FDM down to a few microns for SLA/SLS/SLM. Sub-micrometer resolution possible for two-photon SLA.</li>
-<li>Expense of input material – fine filaments, powders, inks: some proprietary consumables</li>
-</ul>
-<h2 id=potential-future-applications-of-3d-printing>
-Potential future applications of 3D printing
-<a class=anchor href=#potential-future-applications-of-3d-printing>#</a>
-</h2>
-<ul>
-<li>Food?</li>
-<li>Clothes?</li>
-<li>Human organs?</li>
-<li>Houses?</li>
-<li>What are the challenges of 3D printing?
-<ul>
-<li>Intellectual property; forgery</li>
-<li>Difficulty of regulating production (e.g. of weapons; organs)</li>
-<li>Carbon footprint (energy input) of 3D-printed components vs traditionally manufactured components</li>
-<li>Overall will 3D printing create or destroy jobs?</li>
-</ul>
-</li>
-</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/0028320e30108cf9d65cc7f5844c376ca6a249d0 title="Last modified by Max Vogel | February 10, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c565a3056288ddf6390032aeb76f95811059b1b6 title="Last modified by Max Vogel | February 11, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 10, 2022</span>
+<span>February 11, 2022</span>
 </a>
 </div>
 <div>
@@ -958,40 +695,24 @@ Potential future applications of 3D printing
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#02-08-additive-processes-overview-and-extrusion-based-processes>02-08: Additive processes: overview, and extrusion-based processes</a>
-<ul>
-<li><a href=#reasons-to-use-additive-manufacturing>Reasons to use additive manufacturing</a>
-<ul>
-<li><a href=#working-principles-for-additive-manufacturing>Working principles for additive manufacturing</a></li>
-</ul>
-</li>
-<li><a href=#details-and-capabilities-of-additive-processes>Details and capabilities of additive processes</a>
+<li><a href=#the-rise-of-additive-manufacturing>The rise of additive manufacturing</a></li>
+<li><a href=#reasons-to-use-additive-manufacturing>Reasons to use additive manufacturing</a></li>
+<li><a href=#working-principles-for-additive-manufacturing>Working principles for additive manufacturing</a>
 <ul>
 <li><a href=#simple-model-for-extrusion>Simple model for extrusion</a></li>
 <li><a href=#considerations>Considerations</a></li>
 </ul>
 </li>
-<li><a href=#methods-for-polymers>Methods for polymers</a>
+<li><a href=#types-of-additive-process>Types of additive process</a>
 <ul>
-<li><a href=#fused-deposition-modeling-fdm>Fused deposition modeling (FDM)</a></li>
+<li><a href=#fused-deposition-modeling-fdm>Fused deposition modeling (FDM)</a>
+<ul>
+<li><a href=#support-structures-and-extrusion-diameter>Support structures and extrusion diameter</a></li>
+<li><a href=#stress-line-additive-manufacturing-slam>Stress Line Additive Manufacturing (SLAM)</a></li>
+<li><a href=#fdm-of-metal-powderpolymer-mixtures>FDM of metal powder/polymer mixtures</a></li>
+</ul>
+</li>
 <li><a href=#direct-ink-writing>Direct ink writing</a></li>
-<li><a href=#stereolithography>Stereolithography</a></li>
-<li><a href=#poly-jet-printing>“Poly Jet” printing</a></li>
-<li><a href=#powderbinder-methods>Powder/binder methods</a></li>
-<li><a href=#selective-laser-meltingsintering-sls>Selective laser melting/sintering (SLS)</a></li>
-<li><a href=#electron-beam-melting>Electron-beam melting</a></li>
-<li><a href=#hybrid-subtractiveadditive-manufacturing>Hybrid subtractive/additive manufacturing</a></li>
-<li><a href=#powder-binder-method>Powder-binder method</a></li>
-<li><a href=#emerging-methods>Emerging methods</a></li>
-</ul>
-</li>
-<li><a href=#design-for-additive-manufacturing>Design for additive manufacturing</a>
-<ul>
-<li><a href=#tuning-material-properties-with-structure>Tuning material properties with structure</a></li>
-<li><a href=#current-challenges-with-3d-printing>Current challenges with 3D printing</a></li>
-</ul>
-</li>
-<li><a href=#potential-future-applications-of-3d-printing>Potential future applications of 3D printing</a></li>
 </ul>
 </li>
 </ul>

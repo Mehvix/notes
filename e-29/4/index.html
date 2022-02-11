@@ -1,0 +1,826 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Processes based on light-sensitive liquids #  Stereolithography (SLA) #   Also called Digital Light Printing (DLP) a tray, bath or vat of a photo-sensitive liquid (a resin) is locally crosslinked (solidified) with a scanning laser beam or projected light pattern (i.e Photoinitiator), usually violet (~405 nm) or ultraviolet (~365 nm) Covalent bonds form between the molecules in the liquid, forming a solid material (this reaction is called photocrosslinking)  Absorption of photons as they pass through the liquid limits crosslinking to a small layer (typically tens of μm thick) at a time   Two machine design approaches:  Light shines down onto liquid surface; platform moves down into the vat as the part builds up Light shines up through a window; part gradually drawn up out of a tray of resin         Unwanted bonding can be avoided by making the base oxygen-permeable (e.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 4: Additive Processes: Light-based, etc.">
+<meta property="og:description" content="Processes based on light-sensitive liquids #  Stereolithography (SLA) #   Also called Digital Light Printing (DLP) a tray, bath or vat of a photo-sensitive liquid (a resin) is locally crosslinked (solidified) with a scanning laser beam or projected light pattern (i.e Photoinitiator), usually violet (~405 nm) or ultraviolet (~365 nm) Covalent bonds form between the molecules in the liquid, forming a solid material (this reaction is called photocrosslinking)  Absorption of photons as they pass through the liquid limits crosslinking to a small layer (typically tens of μm thick) at a time   Two machine design approaches:  Light shines down onto liquid surface; platform moves down into the vat as the part builds up Light shines up through a window; part gradually drawn up out of a tray of resin         Unwanted bonding can be avoided by making the base oxygen-permeable (e.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/e-29/4/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2022-02-10T19:53:30-08:00">
+<title>Week 4: Additive Processes: Light-based, etc. | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.cb4c1819ca3346436472a75e42b4007d616d3a1c4d98ccff402371d47ca5efae.js integrity="sha256-y0wYGcozRkNkcqdeQrQAfWFtOhxNmMz/QCNx1Hyl764=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
+<a role=button>CogSci C100</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/attn/>Attention</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle>
+<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
+<a role=button>EECS 16A</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle checked>
+<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
+<a role=button>Engineering 29</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/4/ class=active>Week 4: Additive Processes: Light-based, etc.</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
+</li>
+<li>
+<input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
+<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
+<a role=button>AP Notes</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+<li>
+<a href=# target=_blank rel=noopener>
+—
+</a>
+</li>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+w³.mehvix.com
+</a>
+</li>
+<li>
+<a href=https://pass.mehvix.com target=_blank rel=noopener>
+pass.mehvix.com
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Week 4: Additive Processes: Light-based, etc.</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#processes-based-on-light-sensitive-liquids>Processes based on light-sensitive liquids</a>
+<ul>
+<li><a href=#stereolithography-sla>Stereolithography (SLA)</a>
+<ul>
+<li><a href=#resin-solidification-in-stereolithography>Resin solidification in stereolithography</a></li>
+<li><a href=#hydrodynamic-stresses-in-dead-zone>Hydrodynamic stresses in dead zone</a></li>
+<li><a href=#thermal-management-for-high-print-speeds>Thermal management for high print speeds</a></li>
+<li><a href=#sla-vs-fdm>SLA vs FDM</a></li>
+</ul>
+</li>
+<li><a href=#computed-axial-lithography>Computed Axial Lithography</a></li>
+<li><a href=#poly-jet-printing>“Poly Jet” printing</a></li>
+<li><a href=#powderbinder-methods>Powder/binder methods</a></li>
+<li><a href=#selective-laser-meltingsintering-sls>Selective laser melting/sintering (SLS)</a>
+<ul>
+<li><a href=#examples-of-components>Examples of components</a></li>
+</ul>
+</li>
+<li><a href=#electron-beam-melting>Electron-beam melting</a></li>
+<li><a href=#hybrid-subtractiveadditive-manufacturing>Hybrid subtractive/additive manufacturing</a></li>
+<li><a href=#powder-binder-method>Powder-binder method</a></li>
+<li><a href=#emerging-methods>Emerging methods</a>
+<ul>
+<li><a href=#powdered-materials>Powdered materials</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#design-for-additive-manufacturing>Design for additive manufacturing</a>
+<ul>
+<li><a href=#tuning-material-properties-with-structure>Tuning material properties with structure</a></li>
+<li><a href=#current-challenges-with-3d-printing>Current challenges with 3D printing</a></li>
+</ul>
+</li>
+<li><a href=#potential-future-applications-of-3d-printing>Potential future applications of 3D printing</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=processes-based-on-light-sensitive-liquids>
+Processes based on light-sensitive liquids
+<a class=anchor href=#processes-based-on-light-sensitive-liquids>#</a>
+</h1>
+<h2 id=stereolithography-sla>
+Stereolithography (SLA)
+<a class=anchor href=#stereolithography-sla>#</a>
+</h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Also called Digital Light Printing (DLP)</li>
+<li>a tray, bath or vat of a photo-sensitive liquid (a resin) is locally crosslinked (solidified) with a scanning laser beam or projected light pattern (i.e
+<a href=https://en.wikipedia.org/wiki/Photoinitiator>Photoinitiator</a>), usually violet (~405 nm) or ultraviolet (~365 nm)</li>
+<li>Covalent bonds form between the molecules in the liquid, forming a solid material (this reaction is called photocrosslinking)
+<ul>
+<li>Absorption of photons as they pass through the liquid limits crosslinking to a small layer (typically tens of μm thick) at a time</li>
+</ul>
+</li>
+<li>Two machine design approaches:
+<ul>
+<li>Light shines down onto liquid surface; platform moves down into the vat as the part builds up</li>
+<li>Light shines up through a window; part gradually drawn up out of a tray of resin</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<figure><img src=/docs/e-29/3/stero.png>
+</figure>
+</div>
+</div>
+<ul>
+<li>Unwanted bonding can be avoided by making the base oxygen-permeable (e.g. by making it out of an elastomeric material, as in the Carbon 3D systems) since oxygen inhibits the photocrosslinking reaction and an oxygen-rich layer will form in the resin just above the permeable window because of air diffusing through the window</li>
+<li>Inverted setup:
+<ul>
+<li>Printed object drawn upwards out of tray of resin</li>
+<li>Separation from tray: peeling or O2-inhibited dead layer</li>
+</ul>
+</li>
+</ul>
+<figure><img src=/docs/e-29/3/proj.png>
+</figure>
+<ul>
+<li>In older SLA configurations, the platform is submerged in the resin, the illumination comes in from above the resin surface, and the platform moves down into the resin bath after each layer was printed. Sometimes a mechanical ‘wiper’ is used to distribute a thin, uniform layer of uncured resin on top of the component before the next exposure step</li>
+<li>In new designs, the illumination is shone through a window in the bottom of the resin tray, and the platform moves upwards, pulling the object out of the tray as it prints.
+<ul>
+<li>This approach has the advantage of requiring a less deep resin tray, and eliminating the need for a wiper, but means that the machine designer must ensure that the resin does not bond to the window at the base of the resin tray.</li>
+</ul>
+</li>
+</ul>
+<h3 id=resin-solidification-in-stereolithography>
+Resin solidification in stereolithography
+<a class=anchor href=#resin-solidification-in-stereolithography>#</a>
+</h3>
+<figure><img src=/docs/e-29/3/solid.png>
+</figure>
+<ul>
+<li>
+<a href=https://en.wikipedia.org/wiki/Beer%E2%80%93Lambert_law>Beer-Lambert model:</a> Absorption of the illuminating light means that exposure dose .$E(z)$ (measured in W/m.$^2$) of the light is at its highest at the point where the light enters the resin, and decreases exponentially with depth below resin surface .$z$:
+$$E(z) = E_0 e^{-z/D_p}$$
+<ul>
+<li>.$D_p$ is the penetration depth, a resin property
+<ul>
+<li>The resin at a particular location will photocrosslink when the total illumination dose exceeds a critical value called the curing dose</li>
+<li>The depth into the resin at which the curing dose is reached is termed the curing depth</li>
+</ul>
+</li>
+<li>Dose is the time integral of power intensity
+<ul>
+<li>Measured in J/m.$^2$</li>
+</ul>
+</li>
+<li>In projector-based systems, .$E_0 = I_0 t_\text{layer}$</li>
+<li>In laser-scanning systems, .$E_0$ is a function of illumination power intensity (W/m.$^2$), beam diameter w (m), and scanning speed, v (m/s):</li>
+</ul>
+</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Gelation just occurs at the curing depth, .$D_c$ where the resin receives the curing dose, .$E_c$:
+$$E_c = E_0 e^{-D_c/D_p} \Longrightarrow D_c = D_p \ln \bigg( \frac{E_0}{E_c} \bigg)$$</li>
+<li>Cured material may not be very strong at curing depth, so layers typically overlap in .$z$ direction to ensure material is all well-gelled</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/e-29/3/gelpoint.png alt>
+</div>
+</div>
+<ul>
+<li>Thermoforming molds are most commonly made with stereolithography, i.e orthodontic aligners</li>
+</ul>
+<h3 id=hydrodynamic-stresses-in-dead-zone>
+Hydrodynamic stresses in dead zone
+<a class=anchor href=#hydrodynamic-stresses-in-dead-zone>#</a>
+</h3>
+<figure><img src=/docs/e-29/3/hydro.png>
+</figure>
+<h3 id=thermal-management-for-high-print-speeds>
+Thermal management for high print speeds
+<a class=anchor href=#thermal-management-for-high-print-speeds>#</a>
+</h3>
+<p><figure><img src=/docs/e-29/3/thm2.png>
+</figure>
+<figure><img src=/docs/e-29/3/thm.png>
+</figure>
+</p>
+<h3 id=sla-vs-fdm>
+SLA vs FDM
+<a class=anchor href=#sla-vs-fdm>#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SLA</td>
+<td>Can reduce layer thickness to much smaller levels than FDM (see especially the Carbon 3D system which claims sub-micrometer layer thicknesses)</td>
+<td>Only a single resin material can be patterned per object</td>
+</tr>
+<tr>
+<td></td>
+<td>Can use digital micromirror devices to print an entire layer in one flash – potentially higher throughput than FDM</td>
+<td>Mechanical properties of photocrosslinkable resins lag behind those of FDM filaments</td>
+</tr>
+<tr>
+<td></td>
+<td>With thinner layers, can get more isotropic mechanical strength than in layered FDM</td>
+<td></td>
+</tr>
+<tr>
+<td>FDM</td>
+<td>Very wide range of printable filament materials now available, with specialist mechanical, thermal, optical, and electrical properties</td>
+<td>Anisotropic mechanical strength because of layered deposition – weaker layer-to-layer than within layers</td>
+</tr>
+<tr>
+<td></td>
+<td>Apparatus can be very affordable (a few hundred dollars in some cases)</td>
+<td>Surface roughness comparable to extruded filament diameter – cannot directly print shiny surfaces</td>
+</tr>
+</tbody>
+</table>
+<h2 id=computed-axial-lithography>
+Computed Axial Lithography
+<a class=anchor href=#computed-axial-lithography>#</a>
+</h2>
+<ul>
+<li>A layer-free tomographic approach to photopatterning involving synthesis of 3D light dose</li>
+<li>Benefits: higher speed, the ability to print into more viscous materials, and the ability to avoid the use of solid supporting structures for delicate geometries.</li>
+</ul>
+<p><figure><img src=/docs/e-29/3/cal.png>
+</figure>
+<figure><img src=/docs/e-29/3/cal2.png>
+</figure>
+</p>
+<h2 id=poly-jet-printing>
+“Poly Jet” printing
+<a class=anchor href=#poly-jet-printing>#</a>
+</h2>
+<ul>
+<li>When a high degree of material heterogeneity is needed in a single object (e.g. in color, or mechanical stiffness) it may be necessary to turn to high-end 3D inkjet printing processes.</li>
+<li>These have been commercialized, for example, by the company Stratasys with the brand name “PolyJet”</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Inkjet-dispensed polymer inks are built up layer by layer and photocured (crosslinked). Layers down to ~16.$\mu$ thick.</li>
+<li>Elastic modulus and color can be varied spatially by mixing inks</li>
+<li>A wide range of mechanical properties (including elastomers) are now possible
+<ul>
+<li>Rigid glassy polymers to soft rubber-like performance possible</li>
+<li>Note that these are “simulated” materials: the printed inks are photocured whereas the final production material may be, e.g., thermoplastic</li>
+</ul>
+</li>
+<li>Typical machines can carry about five different material cartridges at a given time, and can tune material properties by depositing finely interspersed patterns of droplets of these materials.</li>
+<li>Far more expensive than FDM or basic SLA tools.</li>
+<li>Electrically conductive materials are beginning to emerge</li>
+</ul>
+<hr>
+<ul>
+<li>Available in Jacobs Hall:
+<ul>
+<li>Objet260 Connex3</li>
+<li>Objet350 Connex3</li>
+<li>Interchangeable ink cartridges</li>
+</ul>
+</li>
+<li>Soft, rubbery, tacky:
+<ul>
+<li>Tango range</li>
+<li>~ few MPa Young’s Modulus</li>
+</ul>
+</li>
+<li>Rigid:
+<ul>
+<li>Vero (white, black, yellow, magenta, cyan, clear available)</li>
+<li>Digital ABS</li>
+<li>~ few GPaYoung’s Modulus</li>
+</ul>
+</li>
+<li>Soluble support:
+<ul>
+<li>FullCure705</li>
+<li>Remove by hand, water or NaOH solution</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/e-29/3/polyj.png alt></p>
+<figure><img src=/docs/e-29/3/polje.png>
+</figure>
+</div>
+</div>
+<h2 id=powderbinder-methods>
+Powder/binder methods
+<a class=anchor href=#powderbinder-methods>#</a>
+</h2>
+<blockquote>
+<p>One approach to printing objects from powders (which may include metal, polymer or ceramic powders) is to selectively dispense a binder (a sprayable ‘glue’, usually a polymer) on to layers of dry powder, holding the powder together in specific locations. After printing, the part is removed from the surrounding unbound loose powder. For polymeric parts, the binder can be colored and constitutes part of the final object. For metal or ceramic printing, the binder is subsequently be driven off (vaporized) with high heat after the whole part has been printed, and the powder is also sintered together by the heat (see below for explanation of sintering).</p>
+</blockquote>
+<h2 id=selective-laser-meltingsintering-sls>
+Selective laser melting/sintering (SLS)
+<a class=anchor href=#selective-laser-meltingsintering-sls>#</a>
+</h2>
+<ul>
+<li>Use a heat source (usually a scanning laser beam) to sinter powders of the structural material directly, without a binder</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Can be applied to thermoplastic polymers (esp. Nylon), metals, and even ceramics</li>
+<li>A thin layer of the powder is rolled across the printing bed, and then a laser is scanned across the layer, delivering enough heat that the powder particles melt only at their surfaces.</li>
+<li>Atoms or molecules at the contacting interfaces between particles diffuse faster in the elevated temperature and cause adjacent particles to connect to each other.
+<ul>
+<li>Powder particles are heated enough that surfaces melt&ndash; atoms/molecules at their surfaces interdiffuse, bonding the particles.</li>
+</ul>
+</li>
+<li>Because the powder is not fully melted, parts usually retain some porosity
+<ul>
+<li>Can weaken the component compared to continuous bulk material</li>
+<li>The pores can serve as stress concentrators and promote crack propagation across the component</li>
+<li>The surface finish can be rough — the roughness is comparable to the metal particle size</li>
+</ul>
+</li>
+</ul>
+<figure><img src=/docs/e-29/3/slm2.png>
+</figure>
+</div>
+<div class="flex-even markdown-inner">
+<figure><img src=/docs/e-29/3/slm.png>
+</figure>
+<h3 id=selective-laser-melting>
+Selective Laser Melting
+<a class=anchor href=#selective-laser-melting>#</a>
+</h3>
+<ul>
+<li>Also called Direct Metal Laser or Directed Energy Deposition</li>
+<li>There has been a move away from metal SLS towards complete melting of the metal powder that is being fused.
+<ul>
+<li>Greater control of grain structure and lower porosity than with selective laser sintering</li>
+<li>Fully dense structures achievable</li>
+</ul>
+</li>
+<li>Scanning laser beam completely melts the powder during processing
+<ul>
+<li>No binders being employed but rather the structure of the component being built up directly from metal.</li>
+</ul>
+</li>
+<li>These processes may be layer-by-layer or, increasingly commonly, via a direct spray</li>
+</ul>
+</div>
+</div>
+<h3 id=examples-of-components>
+Examples of components
+<a class=anchor href=#examples-of-components>#</a>
+</h3>
+<ul>
+<li>3D printed gas turbine blades
+<ul>
+<li>Polycrystalline nickel superalloy</li>
+<li>Layer by layer powder fusion</li>
+<li>Survived 13,000 rpm at 1250 °C
+<figure><img src=/docs/e-29/3/slmex.png>
+</figure>
+</li>
+</ul>
+</li>
+<li>Application: pressure sensor housing in General Electric jet engine compressor
+<ul>
+<li>Co-Cr alloy</li>
+<li>19 of them in the GE LEAP engine</li>
+<li>Replaces a casting process</li>
+<li>Development time up to a year faster than using casting</li>
+<li>Made using SLM</li>
+</ul>
+</li>
+<li>Example of remanufacturing with SLM
+<img src=/docs/e-29/3/reman.png alt></li>
+</ul>
+<h2 id=electron-beam-melting>
+Electron-beam melting
+<a class=anchor href=#electron-beam-melting>#</a>
+</h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Like SLM, produces fully dense parts</li>
+<li>Operates in vacuum to avoid metal oxidation and so that the electrons can follow a straight path without colliding with air molecules.
+<ul>
+<li>In contrast, SLM uses an inert gas atmosphere</li>
+<li>Vacuum allows higher temperatures to be used (> 800 K)</li>
+<li>Reduces oxidation and porosity due to adsorbed gases</li>
+</ul>
+</li>
+<li>Materials more limited than SLM
+<ul>
+<li>Examples: Ti grade 2, Ti6Al4V, Inconel 718, CoCrMo</li>
+</ul>
+</li>
+<li>Features down to a few micrometers are possible although printing times are slow compared with SLS or even SLM</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>
+<img src=/docs/e-29/3/ebeam.png alt>
+<img src=/docs/e-29/3/ebeam1.png alt>
+</div>
+</div>
+<h2 id=hybrid-subtractiveadditive-manufacturing>
+Hybrid subtractive/additive manufacturing
+<a class=anchor href=#hybrid-subtractiveadditive-manufacturing>#</a>
+</h2>
+<ul>
+<li>In the last few years hybrid machines have been demonstrated that combine a subtractive machining center (lathe, mill) with an additive capability</li>
+<li>The idea is to start with the smallest possible piece of stock material, deposit additional features of a component (e.g. flanges) additively on to that stock, and then machine back to the final shape, benefiting from the higher precision and surface finish of turning and milling.</li>
+<li>A machine made by DMG-Mori is now on the market and uses a metal spray together with a laser to deposit material, rather than a powder bed approach.</li>
+</ul>
+<figure><img src=/docs/e-29/3/hyb.png>
+</figure>
+<h2 id=powder-binder-method>
+Powder-binder method
+<a class=anchor href=#powder-binder-method>#</a>
+</h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Polymer powder and deposited binder (may be colored).</li>
+<li>Left: schematic illustration of the threedimensional-printing process. Source: After E. Sachs and M. Cima.</li>
+<li>Can also be applied to binders with metal powders, which are later sintered/fused (Desktop Metal, Markforged…)</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<figure><img src=/docs/e-29/3/powd.png>
+</figure>
+</div>
+</div>
+<h2 id=emerging-methods>
+Emerging methods
+<a class=anchor href=#emerging-methods>#</a>
+</h2>
+<ul>
+<li>Directly fuse thermoplastic powders layer-by-layer</li>
+<li>Something like a 3D photocopier
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://player.vimeo.com/video/486454759 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+</li>
+</ul>
+<h3 id=powdered-materials>
+Powdered materials
+<a class=anchor href=#powdered-materials>#</a>
+</h3>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Polymer powder production
+<ul>
+<li>Ball milling: grind below glass transition</li>
+</ul>
+</li>
+<li>Metal powder production
+<ul>
+<li>Solid-state reduction: crush ore, pass through furnace</li>
+<li>Atomization:rapidly freeze molten spray</li>
+<li>Electrolysis: deposition in powder form (e.g. Cu)</li>
+<li>Chemical, e.g. precipitation from solution</li>
+</ul>
+</li>
+<li>Size distributions typically Gaussian
+<ul>
+<li>SLM: typical average ~ 30 microns</li>
+<li>The more spherical, the more easily it flows</li>
+<li>Some powders more porous</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<figure><img src=/docs/e-29/3/powm.png>
+</figure>
+</div>
+</div>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/NFF0QQIQDXE style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h1 id=design-for-additive-manufacturing>
+Design for additive manufacturing
+<a class=anchor href=#design-for-additive-manufacturing>#</a>
+</h1>
+<ul>
+<li>Stretch-dominated lattices
+<ul>
+<li>e.g. octet truss structure</li>
+<li>One of the stiffest structures known</li>
+<li>Produced, e.g., by projection microstereolithography</li>
+</ul>
+</li>
+</ul>
+<figure><img src=/docs/e-29/3/struct.png>
+</figure>
+<h2 id=tuning-material-properties-with-structure>
+Tuning material properties with structure
+<a class=anchor href=#tuning-material-properties-with-structure>#</a>
+</h2>
+<ul>
+<li>Printed cellular structures can offer new classes of material
+<figure><img src=/docs/e-29/3/turning.png>
+</figure>
+</li>
+</ul>
+<h2 id=current-challenges-with-3d-printing>
+Current challenges with 3D printing
+<a class=anchor href=#current-challenges-with-3d-printing>#</a>
+</h2>
+<ul>
+<li>Speed – for a single material and non-freeform geometry, machining is still probably quicker; injection molding is certainly faster</li>
+<li>Lower mechanical strength – directionality, porosity, surface flaws</li>
+<li>Surface finish – roughness often of many microns</li>
+<li>Resolution – from ~ 0.25 mm for basic FDM down to a few microns for SLA/SLS/SLM. Sub-micrometer resolution possible for two-photon SLA.</li>
+<li>Expense of input material – fine filaments, powders, inks: some proprietary consumables</li>
+</ul>
+<h1 id=potential-future-applications-of-3d-printing>
+Potential future applications of 3D printing
+<a class=anchor href=#potential-future-applications-of-3d-printing>#</a>
+</h1>
+<ul>
+<li>Food?</li>
+<li>Clothes?</li>
+<li>Human organs?</li>
+<li>Houses?</li>
+<li>What are the challenges of 3D printing?
+<ul>
+<li>Intellectual property; forgery</li>
+<li>Difficulty of regulating production (e.g. of weapons; organs)</li>
+<li>Carbon footprint (energy input) of 3D-printed components vs traditionally manufactured components</li>
+<li>Overall will 3D printing create or destroy jobs?</li>
+</ul>
+</li>
+</ul>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c565a3056288ddf6390032aeb76f95811059b1b6 title="Last modified by Max Vogel | February 11, 2022" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>February 11, 2022</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/e-29/4.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#processes-based-on-light-sensitive-liquids>Processes based on light-sensitive liquids</a>
+<ul>
+<li><a href=#stereolithography-sla>Stereolithography (SLA)</a>
+<ul>
+<li><a href=#resin-solidification-in-stereolithography>Resin solidification in stereolithography</a></li>
+<li><a href=#hydrodynamic-stresses-in-dead-zone>Hydrodynamic stresses in dead zone</a></li>
+<li><a href=#thermal-management-for-high-print-speeds>Thermal management for high print speeds</a></li>
+<li><a href=#sla-vs-fdm>SLA vs FDM</a></li>
+</ul>
+</li>
+<li><a href=#computed-axial-lithography>Computed Axial Lithography</a></li>
+<li><a href=#poly-jet-printing>“Poly Jet” printing</a></li>
+<li><a href=#powderbinder-methods>Powder/binder methods</a></li>
+<li><a href=#selective-laser-meltingsintering-sls>Selective laser melting/sintering (SLS)</a>
+<ul>
+<li><a href=#examples-of-components>Examples of components</a></li>
+</ul>
+</li>
+<li><a href=#electron-beam-melting>Electron-beam melting</a></li>
+<li><a href=#hybrid-subtractiveadditive-manufacturing>Hybrid subtractive/additive manufacturing</a></li>
+<li><a href=#powder-binder-method>Powder-binder method</a></li>
+<li><a href=#emerging-methods>Emerging methods</a>
+<ul>
+<li><a href=#powdered-materials>Powdered materials</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#design-for-additive-manufacturing>Design for additive manufacturing</a>
+<ul>
+<li><a href=#tuning-material-properties-with-structure>Tuning material properties with structure</a></li>
+<li><a href=#current-challenges-with-3d-printing>Current challenges with 3D printing</a></li>
+</ul>
+</li>
+<li><a href=#potential-future-applications-of-3d-printing>Potential future applications of 3D printing</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
