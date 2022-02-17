@@ -43,13 +43,13 @@ weight: 4
 - Participants are instructed to repeat message played in one ear while ignoring message played in other ear
 - Participants are very good at filtering out irrelevant information: they fail to notice even changes in language in the unattended ear or words that have been repeated dozens of times
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/attn/dichotic.png)
+![](/docs/cogsci-c100/attention/dichotic.png)
 {{< /columns >}}
     - However, they are usually able to pick out the gender of the speaker, words like “Fire,” and their own name (“cocktail party effect”)
     - In general, people tend to consciously attend to one source of information and ignore other sources, but people vary in degree to which they focus attention and ignore distractions
 - Results of dichotic listening experiments supports filter model of attention: everything is picked up on some level, but at any given moment, we focus our awareness on only a limited aspect of all that we are experiencing
     - Broadbent proposed a flowchart model of selective attention to explain these results
-        > {{< figure  src="/docs/cogsci-c100/attn/levels.png" >}}
+        > {{< figure  src="/docs/cogsci-c100/attention/levels.png" >}}
         > This type of flowchart model has become a standard way for cognitive scientists to describe and explain different aspects of cognition
     - Implications: We can understand how a cognitive system as a whole works by understanding how information flows through the system
 - Stimuli that we do not notice can affect us
@@ -64,7 +64,7 @@ weight: 4
 - In the few seconds in which the first experimenter was obscured, another experimenter took his place and continued the conversation
 - Only half the participants noticed the change -- even when specifically asked about it
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/attn/change.png)
+![](/docs/cogsci-c100/attention/change.png)
 {{< /columns >}}
 - Relatively dramatic changes can go undetected
 - Due to attempt to achieve object constancy in spite of changes in sensory input (e.g., shadows, occlusion)
@@ -96,7 +96,7 @@ weight: 4
 - Those with eating disorders take longer to report words related to body shape
 - Those who show an attentional bias toward suicide-related words are more likely to make a suicide attempt within the following 6 months (Cha, Najmi, Park et al., 2010)
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/attn/stroop.png)
+![](/docs/cogsci-c100/attention/stroop.png)
 {{< /columns >}}
 
 ## Evan Longoria’s catch
@@ -157,7 +157,7 @@ weight: 4
     - Used to search for combinations of features and for a feature that is missing (searching for blue X among red X’s, red O’s and blue O’s or searching for feature missing)
     - Controlled, serial processing
 - E.x. is it easier to find the slanted green line in (a) or (b)?
-    ![](/docs/cogsci-c100/attn/linez.png)
+    ![](/docs/cogsci-c100/attention/linez.png)
 
 # Attention-Deficit/Hyperactivity Disorder
 
@@ -181,7 +181,7 @@ weight: 4
 - Person is instructed to try to keep the signal on for increasing periods of time
 - Technique has been successfully used to teach people to reduce blood pressure, produce more regular heartbeats, decrease incidence of headaches and increase attention
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/attn/feedback.png)
+![](/docs/cogsci-c100/attention/feedback.png)
 {{< /columns >}}
     - _Neurofeedback_ is now also being used to treat ADHD and chronic pain
         - fMRI neurofeedback for ADHD increases activation in the right inferior frontal cortex and is associated with clinical symptom improvement (Rubia, Criaud, Wulff, et al., 2019)

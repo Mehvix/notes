@@ -431,7 +431,7 @@ weight: 5
 
 ## Induction techniques
 
-- Use autosuggestion/dream inoculation
+- **Use autosuggestion**/dream inoculation
     - Imagine as vividly as possible that your surroundings are a dream
     - During the day, think continuously that “all things are of the substance of dreams”
 - Strengthen desire/intention
@@ -440,27 +440,30 @@ weight: 5
     - Visualize yourself recognizing dreaming
     - Imagine yourself carrying out an intended dream action
     - Paul Tholey claims that most participants who consistently practice the reality testing and intention techniques will experience at least one lucid dream every night
-- **MILD** (Mnemonic Induction of Lucid Dreams) technique
-    - Preliminary training: prospective memory exercise
-        - Look for certain pre-specified targets each day for at least a week and do a reality test as soon as you notice the target
-    - When you awaken from a dream period, recall as many details as possible from your dream
-    - See yourself becoming lucid: Imagine that you are back in the dream from which you have just awakened, but this time you recognize that it is a dream
-    - Focus your intent: tell yourself “Next time I’m dreaming, I want to remember I’m dreaming” – and really mean it!
-    - Repeat procedure till you fall back asleep
-        - LaBerge found that with autosuggestion, he had a lucid dream on only 1 out of 6 nights in the lab; with MILD, he had one or more lucid dreams on 20 out of 21 nights in the lab
-- Sleep paralysis
-    - Experience can be terrifying
-        - Person feels they cannot move
-        - May feel like a great weight is holding them down; hallucinations may appear
-    - Neurological explanation:
-        - During REM, the voluntary muscles of the body are paralyzed
-        - Independent neural systems cause muscular paralysis, blockade of sensory input, and cortical activation – sometimes these don’t turn on or off at the same time, resulting in sleep paralysis
-        - Sometimes people panic when they experience sleep paralysis and struggle to move or to fully wake up, but such reactions are actually likely to stimulate the limbic areas of the brain and cause the REM to persist
-    - Solution:
-        - Remember it is a dream and therefore harmless
-        - Relax and adopt an attitude of interest and curiosity about what happens
-            - Dreams that proceed from paralysis experiences are often quite intense and wonderful
-        - About 20% of people who experience sleep paralysis say they really enjoy it
+### MILD
+
+- Mnemonic (mind) Induction of Lucid Dreams technique
+- Preliminary training: prospective memory exercise
+    - Look for certain pre-specified targets each day for at least a week and do a reality test as soon as you notice the target
+- When you awaken from a dream period, recall as many details as possible from your dream
+- See yourself becoming lucid: Imagine that you are back in the dream from which you have just awakened, but this time you recognize that it is a dream
+- Focus your intent: tell yourself “Next time I’m dreaming, I want to remember I’m dreaming” – and really mean it!
+- Repeat procedure till you fall back asleep
+    - LaBerge found that with autosuggestion, he had a lucid dream on only 1 out of 6 nights in the lab; with MILD, he had one or more lucid dreams on 20 out of 21 nights in the lab
+
+## Sleep paralysis
+- Experience can be terrifying
+    - Person feels they cannot move
+    - May feel like a great weight is holding them down; hallucinations may appear
+- Neurological explanation:
+    - During REM, the voluntary muscles of the body are paralyzed
+    - Independent neural systems cause muscular paralysis, blockade of sensory input, and cortical activation – **sometimes these don’t turn on or off at the same time**, resulting in sleep paralysis
+    - Sometimes people panic when they experience sleep paralysis and struggle to move or to fully wake up, but such reactions are actually likely to stimulate the limbic areas of the brain and cause the REM to persist
+- Solution:
+    - Remember it is a dream and therefore harmless
+    - Relax and adopt an attitude of interest and curiosity about what happens
+        - **Dreams that proceed from paralysis experiences are often quite intense and wonderful**
+    - About 20% of people who experience sleep paralysis say they really enjoy it because they're able to enjoy it
 
 ## Preventing Premature Awakening
 
@@ -481,35 +484,27 @@ weight: 5
     - To stay in a dream, create sensation of motion
 - If you do awaken, play dead
     - Remain perfectly motionless and deeply relax your body – there is a good chance that REM sleep will reassert itself and you will have an opportunity to enter a lucid dream consciously
-- Awakening at Will
-- How to awaken at will
-    - Yell – this directs your attention away from the dream and may actually activate vocal muscles of sleeping body
-    - Fixate your gaze on a stationary point: this will generally cause fixation point to blur, followed by dissolution of the entire dream scene and an awakening within 4 to 12 seconds
+## Awakening at Will
+
+- Yell – this directs your attention away from the dream and may actually activate vocal muscles of sleeping body
+    - You can activate your vocal cords even when sleeping
+- Fixate your gaze on a stationary point: this will generally cause fixation point to blur, followed by dissolution of the entire dream scene and an awakening within 4 to 12 seconds
 
 ## Q&A
-**Q:** Won’t all these efforts and exercises for becoming lucid lead to loss of sleep? And won’t I feel more tired after being awake in my dreams?
-**A:** Yes, lucid dream practices may result in some loss of sleep.
-- However, how tired you feel after a dream depends on what you did in the dream – if you battled endlessly with frustrating situations in a non-lucid dream, you probably will feel very tired afterwards
-- On the other hand, a particularly exciting flight over a glamorous landscape can leave a person emotionally vitalized for several days: “I customarily wake [from a lucid dream] with a cheerful ‘afterglow’ that carries me through the day”
-    - In general, people who find lucid dreams exhausting or unpleasant are not able to exercise much control over their dreams
-
-
-**Q:** Might lucid dreaming be dangerous for some people?
-**A:** In general, for people who are not “neurotic beyond the bounds of normality,” it is completely harmless.
-**Q:** How long does it take to learn lucid dreaming?
-**A:** This varies a lot with the individual. It may take a few days to a few months to induce a first lucid dream with these practices. In general though, it will take years to get to the point where one is able to have lucid dreams at will.
+* **Q:** Won’t all these efforts and exercises for becoming lucid lead to loss of sleep? And won’t I feel more tired after being awake in my dreams?
+* **A:** Yes, lucid dream practices may result in some loss of sleep.
+    - However, how tired you feel after a dream depends on what you did in the dream – if you battled endlessly with frustrating situations in a non-lucid dream, you probably will feel very tired afterwards
+    - On the other hand, a particularly exciting flight over a glamorous landscape can leave a person emotionally vitalized for several days: “I customarily wake [from a lucid dream] with a cheerful ‘afterglow’ that carries me through the day”
+        - In general, people who find lucid dreams exhausting or unpleasant are not able to exercise much control over their dreams
+* **Q:** Might lucid dreaming be dangerous for some people?
+* **A:** In general, for people who are not “neurotic beyond the bounds of normality,” it is completely harmless.
+* **Q:** How long does it take to learn lucid dreaming?
+* **A:** This varies a lot with the individual. It may take a few days to a few months to induce a first lucid dream with these practices. In general though, it will take years to get to the point where one is able to have lucid dreams at will.
 
 
 ## Transforming nightmares
 
-- Transforming Nightmares
-- Case examples:
-    - T-rex dream
-    - Dream of being chased by hostile figure
-
-----
-
-
+- You can resolve re-occurring nightmares by lucid dreaming and choosing to face the fear
 - Lucid dream therapy (LDT)
     - Client is trained in progressive muscle relaxation, then rehearses recurrent dream in as much detail as possible
     - Client selects a part of the recurrent dream that is emotionally and/or visually salient and during which he can imagine carrying out a particular task
@@ -518,8 +513,8 @@ weight: 5
     - Client is instructed to practice exercise at home just before going to sleep
 - Lucid dream therapy for treatment of nightmares may be particularly effective with children
     - Children tend to have spontaneous lucid dreams much more frequently than adults
-- Children who discover they can control their dreams never have to be told to go to bed!
-    - “Bedtime became exciting because of this new world I had discovered where anything was possible and I was the Boss.”
+        - Children who discover they can control their dreams never have to be told to go to bed!
+            > “Bedtime became exciting because of this new world I had discovered where anything was possible and I was the Boss.”
     - Introduction to lucid dreaming can be a wonderful gift to give to a child
 
 ## Other uses of lucid dreams
@@ -528,13 +523,14 @@ weight: 5
     - Thus, rehearsal of tasks can be effective in the dream state
     - Also, lucid dreaming may potentially be useful for facilitating the functioning of the immune system and physical body generally
         - Ex: Woman suffering from inorgasmia was able to orgasm in lucid dream – and this permanently cured her disorder!
+    - Same circuits activate when doing something while dreaming as doing that same something in real life 
 
 ### Inception
 - What aspects of lucid dreams presented in the movie are real and what aspects are not?
 - Real:
     - It can be very difficult to tell if one is dreaming or awake
-    - It is primarily emotions that create dreams
-- What characterizes REM/dream sleep neurologically is principally activation of the limbic system
+    - It is **primarily emotions** that create dreams
+        - What characterizes REM/dream sleep neurologically is principally activation of the limbic system
 - Unreal:
     - Time does not speed up in dreams
     - It is unclear that shared dreams can occur
