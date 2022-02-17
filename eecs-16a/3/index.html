@@ -8,13 +8,13 @@
 <meta property="og:description" content="02-08: Matrix Transformations #    Slides  Note 4   Linear Transformations #   Linear Transformation: In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.  Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/3/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-10T19:53:30-08:00">
+<meta property="article:modified_time" content="2022-02-17T12:44:51-08:00">
 <title>Week 3: Transformations & Inverse | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.da7ee94b5a1ab82d011354a605df4bed8c9141966656d5f8bb20007c752f1680.js integrity="sha256-2n7pS1oauC0BE1SmBd9L7YyRQZZmVtX4uyAAfHUvFoA=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.f20e7c6c7131fc7098044c3e4743a5b6ba56ff203a8b3d4424fc824df5d33b61.js integrity="sha256-8g58bHEx/HCYBEw+R0OltrpW/yA6iz1EJPyCTfXTO2E=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -54,10 +54,13 @@
 <a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/cogsci-c100/attn/>Attention</a>
+<a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
 </li>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
 </li>
 </ul>
 </li>
@@ -78,6 +81,9 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/eecs-16a/3/ class=active>Week 3: Transformations & Inverse</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigen</a>
 </li>
 </ul>
 </li>
@@ -269,7 +275,6 @@ pass.mehvix.com
 <li><a href=#theorem-lecture>Theorem Lecture</a></li>
 </ul>
 </li>
-<li><a href=#important-jargon>Important Jargon</a></li>
 </ul>
 </li>
 </ul>
@@ -485,7 +490,17 @@ d & -b\\
 </div>
 </div>
 </li>
+<li>.$ad-bc$ is the determinant, so we can check quickly if an inverse exists for a square matrix by checking if they determinant exists
+<ul>
+<li>
+<a href="https://eecs16a.org/lecture/Lecture4B_Slides.pdf#page=8">See slide 8</a></li>
+<li>Determinant is the area the vectors form. So if they vectors form some zero-area (or volume in 3D) then it&rsquo;s not one-to-one and thus not invertible</li>
 </ul>
+</li>
+</ul>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/Ip3X9LOh2dk style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
 <h2 id=theorems>
 Theorems
 <a class=anchor href=#theorems>#</a>
@@ -554,7 +569,7 @@ $$A \vec x = A(A^{-1} \vec b) = (AA^{-1}) \vec b = \vec b$$</li>
 <li>Thus, our candidate solution satisfies the equation .$A \vec x = \vec b$, so there exists at least one solution to that equation!</li>
 <li>Now, let’s show the second statement &ndash; that no more than one solution to the equation .$A \vec x = \vec b$ can exist. Consider a particular solution .$\vec x$, so .$A \vec x = \vec b$. Pre-multiplying both sides of this equation by .$A^{−1}$, we obtain
 $$A^{-1}(A \vec x) = A^{-1} \vec b \Longrightarrow \vec x = A^{-1} \vec b$$</li>
-<li>Therefore, if ~x exists, it must be the particular vector .$A^{−1} \vec b$. In other words, there exists at most one solution to the equation .$A \vec x = \vec b$, so we have proven the second statement</li>
+<li>Therefore, if .$\vec x$ exists, it must be the particular vector .$A^{−1} \vec b$. In other words, there exists at most one solution to the equation .$A \vec x = \vec b$, so we have proven the second statement</li>
 </ul>
 <h3 id=theorem-note-64>
 Theorem Note 6.4
@@ -567,7 +582,7 @@ Theorem Note 6.4
 <li>Let’s prove this theorem. We know that the statement “the columns of .$A$ are linearly independent” is equivalent to the statement “.$A \vec x = \vec 0$ only when .$ \vec x = \vec 0$.” This fact follows from the definition of linear independence: by definition, if .$\vec v_1, \dots, \vec v_n$ are linearly independent, then .$\sum_{i=1}^n x_i \vec v_i$ is only .$\vec 0$ when .$x_i = 0$.</li>
 <li>Using the column perspective of matrix multiplication (covered in Note 3), .$A \vec x = \sum_{i=1}^n x_i \vec v_i$ where .$\vec v_i$ is the .$i$th column of .$A$. Therefore, .$A \vec x = \vec 0$ only when all .$x_i = 0$.</li>
 <li>Therefore, we can rephrase what we’re trying to prove as
-$$A^{-1} \text{ exists } \Longrightarrow A \vec x = \vec 0$ \text{ only when } \vec x = \vec 0$$</li>
+$$A^{-1} \text{ exists } \Longrightarrow A \vec x = \vec 0 \text{ only when } \vec x = \vec 0$$</li>
 <li>To prove this, assume that .$A$ is invertible. Let .$\vec v$ be some vector such that .$A \vec x = \vec 0$:
 $$A \vec x = \vec 0 \text{ left-multiply by } A^{-1}$$
 $$A^{-1} A \vec v = I \vec v = \vec 0$$
@@ -630,28 +645,12 @@ $$I \vec \alpha = 0$$
 </div>
 </li>
 </ul>
-<h2 id=important-jargon>
-Important Jargon
-<a class=anchor href=#important-jargon>#</a>
-</h2>
-<ul>
-<li><strong>Rank</strong> a matrix .$A$ is the number of linearly independent columns</li>
-<li><strong>Nullspace</strong> of a matrix is the set of solutions to .$A \vec x = 0$</li>
-<li>A <strong>vector space</strong> is a set of vectors connected by two operators: .$+, \times$ &ndash;
-<a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=48">page 48</a></li>
-<li>A vector <strong>subspace</strong> is a subset of vectors that have “nice properties” &ndash;
-<a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=50">page 50</a></li>
-<li>A <strong>basis</strong> for a vector space is a minimum set of vectors needed to represent all vectors in the space</li>
-<li><strong>Dimension</strong> of a vector space is the number of basis vectors</li>
-<li><strong>Column space</strong> is the span (range) of the columns of a matrix</li>
-<li><strong>Row space</strong> is the span of the rows of a matrix</li>
-</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/c565a3056288ddf6390032aeb76f95811059b1b6 title="Last modified by Max Vogel | February 11, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/da61077092782addb8c42197d0ed82ecb6bb8f7f title="Last modified by Max Vogel | February 17, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 11, 2022</span>
+<span>February 17, 2022</span>
 </a>
 </div>
 <div>
@@ -690,7 +689,6 @@ Important Jargon
 <li><a href=#theorem-lecture>Theorem Lecture</a></li>
 </ul>
 </li>
-<li><a href=#important-jargon>Important Jargon</a></li>
 </ul>
 </li>
 </ul>

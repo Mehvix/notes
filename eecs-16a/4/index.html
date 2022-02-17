@@ -1,0 +1,631 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space .">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 4: Vector Spaces & Eigen">
+<meta property="og:description" content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/eecs-16a/4/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2022-02-17T12:44:51-08:00">
+<title>Week 4: Vector Spaces & Eigen | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.f20e7c6c7131fc7098044c3e4743a5b6ba56ff203a8b3d4424fc824df5d33b61.js integrity="sha256-8g58bHEx/HCYBEw+R0OltrpW/yA6iz1EJPyCTfXTO2E=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
+<a role=button>CogSci C100</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
+<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
+<a role=button>EECS 16A</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/4/ class=active>Week 4: Vector Spaces & Eigen</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
+<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
+<a role=button>Engineering 29</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
+</li>
+<li>
+<input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
+<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
+<a role=button>AP Notes</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+<li>
+<a href=# target=_blank rel=noopener>
+—
+</a>
+</li>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+w³.mehvix.com
+</a>
+</li>
+<li>
+<a href=https://pass.mehvix.com target=_blank rel=noopener>
+pass.mehvix.com
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Week 4: Vector Spaces & Eigen</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#02-15-vector-spaces-null-spaces-and-columnspaces>02-15: Vector Spaces: Null Spaces and Columnspaces</a>
+<ul>
+<li><a href=#important-jargon>Important Jargon</a></li>
+<li><a href=#vector-spaces>Vector Spaces</a>
+<ul>
+<li><a href=#subspaces>Subspaces</a></li>
+</ul>
+</li>
+<li><a href=#basis>Basis</a>
+<ul>
+<li><a href=#basis-is-not-unique>Basis is not unique.</a></li>
+</ul>
+</li>
+<li><a href=#dimension>Dimension</a></li>
+<li><a href=#column-space>Column Space</a></li>
+<li><a href=#row-space>Row Space</a></li>
+<li><a href=#rank>Rank</a></li>
+<li><a href=#null-space>Null Space</a>
+<ul>
+<li><a href=#procedure-to-compute-a-null-space-for-a-given-matrix>Procedure to Compute a Null-Space for a Given Matrix:</a></li>
+<li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#02-17-eigenvectors-values>02-17: Eigenvectors, values</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=02-15-vector-spaces-null-spaces-and-columnspaces>
+02-15: Vector Spaces: Null Spaces and Columnspaces
+<a class=anchor href=#02-15-vector-spaces-null-spaces-and-columnspaces>#</a>
+</h1>
+<ul>
+<li>
+<a href=https://eecs16a.org/lecture/Lecture4A_Slides.pdf>Slides</a></li>
+<li>Notes
+<a href=https://eecs16a.org/lecture/Note7.pdf>7</a>
+<a href=https://eecs16a.org/lecture/Note8.pdf>8</a></li>
+</ul>
+<h2 id=important-jargon>
+Important Jargon
+<a class=anchor href=#important-jargon>#</a>
+</h2>
+<ul>
+<li><strong>Rank</strong> a matrix .$A$ is the number of linearly independent columns</li>
+<li><strong>Nullspace</strong> of a matrix is the set of solutions to .$A \vec x = 0$</li>
+<li>A <strong>vector space</strong> is a set of vectors connected by two operators: .$+, \times$ &mdash;
+<a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=48">page 48</a></li>
+<li>A vector <strong>subspace</strong> is a subset of vectors that have “nice properties” &mdash;
+<a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=50">page 50</a></li>
+<li>A <strong>basis</strong> for a vector space is a minimum set of vectors needed to represent all vectors in the space</li>
+<li><strong>Dimension</strong> of a vector space is the number of basis vectors</li>
+<li><strong>Column space</strong> is the span (range) of the columns of a matrix</li>
+<li><strong>Row space</strong> is the span of the rows of a matrix</li>
+</ul>
+<hr>
+<h2 id=vector-spaces>
+Vector Spaces
+<a class=anchor href=#vector-spaces>#</a>
+</h2>
+<ul>
+<li>A vector space .$\mathbb{V}$ is a set of vectors and two operators .$+, \cdot$ that satisfy:</li>
+</ul>
+<p><div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p><strong>Vector Addition</strong></p>
+<ul>
+<li>Associative: .$\vec u + (\vec v + \vec w) = (\vec u + \vec v) + \vec w$</li>
+<li>Commutative: .$\vec u + \vec v = \vec v + \vec u$</li>
+<li>Additive Identity: There exists an additive identity .$\vec 0 \in \mathbb{V}$ such that .$\vec v + \vec 0 = \vec v$</li>
+<li>Additive Inverse: There exists .$- \vec v \in \mathbb{V}$ such that .$\vec v + (-\vec v) = \vec 0$. We call .$-\vec v$ the additive inverse of .$\vec v$.</li>
+<li>Closure under vector addition: The sum .$\vec v + \vec u$ must also be in .$\mathbb{V}$</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p><strong>Scalar Multiplication</strong></p>
+<ul>
+<li>Associative: .$\vec \alpha(\beta \vec v) = (\alpha \beta) \vec v$</li>
+<li>Multiplicative Identity: There exists .$1 \in \mathbb{R}$ where .$1 \cdot \vec v = \vec v$</li>
+<li>Distributive in vector addition: .$\alpha (\vec u + \vec v) = \alpha \vec u + \alpha \vec v$</li>
+<li>Distributive in scalar addition: .$(\alpha + \beta)\vec v = \alpha \vec v + \beta \vec v$</li>
+<li>Closure under scalar multiplication: The product .$\alpha \vec v$ must also be in .$\mathbb{V}$.</li>
+</ul>
+</div>
+</div>
+<div style=text-align:center>
+... for any .$\vec v, \vec u, \vec w \in \mathbb{V}; \alpha, \beta \in \mathbb{R}$
+</div>
+</p>
+<ul>
+<li>These can be grouped by axioms of closure, addition, and scaling shown on
+<a href="https://eecs16a.org/lecture/Lecture4A_Slides.pdf#page=10">slide 10</a></li>
+<li>For example .$ \mathbb{R}^{n}$ is the vector space of all .$n$-dimensional vectors.
+<ul>
+<li>In fact, the set of all matrices the same size is also a vector space .$ \mathbb{R}^{n \times o}$ since it fulfills all of the properties above as well</li>
+<li>In this class we will generally only deal with vector spaces containing vectors in .$\mathbb{R}^{n}$.</li>
+</ul>
+</li>
+</ul>
+<h3 id=subspaces>
+Subspaces
+<a class=anchor href=#subspaces>#</a>
+</h3>
+<ul>
+<li>A subspace .$\mathbb{U}$ consists of a subset of .$\mathbb{V}$ in vector space (.$\mathbb{V}, \mathbb{F}, +, \cdot$). .$\mathbb{U} \subset \mathbb{V}$ and have 3 properties
+<ol>
+<li>Contains .$\vec 0 $, i.e., .$\vec 0 \in \mathbb{U}$</li>
+<li>Closed under vector addition: .$\vec v_1, \vec v_2 \in \mathbb{U} \Longrightarrow \vec v_1 + \vec v_2 \in \mathbb{U}$</li>
+<li>Closed under scalar multiplication: .$\vec v \in \mathbb{U}, \alpha \in \mathbb{F} \Longrightarrow \alpha \vec v \in \mathbb{U}$</li>
+</ol>
+</li>
+<li>Examples on
+<a href="https://eecs16a.org/lecture/Lecture4A_Slides.pdf#page=13">slide 13</a></li>
+<li>Intuitively, a subspace is a closed subset of all the vectors in .$ \mathbb{V}$.
+<ul>
+<li>Any linear combination of vectors in the subspace must also lie in that subspace.</li>
+</ul>
+</li>
+<li><strong>Basis for a Subspace:</strong> set of linearly independent vectors that span the subspace (minimal set of subspace-spanning vectors)</li>
+<li><strong>Subspace Dimension:</strong> number of vectors in subspace-basis</li>
+</ul>
+<h2 id=basis>
+Basis
+<a class=anchor href=#basis>#</a>
+</h2>
+<ul>
+<li><strong>Basis:</strong> Given a vector space .$\mathbb{V}$, a set of vectors .$\{\vec v_1, \dots \vec v_n\}$ is a basis of the vector space if it satisfies the following properties:
+<ol>
+<li>.$\vec v_1, \dots, \vec v_n$ are linearly independent vectors</li>
+<li>.$\text{span}(\{\vec v_1, \dots, \vec v_n\}) = \mathbb{V} \Longrightarrow \forall \vec v \in \mathbb{V}, \exists \alpha_1, \dots, \alpha_{n-1} \in \mathbb{R}$ such that .$\vec v = \alpha_1 \vec v_2 + \dots \alpha_{n-1} \vec v_n$</li>
+</ol>
+<blockquote>
+<p>Minimum set of vectors that spans a vector space</p>
+</blockquote>
+</li>
+<li>A basis of a vector space is the <strong><em>minimum</em> set of vectors needed to represent all vectors</strong> in the vector space.
+<ul>
+<li>If a set of vectors is linearly dependent and “spans” the vector space, it is still <em>not</em> a basis &ndash; we can remove at least one vector from the set and the resulting set will still span the vector space</li>
+</ul>
+</li>
+</ul>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/P2LTAUO1TdA style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h3 id=basis-is-not-unique>
+Basis is not unique.
+<a class=anchor href=#basis-is-not-unique>#</a>
+</h3>
+<ul>
+<li>Intuitively, think about multiplying one of the vectors in a given basis by a nonzero scalar will not affect the linear independence or span of the vectors.</li>
+<li>We could alternatively construct another basis by replacing one of the vectors with the sum of itself and any other vector in the set.</li>
+<li>Mathematically, suppose that .$\{\vec v_1, \dots, \vec v_n \}$ is a basis for the vector space we are considering.
+<ul>
+<li>Thus .$\{\alpha \vec v_1, \dots, \vec v_n \}$ where .$\alpha \neq 0$ is also a basis because, just as we’ve seen in Gaussian elimination row operations, multiplying a row by a nonzero constant does not change the linear independence or dependence of the rows.
+<ul>
+<li>We can generalize this to say that multiplying a vector by a nonzero scalar also does not change the linear independence of the set of vectors.</li>
+</ul>
+</li>
+<li>In addition, we know that .$\text{span}(\{ \vec v_1, \dots, \vec v_n \}) = \text{span}( \{\alpha \vec v_1, \dots, \vec v_n \} )$
+<ul>
+<li>Any vector in .$\text{span}(\{ \vec v_1, \dots, \vec v_n \})$ can be created as a linear combination of the set .$\text{span}(\{ \alpha \vec v_1, \dots, \vec v_n \})$ by dividing the scale factor on .$\vec v_1$ by .$\alpha$.</li>
+<li>We can use a similar argument to show that .$\{\alpha \vec v_1, \dots, \vec v_n \}$ is also a basis for the same vector space.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>To generalize, for .$\mathbb{R}^{N}$, any .$N$ (and <em>only</em> .$N$) linearly independent vectors form a basis</p>
+</blockquote>
+</li>
+</ul>
+<h2 id=dimension>
+Dimension
+<a class=anchor href=#dimension>#</a>
+</h2>
+<ul>
+<li><strong>Dimension:</strong> The dimension of a vector space is the number of basis vectors.</li>
+<li>Since each basis vector can be scaled by one coefficient, the dimension of a space as the <strong>fewest number of parameters needed to describe an element</strong> or member of that space.</li>
+<li>The dimension can also be thought of as the <strong>degrees of freedom of your space</strong> &ndash; that is, the number of parameters that can be varied when describing a member of that space.
+<blockquote>
+<p><strong>A vector space can have many bases, but each basis must have the same number of vectors:</strong></p>
+<ul>
+<li>Suppose a basis for the vector space we’re considering has .$n$ vectors. This means that the minimum number of vectors we can use to represent all vectors in the vector space is .$n$, because the vectors in the basis would not be linearly independent if the vector space could be represented with fewer vectors.</li>
+<li>Then we can show that any set with less than .$n$ vectors cannot be a basis because it does not have enough vectors to span the vector space &ndash; there would be some vectors in the vector space that cannot be expressed as a linear combination of the vectors in the set.</li>
+<li>In addition, we can show that any set with more than .$n$ vectors must be linearly dependent and therefore cannot be a basis.</li>
+<li>Combining the two arguments, we have that any other set of vectors that forms a basis for the vector space must have exactly .$n$ vectors!</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id=column-space>
+Column Space
+<a class=anchor href=#column-space>#</a>
+</h2>
+<ul>
+<li>The range/span/column space of matrix .$A \in \mathbb{R}^{m \times n}$ &ndash; which we can represent as a set of vectors .$\{ \vec a_1, \dots \vec a_n \}$ &ndash; is a set of all possible linear combinations:
+$$\text{span}\big(\{\vec a_1, \dots, \vec a_n\}\big) = \Bigg\{\sum_{i=1}^N \alpha_i \vec a_i\ |\ \alpha_1, \dots, \alpha_n \in \mathbb{R} \Bigg\}$$</li>
+<li>That is, the column space of a matrix .$A \in \mathbb{R}^{m \times n}$ is the span of the .$n$ columns in .$A$</li>
+<li>Thinking about .$A$ as a linear transformation from .$ \mathbb{R}^{n} \to \mathbb{R}^{m}$, the column space is effectively the <strong>set of all outputs</strong> that this matrix can transform input vectors to</li>
+<li>Note that in the general case, input vectors and output vectors can be <em>different lengths</em>
+<ul>
+<li>The column space describes all possible output vectors .$\vec b = \mathbb{R}^{m \times 1}$</li>
+<li>It can be shown that .$\text{span}(A)$ forms a subspace of .$ \mathbb{R}^{m}$
+<ul>
+<li>Note that .$\text{span}(A)$ is not necessarily .$ \mathbb{R}^{m}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=row-space>
+Row Space
+<a class=anchor href=#row-space>#</a>
+</h2>
+<ul>
+<li>Similarly, the row space is the span of the .$n$ rows</li>
+</ul>
+<h2 id=rank>
+Rank
+<a class=anchor href=#rank>#</a>
+</h2>
+<ul>
+<li>The rank of .$A$ is defined as the <strong>dimension of the column space</strong> of .$A \in \mathbb{R}^{m \times n}$
+<ul>
+<li>.$\text{rank}(A) = \text{dim(span(A))}$
+<ul>
+<li>.$\text{dim(span}(A\text{)) ≡ dim(col(}A))$</li>
+<li>It’s all too easy to confuse an actual space consisting of vectors, like a matrix range describing the output (column) space, with the dimension of that space, which is just a single scalar number. Keep them straight!</li>
+</ul>
+</li>
+<li>.$ \text{rank}(A) = \text{dim(span}(A)) \leq \text{min}(m, n)$
+<ul>
+<li>This is at most .$m$, but certainly can be less, since an arbitrary .$A \in \mathbb{R}^{m \times n}$ is not guaranteed to have columns whose <strong>span</strong> is all of .$ \mathbb{R}^{m}$</li>
+<li>Consider the simple counterexample of the zero matrix .$\vec 0 \in \mathbb{R}^{m \times n}$, which maps all .$n$-dimensional input vectors to the .$m$-dimensional all-zero vector.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In general, using the column-wise representation of matrix-vector multiplication we can show that .$\text{rank(}A)$ is the <strong>number of linearly independent columns</strong> in .$A$.
+<ul>
+<li>Any output vector can be represented as a linear combination of the columns of .$A$.</li>
+<li>But some of these columns might themselves be linear combinations of other columns, which means we can replace any redundant column with a weighted sum of the other columns.</li>
+<li>By removing all redundancies, we find that a matrix with .$k \leq \text{min}(n, m)$ linearly independent column vectors can &ldquo;unlock&rdquo; exactly .$k$ dimensions in the output.</li>
+</ul>
+</li>
+<li>Thus, we find that .$\text{rank}(A)$ also equals the <strong>number of pivots</strong> in the
+<a href=https://en.wikipedia.org/wiki/Row_echelon_form><code>RREF</code></a> of .$A$.
+<ul>
+<li>Since each pivot must belong to a row and a column, the number of pivots in .$A \in \mathbb{R}^{m \times n}$ is limited by the smaller dimension.</li>
+<li>For a tall matrix .$m > n$, the columns are the limiting dimension; for a wide matrix .$n > m$ the rows are.</li>
+</ul>
+</li>
+</ul>
+<h2 id=null-space>
+Null Space
+<a class=anchor href=#null-space>#</a>
+</h2>
+<ul>
+<li>The null-space of .$ \mathbb{R}^{m \times n}$ is the set of all vectors .$\vec x \in \mathbb{R}^{m}$ such that .$A\vec x = 0$
+<ul>
+<li>That is, the set of all inputs that get mapped to .$\vec 0$ by .$A$</li>
+<li>$\text{dim(null}(A))$ can be interpreted as the number of input directions for which the output is &ldquo;compressed&rdquo; down to zero.</li>
+</ul>
+</li>
+<li>.$\vec 0$ is always in the null space — <em>trivial Null space</em>
+<ul>
+<li>This wouldn&rsquo;t hold if we had
+<a href=/eecs-16a/0/#note-1ab-extra>affine</a> (instead of linear) functions</li>
+</ul>
+</li>
+<li>Null space DNE when the determinant is not zero &ndash; see
+<a href=/eecs-16a/3/#inverse-of-a-2x2-matrix>last week</a></li>
+</ul>
+<h3 id=procedure-to-compute-a-null-space-for-a-given-matrix>
+Procedure to Compute a Null-Space for a Given Matrix:
+<a class=anchor href=#procedure-to-compute-a-null-space-for-a-given-matrix>#</a>
+</h3>
+<ul>
+<li>Computing the nullspace of .$A$ requires us to solve .$A \vec x = \vec 0$ &ndash; the procedure is as follows:
+<ol>
+<li>Put .$A$ in <code>RREF</code>. Initialize the set .$\mathbb{S} = \{ \vec 0 \}$.</li>
+<li>Check each column for leading entries and find the number of free (.$F$) and basic (.$B$) variables.</li>
+<li>if .$F = 0$, stop and skip to the last step.</li>
+<li>if .$F \neq 0$, repeat the following for each free variable:
+<ul>
+<li>Set that free variable to .$1$, and all others to zero.</li>
+<li>Solve .$A \vec x$ under these conditions; add the solution vector to .$\mathbb{S}$.</li>
+</ul>
+</li>
+<li>Conclude that .$\text{null}(A) = \text{span}(S)$.</li>
+</ol>
+</li>
+<li>Example is given on
+<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=37">page 37-38</a></li>
+</ul>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/uQhTuRlWMxw style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h3 id=rank-nullity-theorem>
+Rank-Nullity Theorem
+<a class=anchor href=#rank-nullity-theorem>#</a>
+</h3>
+<blockquote>
+<p>How is the number of <strong>free variables</strong> related to the <strong>total number of columns</strong> in a matrix .$A \in \mathbb{R}^{m \times n}$? Well, each column of a matrix either contributes a &ldquo;new direction&rdquo; to the output or it is redundant with other columns and their already-discovered directions. In other words, each of .$n$ columns adds a dimension to .$\text{span}(A)$ or to .$\text{null}(A)$. Therefore, the following holds:
+$$\text{dim(span}(A)) + \text{dim(null}(A)) = n$$
+$$\text{rank}(A) + \text{dim(null}(A)) = n$$</p>
+</blockquote>
+<h1 id=02-17-eigenvectors-values>
+02-17: Eigenvectors, values
+<a class=anchor href=#02-17-eigenvectors-values>#</a>
+</h1>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/PFDu9oVAE-g style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/da61077092782addb8c42197d0ed82ecb6bb8f7f title="Last modified by Max Vogel | February 17, 2022" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>February 17, 2022</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/4.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#02-15-vector-spaces-null-spaces-and-columnspaces>02-15: Vector Spaces: Null Spaces and Columnspaces</a>
+<ul>
+<li><a href=#important-jargon>Important Jargon</a></li>
+<li><a href=#vector-spaces>Vector Spaces</a>
+<ul>
+<li><a href=#subspaces>Subspaces</a></li>
+</ul>
+</li>
+<li><a href=#basis>Basis</a>
+<ul>
+<li><a href=#basis-is-not-unique>Basis is not unique.</a></li>
+</ul>
+</li>
+<li><a href=#dimension>Dimension</a></li>
+<li><a href=#column-space>Column Space</a></li>
+<li><a href=#row-space>Row Space</a></li>
+<li><a href=#rank>Rank</a></li>
+<li><a href=#null-space>Null Space</a>
+<ul>
+<li><a href=#procedure-to-compute-a-null-space-for-a-given-matrix>Procedure to Compute a Null-Space for a Given Matrix:</a></li>
+<li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#02-17-eigenvectors-values>02-17: Eigenvectors, values</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
