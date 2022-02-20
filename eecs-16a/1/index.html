@@ -8,13 +8,13 @@
 <meta property="og:description" content="01-25: Gaussian Elimination, Vectors #    Slides Notes 2A, 2B   Upper Triangular Systems #   Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$   &mldr;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 & -1 & 2 & \text{|} & 1\\ 0 & 1 & -1 & \text{|} & 2\\ 0 & 0 & 1 & \text{|} & 1 \end{bmatrix}$$    These are called upper triangle matrices &ndash; they are nice in that they&rsquo;re easy to solve!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-17T12:44:51-08:00">
+<meta property="article:modified_time" content="2022-02-20T12:59:15-08:00">
 <title>Week 1: Gaussian Elim. & Matrices + Vectors | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.f20e7c6c7131fc7098044c3e4743a5b6ba56ff203a8b3d4424fc824df5d33b61.js integrity="sha256-8g58bHEx/HCYBEw+R0OltrpW/yA6iz1EJPyCTfXTO2E=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.e7bbcd630338a0aaf802cb723665bed282a52e9bb92f465c74066cf7cd176d2c.js integrity="sha256-57vNYwM4oKr4AstyNmW+0oKlLpu5L0ZcdAZs980XbSw=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -864,6 +864,9 @@ Matrix-Vector Multiplication
 Matrix-Matrix Multiplication
 <a class=anchor href=#matrix-matrix-multiplication>#</a>
 </h4>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/XkY2DOUCWMU style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
 <ul>
 <li>Matrix-Matrix multiplication involves multiplying each row vector in .$A$ with each column vector in .$B$, starting from the top row of matrix .$A$ and leftmost column of matrix .$B$.
 <ul>
@@ -880,20 +883,16 @@ Matrix-Matrix Multiplication
 <li>In fact, both quantities can only be calculated if the number of rows in .$A$ equals the number of columns in .$B$ <em>and</em> the number of rows in .$B$ equals the number of columns in .$A$.</li>
 </ul>
 </li>
-<li>Matrix Multiplication is Associative
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/XkY2DOUCWMU style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div>
-</li>
+<li>Matrix Multiplication is Associative</li>
 <li>Fun fact: Computers have to do so many multiply and add operations that it&rsquo;s
 <a href=https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation>optimized at a processor level</a> (leaned about this is 61C)</li>
 </ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/da61077092782addb8c42197d0ed82ecb6bb8f7f title="Last modified by Max Vogel | February 17, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/fc0f468a64282e2f71fbc7a6375bb1d23ae424e2 title="Last modified by Max Vogel | February 20, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 17, 2022</span>
+<span>February 20, 2022</span>
 </a>
 </div>
 <div>
