@@ -8,13 +8,13 @@
 <meta property="og:description" content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/4/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-20T12:59:15-08:00">
+<meta property="article:modified_time" content="2022-02-21T10:49:54-08:00">
 <title>Week 4: Vector Spaces & Eigen | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.e7bbcd630338a0aaf802cb723665bed282a52e9bb92f465c74066cf7cd176d2c.js integrity="sha256-57vNYwM4oKr4AstyNmW+0oKlLpu5L0ZcdAZs980XbSw=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.810db34462afeaee3200ecdac790f06abf57c2bc333593e6d5386c82ea671c59.js integrity="sha256-gQ2zRGKv6u4yAOzax5Dwar9XwrwzNZPm1ThsgupnHFk=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -275,7 +275,7 @@ pass.mehvix.com
 <li><a href=#rank>Rank</a></li>
 <li><a href=#null-space>Null Space</a>
 <ul>
-<li><a href=#procedure-to-compute-a-null-space-for-a-given-matrix>Procedure to Compute a Null-Space for a Given Matrix:</a></li>
+<li><a href=#procedure-to-compute-a-null-space>Procedure to Compute a Null-Space</a></li>
 <li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li>
 </ul>
 </li>
@@ -285,7 +285,11 @@ pass.mehvix.com
 <ul>
 <li><a href=#eigenvectors-and-eigenvalues>Eigenvectors and Eigenvalues</a></li>
 <li><a href=#determinants>Determinants</a></li>
-<li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a></li>
+<li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a>
+<ul>
+<li><a href=#mean-product-formula>Mean-product formula</a></li>
+</ul>
+</li>
 <li><a href=#theorems>Theorems</a>
 <ul>
 <li><a href=#theorem-91>Theorem 9.1</a></li>
@@ -397,11 +401,10 @@ Subspaces
 </li>
 <li>Just as basis and dimension are defined for vector spaces, they have equivalent definitions for subspaces.
 <ul>
-<li>A basis of a subspace is a set of linearly independent vectors that span the subspace, and the dimension of a subspace is the number of vectors in its bases.</li>
-</ul>
-</li>
 <li><strong>Basis for a Subspace:</strong> set of linearly independent vectors that span the subspace (minimal set of subspace-spanning vectors)</li>
 <li><strong>Subspace Dimension:</strong> number of vectors in subspace-basis</li>
+</ul>
+</li>
 </ul>
 <h2 id=basis>
 Basis
@@ -585,15 +588,15 @@ $$m - \text{dim(span}(A)) = \text{dim(null}(A))$$
 <iframe src=https://www.youtube.com/embed/vFctYRhK2M0 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-<h3 id=procedure-to-compute-a-null-space-for-a-given-matrix>
-Procedure to Compute a Null-Space for a Given Matrix:
-<a class=anchor href=#procedure-to-compute-a-null-space-for-a-given-matrix>#</a>
+<h3 id=procedure-to-compute-a-null-space>
+Procedure to Compute a Null-Space
+<a class=anchor href=#procedure-to-compute-a-null-space>#</a>
 </h3>
 <ul>
 <li>Computing the nullspace of .$A$ requires us to solve .$A \vec x = \vec 0$ &ndash; the procedure is as follows:
 <ol>
 <li>Put .$A$ in <code>RREF</code>. Initialize the set .$\mathbb{S} = \{ \vec 0 \}$.</li>
-<li>Check each column for leading entries and find the number of free (.$F$) and basic (.$B$) variables.</li>
+<li>Check each column for leading entries and find the number of .$F$ree and .$B$asic variables.</li>
 <li>if .$F = 0$, stop and skip to the last step.</li>
 <li>if .$F \neq 0$, repeat the following for each free variable:
 <ul>
@@ -601,7 +604,7 @@ Procedure to Compute a Null-Space for a Given Matrix:
 <li>Solve .$A \vec x$ under these conditions; add the solution vector to .$\mathbb{S}$.</li>
 </ul>
 </li>
-<li>Conclude that .$\text{null}(A) = \text{span}(S)$.</li>
+<li>Conclude that .$\text{null}(A) = \text{span}(\mathbb{S})$.</li>
 </ol>
 </li>
 <li>Example is given on
@@ -652,6 +655,7 @@ where .$\lambda$ is a scalar value, called the <strong>eigenvalue</strong> of .$
 <a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=45">page 45</a></li>
 </ul>
 </li>
+<li>Geometrically, an <em>eigenvector</em>, corresponding to a real nonzero eigenvalue, points in a direction in which it is stretched by the transformation and the <em>eigenvalue</em> is the factor by which it is stretched</li>
 <li>Because these two terms are so commonly used in conjunction, we often refer to an <strong>eigen(value/vector) pair</strong>
 <ul>
 <li>Note that scaling a given eigenvector for an eigenvalue will still produce a valid eigenvector, since the vector’s direction will not be changed</li>
@@ -668,7 +672,7 @@ Determinants
 <li>The determinant is nonzero if and only if the matrix is invertible and the linear map represented by the matrix is an isomorphism</li>
 </ul>
 </li>
-<li>For a 2 × 2 matrix, the formula is:
+<li>For a .$2 \times 2$ matrix, the formula is:
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -688,7 +692,7 @@ c & d \\
 <li>That is, <em>determinant of any square matrix is zero if the columns are linearly dependent</em>.</li>
 </ul>
 </li>
-<li>For a 3 × 3 matrix, the shape is a parallelipiped, and we form hyper-volumes in higher dimensions.
+<li>For a .$3 \times 3$ matrix, the shape is a parallelipiped, and we form hyper-volumes in higher dimensions.
 <ul>
 <li>We can calculate determinants for higher dimension matrices as well, as described
 <a href=https://en.wikipedia.org/wiki/Determinant>here</a></li>
@@ -732,7 +736,7 @@ a_{n1} & \dots & &mldr; & a_{nn} - \lambda
 <a href="https://eecs16a.org/lecture/Note9.pdf#page=6">page 6</a></li>
 </ul>
 </li>
-<li>For the 2 x 2 case determinant is
+<li>For the .$2 \times 2$ case determinant is
 $$\lambda^2 - (a+d)\lambda + (ad - bc) = 0$$
 <ul>
 <li>Solving this quadratic equation, we can find the .$\lambda$ values.</li>
@@ -742,13 +746,31 @@ $$\lambda^2 - (a+d)\lambda + (ad - bc) = 0$$
 </ul>
 </li>
 <li>If a matrix has <em>repeated eigenvalues</em>, they may (or may not) have <em>distinct eigenvectors</em>.</li>
-<li>If the eigenvectors are <em>distinct</em>, they form an <strong>eigenspace</strong>
-$$E_\lambda = \text{null}(\lambda I_n - A) = \text{null}(A')$$
+<li>If the eigenvectors are <em>distinct</em>, they form an <strong>
+<a href=https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Eigenspaces,_geometric_multiplicity,_and_the_eigenbasis_for_matrices>eigenspace</a></strong>
+$$E_\lambda = \text{null}(A - \lambda I_n) = \text{null}(A')$$
 <ul>
 <li>That is, null space of some matrix is the set of all vectors that satisfy .$\eqref{a}$ OR all of the eigenvectors that correspond to some eigenvalue OR the eigenspace that corresponds to the eigenvalue</li>
-<li>Exactly like the concept of span; the eigenspace is a subspace, the span of all eigenvectors for that eigenvalue (note that this includes .$\vec 0$)</li>
+<li>Exactly like the concept of span; the eigenspace is a subspace, the span of all eigenvectors for that eigenvalue (including .$\vec 0$)</li>
 <li>Any input vectors that lie in this space (for 2 distinct eigenvectors, a plane; for 1, a line) will be scaled by the shared eigenvalue under a linear transformation.</li>
 <li>Aside: Complex eigenvalues can exist as well; they are much harder to visually understand, but mathematically, we find them using the exact same process as before.</li>
+</ul>
+</li>
+</ul>
+<h3 id=mean-product-formula>
+Mean-product formula
+<a class=anchor href=#mean-product-formula>#</a>
+</h3>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/e50Bj7jn9IQ style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<ul>
+<li>Mean-product formula is a nicer way of solving this, versus finding the roots of the polynomial
+$$m \pm \sqrt{m^2 - p}$$
+<ul>
+<li>$m$ is the mean of the
+<a href=https://en.wikipedia.org/wiki/Trace_%28linear_algebra%29>trace</a>, which is the same as the mean of the eigenvalues</li>
+<li>$p$ is the product of the eigenvalues, which is the determinant</li>
 </ul>
 </li>
 </ul>
@@ -816,7 +838,7 @@ Simpler Case: .$\vec x (0) = \alpha \vec v$
 <div class="flex-even markdown-inner">
 <ul>
 <li>Suppose our initial state is actually a perfect multiple of an eigenvector of the system.</li>
-<li>Over time, upon repeated applications of .$A$, we accumulate factors of .$\lambda$; ultimately, .$A^n \vec x = \alpha (\lambda^n \vec x)$ we can see derived to the right</li>
+<li>Over time, upon repeated applications of .$A,$ we accumulate factors of .$\lambda$; ultimately, .$A^n \vec x = \alpha (\lambda^n \vec x)$ &ndash; as we can see derived to the right</li>
 </ul>
 </div>
 <div class="flex-even markdown-inner">
@@ -830,10 +852,10 @@ $$\vec x (n) = A\vec x (n-1) = \alpha \lambda^n \vec v$$
 <ul>
 <li>Based on this pattern, we notice the following behaviors based on the value .$\lambda$ as .$n \to \infty$:
 <ul>
-<li>.$\lambda > 1: \vec x (n) \to \infty$ (exponential growth).</li>
-<li>.$\lambda = 1: \vec x (n) \to k\vec v$ (steady-state).</li>
-<li>.$0 &lt; \lambda &lt; 1: \vec x (n) \to \vec 0$ (exponential decay).</li>
-<li>.$\lambda = 0: \vec x (n) = 0 \vec v = \vec 0$ (instantaneous disappearance).</li>
+<li>.$\lambda > 1: \vec x (n) \to \infty$ &ndash; <strong>Diverge</strong>, exponential growth.</li>
+<li>.$\lambda = 1: \vec x (n) \to k\vec v$ &ndash; <strong>Converge</strong>, steady-state.</li>
+<li>.$0 &lt; \lambda &lt; 1: \vec x (n) \to \vec 0$ &ndash; <strong>Converge</strong>, exponential decay.</li>
+<li>.$\lambda = 0: \vec x (n) = 0 \vec v = \vec 0$ &ndash; <strong>Converge(?)</strong>, instantaneous disappearance.</li>
 <li>.$\lambda &lt; 0$: Take .$|\lambda|$ and refer to the appropriate case above. But recognize the sign switches at each timestep</li>
 </ul>
 </li>
@@ -893,9 +915,9 @@ $$\vec x (n) = \alpha_1 (\lambda_1^n \vec v_1) + \alpha_2 (\lambda_2^n \vec v_2)
 <ul>
 <li>Let’s assume that we drop any terms corresponding to .$\alpha_i = 0$ since those terms are, well, zero. Then, with what remains, we can make some intuitive observations:
 <ul>
-<li>(diverge) Any .$|\lambda_i | > 1: \vec x (n) \to \infty$. Even if other components in the linear combination decay, the state itself &ldquo;blows up&rdquo; to .$\infty$ as this component overshadows all others.</li>
-<li>(diverge) Any .$|\lambda_i| = −1: \vec x (n) \to ?$ because that component oscillates forever.</li>
-<li>(converge) All .$−1 &lt; \lambda_i \leq 1: \vec x (n) \to \vec x^*$, steady-state! Each .$i$th term either decays to zero (.$|\lambda_i| \leq 1$) or stays the same (.$|\lambda_i| = 1$), such that .$\vec x^* = \sum_{i,\lambda_i=1} \alpha_i \vec v_i$.
+<li>.$|\lambda_i | > 1: \vec x (n) \to \infty$ &ndash; <strong>Diverge</strong>, even if other components in the linear combination decay, the state itself &ldquo;blows up&rdquo; to .$\infty$ as this component overshadows all others.</li>
+<li>.$|\lambda_i| = −1: \vec x (n) \to\ ?$ &ndash; <strong>Diverge</strong> because that component oscillates forever.</li>
+<li>.$−1 &lt; \lambda_i \leq 1: \vec x (n) \to \vec x^*$ &ndash; <strong>Converge</strong>, that is, steady-state! Each .$i$th term either decays to zero (.$|\lambda_i| \leq 1$) or stays the same (.$|\lambda_i| = 1$), such that .$\vec x^* = \sum_{i,\lambda_i=1} \alpha_i \vec v_i$.
 <ul>
 <li>We can normalize this steady-state if we want proportions (column values sum to 1) rather than absolute numbers</li>
 </ul>
@@ -933,9 +955,9 @@ Some Useful Information
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/fc0f468a64282e2f71fbc7a6375bb1d23ae424e2 title="Last modified by Max Vogel | February 20, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/d347d47995a9987a883dbbd8999642b6203afb3c title="Last modified by Max Vogel | February 21, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 20, 2022</span>
+<span>February 21, 2022</span>
 </a>
 </div>
 <div>
@@ -974,7 +996,7 @@ Some Useful Information
 <li><a href=#rank>Rank</a></li>
 <li><a href=#null-space>Null Space</a>
 <ul>
-<li><a href=#procedure-to-compute-a-null-space-for-a-given-matrix>Procedure to Compute a Null-Space for a Given Matrix:</a></li>
+<li><a href=#procedure-to-compute-a-null-space>Procedure to Compute a Null-Space</a></li>
 <li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li>
 </ul>
 </li>
@@ -984,7 +1006,11 @@ Some Useful Information
 <ul>
 <li><a href=#eigenvectors-and-eigenvalues>Eigenvectors and Eigenvalues</a></li>
 <li><a href=#determinants>Determinants</a></li>
-<li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a></li>
+<li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a>
+<ul>
+<li><a href=#mean-product-formula>Mean-product formula</a></li>
+</ul>
+</li>
 <li><a href=#theorems>Theorems</a>
 <ul>
 <li><a href=#theorem-91>Theorem 9.1</a></li>
