@@ -13,6 +13,9 @@ html {
 .markdown figure > img {
     max-height: 100%;
 }
+.markdown figure {
+    margin: 0.25em !important;
+}
 
 body > main > aside.book-menu > div,
 body > main > aside.book-toc > div,
