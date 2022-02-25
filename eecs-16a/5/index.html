@@ -1,0 +1,511 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="02-22 Basis #   Note 10  Slides     Change of Basis #   Previously we’ve seen that a basis for a vector space is a minimal spanning set of vectors. We can also define the standard basis vectors, e,x. the standard basis for .$ \mathbb{R}^{3}$ is the set .$\mathbb{E}$:   $$\mathbb{E} = \big(\hat i, \hat j, \hat k \big)$$ $$\dots \equiv ( \vec e_1, \vec e_2, \vec e_3)$$ $$\dots \equiv \left( \begin{bmatrix} 1\\ 0\\ 0\\ \end{bmatrix}, \begin{bmatrix} 0\\ 1\\ 0\\ \end{bmatrix}, \begin{bmatrix} 0\\ 0\\ 1\\ \end{bmatrix}\right) $$     We can represent any set of vectors that form as basis as a linear combination of the standard .">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 5: Basis & Circuit Analysis">
+<meta property="og:description" content="02-22 Basis #   Note 10  Slides     Change of Basis #   Previously we’ve seen that a basis for a vector space is a minimal spanning set of vectors. We can also define the standard basis vectors, e,x. the standard basis for .$ \mathbb{R}^{3}$ is the set .$\mathbb{E}$:   $$\mathbb{E} = \big(\hat i, \hat j, \hat k \big)$$ $$\dots \equiv ( \vec e_1, \vec e_2, \vec e_3)$$ $$\dots \equiv \left( \begin{bmatrix} 1\\ 0\\ 0\\ \end{bmatrix}, \begin{bmatrix} 0\\ 1\\ 0\\ \end{bmatrix}, \begin{bmatrix} 0\\ 0\\ 1\\ \end{bmatrix}\right) $$     We can represent any set of vectors that form as basis as a linear combination of the standard .">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://notes.mehvix.com/eecs-16a/5/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2022-02-24T13:57:50-08:00">
+<title>Week 5: Basis & Circuit Analysis | notes.mehvix.com</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.968dba79052f8c4e9217c2828ac3bb6019e4dabe1b313722e0301192448f99dd.js integrity="sha256-lo26eQUvjE6SF8KCisO7YBnk2r4bMTci4DARkkSPmd0=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
+<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>notes.mehvix.com</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
+<a role=button>CogSci C100</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
+<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
+<a role=button>EECS 16A</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/5/ class=active>Week 5: Basis & Circuit Analysis</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
+<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
+<a role=button>Engineering 29</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/5/>Week 5: Forming Processes</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
+<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=http://notes.mehvix.com/anthro-c12ac/>Anthro C12AC</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
+</li>
+<li>
+<input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
+<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
+<a role=button>AP Notes</a>
+</label>
+<ul>
+<li>
+<a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
+CS61A (Anto's)
+</a>
+</li>
+<li>
+<a href=# target=_blank rel=noopener>
+—
+</a>
+</li>
+<li>
+<a href=https://www.mehvix.com target=_blank rel=noopener>
+w³.mehvix.com
+</a>
+</li>
+<li>
+<a href=https://pass.mehvix.com target=_blank rel=noopener>
+pass.mehvix.com
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Week 5: Basis & Circuit Analysis</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#02-22-basis>02-22 Basis</a>
+<ul>
+<li><a href=#change-of-basis>Change of Basis</a></li>
+<li><a href=#matrix-change-of-basis>Matrix Change of Basis</a></li>
+<li><a href=#diagonalization>Diagonalization</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=02-22-basis>
+02-22 Basis
+<a class=anchor href=#02-22-basis>#</a>
+</h1>
+<ul>
+<li>Note
+<a href=https://eecs16a.org/lecture/Note10.pdf>10</a></li>
+<li>
+<a href=https://eecs16a.org/lecture/Lecture5A_Slides.pdf>Slides</a></li>
+</ul>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/P2LTAUO1TdA style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<hr>
+<h2 id=change-of-basis>
+Change of Basis
+<a class=anchor href=#change-of-basis>#</a>
+</h2>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Previously we’ve seen that a basis for a vector space is a minimal spanning set of vectors.</li>
+<li>We can also define the standard basis vectors, e,x. the standard basis for .$ \mathbb{R}^{3}$ is the set .$\mathbb{E}$:</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\mathbb{E} = \big(\hat i, \hat j, \hat k \big)$$
+$$\dots \equiv ( \vec e_1, \vec e_2, \vec e_3)$$
+$$\dots \equiv \left( \begin{bmatrix}
+1\\
+0\\
+0\\
+\end{bmatrix}, \begin{bmatrix}
+0\\
+1\\
+0\\
+\end{bmatrix}, \begin{bmatrix}
+0\\
+0\\
+1\\
+\end{bmatrix}\right) $$
+</div>
+</div>
+<ul>
+<li>
+<p>We can represent any set of vectors that form as basis as a linear combination of the <em>standard</em> .$ \mathbb{R}^{3}$ basis vectors</p>
+<ul>
+<li>When you plot a vector, the basis is normally implicit as the standard basis vectors</li>
+</ul>
+</li>
+<li>
+<p><strong>Change Of Basis Operation:</strong> Preserves the geometrical vector but modify its coordinates such that when plotted in the new basis, the original and final vector are physically the same
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Such that we&rsquo;re essentially re-expressing the coordinates of some .$\vec v$ (formed with basis .$\mathbb{E}$) in some new basis .$\mathbb{E}'$</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<ul>
+<li>We know that the basis vectors define the linear transformation matrix:
+$$\begin{bmatrix}
+| & & | \\
+\vec e_1 ' & \dots & \vec e_n ' \\
+| & & | \\
+\end{bmatrix}$$</li>
+</ul>
+</div>
+</div>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Thus, we need to solve for the scalars that multiply each of the new basis vectors, .$v_i ' $, to produce the same physical vector .$\vec v$ as before:</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\begin{bmatrix}
+| & | \\
+\vec e_1 ' & \vec e_2 ' \\
+| & | \\
+\end{bmatrix}\begin{bmatrix}
+v_1 ' \\
+v_2 ' \\
+\end{bmatrix} = \begin{bmatrix}
+v_1 \\
+v_2 \\
+\end{bmatrix} = \vec v $$
+</div>
+</div>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Generally, we can say that if given a vector .$\vec v$ expressed with coordinates in the standard .$n$-dimensional basis .$\mathbb{E}$, then we can solve for the coordinates .$\vec v ' $ in a different .$n$-dimensional basis .$A$ with .$\vec v ' = A^{-1} \vec v$
+<ul>
+<li>.$A$ is formed with the columns of the new basis. To do the opposite (basis .$A \to \mathbb{E}$), we apply .$A$: .$\vec v = A \vec v ' $</li>
+<li>Finally, suppose that we’re given .$\vec v$ with coordinates in an arbitrary basis .$P$ (matrix with columns .$\vec p_1, \dots, \vec p_n$), and we want to change to another arbitrary basis .$Q$ with columns .$\vec q_1, \dots, \vec q_n$. We must apply the transformation .$Q^{-1} P$. This follows from first transforming .$\vec v$ to the standard basis from .$P$, and then transforming to the new basis .$Q$</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</p>
+<ul>
+<li>The only question is whether we preserve the coordinates (which are the mathematical representation) and change the physical vector in accordance with the new basis, or preserve the physical vector and find the new coordinates.
+<ul>
+<li>
+<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=57&zoom=100,572,589">Page 57</a> has pretty figures</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=matrix-change-of-basis>
+Matrix Change of Basis
+<a class=anchor href=#matrix-change-of-basis>#</a>
+</h2>
+<blockquote>
+<p>We can apply our knowledge to linear transformations to understand what it means to change the basis of a matrix</p>
+</blockquote>
+<ul>
+<li>Given transformation .$T \in \mathbb{R}^{n \times n}$ with input .$\vec v_1$ and output .$\vec v_2$, we can apply our column-wise interpretation of the matrix-vector product, but now, we must take care of the fact that our vectors may lie in a different basis than .$E$.</li>
+</ul>
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<ul>
+<li>Suppose we have basis vectors .$\vec a_1, \dots, \vec a_n$ forming .$A \in \mathbb{R}^{n \times n}$, and vectors .$\vec v_1, \vec v_2$ represented in this basis: .$\vec v_i = v_{i,1} ' \vec a_1 + \dots v_{i,n} ' \vec a_n$
+<ul>
+<li>Each .$v_{i,k}$ is the .$k$th element of the vector .$\vec v_i$</li>
+<li>We can also represent .$T$ in this basis as .$T ' $</li>
+</ul>
+</li>
+<li>We start with .$\vec v_1 = A \vec v_1 ' $ and .$\vec v_2 = A\vec v_2 ' $.</li>
+<li>Since .$T\vec v_1 = \vec v_2$ by definition of linear transformation .$T$, we can plug in: .$TA\vec v_1 ' = A\vec v_2 ' \Longrightarrow A^{−1} T A \vec v_1 ' = \vec v_2 ' $.</li>
+<li>Clearly, just as how we had .$T\vec v_1 = \vec v_2$, we have an analogous transformation in the new basis: .$T ' \vec v_1 ' = \vec v_2 ' $, where .$T ' = A^{−1} T A $.</li>
+</ul>
+</div>
+<div class="flex-even markdown-inner">
+<blockquote>
+<p>
+<img src=/docs/eecs-16a/5/cob.png alt>
+.$T ' $ is equivalent to .$A$, then .$T$, then .$A^{−1}$</p>
+</blockquote>
+</div>
+</div>
+<h2 id=diagonalization>
+Diagonalization
+<a class=anchor href=#diagonalization>#</a>
+</h2>
+<ul>
+<li>Why bother with change of basis? In practical applications, matrix operations form the core of some very computationally heavy algorithms &ndash; we need to be able to easily invert matrices, raise them to high powers, and multiply them commutatively; all of these can be accomplished with
+<a href=https://en.wikipedia.org/wiki/Diagonal_matrix>diagonal matrices</a>, where all entries not on the diagonal are zero
+<ul>
+<li>An identity matrix of any size, or any multiple of it (a scalar matrix), is a diagonal matrix.</li>
+<li>Its determinant is the product of its diagonal values</li>
+</ul>
+</li>
+<li>First, we must choose a <strong>diagonalizing basis</strong> .$A$ that consists of the .$n$ eigenvectors of .$T$.
+<ul>
+<li>This is only possible if .$T$ is <em>diagonalizable</em>, which <strong>requires it to have .$n$ linearly independent eigenvectors</strong>
+<ul>
+<li>Note this is different from the .$n$ columns being independent!</li>
+</ul>
+</li>
+<li>Then, to figure out how .$T$ transforms .$\vec v_1$, we write .$\vec v_1 = \vec v_{11} ' \vec a_1 + \dots + \vec v_{1n} ' \vec a_n$
+$$T \vec v_1 = T \vec v_{11} ' \vec a_1 + \dots + T v_{1n} ' \vec a_n$$
+$$\dots = v_{11} (T \vec a_1) + \dots + v_{1n} (T\vec a_n)$$
+$$\dots = v_{11} (\lambda_1 \vec a_1) + \dots + v_{1n} (\lambda_n \vec a_n)$$</li>
+<li>Using the middle matrix (diagonal!) as a sort of &ldquo;sifting&rdquo; matrix; each row only has one nonzero value, so we only multiply the .$v_{1i} \vec a_i$ value by the corresponding .$\lambda_i$:
+$$T \vec v_1 = \begin{bmatrix}
+| & & | \\
+\vec a_1 & \dots & \vec a_n \\
+| & & | \\
+\end{bmatrix}\begin{bmatrix}
+\lambda_{1} & & \\
+& \ddots & \\
+& & \lambda_{n}
+\end{bmatrix}\begin{bmatrix}
+v_1 ' \\
+v_2 ' \\
+\vdots \\
+v_n ' \\
+\end{bmatrix}$$</li>
+<li>Notice now we have an equation of the form:
+$$T \vec v_1 = AD \vec v_1 ' \Longrightarrow T\vec v_1 = ADA^{-1} \vec v_1 \Longrightarrow T = ADA^{-1}$$
+<ul>
+<li>Here, .$D$ is the diagonal matrix containing the eigenvalues of the transformation</li>
+<li>One useful result is that .$T^k = AD^k A^{-1}$ (expand and group .$A^{-1}A = I$)
+<ul>
+<li>Since .$D$ is easy to raise to high powers (.$D^k$ contains all diagonal entries raised to the .$k$th power), the computation of numerous transformations becomes much easier</li>
+<li>To raise a diagonal matrix to a power, one can raise each element to that power</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/33ebac1aeee812ecd5559fc9816cc3866763b75d title="Last modified by Max Vogel | February 24, 2022" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>February 24, 2022</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/5.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#02-22-basis>02-22 Basis</a>
+<ul>
+<li><a href=#change-of-basis>Change of Basis</a></li>
+<li><a href=#matrix-change-of-basis>Matrix Change of Basis</a></li>
+<li><a href=#diagonalization>Diagonalization</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

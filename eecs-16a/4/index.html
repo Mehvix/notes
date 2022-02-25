@@ -4,17 +4,17 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space .">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 4: Vector Spaces & Eigen">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 4: Vector Spaces & Eigenstuff">
 <meta property="og:description" content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/4/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-21T10:49:54-08:00">
-<title>Week 4: Vector Spaces & Eigen | notes.mehvix.com</title>
+<meta property="article:modified_time" content="2022-02-24T13:57:50-08:00">
+<title>Week 4: Vector Spaces & Eigenstuff | notes.mehvix.com</title>
 <link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.810db34462afeaee3200ecdac790f06abf57c2bc333593e6d5386c82ea671c59.js integrity="sha256-gQ2zRGKv6u4yAOzax5Dwar9XwrwzNZPm1ThsgupnHFk=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.968dba79052f8c4e9217c2828ac3bb6019e4dabe1b313722e0301192448f99dd.js integrity="sha256-lo26eQUvjE6SF8KCisO7YBnk2r4bMTci4DARkkSPmd0=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
@@ -83,7 +83,10 @@
 <a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
 </li>
 <li>
-<a href=http://notes.mehvix.com/eecs-16a/4/ class=active>Week 4: Vector Spaces & Eigen</a>
+<a href=http://notes.mehvix.com/eecs-16a/4/ class=active>Week 4: Vector Spaces & Eigenstuff</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
 </li>
 </ul>
 </li>
@@ -107,6 +110,9 @@
 </li>
 <li>
 <a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
+</li>
+<li>
+<a href=http://notes.mehvix.com/e-29/5/>Week 5: Forming Processes</a>
 </li>
 </ul>
 </li>
@@ -248,7 +254,7 @@ pass.mehvix.com
 <label for=menu-control>
 <img src=/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Week 4: Vector Spaces & Eigen</strong>
+<strong>Week 4: Vector Spaces & Eigenstuff</strong>
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -287,6 +293,7 @@ pass.mehvix.com
 <li><a href=#determinants>Determinants</a></li>
 <li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a>
 <ul>
+<li><a href=#eigenspace>Eigenspace</a></li>
 <li><a href=#mean-product-formula>Mean-product formula</a></li>
 </ul>
 </li>
@@ -294,6 +301,8 @@ pass.mehvix.com
 <ul>
 <li><a href=#theorem-91>Theorem 9.1</a></li>
 <li><a href=#theorem-92>Theorem 9.2</a></li>
+<li><a href=#proposition-1>Proposition 1</a></li>
+<li><a href=#proposition-2>Proposition 2</a></li>
 </ul>
 </li>
 <li><a href=#states>States</a>
@@ -661,6 +670,16 @@ where .$\lambda$ is a scalar value, called the <strong>eigenvalue</strong> of .$
 <li>Note that scaling a given eigenvector for an eigenvalue will still produce a valid eigenvector, since the vector’s direction will not be changed</li>
 </ul>
 </li>
+<li>Given non-invertible .$A \in \mathbb{R}^{n \times n}$ there are at least .$1$ and at most .$n$ eigenvalues
+<ul>
+<li>Given non-invertibility, some .$\lambda_i = 0$, so we have at least 1 eigenvalue.
+<ul>
+<li>Indeed, all eigenvalues can be .$0$ (such as for .$\vec 0$)!</li>
+</ul>
+</li>
+<li>However, non-invertibility does not place any other restrictions on our set of eigenvalues, so all other .$n-1$ eigenvalues can be distinct from this .$\lambda_i$</li>
+</ul>
+</li>
 </ul>
 <h2 id=determinants>
 Determinants
@@ -698,6 +717,20 @@ c & d \\
 <a href=https://en.wikipedia.org/wiki/Determinant>here</a></li>
 </ul>
 </li>
+<li>The determinant of the transpose of .$A$ equals the determinant of .$A$: .$\text{det}(A) = \text{det}(A^\text{T})$
+<ul>
+<li>&lsquo;Proving&rsquo; this geometrically on a whiteboard is fun, try out the .$2 \times 2$ case</li>
+<li>Therefore, if .$A^\text{T}$ has an eigenvalue .$\lambda$, then .$A$ also has the eigenvalue .$\lambda$ because .$\text{det}(A - \lambda I) = \text{det}(A^\text{T} - \lambda I)$</li>
+<li>This implies that in all the properties mentioned above, the word &ldquo;column&rdquo; can be replaced by &ldquo;row&rdquo; throughout
+<ul>
+<li>For example, viewing an .$n \times n$ matrix as being composed of .$n$ rows, the determinant is an .$n$-linear function.</li>
+</ul>
+</li>
+<li>See
+<a href=https://www2.math.upenn.edu/~ekorman/teaching/det.pdf>this article</a> which relies on the idea of elementary matrices (not covered) or this more advanced, out-of-scope
+<a href=https://math.stackexchange.com/questions/598258/geometric-interpretation-of-detat-deta>stackoverflow post</a> that deals with 16B-level topics (and beyond)</li>
+</ul>
+</li>
 </ul>
 <h2 id=computing-eigenvalues-and-eigenvectors>
 Computing Eigenvalues and Eigenvectors
@@ -708,9 +741,22 @@ Computing Eigenvalues and Eigenvectors
 </div>
 <ul>
 <li>Solving this equation for nonzero (nontrivial) solutions .$\vec x$ will yield our eigenvectors:
-$$A \vec x = \lambda \vec x \Longrightarrow (A - \lambda I_n) \vec x = \vec 0_n \Longrightarrow A' \vec x = \vec 0_n \label{a}\tag{1}$$
+<div class="book-columns flex flex-wrap">
+<div class="flex-even markdown-inner">
+<p>$$A \vec x = \lambda \vec x \label{a}\tag{1}$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\Longrightarrow (A - \lambda I_n) \vec x = \vec 0_n$$
+</div>
+<div class="flex-even markdown-inner">
+<p>$$\Longrightarrow A' \vec x = \vec 0_n$$
+</div>
+</div>
 <ul>
-<li>Note that .$A$ and .$I_n$ are fixed and only 1 parameter here that can vary in this equation: .$\lambda$
+<li>Note that .$A$ and .$I_n$ are fixed and only 1 parameter here that can vary in this equation: .$\lambda$</li>
+</ul>
+</li>
+</ul>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
@@ -718,8 +764,11 @@ $$A \vec x = \lambda \vec x \Longrightarrow (A - \lambda I_n) \vec x = \vec 0_n 
 <li>That is, we want to find values of .$\lambda$ that cause the <strong>determinant</strong> of .$A'$ to become zero
 <ul>
 <li>Linear dependence of the columns creates a nontrivial null-space for .$A'$</li>
+<li>.$N$th order characteristic polynomial with .$N$ solutions</li>
 </ul>
 </li>
+<li>Work-through on
+<a href="https://eecs16a.org/lecture/Note9.pdf#page=6">page 6</a></li>
 </ul>
 </div>
 <div class="flex-even markdown-inner">
@@ -731,11 +780,7 @@ a_{n1} & \dots & &mldr; & a_{nn} - \lambda
 \end{bmatrix}$$
 </div>
 </div>
-</li>
-<li>Work-through on
-<a href="https://eecs16a.org/lecture/Note9.pdf#page=6">page 6</a></li>
-</ul>
-</li>
+<ul>
 <li>For the .$2 \times 2$ case determinant is
 $$\lambda^2 - (a+d)\lambda + (ad - bc) = 0$$
 <ul>
@@ -745,17 +790,53 @@ $$\lambda^2 - (a+d)\lambda + (ad - bc) = 0$$
 <a href=https://en.wikipedia.org/wiki/Characteristic_polynomial>characteristic polynomial</a> for the matrix .$A$.</li>
 </ul>
 </li>
-<li>If a matrix has <em>repeated eigenvalues</em>, they may (or may not) have <em>distinct eigenvectors</em>.</li>
-<li>If the eigenvectors are <em>distinct</em>, they form an <strong>
+<li>If a matrix has <em>repeated eigenvalues</em>, they may (or may not) have <em>distinct eigenvectors</em>.
+<ul>
+<li>In general, multiplicity of eigenvalues will result in the same multidimensional eigenspace</li>
+<li>(Aside) &mldr;except if the matrix is
+<a href=https://en.wikipedia.org/wiki/Defective_matrix>defective</a>
+<ul>
+<li>An .$n \times  n$ matrix is defective iff it does not have .$n$ linearly independent eigenvectors</li>
+<li>That is, a defective matrix always has fewer than .$n$ distinct eigenvalues, since distinct eigenvalues always have linearly independent eigenvectors</li>
+<li>In which case the rank is decreased</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=eigenspace>
+Eigenspace
+<a class=anchor href=#eigenspace>#</a>
+</h3>
+<blockquote>
+<p>If the eigenvectors are <em>distinct</em>, they form an <strong>
 <a href=https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Eigenspaces,_geometric_multiplicity,_and_the_eigenbasis_for_matrices>eigenspace</a></strong>
-$$E_\lambda = \text{null}(A - \lambda I_n) = \text{null}(A')$$
+$$E_\lambda = \text{null}(A - \lambda I_n) = \text{null}(A')$$</p>
+</blockquote>
 <ul>
 <li>That is, null space of some matrix is the set of all vectors that satisfy .$\eqref{a}$ OR all of the eigenvectors that correspond to some eigenvalue OR the eigenspace that corresponds to the eigenvalue</li>
 <li>Exactly like the concept of span; the eigenspace is a subspace, the span of all eigenvectors for that eigenvalue (including .$\vec 0$)</li>
 <li>Any input vectors that lie in this space (for 2 distinct eigenvectors, a plane; for 1, a line) will be scaled by the shared eigenvalue under a linear transformation.</li>
-<li>Aside: Complex eigenvalues can exist as well; they are much harder to visually understand, but mathematically, we find them using the exact same process as before.</li>
+<li>Eigenspace is a subspace, which means it&rsquo;s closed under scalar multiplication
+<ul>
+<li>Thus, if two vectors are related by a scalar, they must both lie in the <em>same</em> eigenspace of .$\lambda_i$: .$E_{\lambda_i}$
+<ul>
+<li>That is, the eigenvectors that make up some eigenspace aren&rsquo;t unique</li>
 </ul>
 </li>
+<li>But, every eigenvector can only correspond to one eigenvalue
+<ul>
+<li>If for some .$A$, where .$A \vec x_1 = \lambda_1 \vec x_1$ and .$A \vec x_1 = \lambda_2 \vec x_1$ then .$\lambda_1 = \lambda_2$</li>
+<li>Thinking about a physical diagram may help clarify; .$\lambda_1 \neq \lambda_2$ would require some single initial state or vector aligned with .$\vec x_1$ to be scaled by two <em>different</em> values upon being transformed by .$A$
+<ul>
+<li>This cannot happen, so the <strong>two eigenvalues cannot be distinct</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Aside: Complex eigenvalues can exist as well; they are much harder to visually understand, but mathematically, we find them using the exact same process as before.</li>
 </ul>
 <h3 id=mean-product-formula>
 Mean-product formula
@@ -800,6 +881,40 @@ Theorem 9.2
 <li>Proof on
 <a href="https://eecs16a.org/lecture/Note9.pdf#page=10">page 10</a></li>
 </ul>
+<h3 id=proposition-1>
+Proposition 1
+<a class=anchor href=#proposition-1>#</a>
+</h3>
+<blockquote>
+<p>If an square .$n \times n$ matrix .$A$ isn&rsquo;t invertible, then it has some eigenvalue .$\lambda_i = 0$</p>
+</blockquote>
+<ul>
+<li>If a matrix is not invertible, then the dimension of its null space isn&rsquo;t necessarily greater than 0 because there must be a linearly dependent row or column.</li>
+<li>If this is true, then there&rsquo;s a non-zero vector .$\vec x$ such that .$A \vec x = 0 \vec x$</li>
+</ul>
+<hr>
+<ul>
+<li>If the matrix is not invertible, it has a nontrivial null-space.</li>
+<li>Then, by definition, there is some nonzero .$\vec x$ for which .$A \vec x = 0 \vec x = \vec 0_n$.</li>
+<li>We pattern match to .$\eqref{a}$ and notice the equation is exactly the same if we multiply the right by .$\vec x: A \vec x = 0 \vec x$.
+<ul>
+<li>This is kind of like pulling a scalar .$0$ out of .$\vec 0$, leaving .$0 \vec x$.</li>
+</ul>
+</li>
+<li>Now, we clearly see .$\lambda = 0$</li>
+</ul>
+<h3 id=proposition-2>
+Proposition 2
+<a class=anchor href=#proposition-2>#</a>
+</h3>
+<blockquote>
+<p>For an invertible .$A$ with some eigenvalue .$\lambda$, .$A^{−1}$ has eigenvalue .$ \frac{1}{\lambda}$</p>
+</blockquote>
+<ul>
+<li>We can start at .$\eqref{a}$: left-multiply both sides by .$A^{−1}$ to get .$\vec v = A^{-1} \lambda \vec v \Longrightarrow A^{-1} \vec v = \frac{1}{\lambda} \vec v$.</li>
+<li>Pattern match to .$\eqref{a}$ again and we’ve shown the statement is true</li>
+<li>Note: Given invertibility, all .$\lambda_i \neq 0$ so this is always true</li>
+</ul>
 <h2 id=states>
 States
 <a class=anchor href=#states>#</a>
@@ -814,13 +929,15 @@ $$A \vec x^* = \vec x^* $$
 <ul>
 <li>In other words, it is an element of the eigenspace of .$A$ corresponding to the eigenvalue .$\lambda = 1$.</li>
 <li>The above equation tells us that if we start at a steady state, then we will remain unaffected by the transformation matrix over time.</li>
-<li>Therefore, to solve for the steady-state of a system represented by .$P$, we solve eq .$\eqref{a}$, substituting .$\lambda = 1$
+<li>Therefore, to solve for the steady-state of a system represented by .$P$, we solve .$\eqref{a}$, substituting .$\lambda = 1$
 <ul>
 <li>Note that this amounts to solving for the null-space of .$(P − I_n)$.</li>
 </ul>
 </li>
 </ul>
 </li>
+<li>Great walk-through on
+<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=53">page 53</a></li>
 </ul>
 <h3 id=predicting-behavior-for-general-initial-states>
 Predicting Behavior for General Initial States
@@ -955,9 +1072,9 @@ Some Useful Information
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/d347d47995a9987a883dbbd8999642b6203afb3c title="Last modified by Max Vogel | February 21, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/33ebac1aeee812ecd5559fc9816cc3866763b75d title="Last modified by Max Vogel | February 24, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 21, 2022</span>
+<span>February 24, 2022</span>
 </a>
 </div>
 <div>
@@ -1008,6 +1125,7 @@ Some Useful Information
 <li><a href=#determinants>Determinants</a></li>
 <li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a>
 <ul>
+<li><a href=#eigenspace>Eigenspace</a></li>
 <li><a href=#mean-product-formula>Mean-product formula</a></li>
 </ul>
 </li>
@@ -1015,6 +1133,8 @@ Some Useful Information
 <ul>
 <li><a href=#theorem-91>Theorem 9.1</a></li>
 <li><a href=#theorem-92>Theorem 9.2</a></li>
+<li><a href=#proposition-1>Proposition 1</a></li>
+<li><a href=#proposition-2>Proposition 2</a></li>
 </ul>
 </li>
 <li><a href=#states>States</a>
