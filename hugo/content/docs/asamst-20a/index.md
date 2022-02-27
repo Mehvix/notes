@@ -592,7 +592,3 @@ __Social Construction of Asian Women as “Orientalized Chinese women as passive
 - __Labor Organization and Race__
     - Knights of Labor
     - Mainstream history on labor history often passes over its origins in race and immigration exclusion
-
-
-
-

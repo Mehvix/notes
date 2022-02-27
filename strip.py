@@ -10,7 +10,6 @@ for root, _, files in os.walk(FOLDER):
         with open(file, "r") as f:
             lines = f.readlines()
 
-        # lines = [str(line) for line in lines]
         lines = [str(line.rstrip()) for line in lines]
 
         # EL standardization
