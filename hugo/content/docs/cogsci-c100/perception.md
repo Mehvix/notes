@@ -530,4 +530,3 @@ Modular processes are usually characterized by...
 
 ![](/docs/cogsci-c100/perception/ball.png)
 {{< /columns >}}
-

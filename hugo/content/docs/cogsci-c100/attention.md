@@ -211,6 +211,3 @@ weight: 4
 - Children under 18 months should avert their eyes from TV and screen media at all times
 - For children 2 to 5, screen time should be limited to no more than 1 hour per day with the parent present
 {{< /hint >}}
-
-
-

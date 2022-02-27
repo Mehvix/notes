@@ -186,4 +186,3 @@ This will be on the exam!
     - You have to read every word.
     - The slower you read, the higher your comprehension.
     - It’s a 'sin' to skip around when you are reading.
-

@@ -1007,7 +1007,3 @@ it, TO BE IT!
 fact that the palm is no longer outside myself – no! – it never was
 outside – it was only a false conception on my part – the palm tree
 is in me and I in it – I myself am the palm tree!
-
-
-
-

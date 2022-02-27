@@ -7,4 +7,3 @@ aliases:
     - /cogsci-c100/
 weight: 1
 ---
-

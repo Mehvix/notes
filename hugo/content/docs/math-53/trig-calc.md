@@ -39,4 +39,3 @@ $$\int \frac{1}{a^2 + x^2} dx = \frac{1}{a} \tan^{-1}\bigg( \frac{x}{a} \bigg) +
 $$\sqrt{b^2x^2-a^2} \Longrightarrow x = \frac{a}{b}\cdot\sec\theta; \theta \in \[0, \pi/2), (\pi/2, \pi\]$$
 $$\sqrt{a^2-b^2x^2} \Longrightarrow x = \frac{a}{b}\cdot\sin\theta; \theta \in \[-\pi/2, \pi/2\]$$
 $$\sqrt{a^2+b^2x^2} \Longrightarrow x = \frac{a}{b}\cdot\tan\theta; \theta \in \(-\pi/2, \pi/2\)$$
-
