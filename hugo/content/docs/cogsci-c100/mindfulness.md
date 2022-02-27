@@ -6,94 +6,94 @@ weight: 7
 # Mindfulness, awareness and acceptance
 
 Western research has indicated that meditation can be effectively used to:
-•Treat psychological disorders, including anxiety, depression, substance abuse, eating 
+•Treat psychological disorders, including anxiety, depression, substance abuse, eating
 disorders, sleep disorders, ADHD, and conduct disorder
-−Recent reviews indicate that overall effect sizes are modest, but mindfulness is 
+−Recent reviews indicate that overall effect sizes are modest, but mindfulness is
 still considered an evidence-based treatment for most psychological disorders
-−The small effects are comparable with what would be expected from the use of 
-psychotropic medications (e.g., antidepressant) in a primary care population but 
+−The small effects are comparable with what would be expected from the use of
+psychotropic medications (e.g., antidepressant) in a primary care population but
 without the associated toxicities
-•Treat physical conditions, including chronic pain and cardiovascular disease, and 
+•Treat physical conditions, including chronic pain and cardiovascular disease, and
 enhance immune system function
-•Lengthen life span quite dramatically – 30% reduction in mortality due to heart 
+•Lengthen life span quite dramatically – 30% reduction in mortality due to heart
 disease and 49% reduction in mortality due to cancer, according to one 20-year study
 •Slow the cognitive decline associated with “normal aging”
-•Increase activity in areas of the brain associated with optimism, empathy, attention, 
-and emotional regulation – highly trained “super-meditators” show activity in these 
+•Increase activity in areas of the brain associated with optimism, empathy, attention,
+and emotional regulation – highly trained “super-meditators” show activity in these
 regions that is off the charts
 
 ## Awareness and Acceptance
 
-All mindfulness therapies share a common aim of cultivating an 
+All mindfulness therapies share a common aim of cultivating an
 attitude of awareness of the present moment with acceptance
-•This is an attitude that extends toward whatever is arising at the 
-moment, including thoughts, feelings, and experiences of contact 
+•This is an attitude that extends toward whatever is arising at the
+moment, including thoughts, feelings, and experiences of contact
 with the outer world
-•The aim is in line with the psychoanalytic view that it is primarily 
+•The aim is in line with the psychoanalytic view that it is primarily
 experiential avoidance that causes distress
 
 ----
 
-Neuropsychological evidence that awareness/labeling of negative emotions actually 
+Neuropsychological evidence that awareness/labeling of negative emotions actually
 reduces their intensity:
 !fMRI study by Lieberman, Eisenberger, Crockett et al. (2007)
-•Participants were shown frightening faces/faces expressing strong emotions 
+•Participants were shown frightening faces/faces expressing strong emotions
 and asked to choose a word that described the emotion on display
 •Controls were asked merely to identify the gender of the people in the photos
 ➜Labeling the fear-inducing object
--Reduced activity in the amygdala, the seat of fear and other negative 
+-Reduced activity in the amygdala, the seat of fear and other negative
 emotions
--Increased activity in a parts of the prefrontal cortex (right ventrolateral and 
+-Increased activity in a parts of the prefrontal cortex (right ventrolateral and
 medial PFC) involved in vigilance and discrimination, relative to controls
-☞Naming the emotion transformed the images from objects of fear to objects 
+☞Naming the emotion transformed the images from objects of fear to objects
 of scrutiny, potentially resulting in a more effective response
 
 ![](/docs/cogsci-c100/mindfulness/emo.png)
 
 - Study on spider phobia (Kircanski, Lieberman, & Craske, 2012)
     - Researchers recruited participants who had a spider phobia and exposed them to spiders
-    - Four experimental conditions that differed in their instructions for what to do 
+    - Four experimental conditions that differed in their instructions for what to do
 with the anxiety
 1) Label the anxiety felt about the spider
-2) Reappraisal: think differently of the spider so that it feels less threatening 
+2) Reappraisal: think differently of the spider so that it feels less threatening
 3) Distract from the anxiety elicited by the spider
 4) No specific instruction (control)
-•Later (on Day 2 and Day 9), participants returned to the lab and were again 
+•Later (on Day 2 and Day 9), participants returned to the lab and were again
 exposed to spiders to test the long-term effects of their emotion manipulation
-➜Those who had been assigned to labeling their emotions had lower 
-physiological reactivity to the spiders, as measured by skin conductance 
-responses 
-➜Within the affect labeling condition, participants who verbalized a larger 
-number of fear and anxiety words had even fewer skin conductance 
+➜Those who had been assigned to labeling their emotions had lower
+physiological reactivity to the spiders, as measured by skin conductance
+responses
+➜Within the affect labeling condition, participants who verbalized a larger
+number of fear and anxiety words had even fewer skin conductance
 responses
 
 ---
 
-- Unfortunately though, being accepting and nonjudgmental is easier said 
-than done because of our natural human tendency to avoid painful 
+- Unfortunately though, being accepting and nonjudgmental is easier said
+than done because of our natural human tendency to avoid painful
 experiences
-➜It is very difficult, if not impossible, to force ourselves to fully 
+➜It is very difficult, if not impossible, to force ourselves to fully
 experience situations and emotions that we deem to be painful
 •Traumatic experiences are a classic example of this
-•However, even in ordinary life, we are constantly dissociating from 
-painful situations and emotions – or ones that we think may potentially 
+•However, even in ordinary life, we are constantly dissociating from
+painful situations and emotions – or ones that we think may potentially
 cause pain
-−This may range from actual pain-inducing experiences to insights 
+−This may range from actual pain-inducing experiences to insights
 that might cause us to feel bad about ourselves
-☞There is a limit to the extent to which we can force 
+☞There is a limit to the extent to which we can force
 ourselves just to “be with” our anger or sadness or fear
 
 ----
 
-- Meditation is a technique that can help resolve this 
+- Meditation is a technique that can help resolve this
 problem of experiential avoidance
-Step One in mindfulness practice is to engage in focused meditation 
+Step One in mindfulness practice is to engage in focused meditation
 because
-1) It is very difficult to be aware of ourselves and our surroundings if we 
+1) It is very difficult to be aware of ourselves and our surroundings if we
 are afflicted by “monkey mind”
 ➜Focused meditation allows us to calm monkey mind
 2) Focused meditation ultimately enables us to connect with the non-
-moving mind and the “suchness” of experience, which produces a 
+moving mind and the “suchness” of experience, which produces a
 sense of general “Okness”
 
 ---
@@ -101,58 +101,58 @@ sense of general “Okness”
 - Focused meditation is just calmly abiding, with the object of concentration –
 not obsessive glomming
 •There should be a relaxed connection with the object
-•The aim is to “be present with the object,” not to lock onto it and grip it like 
-a dog, or to concentrate on it the way you might concentrate on memorizing 
+•The aim is to “be present with the object,” not to lock onto it and grip it like
+a dog, or to concentrate on it the way you might concentrate on memorizing
 the details of an image
-•As the meditation develops, allow your perception of the object to change as 
+•As the meditation develops, allow your perception of the object to change as
 you are present with the object on more and more subtle levels...
 -The focus becomes just stillness itself, rather than the physical object
--You find that there is something in you that is imperturbable and open, 
+-You find that there is something in you that is imperturbable and open,
 fundamentally calm
--Developing one-pointedness of concentration 
-enables you to find one-pointedness in yourself, 
+-Developing one-pointedness of concentration
+enables you to find one-pointedness in yourself,
 the non-moving mind, which resolves all things
 "Stilling the eyes is a way of stilling the mind
 
 ## Calm-abiding practice
 
-1. Find a quiet place and sit in a comfortable position with your spine straight.  You can sit 
+1. Find a quiet place and sit in a comfortable position with your spine straight.  You can sit
 cross-legged or in a chair.
-2. Tilt the chin very slightly down but do not allow the head to loll forward.  Place your hands 
+2. Tilt the chin very slightly down but do not allow the head to loll forward.  Place your hands
 comfortably on your lap.
 3. Take a few deep breaths.
-4. Collect your attention, and begin to move it slowly down your body.  Notice the sensations in 
+4. Collect your attention, and begin to move it slowly down your body.  Notice the sensations in
 each part of your body.  Relax any tensions, particularly in the face, neck and hands.
 5. Direct your gaze softly downwards or close your eyes if you wish.
-6. Focus on an object (e.g., a bit of the wall in front of you, a statue, a sound like “Om”) or on 
+6. Focus on an object (e.g., a bit of the wall in front of you, a statue, a sound like “Om”) or on
 the breath.
-7. Be fully present with the object of your attention.  If you are focusing on the breath, don’t 
-gloss over the inhalation and say, “OK, well, this is the inhalation part” – that’s just labeling 
-it.  “Be with” each in-breath for its full duration and with each out-breath for its full duration, 
+7. Be fully present with the object of your attention.  If you are focusing on the breath, don’t
+gloss over the inhalation and say, “OK, well, this is the inhalation part” – that’s just labeling
+it.  “Be with” each in-breath for its full duration and with each out-breath for its full duration,
 as if you were riding the waves of your own breathing.  Seek nothing.  No “next”!
 8. Integrate your whole body in the experience.  Meditation is state of full body awareness.
-9. If your attention wanders (and it will!), simply release the thought and focus back on the 
+9. If your attention wanders (and it will!), simply release the thought and focus back on the
 object of your attention.
-10. After a while, you can try noticing the distractions and acknowledging it with a simple word, 
+10. After a while, you can try noticing the distractions and acknowledging it with a simple word,
 e.g., thinking, wandering, hearing.
 
 ### Meditation Q & A
-1) If one has a physical condition that makes sitting uncomfortable, is 
+1) If one has a physical condition that makes sitting uncomfortable, is
 it OK to meditate while lying down or standing up?
 
-•Yes, and in fact, depending on the physical condition, that might be highly 
+•Yes, and in fact, depending on the physical condition, that might be highly
 advisable
-•There are four standard meditation positions: sitting, lying down flat on one’s 
+•There are four standard meditation positions: sitting, lying down flat on one’s
 back, standing, and walking
 2) Can focused meditation produce negative effects?
-•In general, focused meditation is considered a safe practice, but there are large 
-individual differences in how people respond to any practice, so use good 
+•In general, focused meditation is considered a safe practice, but there are large
+individual differences in how people respond to any practice, so use good
 judgment and stop and seek help when necessary
-•Also, in particular, for those with trauma or abuse histories (or “fear types”), 
-even basic meditation practices can can lead to intense, and possibly 
+•Also, in particular, for those with trauma or abuse histories (or “fear types”),
+even basic meditation practices can can lead to intense, and possibly
 uncomfortable emotions
--In those cases, when doing focused meditation, it is recommended that one 
-direct attention to an external object or the feet, rather than the breath, as the 
+-In those cases, when doing focused meditation, it is recommended that one
+direct attention to an external object or the feet, rather than the breath, as the
 latter may trigger too many memories and emotions
 
 ---
@@ -811,7 +811,7 @@ meditation) found that meditation is associated with“a wakeful,
 hypometabolic state of parasympathetic activity”
 
 
---- 
+---
 
 Research on use of mindfulness in treating psychological disorders in children and
 adolescents:
@@ -982,7 +982,7 @@ In our culture, we normally think that:
 • Our mind is identical with our body OR
 • Our mind is in our body
 However, the meditation traditions from
-which mindfulness arises hold that 
+which mindfulness arises hold that
 • Our body is actually in our mind … and that we are a lot more than
 we think
 • The small sense of self with which we normally identify is an
@@ -997,7 +997,7 @@ meditate on it week after week
 o First stage: you think about what this object actually is
 o Second stage: “with every nerve and every drop of your blood,” you
 feel the object of concentration and what it is like
-o Third stage: you become identical with the object of concentration 
+o Third stage: you become identical with the object of concentration
 >… all of a sudden I have the odd feeling that I am no longer looking at
 the tree from the outside, but from the inside. To be sure I still
 perceive its outward form with my eyes, but I begin, to an everincreasing extent, to see and experience the inner being, the

@@ -8,12 +8,12 @@ weight: 4
 
 - Attention: ability to focus on one thing and ignore others
     - Attention is required for information to be encoded
-    - _Novel_ stimuli capture attention -- something that's different         
+    - _Novel_ stimuli capture attention -- something that's different
         - Can be something loud, bright, salient or even sudden sound of silence
 - Physiological/neurological measures of attention
     - Neurological correlates (ERP and PET studies)
         - Activation of anterior and posterior attentional networks (frontal lobe)
-    - Orienting response 
+    - Orienting response
         - Increase in heart rate and galvanic skin response
 
 ----
@@ -103,10 +103,10 @@ weight: 4
 
 {{< youtube "tMujgAAyH-I" >}}
 
---- 
+---
 
 - What are some advantages to automatic processing?
-    - Efficiency, multitasking, allows us to pay attention to higher levels of processing (you don't think about the letters you type, rather, the content of what you're trying to convey) 
+    - Efficiency, multitasking, allows us to pay attention to higher levels of processing (you don't think about the letters you type, rather, the content of what you're trying to convey)
 - What are some potential drawbacks?
     - Lack of focus (car crashes), miss the rich and vividness of life
     - [“Raisin” meditation](https://ggia.berkeley.edu/practice/raisin_meditation)

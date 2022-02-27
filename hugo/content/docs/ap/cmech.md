@@ -34,7 +34,7 @@ Top is .$x$, middle is .$v$, bottom is .$a$
     $$t_\text{top}=\frac{v_i*\sin\theta}{g}$$
 - Peak in .$y$ direction:
     $$y_\text{max}=\frac{v_i*\sin^2\theta}{2g}$$
-- Distance traveled in .$x$ direction: 
+- Distance traveled in .$x$ direction:
     $$x_\text{max}=\frac{v_i*\sin2\theta}{g}$$
 - Desmos tools
     - [Projectile motion](https://www.desmos.com/calculator/gjnco6mzjo)
@@ -200,7 +200,7 @@ object moves away from the equilibrium position and therefore the object natural
 from the equilibrium position. For example, a marker being tipped to the side.
 ![/docs/ap/mech/Untitled-59.png](/docs/ap/mech/Untitled-59.png)
 
-## Practice 
+## Practice
 
 {{< details "Practice Qs" >}}
 1. ![/docs/ap/mech/Untitled-60.png](/docs/ap/mech/Untitled-60.png)
@@ -319,7 +319,7 @@ $$\ \Delta \theta=\omega_f \Delta t-\frac{1}{2}\alpha \Delta t^2 \text{ -- no } 
 1. $$\omega_f^2=\omega_i^2+2\alpha \Delta \theta \text{ -- no } t$$
 
 
-## Rotational Inertia 
+## Rotational Inertia
 ![/docs/ap/mech/Untitled-127.png](/docs/ap/mech/Untitled-127.png)
 
 {{< details "Pulleys" >}}![/docs/ap/mech/Untitled-128.png](/docs/ap/mech/Untitled-128.png)
@@ -350,7 +350,7 @@ with finishing with none+blue same time, then green, then red
 {{< /details >}}
 
 <!-- .$\frac{dW}{d}$  -->
-{{< details "Rolling Up an Incline" >}} 
+{{< details "Rolling Up an Incline" >}}
 ![/docs/ap/mech/Untitled-138.png](/docs/ap/mech/Untitled-138.png)
 ![/docs/ap/mech/Untitled-139.png](/docs/ap/mech/Untitled-139.png)
 ![/docs/ap/mech/Untitled-140.png](/docs/ap/mech/Untitled-140.png)

@@ -48,7 +48,7 @@ weight: 1
 >![](/docs/cogsci-c100/perception/cup.png)
 > Cup/pail composed of cylinder and curved tube geons in a particular arrangement
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/perception/rbc-ex.png)    
+![](/docs/cogsci-c100/perception/rbc-ex.png)
 > Easier to tell the object from the rightmost column versus the center, despite the latter containing more lines
 {{< /columns >}}
 
@@ -74,7 +74,7 @@ weight: 1
     - Prototypes more easily pass this filter
     - This filter sorts things according to a limited number of variables (e.g., warm, unpleasant, green) out of which we construct our world
     - But prototype theory suggests that our minds can also perceive objects in a very different way...
-    > _That which is essential is invisible to the eye._ – de Saint-Exupery 
+    > _That which is essential is invisible to the eye._ – de Saint-Exupery
 
 ## Alternative modes of perception
 
@@ -89,7 +89,7 @@ weight: 1
 
 
 > _If the doors of perception were cleansed, everything would appear to man as it is, infinite._<br>
-> 
+>
 > _To see a World in a Grain of Sand,_ <br>
 > _And a Heaven in a Wildflower,_ <br>
 > _Hold Infinity in the palm of your hand,_ <br>
@@ -107,7 +107,7 @@ weight: 1
 - Many different neurons connect to the dendrites of each neuron
     - Some produce excitatory effect; others produce inhibitory effect
     - There are also different levels of intensity of these effects
-- Around a thousand connections are connected to each neurons 
+- Around a thousand connections are connected to each neurons
     - If the activation of the neuron reaches a certain minimum threshold, the neuron will fire
 {{< /columns >}}
 
@@ -121,7 +121,7 @@ weight: 1
 {{< columns >}}<!-- mathjax fix -->
 - Artificial neural networks (ANN)
     - The nodes or neurons are organized into layers in much the same way that human neural networks are
-    - The **weights** attached to the connections between pairs of units in adjacent layers determine the overall behavior of the network 
+    - The **weights** attached to the connections between pairs of units in adjacent layers determine the overall behavior of the network
         - This is similar to the way in which _excitatory_ and _inhibitory_ neurons of various strengths connect to a particular neuron in human neural networks
     - The **bias term** indicates what the weighted sum needs to be before the node/neuron will activate
         - This is similar to the threshold necessary for activation of a neuron in human neural networks
@@ -148,13 +148,13 @@ weight: 1
 {{< /columns >}}
     - This is loosely analogous to how, in biological networks of neuron, some groups of neurons cause other neurons to fire
 2. Second layer (or first “hidden layer”)
-   - Each neuron in the second layer might pick up on whether there is an edge in one particular region 
+   - Each neuron in the second layer might pick up on whether there is an edge in one particular region
    - You assign a weight to each one of the connections between a particular neuron in the second layer and the neurons in the first layer
    - Then you take all the activations from the first layer and compute their weighted sum according to the weights
     {{< columns >}}<!-- mathjax fix -->
 - Could make the weights associated with almost all of the pixels 0 except for some positive weights in target region
 - To really pick up on whether there is an edge here, could also have some negative weights associated with the surrounding pixels
-    - Sum is largest when those middle pixels are bright but surrounding pixels are darker 
+    - Sum is largest when those middle pixels are bright but surrounding pixels are darker
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s2.png)
 {{< /columns >}}
@@ -171,7 +171,7 @@ weight: 1
         - e.x: A “9” has a loop near the top and a line on the right whereas an “8” has a loop on the top and one below
     {{< columns >}}<!-- mathjax fix -->
 - Each neuron in the third layer corresponds to one of these subcomponents
-   - e.x: A particular neuron in the third layer might be activated by any generally loopy pattern toward the top 
+   - e.x: A particular neuron in the third layer might be activated by any generally loopy pattern toward the top
 - These subcomponents are made up of the various edges from the second layer
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s4.png)
@@ -181,7 +181,7 @@ weight: 1
 - Has 10 neurons, each representing one of the digits
 - The activation in these neurons – some number between 0 and 1 – represents how much the system thinks a given image corresponds with a given digit
 - Learning is about getting the computer to find a setting for all of the different weights and biases so that it will actually solve the problem at hand
-   - This is done through [**backpropagation**](https://en.wikipedia.org/wiki/Backpropagation) 
+   - This is done through [**backpropagation**](https://en.wikipedia.org/wiki/Backpropagation)
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/s5.png)
 {{< /columns >}}
@@ -226,8 +226,8 @@ weight: 1
     - **Top-down processing:** information processing guided by higher-level processes, such as our beliefs, expectations, and memories
         - Our knowledge, beliefs about the world inform our perceptions
         - Emphasizes the importance of information coming from our minds
-    - Note: we use both throughout everyday situations, rarely exclusively either or 
-        - Models can almost be sort of categorized/grouped by which of the two processing model they put emphasis on 
+    - Note: we use both throughout everyday situations, rarely exclusively either or
+        - Models can almost be sort of categorized/grouped by which of the two processing model they put emphasis on
     - E.x. you see a water bottle on your desk
         - You know it's a water bottle since it's physically there. You can see, and perhaps touch it
         - You know it's a water bottle because of it's features which have meaning to you through living in the modern world (perhaps owning a water bottle yourself!)
@@ -235,7 +235,7 @@ weight: 1
 
 {{< details "Optional: Deductive versus Inductive Reasoning" >}}
 1. **Deductive reasoning** works from the more general to the more specific, i.e., “top-down” approach.
-    - In deductive reasoning there is usually a first premise, then a second premise (both of which are proven through observations), and finally an inference.  
+    - In deductive reasoning there is usually a first premise, then a second premise (both of which are proven through observations), and finally an inference.
     - Ex: All men are mortal. Smerdley is a man. Therefore, Smerdley is mortal.
 2. Inductive reasoning works the other way, moving from specific observations to broader generalizations and theories, i.e., “bottom-up” approach
     - Inductive reasoning extracts a likely (but not certain) premise from specific and  limited observations.
@@ -281,21 +281,21 @@ weight: 1
         > ![](/docs/cogsci-c100/perception/outside.png)
 - Rorscharch and Thematic Apperception Test (TAT)
     > {{< columns >}}<!-- mathjax fix -->
-![](/docs/cogsci-c100/perception/woman.png)    
+![](/docs/cogsci-c100/perception/woman.png)
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/ink.png)
 {{< /columns >}}
     - When angry, people more often perceive neutral objects as guns (Baumann & DeSteno, 2010)
-    - Effect of beliefs/preconceived notions on perception 
-        - Rosenhan study on effects of psychological labeling 
+    - Effect of beliefs/preconceived notions on perception
+        - Rosenhan study on effects of psychological labeling
 
 
 ## Self-fulfilling prophecies
 
-- **Self-fulfilling prophecies:** People generally think that it is our experiences and perceptions that create our beliefs, but often, it is actually our beliefs that create our experiences and perceptions 
+- **Self-fulfilling prophecies:** People generally think that it is our experiences and perceptions that create our beliefs, but often, it is actually our beliefs that create our experiences and perceptions
     {{< figure  src="/docs/cogsci-c100/perception/proph.jpg" >}}
 - Our beliefs and expectations influence **others’** behavior
-    - **The Pygmalion effect:** study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls 
+    - **The Pygmalion effect:** study found that students who were (randomly) labeled intellectual “spurters” showed significantly greater gains in IQ and academic performance after 8 months than controls
         - Follow-up: If teacher believed that girls learn to read faster than boys, they did
     - Children who were told they were neat and tidy became more neat and tidy than those who were told they should be neat and tidy
         - Follow-up: children who are told that they are good at math showed greater improvements in math scores than those who were told that they should try to become good at math
@@ -323,7 +323,7 @@ weight: 1
 {{< /columns >}}
 <br>
 {{< columns >}}<!-- mathjax fix -->
-- Müller-Lyer illusion: 
+- Müller-Lyer illusion:
     - Is line AB or line BC longer?
     - **Size-distance constancy:** Our brains are used to perceiving angles as corners that are near or far away and sees the inward-facing corners as more distant and therefore smaller
 
@@ -331,7 +331,7 @@ weight: 1
 - Are the two parallelograms the same size and shape?
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/MLw.png)
-- Ponzo illusion: 
+- Ponzo illusion:
     - Which line is longer?
 
 ![](/docs/cogsci-c100/perception/tables.png)
@@ -348,11 +348,11 @@ weight: 1
 
 - In the Salar de Uyuni of Bolivia, the world’s largest salt flat, with no other objects in sights, the human eye loses its ability to establish a proper field of depth.  The result is some bizarre pictures.
 {{< /columns >}}
-    
+
 
 ## Effects of color in marketing
 
-- Assume that you are considering buying condoms 
+- Assume that you are considering buying condoms
     - You enter a store and notice that the store doesn’t carry all the brands  you may be familiar with, so you’re going to have to make your  choice based on the product package alone
     - You are really interested in finding a brand that is considered
         - Durable, strong, and well built (“rugged” condition) OR
@@ -370,7 +370,7 @@ weight: 1
 - Ruggedness: brown
 - .$^1$Marginally significant
 {{< /columns >}}
-    
+
 # Neurological disorders of visual perception
 
 ## Face perception and prosopagnosia
@@ -388,7 +388,7 @@ weight: 1
 {{< /columns >}}
   - Do people tend to perceive men or women more in “parts”? Women (Gervais, Vescio , Forster et al., 2012)
 - **Prosopagnosia:** failure to recognize particular people by the sight of their faces
-    - After stroke, sheep rancher could not recognize people but could recognize sheep 
+    - After stroke, sheep rancher could not recognize people but could recognize sheep
         - Someone would walk in the room and he wouldn't be able to tell if it was the wife/neighbor/robber/etc
     - Note: the eyes also play a special role in perception
         >![](/docs/cogsci-c100/perception/eyes.png)
@@ -467,7 +467,7 @@ Modular processes are usually characterized by...
 - Blindness resulting from damage to visual cortex
 - When presented with various shapes like circles and square, or photos of faces of men and women, patient could not tell (or guess) what his eyes were gazing at
 - However, when shown pictures of people with angry or happy faces, he was able to guess the emotions expressed, at a rate far better than chance
-- Patients are also able to correctly “guess” the identity or location of particular objects 
+- Patients are also able to correctly “guess” the identity or location of particular objects
 - Patients report that they get a “gut” feeling that allows them to perform these tasks
 <---><!-- mathjax fix -->
 > ![](/docs/cogsci-c100/perception/wander.png)
@@ -493,7 +493,7 @@ Modular processes are usually characterized by...
 - Use “relax” strategy, then try active search strategy
 {{< /details >}}
   - Proposed explanation:
-    - Participants who were basically told to relax and go with their gut instinct used a secondary pathway of visual perception that 
+    - Participants who were basically told to relax and go with their gut instinct used a secondary pathway of visual perception that
     - Does not go through the visual cortex
     - Instead simply makes a very short loop through the limbic system: the emotional, instinctual center of the brain
 ![](/docs/cogsci-c100/perception/proposed.png)
@@ -522,7 +522,7 @@ Modular processes are usually characterized by...
 
 - There is a critical period for normal sensory and perceptual development
 - Kittens reared in a cylinder with only vertical black and white stripes later had difficulty perceiving horizontal bars
-    - Kitten would play with rod only when it was held upright 
+    - Kitten would play with rod only when it was held upright
     - As if they couldn't see the horizontal rod
 <br>
 <br>

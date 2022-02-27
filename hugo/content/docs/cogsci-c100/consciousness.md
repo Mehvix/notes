@@ -8,20 +8,20 @@ weight: 6
 
 - The nature of the mind-body or mind-brain connection was a philosophical question of importance in the early days of cognitive science
     - What is mind?  Is it something that is physical?  Is a body necessary to have a mind?
-    - We don't talk too much about philosophy since it's inherently not empirical / verifiable 
+    - We don't talk too much about philosophy since it's inherently not empirical / verifiable
         - It's all that was possible 50 years ago
         - Now we have neuroscience!
 
 ##  Different viewpoints
 
-### Monism: 
+### Monism:
 > There is only one kind of substance in the universe
 - *Idealism:* Everything – including the material world – is actually mind
 - *Materialism:* Everything that exists – including mind – is physical
     - In some fundamental sense, the mind just is the brain, so that everything that happens in the mind is happening in the brain
     - Aristotle: The brain is like a lump of clay; the different thoughts the mind can take on when it undergoes different patterns of activity are like the shapes the clay can assume
     - Most cognitive scientists hold this view
-### Dualism: 
+### Dualism:
 > Belief in the existence of both mental (e.g., “soul”) and physical substances
 - The mind and brain are two separate and distinct things
     - Religious viewpoint
@@ -91,10 +91,10 @@ weight: 6
     - In order to build a machine that could do all this, we would need to embed the Chinese room in a robot, providing it with some analog of sensory organs, vocal apparatus, and limbs
     - Then the system could be said to understand Chinese and behave intelligently
 - Searle’s response to robot reply
-    - The basic problem still remains: simply manipulating symbols cannot create meaning 
+    - The basic problem still remains: simply manipulating symbols cannot create meaning
     - There must be more to genuine thinking than simply manipulating symbols according to rules
-    - Aside: Does Google Translate understand Language? 
-        - Not really. We just feed it enough data such that it can make fairly-accurate predictions. It doesn't _understand_ language in that it can't distinguish the _meaning_. So can some system, given enough resources (power, time, information, etc)? 
+    - Aside: Does Google Translate understand Language?
+        - Not really. We just feed it enough data such that it can make fairly-accurate predictions. It doesn't _understand_ language in that it can't distinguish the _meaning_. So can some system, given enough resources (power, time, information, etc)?
         - Then again, humans wouldn't understand an Alien language... we still have un-deciphered languages written by humans!
 
 # What is consciousness?
@@ -131,7 +131,7 @@ weight: 6
 - Global workspace theory maintains that consciousness forms when specialized programs or modules access a shared repository of information or “blackboard”
     - Data written onto this blackboard becomes available to a host of subsidiary processes, such as working memory, language, the planning module, etc.
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/perception/global.png)  
+![](/docs/cogsci-c100/perception/global.png)
     {{< /columns >}}
     - **Consciousness emerges when incoming sensory information, inscribed onto the blackboard, is broadcast _globally_ to multiple cognitive systems**
 
@@ -165,7 +165,7 @@ weight: 6
 #### 1. Hypnosis
 
 - Hypnosis is associated with
-    1. Decreased activity in the dorsal [anterior cingulate](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex) 
+    1. Decreased activity in the dorsal [anterior cingulate](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex)
         - When hypnotized, you are in a state so absorbed in listening that one is not thinking about anything else
         - No [selective attention](attention/#selective-attention)
 <---><!-- mathjax fix -->
@@ -173,7 +173,7 @@ weight: 6
 ---
 
     {{< /columns >}}
-    2. Reduced connections between the dorsolateral prefrontal cortex  (motor actions) and the **default mode network** (awareness of one’s actions), which includes the medial prefrontal and the posterior cingulate cortex -- why you do not recall being hypnotized 
+    2. Reduced connections between the dorsolateral prefrontal cortex  (motor actions) and the **default mode network** (awareness of one’s actions), which includes the medial prefrontal and the posterior cingulate cortex -- why you do not recall being hypnotized
 
 #### 2. Repression and dissociation
 
@@ -183,21 +183,21 @@ weight: 6
     - Condition in which two or more identities or personalities alternate in control of a person’s behavior
         - One personality can be diabetic, near-sighted, or allergic to a substance and the other not
         - The two personalities can have different brain waves, vital signs and hormonal levels
-    - Some personalities are aware of the other personalities 
+    - Some personalities are aware of the other personalities
 - Research indicates that in repression/dissociation, the _prefrontal cortex_ (executive control) disengages processing in the _hippocampus_ (memory)
     - Participants asked to memorize word pairs, e.g., ordeal-roach or steam-train
-        - **Respond condition:** Participants were shown cue word and asked to recall the matched word 
+        - **Respond condition:** Participants were shown cue word and asked to recall the matched word
         - **Suppress condition:** Participants were shown cue word and asked to actively suppress the matched word
             - Word suppression was associated with activation of prefrontal cortex to disengage processing in hippocampus
             - Suppressing matched word reduced later recall of word
         > Takeaway: Brain is actually more active when avoiding recalling a memory than during recall itself
-          - Perhaps why mindfulness is impactful 
+          - Perhaps why mindfulness is impactful
 
 
 #### 3. Lucid dreaming
 
 - Whereas dreams are unconscious, lucid dreams are conscious
-- **Lucid dreaming:** Neuroimaging data is scant but preliminary results suggest that _prefrontal and parietal regions_ are also involved in lucid dreaming 
+- **Lucid dreaming:** Neuroimaging data is scant but preliminary results suggest that _prefrontal and parietal regions_ are also involved in lucid dreaming
     - Currently, there is only one fMRI study contrasting lucid and non-lucid REM sleep and it is a case study (Dresler, Wehrle, Spoormaker et al., 2012)
         - Few people who can lucid dream at will => few potential subjects
     - Interestingly though, the results of this study converge with MRI studies that have evaluated individual differences in lucid dreaming frequency  (Baird, Castelnovo, Gosseries et al., 2018)
@@ -239,7 +239,7 @@ weight: 6
 
 - One possible reason for the discrepancy in research findings is that the part of the cerebral cortex that is primarily associated with consciousness depends on the type of consciousness in question
 - In particular, some philosophers have distinguished between two types of consciousness:
-    - **Access consciousness** (or A-consciousness): 
+    - **Access consciousness** (or A-consciousness):
         - **Pertains to accessibility of information**, i.e., conscious vs. nonconscious information processing
         - Prefrontal and parietal cortical areas may play important roles in this
         - Related to the _“easy problem”_ of consciousness: explaining in computational or neural terms how an organism accesses and deploys information
@@ -275,17 +275,17 @@ weight: 6
     - This idea that exchange and integration of neural signals is the basis of phenomenal consciousness is one of the main ideas of **integrated information theory**
 
 
-## Integrated Information Theory 
+## Integrated Information Theory
 
 - In the early 2000s, Guilio Tononi pioneered a technique called zap and zip to probe whether someone is conscious or not
-    - Scalp of patient was “zapped” with an intense pulse of magnetic energy using TMS (transuranium magnetic stimulation) 
+    - Scalp of patient was “zapped” with an intense pulse of magnetic energy using TMS (transuranium magnetic stimulation)
     - This induced a brief electric current in the neurons underneath, which would reverberate across the cortex, exciting and inhibiting other neurons
-    - A network of EEG sensors recorded those electrical signals, and as they unfolded over time, yielded a movie 
+    - A network of EEG sensors recorded those electrical signals, and as they unfolded over time, yielded a movie
     - The data from the movie was compressed using an algorithm commonly used to “zip” computer files
     - Zipping yielded an estimate of the complexity of the brain’s response
     > ![](/docs/cogsci-c100/consciousness/data.png)
     > Loss and recovery of integration and information in thalamocortical networks:
-    > 
+    >
     > A: Wakefulness<br>
     > B: Anesthesia<br>
     > C: Vegetative state: UWS – unresponsive wakefulness syndrome, MCS – minimally conscious state, LIS – locked-in syndrome<br>
@@ -311,7 +311,7 @@ weight: 6
     - Xenobots are able to move in a coherent fashion to explore their watery environment and can survive for days or weeks, powered by embryonic energy stores
     - Made of organic material (thus, biodegradable) so it shouldn't cause long-term issues
 - Functions
-    - Groups of xenobots can move around in circles, pushing pellets into a central location 
+    - Groups of xenobots can move around in circles, pushing pellets into a central location
     - Others were built with a hole through the center and were able to use that as a pouch to successfully carry an object
     - When xenobot was cut in half, it stitched itself back up and kept going
 - Potential applications
@@ -330,35 +330,35 @@ weight: 6
     - Even with the best technology, the computation could last longer than the lifespan of the universe
     - Daniel Toker at UCB has recently proposed a shortcut for the mathematical calculations necessary to test the theory
 
-#### Controversies in CogSci: 
+#### Controversies in CogSci:
 
 > What are some potential strengths and weaknesses of Tononi’s Integrated Information Theory?
 
 # Evidence for unconscious processes
 
-- Some prominent psychologists today maintain that 100 years of research has provided no clear evidence for the existence of the “unconscious,” but that claim seems to be exaggerated 
-- By one estimate, our five senses take in 11,000,000 bits of information per second, of which we consciously process about 40 
+- Some prominent psychologists today maintain that 100 years of research has provided no clear evidence for the existence of the “unconscious,” but that claim seems to be exaggerated
+- By one estimate, our five senses take in 11,000,000 bits of information per second, of which we consciously process about 40
 - Some specific evidence for the existence of the unconscious...
 
 ## Consciousness and thought suppression
 
 - White bear/red Volkswagon study
     - Goup 1: Participants were told to try not to think about white bears
-    - Goup 2: Participants were told to try not to think about white bears but if they did, to replace the thought with the image of a red Volkswagon 
+    - Goup 2: Participants were told to try not to think about white bears but if they did, to replace the thought with the image of a red Volkswagon
 - Which group was more successful?
-    - Group 2: 
+    - Group 2:
     > It’s very difficult (if not impossible!) to **suppress** a maladaptive thought; it’s much easier to replace the thought with a more desirable one (Wegner, Schneider, Carter et al., 1987)
 
 ![](/docs/cogsci-c100/consciousness/car.png)
 
 ## Unconscious behaviors
 
-- **Split brain:** 
+- **Split brain:**
     - A condition in which the two hemispheres of the brain are isolated by severing the connecting fibers (mainly those of the corpus callosum) between them
     - After operation, patients often notice that left hand seems to have a  “mind of its own”
         > Suggests that consciousness involves operations of verbal mechanism located in left cerebral hemisphere
 - Freudian slips
-    - Lood gegs 
+    - Lood gegs
     - Bine foddy
 
 ## Unconscious perception
@@ -379,9 +379,9 @@ weight: 6
 ----
 
 - Surgery patients in double-blind study wore earphones during their operations, listening to either
-    1. Soothing background music and 
+    1. Soothing background music and
     2. Positive suggestions about the safety and success of the procedure
-- Results: Compared to controls, experimental group 
+- Results: Compared to controls, experimental group
     - Woke up feeling significantly less pain (25% on average)
     - Required less pain medication post-surgery (70 required no opiates at all, compared with 39 in the control group) (Nowak, Zech, Asmussen, et al., 2020 )
 
@@ -389,7 +389,7 @@ weight: 6
 ### Unconscious communication
 
 - Study on 23-year-old woman who showed no outward signs of conscious awareness after being in a car accident (Owen, Coleman, Boly et al., 2006; wn, 2014)
-    - When researchers asked her to imagine playing tennis vs. walking around her home, fMRI scans revealed activity in regions similar to healthy person’s brain 
+    - When researchers asked her to imagine playing tennis vs. walking around her home, fMRI scans revealed activity in regions similar to healthy person’s brain
 
 {{< columns >}}<!-- mathjax fix -->
 - Follow-up analysis of 42 behaviorally unresponsive patients revealed 13 more who also showed meaningful though diminished brain responses to questions (Stender, Gosseries, Bruno et al., 2014)
@@ -418,7 +418,7 @@ weight: 6
 - We are often influenced by factors of which we are entirely unaware
 - Suspension bridge study:
     - Males were interviewed by attractive female supposedly as part of research project, either
-        - Just after crossing a narrow, wobbly footbridge 230 feet above rapids OR 
+        - Just after crossing a narrow, wobbly footbridge 230 feet above rapids OR
         - 10 minutes after crossing the bridge
     - They were given the researcher’s telephone number in case they had questions later
         - Those in first condition were much more likely to call to ask for a date afterwards
@@ -431,7 +431,7 @@ weight: 6
     - Graduate student interviewer was told to nod his head whenever participant engaged in a particular behavior (e.g., chin rubbing) order to reinforce this behavior
     - “Interviewer” was actually the real participant in the experiment; the participant was a confederate
     - “Participant” was instructed to rub his chin whenever the interviewer said “yeah”
-        - Frequency of interviewer’s saying “yeah” increased substantially 
+        - Frequency of interviewer’s saying “yeah” increased substantially
     - When interviewer was eventually told what had happened, his reaction was one of “stunned incredulity” (Rosenfeld & Baer, 1969)
 - Thumb twitch study
     - Participants were told that they were participating in a study on effects of stress on body tension and that effects of stress would be manipulated by randomly alternating periods of soothing music and static
@@ -492,7 +492,7 @@ weight: 6
     - **Hypnobirthing:** combination of self-hypnosis and childbirth education
 - A number of studies have indicated that hypnobirthing is associated with shorter hospital stays, shorter length of labor, reduction in self-reported pain, reduced epidural and analgesic use
 - However, other studies have found inconclusive results, so overall more research is needed
-- Mechanism: 
+- Mechanism:
      - There are sensory and emotional components of pain perception
         - Sensory component is mediated by somatosensory cortex
         - Cognitive/emotional component is mediated by the anterior cingulate cortex and the prefrontal cortex
@@ -501,12 +501,12 @@ weight: 6
 ## Hallucinogens
 
 - History
-    - Used in Aztec, Mayan, Incan, West African, South Asian, and Egyptian societies since ancient times 
+    - Used in Aztec, Mayan, Incan, West African, South Asian, and Egyptian societies since ancient times
         - To promote physical and mental healing
         - To induce spiritual experiences and access “altered states of consciousness”
     - 1960s emergence of counterculture movement led to widespread usage of hallucinogens in the US
     - Social/cultural differences in use of hallucinogens
-        - Largely part of underground lifestyle in the West 
+        - Largely part of underground lifestyle in the West
         - Openly used for spiritual purposes in other parts of the world
 ![](/docs/cogsci-c100/consciousness/hist.png)
 
@@ -528,7 +528,7 @@ weight: 6
 - [Maps page](https://maps.org/lsd/)
 
 
-### MDMA, Ecstasy 
+### MDMA, Ecstasy
 
 - Drug action:
     - Causes release of serotonin, norepinephrine (adrenaline), and dopamine, and blocks their reabsorption
@@ -588,7 +588,7 @@ weight: 6
 > “When I walk the fields, I am oppressed, now and then, by an innate feeling that everything I see has a meaning, if only I could understand it.  And this feeling of being surrounded with truth, which I cannot grasp, amounts to indescribable awe sometimes.  Have you not felt that your real soul was imperceptible to your mental vision, excepting a few hollow moments?”
 >> Answer: Mystical experience of Charles Kingsley, a Christian mystic
 
-> “I am simple; I need not think.  Feeling is all; feeling is love.  God is love. Love is the expression of God.  Feeling is only fire.  Fired by God.  The dancer becomes the divining motion.  Dance is the divine in the world.  The Dionysian religion.  Love is God.  I am love; I am God.” 
+> “I am simple; I need not think.  Feeling is all; feeling is love.  God is love. Love is the expression of God.  Feeling is only fire.  Fired by God.  The dancer becomes the divining motion.  Dance is the divine in the world.  The Dionysian religion.  Love is God.  I am love; I am God.”
 >> Answer: Psychotic experience of Nijinsky, Russian ballet dancer
 
 - Distinctions:
@@ -603,7 +603,7 @@ weight: 6
 
 
 
-## Near-Death Experience 
+## Near-Death Experience
 
 - **Near Death Experience:** an altered state of consciousness reported after a close brush with death
     - Reported by about 10 to 15 percent of those revived from cardiac arrest
@@ -651,7 +651,7 @@ weight: 6
     - Was accompanied by increased activation of conflict-related brain regions (e.g., anterior cingulate cortex) and deactivation of memory-related regions (e.g., hippocampus) (Schmeing, Kehyayan, Kessler, et al., 2013)
 - When patients with dissociative identity disorder read stories that pertained to their trauma (Simone Reinders), the alters that were unaware of the trauma, relative to alters that were aware of the trauma, showed
     - Increased activity in cingulate gyrus
-    - Reduced amygdala and insula activity 
+    - Reduced amygdala and insula activity
     - Reduced cardiovascular response
 
 ![](/docs/cogsci-c100/consciousness/repr.png)

@@ -7,7 +7,7 @@ bookCollapseSection: false
 
 
 {{< hint "warning" >}}<!-- mathjax fix -->
-The content of these notes are solid, but formatting is not since they're exported from Notion. 
+The content of these notes are solid, but formatting is not since they're exported from Notion.
 {{< /hint >}}
 
 
@@ -31,7 +31,7 @@ I*mpacts and Interactions (IMP)*
 ## 1.1 Introduction to Maps
 > IMP 1A Geographers use maps and data to depict relationships of time, space, and scale.
 - **Learning Objective**:
-    Identify types of maps, the types of information presented in maps, and different kinds of spatial patterns and relationships portrayed in maps. 
+    Identify types of maps, the types of information presented in maps, and different kinds of spatial patterns and relationships portrayed in maps.
 - **Essential Knowledge:**
     1. Types of maps include reference maps and thematic maps
         - reference maps
@@ -172,9 +172,9 @@ spatial patterns.
         1. sustainability
             - the use of the earths renewable and nonrenewable natural resources in ways that ensure resource availability in the future
             - 3 Pillars
-                1. Environmental 
+                1. Environmental
                     - Having Conservation, Nonrenewable and renewable resources and Preservation
-                2. Social 
+                2. Social
                     - Humans need shelter food and clothing to survive so make resources meet those needs
                 3. Economic
                     - Having natural resources; supply and demand
@@ -252,7 +252,7 @@ spatial patterns.
             - Geographers will also use two different terms to describe the same area; the Middle East and Southwest Asia, for example.
 ---
 # 👣 Unit 2 — Population and Migration Patterns and Processes
-**Developing Understanding** 
+**Developing Understanding**
 > This unit addresses the patterns associated with human populations. Populations may increase or decrease as a result of a combination of natural changes (births and deaths) and migration patterns (emigration and immigration). Students examine population distributions at different scales—local, national, regional, and global. Population pyramids demonstrate age-sex structures, revealing the growth or decline of generations and allowing geographers to predict economic needs based on reproductive and aging patterns.
 Students learn about factors that influence changes in population as well as the long- and short-term effects of those population changes on a place’s economy, culture, and politics. For example, environmental degradation and natural hazards may prompt population redistribution at various scales, which in turn creates new pressures on the environment and on cultural, economic, and political institutions. The study of migration patterns allows students to examine factors contributing to voluntary and forced relocation and the impact of these migrating populations on existing settlements.
 Combined, the concepts and theories encountered in this unit help students develop connections and transfer their learning in upcoming units to course topics such as cultural patterns, the political organization of space, food production issues, natural resource use, and urban systems.
@@ -680,7 +680,7 @@ I*mpacts and Interactions (IMP)*
 - The length of the bar represents the % of total pop in that group.
 ---
 # ⚱️ Unit 3 - Cultural Patterns and Processes
-**Developing Understanding** 
+**Developing Understanding**
 > The main focus of this unit is on cultural patterns and processes that create recognized cultural identities. Students consider the physical environment to determine the effects of geographical location and available resources on cultural practices. Visuals representing artifacts, mentifacts and sociofacts all shed light on cultural landscapes and how they change over time. Practice in analyzing images of different places at different times for evidence of their ethnicity, language, religion, gender roles and attitudes, and other cultural attributes builds students’ understanding of cultural patterns and processes.
 This unit also considers from a temporal and spatial perspective how culture spreads, through traditional forces such as colonialism and imperialism and through contemporary influences such as social media. Rather than emphasize the details of cultural practices associated with specific languages and religions, this unit instead focuses on the distribution of cultural practices and on the causes and effects of their diffusion. For example, students might study the distribution of Chinese versus English languages or the diffusion patterns of religions such as Hinduism and Islam, at local, national, or global scales.
 An understanding of the diffusion of cultural practices provides a foundation for the study of political patterns and processes in the next unit
@@ -699,7 +699,7 @@ Societal Change (SPS)*
 ---
 ## 3.1 Introduction to Culture
 > PSO-3 Cultural practices vary across geographical locations because of physical
-geography and available resources. 
+geography and available resources.
 - **Learning Objective**:
     Define the characteristics, attitudes, and traits that influence geographers when they study culture.
 - **Essential Knowledge:**
@@ -750,7 +750,7 @@ geography and available resources.
             - believing that your culture is the norm / superior
             - pride in heritage, devaluation of other groups
 ## 3.2 Cultural Landscapes
-> PSO-3 Cultural practices vary across geographical locations because of physical geography and available resources. 
+> PSO-3 Cultural practices vary across geographical locations because of physical geography and available resources.
 - **Learning Objective**:
     Describe the characteristics of cultural landscapes.
 - **Essential Knowledge:**
@@ -794,9 +794,9 @@ geography and available resources.
         - little Mexico
     - generally, women are becoming more equal but there's still progress to be made
 ## 3.3 Cultural Patterns
-> PSO-3 Cultural practices vary across geographical locations because of physical geography and available resources. 
+> PSO-3 Cultural practices vary across geographical locations because of physical geography and available resources.
 - **Learning Objective**:
-    Cultural practices vary across geographical locations because of physical geography and available resources. 
+    Cultural practices vary across geographical locations because of physical geography and available resources.
 - **Essential Knowledge:**
     1. Regional patterns of **language, religion**, and **ethnicity** contribute to a sense of place, enhance placemaking, and shape the global cultural landscape.
         - language
@@ -844,9 +844,9 @@ geography and available resources.
             - **Apartheid**-the physical separation of different races into different geographic areas, i.e. South Africa.
                 - The apartheid laws were repealed in 1991 in South Africa, but many years will be needed to erase the legacy of such racist policies.
 ## 3.4 Types of Diffusion
->IMP**-3 The in**teraction of people contributes to the spread of cultural practices. 
+>IMP**-3 The in**teraction of people contributes to the spread of cultural practices.
 - **Learning Objective**:
-    Define the types of diffusion. 
+    Define the types of diffusion.
 - **Essential Knowledge:**
     1. Relocation and expansion — including contagious, hierarchical, and stimulus expansion — are types of diffusion
     - Relocation — hearth moves

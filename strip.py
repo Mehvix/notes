@@ -10,11 +10,13 @@ for root, _, files in os.walk(FOLDER):
         with open(file, "r") as f:
             lines = f.readlines()
 
-        # lines = [line.strip() for line in lines]
+        # lines = [str(line) for line in lines]
+        lines = [str(line.rstrip()) for line in lines]
 
         # EL standardization
-        while lines and lines[-1] == "\n":
+        while lines and lines[-1] == "\n" and len(lines) > 1 and lines[-2] == "\n":
             lines = lines[:-1]
 
         with open(file, "w") as f:
-            f.write("".join(lines))
+            # f.write("".join(lines))
+            f.write("\n".join(lines))

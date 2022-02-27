@@ -55,7 +55,7 @@ weight: 1
 - Study of mind remained province of philosophy until 19th century
 - In **1879**, Wundt established first psychology laboratory
     - One of few important dates (this is the birth date of psychology!)
-    - Studied mental processes systematically using technique of _introspection_ 
+    - Studied mental processes systematically using technique of _introspection_
         - Not what we would consider rigorous now adays
         - e.x. scientist would play a note on an instrument, then ask "how does this make you feel?"
 - Within decades, however, experimental psychology became dominated by **behaviorism**-- a view that virtually denied the existence of the mind
@@ -63,7 +63,7 @@ weight: 1
     - **Mind** was banished from respectable scientific discussion -- you can't tell what's in that black box, so ignore it!
 - However, in 1950’s, people started to become disenchanted with behaviorism (e.x. [Little Albert](https://en.wikipedia.org/wiki/Little_Albert_experiment)) + more experimental research was being done, so cognitive psychology began to emerge
     - Result of growth of interest in memory and developmental psychology, linguistics and computer science
-        - [The Magical Number Seven, Plus or Minus Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two) -- proved you could study the mind experimentally. 
+        - [The Magical Number Seven, Plus or Minus Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two) -- proved you could study the mind experimentally.
         - Discovered that people universally learned things at similar ages
     - View that mental processes can best be understood by comparison with a computer
         - A particular cognitive process can be represented by information flowing through a series of stages
@@ -76,7 +76,7 @@ weight: 1
     - Together with advances that were made in designing and building digital computers during and after World War II, this led to development of view that **cognition involves an algorithmic process of information processing**
 - Parallel distributed processing (PDP) and connectionist models/**neural networks** became popular in 1990’s
     - That is, processing can happen parallel, simultaneously -- contrast with serial processing approach
-    - Hold that cognitive processes operate in a parallel fashion 
+    - Hold that cognitive processes operate in a parallel fashion
         - e.x: face recognition -- cognitive processes can be completed even when supplied information is incomplete or faulty; your friend dyes their hair, but you still recognize them next time you see them.
 - Research in AI and Machine Learning boomed in early 21st century due to growth in computing power and availability of large data sets
     - We knew how to do this way before, but didn't have the data sets nor computational power til now

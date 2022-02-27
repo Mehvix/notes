@@ -11,7 +11,7 @@ weight: 5
 {{< details "The National Sleep Foundation’s Sleep IQ Test" >}}
 1. During sleep, your brain rests.
 2. Boredom makes you feel sleepy, even if you have had enough sleep.
-3. Resting in bed with your eyes closed cannot satisfy your body’s need for sleep.  
+3. Resting in bed with your eyes closed cannot satisfy your body’s need for sleep.
 4. Snoring is not harmful as long as it doesn’t disturb others.
 5. Everyone dreams nightly.
 6. Raising the volume of your radio will help you stay awake while driving.
@@ -33,9 +33,9 @@ weight: 5
 
 {{< /details >}}
 
-- Why do we sleep? 
-    - Fact that all vertebrates sleep, including some that would seem to be better off without it, suggests that sleep is essential 
-    - Indus dolphins have evolved to take mini-naps of 4-60 seconds (totalling seven hours), bottle-nose dolphins (and some migratory birds too) have evolved to sleep half their brain at the time 
+- Why do we sleep?
+    - Fact that all vertebrates sleep, including some that would seem to be better off without it, suggests that sleep is essential
+    - Indus dolphins have evolved to take mini-naps of 4-60 seconds (totalling seven hours), bottle-nose dolphins (and some migratory birds too) have evolved to sleep half their brain at the time
 - Sleep requirements
 {{< columns >}}<!-- mathjax fix -->
 - Most people need at least 7-8 hours of sleep a night
@@ -46,7 +46,7 @@ weight: 5
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/sleep/leo.png)
 {{< /columns >}}
-    - There are people who are able to function quite well on one or two hours' sleep a night 
+    - There are people who are able to function quite well on one or two hours' sleep a night
 
 ## Effects of sleep deprivation on cognition
 
@@ -106,7 +106,7 @@ weight: 5
 
 - According to the Center for Disease Control, being awake more than 24 hours impairs performance as much as having a blood alcohol level of .10%         - which is legally drunk
     - Many interns work 80 hours per week, typically in shifts of 30 hours
-- Medical students trained on traditional schedule, rather than alternative schedule with fewer weekly hours, made 5.6 times more diagnostic errors (Landrigan, Rothschild, Cronin et al., 2004) 
+- Medical students trained on traditional schedule, rather than alternative schedule with fewer weekly hours, made 5.6 times more diagnostic errors (Landrigan, Rothschild, Cronin et al., 2004)
 
 
 ### Sleep Debt & Napping
@@ -168,7 +168,7 @@ weight: 5
 - Dreams and REM sleep
     - **Dreams occur during REM sleep**: even those who claim they don’t dream, if awakened during REM, will usually recall a dream when awakened from REM
     - Dreams also occur in non-REM (NREM) sleep
-    - However, REM sleep is associated more with “true dreams” that have vivid sensory and motor imagery and sense that “you are there”; 
+    - However, REM sleep is associated more with “true dreams” that have vivid sensory and motor imagery and sense that “you are there”;
         - NREM dreams tends to focus more on a thought (e.g., solving a problem), image, or emotion
     - Amount of time spent in REM during each cycle increases as night progresses
     - Dreams during second half of sleep become more bizarre and emotionally intense; lucid dreams tend to occur in early morning hours
@@ -235,7 +235,7 @@ weight: 5
     - All of these may be viewed as attempts by the dreamer to work through emotional preoccupations, “fixations,” “hang-ups”
 - Evidence that dreams can be an effective way of working through emotional preoccupations, fixations, or “hang-ups”:
     - Patients with depression are more likely to be in remission a year later if:
-        - They show high eye movement density and high affect strength during their first REM period    
+        - They show high eye movement density and high affect strength during their first REM period
         - They report more negative dreams at the beginning of the night and fewer negative dreams at the end of the night
             -  This research suggests that negative dreams occurring at the end of the night are indicative of person’s failure to work through problems and self-regulate mood
     - These dreams can potentially be addressed in therapy, particularly as the last dreams of the night are those that a person is most likely to recall
@@ -312,7 +312,7 @@ weight: 5
 
 - Gender differences
     - Men tend to dream about sex and violence
-    - Women tend to dream more about weddings 
+    - Women tend to dream more about weddings
 - **Continuity hypothesis** of dreams: “the dream life reflects the waking life”
     - People generally dream about the same people, places, objects, activities, wishes, and fears that dominate their waking-life
 
@@ -480,7 +480,7 @@ weight: 5
 -  Odds in favor of continuing the lucid dream:
     - After spinning, about 22 to 1
     - After hand rubbing (another technique designed to prevent awakening), about 13 to 1
-    - After "going with the flow" (a "control" task) 1 to 2 
+    - After "going with the flow" (a "control" task) 1 to 2
     - To stay in a dream, create sensation of motion
 - If you do awaken, play dead
     - Remain perfectly motionless and deeply relax your body – there is a good chance that REM sleep will reassert itself and you will have an opportunity to enter a lucid dream consciously
@@ -523,7 +523,7 @@ weight: 5
     - Thus, rehearsal of tasks can be effective in the dream state
     - Also, lucid dreaming may potentially be useful for facilitating the functioning of the immune system and physical body generally
         - Ex: Woman suffering from inorgasmia was able to orgasm in lucid dream – and this permanently cured her disorder!
-    - Same circuits activate when doing something while dreaming as doing that same something in real life 
+    - Same circuits activate when doing something while dreaming as doing that same something in real life
 
 ### Inception
 - What aspects of lucid dreams presented in the movie are real and what aspects are not?

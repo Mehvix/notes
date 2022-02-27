@@ -26,12 +26,12 @@ __Reading:__
     > "Multiculuralism was a find of fear and optimism around how we are a very mixed country and what binds us together is this appreciation of different ethnic backgrounds, but we also assimilate under some cultural practice/viewpoint" - Michael Chang
 
 __Ron Tataki on Multiculturalism (side note - "Reasonable minds may differ")__
-- What is "epistemology": Theory of knowledge. Asks the question: 
+- What is "epistemology": Theory of knowledge. Asks the question:
     > "How do you know what you know?"
 
 __Race is socially constructed__
 - Through history socio-econmic, labor, and capital conflicts
-- Any type of social norm is dependent upon contestation between people in the majority and minority. The power is _asymmetric_: Majority > Minority. 
+- Any type of social norm is dependent upon contestation between people in the majority and minority. The power is _asymmetric_: Majority > Minority.
 
 __Cultual Literacy__
 - In studying Asian American history we are learning to understand how we have come to understand American history.
@@ -51,8 +51,8 @@ __Arthur Schlesinger's _The Disuniting of America: Reflections on a Multicultura
 _Two different viewpoints: Ron Tataki and Arthur Schlesinger_
 
 __Discussion Questions:__
-- Takaki’s formulation of multiculturalism aligns with the concept of 
-diversity, equity and inclusion of the 2000’s.  
+- Takaki’s formulation of multiculturalism aligns with the concept of
+diversity, equity and inclusion of the 2000’s.
     1. How is Diversity related to multiculturalism?
     2. What does the term "American Exceptionalism" mean to you?
         - _Schlesinger was a proponent of “American Exceptionalism” the idea that America has provided safe harbor to many different groups of people. And that here in America, class, and lineage are not important._
@@ -73,7 +73,7 @@ __Aliens Ineligible for Citizenship and the 14th Amendment__
 
 __As you move through the readings...__
 - Consider what "power", "agency" and "contestation" mean in the context of the history that you reading.
-- Those who are constructed in history as "minority" also have agency while those with majority power must contend with the contestationo of majority control. 
+- Those who are constructed in history as "minority" also have agency while those with majority power must contend with the contestationo of majority control.
 - How did the process occur in the U.S.? What are the legal and socio-cultural institutions and practices that result in a given standard of a moment in time, and in change?
 
 __Racial Formation__
@@ -82,15 +82,15 @@ __Racial Formation__
     - Reproduction of political interests
         - Aligns with the notion that within a diverse society, there will be multiple stakeholders (different groups and persons bringing forth different interests). The social construction around access to property and citizenship.
     - Race is socially constructed: came out from social contestation, geopolitics, etc.
-- Racial formation theory explains the fluidity of racial categories and the interest and forces that shape them. These pieces provide historical examples of how “white” identity came to be legally constructed through court cases and through the socio-economic forces supporting these legal outcomes. 
+- Racial formation theory explains the fluidity of racial categories and the interest and forces that shape them. These pieces provide historical examples of how “white” identity came to be legally constructed through court cases and through the socio-economic forces supporting these legal outcomes.
     - Do the courts drive the outcome? Legal institions?
     - 1690: the brewing slave trade
-    - 1790: contestation around what “white” meant. Before the slave trade was active, the primary source of labor was young Irish women. Came as indentured servants (a form of labor in which a person is contracted to work without salary for a specific number of years). Example of instability around what being “white” meant. 
+    - 1790: contestation around what “white” meant. Before the slave trade was active, the primary source of labor was young Irish women. Came as indentured servants (a form of labor in which a person is contracted to work without salary for a specific number of years). Example of instability around what being “white” meant.
 - Sociologists Omi and Winant describe the fluidity of racial constructions over time dependent on political interests and socio-economic forces, as "racial formation."
 - What is Omi and Winant's concept of "common sense"?
-    - “Common sense” derives from Italian philosopher and political economist Antonio Gramsci’s theories on asymmetry in political power and the interest conflicts that may emerge as a result. 
-        - I.e. today’s “Common sense” surrounding gender is that gender is a social construct as opposed to one’s sex. 
-        - Gramsci wrote about hegemony as in “how does power operate when there is one party that maintains much of the mechanisms of culture and state?” 
+    - “Common sense” derives from Italian philosopher and political economist Antonio Gramsci’s theories on asymmetry in political power and the interest conflicts that may emerge as a result.
+        - I.e. today’s “Common sense” surrounding gender is that gender is a social construct as opposed to one’s sex.
+        - Gramsci wrote about hegemony as in “how does power operate when there is one party that maintains much of the mechanisms of culture and state?”
             - You have agency. A consensus that results from an agreement (not so much voluntary, but through negotiation)
 
 __What is a "Race" versus an "Ethnicity"?__
@@ -102,7 +102,7 @@ _Consider the challenge of formally categorizing groups:_
 - Is "Hmong American" a race or an ethnicity descriptor?
 
 __Taki referred to the popular perception of Asian Americans as:__
-1. __Model Minority:__ A trope that gained traction in the 1960s that stresses the prototypical Asian’s high achievement in socioeconomic status and focuses on their culture to explain their “success”; denies racism and other hardships that are experienced by Asian Americans; comparison between one minority group and another 
+1. __Model Minority:__ A trope that gained traction in the 1960s that stresses the prototypical Asian’s high achievement in socioeconomic status and focuses on their culture to explain their “success”; denies racism and other hardships that are experienced by Asian Americans; comparison between one minority group and another
 2. __Perpetual Foreigner:__ stereotype in which naturalized and even native-born citizens are perceived by some members of the majority as foreign because they belong to a minority ethnic or racial group.
 
 _Twin pillars of how Asian Americans are constructed_
@@ -123,7 +123,7 @@ __Insiders and Outsiders__
 1. As cited in footnote 4 of the U.S. Supreme Court's _Carolene Products the Tainted Milk_, case:
 > “prejudice directed against discrete and insular minorities may call for “more searching judicial inquiry.”
 - Ensured that former slave-holding states would abide by this 14th amendment that said that African Americans had to have citizenship rights
-- Created a legal authority when the former slave-holding states tried to reinstitute some form of slavery 
+- Created a legal authority when the former slave-holding states tried to reinstitute some form of slavery
 2. _Racial formation_ construction?
 
 __Sojourners vs. Immigrants__
@@ -134,13 +134,13 @@ __Push and Pull__
 - political economic factors
 
 __Alienation of Migration Guangdong Chinese Women sang__
-> _Dear husband, ever since you sojourned.  
-> In a foreign land.  
-> I've lost interest in all matters.  
-> All day long, I stay inside the bedroom,  
-> My brows knitted; ten thousand  
-> Thoughts bring me endless remorse, in  
-> Grief, in silence.  
+> _Dear husband, ever since you sojourned.
+> In a foreign land.
+> I've lost interest in all matters.
+> All day long, I stay inside the bedroom,
+> My brows knitted; ten thousand
+> Thoughts bring me endless remorse, in
+> Grief, in silence.
 > I cannot fall asleep on my lonely pillow._
 
 __1882 Chinese Exclusion Act__
@@ -184,11 +184,11 @@ __Model Minority vs. Perpetual Foreigner__
 
 __Korematsu v. United States__
 > "In response to the Japanese attack on Pearl Harbor during World War II, the U.S. government decided to require Japanese-Americans to move into relocation camps as a matter of national security. President Franklin Roosevelt signed Executive Order 9066 in February 1942, two months after Pearl Harbor. A Japanese-American man living in San Leandro, Fred Korematsu, chose to stay at his residence rather than obey the order to relocate. Korematsu was arrested and convicted of violating the order. He responded by arguing that Executive Order 9066 violated the Fifth Amendment. The Ninth Circuit affirmed Korematsu's conviction." - Oyez
-- __Conclusion:__ The Court ruled against Korematsu. The Court believed that the decision was valid because it was a necessity amid the danger of espionage and sabotage. 
+- __Conclusion:__ The Court ruled against Korematsu. The Court believed that the decision was valid because it was a necessity amid the danger of espionage and sabotage.
 
 __Common ground vs. Margins as the Mainstream__
 - Okihiro writes that his book seeks to reject binaries and to advocate for a "open, borderless" common ground" versus his prior argument that the mainstream norms, rights, values of America were created by the margins.
-    - meaning that the _margins create the mainstream._ 
+    - meaning that the _margins create the mainstream._
 
 __Race Conscious Judicial Review and Black/White Paradigm__
 - Race relations in the United States have rapidly evolved in recent decades however, race scholars often point to a persistent paradigm that views racial difference primarily through the construction of black and white relations.
@@ -204,7 +204,7 @@ __Separate but Equal: _Plessy v. Ferguson_ (1896)__
 __Constructive blacks__
 - Law scholar Frank Wu argues that our legal system construes "racial groups as white, blacks, "honorary whites or constructive blacks."
     - What does "constructive" mean?
-        - The legal system has treated Asians, mostly as blacks. Applied the same rules to Asians as they would to Blacks.  
+        - The legal system has treated Asians, mostly as blacks. Applied the same rules to Asians as they would to Blacks.
 - He says historically, the U.S. legal system has treated Asians mostly as "constructive blacks."
     - _People v. Hall_, 1854 (CA state court attributed black status to Asians in enforcing a statue (passed by a legislative body) prohibiting the testimony of blacks, reasoning that "blacks" was a generic term for all nonwhites).
     - _Gong Lum v. Rice_, 1927 (USC upheld segregated public schools for Asians connoting no difference between segregation for blacks to those of the "yellow races").
@@ -274,7 +274,7 @@ __Disjuncture?__
     - _Gam Saan_ = "gold mountain"
         - 1848 shortly after the discovery of gold at John Sutter's Mill, a young man in Canton China wrote to his brother in Boston,
         > "Good many Americans speak of California. Oh! Very rich country! I hear good many Americans and Europeans go there. Oh! They find hold very quickly, so I hear ... I feel as if I should like to go there very much. I think I shall go to California next summer"
-    
+
     - __Immigrant Labor__
         - _Contract Laborers_
             - Emigration brokers representing sugar planters provided "free passage" where immigrants would sign labor contracts with a planter for 5 years with wages, shelter, food and medical care.
@@ -307,7 +307,7 @@ __Disjuncture?__
 - __Early Segregation Historical Milestones__
     - __1790:__ Immigration and Naturalization Act
     - __1857:__ Dred Scott v. Sandford
-    - __1862:__ Emancipation Proclamation Executive Order 
+    - __1862:__ Emancipation Proclamation Executive Order
     - __1865:__ Civil War ends
     - __1882:__ Chinese Exclusion Act
     - __1886:__ Yick Wo v. Hopkins
@@ -321,10 +321,10 @@ __Disjuncture?__
 
 - [__Plessy v. Ferguson__](https://www.oyez.org/cases/1850-1900/163us537)
     - A legal caste system based on race is created on a fiction of separate but equal.
-    - Post-Civil War Supreme Court, holds that segregation of African Americans and Whites does not violate the Fourteenth Amendment.  Harlan’s Dissent raises the contradiction of assumedly not segregating Chinese who are excluded from naturalized citizenship while segregating of African Americans who “fought for the union.”   
+    - Post-Civil War Supreme Court, holds that segregation of African Americans and Whites does not violate the Fourteenth Amendment.  Harlan’s Dissent raises the contradiction of assumedly not segregating Chinese who are excluded from naturalized citizenship while segregating of African Americans who “fought for the union.”
 
 - [__Yick Wo v. Hopkins__](https://www.oyez.org/cases/1850-1900/118us356)
-    - A theory of  evidence for systemic discrimination is created. 
+    - A theory of  evidence for systemic discrimination is created.
     - Supreme Court established disparateoutcome (impact) as basis for establishing racial discrimination.
 
 - [__Chae Chan Ping v. United States__](https://en.wikipedia.org/wiki/Chae_Chan_Ping_v._United_States)
@@ -369,7 +369,7 @@ __Disjuncture?__
         - As Chan notes, colonial administrators needed cheap physical labor for their projects, thus the migrants to such colonies were disproportionately young men.  In the U.S. mainland context this resulted in labor competition with European Americans in particular, in the immediate post-Civil War era.
     - __Legal Outcomes__
         - The Chinese Exclusion Act triggered a range of challenges by Asian Americans, Chinese in particular early on, supported by funds from co-ethnic organizations such as the Chinatown based Chinese Benevolent Association.
-    
+
 - __Citizenship: Assimilation vs. Segregation__
     - What does the exclusion exeprience of Asian Americans (early Chinese in particular) from citizenship say about the segregation of African Americans and vice versa?
 
@@ -483,7 +483,7 @@ __Disjuncture?__
 - __Early Segregation Historical Milestones__
     - __1790:__ Immigration and Naturalization Act
     - __1857:__ Dred Scott v. Sandford
-    - __1862:__ Emancipation Proclamation Executive Order 
+    - __1862:__ Emancipation Proclamation Executive Order
     - __1865:__ Civil War ends; Start of Reconstruction
     - __1868:__ 14th Amendment
     - __1875:__ Page Act
@@ -500,7 +500,7 @@ __Disjuncture?__
     - All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws
 
 - __Where does power lie?__
-    - Agency and contestation by “discrete and insular minorities” 
+    - Agency and contestation by “discrete and insular minorities”
 
 - __Revisiting: A ”neutral principle” in the “Rule of Law” and the assertion of Fourteenth Amendment protections for Carolene Products’ FN 4 ”discrete and insular minorities”__
     - __Neutral Principle _"Rule of Law"_:__
@@ -519,14 +519,14 @@ __Disjuncture?__
     - Hune writes that one constructive approach to situating Asian American women in history  is  to view them “as active participants in history and agents of social change, negotiating complex structures of power”
 
 - __Alternative spaces where agency was exercised__
-    - Dominant historiography of Asian women focused on issues of work, control of labor by the husband’s family and immigration restrictions but other reasons explain absence of Chinese and Indian women in the U.S. 
+    - Dominant historiography of Asian women focused on issues of work, control of labor by the husband’s family and immigration restrictions but other reasons explain absence of Chinese and Indian women in the U.S.
     - They had “separate lives” with ties to kin, friends, and their own cultural worlds important to them which has been obscured by the dominant telling of history.
 
 - __Little is known; Focus on the family unit as the "normative model" of migration should be questioned__
-    - Migration of women along with their men “was the exception rather than the rule” 
+    - Migration of women along with their men “was the exception rather than the rule”
 
 __Social Construction of Asian Women as “Orientalized Chinese women as passive victims - of culture and patriarchy.”__
-    - Hune writes that little is known about the lives of Cantonese, Punjabi migrant women that is likely because many of our images of these women’s lives come from the nine-tenth century writings of European-American missionaries.  
+    - Hune writes that little is known about the lives of Cantonese, Punjabi migrant women that is likely because many of our images of these women’s lives come from the nine-tenth century writings of European-American missionaries.
 
 - __Male preference cultures in China and Punjab &Divergent economies of the home counties created _complexity_ for class status of women affecting female migration__
     - Evolving patriarchal relations at a time when migrants from a range of counties (Shunde, Zhongshan, Panyu and Nanhai) became merchants in the Chinese American community while “Sze Yup migrants were often laborers and domestics.”
@@ -547,7 +547,7 @@ __Social Construction of Asian Women as “Orientalized Chinese women as passive
         - Official declaration of purpose of emigration and personal morality statement. Review by hospital staff for character review.
         - A multi-level review process from American consul in HK officials back to American consul day of departure.
         - Questions about who fathers and husbands were.
-        
+
 - __Break out Questions__
     1. Was the Page Act protective of trafficked Chinese women or was it exclusionary?
     2. What were the domestic and geopolitical factors that played a role in Chinese female sex workers and concubines?
@@ -556,7 +556,7 @@ __Social Construction of Asian Women as “Orientalized Chinese women as passive
 - __Class Question__
     1. How did political and socio-economic conflicts in Asia affect the migration of South Asians to the U.S.?
     2. How did political and socio-economic conflicts in Asia affect the migration of Chinese to the U.S.?
-    
+
 - __Hostility and Conflict; Racism and Nativism__
     - __Chan notes 7 types of hostility against Asian Americans:__
         1. Prejudice: preconceived notions based on stereotypes ~ discrimination
@@ -596,4 +596,3 @@ __Social Construction of Asian Women as “Orientalized Chinese women as passive
 
 
 
- 

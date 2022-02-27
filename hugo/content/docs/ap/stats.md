@@ -6,7 +6,7 @@ bookCollapseSection: false
 ---
 
 {{< hint "warning" >}}<!-- mathjax fix -->
-The content of these notes are solid, but formatting is not since they're exported from Notion. 
+The content of these notes are solid, but formatting is not since they're exported from Notion.
 {{< /hint >}}
 
 # Unit 1: Exploring One-Variable Data
@@ -391,7 +391,7 @@ Chapters 5 & 6
 - Probability Model: A description of some chance process that consists of 2 parts:
     1. a list of all possible outcomes
         - **SAMPLE SPACE:** The list of all possible outcomes.
-    2. the probability for each outcome 
+    2. the probability for each outcome
 - EVENT Any collection of outcomes from some chance process — A subset of the entire **sample space**.
 - MUTUALLY EXCLUSIVE Two events A & B are mutually exclusive if they have no outcomes in common and so can never occur together – that is, if P(A and B) = 0.
 - General Rules
@@ -482,7 +482,7 @@ Chapters 5 & 6
 ---
 # Unit 5: Sampling Distributions
 Chapter 7 + 10
-## Sampling Distribution: 
+## Sampling Distribution:
 - The sampling distribution of a statistic is the distribution of values taken by the statistic in all possible samples of the same size from the same population.
 - Always say “the distribution of [blank],” being careful to distinguish the distribution of the population, the distribution of sample data, and the sampling distribution of a statistic.
 - Sampling distribution of the sample **proportion**

@@ -30,7 +30,7 @@ weight: 3
 - Initial research
     - Participants who spent 10 minutes listening to Mozart afterwards showed mean spatial IQ scores that were 8-9 points higher (significant, not giant) than that of controls in relaxation conditions
         - Effect did not extend beyond 10-15 minutes
-        - Effect was specific to spatial temporal performance 
+        - Effect was specific to spatial temporal performance
 - Follow-up studies with rats suggest that effect cannot be explained merely by “enjoyment arousal”
     - Rats exposed to Mozart in utero and for 60-day postpartum period completed maze test significantly more quickly and with fewer errors than control rats exposed to minimalist music, white noise, or silence (Jenkins, J.S., 2001)
 - Longer-term effects
@@ -47,7 +47,7 @@ weight: 3
     - Abnormal spikes fell from 62% to 21% in one patient Beneficial effects of music on neonates (early-born babies)
 - Preterm babies who listened to music (not necessarily Mozart) in the neonatal intensive care unit had brain activity that more closely resembled that of full-term babies (Lordier, Meskaldji, Grouiller et al., 2019)
 
---- 
+---
 
 - Match the following: (Rentfrow & Gosling, 2003, 2006)
     >{{< columns >}}<!-- mathjax fix -->
@@ -77,7 +77,7 @@ weight: 3
 - Typically used for people with Alzheimer’s, learning disabilities, autism, ADHD, Down Syndrome, intellectual disability, brain injuries, physical disabilities, chronic pain
     - Alzheimer's patients have shown improvements in memory when listening to their favorite songs
     - In children, helps with emotional self expression, improves social and communication skills, as well as motor functioning
-    - Various studies with cancer patients there have found significant reductions in anxiety, pain, and tiredness after music therapy was introduced 
+    - Various studies with cancer patients there have found significant reductions in anxiety, pain, and tiredness after music therapy was introduced
 - Music being played alone shows an improvement in mental and physical well being. However, it is more effective when paired with the playing of an instrument or singing along.
 
 # Individual Differences In Perception
@@ -89,7 +89,7 @@ weight: 3
 - Introverts vs. Extroverts 🍋
     - Introverts salivate more to lemon juice -- both by self-report and experimentally
     - Introverts tend to retain elevated heart rate for a longer time period after exposure to noxious odors
-    - Introverts are more sensitive to pain -- and are able to learn more quickly from punishment 
+    - Introverts are more sensitive to pain -- and are able to learn more quickly from punishment
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/non-visual/ichart.png)
 {{< /columns >}}
@@ -121,7 +121,7 @@ weight: 3
 
 ### Two theories of synesthesia
 1. Brain architecture of synesthetes is equipped with more connections between neurons, causing the usual modularity to break down
-    - Says the brain is made of many modules, and synesthetes have more connections between these modules 
+    - Says the brain is made of many modules, and synesthetes have more connections between these modules
 2. “Feed-backward” connections that carry information from high-level multisensory areas of the brain back to single sense areas are not properly inhibited
 {{< columns >}}<!-- mathjax fix -->
 - Normally, information processed in such multisensory areas is allowed to return only to its appropriate singlesense area
