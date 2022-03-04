@@ -189,7 +189,7 @@
 	* That will reduce the odds or your engaging in the behavior again in the future
 > The promise of happiness from cravings often misleads, so one strategy for overcoming addictions is to mindfully focus attention on the actual experience when indulging a craving or temptation, so as to compare it with the expectation of reward that preceded it. – Kelly McGonigal
 
---- 
+---
 * Ex: Binging on hot cheetos and YouTube videos
 	- Become more aware of how you feel physically and emotionally as you sit there munching, watching video after video
 		- Perhaps you are feeling tired or hopeless
@@ -212,7 +212,7 @@
 	> “What you resist, persists”
 	- This is the underlying premise of mindfulness practice and, as discussed earlier, it is also supported by neuropsychological research
 
-### Acceptance and Transformation 
+### Acceptance and Transformation
 - Making peace with where we are
 	- Feeling and accepting our negative emotions allows us to transform those emotions
 - But if I accept myself fully, won’t that undermine my motivation to try hard and improve?
@@ -485,7 +485,7 @@ Alzheimer’s
 	* Meditation was associated with increased gray matter volume in areas important in emotional regulation and memory, including
 		- Orbitofrontal cortex
 		- Hippocampus
-	* Meditation increases density of gray matter in frontal and temporal in much the same way that physical exercise increases the size of muscles (Luders, Toga, Lepore et al., 2009) 
+	* Meditation increases density of gray matter in frontal and temporal in much the same way that physical exercise increases the size of muscles (Luders, Toga, Lepore et al., 2009)
 - Paul Ekman found enhanced ability to identify microexpressions in meditators
 	* The two experienced Western meditators whom Ekman tested achieved results that were far better than those of 5000 participants previously tested
 - The ability to recognize such fleeting facial expressions has been associated with a capacity for empathy and insight, as well as openness to new experiences, intellectual curiosity, and general reliability and efficiency
@@ -621,7 +621,7 @@ Alzheimer’s
 ![](/docs/cogsci-c100/mindfulness/mind-body.png)
 
 
-- However, the meditation traditions from which mindfulness arises hold that 
+- However, the meditation traditions from which mindfulness arises hold that
 	- Elisabeth Haich’s experience: Asked to sit under a palm tree and meditate on it week after week
 	- Three stages of concentration: intellectual, emotional, spiritual
 	- First stage: you think about what this object actually is
