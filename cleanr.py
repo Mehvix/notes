@@ -59,6 +59,33 @@ STYLES["16A"] = [
     (r"~([\\a-Z])", r"\vec \1")
     # (r"", r"")
 ]
+STYLES["E29"] = [
+    (r"$", r""),  # https://stackoverflow.com/a/10913081/7833617
+    (r" [–-]{1,2} ", r" -- "),
+    (r"[“”]", r'"'),
+    (r"", r"-"),
+    (r"•", r"\t-"),
+    (r"^[☛]", r"## "),  # H2 unique
+    (r"(^[A-Z][^ .].{2,42}\n)", r"\n## \1\n"),  # Headers
+    (r"#+\s*(.*\n+)#+\s*(.*\n+)#+\s*(.*\n+)", r"# \1## \2### \3"),  # H3s
+    (r"#{1,2}\s*(.*\n+)#{2,3}\s*(.*\n+)", r"# \1## \2"),  # H2s
+    (r"(#.*?)\n+\s*. ([A-Z0-9\"])", r"\1\n\n- \2"),  # spacing after headers
+    (r"$\n+#", r"\n\n#"),  # spacing before headers
+    (r"(#.*$\n*)\t+(.)", r"\1\2"),  # normalize below header
+    # (r"(#.*$\n+[*-].*$)(?:\n\s(. .*))+", r"\1\n\t\2"),  # normalize two down
+    (r"^([\s]*). (\d+\.)", r"\1\2"),  # point before numbers
+    (r"^([A-Z].{20,})", r"- \1"),  # long lines
+    # whitespace
+    (r"^((?:.|\d+\.) .*\n)\t{2,}((?:.|\d+\.) .*\n)", r"\1\t\2"),  # removes 2+ tab gaps
+    (
+        r"^(\t(?:.|\d+\.) .*\n)\t{3,}((?:.|\d+\.) .*\n)",
+        r"\1\t\2",
+    ),  # removes 2+ tab gaps (ident)
+    (r"^(\d+\. .*\n)- ", r"\1\t- "),  # indent fater num lists
+    (r" {2,}", r" "),
+    (r"\n\n\t(.\s*)\b", r"\n\t\1"),
+    # (r"", r"")
+]
 
 
 def main(fname, flags):
