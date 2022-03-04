@@ -8,20 +8,18 @@
 <meta property="og:description" content="14.1 Functions of Several Variables #   In the real world, most things don&rsquo;t depend on a single variable  Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V =\pi r^2 h$   Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/14/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-27T02:28:45-08:00">
-<title>14: Partial Derivatives | notes.mehvix.com</title>
-<link rel=manifest href=/manifest.json>
+<meta property="article:modified_time" content="2022-03-04T00:21:26-08:00">
+<title>14: Partial Derivatives | notes.mehvix.com</title><link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.0d7ea8409a9579bc1f0ffbaee193bd0917ad26b0c0afe18d158ac6dd4139fcf5.js integrity="sha256-DX6oQJqVebwfD/uu4ZO9CRetJrDAr+GNFYrG3UE5/PU=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.2f3e2dacd9fbc076e65d1e180f3eacfbc848ad9527eedc8cd03c45cd5e4879e5.js integrity="sha256-Lz4trNn7wHbmXR4YDz6s+8hIrZUn7tyM0DxFzV5IeeU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
 <script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 <link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
-</head>
-<body dir=ltr>
+</head><body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control>
 <main class="container flex">
@@ -31,13 +29,9 @@
 <h2 class=book-brand>
 <a class="flex align-center" href=/><span>notes.mehvix.com</span>
 </a>
-</h2>
-<div class=book-search>
+</h2><div class=book-search>
 <input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-<ul>
+<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
 <li>
 <input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
 <label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
@@ -46,28 +40,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle>
 <label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
 <a role=button>EECS 16A</a>
@@ -75,25 +60,17 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
 <label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
 <a role=button>Engineering 29</a>
@@ -101,25 +78,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
-</li>
-<li>
-<a href=http://notes.mehvix.com/e-29/5/>Week 5: Forming Processes</a>
-</li>
-</ul>
-</li>
-<li>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a>
+</li></ul></li><li>
 <input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle checked>
 <label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
@@ -127,31 +98,21 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/14/ class=active>14: Partial Derivatives</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
 <label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
@@ -159,52 +120,35 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
-</li>
-<li>
+</li><li>
 <input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
 <label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
 <a role=button>AP Notes</a>
@@ -212,43 +156,29 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
+</li></ul></li></ul><ul>
 <li>
 <a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
 CS61A (Anto's)
 </a>
-</li>
-<li>
+</li><li>
 <a href=# target=_blank rel=noopener>
 —
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://www.mehvix.com target=_blank rel=noopener>
 w³.mehvix.com
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://pass.mehvix.com target=_blank rel=noopener>
 pass.mehvix.com
 </a>
-</li>
-</ul>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
+</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div></aside><div class=book-page>
 <header class=book-header>
 <div class="flex align-center justify-between">
 <label for=menu-control>
@@ -258,207 +188,112 @@ pass.mehvix.com
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
-</div>
-<aside class="hidden clearfix">
+</div><aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#141-functions-of-several-variables>14.1 Functions of Several Variables</a></li>
-<li><a href=#142-limits-and-continuity>14.2 Limits and Continuity</a>
+<li><a href=#141-functions-of-several-variables>14.1 Functions of Several Variables</a></li><li><a href=#142-limits-and-continuity>14.2 Limits and Continuity</a>
 <ul>
-<li><a href=#limits>Limits</a></li>
-<li><a href=#continuity>Continuity</a></li>
-</ul>
-</li>
-<li><a href=#143-partial-derivatives>14.3 Partial Derivatives</a>
+<li><a href=#limits>Limits</a></li><li><a href=#continuity>Continuity</a></li></ul></li><li><a href=#143-partial-derivatives>14.3 Partial Derivatives</a>
 <ul>
-<li><a href=#higher-derivatives>Higher Derivatives</a></li>
-<li><a href=#partial-differential-equations>Partial Differential Equations</a></li>
-</ul>
-</li>
-<li><a href=#144-tangent-planes-and-linear-approximations>14.4 Tangent Planes and Linear Approximations</a>
+<li><a href=#higher-derivatives>Higher Derivatives</a></li><li><a href=#partial-differential-equations>Partial Differential Equations</a></li></ul></li><li><a href=#144-tangent-planes-and-linear-approximations>14.4 Tangent Planes and Linear Approximations</a>
 <ul>
-<li><a href=#tangent-planes>Tangent Planes</a></li>
-<li><a href=#linear-approximations>Linear Approximations</a></li>
-<li><a href=#differentials>Differentials</a></li>
-</ul>
-</li>
-<li><a href=#145-chain-rule>14.5 Chain Rule</a>
+<li><a href=#tangent-planes>Tangent Planes</a></li><li><a href=#linear-approximations>Linear Approximations</a></li><li><a href=#differentials>Differentials</a></li></ul></li><li><a href=#145-chain-rule>14.5 Chain Rule</a>
 <ul>
-<li><a href=#chain-rule>Chain Rule</a></li>
-<li><a href=#implicit-differentiation>Implicit Differentiation</a></li>
-</ul>
-</li>
-<li><a href=#146-directional-derivatives-and-the-gradient-vector>14.6 Directional Derivatives and the Gradient Vector</a>
+<li><a href=#chain-rule>Chain Rule</a></li><li><a href=#implicit-differentiation>Implicit Differentiation</a></li></ul></li><li><a href=#146-directional-derivatives-and-the-gradient-vector>14.6 Directional Derivatives and the Gradient Vector</a>
 <ul>
-<li><a href=#directional-derivatives>Directional Derivatives</a></li>
-<li><a href=#gradient-vector>Gradient Vector</a></li>
-<li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li>
-<li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li>
-</ul>
-</li>
-<li><a href=#147-maximum-and-minimum-values>14.7 Maximum and Minimum Values</a>
+<li><a href=#directional-derivatives>Directional Derivatives</a></li><li><a href=#gradient-vector>Gradient Vector</a></li><li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li><li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li></ul></li><li><a href=#147-maximum-and-minimum-values>14.7 Maximum and Minimum Values</a>
 <ul>
-<li><a href=#critical-points>Critical Points</a></li>
-<li><a href=#extreme-points>Extreme Points</a></li>
-</ul>
-</li>
-<li><a href=#148-lagrange-multipliers>14.8 Lagrange Multipliers</a>
+<li><a href=#critical-points>Critical Points</a></li><li><a href=#extreme-points>Extreme Points</a></li></ul></li><li><a href=#148-lagrange-multipliers>14.8 Lagrange Multipliers</a>
 <ul>
-<li><a href=#two-constraints>Two Constraints</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=141-functions-of-several-variables>
+<li><a href=#two-constraints>Two Constraints</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=141-functions-of-several-variables>
 14.1 Functions of Several Variables
 <a class=anchor href=#141-functions-of-several-variables>#</a>
-</h1>
-<ul>
+</h1><ul>
 <li>In the real world, most things don&rsquo;t depend on a single variable
 <ul>
-<li>Temperature may depend on the .$(x,y)$ (latitude/longitude) position</li>
-<li>Volume of a cylinder depends on radius .$r$ and height .$h$: .$V =\pi r^2 h$</li>
-</ul>
-</li>
-<li><strong>Formal Definition</strong>: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .$f(x,y)$. The set .$D$ is the <strong>domain</strong> of .$f$ and its range is the set of values that .$f$ takes on, that is, .$\{f(x,y)\ |\ (x,y) \in D \}$.
+<li>Temperature may depend on the .$(x,y)$ (latitude/longitude) position</li><li>Volume of a cylinder depends on radius .$r$ and height .$h$: .$V =\pi r^2 h$</li></ul></li><li><strong>Formal Definition</strong>: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .$f(x,y)$. The set .$D$ is the <strong>domain</strong> of .$f$ and its range is the set of values that .$f$ takes on, that is, .$\{f(x,y)\ |\ (x,y) \in D \}$.
 <ul>
-<li>E.x. for .$f(x,y) = \frac{\sqrt{x+y+1}}{x-1}$, the domain is .$D = \{(x,y)\ |\ x + y + 1 \geq 0, x \neq 1\}$ which can be graphed with a <em>solid</em> line following .$y =-x-1$ with a <em>dotted</em> line at .$x = 1$</li>
-<li>E.x. for .$f(x,y) = x\ln(y^2-x)$, the domain is .$D =\{(x,y)\ |\ x&lt;y^2\}$. This can be graphed with a <em>dotted</em> line following the curve .$x = y^2$</li>
-</ul>
-</li>
-<li>For the equation .$z = f(x,y)$, .$x,y$ are the independent variables and .$z$ is the dependent variable &ndash; similar to single variable equations</li>
-<li>We can visualize functions of two variables (i.e .$f(x,y)$) by graphing them in 3D as .$(x,y,f(x,y))$
+<li>E.x. for .$f(x,y) = \frac{\sqrt{x+y+1}}{x-1}$, the domain is .$D = \{(x,y)\ |\ x + y + 1 \geq 0, x \neq 1\}$ which can be graphed with a <em>solid</em> line following .$y =-x-1$ with a <em>dotted</em> line at .$x = 1$</li><li>E.x. for .$f(x,y) = x\ln(y^2-x)$, the domain is .$D =\{(x,y)\ |\ x&lt;y^2\}$. This can be graphed with a <em>dotted</em> line following the curve .$x = y^2$</li></ul></li><li>For the equation .$z = f(x,y)$, .$x,y$ are the independent variables and .$z$ is the dependent variable &ndash; similar to single variable equations</li><li>We can visualize functions of two variables (i.e .$f(x,y)$) by graphing them in 3D as .$(x,y,f(x,y))$
 <ul>
 <li>We can then write <strong>level curves</strong> for the function by setting .$f(x,y) = k$ for some .$k$onstant in the range of .$f$. This will result in a graph similar to a
 <a href=https://en.wikipedia.org/wiki/Topographic_map>Topographic map</a>
 <img src=/docs/math-53/imgs/level-curves.png alt="Level Curves">
 <blockquote class="book-hint info">
 <strong>Level Curve:</strong> The level curves of a function .$f$ of two variables are the curves with equations .$f(x,y) = k$, where .$k$ is a constant (in the range of .$f$).
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id=142-limits-and-continuity>
+</blockquote></li></ul></li></ul><h1 id=142-limits-and-continuity>
 14.2 Limits and Continuity
 <a class=anchor href=#142-limits-and-continuity>#</a>
-</h1>
-<h2 id=limits>
+</h1><h2 id=limits>
 Limits
 <a class=anchor href=#limits>#</a>
-</h2>
-<p>
+</h2><p>
 <img src=/docs/math-53/imgs/vec-limit.png alt="Vector Limit">
 <blockquote class="book-hint info">
 <strong>Vector Limit:</strong> Let .$f$ be a function of two variables whose domain .$D$ includes points arbitrarily close to .$(a, b)$. Then we say that the <strong>limit of</strong> .$f(x, y)$ <strong>as</strong> .$(x, y)$ <strong>approaches</strong> .$a, b.$ is .$L$ and we write
 $$\lim_{(x,y)\to(a,b)} f(x,y) = L$$
 if for every number .$\varepsilon &lt; 0$ there is a corresponding number .$\delta &lt; 0$ such that if .$(x, y) \in D$ and .$0 &lt; \sqrt{(x-a)^2 + (y-b)^2} &lt; \delta$ then .$\vert f(x,y) - L \vert &lt; \varepsilon$
-</blockquote>
-</p>
-<ul>
+</blockquote></p><ul>
 <li>Notice that .$\vert f(x,y) - L \vert$ is the distance between the numbers .$f(x, y)$ and .$L$, and
-.$\sqrt{(x-a)^2 + (y-b)^2}$ is the distance between the point .$(x, y)$ and the point .$(a, b)$.</li>
-<li>If .$f(x,y) \to L_1$ as .$(x,y) \to (a,b)$ along a path .$C_1$ and .$f(x,y) \to L_2$ as .$(x,y) \to (a,b)$ along a path .$C_2$, where .$L_1 \neq L_2$, then .$\lim_{(x,y)\to(a,b)} f(x,y)$, does
+.$\sqrt{(x-a)^2 + (y-b)^2}$ is the distance between the point .$(x, y)$ and the point .$(a, b)$.</li><li>If .$f(x,y) \to L_1$ as .$(x,y) \to (a,b)$ along a path .$C_1$ and .$f(x,y) \to L_2$ as .$(x,y) \to (a,b)$ along a path .$C_2$, where .$L_1 \neq L_2$, then .$\lim_{(x,y)\to(a,b)} f(x,y)$, does
 not exist.
 <ul>
-<li>We can test this by setting .$x$ and .$y$ to various different values (e.x. .$x = 0, y = 0, x = y, &mldr;,$ etc)</li>
-</ul>
-</li>
-</ul>
-<h2 id=continuity>
+<li>We can test this by setting .$x$ and .$y$ to various different values (e.x. .$x = 0, y = 0, x = y, &mldr;,$ etc)</li></ul></li></ul><h2 id=continuity>
 Continuity
 <a class=anchor href=#continuity>#</a>
-</h2>
-<blockquote class="book-hint info">
+</h2><blockquote class="book-hint info">
 A function .$f$ of two variables is called continuous at .$(a,b)$ if
 $$\lim_{(x,y)\to (a,b)} f(x,y) = f(a,b)$$
 We say .$f$ is continuous on .$D$ if .$f$ is continuous at every point .$(a,b)$ in .$D$.
-</blockquote>
-<ul>
-<li>That is, we need the limit to exist ands for .$f(a,b)$ to be defined</li>
-<li>Continuous functions: .$x,y, c, \text{ trig (on domain)}$</li>
-<li>Arithmetic, composition, exponent all preserve continuity (on domain!)</li>
-<li>Dividing doesn&rsquo;t necessarily preserve continuity</li>
-</ul>
-<h1 id=143-partial-derivatives>
+</blockquote><ul>
+<li>That is, we need the limit to exist ands for .$f(a,b)$ to be defined</li><li>Continuous functions: .$x,y, c, \text{ trig (on domain)}$</li><li>Arithmetic, composition, exponent all preserve continuity (on domain!)</li><li>Dividing doesn&rsquo;t necessarily preserve continuity</li></ul><h1 id=143-partial-derivatives>
 14.3 Partial Derivatives
 <a class=anchor href=#143-partial-derivatives>#</a>
-</h1>
-<blockquote class="book-hint info">
+</h1><blockquote class="book-hint info">
 If .$f$ is a function of two variables, its <strong>partial derivatives</strong> are the functions .$f_x$ and .$f_y$ defined by
 $$f_x(x,y) = \frac{\delta f}{\delta x} = \lim_{h\to0} \frac{f(x+h,y)-f(x,y)}{h}$$
 $$f_y(x,y) = \frac{\delta f}{\delta y} = \lim_{h\to0} \frac{f(x,y+h)-f(x,y)}{h}$$
-</blockquote>
-<ul>
-<li>Notice we use .$\delta$ instead of .$d$ for <em>partial</em> derivatives</li>
-<li>These can be written at a single point .$(a,b)$ with respect to .$x$ and .$y$ by treating the remaining variables as a constant
-$$f_x(a,b) = g'(a); \ \ \ g(x) = f(x,b)$$
-$$f_y(a,b) = h'(b); \ \ \ h(y) = f(a,y)$$</li>
-<li>Which can be extrapolated for 3 (or more) variables:
-$$f_z(a,b,c) = k'(c); \ \ \ k(z) = f(a,b,z)$$</li>
-</ul>
-<h2 id=higher-derivatives>
+</blockquote><ul>
+<li>Notice we use .$\delta$ instead of .$d$ for <em>partial</em> derivatives</li><li>These can be written at a single point .$(a,b)$ with respect to .$x$ and .$y$ by treating the remaining variables as a constant
+$$f_x(a,b) = g&rsquo;(a); \ \ \ g(x) = f(x,b)$$
+$$f_y(a,b) = h&rsquo;(b); \ \ \ h(y) = f(a,y)$$</li><li>Which can be extrapolated for 3 (or more) variables:
+$$f_z(a,b,c) = k&rsquo;(c); \ \ \ k(z) = f(a,b,z)$$</li></ul><h2 id=higher-derivatives>
 Higher Derivatives
 <a class=anchor href=#higher-derivatives>#</a>
-</h2>
-<ul>
-<li>Just like regular derivatives, we can do many partial derivatives</li>
-<li>For example, the following are <strong>second partial derivatives</strong> of .$z = f(x,y)$:
+</h2><ul>
+<li>Just like regular derivatives, we can do many partial derivatives</li><li>For example, the following are <strong>second partial derivatives</strong> of .$z = f(x,y)$:
 $$(f_x)_x = f_{xx} = \frac{\delta }{\delta x}\bigg(\frac{\delta f}{\delta x}\bigg) = \frac{\delta^2f}{\delta x^2}$$
 $$(f_x)_y = f_{xy} = \frac{\delta }{\delta y}\bigg(\frac{\delta f}{\delta x}\bigg) = \frac{\delta^2f}{\delta y \delta x}$$
 $$(f_y)_x = f_{yx} = \frac{\delta }{\delta x}\bigg(\frac{\delta f}{\delta y}\bigg) = \frac{\delta^2f}{\delta x \delta y}$$
-$$(f_y)_y = f_{yy} = \frac{\delta }{\delta y}\bigg(\frac{\delta f}{\delta y}\bigg) = \frac{\delta^2f}{\delta y^2}$$</li>
-</ul>
-<blockquote class="book-hint info">
+$$(f_y)_y = f_{yy} = \frac{\delta }{\delta y}\bigg(\frac{\delta f}{\delta y}\bigg) = \frac{\delta^2f}{\delta y^2}$$</li></ul><blockquote class="book-hint info">
 <strong>Clairaut&rsquo;s Theorem</strong> Suppose .$f$ is defined on a disk .$D$ that contains the point .$(a,b)$. If the functions .$f_{xy}$ and .$f_{yx}$ are both continuous on .$D$, then
 $$f_{xy}(a,b) = f_{yx}(a,b)$$
-</blockquote>
-<h2 id=partial-differential-equations>
+</blockquote><h2 id=partial-differential-equations>
 Partial Differential Equations
 <a class=anchor href=#partial-differential-equations>#</a>
-</h2>
-<ul>
-<li>In the sciences, we typically want to find how a system changes with respect to multiple variables</li>
-<li>Partial derivatives occur in partial differential equations, e.x <strong>Laplace&rsquo;s Equation</strong>:
+</h2><ul>
+<li>In the sciences, we typically want to find how a system changes with respect to multiple variables</li><li>Partial derivatives occur in partial differential equations, e.x <strong>Laplace&rsquo;s Equation</strong>:
 $$ \frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2} = 0$$
 <ul>
 <li>Solutions to Laplace&rsquo;s are always
-<a href=https://en.wikipedia.org/wiki/Harmonic_function>harmonic functions</a>, such as .$u = e^x \sin(y)$</li>
-</ul>
-</li>
-</ul>
-<h1 id=144-tangent-planes-and-linear-approximations>
+<a href=https://en.wikipedia.org/wiki/Harmonic_function>harmonic functions</a>, such as .$u = e^x \sin(y)$</li></ul></li></ul><h1 id=144-tangent-planes-and-linear-approximations>
 14.4 Tangent Planes and Linear Approximations
 <a class=anchor href=#144-tangent-planes-and-linear-approximations>#</a>
-</h1>
-<h2 id=tangent-planes>
+</h1><h2 id=tangent-planes>
 Tangent Planes
 <a class=anchor href=#tangent-planes>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li>Tangent planes are to surfaces as tangent lines are to curves
 <ul>
-<li>Tangent planes contain both the partial derivative lines w.r.t .$x$ and .$y$</li>
-</ul>
-</li>
-<li>All we need to know to write a tangent plane is a point .$(a,b)$ and direction of the two partial derivatives .$\langle 1,0, f_x(a,b)\rangle, \langle 0,1, f_y(a,b)\rangle$
+<li>Tangent planes contain both the partial derivative lines w.r.t .$x$ and .$y$</li></ul></li><li>All we need to know to write a tangent plane is a point .$(a,b)$ and direction of the two partial derivatives .$\langle 1,0, f_x(a,b)\rangle, \langle 0,1, f_y(a,b)\rangle$
 <ul>
 <li>Direction vector can be found with .$\langle 1,0, f_x(a,b)\rangle \times \langle 0,1, f_y(a,b)\rangle = \langle -f_x, -f_y, 1 \rangle$ which we can dot with .$\langle x-x_0, y-y_0, z-f(x_0,y_0) \rangle$
 <blockquote class="book-hint info">
 Suppose .$f$ has continuous partial derivatives. An equation of the tangent plane to the surface .$z = f(x, y)$ at the point .$P(x_0,y_0,z_0)$ is
 $$z-f(x_0, y_0) = f_x(x_0,y_0)(x-x_0) + f_y(x_0, y_0)(y-y_0)$$
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id=linear-approximations>
+</blockquote></li></ul></li></ul><h2 id=linear-approximations>
 Linear Approximations
 <a class=anchor href=#linear-approximations>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li>As we get very close to the surface, then the tangent plane (at point .$(a,b)$) looks more and more like the surface
 <ul>
 <li>Thus, we can use it to for making approximations when we are near near .$(a,b)$
@@ -466,314 +301,154 @@ Linear Approximations
 If .$z = f(x,y)$, then .$f$ is <em>differentiable</em> at .$(a,b)$ if .$\Delta z$ can be expressed in the form
 $$\Delta z = f_x(a,b)\Delta x + f_y(a,b)\Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y$$
 where the error terms, .$\varepsilon_1$ and .$\varepsilon_2 \to 0$ as .$(\Delta x, \Delta y) \to (0,0)$ and the other terms are the linearization of the function.
-</blockquote>
-</li>
-</ul>
-</li>
-<li>Rewriting this, we can use the given .$f(x,y)$ to write the <strong>linear approximation</strong> which is an estimate for point/state at .$f(a,b)$
-$$f(x,y) \approx f(a,b) + f_x(a,b) (x-a) + f_y(a,b)(y-b)$$</li>
-<li>We can similarly define the 3D linear approximation, increment of .$w$, and differential .$dw$ as:
+</blockquote></li></ul></li><li>Rewriting this, we can use the given .$f(x,y)$ to write the <strong>linear approximation</strong> which is an estimate for point/state at .$f(a,b)$
+$$f(x,y) \approx f(a,b) + f_x(a,b) (x-a) + f_y(a,b)(y-b)$$</li><li>We can similarly define the 3D linear approximation, increment of .$w$, and differential .$dw$ as:
 $$f(x,y,z) \approx f(a,b,c) + f_x(a,b,c) (x-a) + f_y(a,b,c)(y-b) + f_z(a,b,c) (z-c)$$
 $$\Delta w = f(x+\Delta x, y + \Delta y, z + \Delta z) - f(x,y,z)$$
-$$dw = \frac{\delta w}{\delta x}dx + \frac{\delta w}{\delta y}dy + \frac{\delta w}{\delta z}dz$$</li>
-</ul>
-<h2 id=differentials>
+$$dw = \frac{\delta w}{\delta x}dx + \frac{\delta w}{\delta y}dy + \frac{\delta w}{\delta z}dz$$</li></ul><h2 id=differentials>
 Differentials
 <a class=anchor href=#differentials>#</a>
-</h2>
-<ul>
-<li>With one variable functions, i.e. .$y = f(x)$, we defined the differential .$dx$ to be independent so we had to write .$dy$ as .$dy = f'(x)\ dx$</li>
-<li>Given a differentiable function of two variables, i.e. .$z = f(x,y)$, we know both .$dx$ and .$dy$ are independent so we write:
-$$dz = f_x(x,y)\ dx + f_y(x,y)\ dy = \frac{\delta z}{\delta x}dx + \frac{\delta z}{\delta y}dy$$</li>
-<li>If the partial derivatives .$f_x$ and .$f_y$ exist near .$(a,b)$ and are continuous at .$(a,b)$, then .$f$ is differentiable at .$(a,b)$.</li>
-</ul>
-<h1 id=145-chain-rule>
+</h2><ul>
+<li>With one variable functions, i.e. .$y = f(x)$, we defined the differential .$dx$ to be independent so we had to write .$dy$ as .$dy = f&rsquo;(x)\ dx$</li><li>Given a differentiable function of two variables, i.e. .$z = f(x,y)$, we know both .$dx$ and .$dy$ are independent so we write:
+$$dz = f_x(x,y)\ dx + f_y(x,y)\ dy = \frac{\delta z}{\delta x}dx + \frac{\delta z}{\delta y}dy$$</li><li>If the partial derivatives .$f_x$ and .$f_y$ exist near .$(a,b)$ and are continuous at .$(a,b)$, then .$f$ is differentiable at .$(a,b)$.</li></ul><h1 id=145-chain-rule>
 14.5 Chain Rule
 <a class=anchor href=#145-chain-rule>#</a>
-</h1>
-<h2 id=chain-rule>
+</h1><h2 id=chain-rule>
 Chain Rule
 <a class=anchor href=#chain-rule>#</a>
-</h2>
-<blockquote class="book-hint info">
+</h2><blockquote class="book-hint info">
 Suppose that .$z = f(g_1 (x_1,_{\dots}, x_m), g_2 (x_1,_{\dots}, x_m), g_n (x_1,_{\dots}, x_m))$ is a differentiable function of the .$n$ variables .$g_1,_{\dots}, g_n$ and is .$g_j$ is a differentiable function of the .$m$ variables .$x_1,_{\dots}, x_m$. Then .$z$ is a function of .$x_1,_{\dots}, x_m$ and
 $$ \frac{\delta f}{\delta x_i} = \frac{\delta f}{\delta g_1} \frac{\delta g_1}{\delta x_i} + \frac{\delta f}{\delta g_2} \frac{\delta g_2}{\delta x_i} + \dots + \frac{\delta f}{\delta g_m} \frac{\delta g_m}{\delta x_i}$$
 for each .$i = 1,2,\dots,m$
-</blockquote>
-<h2 id=implicit-differentiation>
+</blockquote><h2 id=implicit-differentiation>
 Implicit Differentiation
 <a class=anchor href=#implicit-differentiation>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li>
 <p>If .$F(x,y) = 0$ defines .$y$ implicitly as a function of .$x$ (that is, .$y = f(x)$, where .$F(x,f(x))= 0$ for all .$x$ in the domain of .$f$), then
-$$ \frac{dy}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta y}} = - \frac{F_x}{F_y}$$</p>
-</li>
-<li>
-<p>If .$F(x,y,z) = 0$ defines .$z$ implicitly as a function of .$x,y$, then</p>
-</li>
-</ul>
-<p>$$ \frac{dz}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta z}} = - \frac{F_x}{F_z};\ \ \frac{dz}{dy} = - \frac{\frac{\delta F}{\delta y}}{ \frac{\delta F}{\delta z}} = - \frac{F_y}{F_z}$$</p>
-<h1 id=146-directional-derivatives-and-the-gradient-vector>
+$$ \frac{dy}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta y}} = - \frac{F_x}{F_y}$$</p></li><li>
+<p>If .$F(x,y,z) = 0$ defines .$z$ implicitly as a function of .$x,y$, then</p></li></ul><p>$$ \frac{dz}{dx} = - \frac{\frac{\delta F}{\delta x}}{ \frac{\delta F}{\delta z}} = - \frac{F_x}{F_z};\ \ \frac{dz}{dy} = - \frac{\frac{\delta F}{\delta y}}{ \frac{\delta F}{\delta z}} = - \frac{F_y}{F_z}$$</p><h1 id=146-directional-derivatives-and-the-gradient-vector>
 14.6 Directional Derivatives and the Gradient Vector
 <a class=anchor href=#146-directional-derivatives-and-the-gradient-vector>#</a>
-</h1>
-<h2 id=directional-derivatives>
+</h1><h2 id=directional-derivatives>
 Directional Derivatives
 <a class=anchor href=#directional-derivatives>#</a>
-</h2>
-<blockquote class="book-hint info">
+</h2><blockquote class="book-hint info">
 <strong>Direction Derivative</strong> For function .$f$ at .$(x_0, y_0)$ in the direction of <strong>unit vector</strong> .$\hat u = \langle a, b \rangle$ is
 $$D_{\hat u} f(x_0, y_0) = \lim_{h\to 0} \frac{f(x_0 + ha, y_0 + hb) - f(x_0, y_0)}{h} = $$
 $$\dots = \nabla f \cdot \hat u = f_x (x,y) a + f_y (x,y) b$$
 if the limit exists (for the former) and if .$f$ is a differentiable function of .$x$ and .$y$ (for the latter)
-</blockquote>
-<ul>
-<li>That is, .$\hat u = \hat i = \langle 1, 0 \rangle$ for .$D_\hat{i} = f_x$ and .$\hat u = \hat j = \langle 0, 1 \rangle$ for .$D_\hat{j} = f_y$</li>
-<li><strong>Differentiability</strong> is important because it means that as you approach the surface very closely, it looks more and more like the tangent plane.</li>
-<li>Directional derivatives can be thought of as the slope of the tangent line at a given point</li>
-<li>This definition can be extrapolated to (three variables/higher dimensions) trivially, shown below with gradient vectors</li>
-</ul>
-<h2 id=gradient-vector>
+</blockquote><ul>
+<li>That is, .$\hat u = \hat i = \langle 1, 0 \rangle$ for .$D_\hat{i} = f_x$ and .$\hat u = \hat j = \langle 0, 1 \rangle$ for .$D_\hat{j} = f_y$</li><li><strong>Differentiability</strong> is important because it means that as you approach the surface very closely, it looks more and more like the tangent plane.</li><li>Directional derivatives can be thought of as the slope of the tangent line at a given point</li><li>This definition can be extrapolated to (three variables/higher dimensions) trivially, shown below with gradient vectors</li></ul><h2 id=gradient-vector>
 Gradient Vector
 <a class=anchor href=#gradient-vector>#</a>
-</h2>
-<blockquote class="book-hint info">
+</h2><blockquote class="book-hint info">
 <strong>Gradient:</strong> If .$f$ is a function of variable .$x,y,z$, then the gradient of .$f$ is the vector function .$\nabla f$ defined by
 $$\nabla f(x,y,z) = \big\langle f_x(x,y,z), f_y (x,y,z), f_z (x,y,z) \big\rangle = \frac{\delta f}{\delta x}\hat i + \frac{\delta f}{\delta y}\hat j + \frac{\delta f}{\delta z}\hat k$$
-</blockquote>
-<ul>
+</blockquote><ul>
 <li>We can now use the gradient to re-write our directional derivative equation as
-$$D_{\hat u} f(x,y,z,\dots) = \nabla f(x,y,z,\dots) \cdot \hat u$$</li>
-<li>We can re-write this using the definition of the dot product as
-$$D_{\hat u} f(x,y,z,\dots) = \Vert \nabla f \Vert \Vert \hat u \Vert \cos\theta =\Vert \nabla f \Vert \cos\theta $$</li>
-</ul>
-<h2 id=maximizing-the-directional-derivative>
+$$D_{\hat u} f(x,y,z,\dots) = \nabla f(x,y,z,\dots) \cdot \hat u$$</li><li>We can re-write this using the definition of the dot product as
+$$D_{\hat u} f(x,y,z,\dots) = \Vert \nabla f \Vert \Vert \hat u \Vert \cos\theta =\Vert \nabla f \Vert \cos\theta $$</li></ul><h2 id=maximizing-the-directional-derivative>
 Maximizing the Directional Derivative
 <a class=anchor href=#maximizing-the-directional-derivative>#</a>
-</h2>
-<blockquote class="book-hint info">
+</h2><blockquote class="book-hint info">
 Suppose .$f$ is a differentiable function of two or three variables. The maximum value of the directional derivatives .$D_\hat{u} f(\vec x)$ is .$\Vert \nabla f(\vec x ) \Vert$ and it occurs when .$\hat u$ has the same direction as the gradient vector .$\nabla f(\vec x)$
-</blockquote>
-<ul>
-<li>We can see from the definition above that since the max of .$\cos\theta$ is .$1$ when .$\theta = 0$, therefore the max of the directional derivative occurs at the same angle (when .$\hat u$ has the same direction of .$\nabla f$ )</li>
-<li>TL;DR: .$D_\hat{u} f(\vec x)$ is maximized if .$\vec u = \frac{\nabla f}{\Vert \nabla f \Vert}\bigg\vert_\vec{p}$ at point .$\vec p$</li>
-</ul>
-<h2 id=tangent-planes-to-level-surfaces>
+</blockquote><ul>
+<li>We can see from the definition above that since the max of .$\cos\theta$ is .$1$ when .$\theta = 0$, therefore the max of the directional derivative occurs at the same angle (when .$\hat u$ has the same direction of .$\nabla f$ )</li><li>TL;DR: .$D_\hat{u} f(\vec x)$ is maximized if .$\vec u = \frac{\nabla f}{\Vert \nabla f \Vert}\bigg\vert_\vec{p}$ at point .$\vec p$</li></ul><h2 id=tangent-planes-to-level-surfaces>
 Tangent Planes to Level Surfaces
 <a class=anchor href=#tangent-planes-to-level-surfaces>#</a>
-</h2>
+</h2><ul>
+<li>If .$f(x,y) = k$ is a curve, then .$F(x,y,z) = k$ is a surface</li><li>Let .$\vec r(t)$ be a space curve on the surface .$F(x,y,z) = k$
 <ul>
-<li>If .$f(x,y) = k$ is a curve, then .$F(x,y,z) = k$ is a surface</li>
-<li>Let .$\vec r(t)$ be a space curve on the surface .$F(x,y,z) = k$
+<li>Let .$\vec r(t_0) = \langle x_0, y_0, z_0 \rangle$ for some .$t_0$ (at some time, the space curve passes through some point which is on the surface)</li><li>We know .$F(\vec r(t)) = k$, thus, using the chain rule:
+$$0 = \frac{\delta F}{\delta x} \frac{\delta x}{\delta t} + \frac{\delta F}{\delta y} \frac{\delta y}{\delta t} + \frac{\delta F}{\delta z} \frac{\delta z}{\delta t} = \nabla F(x_0, y_0, z_0) \cdot (\vec r(t_0))&rsquo;$$</li></ul></li><li>The gradient vector at .$P$, .$F(x_0, y_0, z_0)$, is perpendicular to the tangent vector .$\vec r&rsquo;(t)$ to any curve .$C$ on .$S$ that passes through .$P$
 <ul>
-<li>Let .$\vec r(t_0) = \langle x_0, y_0, z_0 \rangle$ for some .$t_0$ (at some time, the space curve passes through some point which is on the surface)</li>
-<li>We know .$F(\vec r(t)) = k$, thus, using the chain rule:
-$$0 = \frac{\delta F}{\delta x} \frac{\delta x}{\delta t} + \frac{\delta F}{\delta y} \frac{\delta y}{\delta t} + \frac{\delta F}{\delta z} \frac{\delta z}{\delta t} = \nabla F(x_0, y_0, z_0) \cdot (\vec r(t_0))'$$</li>
-</ul>
-</li>
-<li>The gradient vector at .$P$, .$F(x_0, y_0, z_0)$, is perpendicular to the tangent vector .$\vec r'(t)$ to any curve .$C$ on .$S$ that passes through .$P$
-<ul>
-<li>In English: The direction of the gradient is always perpendicular to the level surface at every point</li>
-</ul>
-</li>
-<li>We can then define the tangent plane to the level surface .$F(x,y,z) = k$ at .$P(x_0, y_0, z_0)$ as the plane that passes through .$P$ and has normal vector .$\nabla F(x_0, y_0, z_0)$:
-$$\nabla F\big\vert_{(x_0, y_0, z_0)} \cdot \langle x-x_0, y-y_0, z-z_0 \rangle = 0$$</li>
-<li>We can also write this in the symmetric equation form:
-$$\frac{x-x_0}{F_x(x_0, y_0, z_0)} = \frac{y-y_0}{F_y(x_0, y_0, z_0)} = \frac{z-z_0}{F_z(x_0, y_0, z_0)}$$</li>
-</ul>
-<h1 id=147-maximum-and-minimum-values>
+<li>In English: The direction of the gradient is always perpendicular to the level surface at every point</li></ul></li><li>We can then define the tangent plane to the level surface .$F(x,y,z) = k$ at .$P(x_0, y_0, z_0)$ as the plane that passes through .$P$ and has normal vector .$\nabla F(x_0, y_0, z_0)$:
+$$\nabla F\big\vert_{(x_0, y_0, z_0)} \cdot \langle x-x_0, y-y_0, z-z_0 \rangle = 0$$</li><li>We can also write this in the symmetric equation form:
+$$\frac{x-x_0}{F_x(x_0, y_0, z_0)} = \frac{y-y_0}{F_y(x_0, y_0, z_0)} = \frac{z-z_0}{F_z(x_0, y_0, z_0)}$$</li></ul><h1 id=147-maximum-and-minimum-values>
 14.7 Maximum and Minimum Values
 <a class=anchor href=#147-maximum-and-minimum-values>#</a>
-</h1>
-<h2 id=critical-points>
+</h1><h2 id=critical-points>
 Critical Points
 <a class=anchor href=#critical-points>#</a>
-</h2>
-<blockquote class="book-hint info">
+</h2><blockquote class="book-hint info">
 A function of two variables has a <strong>local maximum</strong> at .$(a,b)$ if .$f(x,y) \leq f(a,b)$ when .$(x,y)$ is near .$(a,b)$ [This means that for .$f(x,y) \leq f(a,b)$ for all points .$(x,y)$ in some disk with center .$(a,b)$.] The number .$f(a,b)$ is called a local maximum <em>value</em>. If .$f(x,y) \geq f(a,b)$ when .$(x,y)$ is near .$(a,b)$, then .$f$ has a <strong>local minimum</strong> at .$(a,b)$ and .$(x,y)$ is a local minimum <em>value</em>.
-</blockquote>
+</blockquote><ul>
+<li>If the inequalities above hold for all points .$(x,y)$ in the domain of .$f$, then .$f$ has an <strong>absolute maximum</strong> (or absolute <strong>minimum</strong>) at .$(a,b)$</li><li>If .$f$ has a local maximum or minimum at .$(a,b)$ and the first-order partial derivatives of .$f$ exist there, then .$f_x(a,b) = 0$ and .$f_y(a,b) = 0$.
 <ul>
-<li>If the inequalities above hold for all points .$(x,y)$ in the domain of .$f$, then .$f$ has an <strong>absolute maximum</strong> (or absolute <strong>minimum</strong>) at .$(a,b)$</li>
-<li>If .$f$ has a local maximum or minimum at .$(a,b)$ and the first-order partial derivatives of .$f$ exist there, then .$f_x(a,b) = 0$ and .$f_y(a,b) = 0$.
+<li>If the graph of .$f$ has a tangent plane at a local maximum or minimum, then the tangent plane must be horizontal</li></ul></li><li>.$(a,b)$ is a <strong>Critical Point</strong> of .$f$ if .$f_x(a,b) = 0$ and .$f_y(a,b) = 0$, or if one of these partial derivatives does not exist
 <ul>
-<li>If the graph of .$f$ has a tangent plane at a local maximum or minimum, then the tangent plane must be horizontal</li>
-</ul>
-</li>
-<li>.$(a,b)$ is a <strong>Critical Point</strong> of .$f$ if .$f_x(a,b) = 0$ and .$f_y(a,b) = 0$, or if one of these partial derivatives does not exist
-<ul>
-<li>Thus, if .$f$ has a local maximum or minimum at .$(a,b)$, then .$(a,b)$ is a critical point of .$f$</li>
-<li>In other words, at a critical point, a function could have a local maximum or a local minimum or neither (saddle point).</li>
-</ul>
-</li>
-</ul>
-<blockquote class="book-hint info">
+<li>Thus, if .$f$ has a local maximum or minimum at .$(a,b)$, then .$(a,b)$ is a critical point of .$f$</li><li>In other words, at a critical point, a function could have a local maximum or a local minimum or neither (saddle point).</li></ul></li></ul><blockquote class="book-hint info">
 <p><strong>Second Derivatives Test:</strong> Suppose the second partial derivatives of .$f$ are continuous on a disk with center .$(a, b)$, and suppose that .$f_x(a, b) = 0$ and .$f_y(a, b) = 0$ (that is, .$(a, b)$ is a critical point of .$f$ ). Let
-$$D = D(a, b) = \begin{vmatrix}f_{xx} & f_{xy}\\ f_{yx} & f_{yy}\end{vmatrix} = f_{xx}(a, b) f_{yy}(a, b) - (f_{xy}(a, b))^2$$</p>
-<ul>
-<li>If .$D > 0$ and .$f_{xx}(a, b) > 0$ (or .$f_{yy}(a, b) > 0$), then .$f(a, b)$ is a local minimum.</li>
-<li>If .$D > 0$ and .$f_{xx}(a, b) &lt; 0$ (or .$f_{yy}(a, b) &lt; 0$), then .$f(a, b)$ is a local maximum.</li>
-<li>If .$D &lt; 0$, then .$f(a, b)$ is a saddle point</li>
-<li>If .$D = 0$, the test gives no information: .$f$ could be any of the above</li>
-</ul>
-</blockquote>
-<ul>
-<li>Note that in the first two tests, it&rsquo;s implied that .$f_{xx}$ and .$f_{yy}$ have the same sign</li>
-<li>The determinant is a
-<a href=https://en.wikipedia.org/wiki/Hessian_matrix#Second-derivative_test>Hessian matrix</a></li>
-</ul>
-<h2 id=extreme-points>
+$$D = D(a, b) = \begin{vmatrix}f_{xx} & f_{xy}\\ f_{yx} & f_{yy}\end{vmatrix} = f_{xx}(a, b) f_{yy}(a, b) - (f_{xy}(a, b))^2$$</p><ul>
+<li>If .$D > 0$ and .$f_{xx}(a, b) > 0$ (or .$f_{yy}(a, b) > 0$), then .$f(a, b)$ is a local minimum.</li><li>If .$D > 0$ and .$f_{xx}(a, b) &lt; 0$ (or .$f_{yy}(a, b) &lt; 0$), then .$f(a, b)$ is a local maximum.</li><li>If .$D &lt; 0$, then .$f(a, b)$ is a saddle point</li><li>If .$D = 0$, the test gives no information: .$f$ could be any of the above</li></ul></blockquote><ul>
+<li>Note that in the first two tests, it&rsquo;s implied that .$f_{xx}$ and .$f_{yy}$ have the same sign</li><li>The determinant is a
+<a href=https://en.wikipedia.org/wiki/Hessian_matrix#Second-derivative_test>Hessian matrix</a></li></ul><h2 id=extreme-points>
 Extreme Points
 <a class=anchor href=#extreme-points>#</a>
-</h2>
-<p><div class="book-columns flex flex-wrap">
+</h2><p><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
 <li>Just as a closed interval contains its endpoints, a <strong>closed set</strong> in .$\mathbb{R}^2$ is one that contains all its boundary points.
 <ul>
-<li>For instance, the disk .$D = \{(x,y) \vert x^2 + y^2 \leq 1 \}$ is a closed set because it contains all of its boundary points (which are the points on the circle .$r = 1$)</li>
-<li>But if even one point on the boundary curve were omitted, the set would not be closed</li>
-</ul>
-</li>
-<li>A <strong>bounded set</strong> in .$\mathbb{R}^2$ is one that is contained within some disk &ndash; it is finite in extent</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>For instance, the disk .$D = \{(x,y) \vert x^2 + y^2 \leq 1 \}$ is a closed set because it contains all of its boundary points (which are the points on the circle .$r = 1$)</li><li>But if even one point on the boundary curve were omitted, the set would not be closed</li></ul></li><li>A <strong>bounded set</strong> in .$\mathbb{R}^2$ is one that is contained within some disk &ndash; it is finite in extent</li></ul></div><div class="flex-even markdown-inner">
 <img src=/docs/math-53/imgs/sets.png alt=Sets>
-</div>
-</div>
-<blockquote class="book-hint info">
+</div></div><blockquote class="book-hint info">
 <strong>Extreme Value Theorem for Functions of Two Variables:</strong> If .$f$ is continuous on a closed, bounded set .$D$ in .$\mathbb{R}^2$, then .$f$ attains an absolute maximum value .$f(x_1, y_1)$ and an absolute minimum value .$f(x_2, y_2)$ at some points .$(x_1, y_1)$ and .$(x_2, y_2)$ in .$D$.
-</blockquote>
-</p>
-<ul>
-<li>If .$f$ has an extreme value at .$(x_1, y_1)$, then .$(x_1, y_1)$ is either a critical point of .$f$ or a boundary point of .$d$.</li>
-<li>To find the absolute maximum and minimum values of a continuous function .$f$ on a closed, bounded set .$D$:
+</blockquote></p><ul>
+<li>If .$f$ has an extreme value at .$(x_1, y_1)$, then .$(x_1, y_1)$ is either a critical point of .$f$ or a boundary point of .$d$.</li><li>To find the absolute maximum and minimum values of a continuous function .$f$ on a closed, bounded set .$D$:
 <ol>
-<li>Find the values of .$f$ at the critical points of .$f$ in .$D$.</li>
-<li>Find the extreme values of .$f$ on the boundary of .$D$.</li>
-<li>The largest of the values from steps 1 and 2 is the absolute maximum value; the smallest of these values is the absolute minimum value.</li>
-</ol>
-</li>
-</ul>
-<h1 id=148-lagrange-multipliers>
+<li>Find the values of .$f$ at the critical points of .$f$ in .$D$.</li><li>Find the extreme values of .$f$ on the boundary of .$D$.</li><li>The largest of the values from steps 1 and 2 is the absolute maximum value; the smallest of these values is the absolute minimum value.</li></ol></li></ul><h1 id=148-lagrange-multipliers>
 14.8 Lagrange Multipliers
 <a class=anchor href=#148-lagrange-multipliers>#</a>
-</h1>
-<ul>
+</h1><ul>
 <li>We use Lagrange Multipliers to find critical points of a surface .$f$ given some constraining surface .$g$
 <blockquote class="book-hint info">
-<p><strong>Method of Lagrange Multipliers</strong> To find the maximum and minimum values of .$f(x,y,z)$ subject to the constraint .$g(x,y,z) = k$ [assuming that these extreme values exist and .$\nabla \neq 0$ on the surface .$g(x,y,z) = k$]:</p>
-<ul>
+<p><strong>Method of Lagrange Multipliers</strong> To find the maximum and minimum values of .$f(x,y,z)$ subject to the constraint .$g(x,y,z) = k$ [assuming that these extreme values exist and .$\nabla \neq 0$ on the surface .$g(x,y,z) = k$]:</p><ul>
 <li>Find all values of .$x, y, z$, and .$\lambda$ such that
 $$\nabla f(x,y,z) = \lambda \nabla g(x,y,z)$$
-$$g(x,y,z) = k$$</li>
-<li>Evaluate .$f$ at all the points .$(x, y, z)$ that result from the first step. The largest of these values is the maximum value of .$f$; the smallest is the minimum value of .$f$.</li>
-</ul>
-</blockquote>
-</li>
-<li>We can decompose the first equation and use the second equation to get
-$$f_x = \lambda g_x;\ \ f_y = \lambda g_y;\ \ f_z = \lambda g_z;\ \ g(x,y,z) = k$$</li>
-<li>Notice we don&rsquo;t care what .$\lambda$ is, only that it exists</li>
-</ul>
-<h2 id=two-constraints>
+$$g(x,y,z) = k$$</li><li>Evaluate .$f$ at all the points .$(x, y, z)$ that result from the first step. The largest of these values is the maximum value of .$f$; the smallest is the minimum value of .$f$.</li></ul></blockquote></li><li>We can decompose the first equation and use the second equation to get
+$$f_x = \lambda g_x;\ \ f_y = \lambda g_y;\ \ f_z = \lambda g_z;\ \ g(x,y,z) = k$$</li><li>Notice we don&rsquo;t care what .$\lambda$ is, only that it exists</li></ul><h2 id=two-constraints>
 Two Constraints
 <a class=anchor href=#two-constraints>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li>We can use Lagrange multipliers for two constraints .$f$ and .$g$ too:
-$$\nabla f(x_0, y_0, z_0) = \lambda \nabla g(x_0, y_0, z_0) + \mu \nabla h(x_0, y_0, z_0)$$</li>
-<li>Likewise, we can decompose the equation above to get the following five equations:
+$$\nabla f(x_0, y_0, z_0) = \lambda \nabla g(x_0, y_0, z_0) + \mu \nabla h(x_0, y_0, z_0)$$</li><li>Likewise, we can decompose the equation above to get the following five equations:
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ol>
-<li>$$f_x = \lambda g_x + \mu h_x$$</li>
-<li>$$f_y = \lambda g_y + \mu h_y$$</li>
-<li>$$f_z = \lambda g_z + \mu h_z$$</li>
-<li>$$g(x,y,z) = k$$</li>
-<li>$$h(x,y,z) = c$$</li>
-</ol>
-</div>
-<div class="flex-even markdown-inner">
+<li>$$f_x = \lambda g_x + \mu h_x$$</li><li>$$f_y = \lambda g_y + \mu h_y$$</li><li>$$f_z = \lambda g_z + \mu h_z$$</li><li>$$g(x,y,z) = k$$</li><li>$$h(x,y,z) = c$$</li></ol></div><div class="flex-even markdown-inner">
 <img src=/docs/math-53/imgs/two-constr.png alt="Two Constraints">
-</div>
-</div>
-</li>
-</ul>
-</article>
-<footer class=book-footer>
+</div></div></li></ul></article><footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/befa6a11878f69cd785820582bdc2c3ba71f65f7 title="Last modified by Max Vogel | February 27, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 27, 2022</span>
+<span>March 4, 2022</span>
 </a>
-</div>
-<div>
+</div><div>
 <a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/14.md target=_blank rel=noopener>
 <img src=/svg/edit.svg class=book-icon alt=Edit>
 <span>Edit this page</span>
 </a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
+</div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+</footer><div class=book-comments>
+</div><label for=menu-control class="hidden book-menu-overlay"></label>
+</div><aside class=book-toc>
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#141-functions-of-several-variables>14.1 Functions of Several Variables</a></li>
-<li><a href=#142-limits-and-continuity>14.2 Limits and Continuity</a>
+<li><a href=#141-functions-of-several-variables>14.1 Functions of Several Variables</a></li><li><a href=#142-limits-and-continuity>14.2 Limits and Continuity</a>
 <ul>
-<li><a href=#limits>Limits</a></li>
-<li><a href=#continuity>Continuity</a></li>
-</ul>
-</li>
-<li><a href=#143-partial-derivatives>14.3 Partial Derivatives</a>
+<li><a href=#limits>Limits</a></li><li><a href=#continuity>Continuity</a></li></ul></li><li><a href=#143-partial-derivatives>14.3 Partial Derivatives</a>
 <ul>
-<li><a href=#higher-derivatives>Higher Derivatives</a></li>
-<li><a href=#partial-differential-equations>Partial Differential Equations</a></li>
-</ul>
-</li>
-<li><a href=#144-tangent-planes-and-linear-approximations>14.4 Tangent Planes and Linear Approximations</a>
+<li><a href=#higher-derivatives>Higher Derivatives</a></li><li><a href=#partial-differential-equations>Partial Differential Equations</a></li></ul></li><li><a href=#144-tangent-planes-and-linear-approximations>14.4 Tangent Planes and Linear Approximations</a>
 <ul>
-<li><a href=#tangent-planes>Tangent Planes</a></li>
-<li><a href=#linear-approximations>Linear Approximations</a></li>
-<li><a href=#differentials>Differentials</a></li>
-</ul>
-</li>
-<li><a href=#145-chain-rule>14.5 Chain Rule</a>
+<li><a href=#tangent-planes>Tangent Planes</a></li><li><a href=#linear-approximations>Linear Approximations</a></li><li><a href=#differentials>Differentials</a></li></ul></li><li><a href=#145-chain-rule>14.5 Chain Rule</a>
 <ul>
-<li><a href=#chain-rule>Chain Rule</a></li>
-<li><a href=#implicit-differentiation>Implicit Differentiation</a></li>
-</ul>
-</li>
-<li><a href=#146-directional-derivatives-and-the-gradient-vector>14.6 Directional Derivatives and the Gradient Vector</a>
+<li><a href=#chain-rule>Chain Rule</a></li><li><a href=#implicit-differentiation>Implicit Differentiation</a></li></ul></li><li><a href=#146-directional-derivatives-and-the-gradient-vector>14.6 Directional Derivatives and the Gradient Vector</a>
 <ul>
-<li><a href=#directional-derivatives>Directional Derivatives</a></li>
-<li><a href=#gradient-vector>Gradient Vector</a></li>
-<li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li>
-<li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li>
-</ul>
-</li>
-<li><a href=#147-maximum-and-minimum-values>14.7 Maximum and Minimum Values</a>
+<li><a href=#directional-derivatives>Directional Derivatives</a></li><li><a href=#gradient-vector>Gradient Vector</a></li><li><a href=#maximizing-the-directional-derivative>Maximizing the Directional Derivative</a></li><li><a href=#tangent-planes-to-level-surfaces>Tangent Planes to Level Surfaces</a></li></ul></li><li><a href=#147-maximum-and-minimum-values>14.7 Maximum and Minimum Values</a>
 <ul>
-<li><a href=#critical-points>Critical Points</a></li>
-<li><a href=#extreme-points>Extreme Points</a></li>
-</ul>
-</li>
-<li><a href=#148-lagrange-multipliers>14.8 Lagrange Multipliers</a>
+<li><a href=#critical-points>Critical Points</a></li><li><a href=#extreme-points>Extreme Points</a></li></ul></li><li><a href=#148-lagrange-multipliers>14.8 Lagrange Multipliers</a>
 <ul>
-<li><a href=#two-constraints>Two Constraints</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+<li><a href=#two-constraints>Two Constraints</a></li></ul></li></ul></nav></div></aside></main></body></html>

@@ -10,20 +10,18 @@
 01-20: Introduction to Imaging, Tomography, and Linear Equations #    Slides Notes 1A, 1B   System Design #   We use devices, such as imagers, that provide information, such as a visual representation of a system  Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/0/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-27T02:28:45-08:00">
-<title>Week 0: System Design & Linear Equations | notes.mehvix.com</title>
-<link rel=manifest href=/manifest.json>
+<meta property="article:modified_time" content="2022-03-04T00:21:26-08:00">
+<title>Week 0: System Design & Linear Equations | notes.mehvix.com</title><link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.0d7ea8409a9579bc1f0ffbaee193bd0917ad26b0c0afe18d158ac6dd4139fcf5.js integrity="sha256-DX6oQJqVebwfD/uu4ZO9CRetJrDAr+GNFYrG3UE5/PU=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.2f3e2dacd9fbc076e65d1e180f3eacfbc848ad9527eedc8cd03c45cd5e4879e5.js integrity="sha256-Lz4trNn7wHbmXR4YDz6s+8hIrZUn7tyM0DxFzV5IeeU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
 <script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 <link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
-</head>
-<body dir=ltr>
+</head><body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control>
 <main class="container flex">
@@ -33,13 +31,9 @@
 <h2 class=book-brand>
 <a class="flex align-center" href=/><span>notes.mehvix.com</span>
 </a>
-</h2>
-<div class=book-search>
+</h2><div class=book-search>
 <input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-<ul>
+<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
 <li>
 <input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
 <label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
@@ -48,28 +42,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
 <label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
 <a role=button>EECS 16A</a>
@@ -77,25 +62,17 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/eecs-16a/0/ class=active>Week 0: System Design & Linear Equations</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
 <label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
 <a role=button>Engineering 29</a>
@@ -103,25 +80,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
-</li>
-<li>
-<a href=http://notes.mehvix.com/e-29/5/>Week 5: Forming Processes</a>
-</li>
-</ul>
-</li>
-<li>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a>
+</li></ul></li><li>
 <input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
 <label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
@@ -129,31 +100,21 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
 <label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
@@ -161,52 +122,35 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
-</li>
-<li>
+</li><li>
 <input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
 <label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
 <a role=button>AP Notes</a>
@@ -214,43 +158,29 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
+</li></ul></li></ul><ul>
 <li>
 <a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
 CS61A (Anto's)
 </a>
-</li>
-<li>
+</li><li>
 <a href=# target=_blank rel=noopener>
 —
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://www.mehvix.com target=_blank rel=noopener>
 w³.mehvix.com
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://pass.mehvix.com target=_blank rel=noopener>
 pass.mehvix.com
 </a>
-</li>
-</ul>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
+</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div></aside><div class=book-page>
 <header class=book-header>
 <div class="flex align-center justify-between">
 <label for=menu-control>
@@ -260,139 +190,70 @@ pass.mehvix.com
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
-</div>
-<aside class="hidden clearfix">
+</div><aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#01-18-course-introduction>01-18: Course Introduction</a></li>
-<li><a href=#01-20-introduction-to-imaging-tomography-and-linear-equations>01-20: Introduction to Imaging, Tomography, and Linear Equations</a>
+<li><a href=#01-18-course-introduction>01-18: Course Introduction</a></li><li><a href=#01-20-introduction-to-imaging-tomography-and-linear-equations>01-20: Introduction to Imaging, Tomography, and Linear Equations</a>
 <ul>
-<li><a href=#system-design>System Design</a></li>
-<li><a href=#linear-algebra>Linear Algebra</a></li>
-<li><a href=#note-1ab-extra>Note 1AB Extra</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=01-18-course-introduction>
+<li><a href=#system-design>System Design</a></li><li><a href=#linear-algebra>Linear Algebra</a></li><li><a href=#note-1ab-extra>Note 1AB Extra</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=01-18-course-introduction>
 01-18: Course Introduction
 <a class=anchor href=#01-18-course-introduction>#</a>
-</h1>
-<ul>
+</h1><ul>
 <li>
-<a href=https://eecs16a.org/lecture/Lecture0A_Slides.pdf>Slides</a></li>
-<li>Notes
+<a href=https://eecs16a.org/lecture/Lecture0A_Slides.pdf>Slides</a></li><li>Notes
 <a href=https://eecs16a.org/lecture/Note0.pdf>0</a>,
-<a href=https://eecs16a.org/lecture/Note1A.pdf>1A</a></li>
-</ul>
-<hr>
-<p>All logistics, no notes!</p>
-<h1 id=01-20-introduction-to-imaging-tomography-and-linear-equations>
+<a href=https://eecs16a.org/lecture/Note1A.pdf>1A</a></li></ul><hr>
+<p>All logistics, no notes!</p><h1 id=01-20-introduction-to-imaging-tomography-and-linear-equations>
 01-20: Introduction to Imaging, Tomography, and Linear Equations
 <a class=anchor href=#01-20-introduction-to-imaging-tomography-and-linear-equations>#</a>
-</h1>
-<ul>
+</h1><ul>
 <li>
-<a href=https://eecs16a.org/lecture/Lecture0B_Slides.pdf>Slides</a></li>
-<li>Notes
+<a href=https://eecs16a.org/lecture/Lecture0B_Slides.pdf>Slides</a></li><li>Notes
 <a href=https://eecs16a.org/lecture/Note1A.pdf>1A</a>,
-<a href=https://eecs16a.org/lecture/Note1B.pdf>1B</a></li>
-</ul>
-<hr>
+<a href=https://eecs16a.org/lecture/Note1B.pdf>1B</a></li></ul><hr>
 <h2 id=system-design>
 System Design
 <a class=anchor href=#system-design>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li>We use <em>devices</em>, such as imagers, that provide <em>information</em>, such as a visual representation of a system
 <ul>
-<li>Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.</li>
-</ul>
-</li>
-<li>When we take projections of images, we tend to need to take multiple measuring (pictures) from differing angles
+<li>Often, these devices don’t work alone &ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.</li></ul></li><li>When we take projections of images, we tend to need to take multiple measuring (pictures) from differing angles
 <ul>
-<li>Otherwise we have issues with overlap and ambiguity</li>
-<li>To generate 3D models, we need these multiple perspectives</li>
-</ul>
-</li>
-<li>We ideally want to design a system that gives us a set of linear equations
+<li>Otherwise we have issues with overlap and ambiguity</li><li>To generate 3D models, we need these multiple perspectives</li></ul></li><li>We ideally want to design a system that gives us a set of linear equations
 <ul>
-<li>Some times we can only approximate these linear equations</li>
-<li>Lots of physical processes (i.e xrays!) are exponential so we just slap a log on it
+<li>Some times we can only approximate these linear equations</li><li>Lots of physical processes (i.e xrays!) are exponential so we just slap a log on it
 <ul>
-<li>.$\hat y = p \cdot (e^{x_1} + \dots + e^{x_n})$</li>
-<li>.$y = -\log_e (\hat y \cdot p^{-1}) = x_1 + \dots + x_n$</li>
-<li>.$\hat y$ is our measured energy value</li>
-<li>.$x_n$ is the .$n$th &lsquo;pixel&rsquo;</li>
-<li>.$p$ is the power of the energy source
+<li>.$\hat y = p \cdot (e^{x_1} + \dots + e^{x_n})$</li><li>.$y = -\log_e (\hat y \cdot p^{-1}) = x_1 + \dots + x_n$</li><li>.$\hat y$ is our measured energy value</li><li>.$x_n$ is the .$n$th &lsquo;pixel&rsquo;</li><li>.$p$ is the power of the energy source
 <details><summary>Tomography Example</summary>
 <div class=markdown-inner>
 <img src=/docs/eecs-16a/0/to.png alt>
-</div>
-</details>
-</li>
-</ul>
-</li>
-<li>To solve, we need enough independent equations that do not contain redundant information, otherwise there will be multiple ambiguous solutions</li>
-<li>Different models are made up of different configurations (of the energy source and measuring sensor) and result in different system of equations
+</div></details>
+</li></ul></li><li>To solve, we need enough independent equations that do not contain redundant information, otherwise there will be multiple ambiguous solutions</li><li>Different models are made up of different configurations (of the energy source and measuring sensor) and result in different system of equations
 <ul>
-<li>We can obtain equations by moving both the energy source and measuring sensor (think document scanner) to get each individual pixel</li>
-<li>We can also move the energy source alone instead &ndash; think camera pointed at image with a projector used to light up certain (group of) pixel(s)
+<li>We can obtain equations by moving both the energy source and measuring sensor (think document scanner) to get each individual pixel</li><li>We can also move the energy source alone instead &ndash; think camera pointed at image with a projector used to light up certain (group of) pixel(s)
 <ul>
-<li>Different patterns have pros/cons &ndash; speed, resolution, accuracy, number of measurements, energy use</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id=linear-algebra>
+<li>Different patterns have pros/cons &ndash; speed, resolution, accuracy, number of measurements, energy use</li></ul></li></ul></li></ul></li></ul><h2 id=linear-algebra>
 Linear Algebra
 <a class=anchor href=#linear-algebra>#</a>
-</h2>
-<ul>
-<li>The study of linear functions and linear equations, typically using vectors and matrices</li>
-<li>Linearity is not always applicable, but can be a good first-order approximation</li>
-<li>There exist good fast algorithms to solve these problems (and lots of fun properties!)</li>
-<li>Consider .$f(x_1, \dots, x_n) : \mathbb{R}^n \to \mathbb{R}$; .$f$ is linear if the following hold&mldr;
+</h2><ul>
+<li>The study of linear functions and linear equations, typically using vectors and matrices</li><li>Linearity is not always applicable, but can be a good first-order approximation</li><li>There exist good fast algorithms to solve these problems (and lots of fun properties!)</li><li>Consider .$f(x_1, \dots, x_n) : \mathbb{R}^n \to \mathbb{R}$; .$f$ is linear if the following hold&mldr;
 <ol>
 <li>Homogeneity: .$f (\alpha x_1, \dots, \alpha x_n) = \alpha f(x_1, \dots, x_n)$
 <ul>
-<li>If I scale the input by a scalar (i.e. by a factor of 2) then the output should also scale by the same factor</li>
-</ul>
-</li>
-<li>Super position (distributivity): if .$x_i = y_i + z_i$ then .$f(y_1 + z_1, \dots, y_n + z_n) = f(y_1, \dots y_n) + f(z_1, \dots z_n)$
+<li>If I scale the input by a scalar (i.e. by a factor of 2) then the output should also scale by the same factor</li></ul></li><li>Super position (distributivity): if .$x_i = y_i + z_i$ then .$f(y_1 + z_1, \dots, y_n + z_n) = f(y_1, \dots y_n) + f(z_1, \dots z_n)$
 <ul>
 <li>2 possible inputs:
 <ol>
-<li>Pass the first input through the system to get a value.</li>
-<li>Pass another input through the system, and get another value.</li>
-<li>Add those two values to get a result.</li>
-</ol>
-</li>
-<li>1 possible input:
+<li>Pass the first input through the system to get a value.</li><li>Pass another input through the system, and get another value.</li><li>Add those two values to get a result.</li></ol></li><li>1 possible input:
 <ol>
-<li>Pass the summation of value 1 and value 2 through the system to get a result.</li>
-</ol>
-</li>
-<li>If the result of both approaches are equal, then distributivity holds. Otherwise, distributivity does not hold.
+<li>Pass the summation of value 1 and value 2 through the system to get a result.</li></ol></li><li>If the result of both approaches are equal, then distributivity holds. Otherwise, distributivity does not hold.
 <blockquote class="book-hint info">
 <p>We can account for both Homogeneity and Super position by proving the function holds under the following equation:
 $$\alpha_1 f(x_1, \dots x_n) + \dots + \alpha_n f(y_1, \dots, y_n) = f(\alpha_1 x_1 +\alpha_n y_1, \dots, \alpha_1 x_n + \alpha_n y_n)$$
 where .$y_n$ is a some scalar
-</blockquote>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>Linear functions can always be expressed as .$f(x_1, \dots, x_n) = c_1 x_1 + \dots + c_n x_n$
+</blockquote></li></ul></li></ol></li><li>Linear functions can always be expressed as .$f(x_1, \dots, x_n) = c_1 x_1 + \dots + c_n x_n$
 <ul>
-<li>For .$\mathbb{R}^2$, that is, .$f(x_1, x_2) = c_1 x_1 + c_2 x_2$</li>
-<li>We know this system is linear so it follows these two rules above. So we should set up an equation where we can apply these properties.
+<li>For .$\mathbb{R}^2$, that is, .$f(x_1, x_2) = c_1 x_1 + c_2 x_2$</li><li>We know this system is linear so it follows these two rules above. So we should set up an equation where we can apply these properties.
 <blockquote>
 <p>$$ x_1 = 1 \cdot x_1 + 0 \cdot x_2;\ x_2 = 0 \cdot x_1 + 1 \cdot x_2$$
 $$\text{Let } y_1 = 1, z_1 = 0; y_2 = 0, z_2 = 1$$
@@ -401,37 +262,22 @@ $$ \Longrightarrow x_1 = x_1 (y_1 + z_1);\ x_2 = x_2 (y_2 + z_2)$$
 $$\text{Therefore, } f(x_1, x_2) = f(x_1 y_1 + x_2 z_1, x_1 y_2 + x_2 z_2)$$
 $$= x_1f(y_1, y_2) + x_2f(z_1, z_2)$$
 $$= x_1f(1, 0) + x_2f(0, 1)$$
-$$= c_1 x_1 + c_2 x_2\ \blacksquare$$</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>Linear Set of Equations
+$$= c_1 x_1 + c_2 x_2\ \blacksquare$$</p></blockquote></li></ul></li><li>Linear Set of Equations
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <p>Consider the set of .$M$ linear equations with .$N$ variables:
 $$\begin{matrix}a_{11} x_1 + a_{12} x_2 + \dots + a_{1N} x_{N} = b_1\\ a_{21} x_1 + a_{22} x_2 + \dots + a_{2N} x_{N} = b_2\\ \text{} \vdots\\ a_{M1} x_1 + a_{M2} x_2 + \dots + a_{MN} x_{N} = b_M\end{matrix}$$
-</div>
-<div class="flex-even markdown-inner">
+</div><div class="flex-even markdown-inner">
 <p>&mldr;it can be written compactly using augmented matrix:
 $$\begin{bmatrix}a_{11} & a_{12} & &mldr; & a_{1N} & \text{|} & b_1\\ a_{21} & a_{22} & &mldr; & a_{2N} & \text{|} & b_2\\ \vdots & \text{} & \vdots & \text{ } & \text{|} & \vdots\\ a_{M1} & a_{M2} & &mldr; & a_{MN} & \text{|} & b_M\end{bmatrix}$$
-</div>
-</div>
-<ul>
-<li>An interesting thing to notice about this representation is that the symbols corresponding to our unknowns have vanished entirely!</li>
-</ul>
-</li>
-<li>Algorithm for solving linear equations
+</div></div><ul>
+<li>An interesting thing to notice about this representation is that the symbols corresponding to our unknowns have vanished entirely!</li></ul></li><li>Algorithm for solving linear equations
 <ul>
 <li>Three basic operations that <strong>don&rsquo;t change</strong> a solution:
 <ol>
 <li>Multiply an equation with <em>nonzero</em> scalar
 <ul>
-<li>.$2x+3y=4$ is same as .$4x+6y=8$</li>
-<li>In other words, no solution exists that satisfies the second equation, but not the first. Consequently, the second equation is not only implied by, but also implies the first equation. When each of two equations imply the other, we say that they are equivalent.</li>
-</ul>
-</li>
-<li>Adding a scalar constant multiple of one equation to another
+<li>.$2x+3y=4$ is same as .$4x+6y=8$</li><li>In other words, no solution exists that satisfies the second equation, but not the first. Consequently, the second equation is not only implied by, but also implies the first equation. When each of two equations imply the other, we say that they are equivalent.</li></ul></li><li>Adding a scalar constant multiple of one equation to another
 <details><summary>Example</summary>
 <div class=markdown-inner>
 <div class="book-columns flex flex-wrap">
@@ -439,96 +285,47 @@ $$\begin{bmatrix}a_{11} & a_{12} & &mldr; & a_{1N} & \text{|} & b_1\\ a_{21} & a
 <p>If we have the equations..
 $$(1)\ 5a+6b=7$$
 $$(2)\ 8a+9b=10$$
-</div>
-<div class="flex-even markdown-inner">
+</div><div class="flex-even markdown-inner">
 <p>&mldr;we can multiply .$(2)$ by the scalar 3 and add it to .$(1)$, to obtain the new system
 $$(3)\ 29a+33b=37$$
 $$(2)\ 8a+9b=10$$
-</div>
-</div>
-<p>Clearly, observe that any solution to the first system will also be a solution to the second, since the first system of equations implies the second. But is the reverse true? Well, observe that equation .$(1)$ can be recovered by taking equation .$(3)$ and subtracting our scalar (in this case, 3) multiplied by equation .$(2)$. In other words, our second system is, not only implied by, but also implies the first system, so it does not introduce any new solutions. Thus, replacing the first system with the second does not change the solution set of our linear system, so this operation is valid.</p>
-</div>
-</details>
-</li>
-<li>Swapping equations (changing arbitrary labels, trivial)</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id=note-1ab-extra>
+</div></div><p>Clearly, observe that any solution to the first system will also be a solution to the second, since the first system of equations implies the second. But is the reverse true? Well, observe that equation .$(1)$ can be recovered by taking equation .$(3)$ and subtracting our scalar (in this case, 3) multiplied by equation .$(2)$. In other words, our second system is, not only implied by, but also implies the first system, so it does not introduce any new solutions. Thus, replacing the first system with the second does not change the solution set of our linear system, so this operation is valid.</p></div></details>
+</li><li>Swapping equations (changing arbitrary labels, trivial)</li></ol></li></ul></li></ul><h2 id=note-1ab-extra>
 Note 1AB Extra
 <a class=anchor href=#note-1ab-extra>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li><strong>Affine function:</strong> a function that can be written as a sum of a linear function and a scalar constant, so though .$\beta (x)=2x+1$ is not <em>linear</em>, it is still <em>affine</em>
 <ul>
 <li>Notice that the definition of affine functions includes all linear functions (by setting the scalar constant to 0), so <strong>every linear function is affine</strong>, but not all linear functions are affine.
 <blockquote class="book-hint warning">
 <p>These definitions mean that while all functions describing a line can be shown to be affine, not all of them are linear. This has the unfortunate consequence that, in informal conversation, affine functions may be called linear, since both describe a line. This usage, though common, is <strong>wrong!</strong>, as seen with .$\beta (x)$ above
-</blockquote>
-</li>
-</ul>
-</li>
-<li><strong>Linear Equation:</strong> Formally, a linear equation with the unknown scalars .$x_1, x_2, \dots x_n$ is an equation where each side is a sum of scalar-valued linear functions of each of the unknowns plus a scalar constant.
+</blockquote></li></ul></li><li><strong>Linear Equation:</strong> Formally, a linear equation with the unknown scalars .$x_1, x_2, \dots x_n$ is an equation where each side is a sum of scalar-valued linear functions of each of the unknowns plus a scalar constant.
 <ul>
 <li>Expressed algebraically, we obtain the most general form of a linear equation, where the .$f_i$ and .$g_i$ are each linear functions with a single scalar input and output, and .$b_f$ and .$b_g$ are two scalar constants:
-$$f_1(x_1) + f_2(x_2) + \dots + f_n(x_n) + b_f = g_1(x_1) + g_2(x_2) + \dots + g_n (x_n) + b_g$$</li>
-<li>Now, recall that linear functions with a single scalar input and output can be expressed in a very particular form &ndash; we know that we can write .$f_i(x) = a_i \cdot x$ and .$g_i(x) = a_i ' \cdot x$, where all the .$a_i$ and .$a_i &lsquo;$ are scalar constants. Substituting, we find that the general form of a linear equation can be rewritten as
-$$a_1x_1 + a_2 x_2 + \dots = a_n x_n + b_f = a_1&rsquo; x_1 + a_2 ' x_2 + \dots + a_n ' x_n + b_g$$</li>
-<li>Notice that this expression can be thought of as a “weighted sum” of the .$x_i$, where the weights are the scalar constants .$a_i$. When the weights do not depend on any of the terms (such as when the weights are constants), we call the weighted sum a <strong>linear combination</strong> of said terms. So the above expression is typically referred to as a <em>linear combination</em> of the .$x_i$. That is,
+$$f_1(x_1) + f_2(x_2) + \dots + f_n(x_n) + b_f = g_1(x_1) + g_2(x_2) + \dots + g_n (x_n) + b_g$$</li><li>Now, recall that linear functions with a single scalar input and output can be expressed in a very particular form &ndash; we know that we can write .$f_i(x) = a_i \cdot x$ and .$g_i(x) = a_i &rsquo; \cdot x$, where all the .$a_i$ and .$a_i &lsquo;$ are scalar constants. Substituting, we find that the general form of a linear equation can be rewritten as
+$$a_1x_1 + a_2 x_2 + \dots = a_n x_n + b_f = a_1&rsquo; x_1 + a_2 &rsquo; x_2 + \dots + a_n &rsquo; x_n + b_g$$</li><li>Notice that this expression can be thought of as a “weighted sum” of the .$x_i$, where the weights are the scalar constants .$a_i$. When the weights do not depend on any of the terms (such as when the weights are constants), we call the weighted sum a <strong>linear combination</strong> of said terms. So the above expression is typically referred to as a <em>linear combination</em> of the .$x_i$. That is,
 <blockquote>
-<p>A linear equation is one that equates two linear combinations of the unknowns plus a constant term.</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>Our system will have infinitely many solutions if any two variables are ambiguous</li>
-<li>Our system will have no solutions if we have a row of zeroes followed by a non-zero
+<p>A linear equation is one that equates two linear combinations of the unknowns plus a constant term.</p></blockquote></li></ul></li><li>Our system will have infinitely many solutions if any two variables are ambiguous</li><li>Our system will have no solutions if we have a row of zeroes followed by a non-zero
 <ul>
-<li>That is, .$\begin{bmatrix}0 & 0 & &mldr; & 0 & \text{|} & \alpha\end{bmatrix} \Longrightarrow 0x_1 + 0x_2 + \dots 0x_n = \alpha y$ is clearly impossible (no solutions) for any non-zero .$\alpha$</li>
-</ul>
-</li>
-<li>
-<a href=https://eecs16a.org/hw-practice.html#/set/0>Practice questions</a></li>
-</ul>
-</article>
-<footer class=book-footer>
+<li>That is, .$\begin{bmatrix}0 & 0 & &mldr; & 0 & \text{|} & \alpha\end{bmatrix} \Longrightarrow 0x_1 + 0x_2 + \dots 0x_n = \alpha y$ is clearly impossible (no solutions) for any non-zero .$\alpha$</li></ul></li><li>
+<a href=https://eecs16a.org/hw-practice.html#/set/0>Practice questions</a></li></ul></article><footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/befa6a11878f69cd785820582bdc2c3ba71f65f7 title="Last modified by Max Vogel | February 27, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 27, 2022</span>
+<span>March 4, 2022</span>
 </a>
-</div>
-<div>
+</div><div>
 <a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/0.md target=_blank rel=noopener>
 <img src=/svg/edit.svg class=book-icon alt=Edit>
 <span>Edit this page</span>
 </a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
+</div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+</footer><div class=book-comments>
+</div><label for=menu-control class="hidden book-menu-overlay"></label>
+</div><aside class=book-toc>
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#01-18-course-introduction>01-18: Course Introduction</a></li>
-<li><a href=#01-20-introduction-to-imaging-tomography-and-linear-equations>01-20: Introduction to Imaging, Tomography, and Linear Equations</a>
+<li><a href=#01-18-course-introduction>01-18: Course Introduction</a></li><li><a href=#01-20-introduction-to-imaging-tomography-and-linear-equations>01-20: Introduction to Imaging, Tomography, and Linear Equations</a>
 <ul>
-<li><a href=#system-design>System Design</a></li>
-<li><a href=#linear-algebra>Linear Algebra</a></li>
-<li><a href=#note-1ab-extra>Note 1AB Extra</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+<li><a href=#system-design>System Design</a></li><li><a href=#linear-algebra>Linear Algebra</a></li><li><a href=#note-1ab-extra>Note 1AB Extra</a></li></ul></li></ul></nav></div></aside></main></body></html>

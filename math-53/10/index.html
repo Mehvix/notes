@@ -8,20 +8,18 @@
 <meta property="og:description" content="10.1 Curves Defined by Parametric Equations #   Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time  .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$   For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .$(h,k)$  Likewise, .">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/math-53/10/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-27T02:28:45-08:00">
-<title>10: Parametric Equations and Polar Coordinates | notes.mehvix.com</title>
-<link rel=manifest href=/manifest.json>
+<meta property="article:modified_time" content="2022-03-04T00:21:26-08:00">
+<title>10: Parametric Equations and Polar Coordinates | notes.mehvix.com</title><link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.0d7ea8409a9579bc1f0ffbaee193bd0917ad26b0c0afe18d158ac6dd4139fcf5.js integrity="sha256-DX6oQJqVebwfD/uu4ZO9CRetJrDAr+GNFYrG3UE5/PU=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.2f3e2dacd9fbc076e65d1e180f3eacfbc848ad9527eedc8cd03c45cd5e4879e5.js integrity="sha256-Lz4trNn7wHbmXR4YDz6s+8hIrZUn7tyM0DxFzV5IeeU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
 <script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 <link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
-</head>
-<body dir=ltr>
+</head><body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control>
 <main class="container flex">
@@ -31,13 +29,9 @@
 <h2 class=book-brand>
 <a class="flex align-center" href=/><span>notes.mehvix.com</span>
 </a>
-</h2>
-<div class=book-search>
+</h2><div class=book-search>
 <input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-<ul>
+<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
 <li>
 <input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
 <label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
@@ -46,28 +40,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle>
 <label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
 <a role=button>EECS 16A</a>
@@ -75,25 +60,17 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
 <label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
 <a role=button>Engineering 29</a>
@@ -101,25 +78,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
-</li>
-<li>
-<a href=http://notes.mehvix.com/e-29/5/>Week 5: Forming Processes</a>
-</li>
-</ul>
-</li>
-<li>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a>
+</li></ul></li><li>
 <input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle checked>
 <label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
@@ -127,31 +98,21 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/math-53/10/ class=active>10: Parametric Equations and Polar Coordinates</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
 <label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
@@ -159,52 +120,35 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
-</li>
-<li>
+</li><li>
 <input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
 <label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
 <a role=button>AP Notes</a>
@@ -212,43 +156,29 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
+</li></ul></li></ul><ul>
 <li>
 <a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
 CS61A (Anto's)
 </a>
-</li>
-<li>
+</li><li>
 <a href=# target=_blank rel=noopener>
 —
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://www.mehvix.com target=_blank rel=noopener>
 w³.mehvix.com
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://pass.mehvix.com target=_blank rel=noopener>
 pass.mehvix.com
 </a>
-</li>
-</ul>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
+</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div></aside><div class=book-page>
 <header class=book-header>
 <div class="flex align-center justify-between">
 <label for=menu-control>
@@ -258,174 +188,88 @@ pass.mehvix.com
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
-</div>
-<aside class="hidden clearfix">
+</div><aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
-<li><a href=#101-curves-defined-by-parametric-equations>10.1 Curves Defined by Parametric Equations</a></li>
-<li><a href=#102-calculus-with-parametric-curves>10.2 Calculus with Parametric Curves</a>
+<li><a href=#101-curves-defined-by-parametric-equations>10.1 Curves Defined by Parametric Equations</a></li><li><a href=#102-calculus-with-parametric-curves>10.2 Calculus with Parametric Curves</a>
 <ul>
-<li><a href=#tangents>Tangents</a></li>
-<li><a href=#double-derivative>Double Derivative</a></li>
-<li><a href=#areas>Areas</a></li>
-<li><a href=#arc-length>Arc Length</a></li>
-<li><a href=#surface-area>Surface Area</a></li>
-</ul>
-</li>
-<li><a href=#103-polar-coordinates>10.3 Polar Coordinates</a>
+<li><a href=#tangents>Tangents</a></li><li><a href=#double-derivative>Double Derivative</a></li><li><a href=#areas>Areas</a></li><li><a href=#arc-length>Arc Length</a></li><li><a href=#surface-area>Surface Area</a></li></ul></li><li><a href=#103-polar-coordinates>10.3 Polar Coordinates</a>
 <ul>
-<li><a href=#converting-between-cartesian>Converting between Cartesian</a></li>
-<li><a href=#symmetry>Symmetry</a></li>
-<li><a href=#polar-tangents>Polar Tangents</a></li>
-</ul>
-</li>
-<li><a href=#104-area-and-lengths-in-polar-coordinates>10.4 Area and Lengths in Polar Coordinates</a>
+<li><a href=#converting-between-cartesian>Converting between Cartesian</a></li><li><a href=#symmetry>Symmetry</a></li><li><a href=#polar-tangents>Polar Tangents</a></li></ul></li><li><a href=#104-area-and-lengths-in-polar-coordinates>10.4 Area and Lengths in Polar Coordinates</a>
 <ul>
-<li><a href=#area-of-polar-region>Area of Polar Region</a></li>
-<li><a href=#arc-length-of-polar-curve>Arc Length of Polar Curve</a></li>
-<li><a href=#common-shapes>Common shapes</a>
+<li><a href=#area-of-polar-region>Area of Polar Region</a></li><li><a href=#arc-length-of-polar-curve>Arc Length of Polar Curve</a></li><li><a href=#common-shapes>Common shapes</a>
 <ul>
-<li><a href=#rose>Rose</a></li>
-<li><a href=#cardioid>Cardioid</a></li>
-<li><a href=#limaçon>Limaçon</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=101-curves-defined-by-parametric-equations>
+<li><a href=#rose>Rose</a></li><li><a href=#cardioid>Cardioid</a></li><li><a href=#limaçon>Limaçon</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=101-curves-defined-by-parametric-equations>
 10.1 Curves Defined by Parametric Equations
 <a class=anchor href=#101-curves-defined-by-parametric-equations>#</a>
-</h1>
+</h1><ul>
+<li>Parametric equations are written as .$(f(t), g(t))$</li><li>They define curves (not functions!)</li><li>Time
 <ul>
-<li>Parametric equations are written as .$(f(t), g(t))$</li>
-<li>They define curves (not functions!)</li>
-<li>Time
+<li>.$t \in [t_i, t_f]$</li><li>Initial point: .$\big(f(t_i), g(t_i)\big)$</li><li>Terminal point: .$\big(f(t_f), g(t_f)\big)$</li></ul></li><li>For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle <em>clockwise</em> centered around the point .$(h,k)$
 <ul>
-<li>.$t \in [t_i, t_f]$</li>
-<li>Initial point: .$\big(f(t_i), g(t_i)\big)$</li>
-<li>Terminal point: .$\big(f(t_f), g(t_f)\big)$</li>
-</ul>
-</li>
-<li>For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle <em>clockwise</em> centered around the point .$(h,k)$
-<ul>
-<li>Likewise, .$(r \cdot \cos(t), r \cdot \sin(t))$ is <em>counter clockwise</em></li>
-</ul>
-</li>
-<li>
-<a href=https://www.desmos.com/calculator/ksjcpazwa9>Useful Desmos calculator</a></li>
-<li>If we need to graph an equation in form .$x = g(y)$ , we can use parametric equations .$x = g(t)$ and .$y = t$</li>
-</ul>
-<h1 id=102-calculus-with-parametric-curves>
+<li>Likewise, .$(r \cdot \cos(t), r \cdot \sin(t))$ is <em>counter clockwise</em></li></ul></li><li>
+<a href=https://www.desmos.com/calculator/ksjcpazwa9>Useful Desmos calculator</a></li><li>If we need to graph an equation in form .$x = g(y)$ , we can use parametric equations .$x = g(t)$ and .$y = t$</li></ul><h1 id=102-calculus-with-parametric-curves>
 10.2 Calculus with Parametric Curves
 <a class=anchor href=#102-calculus-with-parametric-curves>#</a>
-</h1>
-<h2 id=tangents>
+</h1><h2 id=tangents>
 Tangents
 <a class=anchor href=#tangents>#</a>
-</h2>
-<ul>
-<li>Given .$x = f(t)$ and .$y = g(t)$ where both .$f$ and .$g$ are differentiable, we can get the tangent line to the curve by finding .$\frac{dy}{dx}$</li>
-<li>We can find .$\frac{dy}{dt}$ using the chain rule:
-$$\frac{dy}{dx} \cdot \frac{dx}{dt}$$</li>
-<li>If .$\frac{dx}{dt} \neq 0$ , then we can solve .$\frac{dy}{dt}$ :
-$$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</li>
-<li>Horizontal tangents exist when .$\frac{dy}{dt}= 0$ (assuming .$\frac{dx}{dt} \neq 0$ )</li>
-<li>Vertical tangents exist when .$\frac{dx}{dt}= 0$ (assuming .$\frac{dy}{dt} \neq 0$ )</li>
-</ul>
-<h2 id=double-derivative>
+</h2><ul>
+<li>Given .$x = f(t)$ and .$y = g(t)$ where both .$f$ and .$g$ are differentiable, we can get the tangent line to the curve by finding .$\frac{dy}{dx}$</li><li>We can find .$\frac{dy}{dt}$ using the chain rule:
+$$\frac{dy}{dx} \cdot \frac{dx}{dt}$$</li><li>If .$\frac{dx}{dt} \neq 0$ , then we can solve .$\frac{dy}{dt}$ :
+$$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$</li><li>Horizontal tangents exist when .$\frac{dy}{dt}= 0$ (assuming .$\frac{dx}{dt} \neq 0$ )</li><li>Vertical tangents exist when .$\frac{dx}{dt}= 0$ (assuming .$\frac{dy}{dt} \neq 0$ )</li></ul><h2 id=double-derivative>
 Double Derivative
 <a class=anchor href=#double-derivative>#</a>
-</h2>
-<p>$$\frac{d^2y}{dx^2} = \frac{d}{dx}\Big(\frac{dy}{dx}\Big) = \frac{d}{dt}\cdot\frac{dt}{dx}\Big(\frac{dy}{dx}\Big) = \frac{\frac{d}{dt}\Big(\frac{dy}{dx}\Big)}{\frac{dx}{dt}}$$</p>
-<h2 id=areas>
+</h2><p>$$\frac{d^2y}{dx^2} = \frac{d}{dx}\Big(\frac{dy}{dx}\Big) = \frac{d}{dt}\cdot\frac{dt}{dx}\Big(\frac{dy}{dx}\Big) = \frac{\frac{d}{dt}\Big(\frac{dy}{dx}\Big)}{\frac{dx}{dt}}$$</p><h2 id=areas>
 Areas
 <a class=anchor href=#areas>#</a>
-</h2>
-<p>Given .$x = f(t)$ and .$y = g(t)$ over .$t \in (\alpha, \beta)$ , we can calculate the area between .$C$ and the .$x$ -axis with the following equation
-$$A = \int_\alpha^\beta f'(t) \cdot g(t)\ dt $$
+</h2><p>Given .$x = f(t)$ and .$y = g(t)$ over .$t \in (\alpha, \beta)$ , we can calculate the area between .$C$ and the .$x$ -axis with the following equation
+$$A = \int_\alpha^\beta f&rsquo;(t) \cdot g(t)\ dt $$
 Likewise, between .$C$ and the .$y$-axis we derive the parametric equation for .$y$ :
-$$A = \int_\alpha^\beta f(t) \cdot g'(t)\ dt $$</p>
-<h2 id=arc-length>
+$$A = \int_\alpha^\beta f(t) \cdot g&rsquo;(t)\ dt $$</p><h2 id=arc-length>
 Arc Length
 <a class=anchor href=#arc-length>#</a>
-</h2>
-<p>To find length .$L$ of curve .$C$ given in form .$x = f(t)$ and .$y = g(t)$ on .$t \in [\alpha, \beta]$ where .$\frac{dx}{dt} = f'(t) > 0$ (meaning that .$C$ is traversed once from left to right as .$t$ increases from .$\alpha$ to .$\beta$ ) and where .$f'$ and .$g'$ are continuous on .$[\alpha, \beta]$ :
+</h2><p>To find length .$L$ of curve .$C$ given in form .$x = f(t)$ and .$y = g(t)$ on .$t \in [\alpha, \beta]$ where .$\frac{dx}{dt} = f&rsquo;(t) > 0$ (meaning that .$C$ is traversed once from left to right as .$t$ increases from .$\alpha$ to .$\beta$ ) and where .$f&rsquo;$ and .$g&rsquo;$ are continuous on .$[\alpha, \beta]$ :
 $$L = \int_\alpha^\beta \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$
-Note that trig functions (.$\sin, \cos, \text{etc.})$ ) loop every .$\frac{\pi}{2}$ because of the formula finds the absolute value.</p>
-<h2 id=surface-area>
+Note that trig functions (.$\sin, \cos, \text{etc.})$ ) loop every .$\frac{\pi}{2}$ because of the formula finds the absolute value.</p><h2 id=surface-area>
 Surface Area
 <a class=anchor href=#surface-area>#</a>
-</h2>
-<p>Suppose the curve .$C$ given the equations .$x = f(t)$ and .$y = g(t)$ on .$\ t \in [\alpha, \beta]$ where .$f'$ and .$g'$ are continuous, and .$g(t) > 0$ , is rotated about the .$x$ -axis. If .$C$ is traversed exactly once, then the area of the resulting surface is given by
+</h2><p>Suppose the curve .$C$ given the equations .$x = f(t)$ and .$y = g(t)$ on .$\ t \in [\alpha, \beta]$ where .$f&rsquo;$ and .$g&rsquo;$ are continuous, and .$g(t) > 0$ , is rotated about the .$x$ -axis. If .$C$ is traversed exactly once, then the area of the resulting surface is given by
 $$S = 2\pi \int_\alpha^\beta y(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$
 Similarly, if instead .$C$ is rotated about the .$y$ -axis instead we use the following:
-$$S = 2\pi \int_\alpha^\beta x(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p>
-<h1 id=103-polar-coordinates>
+$$S = 2\pi \int_\alpha^\beta x(t) \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\ dt$$</p><h1 id=103-polar-coordinates>
 10.3 Polar Coordinates
 <a class=anchor href=#103-polar-coordinates>#</a>
-</h1>
-<ul>
-<li>Pole = origin; labeled .$O$</li>
-<li>Polar axis = line through .$O$</li>
-<li>Polar coordinates = .$r, \theta$</li>
-<li>.$r$ is distance from point .$P$ and .$O$</li>
-<li>.$\theta$ is the angle between the polar axis and the line .$OP$</li>
-<li>.$(r, \theta) = (-r, \theta + \pi)$</li>
-</ul>
-<h2 id=converting-between-cartesian>
+</h1><ul>
+<li>Pole = origin; labeled .$O$</li><li>Polar axis = line through .$O$</li><li>Polar coordinates = .$r, \theta$</li><li>.$r$ is distance from point .$P$ and .$O$</li><li>.$\theta$ is the angle between the polar axis and the line .$OP$</li><li>.$(r, \theta) = (-r, \theta + \pi)$</li></ul><h2 id=converting-between-cartesian>
 Converting between Cartesian
 <a class=anchor href=#converting-between-cartesian>#</a>
-</h2>
-<ul>
-<li>.$x = r\cdot \cos\theta$</li>
-<li>.$y = r\cdot \sin\theta$</li>
-<li>.$r^2 = x^2 + y^2$</li>
-<li>.$\tan\theta = \frac{y}{x}$</li>
-</ul>
-<h2 id=symmetry>
+</h2><ul>
+<li>.$x = r\cdot \cos\theta$</li><li>.$y = r\cdot \sin\theta$</li><li>.$r^2 = x^2 + y^2$</li><li>.$\tan\theta = \frac{y}{x}$</li></ul><h2 id=symmetry>
 Symmetry
 <a class=anchor href=#symmetry>#</a>
-</h2>
-<ul>
-<li>If polar equation is the same when .$\theta = -\theta$ , the curve is symmetric about the polar axis</li>
-<li>If polar equation is the same when .$r = -r$ or when .$\theta = \theta + \pi$ , the curve is symmetric about the pole</li>
-<li>If polar equation is the same when .$\theta = \pi-\theta$ , then the curve is symmetric about the vertical line .$\theta = \pi/2$</li>
-</ul>
-<h2 id=polar-tangents>
+</h2><ul>
+<li>If polar equation is the same when .$\theta = -\theta$ , the curve is symmetric about the polar axis</li><li>If polar equation is the same when .$r = -r$ or when .$\theta = \theta + \pi$ , the curve is symmetric about the pole</li><li>If polar equation is the same when .$\theta = \pi-\theta$ , then the curve is symmetric about the vertical line .$\theta = \pi/2$</li></ul><h2 id=polar-tangents>
 Polar Tangents
 <a class=anchor href=#polar-tangents>#</a>
-</h2>
-<p>Knowing that
+</h2><p>Knowing that
 $$x = r \cdot \cos\theta = f(\theta)\cdot\cos\theta$$
 $$y = r \cdot \sin\theta = g(\theta)\cdot\sin\theta$$
 We can use the product rule to find the tangent equation
-$$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr}{d\theta} \sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r \sin\theta} $$</p>
-<ul>
-<li>Horizontal Tangent: .$\frac{dy}{d\theta} = 0$ (when .$\frac{dx}{d\theta} \neq 0$ )</li>
-<li>Vertical Tangent: .$\frac{dx}{d\theta} = 0$ (when .$\frac{dy}{d\theta} \neq 0$ )</li>
-<li>Notice that for .$r = 0$ , then .$\frac{dy}{dx} = \tan\theta$ if .$\frac{dr}{d\theta} \neq 0$
+$$\frac{dy}{dx} = \frac{\frac{dy}{d\theta}}{\frac{dx}{d\theta}} = \frac{\frac{dr}{d\theta} \sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r \sin\theta} $$</p><ul>
+<li>Horizontal Tangent: .$\frac{dy}{d\theta} = 0$ (when .$\frac{dx}{d\theta} \neq 0$ )</li><li>Vertical Tangent: .$\frac{dx}{d\theta} = 0$ (when .$\frac{dy}{d\theta} \neq 0$ )</li><li>Notice that for .$r = 0$ , then .$\frac{dy}{dx} = \tan\theta$ if .$\frac{dr}{d\theta} \neq 0$
 We can then write the full formula:
-$$y-y_0 = \frac{dy}{dx}\Big(\theta\Big)(x-x_0)$$</li>
-</ul>
-<h1 id=104-area-and-lengths-in-polar-coordinates>
+$$y-y_0 = \frac{dy}{dx}\Big(\theta\Big)(x-x_0)$$</li></ul><h1 id=104-area-and-lengths-in-polar-coordinates>
 10.4 Area and Lengths in Polar Coordinates
 <a class=anchor href=#104-area-and-lengths-in-polar-coordinates>#</a>
-</h1>
-<h2 id=area-of-polar-region>
+</h1><h2 id=area-of-polar-region>
 Area of Polar Region
 <a class=anchor href=#area-of-polar-region>#</a>
-</h2>
-<p>Knowing that the area of a &ldquo;slice&rdquo; can be written as .$A = \frac{1}{2}r^2\theta$ , we can expand this to the case where the curve is a function .$r = f(\theta)$ :
-$$A = \int_a^b \frac{1}{2} r^2\ d\theta$$</p>
-<h2 id=arc-length-of-polar-curve>
+</h2><p>Knowing that the area of a &ldquo;slice&rdquo; can be written as .$A = \frac{1}{2}r^2\theta$ , we can expand this to the case where the curve is a function .$r = f(\theta)$ :
+$$A = \int_a^b \frac{1}{2} r^2\ d\theta$$</p><h2 id=arc-length-of-polar-curve>
 Arc Length of Polar Curve
 <a class=anchor href=#arc-length-of-polar-curve>#</a>
-</h2>
-<p>Given a polar curve .$r = f(\theta), a \leq \theta \leq b$ , we can re-write our base equations as
+</h2><p>Given a polar curve .$r = f(\theta), a \leq \theta \leq b$ , we can re-write our base equations as
 $$x = r\cos\theta = f(\theta)\cos\theta$$
 $$y = r\sin\theta = f(\theta)\sin\theta$$
 Thus we can use the product rule when differentiating to get
@@ -433,105 +277,53 @@ $$\frac{dx}{d\theta} = \frac{dr}{d\theta}\cos\theta - r\sin\theta$$
 $$\frac{dy}{d\theta} = \frac{dr}{d\theta}\sin\theta + r\cos\theta$$
 and using .$\cos^2\theta + \sin^2\theta = 1$ , we have
 $$\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2 = [\text{ugly stuff, see page 711}] = \Big(\frac{dr}{d\theta}\Big)^2 + r^2$$
-so when .$f'$ is continuous, we can write the arc length equation as
-$$L = \int_a^b \sqrt{\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2} d\theta = \int_a^b \sqrt{r^2 + \Big(\frac{dr}{d\theta}\Big)^2}d\theta$$</p>
-<h2 id=common-shapes>
+so when .$f&rsquo;$ is continuous, we can write the arc length equation as
+$$L = \int_a^b \sqrt{\Big(\frac{dx}{d\theta}\Big)^2 + \Big(\frac{dy}{d\theta}\Big)^2} d\theta = \int_a^b \sqrt{r^2 + \Big(\frac{dr}{d\theta}\Big)^2}d\theta$$</p><h2 id=common-shapes>
 Common shapes
 <a class=anchor href=#common-shapes>#</a>
-</h2>
-<h3 id=rose>
+</h2><h3 id=rose>
 Rose
 <a class=anchor href=#rose>#</a>
-</h3>
-<p>
+</h3><p>
 <img src=/docs/math-53/imgs/rose.gif alt=Rose>
-$$a\cdot[\sin \text{or} \cos](k\cdot\theta)$$</p>
-<ul>
-<li>.$r$ = .$a$</li>
-<li>.$\sin$ = Symmetry over .$\theta = 0$</li>
-<li>.$\cos$ = Symmetry over .$\theta = \pi/2$</li>
-<li>If .$k$ is even, rose will have .$2k$ petals.</li>
-<li>If .$k$ is odd, rose will have .$k$ petals.</li>
-<li>.$T = 2\pi/k$ is range of a petal&rsquo;s cycle</li>
-<li>.$2\pi/T = k$ cycles displayed in graph</li>
-<li>.$A_{\text{petal}} = \frac{\pi a^2}{4k}$</li>
-</ul>
-<h3 id=cardioid>
+$$a\cdot[\sin \text{or} \cos](k\cdot\theta)$$</p><ul>
+<li>.$r$ = .$a$</li><li>.$\sin$ = Symmetry over .$\theta = 0$</li><li>.$\cos$ = Symmetry over .$\theta = \pi/2$</li><li>If .$k$ is even, rose will have .$2k$ petals.</li><li>If .$k$ is odd, rose will have .$k$ petals.</li><li>.$T = 2\pi/k$ is range of a petal&rsquo;s cycle</li><li>.$2\pi/T = k$ cycles displayed in graph</li><li>.$A_{\text{petal}} = \frac{\pi a^2}{4k}$</li></ul><h3 id=cardioid>
 Cardioid
 <a class=anchor href=#cardioid>#</a>
-</h3>
-<p>
+</h3><p>
 <img src=/docs/math-53/imgs/cardioid.jpg alt=Cardioid>
 $$r(\theta) = a(1-\cos\theta)$$
 $$A = \frac{3}{2}\pi a^2$$
-$$L = 8a$$</p>
-<h3 id=limaçon>
+$$L = 8a$$</p><h3 id=limaçon>
 Limaçon
 <a class=anchor href=#lima%c3%a7on>#</a>
-</h3>
-<p>
+</h3><p>
 <img src=/docs/math-53/imgs/limacon.gif alt=Limaçon>
 $$r = b+a\cos\theta$$
-<a href=https://mathworld.wolfram.com/Limacon.html>Other equations I&rsquo;m too lazy to type out</a></p>
-</article>
-<footer class=book-footer>
+<a href=https://mathworld.wolfram.com/Limacon.html>Other equations I&rsquo;m too lazy to type out</a></p></article><footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/befa6a11878f69cd785820582bdc2c3ba71f65f7 title="Last modified by Max Vogel | February 27, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 27, 2022</span>
+<span>March 4, 2022</span>
 </a>
-</div>
-<div>
+</div><div>
 <a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/math-53/10.md target=_blank rel=noopener>
 <img src=/svg/edit.svg class=book-icon alt=Edit>
 <span>Edit this page</span>
 </a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
+</div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+</footer><div class=book-comments>
+</div><label for=menu-control class="hidden book-menu-overlay"></label>
+</div><aside class=book-toc>
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#101-curves-defined-by-parametric-equations>10.1 Curves Defined by Parametric Equations</a></li>
-<li><a href=#102-calculus-with-parametric-curves>10.2 Calculus with Parametric Curves</a>
+<li><a href=#101-curves-defined-by-parametric-equations>10.1 Curves Defined by Parametric Equations</a></li><li><a href=#102-calculus-with-parametric-curves>10.2 Calculus with Parametric Curves</a>
 <ul>
-<li><a href=#tangents>Tangents</a></li>
-<li><a href=#double-derivative>Double Derivative</a></li>
-<li><a href=#areas>Areas</a></li>
-<li><a href=#arc-length>Arc Length</a></li>
-<li><a href=#surface-area>Surface Area</a></li>
-</ul>
-</li>
-<li><a href=#103-polar-coordinates>10.3 Polar Coordinates</a>
+<li><a href=#tangents>Tangents</a></li><li><a href=#double-derivative>Double Derivative</a></li><li><a href=#areas>Areas</a></li><li><a href=#arc-length>Arc Length</a></li><li><a href=#surface-area>Surface Area</a></li></ul></li><li><a href=#103-polar-coordinates>10.3 Polar Coordinates</a>
 <ul>
-<li><a href=#converting-between-cartesian>Converting between Cartesian</a></li>
-<li><a href=#symmetry>Symmetry</a></li>
-<li><a href=#polar-tangents>Polar Tangents</a></li>
-</ul>
-</li>
-<li><a href=#104-area-and-lengths-in-polar-coordinates>10.4 Area and Lengths in Polar Coordinates</a>
+<li><a href=#converting-between-cartesian>Converting between Cartesian</a></li><li><a href=#symmetry>Symmetry</a></li><li><a href=#polar-tangents>Polar Tangents</a></li></ul></li><li><a href=#104-area-and-lengths-in-polar-coordinates>10.4 Area and Lengths in Polar Coordinates</a>
 <ul>
-<li><a href=#area-of-polar-region>Area of Polar Region</a></li>
-<li><a href=#arc-length-of-polar-curve>Arc Length of Polar Curve</a></li>
-<li><a href=#common-shapes>Common shapes</a>
+<li><a href=#area-of-polar-region>Area of Polar Region</a></li><li><a href=#arc-length-of-polar-curve>Arc Length of Polar Curve</a></li><li><a href=#common-shapes>Common shapes</a>
 <ul>
-<li><a href=#rose>Rose</a></li>
-<li><a href=#cardioid>Cardioid</a></li>
-<li><a href=#limaçon>Limaçon</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+<li><a href=#rose>Rose</a></li><li><a href=#cardioid>Cardioid</a></li><li><a href=#limaçon>Limaçon</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

@@ -8,20 +8,18 @@
 <meta property="og:description" content="02-01: Linear (in)dependance, Matrix Transformations #    Slides  Note 3   Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://notes.mehvix.com/eecs-16a/2/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-27T02:28:45-08:00">
-<title>Week 2: (In)dependence & Circuit Analysis | notes.mehvix.com</title>
-<link rel=manifest href=/manifest.json>
+<meta property="article:modified_time" content="2022-03-04T00:21:26-08:00">
+<title>Week 2: (In)dependence & Circuit Analysis | notes.mehvix.com</title><link rel=manifest href=/manifest.json>
 <link rel=icon href=/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.0d7ea8409a9579bc1f0ffbaee193bd0917ad26b0c0afe18d158ac6dd4139fcf5.js integrity="sha256-DX6oQJqVebwfD/uu4ZO9CRetJrDAr+GNFYrG3UE5/PU=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.2f3e2dacd9fbc076e65d1e180f3eacfbc848ad9527eedc8cd03c45cd5e4879e5.js integrity="sha256-Lz4trNn7wHbmXR4YDz6s+8hIrZUn7tyM0DxFzV5IeeU=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
 <script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
 <script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
 <link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
-</head>
-<body dir=ltr>
+</head><body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control>
 <main class="container flex">
@@ -31,13 +29,9 @@
 <h2 class=book-brand>
 <a class="flex align-center" href=/><span>notes.mehvix.com</span>
 </a>
-</h2>
-<div class=book-search>
+</h2><div class=book-search>
 <input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
-</div>
-<ul>
+<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
 <li>
 <input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
 <label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
@@ -46,28 +40,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
 <label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
 <a role=button>EECS 16A</a>
@@ -75,25 +60,17 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/2/ class=active>Week 2: (In)dependence & Circuit Analysis</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
 <label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
 <a role=button>Engineering 29</a>
@@ -101,25 +78,19 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
-</li>
-<li>
-<a href=http://notes.mehvix.com/e-29/5/>Week 5: Forming Processes</a>
-</li>
-</ul>
-</li>
-<li>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a>
+</li><li>
+<a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a>
+</li></ul></li><li>
 <input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
 <label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
@@ -127,31 +98,21 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
 <label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
 <a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
@@ -159,52 +120,35 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
-</li>
-</ul>
-</li>
-<li>
+</li></ul></li><li>
 <a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
-</li>
-<li>
+</li><li>
 <input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
 <label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
 <a role=button>AP Notes</a>
@@ -212,43 +156,29 @@
 <ul>
 <li>
 <a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
-</li>
-<li>
+</li><li>
 <a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
+</li></ul></li></ul><ul>
 <li>
 <a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
 CS61A (Anto's)
 </a>
-</li>
-<li>
+</li><li>
 <a href=# target=_blank rel=noopener>
 —
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://www.mehvix.com target=_blank rel=noopener>
 w³.mehvix.com
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://pass.mehvix.com target=_blank rel=noopener>
 pass.mehvix.com
 </a>
-</li>
-</ul>
-</nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div>
-</aside>
-<div class=book-page>
+</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div></aside><div class=book-page>
 <header class=book-header>
 <div class="flex align-center justify-between">
 <label for=menu-control>
@@ -258,667 +188,343 @@ pass.mehvix.com
 <label for=toc-control>
 <img src=/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
-</div>
-<aside class="hidden clearfix">
+</div><aside class="hidden clearfix">
 <nav id=TableOfContents>
 <ul>
 <li><a href=#02-01-linear-independance-matrix-transformations>02-01: Linear (in)dependance, Matrix Transformations</a>
 <ul>
-<li><a href=#linear-dependence>Linear Dependence</a></li>
-<li><a href=#linear-independence>Linear Independence</a>
+<li><a href=#linear-dependence>Linear Dependence</a></li><li><a href=#linear-independence>Linear Independence</a>
 <ul>
-<li><a href=#systems-of-linear-equations>Systems of Linear Equations</a></li>
-</ul>
-</li>
-<li><a href=#row-perspective>Row Perspective</a></li>
-<li><a href=#span>Span</a></li>
-</ul>
-</li>
-<li><a href=#02-03-intro-to-circuit-analysis>02-03: Intro to Circuit Analysis</a>
+<li><a href=#systems-of-linear-equations>Systems of Linear Equations</a></li></ul></li><li><a href=#row-perspective>Row Perspective</a></li><li><a href=#span>Span</a></li></ul></li><li><a href=#02-03-intro-to-circuit-analysis>02-03: Intro to Circuit Analysis</a>
 <ul>
-<li><a href=#tiny-bit-of-solid-state-physics>Tiny Bit of Solid-State Physics</a></li>
-<li><a href=#electrical-quantities>Electrical Quantities</a>
+<li><a href=#tiny-bit-of-solid-state-physics>Tiny Bit of Solid-State Physics</a></li><li><a href=#electrical-quantities>Electrical Quantities</a>
 <ul>
-<li><a href=#basic-circuit-elements>Basic Circuit Elements</a></li>
-</ul>
-</li>
-<li><a href=#rules-for-circuit-analysis>Rules for Circuit Analysis</a>
+<li><a href=#basic-circuit-elements>Basic Circuit Elements</a></li></ul></li><li><a href=#rules-for-circuit-analysis>Rules for Circuit Analysis</a>
 <ul>
-<li><a href=#kirchhoffs-current-law-kcl>Kirchhoff’s Current Law (KCL)</a></li>
-<li><a href=#kirchhoffs-voltage-law-kvl>Kirchhoff’s Voltage Law (KVL)</a></li>
-<li><a href=#ohms-law-and-resistors>Ohm’s Law and Resistors</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-</aside>
-</header>
-<article class=markdown><h1 id=02-01-linear-independance-matrix-transformations>
+<li><a href=#kirchhoffs-current-law-kcl>Kirchhoff’s Current Law (KCL)</a></li><li><a href=#kirchhoffs-voltage-law-kvl>Kirchhoff’s Voltage Law (KVL)</a></li><li><a href=#ohms-law-and-resistors>Ohm’s Law and Resistors</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=02-01-linear-independance-matrix-transformations>
 02-01: Linear (in)dependance, Matrix Transformations
 <a class=anchor href=#02-01-linear-independance-matrix-transformations>#</a>
-</h1>
-<ul>
+</h1><ul>
 <li>
-<a href=https://eecs16a.org/lecture/Lecture1B_Slides.pdf>Slides</a></li>
-<li>
-<a href=https://eecs16a.org/lecture/Note3.pdf>Note 3</a></li>
-</ul>
-<blockquote>
-<p>Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable. However, will taking any 9 measurements guarantee that we can find a solution? Answering this question requires an understanding of linear dependence. In this note, we will define linear dependence (and independence), and take a look at what it implies for systems of linear equations.</p>
-</blockquote>
-<hr>
+<a href=https://eecs16a.org/lecture/Lecture1B_Slides.pdf>Slides</a></li><li>
+<a href=https://eecs16a.org/lecture/Note3.pdf>Note 3</a></li></ul><blockquote>
+<p>Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable. However, will taking any 9 measurements guarantee that we can find a solution? Answering this question requires an understanding of linear dependence. In this note, we will define linear dependence (and independence), and take a look at what it implies for systems of linear equations.</p></blockquote><hr>
 <h2 id=linear-dependence>
 Linear Dependence
 <a class=anchor href=#linear-dependence>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li><strong>Linear dependence</strong> is a very useful concept that is often used to characterize the “redundancy” of information in real world applications.
 <ul>
-<li>Closely tied to the idea of free and basic variables as we’ve already seen</li>
-</ul>
-</li>
-<li>We will give three (equivalent) definitions of linear dependence:
+<li>Closely tied to the idea of free and basic variables as we’ve already seen</li></ul></li><li>We will give three (equivalent) definitions of linear dependence:
 <ol>
-<li>A set of vectors .$\{\vec v_1, \dots \vec v_n \}$ is linearly dependent if there exists scalars .$\alpha_1, \dots, \alpha_n$ such that .$\alpha_1 \vec v_1 + \dots + \alpha_n \vec v_n = \vec 0$ and not all .$\alpha_i$ are equal to zero. This combination of all-zero scalars has a special name: the &ldquo;trivial solution.&rdquo;</li>
-<li>A set of vectors .$\{\vec v_1, \dots \vec v_n \}$ is linearly dependent if there exists scalars .$\alpha_1, \dots, \alpha_n$ and an index .$i$ such that .$\vec v_i = \sum_{j\neq i} \alpha_j \vec v_j$. In other words, a set of vectors is linearly dependent if one of the vectors could be written as a linear combination of the rest of the vectors</li>
-<li>A set of vectors is either linearly dependent or linearly independent. More specifically, consider the sum in the first definition. If there is a solution to satisfy this equation other than to make all the scalars .$\alpha_1 = \dots = \alpha_n = 0$, (that is, a nontrivial solution) then the vectors are linearly dependent.</li>
-</ol>
-</li>
-<li>Why three (equivalent) definitions? Because each is useful in different settings.
+<li>A set of vectors .$\{\vec v_1, \dots \vec v_n \}$ is linearly dependent if there exists scalars .$\alpha_1, \dots, \alpha_n$ such that .$\alpha_1 \vec v_1 + \dots + \alpha_n \vec v_n = \vec 0$ and not all .$\alpha_i$ are equal to zero. This combination of all-zero scalars has a special name: the &ldquo;trivial solution.&rdquo;</li><li>A set of vectors .$\{\vec v_1, \dots \vec v_n \}$ is linearly dependent if there exists scalars .$\alpha_1, \dots, \alpha_n$ and an index .$i$ such that .$\vec v_i = \sum_{j\neq i} \alpha_j \vec v_j$. In other words, a set of vectors is linearly dependent if one of the vectors could be written as a linear combination of the rest of the vectors</li><li>A set of vectors is either linearly dependent or linearly independent. More specifically, consider the sum in the first definition. If there is a solution to satisfy this equation other than to make all the scalars .$\alpha_1 = \dots = \alpha_n = 0$, (that is, a nontrivial solution) then the vectors are linearly dependent.</li></ol></li><li>Why three (equivalent) definitions? Because each is useful in different settings.
 <ul>
-<li>It is often easier mathematically to show linear dependence with definition (1) since we don’t need to try to “single out” a vector to get started with the proof.</li>
-<li>(2) gives us a more intuitive way to talk about redundancy. If a vector can be constructed from the rest of the vectors, then this vector does not contribute any information that is not already captured by the other vectors.</li>
-</ul>
-</li>
-<li>
-<a href="https://eecs16a.org/lecture/Note3.pdf#page=2">Proof of equivalency</a></li>
-</ul>
-<h2 id=linear-independence>
+<li>It is often easier mathematically to show linear dependence with definition (1) since we don’t need to try to “single out” a vector to get started with the proof.</li><li>(2) gives us a more intuitive way to talk about redundancy. If a vector can be constructed from the rest of the vectors, then this vector does not contribute any information that is not already captured by the other vectors.</li></ul></li><li>
+<a href="https://eecs16a.org/lecture/Note3.pdf#page=2">Proof of equivalency</a></li></ul><h2 id=linear-independence>
 Linear Independence
 <a class=anchor href=#linear-independence>#</a>
-</h2>
-<ol>
+</h2><ol>
 <li>From the first definition of linear dependence we can deduce that a set of vectors .$\{\vec v_1, \dots, \vec v_n \}$ is linearly independent if .$\alpha_1 \vec v_1 + \dots + \alpha_n \vec v_n = \vec 0$ implies .$\alpha_1 = \dots = \alpha_n = 0 $
 <ul>
-<li>A set of vectors is linearly independent if it is not linearly dependent.</li>
-<li>E.x. any two vectors that are multiples of one another are dependent</li>
-</ul>
-</li>
-</ol>
-<h3 id=systems-of-linear-equations>
+<li>A set of vectors is linearly independent if it is not linearly dependent.</li><li>E.x. any two vectors that are multiples of one another are dependent</li></ul></li></ol><h3 id=systems-of-linear-equations>
 Systems of Linear Equations
 <a class=anchor href=#systems-of-linear-equations>#</a>
-</h3>
-<ul>
-<li>Recall that a system of linear equations can be written in matrix-vector form as .$A\vec x = \vec b$, where .$A$ is a matrix of variable coefficients, .$\vec x$ is a vector of variables, and .$\vec b$ is a vector of values that these weighted sums must equal. We will show that just looking at the columns or rows of the matrix .$A$ can help tell us about the solutions to .$A\vec x = \vec b$.</li>
-</ul>
-<h4 id=theorem-31>
+</h3><ul>
+<li>Recall that a system of linear equations can be written in matrix-vector form as .$A\vec x = \vec b$, where .$A$ is a matrix of variable coefficients, .$\vec x$ is a vector of variables, and .$\vec b$ is a vector of values that these weighted sums must equal. We will show that just looking at the columns or rows of the matrix .$A$ can help tell us about the solutions to .$A\vec x = \vec b$.</li></ul><h4 id=theorem-31>
 Theorem 3.1
 <a class=anchor href=#theorem-31>#</a>
-</h4>
-<ul>
+</h4><ul>
 <li>If the system of linear equations .$A\vec x = \vec b$. has an <strong>infinite number of solutions</strong>, then the columns of .$A$ are <strong>linearly dependent</strong>
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>If the system has infinite number of solutions, it must have at least two distinct solutions .$\vec x_1, \vec x_2$ which must satisfy</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>If the system has infinite number of solutions, it must have at least two distinct solutions .$\vec x_1, \vec x_2$ which must satisfy</li></ul></div><div class="flex-even markdown-inner">
 <p>$$A\vec x_1 = \vec b$$
 $$A\vec x_2 = \vec b$$
-</div>
-</div>
-<div class="book-columns flex flex-wrap">
+</div></div><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>Subtracting the first equation from the second equation, we have</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>Subtracting the first equation from the second equation, we have</li></ul></div><div class="flex-even markdown-inner">
 <p>$$A (\vec x_2 - \vec x_1) = \vec 0$$
-</div>
-</div>
-<div class="book-columns flex flex-wrap">
+</div></div><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>Define alpha as &mldr;<br></li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>Define alpha as &mldr;<br></li></ul></div><div class="flex-even markdown-inner">
 <p>$$\vec \alpha = \begin{bmatrix}
 \alpha_1 \\
 \vdots \\
 \alpha_n \\
 \end{bmatrix} = \vec x_2 - \vec x_1$$
-</div>
-</div>
-<ul>
+</div></div><ul>
 <li>Because .$\vec x_1, \vec x_n$ are distinct, not all .$\alpha_i$&rsquo;s are zero. Let the columns of .$A$ be .$\vec a_1, \dots \vec a_n$. Then, .$A \vec \alpha = \sum^n_{i=1} \alpha_i \vec a_i = \vec 0$. By definition, the columns of .$A$ are linearly dependent.
 <ul>
 <li>The sum term says that, in other words, matrix-vector multiplication is a linear combination of columns:
-<img src=/docs/eecs-16a/2/mmsum.png alt></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id=theorem-32>
+<img src=/docs/eecs-16a/2/mmsum.png alt></li></ul></li></ul></li></ul><h4 id=theorem-32>
 Theorem 3.2
 <a class=anchor href=#theorem-32>#</a>
-</h4>
-<ul>
+</h4><ul>
 <li>
 <p>If the columns of .$A$ in the system of linear equations .$A\vec x = \vec b$ are <strong>linearly dependent</strong>, then the system <strong>does not have a unique solution</strong>.
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <br>
 <ul>
-<li>Start by assuming we have a matrix A with <em>linearly dependent columns</em></li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>Start by assuming we have a matrix A with <em>linearly dependent columns</em></li></ul></div><div class="flex-even markdown-inner">
 <p>$$A = \begin{bmatrix}
 | & | & & | \\
 \vec a_1 & \vec a_2 & \dots & \vec a_n \\
 | & | & & | \\
 \end{bmatrix}$$
-</div>
-</div>
-<div class="book-columns flex flex-wrap">
+</div></div><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>By the definition of linear dependence, there exist scalars .$\alpha_1, \dots, \alpha_n$ such that .$\alpha_1\vec a_1 + \dots + \alpha_n \vec a_n = \vec 0$ where not all of the .$\alpha_i$’s are zero. We can put these αi’s in a vector:</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>By the definition of linear dependence, there exist scalars .$\alpha_1, \dots, \alpha_n$ such that .$\alpha_1\vec a_1 + \dots + \alpha_n \vec a_n = \vec 0$ where not all of the .$\alpha_i$’s are zero. We can put these αi’s in a vector:</li></ul></div><div class="flex-even markdown-inner">
 <p>$$\vec \alpha = \begin{bmatrix}
 \alpha_1 \\
 \vdots \\
 \alpha_n \\
 \end{bmatrix}$$
-</div>
-</div>
-<div class="book-columns flex flex-wrap">
+</div></div><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <br>
 <ul>
-<li>By the definition of matrix-vector multiplication, we can compactly write the expression above:</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>By the definition of matrix-vector multiplication, we can compactly write the expression above:</li></ul></div><div class="flex-even markdown-inner">
 <p>$$A\vec \alpha = \vec 0$$
 $$\text{where } \vec \alpha \neq \vec 0$$
-</div>
-</div>
-</p>
-<ul>
+</div></div></p><ul>
 <li>Recall that we are trying to show that the system of equations .$A\vec x = \vec b$ does not have a unique solution. We know that systems of equations can have either zero, one, or infinite solutions.
 <ul>
-<li>If our system of equations has zero solutions, then it cannot have a unique solution, so we don’t need to consider this case.</li>
-</ul>
-</li>
-</ul>
-<div class="book-columns flex flex-wrap">
+<li>If our system of equations has zero solutions, then it cannot have a unique solution, so we don’t need to consider this case.</li></ul></li></ul><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
 <li>Now let’s consider the case where we have at least one solution, .$\vec x$:
 <ul>
-<li>Therefore, .$\vec x + \vec \alpha$ is also a solution to the system of equations! Since both .$\vec x$ and .$\vec x + \vec \alpha$ are solutions, and .$\vec \alpha \neq \vec 0$, the system has more than one solution. We’ve now proven the theorem.</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>Therefore, .$\vec x + \vec \alpha$ is also a solution to the system of equations! Since both .$\vec x$ and .$\vec x + \vec \alpha$ are solutions, and .$\vec \alpha \neq \vec 0$, the system has more than one solution. We’ve now proven the theorem.</li></ul></li></ul></div><div class="flex-even markdown-inner">
 <p>$$A \vec x = \vec b$$
 $$A \vec x + \vec 0= \vec b$$
 $$A \vec x + A \vec \alpha = \vec b$$
 $$A (\vec x + \alpha) = \vec b$$
-</div>
-</div>
-</li>
-<li>
-<p>Note that we can add any multiple of .$\alpha$ to .$\vec x$ and it will still be a solution – therefore, if there is at least one solution to the system and the columns of .$A$ are linearly dependent, then there are infinite solutions.</p>
-<ul>
+</div></div></li><li>
+<p>Note that we can add any multiple of .$\alpha$ to .$\vec x$ and it will still be a solution – therefore, if there is at least one solution to the system and the columns of .$A$ are linearly dependent, then there are infinite solutions.</p><ul>
 <li>Intuitively, in an experiment, each column in matrix .$A$ represents the influence of each variable .$x_i$ on the measurements. If the columns are linearly dependent, this means that some of the variables influence the measurement in the same way, and therefore cannot be disambiguated.
-<a href="https://eecs16a.org/lecture/Note3.pdf#page=5">See page five for good example</a>.</li>
-</ul>
-</li>
-</ul>
-<hr>
+<a href="https://eecs16a.org/lecture/Note3.pdf#page=5">See page five for good example</a>.</li></ul></li></ul><hr>
 <h4 id=implications>
 Implications:
 <a class=anchor href=#implications>#</a>
-</h4>
-<blockquote>
-<p>This result has important implications to the design of engineering experiments. Often times, we can’t directly measure the values of the variables we’re interested in. However, we can measure the total weighted contribution of each variable. The hope is that we can fully recover each variable by taking several of such measurements. Now we can ask: “What is the minimum number of measurements we need to fully recover the solution?” and “How do we design our experiment so that we can fully recover our solution with the minimum number of measurements?”</p>
-</blockquote>
-<blockquote>
+</h4><blockquote>
+<p>This result has important implications to the design of engineering experiments. Often times, we can’t directly measure the values of the variables we’re interested in. However, we can measure the total weighted contribution of each variable. The hope is that we can fully recover each variable by taking several of such measurements. Now we can ask: “What is the minimum number of measurements we need to fully recover the solution?” and “How do we design our experiment so that we can fully recover our solution with the minimum number of measurements?”</p></blockquote><blockquote>
 <p>Consider the tomography example. We are confident that
-we can figure out the configuration of the stack when the columns of the lighting pattern matrix .$A$ in .$A\vec x = \vec b$ are linearly independent. On the other hand, if the columns of the lighting pattern matrix are linearly dependent, we know that we don’t yet have enough information to figure out the configuration. Checking whether the columns are linearly independent gives us a way to validate whether we’ve effectively designed our experiment.</p>
-</blockquote>
-<h2 id=row-perspective>
+we can figure out the configuration of the stack when the columns of the lighting pattern matrix .$A$ in .$A\vec x = \vec b$ are linearly independent. On the other hand, if the columns of the lighting pattern matrix are linearly dependent, we know that we don’t yet have enough information to figure out the configuration. Checking whether the columns are linearly independent gives us a way to validate whether we’ve effectively designed our experiment.</p></blockquote><h2 id=row-perspective>
 Row Perspective
 <a class=anchor href=#row-perspective>#</a>
-</h2>
-<blockquote class="book-hint warning">
+</h2><blockquote class="book-hint warning">
 <p>Optional!
-</blockquote>
-<ul>
+</blockquote><ul>
 <li>Intuitively, each row represents some measurement
 <ul>
-<li>If the number of measurements taken is at least the number of variables and we cannot completely determine the variables, then at least one of our measurements must be redundant (it doesn’t give us any new information).</li>
-</ul>
-</li>
-<li>This intuition suggests that the <strong>number of variables we can recover is equal to the number of unique measurements</strong>, or the number of linearly independent rows &ndash; this formal proof will come in a later note when we talk about rank.</li>
-<li>Now have two perspectives: in the matrix, each row represents a measurement, while each column corresponds to a variable.
+<li>If the number of measurements taken is at least the number of variables and we cannot completely determine the variables, then at least one of our measurements must be redundant (it doesn’t give us any new information).</li></ul></li><li>This intuition suggests that the <strong>number of variables we can recover is equal to the number of unique measurements</strong>, or the number of linearly independent rows &ndash; this formal proof will come in a later note when we talk about rank.</li><li>Now have two perspectives: in the matrix, each row represents a measurement, while each column corresponds to a variable.
 <ul>
-<li>Therefore, if the columns are linearly dependent, then we have at least one redundant variable.</li>
-<li>From the perspective of rows, linear dependency tells us that we have one or more redundant measurements.</li>
-</ul>
-</li>
-</ul>
-<h2 id=span>
+<li>Therefore, if the columns are linearly dependent, then we have at least one redundant variable.</li><li>From the perspective of rows, linear dependency tells us that we have one or more redundant measurements.</li></ul></li></ul><h2 id=span>
 Span
 <a class=anchor href=#span>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li>Span of the columns of .$A$ is the set of <em>all</em> linear combinations of vectors .$\vec b$ such that .$A\vec x = \vec b$ has a solution
 <ul>
-<li>.$\exists \vec x$ s.t. .$A \vec x = \vec b \Longrightarrow \vec b \in \text{span(cols}(A))$</li>
-</ul>
-</li>
-<li>That is, the set of all vectors that can be reached by all possible linear combinations of the columns of .$A$
+<li>.$\exists \vec x$ s.t. .$A \vec x = \vec b \Longrightarrow \vec b \in \text{span(cols}(A))$</li></ul></li><li>That is, the set of all vectors that can be reached by all possible linear combinations of the columns of .$A$
 <ul>
-<li>Formally, .$\text{span}(\vec v_1, \dots, \vec v_N) = \bigg\{\sum_{i=1}^N \alpha_i \vec v_i\ |\ \alpha_i \in \mathbb{R},\ \vec a_i \in \mathbb{R}^{M}\bigg\}$</li>
-</ul>
-</li>
-<li>A set of vectors is <em>linearly dependent</em> if any one of the vectors is in the span of the remaining vectors.
+<li>Formally, .$\text{span}(\vec v_1, \dots, \vec v_N) = \bigg\{\sum_{i=1}^N \alpha_i \vec v_i\ |\ \alpha_i \in \mathbb{R},\ \vec a_i \in \mathbb{R}^{M}\bigg\}$</li></ul></li><li>A set of vectors is <em>linearly dependent</em> if any one of the vectors is in the span of the remaining vectors.
 <ul>
-<li>That is, if any one of the vectors could be represent as the combination of the remaining vectors (that is, it&rsquo;s in the span of the others)</li>
-<li>On the other hand, if each vector adds another dimension to the span (contains novel information) then they&rsquo;re said to be <em>linearly <strong>in</strong>dependent</em></li>
-</ul>
-</li>
-<li>span, range, and column space of .$A$ all refer to the span of the columns of .$A$
+<li>That is, if any one of the vectors could be represent as the combination of the remaining vectors (that is, it&rsquo;s in the span of the others)</li><li>On the other hand, if each vector adds another dimension to the span (contains novel information) then they&rsquo;re said to be <em>linearly <strong>in</strong>dependent</em></li></ul></li><li>span, range, and column space of .$A$ all refer to the span of the columns of .$A$
 <div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
 <iframe src=https://www.youtube.com/embed/k7RM-ot2NWY style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div>
-<details><summary>Two Examples</summary>
+</div><details><summary>Two Examples</summary>
 <div class=markdown-inner>
 <ul>
 <li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & 1 \\ 1 & -1\\
 \end{bmatrix}$?
-$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix} + \beta \begin{bmatrix} 1\\ -1\\ \end{bmatrix}; \alpha, \beta \in \mathbb{R}\bigg\} = \mathbb{R}^{2}$$</li>
-<li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & -1 \\ 1 & -1\\
+$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix} + \beta \begin{bmatrix} 1\\ -1\\ \end{bmatrix}; \alpha, \beta \in \mathbb{R}\bigg\} = \mathbb{R}^{2}$$</li><li>e.x. what is the span of the cols of .$A = \begin{bmatrix} 1 & -1 \\ 1 & -1\\
 \end{bmatrix}$?
-$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix}; \alpha \in \mathbb{R}\bigg\} = \text{line } (x_1 = x_2)$$</li>
-</ul>
-</div>
-</details>
-</li>
-</ul>
-<h1 id=02-03-intro-to-circuit-analysis>
+$$\text{span(cols of A)} = \bigg\{ \vec v\ |\ \vec v = \alpha \begin{bmatrix} 1\\ 1\\ \end{bmatrix}; \alpha \in \mathbb{R}\bigg\} = \text{line } (x_1 = x_2)$$</li></ul></div></details>
+</li></ul><h1 id=02-03-intro-to-circuit-analysis>
 02-03: Intro to Circuit Analysis
 <a class=anchor href=#02-03-intro-to-circuit-analysis>#</a>
-</h1>
-<ul>
+</h1><ul>
 <li>
-<a href=https://eecs16a.org/lecture/Lecture2B_Slides.pdf>Slides</a></li>
-<li>Note 11
+<a href=https://eecs16a.org/lecture/Lecture2B_Slides.pdf>Slides</a></li><li>Note 11
 <a href=https://eecs16a.org/lecture/Note11A.pdf>A</a>,
-<a href=https://eecs16a.org/lecture/Note11B.pdf>B</a></li>
-</ul>
-<hr>
+<a href=https://eecs16a.org/lecture/Note11B.pdf>B</a></li></ul><hr>
 <blockquote>
-<p>Our ultimate goal is to design systems that solve people’s problems. To do so, it’s critical to understand how we go from real-world events all the way to useful information that the system might then act upon. The most common way an engineered system interfaces with the real world is by using sensors and/or actuators that are often composed of electronic circuits; these communicate via electrical signals to processing units, which are also composed entirely of electronic circuits. In order to fully understand and design a useful system, we will need to first understand Electrical Circuit Analysis.</p>
-</blockquote>
-<p>
-<img src=/docs/eecs-16a/2/four.png alt></p>
-<ul>
+<p>Our ultimate goal is to design systems that solve people’s problems. To do so, it’s critical to understand how we go from real-world events all the way to useful information that the system might then act upon. The most common way an engineered system interfaces with the real world is by using sensors and/or actuators that are often composed of electronic circuits; these communicate via electrical signals to processing units, which are also composed entirely of electronic circuits. In order to fully understand and design a useful system, we will need to first understand Electrical Circuit Analysis.</p></blockquote><p>
+<img src=/docs/eecs-16a/2/four.png alt></p><ul>
 <li>There are four main steps involved when designing information devices and systems
 <ol>
-<li>Analog World</li>
-<li>Sensor Input</li>
-<li>Data Processing</li>
-<li>Actuation (16B)</li>
-</ol>
-</li>
-</ul>
-<h2 id=tiny-bit-of-solid-state-physics>
+<li>Analog World</li><li>Sensor Input</li><li>Data Processing</li><li>Actuation (16B)</li></ol></li></ul><h2 id=tiny-bit-of-solid-state-physics>
 Tiny Bit of Solid-State Physics
 <a class=anchor href=#tiny-bit-of-solid-state-physics>#</a>
-</h2>
-<p>
-<img src=/docs/eecs-16a/2/ssp.png alt></p>
-<ul>
+</h2><p>
+<img src=/docs/eecs-16a/2/ssp.png alt></p><ul>
 <li>Conductors have lots of electrons
 <ul>
-<li>Move around very easily</li>
-<li>E.x. copper, gold, silver, water</li>
-</ul>
-</li>
-<li>Conductors have lots of electrons
+<li>Move around very easily</li><li>E.x. copper, gold, silver, water</li></ul></li><li>Conductors have lots of electrons
 <ul>
-<li>But they are at an energy level where they need to be given some energy level (e.x 1 eV) to move</li>
-<li>E.x. solar cell, diodes</li>
-</ul>
-</li>
-<li>Insulators do not let electrons pass through them
+<li>But they are at an energy level where they need to be given some energy level (e.x 1 eV) to move</li><li>E.x. solar cell, diodes</li></ul></li><li>Insulators do not let electrons pass through them
 <ul>
-<li>E.x. capacitors have a big insulator in the middle, that is, current only goes through a capacitor when the magic smoke is released</li>
-</ul>
-</li>
-</ul>
-<h2 id=electrical-quantities>
+<li>E.x. capacitors have a big insulator in the middle, that is, current only goes through a capacitor when the magic smoke is released</li></ul></li></ul><h2 id=electrical-quantities>
 Electrical Quantities
 <a class=anchor href=#electrical-quantities>#</a>
-</h2>
-<table>
+</h2><table>
 <thead>
 <tr>
-<th>Quantity</th>
-<th>Symbol</th>
-<th>Units</th>
-<th>What</th>
-</tr>
-</thead>
-<tbody>
+<th>Quantity</th><th>Symbol</th><th>Units</th><th>What</th></tr></thead><tbody>
 <tr>
-<td>Current</td>
-<td>.$I$</td>
-<td>Amps, .$A$</td>
-<td>Flow of charges (e.g. electrons) in the circuit due to a potential difference</td>
-</tr>
-<tr>
-<td>Voltage</td>
-<td>.$V$</td>
-<td>Volts, .$V$</td>
-<td>Potential energy (per charge) between two points in the circuit</td>
-</tr>
-<tr>
-<td>Resistance</td>
-<td>.$R$</td>
-<td>Ohms, .$\Omega$</td>
-<td>Material’s tendency to resist the flow of current.</td>
-</tr>
-</tbody>
-</table>
-<ul>
+<td>Current</td><td>.$I$</td><td>Amps, .$A$</td><td>Flow of charges (e.g. electrons) in the circuit due to a potential difference</td></tr><tr>
+<td>Voltage</td><td>.$V$</td><td>Volts, .$V$</td><td>Potential energy (per charge) between two points in the circuit</td></tr><tr>
+<td>Resistance</td><td>.$R$</td><td>Ohms, .$\Omega$</td><td>Material’s tendency to resist the flow of current.</td></tr></tbody></table><ul>
 <li>Voltage .$\pm$ depends on <em>reference point</em>
 <ul>
-<li>Voltage, or electric potential, is only defined relative to another point (mountain/height analogy).</li>
-<li>Similarly, in circuits, we will frequently define a reference point, called ground, against which other voltages can be measured.</li>
-</ul>
-</li>
-<li>Current .$\pm$ depends on <em>direction</em></li>
-</ul>
-<div class="book-columns flex flex-wrap">
+<li>Voltage, or electric potential, is only defined relative to another point (mountain/height analogy).</li><li>Similarly, in circuits, we will frequently define a reference point, called ground, against which other voltages can be measured.</li></ul></li><li>Current .$\pm$ depends on <em>direction</em></li></ul><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <h2 id=circuit-diagram>
 Circuit Diagram
 <a class=anchor href=#circuit-diagram>#</a>
-</h2>
-<ul>
-<li>Collection of elements, where each element has some voltage across it and some current through it</li>
-<li>Two main elements:
+</h2><ul>
+<li>Collection of elements, where each element has some voltage across it and some current through it</li><li>Two main elements:
 <ol>
-<li><strong>Notes:</strong> Points where <em>elements</em> meet</li>
-<li><strong>Junctions:</strong> Points where different <em>material</em> meet</li>
-</ol>
-</li>
-<li>Voltage = difference of two potential</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li><strong>Notes:</strong> Points where <em>elements</em> meet</li><li><strong>Junctions:</strong> Points where different <em>material</em> meet</li></ol></li><li>Voltage = difference of two potential</li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/diag.png alt>
-</div>
-</div>
-<h3 id=basic-circuit-elements>
+</div></div><h3 id=basic-circuit-elements>
 Basic Circuit Elements
 <a class=anchor href=#basic-circuit-elements>#</a>
-</h3>
-<h4 id=wire>
+</h3><h4 id=wire>
 Wire
 <a class=anchor href=#wire>#</a>
-</h4>
-<ul>
+</h4><ul>
 <li>The most common element in a schematic is the wire, drawn as a solid line The .$IV$ relationship for a wire is:
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>.$V_\text{elem} = 0$ &ndash; A wire is an ideal connection with zero voltage across it.</li>
-<li>.$I_\text{elem} = ?$ &ndash; The current through a wire can take any value, and is determined by the rest of the circuit.</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>.$V_\text{elem} = 0$: A wire is an ideal connection with a <strong>constant</strong>, zero voltage across it.</li><li>.$I_\text{elem} = ?$: The current through a wire can take any value, and is determined by the rest of the circuit.</li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/wire.png alt>
-</div>
-</div>
-</li>
-</ul>
-<h4 id=resistor>
+</div></div></li></ul><h4 id=resistor>
 Resistor
 <a class=anchor href=#resistor>#</a>
-</h4>
-<div class="book-columns flex flex-wrap">
+</h4><p><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
 <li>The .$IV$ relationship of a resistor is called Ohm’s Law:
 <ul>
-<li>.$V_\text{elem} = I_\text{elem} R $ &ndash; The voltage across a resistor is determined by Ohm’s Law.</li>
-<li>.$I_\text{elem} = V_\text{elem} / R$ &ndash; The current through a resistor is determined by Ohm’s Law.</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>.$V_\text{elem} = I_\text{elem} R $: The voltage across a resistor is determined by Ohm’s Law.</li><li>.$I_\text{elem} = V_\text{elem} / R$: The current through a resistor is determined by Ohm’s Law.</li></ul></li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/resist.png alt>
-</div>
-</div>
-<ul>
-<li>Limit check
-<ul>
-<li>The slope is proportional to .$R^{-1}$, that is, the larger the resistance the lower the slope</li>
-<li>.$\lim_{R \to 0}$ results in an wire (above)</li>
-<li>.$\lim_{R \to \infty}$ results in an open circuit (below)</li>
-</ul>
-</li>
-</ul>
-<h4 id=open-circuit>
+</div></div><blockquote class="book-hint info">
+<p><strong>Limit check</strong></p><ul>
+<li>The slope is proportional to .$R^{-1}$, that is, the larger the resistance the lower the slope</li><li>.$\lim_{R \to 0}$ results in an wire (above)</li><li>.$\lim_{R \to \infty}$ results in an open circuit (below)</li></ul></blockquote></p><h4 id=open-circuit>
 Open Circuit:
 <a class=anchor href=#open-circuit>#</a>
-</h4>
-<div class="book-columns flex flex-wrap">
+</h4><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
 <li>This element is the dual of the wire.
 <ul>
-<li>.$V_\text{elem} = ?$ &ndash; The voltage across an open circuit can take any value, and is determined by the rest of the circuit.</li>
-<li>.$I_\text{elem} = 0$ &ndash; No current is allowed to flow through an open circuit.</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>.$V_\text{elem} = ?$: The voltage across an open circuit can take any value, and is determined by the rest of the circuit.</li><li>.$I_\text{elem} = 0$: No current is allowed to flow through an open circuit; always zero.</li></ul></li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/open.png alt>
-</div>
-</div>
-<h4 id=voltage-source>
+</div></div><h4 id=voltage-source>
 Voltage Source:
 <a class=anchor href=#voltage-source>#</a>
-</h4>
-<ul>
+</h4><ul>
 <li>A voltage source is a component that forces a specific voltage across its terminals. The + and − sign indicates which direction the voltage is pointing. The voltage difference between the “+” terminal and the “−” terminal is always equal to Vs, no matter what else is happening in the circuit.
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>.$V_\text{elem} = V_s$ &ndash; The voltage across the voltage source is always equal to the source value.</li>
-<li>.$I_\text{elem} = ?$ &ndash; The current through a voltage source is determined by the rest of the circuit.</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>.$V_\text{elem} = V_s$ &ndash; The voltage across the voltage source is always equal to the source value.</li><li>.$I_\text{elem} = ?$ &ndash; The current through a voltage source is determined by the rest of the circuit.</li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/vsrc.png alt>
-</div>
-</div>
-</li>
-</ul>
-<h4 id=current-source>
+</div></div></li></ul><h4 id=current-source>
 Current Source:
 <a class=anchor href=#current-source>#</a>
-</h4>
-<ul>
+</h4><ul>
 <li>A current source forces current in the direction specified by the arrow indicated on the schematic symbol. The current flowing through a current source is always equal to Is, no matter what else is happening in the circuit. Note the duality between this element and the voltage source.
 <div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>.$V_\text{elem} = ?$ &ndash; The voltage across a current source is determined by the rest of the circuit.</li>
-<li>.$I_\text{elem} = I_s$ &ndash; The current through a current source is always equal to the source value.</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>.$V_\text{elem} = ?$ &ndash; The voltage across a current source is determined by the rest of the circuit.</li><li>.$I_\text{elem} = I_s$ &ndash; The current through a current source is always equal to the source value.</li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/isrc.png alt>
-</div>
-</div>
-</li>
-</ul>
-<h2 id=rules-for-circuit-analysis>
+</div></div></li></ul><h2 id=rules-for-circuit-analysis>
 Rules for Circuit Analysis
 <a class=anchor href=#rules-for-circuit-analysis>#</a>
-</h2>
-<ul>
+</h2><ul>
 <li>See also:
-<a href=/physics-7b/26/#263-kirchhoffs-rules>26.3 Kirchhoff’s Rules</a></li>
-</ul>
-<h3 id=kirchhoffs-current-law-kcl>
+<a href=/physics-7b/26/#263-kirchhoffs-rules>26.3 Kirchhoff’s Rules</a></li></ul><h3 id=kirchhoffs-current-law-kcl>
 Kirchhoff’s Current Law (KCL)
 <a class=anchor href=#kirchhoffs-current-law-kcl>#</a>
-</h3>
-<ul>
-<li><strong>Node:</strong> A place in a circuit where two or more of the above circuit elements meet</li>
-</ul>
-<div class="book-columns flex flex-wrap">
+</h3><ul>
+<li><strong>Node:</strong> A place in a circuit where two or more of the above circuit elements meet</li></ul><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
 <li>The net current flowing into/out-of any node is zero:
-$$(-i_1)+(-i_2)+i_3 = 0$$</li>
-<li>That is, the current flowing into a node must equal the current flowing out of that node
-$$ i_1+i_2=i_3$$</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+$$(-i_1)+(-i_2)+i_3 = 0$$</li><li>That is, the current flowing into a node must equal the current flowing out of that node
+$$ i_1+i_2=i_3$$</li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/kcl.png alt>
-</div>
-</div>
-<h3 id=kirchhoffs-voltage-law-kvl>
+</div></div><h3 id=kirchhoffs-voltage-law-kvl>
 Kirchhoff’s Voltage Law (KVL)
 <a class=anchor href=#kirchhoffs-voltage-law-kvl>#</a>
-</h3>
-<div class="book-columns flex flex-wrap">
+</h3><div class="book-columns flex flex-wrap">
 <div class="flex-even markdown-inner">
 <ul>
-<li>The sum of voltages across the elements connected in a loop must be zero</li>
-<li>Mathematically, KVL states that:
-$$\sum_\text{loop} V_k = 0$$</li>
-</ul>
-</div>
-<div class="flex-even markdown-inner">
+<li>The sum of voltages across the elements connected in a loop must be zero</li><li>Mathematically, KVL states that:
+$$\sum_\text{loop} V_k = 0$$
+$$\Longrightarrow V_A - V_B - V_C = 0$$</li></ul></div><div class="flex-even markdown-inner">
 <p>
 <img src=/docs/eecs-16a/2/kvl.png alt>
-</div>
-</div>
-<h4 id=height-analogy>
+</div></div><h4 id=height-analogy>
 Height Analogy
 <a class=anchor href=#height-analogy>#</a>
-</h4>
-<blockquote>
+</h4><blockquote>
 <p>If you walk in a circle (a loop) so that you end up back where you started, than your total change in elevation must be zero, no matter how much you go up or down.
 If you walk in a line, ending up somewhere different, than your total change in elevation is equal to the sum of all of the elevation changes along the way.
-<img src=/docs/eecs-16a/2/kvl2.png alt>
-| > | Real World | Analogy |
-| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- |
-| The sum of voltages across the elements connected in a loop must be equal to zero | “what goes up must come down” |
-| If the arrow corresponding to the loop goes into the “+” of an element, we subtract the voltage across that element. | We went “downhill” from higher voltage to lower voltage so we lost “elevation.” |
-| If the arrow goes into the “-” of an element, we add the voltage across that element | This is like going “uphill” |</p>
-</blockquote>
-<h3 id=ohms-law-and-resistors>
+<img src=/docs/eecs-16a/2/kvl2.png alt></p><table>
+<thead>
+<tr>
+<th>Real World</th><th>Analogy</th></tr></thead><tbody>
+<tr>
+<td>The sum of voltages across the elements connected in a loop must be equal to zero</td><td>“what goes up must come down”</td></tr><tr>
+<td>If the arrow corresponding to the loop goes into the “+” of an element, we subtract the voltage across that element.</td><td>We went “downhill” from higher voltage to lower voltage so we lost “elevation.”</td></tr><tr>
+<td>If the arrow goes into the “-” of an element, we add the voltage across that element</td><td>This is like going “uphill”</td></tr></tbody></table></blockquote><h3 id=ohms-law-and-resistors>
 Ohm’s Law and Resistors
 <a class=anchor href=#ohms-law-and-resistors>#</a>
-</h3>
-<p>$$V_\text{element} = I_\text{element}R$$</p>
-<ul>
-<li>The unit of .$R$ is Volts/Amperes, called Ohms .$\Omega$.</li>
-<li>See also:
-<a href=/physics-7b/25/#253-ohms-law-resistance-and-resistors>25.3 Ohm’s Law: Resistance and Resistors</a></li>
-</ul>
-<blockquote>
-</blockquote>
-</article>
-<footer class=book-footer>
+</h3><p>$$V_\text{element} = I_\text{element}R$$</p><ul>
+<li>The unit of .$R$ is Volts/Amperes, called Ohms .$\Omega$.</li><li>See also:
+<a href=/physics-7b/25/#253-ohms-law-resistance-and-resistors>25.3 Ohm’s Law: Resistance and Resistors</a></li></ul></article><footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/befa6a11878f69cd785820582bdc2c3ba71f65f7 title="Last modified by Max Vogel | February 27, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>February 27, 2022</span>
+<span>March 4, 2022</span>
 </a>
-</div>
-<div>
+</div><div>
 <a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/2.md target=_blank rel=noopener>
 <img src=/svg/edit.svg class=book-icon alt=Edit>
 <span>Edit this page</span>
 </a>
-</div>
-</div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
-</div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
+</div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+</footer><div class=book-comments>
+</div><label for=menu-control class="hidden book-menu-overlay"></label>
+</div><aside class=book-toc>
 <div class=book-toc-content>
 <nav id=TableOfContents>
 <ul>
 <li><a href=#02-01-linear-independance-matrix-transformations>02-01: Linear (in)dependance, Matrix Transformations</a>
 <ul>
-<li><a href=#linear-dependence>Linear Dependence</a></li>
-<li><a href=#linear-independence>Linear Independence</a>
+<li><a href=#linear-dependence>Linear Dependence</a></li><li><a href=#linear-independence>Linear Independence</a>
 <ul>
-<li><a href=#systems-of-linear-equations>Systems of Linear Equations</a></li>
-</ul>
-</li>
-<li><a href=#row-perspective>Row Perspective</a></li>
-<li><a href=#span>Span</a></li>
-</ul>
-</li>
-<li><a href=#02-03-intro-to-circuit-analysis>02-03: Intro to Circuit Analysis</a>
+<li><a href=#systems-of-linear-equations>Systems of Linear Equations</a></li></ul></li><li><a href=#row-perspective>Row Perspective</a></li><li><a href=#span>Span</a></li></ul></li><li><a href=#02-03-intro-to-circuit-analysis>02-03: Intro to Circuit Analysis</a>
 <ul>
-<li><a href=#tiny-bit-of-solid-state-physics>Tiny Bit of Solid-State Physics</a></li>
-<li><a href=#electrical-quantities>Electrical Quantities</a>
+<li><a href=#tiny-bit-of-solid-state-physics>Tiny Bit of Solid-State Physics</a></li><li><a href=#electrical-quantities>Electrical Quantities</a>
 <ul>
-<li><a href=#basic-circuit-elements>Basic Circuit Elements</a></li>
-</ul>
-</li>
-<li><a href=#rules-for-circuit-analysis>Rules for Circuit Analysis</a>
+<li><a href=#basic-circuit-elements>Basic Circuit Elements</a></li></ul></li><li><a href=#rules-for-circuit-analysis>Rules for Circuit Analysis</a>
 <ul>
-<li><a href=#kirchhoffs-current-law-kcl>Kirchhoff’s Current Law (KCL)</a></li>
-<li><a href=#kirchhoffs-voltage-law-kvl>Kirchhoff’s Voltage Law (KVL)</a></li>
-<li><a href=#ohms-law-and-resistors>Ohm’s Law and Resistors</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</aside>
-</main>
-</body>
-</html>
+<li><a href=#kirchhoffs-current-law-kcl>Kirchhoff’s Current Law (KCL)</a></li><li><a href=#kirchhoffs-voltage-law-kvl>Kirchhoff’s Voltage Law (KVL)</a></li><li><a href=#ohms-law-and-resistors>Ohm’s Law and Resistors</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>
