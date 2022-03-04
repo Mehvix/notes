@@ -18,4 +18,4 @@ for root, _, files in os.walk(FOLDER):
 
         with open(file, "w") as f:
             # f.write("".join(lines))
-            f.write("\n".join(lines))
+            f.write("\n".join(lines) + "\n")
