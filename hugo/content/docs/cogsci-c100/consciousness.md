@@ -564,9 +564,9 @@ weight: 6
 - Abram Hoffer study in the 1960’s
     - Gave alcoholics a small dose of mescaline, then deliberately induced peak experiences by means of music, poetry, painting – whatever used to produce peak experiences before the person became alcoholic
         - 50% were supposedly permanently cured
-- Moratorium on research in this area from early 1970s to early 2000s due to sociopolitical factors
+- Moratorium on research in this area from early 1970s to early 2000s due to war on drugs
 - However, resurgence of interest and research in this area in recent years, in particular with regard to use of hallucinogens – especially MDMA and LSD – to treat substance abuse, PTSD, obsessive-compulsive disorder, depression, cluster headaches, and emotional suffering associated with terminal illness
-- UCB launched the campus’s first center for psychedelic science and public education in 2020 (Berkeley News, 9/14/2020)
+- UCB launched the campus’s first center for psychedelic science and public education in 2020
     - Will conduct research using psychedelics to investigate
         - Cognition, perception, emotion and their biological bases in the human brain
             - Initial studies will focus on psilocybin
