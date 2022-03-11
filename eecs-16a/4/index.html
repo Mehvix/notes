@@ -1,555 +1,94 @@
-<!doctype html><html lang=en dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space .">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 4: Vector Spaces & Eigenstuff">
-<meta property="og:description" content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space .">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://notes.mehvix.com/eecs-16a/4/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-03-04T00:21:26-08:00">
-<title>Week 4: Vector Spaces & Eigenstuff | notes.mehvix.com</title><link rel=manifest href=/manifest.json>
-<link rel=icon href=/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
-<script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.9a289e1704b278e6f1129793c61041ff35cf4dbd068093f92d38b53a0dcaace3.js integrity="sha256-miieFwSyeObxEpeTxhBB/zXPTb0GgJP5LTi1Og3KrOM=" crossorigin=anonymous></script>
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space ."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Week 4: Vector Spaces & Eigenstuff"><meta property="og:description" content="02-15: Vector Spaces: Null Spaces and Columnspaces #    Slides Notes 7 8  Important Jargon #   Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix   Vector Spaces #   A vector space ."><meta property="og:type" content="article"><meta property="og:url" content="http://notes.mehvix.com/eecs-16a/4/"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2022-03-04T00:21:26-08:00"><title>Week 4: Vector Spaces & Eigenstuff | notes.mehvix.com</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.8f4aaeb02c9f2d788b552eb377e1c25355d744990b594dc9559353fc2364d113.js integrity="sha256-j0qusCyfLXiLVS6zd+HCU1XXRJkLWU3JVZNT/CNk0RM=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
-<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
-<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
-<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
-</head><body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/><span>notes.mehvix.com</span>
-</a>
-</h2><div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
-<li>
-<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
-<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
-<a role=button>CogSci C100</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/memory/>Memory</a>
-</li></ul></li><li>
-<input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
-<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
-<a role=button>EECS 16A</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/4/ class=active>Week 4: Vector Spaces & Eigenstuff</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/6/>Week 6: Voltage Dividers & Measurement</a>
-</li></ul></li><li>
-<input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
-<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
-<a role=button>Engineering 29</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a>
-</li></ul></li><li>
-<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
-<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
-</li></ul></li><li>
-<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
-<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
-</li></ul></li><li>
-<a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
-</li><li>
-<input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
-<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
-<a role=button>AP Notes</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
-</li><li>
-<a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
-</li><li>
-<a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
-</li></ul></li></ul><ul>
-<li>
-<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
-CS61A (Anto's)
-</a>
-</li><li>
-<a href=# target=_blank rel=noopener>
-—
-</a>
-</li><li>
-<a href=https://www.mehvix.com target=_blank rel=noopener>
-w³.mehvix.com
-</a>
-</li><li>
-<a href=https://pass.mehvix.com target=_blank rel=noopener>
-pass.mehvix.com
-</a>
-</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div></aside><div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]],processEscapes:!0,processEnvironments:!0,macros:{bigsup:["#1{^{\\vbox{\\hbox{$\\scriptstyle#1$}\\nointerlineskip\\hbox{}}}}",1]}},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script id=MathJax-script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js?config=TeX-AMS_CHTML" integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:".$",right:"$",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>notes.mehvix.com</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between"><a role=button>CogSci C100</a></label><ul><li><a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/memory/>Memory</a></li></ul></li><li><input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
+<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between"><a role=button>EECS 16A</a></label><ul><li><a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a></li><li><a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a></li><li><a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a></li><li><a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a></li><li><a href=http://notes.mehvix.com/eecs-16a/4/ class=active>Week 4: Vector Spaces & Eigenstuff</a></li><li><a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a></li><li><a href=http://notes.mehvix.com/eecs-16a/6/>Week 6: Voltage Dividers & Measurement</a></li><li><a href=http://notes.mehvix.com/eecs-16a/7/>Week 7: 2D Touchscreens & Superposition + Equivalence</a></li></ul></li><li><input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
+<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between"><a role=button>Engineering 29</a></label><ul><li><a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a></li><li><a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a></li><li><a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a></li><li><a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a></li><li><a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a></li><li><a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a></li><li><a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a></li><li><a href=http://notes.mehvix.com/e-29/7/>Week 7-8: Visualization</a></li></ul></li><li><input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between"><a href=http://notes.mehvix.com/docs/math-53/>Math 53</a></label><ul><li><a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a></li><li><a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a></li><li><a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a></li><li><a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a></li><li><a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a></li><li><a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a></li><li><a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a></li><li><a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a></li></ul></li><li><input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between"><a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a></label><ul><li><a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a></li><li><a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a></li><li><a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a></li><li><a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a></li><li><a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a></li><li><a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a></li><li><a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a></li><li><a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a></li><li><a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a></li><li><a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a></li><li><a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a></li></ul></li><li><a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a></li><li><input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
+<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between"><a role=button>AP Notes</a></label><ul><li><a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a></li><li><a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a></li><li><a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a></li></ul></li></ul><ul><li><a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>CS61A (Anto's)</a></li><li><a href=# target=_blank rel=noopener>—</a></li><li><a href=https://www.mehvix.com target=_blank rel=noopener>w³.mehvix.com</a></li><li><a href=https://pass.mehvix.com target=_blank rel=noopener>pass.mehvix.com</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Week 4: Vector Spaces & Eigenstuff</strong>
-<label for=toc-control>
-<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div><aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#02-15-vector-spaces-null-spaces-and-columnspaces>02-15: Vector Spaces: Null Spaces and Columnspaces</a>
-<ul>
-<li><a href=#important-jargon>Important Jargon</a></li><li><a href=#vector-spaces>Vector Spaces</a>
-<ul>
-<li><a href=#subspaces>Subspaces</a></li></ul></li><li><a href=#basis>Basis</a>
-<ul>
-<li><a href=#basis-is-not-unique>Basis is not unique</a></li></ul></li><li><a href=#dimension>Dimension</a></li><li><a href=#column-space>Column Space</a></li><li><a href=#row-space>Row Space</a></li><li><a href=#rank>Rank</a></li><li><a href=#null-space>Null Space</a>
-<ul>
-<li><a href=#procedure-to-compute-a-null-space>Procedure to Compute a Null-Space</a></li><li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li></ul></li></ul></li><li><a href=#02-17-eigenvectors-values>02-17: Eigenvectors, values</a>
-<ul>
-<li><a href=#eigenvectors-and-eigenvalues>Eigenvectors and Eigenvalues</a></li><li><a href=#determinants>Determinants</a></li><li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a>
-<ul>
-<li><a href=#eigenspace>Eigenspace</a></li><li><a href=#mean-product-formula>Mean-product formula</a></li></ul></li><li><a href=#theorems>Theorems</a>
-<ul>
-<li><a href=#theorem-91>Theorem 9.1</a></li><li><a href=#theorem-92>Theorem 9.2</a></li><li><a href=#proposition-1>Proposition 1</a></li><li><a href=#proposition-2>Proposition 2</a></li></ul></li><li><a href=#states>States</a>
-<ul>
-<li><a href=#steady-states>Steady States</a></li><li><a href=#predicting-behavior-for-general-initial-states>Predicting Behavior for General Initial States</a></li></ul></li><li><a href=#some-useful-information>Some Useful Information</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=02-15-vector-spaces-null-spaces-and-columnspaces>
-02-15: Vector Spaces: Null Spaces and Columnspaces
-<a class=anchor href=#02-15-vector-spaces-null-spaces-and-columnspaces>#</a>
-</h1><ul>
-<li>
-<a href=https://eecs16a.org/lecture/Lecture4A_Slides.pdf>Slides</a></li><li>Notes
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#02-15-vector-spaces-null-spaces-and-columnspaces>02-15: Vector Spaces: Null Spaces and Columnspaces</a><ul><li><a href=#important-jargon>Important Jargon</a></li><li><a href=#vector-spaces>Vector Spaces</a><ul><li><a href=#subspaces>Subspaces</a></li></ul></li><li><a href=#basis>Basis</a><ul><li><a href=#basis-is-not-unique>Basis is not unique</a></li></ul></li><li><a href=#dimension>Dimension</a></li><li><a href=#column-space>Column Space</a></li><li><a href=#row-space>Row Space</a></li><li><a href=#rank>Rank</a></li><li><a href=#null-space>Null Space</a><ul><li><a href=#procedure-to-compute-a-null-space>Procedure to Compute a Null-Space</a></li><li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li></ul></li></ul></li><li><a href=#02-17-eigenvectors-values>02-17: Eigenvectors, values</a><ul><li><a href=#eigenvectors-and-eigenvalues>Eigenvectors and Eigenvalues</a></li><li><a href=#determinants>Determinants</a></li><li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a><ul><li><a href=#eigenspace>Eigenspace</a></li><li><a href=#mean-product-formula>Mean-product formula</a></li></ul></li><li><a href=#theorems>Theorems</a><ul><li><a href=#theorem-91>Theorem 9.1</a></li><li><a href=#theorem-92>Theorem 9.2</a></li><li><a href=#proposition-1>Proposition 1</a></li><li><a href=#proposition-2>Proposition 2</a></li></ul></li><li><a href=#states>States</a><ul><li><a href=#steady-states>Steady States</a></li><li><a href=#predicting-behavior-for-general-initial-states>Predicting Behavior for General Initial States</a></li></ul></li><li><a href=#some-useful-information>Some Useful Information</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=02-15-vector-spaces-null-spaces-and-columnspaces>02-15: Vector Spaces: Null Spaces and Columnspaces
+<a class=anchor href=#02-15-vector-spaces-null-spaces-and-columnspaces>#</a></h1><ul><li><a href=https://eecs16a.org/lecture/Lecture4A_Slides.pdf>Slides</a></li><li>Notes
 <a href=https://eecs16a.org/lecture/Note7.pdf>7</a>
-<a href=https://eecs16a.org/lecture/Note8.pdf>8</a></li></ul><h2 id=important-jargon>
-Important Jargon
-<a class=anchor href=#important-jargon>#</a>
-</h2><ul>
-<li><strong>Rank</strong> a matrix .$A$ is the number of linearly independent columns</li><li><strong>Nullspace</strong> of a matrix is the set of solutions to .$A \vec x = 0$</li><li>A <strong>vector space</strong> is a set of vectors connected by two operators: .$+, \times$ &mdash;
+<a href=https://eecs16a.org/lecture/Note8.pdf>8</a></li></ul><h2 id=important-jargon>Important Jargon
+<a class=anchor href=#important-jargon>#</a></h2><ul><li><strong>Rank</strong> a matrix .$A$ is the number of linearly independent columns</li><li><strong>Nullspace</strong> of a matrix is the set of solutions to .$A \vec x = 0$</li><li>A <strong>vector space</strong> is a set of vectors connected by two operators: .$+, \times$ &mdash;
 <a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=48">page 48</a></li><li>A vector <strong>subspace</strong> is a subset of vectors that have “nice properties” &mdash;
-<a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=50">page 50</a></li><li>A <strong>basis</strong> for a vector space is a minimum set of vectors needed to represent all vectors in the space</li><li><strong>Dimension</strong> of a vector space is the number of basis vectors</li><li><strong>Column space</strong> is the span (range) of the columns of a matrix</li><li><strong>Row space</strong> is the span of the rows of a matrix</li></ul><hr>
-<h2 id=vector-spaces>
-Vector Spaces
-<a class=anchor href=#vector-spaces>#</a>
-</h2><ul>
-<li>A vector space .$\mathbb{V}$ is a set of vectors and two operators .$+, \cdot$ that satisfy:</li></ul><p><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<p><strong>Vector Addition</strong></p><ul>
-<li>Associative: .$\vec u + (\vec v + \vec w) = (\vec u + \vec v) + \vec w$</li><li>Commutative: .$\vec u + \vec v = \vec v + \vec u$</li><li>Additive Identity: There exists an additive identity .$\vec 0 \in \mathbb{V}$ such that .$\vec v + \vec 0 = \vec v$</li><li>Additive Inverse: There exists .$- \vec v \in \mathbb{V}$ such that .$\vec v + (-\vec v) = \vec 0$. We call .$-\vec v$ the additive inverse of .$\vec v$.</li><li>Closure under vector addition: The sum .$\vec v + \vec u$ must also be in .$\mathbb{V}$</li></ul></div><div class="flex-even markdown-inner">
-<p><strong>Scalar Multiplication</strong></p><ul>
-<li>Associative: .$\vec \alpha(\beta \vec v) = (\alpha \beta) \vec v$</li><li>Multiplicative Identity: There exists .$1 \in \mathbb{R}$ where .$1 \cdot \vec v = \vec v$</li><li>Distributive in vector addition: .$\alpha (\vec u + \vec v) = \alpha \vec u + \alpha \vec v$</li><li>Distributive in scalar addition: .$(\alpha + \beta)\vec v = \alpha \vec v + \beta \vec v$</li><li>Closure under scalar multiplication: The product .$\alpha \vec v$ must also be in .$\mathbb{V}$.</li></ul></div></div><div style=text-align:center>
-... for any .$\vec v, \vec u, \vec w \in \mathbb{V}; \alpha, \beta \in \mathbb{R}$
-</div></p><ul>
-<li>These can be grouped by axioms of closure, addition, and scaling shown on
-<a href="https://eecs16a.org/lecture/Lecture4A_Slides.pdf#page=10">slide 10</a></li><li>For example .$ \mathbb{R}^{n}$ is the vector space of all .$n$-dimensional vectors.
-<ul>
-<li>In fact, the set of all matrices the same size is also a vector space .$ \mathbb{R}^{n \times o}$ since it fulfills all of the properties above as well</li><li>In this class we will generally only deal with vector spaces containing vectors in .$\mathbb{R}^{n}$.</li></ul></li></ul><h3 id=subspaces>
-Subspaces
-<a class=anchor href=#subspaces>#</a>
-</h3><ul>
-<li>A subspace .$\mathbb{U}$ consists of a subset of .$\mathbb{V}$ in vector space (.$\mathbb{V}, \mathbb{F}, +, \cdot$). .$\mathbb{U} \subset \mathbb{V}$ and have 3 properties
-<ol>
-<li>Contains .$\vec 0 $, i.e., .$\vec 0 \in \mathbb{U}$</li><li>Closed under vector addition: .$\vec v_1, \vec v_2 \in \mathbb{U} \Longrightarrow \vec v_1 + \vec v_2 \in \mathbb{U}$</li><li>Closed under scalar multiplication: .$\vec v \in \mathbb{U}, \alpha \in \mathbb{F} \Longrightarrow \alpha \vec v \in \mathbb{U}$</li></ol></li><li>Examples on
-<a href="https://eecs16a.org/lecture/Lecture4A_Slides.pdf#page=13">slide 13</a></li><li>Intuitively, a subspace is a closed subset of all the vectors in .$ \mathbb{V}$.
-<ul>
-<li>Any linear combination of vectors in the subspace must also lie in that subspace.</li></ul></li><li>Just as basis and dimension are defined for vector spaces, they have equivalent definitions for subspaces.
-<ul>
-<li><strong>Basis for a Subspace:</strong> set of linearly independent vectors that span the subspace (minimal set of subspace-spanning vectors)</li><li><strong>Subspace Dimension:</strong> number of vectors in subspace-basis</li></ul></li></ul><h2 id=basis>
-Basis
-<a class=anchor href=#basis>#</a>
-</h2><ul>
-<li><strong>Basis:</strong> Given a vector space .$\mathbb{V}$, a set of vectors .$\{\vec v_1, \dots \vec v_n\}$ is a basis of the vector space if it satisfies the following properties:
-<ol>
-<li>.$\vec v_1, \dots, \vec v_n$ are linearly independent vectors</li><li>.$\text{span}(\{\vec v_1, \dots, \vec v_n\}) = \mathbb{V} \Longrightarrow \forall \vec v \in \mathbb{V}, \exists \alpha_1, \dots, \alpha_{n-1} \in \mathbb{R}$ such that .$\vec v_1 = \alpha_1 \vec v_2 + \dots \alpha_{n-1} \vec v_n$</li></ol><blockquote>
-<p>Minimum set of vectors that spans a vector space</p></blockquote></li><li>A basis of a vector space is the <strong><em>minimum</em> set of vectors needed to represent all vectors</strong> in the vector space.
-<ul>
-<li>If a set of vectors is linearly dependent and “spans” the vector space, it is still <em>not</em> a basis &ndash; we can remove at least one vector from the set and the resulting set will still span the vector space</li></ul></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/P2LTAUO1TdA style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><h3 id=basis-is-not-unique>
-Basis is not unique
-<a class=anchor href=#basis-is-not-unique>#</a>
-</h3><ul>
-<li>Intuitively, think about multiplying one of the vectors in a given basis by a nonzero scalar will not affect the linear independence or span of the vectors.</li><li>We could alternatively construct another basis by replacing one of the vectors with the sum of itself and any other vector in the set.</li><li>Mathematically, suppose that .$\{\vec v_1, \dots, \vec v_n \}$ is a basis for the vector space we are considering.
-<ul>
-<li>Thus .$\{\alpha \vec v_1, \dots, \vec v_n \}$ where .$\alpha \neq 0$ is also a basis because, just as we’ve seen in Gaussian elimination row operations, multiplying a row by a nonzero constant does not change the linear independence or dependence of the rows.
-<ul>
-<li>We can generalize this to say that multiplying a vector by a nonzero scalar also does not change the linear independence of the set of vectors.</li></ul></li><li>In addition, we know that .$\text{span}(\{ \vec v_1, \dots, \vec v_n \}) = \text{span}( \{\alpha \vec v_1, \dots, \vec v_n \} )$
-<ul>
-<li>Any vector in .$\text{span}(\{ \vec v_1, \dots, \vec v_n \})$ can be created as a linear combination of the set .$\text{span}(\{ \alpha \vec v_1, \dots, \vec v_n \})$ by dividing the scale factor on .$\vec v_1$ by .$\alpha$.</li><li>We can use a similar argument to show that .$\{\alpha \vec v_1, \dots, \vec v_n \}$ is also a basis for the same vector space.</li></ul></li></ul><blockquote>
-<p>To generalize, for .$\mathbb{R}^{N}$, any .$N$ (and <em>only</em> .$N$) linearly independent vectors form a basis</p></blockquote></li></ul><h2 id=dimension>
-Dimension
-<a class=anchor href=#dimension>#</a>
-</h2><ul>
-<li><strong>Dimension:</strong> The dimension of a vector space is the number of basis vectors.</li><li>Since each basis vector can be scaled by one coefficient, the dimension of a space as the <strong>fewest number of parameters needed to describe an element</strong> or member of that space.</li><li>The dimension can also be thought of as the <strong>degrees of freedom of your space</strong> &ndash; that is, the number of parameters that can be varied when describing a member of that space.
-<blockquote>
-<p><strong>A vector space can have many bases, but each basis must have the same number of vectors:</strong></p><ul>
-<li>Suppose a basis for the vector space we’re considering has .$n$ vectors. This means that the minimum number of vectors we can use to represent all vectors in the vector space is .$n$, because the vectors in the basis would not be linearly independent if the vector space could be represented with fewer vectors.</li><li>Then we can show that any set with less than .$n$ vectors cannot be a basis because it does not have enough vectors to span the vector space &ndash; there would be some vectors in the vector space that cannot be expressed as a linear combination of the vectors in the set.</li><li>In addition, we can show that any set with more than .$n$ vectors must be linearly dependent and therefore cannot be a basis.</li><li>Combining the two arguments, we have that any other set of vectors that forms a basis for the vector space must have exactly .$n$ vectors!</li></ul></blockquote></li></ul><h2 id=column-space>
-Column Space
-<a class=anchor href=#column-space>#</a>
-</h2><ul>
-<li>The range/span/column space of matrix .$A \in \mathbb{R}^{m \times n}$ &ndash; which we can represent as a set of vectors .$\{ \vec a_1, \dots \vec a_n \}$ &ndash; is a set of all possible linear combinations:
-$$\text{span}\big(\{\vec a_1, \dots, \vec a_n\}\big) = \Bigg\{\sum_{i=1}^N \alpha_i \vec a_i\ |\ \alpha_1, \dots, \alpha_n \in \mathbb{R} \Bigg\} = \big\{A \vec x =\ \vec x \in \mathbb{R}^{n}\big\}$$
-<ul>
-<li>That is, the column space of a matrix .$A \in \mathbb{R}^{m \times n}$ is the span of the .$n$ columns in .$A$</li><li>It&rsquo;s the space of all outputs that the operator can map to.</li></ul></li><li>Thinking about .$A$ as a linear transformation from .$ \mathbb{R}^{n} \to \mathbb{R}^{m}$, the column space is effectively the <strong>set of all outputs</strong> that this matrix can transform input vectors to</li><li>Note that in the general case, input vectors and output vectors can be <em>different lengths</em>
-<ul>
-<li>The column space describes all possible output vectors .$\vec b = \mathbb{R}^{m \times 1}$</li><li>It can be shown that .$\text{span}(A)$ forms a subspace of .$ \mathbb{R}^{m}$
-<ul>
-<li>Note that .$\text{span}(A)$ is not necessarily .$ \mathbb{R}^{m}$</li></ul></li></ul></li></ul><p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/n98ilenWoak style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/VOXTTgTbj3s style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div></p><h2 id=row-space>
-Row Space
-<a class=anchor href=#row-space>#</a>
-</h2><ul>
-<li>Similarly, the row space is the span of the .$n$ rows</li></ul><h2 id=rank>
-Rank
-<a class=anchor href=#rank>#</a>
-</h2><ul>
-<li>The rank of .$A$ is defined as the <strong>dimension of the column space</strong> of .$A \in \mathbb{R}^{m \times n}$
-<ul>
-<li>.$\text{rank}(A) = \text{dim(span(A))}$
-<ul>
-<li>.$\text{dim(span}(A\text{)) ≡ dim(col(}A))$</li><li>It’s all too easy to confuse an actual space consisting of vectors, like a matrix range describing the output (column) space, with the dimension of that space, which is just a single scalar number. Keep them straight!</li></ul></li><li>.$ \text{rank}(A) = \text{dim(span}(A)) \leq \text{min}(m, n)$
-<ul>
-<li>This is at most .$m$, but certainly can be less, since an arbitrary .$A \in \mathbb{R}^{m \times n}$ is not guaranteed to have columns whose <strong>span</strong> is all of .$ \mathbb{R}^{m}$</li><li>Consider the simple counterexample of the zero matrix .$\vec 0 \in \mathbb{R}^{m \times n}$, which maps all .$n$-dimensional input vectors to the .$m$-dimensional all-zero vector.</li></ul></li></ul></li><li>In general, using the column-wise representation of matrix-vector multiplication we can show that .$\text{rank(}A)$ is the <strong>number of linearly independent columns</strong> in .$A$.
-<ul>
-<li>Any output vector can be represented as a linear combination of the columns of .$A$.</li><li>But some of these columns might themselves be linear combinations of other columns, which means we can replace any redundant column with a weighted sum of the other columns.</li><li>By removing all redundancies, we find that a matrix with .$k \leq \text{min}(n, m)$ linearly independent column vectors can &ldquo;unlock&rdquo; exactly .$k$ dimensions in the output.</li></ul></li><li>Thus, we find that .$\text{rank}(A)$ also equals the <strong>number of pivots</strong> in the
-<a href=https://en.wikipedia.org/wiki/Row_echelon_form><code>RREF</code></a> of .$A$.
-<ul>
-<li>Since each pivot must belong to a row and a column, the number of pivots in .$A \in \mathbb{R}^{m \times n}$ is limited by the smaller dimension.</li><li>For a tall matrix .$m > n$, the columns are the limiting dimension; for a wide matrix .$n > m$ the rows are.</li></ul></li></ul><h2 id=null-space>
-Null Space
-<a class=anchor href=#null-space>#</a>
-</h2><ul>
-<li>The null-space of .$ \mathbb{R}^{m \times n}$ is the set of all vectors .$\vec x \in \mathbb{R}^{m}$ such that .$A\vec x = 0$
-$$\text{null}(A) = \big\{\vec x\ |\ A \vec x = \vec 0, \vec x \in \mathbb{R}^{m}\big\}$$
-<ul>
-<li>That is, the set of all inputs that get mapped to .$\vec 0$ by .$A$</li></ul></li><li>$\text{dim(null}(A))$ can be interpreted as the number of input directions for which the output is &ldquo;compressed&rdquo; down to zero.
-<ul>
-<li>We know that it can be at most .$m$, since all of the input vectors have .$m$ components.</li><li>It&rsquo;s the set of vectors not in columns space, that is, the number of linearly dependent columns:
-$$m - \text{dim(span}(A)) = \text{dim(null}(A))$$
-<ul>
-<li>The loss of dimensionality from the input space to the output space shows up in the nullspace.</li></ul></li></ul></li><li>.$\vec 0$ is always in the null space — <em>trivial Null space</em>
-<ul>
-<li>This wouldn&rsquo;t hold if we had
+<a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=50">page 50</a></li><li>A <strong>basis</strong> for a vector space is a minimum set of vectors needed to represent all vectors in the space</li><li><strong>Dimension</strong> of a vector space is the number of basis vectors</li><li><strong>Column space</strong> is the span (range) of the columns of a matrix</li><li><strong>Row space</strong> is the span of the rows of a matrix</li></ul><hr><h2 id=vector-spaces>Vector Spaces
+<a class=anchor href=#vector-spaces>#</a></h2><ul><li>A vector space .$\mathbb{V}$ is a set of vectors and two operators .$+, \cdot$ that satisfy:</li></ul><p><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><p><strong>Vector Addition</strong></p><ul><li>Associative: .$\vec u + (\vec v + \vec w) = (\vec u + \vec v) + \vec w$</li><li>Commutative: .$\vec u + \vec v = \vec v + \vec u$</li><li>Additive Identity: There exists an additive identity .$\vec 0 \in \mathbb{V}$ such that .$\vec v + \vec 0 = \vec v$</li><li>Additive Inverse: There exists .$- \vec v \in \mathbb{V}$ such that .$\vec v + (-\vec v) = \vec 0$. We call .$-\vec v$ the additive inverse of .$\vec v$.</li><li>Closure under vector addition: The sum .$\vec v + \vec u$ must also be in .$\mathbb{V}$</li></ul></div><div class="flex-even markdown-inner"><p><strong>Scalar Multiplication</strong></p><ul><li>Associative: .$\vec \alpha(\beta \vec v) = (\alpha \beta) \vec v$</li><li>Multiplicative Identity: There exists .$1 \in \mathbb{R}$ where .$1 \cdot \vec v = \vec v$</li><li>Distributive in vector addition: .$\alpha (\vec u + \vec v) = \alpha \vec u + \alpha \vec v$</li><li>Distributive in scalar addition: .$(\alpha + \beta)\vec v = \alpha \vec v + \beta \vec v$</li><li>Closure under scalar multiplication: The product .$\alpha \vec v$ must also be in .$\mathbb{V}$.</li></ul></div></div><div style=text-align:center>... for any .$\vec v, \vec u, \vec w \in \mathbb{V}; \alpha, \beta \in \mathbb{R}$</div></p><ul><li>These can be grouped by axioms of closure, addition, and scaling shown on
+<a href="https://eecs16a.org/lecture/Lecture4A_Slides.pdf#page=10">slide 10</a></li><li>For example .$ \mathbb{R}^{n}$ is the vector space of all .$n$-dimensional vectors.<ul><li>In fact, the set of all matrices the same size is also a vector space .$ \mathbb{R}^{n \times o}$ since it fulfills all of the properties above as well</li><li>In this class we will generally only deal with vector spaces containing vectors in .$\mathbb{R}^{n}$.</li></ul></li></ul><h3 id=subspaces>Subspaces
+<a class=anchor href=#subspaces>#</a></h3><ul><li>A subspace .$\mathbb{U}$ consists of a subset of .$\mathbb{V}$ in vector space (.$\mathbb{V}, \mathbb{F}, +, \cdot$). .$\mathbb{U} \subset \mathbb{V}$ and have 3 properties<ol><li>Contains .$\vec 0 $, i.e., .$\vec 0 \in \mathbb{U}$</li><li>Closed under vector addition: .$\vec v_1, \vec v_2 \in \mathbb{U} \Longrightarrow \vec v_1 + \vec v_2 \in \mathbb{U}$</li><li>Closed under scalar multiplication: .$\vec v \in \mathbb{U}, \alpha \in \mathbb{F} \Longrightarrow \alpha \vec v \in \mathbb{U}$</li></ol></li><li>Examples on
+<a href="https://eecs16a.org/lecture/Lecture4A_Slides.pdf#page=13">slide 13</a></li><li>Intuitively, a subspace is a closed subset of all the vectors in .$ \mathbb{V}$.<ul><li>Any linear combination of vectors in the subspace must also lie in that subspace.</li></ul></li><li>Just as basis and dimension are defined for vector spaces, they have equivalent definitions for subspaces.<ul><li><strong>Basis for a Subspace:</strong> set of linearly independent vectors that span the subspace (minimal set of subspace-spanning vectors)</li><li><strong>Subspace Dimension:</strong> number of vectors in subspace-basis</li></ul></li></ul><h2 id=basis>Basis
+<a class=anchor href=#basis>#</a></h2><ul><li><strong>Basis:</strong> Given a vector space .$\mathbb{V}$, a set of vectors .$\{\vec v_1, \dots \vec v_n\}$ is a basis of the vector space if it satisfies the following properties:<ol><li>.$\vec v_1, \dots, \vec v_n$ are linearly independent vectors</li><li>.$\text{span}(\{\vec v_1, \dots, \vec v_n\}) = \mathbb{V} \Longrightarrow \forall \vec v \in \mathbb{V}, \exists \alpha_1, \dots, \alpha_{n-1} \in \mathbb{R}$ such that .$\vec v_1 = \alpha_1 \vec v_2 + \dots \alpha_{n-1} \vec v_n$</li></ol><blockquote><p>Minimum set of vectors that spans a vector space</p></blockquote></li><li>A basis of a vector space is the <strong><em>minimum</em> set of vectors needed to represent all vectors</strong> in the vector space.<ul><li>If a set of vectors is linearly dependent and “spans” the vector space, it is still <em>not</em> a basis &ndash; we can remove at least one vector from the set and the resulting set will still span the vector space</li></ul></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/P2LTAUO1TdA style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h3 id=basis-is-not-unique>Basis is not unique
+<a class=anchor href=#basis-is-not-unique>#</a></h3><ul><li>Intuitively, think about multiplying one of the vectors in a given basis by a nonzero scalar will not affect the linear independence or span of the vectors.</li><li>We could alternatively construct another basis by replacing one of the vectors with the sum of itself and any other vector in the set.</li><li>Mathematically, suppose that .$\{\vec v_1, \dots, \vec v_n \}$ is a basis for the vector space we are considering.<ul><li>Thus .$\{\alpha \vec v_1, \dots, \vec v_n \}$ where .$\alpha \neq 0$ is also a basis because, just as we’ve seen in Gaussian elimination row operations, multiplying a row by a nonzero constant does not change the linear independence or dependence of the rows.<ul><li>We can generalize this to say that multiplying a vector by a nonzero scalar also does not change the linear independence of the set of vectors.</li></ul></li><li>In addition, we know that .$\text{span}(\{ \vec v_1, \dots, \vec v_n \}) = \text{span}( \{\alpha \vec v_1, \dots, \vec v_n \} )$<ul><li>Any vector in .$\text{span}(\{ \vec v_1, \dots, \vec v_n \})$ can be created as a linear combination of the set .$\text{span}(\{ \alpha \vec v_1, \dots, \vec v_n \})$ by dividing the scale factor on .$\vec v_1$ by .$\alpha$.</li><li>We can use a similar argument to show that .$\{\alpha \vec v_1, \dots, \vec v_n \}$ is also a basis for the same vector space.</li></ul></li></ul><blockquote><p>To generalize, for .$\mathbb{R}^{N}$, any .$N$ (and <em>only</em> .$N$) linearly independent vectors form a basis</p></blockquote></li></ul><h2 id=dimension>Dimension
+<a class=anchor href=#dimension>#</a></h2><ul><li><strong>Dimension:</strong> The dimension of a vector space is the number of basis vectors.</li><li>Since each basis vector can be scaled by one coefficient, the dimension of a space as the <strong>fewest number of parameters needed to describe an element</strong> or member of that space.</li><li>The dimension can also be thought of as the <strong>degrees of freedom of your space</strong> &ndash; that is, the number of parameters that can be varied when describing a member of that space.<blockquote><p><strong>A vector space can have many bases, but each basis must have the same number of vectors:</strong></p><ul><li>Suppose a basis for the vector space we’re considering has .$n$ vectors. This means that the minimum number of vectors we can use to represent all vectors in the vector space is .$n$, because the vectors in the basis would not be linearly independent if the vector space could be represented with fewer vectors.</li><li>Then we can show that any set with less than .$n$ vectors cannot be a basis because it does not have enough vectors to span the vector space &ndash; there would be some vectors in the vector space that cannot be expressed as a linear combination of the vectors in the set.</li><li>In addition, we can show that any set with more than .$n$ vectors must be linearly dependent and therefore cannot be a basis.</li><li>Combining the two arguments, we have that any other set of vectors that forms a basis for the vector space must have exactly .$n$ vectors!</li></ul></blockquote></li></ul><h2 id=column-space>Column Space
+<a class=anchor href=#column-space>#</a></h2><ul><li>The range/span/column space of matrix .$A \in \mathbb{R}^{m \times n}$ &ndash; which we can represent as a set of vectors .$\{ \vec a_1, \dots \vec a_n \}$ &ndash; is a set of all possible linear combinations:
+$$\text{span}\big(\{\vec a_1, \dots, \vec a_n\}\big) = \Bigg\{\sum_{i=1}^N \alpha_i \vec a_i\ |\ \alpha_1, \dots, \alpha_n \in \mathbb{R} \Bigg\} = \big\{A \vec x =\ \vec x \in \mathbb{R}^{n}\big\}$$<ul><li>That is, the column space of a matrix .$A \in \mathbb{R}^{m \times n}$ is the span of the .$n$ columns in .$A$</li><li>It&rsquo;s the space of all outputs that the operator can map to.</li></ul></li><li>Thinking about .$A$ as a linear transformation from .$ \mathbb{R}^{n} \to \mathbb{R}^{m}$, the column space is effectively the <strong>set of all outputs</strong> that this matrix can transform input vectors to</li><li>Note that in the general case, input vectors and output vectors can be <em>different lengths</em><ul><li>The column space describes all possible output vectors .$\vec b = \mathbb{R}^{m \times 1}$</li><li>It can be shown that .$\text{span}(A)$ forms a subspace of .$ \mathbb{R}^{m}$<ul><li>Note that .$\text{span}(A)$ is not necessarily .$ \mathbb{R}^{m}$</li></ul></li></ul></li></ul><p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/n98ilenWoak style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/VOXTTgTbj3s style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div></p><h2 id=row-space>Row Space
+<a class=anchor href=#row-space>#</a></h2><ul><li>Similarly, the row space is the span of the .$n$ rows</li></ul><h2 id=rank>Rank
+<a class=anchor href=#rank>#</a></h2><ul><li>The rank of .$A$ is defined as the <strong>dimension of the column space</strong> of .$A \in \mathbb{R}^{m \times n}$<ul><li>.$\text{rank}(A) = \text{dim(span(A))}$<ul><li>.$\text{dim(span}(A\text{)) ≡ dim(col(}A))$</li><li>It’s all too easy to confuse an actual space consisting of vectors, like a matrix range describing the output (column) space, with the dimension of that space, which is just a single scalar number. Keep them straight!</li></ul></li><li>.$ \text{rank}(A) = \text{dim(span}(A)) \leq \text{min}(m, n)$<ul><li>This is at most .$m$, but certainly can be less, since an arbitrary .$A \in \mathbb{R}^{m \times n}$ is not guaranteed to have columns whose <strong>span</strong> is all of .$ \mathbb{R}^{m}$</li><li>Consider the simple counterexample of the zero matrix .$\vec 0 \in \mathbb{R}^{m \times n}$, which maps all .$n$-dimensional input vectors to the .$m$-dimensional all-zero vector.</li></ul></li></ul></li><li>In general, using the column-wise representation of matrix-vector multiplication we can show that .$\text{rank(}A)$ is the <strong>number of linearly independent columns</strong> in .$A$.<ul><li>Any output vector can be represented as a linear combination of the columns of .$A$.</li><li>But some of these columns might themselves be linear combinations of other columns, which means we can replace any redundant column with a weighted sum of the other columns.</li><li>By removing all redundancies, we find that a matrix with .$k \leq \text{min}(n, m)$ linearly independent column vectors can &ldquo;unlock&rdquo; exactly .$k$ dimensions in the output.</li></ul></li><li>Thus, we find that .$\text{rank}(A)$ also equals the <strong>number of pivots</strong> in the
+<a href=https://en.wikipedia.org/wiki/Row_echelon_form><code>RREF</code></a> of .$A$.<ul><li>Since each pivot must belong to a row and a column, the number of pivots in .$A \in \mathbb{R}^{m \times n}$ is limited by the smaller dimension.</li><li>For a tall matrix .$m > n$, the columns are the limiting dimension; for a wide matrix .$n > m$ the rows are.</li></ul></li></ul><h2 id=null-space>Null Space
+<a class=anchor href=#null-space>#</a></h2><ul><li>The null-space of .$ \mathbb{R}^{m \times n}$ is the set of all vectors .$\vec x \in \mathbb{R}^{m}$ such that .$A\vec x = 0$
+$$\text{null}(A) = \big\{\vec x\ |\ A \vec x = \vec 0, \vec x \in \mathbb{R}^{m}\big\}$$<ul><li>That is, the set of all inputs that get mapped to .$\vec 0$ by .$A$</li></ul></li><li>$\text{dim(null}(A))$ can be interpreted as the number of input directions for which the output is &ldquo;compressed&rdquo; down to zero.<ul><li>We know that it can be at most .$m$, since all of the input vectors have .$m$ components.</li><li>It&rsquo;s the set of vectors not in columns space, that is, the number of linearly dependent columns:
+$$m - \text{dim(span}(A)) = \text{dim(null}(A))$$<ul><li>The loss of dimensionality from the input space to the output space shows up in the nullspace.</li></ul></li></ul></li><li>.$\vec 0$ is always in the null space — <em>trivial Null space</em><ul><li>This wouldn&rsquo;t hold if we had
 <a href=/eecs-16a/0/#note-1ab-extra>affine</a> (instead of linear) functions</li></ul></li><li>Null space DNE when the determinant is not zero &ndash; see
-<a href=/eecs-16a/3/#inverse-of-a-2x2-matrix>last week</a></li></ul><p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/qvyboGryeA8 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/vFctYRhK2M0 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div></p><h3 id=procedure-to-compute-a-null-space>
-Procedure to Compute a Null-Space
-<a class=anchor href=#procedure-to-compute-a-null-space>#</a>
-</h3><ul>
-<li>Computing the nullspace of .$A$ requires us to solve .$A \vec x = \vec 0$ &ndash; the procedure is as follows:
-<ol>
-<li>Put .$A$ in <code>RREF</code>. Initialize the set .$\mathbb{S} = \{ \vec 0 \}$.</li><li>Check each column for leading entries and find the number of .$F$ree and .$B$asic variables.</li><li>if .$F = 0$, stop and skip to the last step.</li><li>if .$F \neq 0$, repeat the following for each free variable:
-<ul>
-<li>Set that free variable to .$1$, and all others to zero.</li><li>Solve .$A \vec x$ under these conditions; add the solution vector to .$\mathbb{S}$.</li></ul></li><li>Conclude that .$\text{null}(A) = \text{span}(\mathbb{S})$.</li></ol></li><li>Example is given on
-<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=37">page 37-38</a></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/uQhTuRlWMxw style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><h3 id=rank-nullity-theorem>
-Rank-Nullity Theorem
-<a class=anchor href=#rank-nullity-theorem>#</a>
-</h3><blockquote>
-<p>How is the number of <strong>free variables</strong> related to the <strong>total number of columns</strong> in a matrix .$A \in \mathbb{R}^{m \times n}$? Well, each column of a matrix either contributes a &ldquo;new direction&rdquo; to the output or it is redundant with other columns and their already-discovered directions. In other words, each of .$n$ columns adds a dimension to .$\text{span}(A)$ or to .$\text{null}(A)$. Therefore, the following holds:
+<a href=/eecs-16a/3/#inverse-of-a-2x2-matrix>last week</a></li></ul><p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/qvyboGryeA8 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/vFctYRhK2M0 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div></p><h3 id=procedure-to-compute-a-null-space>Procedure to Compute a Null-Space
+<a class=anchor href=#procedure-to-compute-a-null-space>#</a></h3><ul><li>Computing the nullspace of .$A$ requires us to solve .$A \vec x = \vec 0$ &ndash; the procedure is as follows:<ol><li>Put .$A$ in <code>RREF</code>. Initialize the set .$\mathbb{S} = \{ \vec 0 \}$.</li><li>Check each column for leading entries and find the number of .$F$ree and .$B$asic variables.</li><li>if .$F = 0$, stop and skip to the last step.</li><li>if .$F \neq 0$, repeat the following for each free variable:<ul><li>Set that free variable to .$1$, and all others to zero.</li><li>Solve .$A \vec x$ under these conditions; add the solution vector to .$\mathbb{S}$.</li></ul></li><li>Conclude that .$\text{null}(A) = \text{span}(\mathbb{S})$.</li></ol></li><li>Example is given on
+<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=37">page 37-38</a></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/uQhTuRlWMxw style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h3 id=rank-nullity-theorem>Rank-Nullity Theorem
+<a class=anchor href=#rank-nullity-theorem>#</a></h3><blockquote><p>How is the number of <strong>free variables</strong> related to the <strong>total number of columns</strong> in a matrix .$A \in \mathbb{R}^{m \times n}$? Well, each column of a matrix either contributes a &ldquo;new direction&rdquo; to the output or it is redundant with other columns and their already-discovered directions. In other words, each of .$n$ columns adds a dimension to .$\text{span}(A)$ or to .$\text{null}(A)$. Therefore, the following holds:
 $$\text{dim(span}(A)) + \text{dim(null}(A)) = n$$
-$$\text{rank}(A) + \text{dim(null}(A)) = n$$</p></blockquote><h1 id=02-17-eigenvectors-values>
-02-17: Eigenvectors, values
-<a class=anchor href=#02-17-eigenvectors-values>#</a>
-</h1><h2 id=eigenvectors-and-eigenvalues>
-Eigenvectors and Eigenvalues
-<a class=anchor href=#eigenvectors-and-eigenvalues>#</a>
-</h2><blockquote>
-<p>Consider a square matrix .$ A \in \mathbb{R}^{n \times n}$. An <strong>eigenvector</strong> of .$A$ is a <em>nonzero</em> vector .$\vec x \in \mathbb{R}^{n}$ such that
+$$\text{rank}(A) + \text{dim(null}(A)) = n$$</p></blockquote><h1 id=02-17-eigenvectors-values>02-17: Eigenvectors, values
+<a class=anchor href=#02-17-eigenvectors-values>#</a></h1><h2 id=eigenvectors-and-eigenvalues>Eigenvectors and Eigenvalues
+<a class=anchor href=#eigenvectors-and-eigenvalues>#</a></h2><blockquote><p>Consider a square matrix .$ A \in \mathbb{R}^{n \times n}$. An <strong>eigenvector</strong> of .$A$ is a <em>nonzero</em> vector .$\vec x \in \mathbb{R}^{n}$ such that
 $$A \vec x = \lambda \vec x$$
-where .$\lambda$ is a scalar value, called the <strong>eigenvalue</strong> of .$\vec x$.</p></blockquote><blockquote>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/PFDu9oVAE-g style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div></blockquote><hr>
-<ul>
-<li>That is, an <strong>eigenvector</strong> represents a sort of stability point: vectors aligned with an eigenvector will not change direction under a linear transformation .$A$
-<ul>
-<li>Rather, they will simply be scaled by some factor.</li><li>Note that eigenvectors are a property of the matrix itself and do not depend on the specific vector being transformed (input)</li></ul></li><li>The <strong>eigenvalue</strong> describes this stretching or compressing factor for vectors aligned with an <em>eigenvector</em>
-<ul>
-<li>This means any vector that’s &lsquo;some&rsquo; <em>multiple of the eigenvector</em>, when it’s transformed by .$A$, will become a scaled version of itself that&rsquo;s a &lsquo;some&rsquo; <em>multiple of the eigenvalue</em></li><li>Example on
-<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=45">page 45</a></li></ul></li><li>Geometrically, an <em>eigenvector</em>, corresponding to a real nonzero eigenvalue, points in a direction in which it is stretched by the transformation and the <em>eigenvalue</em> is the factor by which it is stretched</li><li>Because these two terms are so commonly used in conjunction, we often refer to an <strong>eigen(value/vector) pair</strong>
-<ul>
-<li>Note that scaling a given eigenvector for an eigenvalue will still produce a valid eigenvector, since the vector’s direction will not be changed</li></ul></li><li>Given non-invertible .$A \in \mathbb{R}^{n \times n}$ there are at least .$1$ and at most .$n$ eigenvalues
-<ul>
-<li>Given non-invertibility, some .$\lambda_i = 0$, so we have at least 1 eigenvalue.
-<ul>
-<li>Indeed, all eigenvalues can be .$0$ (such as for .$\vec 0$)!</li></ul></li><li>However, non-invertibility does not place any other restrictions on our set of eigenvalues, so all other .$n-1$ eigenvalues can be distinct from this .$\lambda_i$</li></ul></li><li>Properties to know
-<ol>
-<li>A matrix is uninvertible iff .$0$ is an eigenvalue (because there exists a vector .$\vec v$ such that .$A \vec v = \vec 0$.</li><li>A scalar times an eigenvector is still an eigenvector: .$(A(c \vec v) = c A \vec v = c \vec v = (c \vec v))$</li><li>Eigenvectors with distinct eigenvalues are linearly independent (eigenvectors in the same span have the same eigenvalue)</li><li>.$A^{-1} \vec v = \lambda^{-1} \vec v$
-<ul>
-<li>.$A \vec v = \lambda \vec v \Longrightarrow A^{-1} A \vec v = A^{-1} \lambda \vec v \Longrightarrow \vec v = \lambda A^{-1} \vec v \Longrightarrow \lambda^{-1} \vec v = A^{-1} \vec v$</li></ul></li></ol></li></ul><h2 id=determinants>
-Determinants
-<a class=anchor href=#determinants>#</a>
-</h2><ul>
-<li>The determinant is a quantity we can define for any square matrix
-<ul>
-<li>The determinant is nonzero if and only if the matrix is invertible and the linear map represented by the matrix is an isomorphism</li></ul></li><li>For a .$2 \times 2$ matrix, the formula is:
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>The absolute value of .$ad − bc$ is the area of the parallelogram, and thus represents the scale factor by which areas are transformed by .$A$.</li></ul></div><div class="flex-even markdown-inner">
-<p>$$\text{det}\Bigg( \begin{bmatrix}
+where .$\lambda$ is a scalar value, called the <strong>eigenvalue</strong> of .$\vec x$.</p></blockquote><blockquote><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/PFDu9oVAE-g style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div></blockquote><hr><ul><li>That is, an <strong>eigenvector</strong> represents a sort of stability point: vectors aligned with an eigenvector will not change direction under a linear transformation .$A$<ul><li>Rather, they will simply be scaled by some factor.</li><li>Note that eigenvectors are a property of the matrix itself and do not depend on the specific vector being transformed (input)</li></ul></li><li>The <strong>eigenvalue</strong> describes this stretching or compressing factor for vectors aligned with an <em>eigenvector</em><ul><li>This means any vector that’s &lsquo;some&rsquo; <em>multiple of the eigenvector</em>, when it’s transformed by .$A$, will become a scaled version of itself that&rsquo;s a &lsquo;some&rsquo; <em>multiple of the eigenvalue</em></li><li>Example on
+<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=45">page 45</a></li></ul></li><li>Geometrically, an <em>eigenvector</em>, corresponding to a real nonzero eigenvalue, points in a direction in which it is stretched by the transformation and the <em>eigenvalue</em> is the factor by which it is stretched</li><li>Because these two terms are so commonly used in conjunction, we often refer to an <strong>eigen(value/vector) pair</strong><ul><li>Note that scaling a given eigenvector for an eigenvalue will still produce a valid eigenvector, since the vector’s direction will not be changed</li></ul></li><li>Given non-invertible .$A \in \mathbb{R}^{n \times n}$ there are at least .$1$ and at most .$n$ eigenvalues<ul><li>Given non-invertibility, some .$\lambda_i = 0$, so we have at least 1 eigenvalue.<ul><li>Indeed, all eigenvalues can be .$0$ (such as for .$\vec 0$)!</li></ul></li><li>However, non-invertibility does not place any other restrictions on our set of eigenvalues, so all other .$n-1$ eigenvalues can be distinct from this .$\lambda_i$</li></ul></li><li>Properties to know<ol><li>A matrix is uninvertible iff .$0$ is an eigenvalue (because there exists a vector .$\vec v$ such that .$A \vec v = \vec 0$.</li><li>A scalar times an eigenvector is still an eigenvector: .$(A(c \vec v) = c A \vec v = c \vec v = (c \vec v))$</li><li>Eigenvectors with distinct eigenvalues are linearly independent (eigenvectors in the same span have the same eigenvalue)</li><li>.$A^{-1} \vec v = \lambda^{-1} \vec v$<ul><li>.$A \vec v = \lambda \vec v \Longrightarrow A^{-1} A \vec v = A^{-1} \lambda \vec v \Longrightarrow \vec v = \lambda A^{-1} \vec v \Longrightarrow \lambda^{-1} \vec v = A^{-1} \vec v$</li></ul></li></ol></li></ul><h2 id=determinants>Determinants
+<a class=anchor href=#determinants>#</a></h2><ul><li>The determinant is a quantity we can define for any square matrix<ul><li>The determinant is nonzero if and only if the matrix is invertible and the linear map represented by the matrix is an isomorphism</li></ul></li><li>For a .$2 \times 2$ matrix, the formula is:<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>The absolute value of .$ad − bc$ is the area of the parallelogram, and thus represents the scale factor by which areas are transformed by .$A$.</li></ul></div><div class="flex-even markdown-inner"><p>$$\text{det}\Bigg( \begin{bmatrix}
 a & b \\
 c & d \\
-\end{bmatrix}\Bigg) = ad - bc$$
-</div></div><ul>
-<li>If linearly dependent, some vectors will lie on top of each other so the area will be zero</li><li>Similarly in 3D, if any column vectors are multiples of each other, we &ldquo;squash&rdquo; a volume into a plane or a line.</li><li>That is, <em>determinant of any square matrix is zero if the columns are linearly dependent</em>.</li></ul></li><li>For a .$3 \times 3$ matrix, the shape is a parallelipiped, and we form hyper-volumes in higher dimensions.
-<ul>
-<li>We can calculate determinants for higher dimension matrices as well, as described
-<a href=https://en.wikipedia.org/wiki/Determinant>here</a></li></ul></li><li>The determinant of the transpose of .$A$ equals the determinant of .$A$: .$\text{det}(A) = \text{det}(A^\text{T})$
-<ul>
-<li>&lsquo;Proving&rsquo; this geometrically on a whiteboard is fun, try out the .$2 \times 2$ case</li><li>Therefore, if .$A^\text{T}$ has an eigenvalue .$\lambda$, then .$A$ also has the eigenvalue .$\lambda$ because .$\text{det}(A - \lambda I) = \text{det}(A^\text{T} - \lambda I)$</li><li>This implies that in all the properties mentioned above, the word &ldquo;column&rdquo; can be replaced by &ldquo;row&rdquo; throughout
-<ul>
-<li>For example, viewing an .$n \times n$ matrix as being composed of .$n$ rows, the determinant is an .$n$-linear function.</li></ul></li><li>See
+\end{bmatrix}\Bigg) = ad - bc$$</div></div><ul><li>If linearly dependent, some vectors will lie on top of each other so the area will be zero</li><li>Similarly in 3D, if any column vectors are multiples of each other, we &ldquo;squash&rdquo; a volume into a plane or a line.</li><li>That is, <em>determinant of any square matrix is zero if the columns are linearly dependent</em>.</li></ul></li><li>For a .$3 \times 3$ matrix, the shape is a parallelipiped, and we form hyper-volumes in higher dimensions.<ul><li>We can calculate determinants for higher dimension matrices as well, as described
+<a href=https://en.wikipedia.org/wiki/Determinant>here</a></li></ul></li><li>The determinant of the transpose of .$A$ equals the determinant of .$A$: .$\text{det}(A) = \text{det}(A^\text{T})$<ul><li>&lsquo;Proving&rsquo; this geometrically on a whiteboard is fun, try out the .$2 \times 2$ case</li><li>Therefore, if .$A^\text{T}$ has an eigenvalue .$\lambda$, then .$A$ also has the eigenvalue .$\lambda$ because .$\text{det}(A - \lambda I) = \text{det}(A^\text{T} - \lambda I)$</li><li>This implies that in all the properties mentioned above, the word &ldquo;column&rdquo; can be replaced by &ldquo;row&rdquo; throughout<ul><li>For example, viewing an .$n \times n$ matrix as being composed of .$n$ rows, the determinant is an .$n$-linear function.</li></ul></li><li>See
 <a href=https://www2.math.upenn.edu/~ekorman/teaching/det.pdf>this article</a> which relies on the idea of elementary matrices (not covered) or this more advanced, out-of-scope
-<a href=https://math.stackexchange.com/questions/598258/geometric-interpretation-of-detat-deta>stackoverflow post</a> that deals with 16B-level topics (and beyond)</li></ul></li></ul><h2 id=computing-eigenvalues-and-eigenvectors>
-Computing Eigenvalues and Eigenvectors
-<a class=anchor href=#computing-eigenvalues-and-eigenvectors>#</a>
-</h2><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/3-xfmbdzkqc style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><ul>
-<li>Solving this equation for nonzero (nontrivial) solutions .$\vec x$ will yield our eigenvectors:
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<p>$$A \vec x = \lambda \vec x \label{a}\tag{1}$$
-</div><div class="flex-even markdown-inner">
-<p>$$\Longrightarrow (A - \lambda I_n) \vec x = \vec 0_n$$
-</div><div class="flex-even markdown-inner">
-<p>$$\Longrightarrow A&rsquo; \vec x = \vec 0_n$$
-</div></div><ul>
-<li>Note that .$A$ and .$I_n$ are fixed and only 1 parameter here that can vary in this equation: .$\lambda$</li></ul></li></ul><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>We want to find values of .$\lambda$ such that .$A&rsquo; = (A − \lambda I_n)$ has linearly dependent columns</li><li>That is, we want to find values of .$\lambda$ that cause the <strong>determinant</strong> of .$A&rsquo;$ to become zero
-<ul>
-<li>Linear dependence of the columns creates a nontrivial null-space for .$A'$</li><li>.$N$th order characteristic polynomial with .$N$ solutions</li></ul></li><li>Work-through on
-<a href="https://eecs16a.org/lecture/Note9.pdf#page=6">page 6</a></li></ul></div><div class="flex-even markdown-inner">
-<p>$$A&rsquo; = \begin{bmatrix}
+<a href=https://math.stackexchange.com/questions/598258/geometric-interpretation-of-detat-deta>stackoverflow post</a> that deals with 16B-level topics (and beyond)</li></ul></li></ul><h2 id=computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors
+<a class=anchor href=#computing-eigenvalues-and-eigenvectors>#</a></h2><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/3-xfmbdzkqc style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><ul><li>Solving this equation for nonzero (nontrivial) solutions .$\vec x$ will yield our eigenvectors:<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><p>$$A \vec x = \lambda \vec x \label{a}\tag{1}$$</div><div class="flex-even markdown-inner"><p>$$\Longrightarrow (A - \lambda I_n) \vec x = \vec 0_n$$</div><div class="flex-even markdown-inner"><p>$$\Longrightarrow A&rsquo; \vec x = \vec 0_n$$</div></div><ul><li>Note that .$A$ and .$I_n$ are fixed and only 1 parameter here that can vary in this equation: .$\lambda$</li></ul></li></ul><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>We want to find values of .$\lambda$ such that .$A&rsquo; = (A − \lambda I_n)$ has linearly dependent columns</li><li>That is, we want to find values of .$\lambda$ that cause the <strong>determinant</strong> of .$A&rsquo;$ to become zero<ul><li>Linear dependence of the columns creates a nontrivial null-space for .$A'$</li><li>.$N$th order characteristic polynomial with .$N$ solutions</li></ul></li><li>Work-through on
+<a href="https://eecs16a.org/lecture/Note9.pdf#page=6">page 6</a></li></ul></div><div class="flex-even markdown-inner"><p>$$A&rsquo; = \begin{bmatrix}
 a_{11} - \lambda & a_{12} & &mldr; & a_{1n}\\
 a_{21} & a_{22} - \lambda & &mldr; & \vdots \\
 \vdots & \vdots & \ddots & \vdots\\
 a_{n1} & \dots & &mldr; & a_{nn} - \lambda
-\end{bmatrix}$$
-</div></div><ul>
-<li>For the .$2 \times 2$ case determinant is
-$$\lambda^2 - (a+d)\lambda + (ad - bc) = 0$$
-<ul>
-<li>Solving this quadratic equation, we can find the .$\lambda$ values.</li><li>Then, for each .$\lambda_i$ we find, we revisit .$\eqref{a}$ and solve for the corresponding .$\vec x_i$</li><li>The polynomial on the left hand side of the above equation is known as the
-<a href=https://en.wikipedia.org/wiki/Characteristic_polynomial>characteristic polynomial</a> for the matrix .$A$.</li></ul></li><li>If a matrix has <em>repeated eigenvalues</em>, they may (or may not) have <em>distinct eigenvectors</em>.
-<ul>
-<li>In general, multiplicity of eigenvalues will result in the same multidimensional eigenspace</li><li>(Aside) &mldr;except if the matrix is
-<a href=https://en.wikipedia.org/wiki/Defective_matrix>defective</a>
-<ul>
-<li>An .$n \times  n$ matrix is defective iff it does not have .$n$ linearly independent eigenvectors</li><li>That is, a defective matrix always has fewer than .$n$ distinct eigenvalues, since distinct eigenvalues always have linearly independent eigenvectors</li><li>In which case the rank is decreased</li></ul></li></ul></li></ul><h3 id=eigenspace>
-Eigenspace
-<a class=anchor href=#eigenspace>#</a>
-</h3><blockquote>
-<p>If the eigenvectors are <em>distinct</em>, they form an <strong>
-<a href=https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Eigenspaces,_geometric_multiplicity,_and_the_eigenbasis_for_matrices>eigenspace</a></strong>
-$$E_\lambda = \text{null}(A - \lambda I_n) = \text{null}(A&rsquo;)$$</p></blockquote><ul>
-<li>That is, null space of some matrix is the set of all vectors that satisfy .$\eqref{a}$ OR all of the eigenvectors that correspond to some eigenvalue OR the eigenspace that corresponds to the eigenvalue</li><li>Exactly like the concept of span; the eigenspace is a subspace, the span of all eigenvectors for that eigenvalue (including .$\vec 0$)</li><li>Any input vectors that lie in this space (for 2 distinct eigenvectors, a plane; for 1, a line) will be scaled by the shared eigenvalue under a linear transformation.</li><li>Eigenspace is a subspace, which means it&rsquo;s closed under scalar multiplication
-<ul>
-<li>Thus, if two vectors are related by a scalar, they must both lie in the <em>same</em> eigenspace of .$\lambda_i$: .$E_{\lambda_i}$
-<ul>
-<li>That is, the eigenvectors that make up some eigenspace aren&rsquo;t unique</li></ul></li><li>But, every eigenvector can only correspond to one eigenvalue
-<ul>
-<li>If for some .$A$, where .$A \vec x_1 = \lambda_1 \vec x_1$ and .$A \vec x_1 = \lambda_2 \vec x_1$ then .$\lambda_1 = \lambda_2$</li><li>Thinking about a physical diagram may help clarify; .$\lambda_1 \neq \lambda_2$ would require some single initial state or vector aligned with .$\vec x_1$ to be scaled by two <em>different</em> values upon being transformed by .$A$
-<ul>
-<li>This cannot happen, so the <strong>two eigenvalues cannot be distinct</strong></li></ul></li></ul></li></ul></li><li>Aside: Complex eigenvalues can exist as well; they are much harder to visually understand, but mathematically, we find them using the exact same process as before.</li></ul><h3 id=mean-product-formula>
-Mean-product formula
-<a class=anchor href=#mean-product-formula>#</a>
-</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/e50Bj7jn9IQ style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><ul>
-<li>Mean-product formula is a nicer way of solving this, versus finding the roots of the polynomial
-$$m \pm \sqrt{m^2 - p}$$
-<ul>
-<li>$m$ is the mean of the
-<a href=https://en.wikipedia.org/wiki/Trace_%28linear_algebra%29>trace</a>, which is the same as the mean of the eigenvalues</li><li>$p$ is the product of the eigenvalues, which is the determinant</li></ul></li></ul><h2 id=theorems>
-Theorems
-<a class=anchor href=#theorems>#</a>
-</h2><h3 id=theorem-91>
-Theorem 9.1
-<a class=anchor href=#theorem-91>#</a>
-</h3><blockquote>
-<p>Given two eigenvectors .$\vec v_1$ and .$\vec v_2$ corresponding to two different eigenvalues .$\lambda_1$ and .$\lambda_2$ of a matrix .$A$, it is always the case that .$\vec v_1$ and .$\vec v_2$ are linearly independent.</p></blockquote><ul>
-<li>Proof on
-<a href="https://eecs16a.org/lecture/Note9.pdf#page=9">page 9</a></li></ul><h3 id=theorem-92>
-Theorem 9.2
-<a class=anchor href=#theorem-92>#</a>
-</h3><blockquote>
-<p>Let .$\vec v_1,\vec v_2, \dots , \vec v_m$ be eigenvectors of an .$n \times n$ matrix with distinct eigenvalues. It is the case that all the .$\vec v_i$ are linearly independent from one another.</p></blockquote><ul>
-<li>Proof on
-<a href="https://eecs16a.org/lecture/Note9.pdf#page=10">page 10</a></li></ul><h3 id=proposition-1>
-Proposition 1
-<a class=anchor href=#proposition-1>#</a>
-</h3><blockquote>
-<p>If an square .$n \times n$ matrix .$A$ isn&rsquo;t invertible, then it has some eigenvalue .$\lambda_i = 0$</p></blockquote><ul>
-<li>If a matrix is not invertible, then the dimension of its null space isn&rsquo;t necessarily greater than 0 because there must be a linearly dependent row or column.</li><li>If this is true, then there&rsquo;s a non-zero vector .$\vec x$ such that .$A \vec x = 0 \vec x$</li></ul><hr>
-<ul>
-<li>If the matrix is not invertible, it has a nontrivial null-space.</li><li>Then, by definition, there is some nonzero .$\vec x$ for which .$A \vec x = 0 \vec x = \vec 0_n$.</li><li>We pattern match to .$\eqref{a}$ and notice the equation is exactly the same if we multiply the right by .$\vec x: A \vec x = 0 \vec x$.
-<ul>
-<li>This is kind of like pulling a scalar .$0$ out of .$\vec 0$, leaving .$0 \vec x$.</li></ul></li><li>Now, we clearly see .$\lambda = 0$</li></ul><h3 id=proposition-2>
-Proposition 2
-<a class=anchor href=#proposition-2>#</a>
-</h3><blockquote>
-<p>For an invertible .$A$ with some eigenvalue .$\lambda$, .$A^{−1}$ has eigenvalue .$ \frac{1}{\lambda}$</p></blockquote><ul>
-<li>We can start at .$\eqref{a}$: left-multiply both sides by .$A^{−1}$ to get .$\vec v = A^{-1} \lambda \vec v \Longrightarrow A^{-1} \vec v = \frac{1}{\lambda} \vec v$.</li><li>Pattern match to .$\eqref{a}$ again and we’ve shown the statement is true</li><li>Note: Given invertibility, all .$\lambda_i \neq 0$ so this is always true</li></ul><h2 id=states>
-States
-<a class=anchor href=#states>#</a>
-</h2><h3 id=steady-states>
-Steady States
-<a class=anchor href=#steady-states>#</a>
-</h3><ul>
-<li>We know that a steady state .$\vec x^*$ of a transformation matrix .$A$ is defined to be such
-$$A \vec x^* = \vec x^* $$
-<ul>
-<li>In other words, it is an element of the eigenspace of .$A$ corresponding to the eigenvalue .$\lambda = 1$.</li><li>The above equation tells us that if we start at a steady state, then we will remain unaffected by the transformation matrix over time.</li><li>Therefore, to solve for the steady-state of a system represented by .$P$, we solve .$\eqref{a}$, substituting .$\lambda = 1$
-<ul>
-<li>Note that this amounts to solving for the null-space of .$(P − I_n)$.</li></ul></li></ul></li><li>Great walk-through on
-<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=53">page 53</a></li></ul><h3 id=predicting-behavior-for-general-initial-states>
-Predicting Behavior for General Initial States
-<a class=anchor href=#predicting-behavior-for-general-initial-states>#</a>
-</h3><blockquote>
-<p>Given a system and an initial state, can we predict how it’ll dynamically change over time? We saw in the
-<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=44">Page Rank example</a> that we seem to approach a sort of steady-state after many timesteps, but under what conditions does this happen?</p></blockquote><h4 id=simpler-case-vec-x-0--alpha-vec-v>
-Simpler Case: .$\vec x (0) = \alpha \vec v$
-<a class=anchor href=#simpler-case-vec-x-0--alpha-vec-v>#</a>
-</h4><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Suppose our initial state is actually a perfect multiple of an eigenvector of the system.</li><li>Over time, upon repeated applications of .$A,$ we accumulate factors of .$\lambda$; ultimately, .$A^n \vec x = \alpha (\lambda^n \vec x)$ &ndash; as we can see derived to the right</li></ul></div><div class="flex-even markdown-inner">
-<p>$$\vec x (0) = \alpha \vec v$$
+\end{bmatrix}$$</div></div><ul><li>For the .$2 \times 2$ case determinant is
+$$\lambda^2 - (a+d)\lambda + (ad - bc) = 0$$<ul><li>Solving this quadratic equation, we can find the .$\lambda$ values.</li><li>Then, for each .$\lambda_i$ we find, we revisit .$\eqref{a}$ and solve for the corresponding .$\vec x_i$</li><li>The polynomial on the left hand side of the above equation is known as the
+<a href=https://en.wikipedia.org/wiki/Characteristic_polynomial>characteristic polynomial</a> for the matrix .$A$.</li></ul></li><li>If a matrix has <em>repeated eigenvalues</em>, they may (or may not) have <em>distinct eigenvectors</em>.<ul><li>In general, multiplicity of eigenvalues will result in the same multidimensional eigenspace</li><li>(Aside) &mldr;except if the matrix is
+<a href=https://en.wikipedia.org/wiki/Defective_matrix>defective</a><ul><li>An .$n \times  n$ matrix is defective iff it does not have .$n$ linearly independent eigenvectors</li><li>That is, a defective matrix always has fewer than .$n$ distinct eigenvalues, since distinct eigenvalues always have linearly independent eigenvectors</li><li>In which case the rank is decreased</li></ul></li></ul></li></ul><h3 id=eigenspace>Eigenspace
+<a class=anchor href=#eigenspace>#</a></h3><blockquote><p>If the eigenvectors are <em>distinct</em>, they form an <strong><a href=https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Eigenspaces,_geometric_multiplicity,_and_the_eigenbasis_for_matrices>eigenspace</a></strong>
+$$E_\lambda = \text{null}(A - \lambda I_n) = \text{null}(A&rsquo;)$$</p></blockquote><ul><li>That is, null space of some matrix is the set of all vectors that satisfy .$\eqref{a}$ OR all of the eigenvectors that correspond to some eigenvalue OR the eigenspace that corresponds to the eigenvalue</li><li>Exactly like the concept of span; the eigenspace is a subspace, the span of all eigenvectors for that eigenvalue (including .$\vec 0$)</li><li>Any input vectors that lie in this space (for 2 distinct eigenvectors, a plane; for 1, a line) will be scaled by the shared eigenvalue under a linear transformation.</li><li>Eigenspace is a subspace, which means it&rsquo;s closed under scalar multiplication<ul><li>Thus, if two vectors are related by a scalar, they must both lie in the <em>same</em> eigenspace of .$\lambda_i$: .$E_{\lambda_i}$<ul><li>That is, the eigenvectors that make up some eigenspace aren&rsquo;t unique</li></ul></li><li>But, every eigenvector can only correspond to one eigenvalue<ul><li>If for some .$A$, where .$A \vec x_1 = \lambda_1 \vec x_1$ and .$A \vec x_1 = \lambda_2 \vec x_1$ then .$\lambda_1 = \lambda_2$</li><li>Thinking about a physical diagram may help clarify; .$\lambda_1 \neq \lambda_2$ would require some single initial state or vector aligned with .$\vec x_1$ to be scaled by two <em>different</em> values upon being transformed by .$A$<ul><li>This cannot happen, so the <strong>two eigenvalues cannot be distinct</strong></li></ul></li></ul></li></ul></li><li>Aside: Complex eigenvalues can exist as well; they are much harder to visually understand, but mathematically, we find them using the exact same process as before.</li></ul><h3 id=mean-product-formula>Mean-product formula
+<a class=anchor href=#mean-product-formula>#</a></h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/e50Bj7jn9IQ style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><ul><li>Mean-product formula is a nicer way of solving this, versus finding the roots of the polynomial
+$$m \pm \sqrt{m^2 - p}$$<ul><li>$m$ is the mean of the
+<a href=https://en.wikipedia.org/wiki/Trace_%28linear_algebra%29>trace</a>, which is the same as the mean of the eigenvalues</li><li>$p$ is the product of the eigenvalues, which is the determinant</li></ul></li></ul><h2 id=theorems>Theorems
+<a class=anchor href=#theorems>#</a></h2><h3 id=theorem-91>Theorem 9.1
+<a class=anchor href=#theorem-91>#</a></h3><blockquote><p>Given two eigenvectors .$\vec v_1$ and .$\vec v_2$ corresponding to two different eigenvalues .$\lambda_1$ and .$\lambda_2$ of a matrix .$A$, it is always the case that .$\vec v_1$ and .$\vec v_2$ are linearly independent.</p></blockquote><ul><li>Proof on
+<a href="https://eecs16a.org/lecture/Note9.pdf#page=9">page 9</a></li></ul><h3 id=theorem-92>Theorem 9.2
+<a class=anchor href=#theorem-92>#</a></h3><blockquote><p>Let .$\vec v_1,\vec v_2, \dots , \vec v_m$ be eigenvectors of an .$n \times n$ matrix with distinct eigenvalues. It is the case that all the .$\vec v_i$ are linearly independent from one another.</p></blockquote><ul><li>Proof on
+<a href="https://eecs16a.org/lecture/Note9.pdf#page=10">page 10</a></li></ul><h3 id=proposition-1>Proposition 1
+<a class=anchor href=#proposition-1>#</a></h3><blockquote><p>If an square .$n \times n$ matrix .$A$ isn&rsquo;t invertible, then it has some eigenvalue .$\lambda_i = 0$</p></blockquote><ul><li>If a matrix is not invertible, then the dimension of its null space isn&rsquo;t necessarily greater than 0 because there must be a linearly dependent row or column.</li><li>If this is true, then there&rsquo;s a non-zero vector .$\vec x$ such that .$A \vec x = 0 \vec x$</li></ul><hr><ul><li>If the matrix is not invertible, it has a nontrivial null-space.</li><li>Then, by definition, there is some nonzero .$\vec x$ for which .$A \vec x = 0 \vec x = \vec 0_n$.</li><li>We pattern match to .$\eqref{a}$ and notice the equation is exactly the same if we multiply the right by .$\vec x: A \vec x = 0 \vec x$.<ul><li>This is kind of like pulling a scalar .$0$ out of .$\vec 0$, leaving .$0 \vec x$.</li></ul></li><li>Now, we clearly see .$\lambda = 0$</li></ul><h3 id=proposition-2>Proposition 2
+<a class=anchor href=#proposition-2>#</a></h3><blockquote><p>For an invertible .$A$ with some eigenvalue .$\lambda$, .$A^{−1}$ has eigenvalue .$ \frac{1}{\lambda}$</p></blockquote><ul><li>We can start at .$\eqref{a}$: left-multiply both sides by .$A^{−1}$ to get .$\vec v = A^{-1} \lambda \vec v \Longrightarrow A^{-1} \vec v = \frac{1}{\lambda} \vec v$.</li><li>Pattern match to .$\eqref{a}$ again and we’ve shown the statement is true</li><li>Note: Given invertibility, all .$\lambda_i \neq 0$ so this is always true</li></ul><h2 id=states>States
+<a class=anchor href=#states>#</a></h2><h3 id=steady-states>Steady States
+<a class=anchor href=#steady-states>#</a></h3><ul><li>We know that a steady state .$\vec x^*$ of a transformation matrix .$A$ is defined to be such
+$$A \vec x^* = \vec x^* $$<ul><li>In other words, it is an element of the eigenspace of .$A$ corresponding to the eigenvalue .$\lambda = 1$.</li><li>The above equation tells us that if we start at a steady state, then we will remain unaffected by the transformation matrix over time.</li><li>Therefore, to solve for the steady-state of a system represented by .$P$, we solve .$\eqref{a}$, substituting .$\lambda = 1$<ul><li>Note that this amounts to solving for the null-space of .$(P − I_n)$.</li></ul></li></ul></li><li>Great walk-through on
+<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=53">page 53</a></li></ul><h3 id=predicting-behavior-for-general-initial-states>Predicting Behavior for General Initial States
+<a class=anchor href=#predicting-behavior-for-general-initial-states>#</a></h3><blockquote><p>Given a system and an initial state, can we predict how it’ll dynamically change over time? We saw in the
+<a href="https://eecs16a.org/EECS16ACompendiumOfNotesAndPracticeProblems.pdf#page=44">Page Rank example</a> that we seem to approach a sort of steady-state after many timesteps, but under what conditions does this happen?</p></blockquote><h4 id=simpler-case-vec-x-0--alpha-vec-v>Simpler Case: .$\vec x (0) = \alpha \vec v$
+<a class=anchor href=#simpler-case-vec-x-0--alpha-vec-v>#</a></h4><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Suppose our initial state is actually a perfect multiple of an eigenvector of the system.</li><li>Over time, upon repeated applications of .$A,$ we accumulate factors of .$\lambda$; ultimately, .$A^n \vec x = \alpha (\lambda^n \vec x)$ &ndash; as we can see derived to the right</li></ul></div><div class="flex-even markdown-inner"><p>$$\vec x (0) = \alpha \vec v$$
 $$\vec x (1) = A\vec x (0) = \alpha \lambda \vec v$$
 $$\vec x (2) = A\vec x (1) = \alpha \lambda^2 \vec v$$
 $$\vdots$$
-$$\vec x (n) = A\vec x (n-1) = \alpha \lambda^n \vec v$$
-</div></div><ul>
-<li>Based on this pattern, we notice the following behaviors based on the value .$\lambda$ as .$n \to \infty$:
-<ul>
-<li>.$\lambda > 1: \vec x (n) \to \infty$ &ndash; <strong>Diverge</strong>, exponential growth.</li><li>.$\lambda = 1: \vec x (n) \to k\vec v$ &ndash; <strong>Converge</strong>, steady-state.</li><li>.$0 &lt; \lambda &lt; 1: \vec x (n) \to \vec 0$ &ndash; <strong>Converge</strong>, exponential decay.</li><li>.$\lambda = 0: \vec x (n) = 0 \vec v = \vec 0$ &ndash; <strong>Converge(?)</strong>, instantaneous disappearance.</li><li>.$\lambda &lt; 0$: Take .$|\lambda|$ and refer to the appropriate case above. But recognize the sign switches at each timestep</li></ul></li></ul><h4 id=general-case-x0--alpha_1-vec-v_1--alpha_2-vec-v_2------alpha_n-vec-v_n>
-General Case: .$x(0) = \alpha_1 \vec v_1 + \alpha_2 \vec v_2 + . . . + \alpha_n \vec v_n$
-<a class=anchor href=#general-case-x0--alpha_1-vec-v_1--alpha_2-vec-v_2------alpha_n-vec-v_n>#</a>
-</h4><ul>
-<li>This form says that the initial state is now not a scalar multiple of just one eigenvectors, it’s a linear combination of all of them
-<ul>
-<li>Note that this is still not fully general; we assume here that all initial states are in the span of the eigenvectors of .$A$, which isn’t guaranteed.</li></ul></li><li>But this case devolves into the previous one; we can simply treat each element individually, apply the techniques from the Simpler Case,
+$$\vec x (n) = A\vec x (n-1) = \alpha \lambda^n \vec v$$</div></div><ul><li>Based on this pattern, we notice the following behaviors based on the value .$\lambda$ as .$n \to \infty$:<ul><li>.$\lambda > 1: \vec x (n) \to \infty$ &ndash; <strong>Diverge</strong>, exponential growth.</li><li>.$\lambda = 1: \vec x (n) \to k\vec v$ &ndash; <strong>Converge</strong>, steady-state.</li><li>.$0 &lt; \lambda &lt; 1: \vec x (n) \to \vec 0$ &ndash; <strong>Converge</strong>, exponential decay.</li><li>.$\lambda = 0: \vec x (n) = 0 \vec v = \vec 0$ &ndash; <strong>Converge(?)</strong>, instantaneous disappearance.</li><li>.$\lambda &lt; 0$: Take .$|\lambda|$ and refer to the appropriate case above. But recognize the sign switches at each timestep</li></ul></li></ul><h4 id=general-case-x0--alpha_1-vec-v_1--alpha_2-vec-v_2------alpha_n-vec-v_n>General Case: .$x(0) = \alpha_1 \vec v_1 + \alpha_2 \vec v_2 + . . . + \alpha_n \vec v_n$
+<a class=anchor href=#general-case-x0--alpha_1-vec-v_1--alpha_2-vec-v_2------alpha_n-vec-v_n>#</a></h4><ul><li>This form says that the initial state is now not a scalar multiple of just one eigenvectors, it’s a linear combination of all of them<ul><li>Note that this is still not fully general; we assume here that all initial states are in the span of the eigenvectors of .$A$, which isn’t guaranteed.</li></ul></li><li>But this case devolves into the previous one; we can simply treat each element individually, apply the techniques from the Simpler Case,
 and put them back together. The final form is as follows:
-$$\vec x (n) = \alpha_1 (\lambda_1^n \vec v_1) + \alpha_2 (\lambda_2^n \vec v_2) + . . . + \alpha_n (\lambda_n^n \vec v_n) \label{b}\tag{2}$$</li><li>Given a matrix .$A$ and some initial state .$\vec x$, how can we actually get to this equation format?
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>
-<p>First, we solve for the .$(\vec v_i, \lambda_i)$ pairs of .$A$
-<br></p></li><li>
-<p>Then, we use Gaussian elimination to find the .$\alpha_i$’s; Putting eq. .$ \eqref{b}$ in matrix form yields:<br></p></li><li>
-<p>&mldr;and we compute the inverse of the matrix of eigenvectors, arriving at:</p></li></ul></div><div class="flex-even markdown-inner">
-<p>$$\vec x(0) = \begin{bmatrix}
+$$\vec x (n) = \alpha_1 (\lambda_1^n \vec v_1) + \alpha_2 (\lambda_2^n \vec v_2) + . . . + \alpha_n (\lambda_n^n \vec v_n) \label{b}\tag{2}$$</li><li>Given a matrix .$A$ and some initial state .$\vec x$, how can we actually get to this equation format?<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li><p>First, we solve for the .$(\vec v_i, \lambda_i)$ pairs of .$A$<br></p></li><li><p>Then, we use Gaussian elimination to find the .$\alpha_i$’s; Putting eq. .$ \eqref{b}$ in matrix form yields:<br></p></li><li><p>&mldr;and we compute the inverse of the matrix of eigenvectors, arriving at:</p></li></ul></div><div class="flex-even markdown-inner"><p>$$\vec x(0) = \begin{bmatrix}
 | & | & & | \\
 \vec v_1 & \vec v_2 & \dots & \vec v_n\\
 | & | & & | \\
@@ -567,55 +106,10 @@ $$\vec x (n) = \alpha_1 (\lambda_1^n \vec v_1) + \alpha_2 (\lambda_2^n \vec v_2)
 | & | & & | \\
 \vec v_1 & \vec v_2 & \dots & \vec v_n\\
 | & | & & | \\
-\end{bmatrix}^{-1} \vec x (0)$$</p></div></div><ul>
-<li>Let’s assume that we drop any terms corresponding to .$\alpha_i = 0$ since those terms are, well, zero. Then, with what remains, we can make some intuitive observations:
-<ul>
-<li>.$|\lambda_i | > 1: \vec x (n) \to \infty$ &ndash; <strong>Diverge</strong>, even if other components in the linear combination decay, the state itself &ldquo;blows up&rdquo; to .$\infty$ as this component overshadows all others.</li><li>.$|\lambda_i| = −1: \vec x (n) \to\ ?$ &ndash; <strong>Diverge</strong> because that component oscillates forever.</li><li>.$−1 &lt; \lambda_i \leq 1: \vec x (n) \to \vec x^*$ &ndash; <strong>Converge</strong>, that is, steady-state! Each .$i$th term either decays to zero (.$|\lambda_i| \leq 1$) or stays the same (.$|\lambda_i| = 1$), such that .$\vec x^* = \sum_{i,\lambda_i=1} \alpha_i \vec v_i$.
-<ul>
-<li>We can normalize this steady-state if we want proportions (column values sum to 1) rather than absolute numbers</li></ul></li></ul></li></ul></li></ul><h2 id=some-useful-information>
-Some Useful Information
-<a class=anchor href=#some-useful-information>#</a>
-</h2><ul>
-<li>If a matrix has .$n$ distinct real eigenvalues, their .$n$ associated eigenvectors are all linearly independent.</li><li>An eigenspace for a given eigenvalue is the span of all eigenvectors, including .$\vec 0$, and is also a subspace by definition.</li><li>Say we calculate an eigenvector for an eigenvalue; we can pick any scalar multiple of the result and this will still be an eigenvector, since scaling a vector does not change its direction. This follows from the scalar multiplication property of subspaces.</li><li>A given eigenvector can only be associated with one eigenvalue, since a vector can only be scaled by some single value upon being transformed by a matrix. But, a eigenvalue can be associated with multiple eigenvectors, the span of which form an eigenspace.</li><li>If a matrix has some .$\lambda = 0$, then for some .$\vec x, A\vec x = \lambda\vec x =\vec 0$, so .$A$ has a nontrivial null-space. Therefore, it is not invertible.</li><li>If a matrix has some .$\lambda = 1$, then any initial state that is aligned with the corresponding eigenvector is a steady-state. More generally, any initial state for which .$\lambda = 1$ comprises part of the linear combination potentially has a nonzero steady-state, so long as all other .$|\lambda_i| &lt; 1$.</li></ul><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>The rotation matrix (that rotates any vector by .$\theta$ degrees counterclockwise) is:</li></ul></div><div class="flex-even markdown-inner">
-<p>$$A(\theta) = A_R = \begin{bmatrix}
+\end{bmatrix}^{-1} \vec x (0)$$</p></div></div><ul><li>Let’s assume that we drop any terms corresponding to .$\alpha_i = 0$ since those terms are, well, zero. Then, with what remains, we can make some intuitive observations:<ul><li>.$|\lambda_i | > 1: \vec x (n) \to \infty$ &ndash; <strong>Diverge</strong>, even if other components in the linear combination decay, the state itself &ldquo;blows up&rdquo; to .$\infty$ as this component overshadows all others.</li><li>.$|\lambda_i| = −1: \vec x (n) \to\ ?$ &ndash; <strong>Diverge</strong> because that component oscillates forever.</li><li>.$−1 &lt; \lambda_i \leq 1: \vec x (n) \to \vec x^*$ &ndash; <strong>Converge</strong>, that is, steady-state! Each .$i$th term either decays to zero (.$|\lambda_i| \leq 1$) or stays the same (.$|\lambda_i| = 1$), such that .$\vec x^* = \sum_{i,\lambda_i=1} \alpha_i \vec v_i$.<ul><li>We can normalize this steady-state if we want proportions (column values sum to 1) rather than absolute numbers</li></ul></li></ul></li></ul></li></ul><h2 id=some-useful-information>Some Useful Information
+<a class=anchor href=#some-useful-information>#</a></h2><ul><li>If a matrix has .$n$ distinct real eigenvalues, their .$n$ associated eigenvectors are all linearly independent.</li><li>An eigenspace for a given eigenvalue is the span of all eigenvectors, including .$\vec 0$, and is also a subspace by definition.</li><li>Say we calculate an eigenvector for an eigenvalue; we can pick any scalar multiple of the result and this will still be an eigenvector, since scaling a vector does not change its direction. This follows from the scalar multiplication property of subspaces.</li><li>A given eigenvector can only be associated with one eigenvalue, since a vector can only be scaled by some single value upon being transformed by a matrix. But, a eigenvalue can be associated with multiple eigenvectors, the span of which form an eigenspace.</li><li>If a matrix has some .$\lambda = 0$, then for some .$\vec x, A\vec x = \lambda\vec x =\vec 0$, so .$A$ has a nontrivial null-space. Therefore, it is not invertible.</li><li>If a matrix has some .$\lambda = 1$, then any initial state that is aligned with the corresponding eigenvector is a steady-state. More generally, any initial state for which .$\lambda = 1$ comprises part of the linear combination potentially has a nonzero steady-state, so long as all other .$|\lambda_i| &lt; 1$.</li></ul><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>The rotation matrix (that rotates any vector by .$\theta$ degrees counterclockwise) is:</li></ul></div><div class="flex-even markdown-inner"><p>$$A(\theta) = A_R = \begin{bmatrix}
 \cos\theta & -\sin\theta \\
 \sin\theta & \cos\theta \\
-\end{bmatrix}$$
-</div></div></article><footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener>
-<img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>March 4, 2022</span>
-</a>
-</div><div>
-<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/4.md target=_blank rel=noopener>
-<img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span>
-</a>
-</div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-</footer><div class=book-comments>
-</div><label for=menu-control class="hidden book-menu-overlay"></label>
-</div><aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#02-15-vector-spaces-null-spaces-and-columnspaces>02-15: Vector Spaces: Null Spaces and Columnspaces</a>
-<ul>
-<li><a href=#important-jargon>Important Jargon</a></li><li><a href=#vector-spaces>Vector Spaces</a>
-<ul>
-<li><a href=#subspaces>Subspaces</a></li></ul></li><li><a href=#basis>Basis</a>
-<ul>
-<li><a href=#basis-is-not-unique>Basis is not unique</a></li></ul></li><li><a href=#dimension>Dimension</a></li><li><a href=#column-space>Column Space</a></li><li><a href=#row-space>Row Space</a></li><li><a href=#rank>Rank</a></li><li><a href=#null-space>Null Space</a>
-<ul>
-<li><a href=#procedure-to-compute-a-null-space>Procedure to Compute a Null-Space</a></li><li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li></ul></li></ul></li><li><a href=#02-17-eigenvectors-values>02-17: Eigenvectors, values</a>
-<ul>
-<li><a href=#eigenvectors-and-eigenvalues>Eigenvectors and Eigenvalues</a></li><li><a href=#determinants>Determinants</a></li><li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a>
-<ul>
-<li><a href=#eigenspace>Eigenspace</a></li><li><a href=#mean-product-formula>Mean-product formula</a></li></ul></li><li><a href=#theorems>Theorems</a>
-<ul>
-<li><a href=#theorem-91>Theorem 9.1</a></li><li><a href=#theorem-92>Theorem 9.2</a></li><li><a href=#proposition-1>Proposition 1</a></li><li><a href=#proposition-2>Proposition 2</a></li></ul></li><li><a href=#states>States</a>
-<ul>
-<li><a href=#steady-states>Steady States</a></li><li><a href=#predicting-behavior-for-general-initial-states>Predicting Behavior for General Initial States</a></li></ul></li><li><a href=#some-useful-information>Some Useful Information</a></li></ul></li></ul></nav></div></aside></main></body></html>
+\end{bmatrix}$$</div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>March 4, 2022</span></a></div><div><a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/4.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#02-15-vector-spaces-null-spaces-and-columnspaces>02-15: Vector Spaces: Null Spaces and Columnspaces</a><ul><li><a href=#important-jargon>Important Jargon</a></li><li><a href=#vector-spaces>Vector Spaces</a><ul><li><a href=#subspaces>Subspaces</a></li></ul></li><li><a href=#basis>Basis</a><ul><li><a href=#basis-is-not-unique>Basis is not unique</a></li></ul></li><li><a href=#dimension>Dimension</a></li><li><a href=#column-space>Column Space</a></li><li><a href=#row-space>Row Space</a></li><li><a href=#rank>Rank</a></li><li><a href=#null-space>Null Space</a><ul><li><a href=#procedure-to-compute-a-null-space>Procedure to Compute a Null-Space</a></li><li><a href=#rank-nullity-theorem>Rank-Nullity Theorem</a></li></ul></li></ul></li><li><a href=#02-17-eigenvectors-values>02-17: Eigenvectors, values</a><ul><li><a href=#eigenvectors-and-eigenvalues>Eigenvectors and Eigenvalues</a></li><li><a href=#determinants>Determinants</a></li><li><a href=#computing-eigenvalues-and-eigenvectors>Computing Eigenvalues and Eigenvectors</a><ul><li><a href=#eigenspace>Eigenspace</a></li><li><a href=#mean-product-formula>Mean-product formula</a></li></ul></li><li><a href=#theorems>Theorems</a><ul><li><a href=#theorem-91>Theorem 9.1</a></li><li><a href=#theorem-92>Theorem 9.2</a></li><li><a href=#proposition-1>Proposition 1</a></li><li><a href=#proposition-2>Proposition 2</a></li></ul></li><li><a href=#states>States</a><ul><li><a href=#steady-states>Steady States</a></li><li><a href=#predicting-behavior-for-general-initial-states>Predicting Behavior for General Initial States</a></li></ul></li><li><a href=#some-useful-information>Some Useful Information</a></li></ul></li></ul></nav></div></aside></main></body></html>

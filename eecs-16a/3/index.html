@@ -1,244 +1,24 @@
-<!doctype html><html lang=en dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="02-08: Matrix Transformations #    Slides  Note 4   Linear Transformations #   Linear Transformation: In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.  Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector .">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 3: Transformations & Inverse">
-<meta property="og:description" content="02-08: Matrix Transformations #    Slides  Note 4   Linear Transformations #   Linear Transformation: In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.  Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector .">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://notes.mehvix.com/eecs-16a/3/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-03-04T00:21:26-08:00">
-<title>Week 3: Transformations & Inverse | notes.mehvix.com</title><link rel=manifest href=/manifest.json>
-<link rel=icon href=/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
-<script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.9a289e1704b278e6f1129793c61041ff35cf4dbd068093f92d38b53a0dcaace3.js integrity="sha256-miieFwSyeObxEpeTxhBB/zXPTb0GgJP5LTi1Og3KrOM=" crossorigin=anonymous></script>
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="02-08: Matrix Transformations #    Slides  Note 4   Linear Transformations #   Linear Transformation: In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.  Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector ."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Week 3: Transformations & Inverse"><meta property="og:description" content="02-08: Matrix Transformations #    Slides  Note 4   Linear Transformations #   Linear Transformation: In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.  Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector ."><meta property="og:type" content="article"><meta property="og:url" content="http://notes.mehvix.com/eecs-16a/3/"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2022-03-04T00:21:26-08:00"><title>Week 3: Transformations & Inverse | notes.mehvix.com</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.8f4aaeb02c9f2d788b552eb377e1c25355d744990b594dc9559353fc2364d113.js integrity="sha256-j0qusCyfLXiLVS6zd+HCU1XXRJkLWU3JVZNT/CNk0RM=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
-<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
-<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
-<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
-</head><body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/><span>notes.mehvix.com</span>
-</a>
-</h2><div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
-<li>
-<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
-<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
-<a role=button>CogSci C100</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/memory/>Memory</a>
-</li></ul></li><li>
-<input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
-<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
-<a role=button>EECS 16A</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/3/ class=active>Week 3: Transformations & Inverse</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/6/>Week 6: Voltage Dividers & Measurement</a>
-</li></ul></li><li>
-<input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
-<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
-<a role=button>Engineering 29</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a>
-</li></ul></li><li>
-<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
-<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
-</li></ul></li><li>
-<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
-<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
-</li></ul></li><li>
-<a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
-</li><li>
-<input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
-<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
-<a role=button>AP Notes</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
-</li><li>
-<a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
-</li><li>
-<a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
-</li></ul></li></ul><ul>
-<li>
-<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
-CS61A (Anto's)
-</a>
-</li><li>
-<a href=# target=_blank rel=noopener>
-—
-</a>
-</li><li>
-<a href=https://www.mehvix.com target=_blank rel=noopener>
-w³.mehvix.com
-</a>
-</li><li>
-<a href=https://pass.mehvix.com target=_blank rel=noopener>
-pass.mehvix.com
-</a>
-</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div></aside><div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]],processEscapes:!0,processEnvironments:!0,macros:{bigsup:["#1{^{\\vbox{\\hbox{$\\scriptstyle#1$}\\nointerlineskip\\hbox{}}}}",1]}},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script id=MathJax-script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js?config=TeX-AMS_CHTML" integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:".$",right:"$",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>notes.mehvix.com</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between"><a role=button>CogSci C100</a></label><ul><li><a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/memory/>Memory</a></li></ul></li><li><input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle checked>
+<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between"><a role=button>EECS 16A</a></label><ul><li><a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a></li><li><a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a></li><li><a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a></li><li><a href=http://notes.mehvix.com/eecs-16a/3/ class=active>Week 3: Transformations & Inverse</a></li><li><a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a></li><li><a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a></li><li><a href=http://notes.mehvix.com/eecs-16a/6/>Week 6: Voltage Dividers & Measurement</a></li><li><a href=http://notes.mehvix.com/eecs-16a/7/>Week 7: 2D Touchscreens & Superposition + Equivalence</a></li></ul></li><li><input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle>
+<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between"><a role=button>Engineering 29</a></label><ul><li><a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a></li><li><a href=http://notes.mehvix.com/e-29/1/>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a></li><li><a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a></li><li><a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a></li><li><a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a></li><li><a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a></li><li><a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a></li><li><a href=http://notes.mehvix.com/e-29/7/>Week 7-8: Visualization</a></li></ul></li><li><input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between"><a href=http://notes.mehvix.com/docs/math-53/>Math 53</a></label><ul><li><a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a></li><li><a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a></li><li><a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a></li><li><a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a></li><li><a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a></li><li><a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a></li><li><a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a></li><li><a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a></li></ul></li><li><input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between"><a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a></label><ul><li><a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a></li><li><a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a></li><li><a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a></li><li><a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a></li><li><a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a></li><li><a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a></li><li><a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a></li><li><a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a></li><li><a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a></li><li><a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a></li><li><a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a></li></ul></li><li><a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a></li><li><input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
+<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between"><a role=button>AP Notes</a></label><ul><li><a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a></li><li><a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a></li><li><a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a></li></ul></li></ul><ul><li><a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>CS61A (Anto's)</a></li><li><a href=# target=_blank rel=noopener>—</a></li><li><a href=https://www.mehvix.com target=_blank rel=noopener>w³.mehvix.com</a></li><li><a href=https://pass.mehvix.com target=_blank rel=noopener>pass.mehvix.com</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Week 3: Transformations & Inverse</strong>
-<label for=toc-control>
-<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div><aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#02-08-matrix-transformations>02-08: Matrix Transformations</a>
-<ul>
-<li><a href=#linear-transformations>Linear Transformations</a></li><li><a href=#state-transformation>State Transformation</a></li></ul></li><li><a href=#02-10-inverse>02-10: Inverse</a>
-<ul>
-<li><a href=#matrix-inverse>Matrix Inverse</a></li><li><a href=#inverse-of-a-2x2-matrix>Inverse of a 2x2 matrix</a></li><li><a href=#theorems>Theorems</a>
-<ul>
-<li><a href=#theorem-note-61>Theorem Note 6.1</a></li><li><a href=#theorem-note-62>Theorem Note 6.2</a></li><li><a href=#theorem-note-63>Theorem Note 6.3</a></li><li><a href=#theorem-note-64>Theorem Note 6.4</a></li><li><a href=#theorem-lecture>Theorem Lecture</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=02-08-matrix-transformations>
-02-08: Matrix Transformations
-<a class=anchor href=#02-08-matrix-transformations>#</a>
-</h1><ul>
-<li>
-<a href=https://eecs16a.org/lecture/Lecture3A_Slides.pdf>Slides</a></li><li>
-<a href=https://eecs16a.org/lecture/Note4.pdf>Note 4</a></li></ul><hr>
-<h2 id=linear-transformations>
-Linear Transformations
-<a class=anchor href=#linear-transformations>#</a>
-</h2><ul>
-<li><strong>Linear Transformation:</strong> In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.
-<ul>
-<li>Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector .$\vec b^{M \times 1}$ of outputs
-<ul>
-<li>That is, matrices are operators that transform vectors</li></ul></li></ul></li></ul><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Just as .$f$ is a linear transformation iff
-<a href=/eecs-16a/0/#linear-algebra>homogeneity and super position hold</a>, matrix-vector multiplications satisfy linear transformation:</li></ul></div><div class="flex-even markdown-inner">
-<p>$$A \cdot (\alpha \vec x) = \alpha A \vec x$$
-$$A \cdot (\vec x + \vec y) = A \vec x + A \vec y $$
-</div></div><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/kYB8IZa5AuE style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><h2 id=state-transformation>
-State Transformation
-<a class=anchor href=#state-transformation>#</a>
-</h2><ul>
-<li>As such, we can think about matrices as state transformations;
-<ul>
-<li>If we have a list of inputs representing some current state at some timestep .$n$ (given by .$\vec x(n)$), then when a matrix .$A$ operates on that state, it transforms it into a new state at the next time step (.$\vec x(n + 1)$).</li><li>Consider a timestep to be a very small unit of time. Our systems here will be discrete, meaning that the transition of water happens exactly at each timestep, and not between timesteps
-<ul>
-<li>Aside: But in reality, water is flowing continuously! To model this rigorously, we need linear differential equations, but for now, if the timestep we take is very small, the discrete model is quite good as an approximation.</li></ul></li></ul></li><li><strong>Example:</strong> Water Pulps (
-<a href=https://eecs16a.org/lecture/Note5.pdf>Note5</a> )
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>At each time step, some portion of the water in each pump goes to itself, and some portion goes to each of the other pumps. The general state transition matrix formula for an .$n$-state system (assuming the initial and final state vectors have the same length .$n$) is as follows:</li></ul><p>$$
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#02-08-matrix-transformations>02-08: Matrix Transformations</a><ul><li><a href=#linear-transformations>Linear Transformations</a></li><li><a href=#state-transformation>State Transformation</a></li></ul></li><li><a href=#02-10-inverse>02-10: Inverse</a><ul><li><a href=#matrix-inverse>Matrix Inverse</a></li><li><a href=#inverse-of-a-2x2-matrix>Inverse of a 2x2 matrix</a></li><li><a href=#theorems>Theorems</a><ul><li><a href=#theorem-note-61>Theorem Note 6.1</a></li><li><a href=#theorem-note-62>Theorem Note 6.2</a></li><li><a href=#theorem-note-63>Theorem Note 6.3</a></li><li><a href=#theorem-note-64>Theorem Note 6.4</a></li><li><a href=#theorem-lecture>Theorem Lecture</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=02-08-matrix-transformations>02-08: Matrix Transformations
+<a class=anchor href=#02-08-matrix-transformations>#</a></h1><ul><li><a href=https://eecs16a.org/lecture/Lecture3A_Slides.pdf>Slides</a></li><li><a href=https://eecs16a.org/lecture/Note4.pdf>Note 4</a></li></ul><hr><h2 id=linear-transformations>Linear Transformations
+<a class=anchor href=#linear-transformations>#</a></h2><ul><li><strong>Linear Transformation:</strong> In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.<ul><li>Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector .$\vec b^{M \times 1}$ of outputs<ul><li>That is, matrices are operators that transform vectors</li></ul></li></ul></li></ul><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Just as .$f$ is a linear transformation iff
+<a href=/eecs-16a/0/#linear-algebra>homogeneity and super position hold</a>, matrix-vector multiplications satisfy linear transformation:</li></ul></div><div class="flex-even markdown-inner"><p>$$A \cdot (\alpha \vec x) = \alpha A \vec x$$
+$$A \cdot (\vec x + \vec y) = A \vec x + A \vec y $$</div></div><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/kYB8IZa5AuE style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h2 id=state-transformation>State Transformation
+<a class=anchor href=#state-transformation>#</a></h2><ul><li>As such, we can think about matrices as state transformations;<ul><li>If we have a list of inputs representing some current state at some timestep .$n$ (given by .$\vec x(n)$), then when a matrix .$A$ operates on that state, it transforms it into a new state at the next time step (.$\vec x(n + 1)$).</li><li>Consider a timestep to be a very small unit of time. Our systems here will be discrete, meaning that the transition of water happens exactly at each timestep, and not between timesteps<ul><li>Aside: But in reality, water is flowing continuously! To model this rigorously, we need linear differential equations, but for now, if the timestep we take is very small, the discrete model is quite good as an approximation.</li></ul></li></ul></li><li><strong>Example:</strong> Water Pulps (
+<a href=https://eecs16a.org/lecture/Note5.pdf>Note5</a> )<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>At each time step, some portion of the water in each pump goes to itself, and some portion goes to each of the other pumps. The general state transition matrix formula for an .$n$-state system (assuming the initial and final state vectors have the same length .$n$) is as follows:</li></ul><p>$$
 \begin{bmatrix}
 \vec P_{1 \to \dots} & \vec P_{2 \to \dots} & \dots & \vec P_{N \to \dots} \\
 \end{bmatrix}$$
@@ -249,187 +29,61 @@ P_{1 \to 2} & P_{2 \to 2} & &mldr; & P_{N \to 2}\\
 \vdots & \vdots & \ddots & \vdots\\
 P_{1 \to N} & P_{2 \to N} & &mldr; & P_{N \to N}
 \end{bmatrix}
-$$
-</div><div class="flex-even markdown-inner">
-<blockquote>
-<p>
-<img src=/docs/eecs-16a/2/fournode.png alt>
+$$</div><div class="flex-even markdown-inner"><blockquote><p><img src=/docs/eecs-16a/2/fournode.png alt>
 $$\begin{bmatrix}
 0.4 & 0.1 & 0.4 & 0.1\\
 0.1 & 0.2 & 0.1 & 0.4\\
 0.2 & 0.3 & 0.2 & 0.2\\
 0.3 & 0.4 & 0.3 & 0.3
-\end{bmatrix}$$</p></blockquote></div></div><ul>
-<li>Notice that all of the water goes somewhere and none comes up out of thin air; that is, the water is a <strong>conserved</strong> quantity. We don’t have any leakage or generation of water in the system.
-<ul>
-<li>This isn’t always true, but the idea of conservation will largely hold true, especially for systems based in
-<a href=https://en.wikipedia.org/wiki/Conservation_of_energy>physical reality</a>.</li><li>We can tell if the transformation is conservative by looking at each column’s values describe the movement of water from a specific node to other nodes. If any column’s values do not sum to exactly 1, then something is being lost or created in the system as a whole.
-<ul>
-<li>In addition, if a specific column’s sum is greater than 1, matter is entering the system through that node; conversely, if a specific column sum is less than 1, matter is leaving the system through that node.</li><li>Recognize that, given information about only a single node’s column sum, we can never definitely say if the overall system is conservative or not; we only know if it might be conservative, based on other nodes.</li></ul></li></ul></li></ul></li><li>Diagram .$\to$ Matrix:
-<ul>
-<li>Given a state transition diagram, we can create the corresponding state transition matrix by reading the values at each arrow, noting the directionality (these are <em>directed</em> edges) and populating the rows one by one.</li><li>Similarly, given a matrix, we can draw the appropriate number of nodes and label arrows going to/from each node with the values as indicated by the matrix.</li></ul></li><li>How do we go back in time?
-<ul>
-<li>That is, we want some transition matrix .$B$ such that .$\vec x (t-1) = B \vec x(t)$</li><li>Flipping the direction of the edges won&rsquo;t work&mldr;</li><li>Transpose won&rsquo;t either&mldr;</li><li>Which leads us to&mldr;</li></ul></li></ul><h1 id=02-10-inverse>
-02-10: Inverse
-<a class=anchor href=#02-10-inverse>#</a>
-</h1><ul>
-<li>
-<a href=https://eecs16a.org/lecture/Lecture3B_Slides.pdf>Slides</a></li><li>Notes
+\end{bmatrix}$$</p></blockquote></div></div><ul><li>Notice that all of the water goes somewhere and none comes up out of thin air; that is, the water is a <strong>conserved</strong> quantity. We don’t have any leakage or generation of water in the system.<ul><li>This isn’t always true, but the idea of conservation will largely hold true, especially for systems based in
+<a href=https://en.wikipedia.org/wiki/Conservation_of_energy>physical reality</a>.</li><li>We can tell if the transformation is conservative by looking at each column’s values describe the movement of water from a specific node to other nodes. If any column’s values do not sum to exactly 1, then something is being lost or created in the system as a whole.<ul><li>In addition, if a specific column’s sum is greater than 1, matter is entering the system through that node; conversely, if a specific column sum is less than 1, matter is leaving the system through that node.</li><li>Recognize that, given information about only a single node’s column sum, we can never definitely say if the overall system is conservative or not; we only know if it might be conservative, based on other nodes.</li></ul></li></ul></li></ul></li><li>Diagram .$\to$ Matrix:<ul><li>Given a state transition diagram, we can create the corresponding state transition matrix by reading the values at each arrow, noting the directionality (these are <em>directed</em> edges) and populating the rows one by one.</li><li>Similarly, given a matrix, we can draw the appropriate number of nodes and label arrows going to/from each node with the values as indicated by the matrix.</li></ul></li><li>How do we go back in time?<ul><li>That is, we want some transition matrix .$B$ such that .$\vec x (t-1) = B \vec x(t)$</li><li>Flipping the direction of the edges won&rsquo;t work&mldr;</li><li>Transpose won&rsquo;t either&mldr;</li><li>Which leads us to&mldr;</li></ul></li></ul><h1 id=02-10-inverse>02-10: Inverse
+<a class=anchor href=#02-10-inverse>#</a></h1><ul><li><a href=https://eecs16a.org/lecture/Lecture3B_Slides.pdf>Slides</a></li><li>Notes
 <a href=https://eecs16a.org/lecture/Note5.pdf>5</a>,
-<a href=https://eecs16a.org/lecture/Note6.pdf>6</a></li></ul><hr>
-<h2 id=matrix-inverse>
-Matrix Inverse
-<a class=anchor href=#matrix-inverse>#</a>
-</h2><ul>
-<li>Purpose
-<ul>
-<li>We know that .$\vec x(t+1) = Q \vec x (t)$ and want some reverse-matrix .$P$ such that .$\vec x (t) = P \vec x (t+1)$
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<p>$$P \vec x(t+1) = PQ\vec x(t)$$
-$$P \vec x(t+1) = I \vec x(t)$$
-</div><div class="flex-even markdown-inner">
-<p>$$\vec x(t+1) = Q \vec x(t)$$
+<a href=https://eecs16a.org/lecture/Note6.pdf>6</a></li></ul><hr><h2 id=matrix-inverse>Matrix Inverse
+<a class=anchor href=#matrix-inverse>#</a></h2><ul><li>Purpose<ul><li>We know that .$\vec x(t+1) = Q \vec x (t)$ and want some reverse-matrix .$P$ such that .$\vec x (t) = P \vec x (t+1)$<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><p>$$P \vec x(t+1) = PQ\vec x(t)$$
+$$P \vec x(t+1) = I \vec x(t)$$</div><div class="flex-even markdown-inner"><p>$$\vec x(t+1) = Q \vec x(t)$$
 $$\vec x(t+1) = Q(P \vec x(t+1))$$
-$$\vec x(t+1) = I \vec x(t+1)$$
-</div></div></li></ul></li><li>Consider .$A$ as an operator on any vector .$\vec x \in \mathbb{R}^{n}$:
-<ul>
-<li>What does it mean for .$A$ to have an inverse? It suggests that we can find a matrix that &ldquo;undoes&rdquo; the effect of matrix .$A$ operating on any vector .$\vec x \in \mathbb{R}^{n}$. What property should .$A$ have in order for this to be possible?</li><li>A should map any two distinct vectors to distinct vectors in .$ \mathbb{R}^{n}$, i.e., .$A \vec x_1 \neq A \vec x_2$ for vectors .$\vec x_1, \vec x_2$ such that .$\vec x_1 \neq \vec x_2$.</li></ul></li><li>Definition: Let .$P, Q \in \mathbb{R}^{N \times N}$ be square matrices (we tackle non-square in 16B)
-<ul>
-<li>.$P$ is the inverse of .$Q$ if .$PQ = QP = I$</li><li>We say .$P = Q^{-1}$ and .$Q = P^{-1}$</li><li>Steps to solve with Gaussian Elimination are shown on
+$$\vec x(t+1) = I \vec x(t+1)$$</div></div></li></ul></li><li>Consider .$A$ as an operator on any vector .$\vec x \in \mathbb{R}^{n}$:<ul><li>What does it mean for .$A$ to have an inverse? It suggests that we can find a matrix that &ldquo;undoes&rdquo; the effect of matrix .$A$ operating on any vector .$\vec x \in \mathbb{R}^{n}$. What property should .$A$ have in order for this to be possible?</li><li>A should map any two distinct vectors to distinct vectors in .$ \mathbb{R}^{n}$, i.e., .$A \vec x_1 \neq A \vec x_2$ for vectors .$\vec x_1, \vec x_2$ such that .$\vec x_1 \neq \vec x_2$.</li></ul></li><li>Definition: Let .$P, Q \in \mathbb{R}^{N \times N}$ be square matrices (we tackle non-square in 16B)<ul><li>.$P$ is the inverse of .$Q$ if .$PQ = QP = I$</li><li>We say .$P = Q^{-1}$ and .$Q = P^{-1}$</li><li>Steps to solve with Gaussian Elimination are shown on
 <a href="https://eecs16a.org/lecture/Lecture3A_Slides.pdf#page=50">slide 50</a> or &lsquo;more&rsquo; formally in
-<a href=https://eecs16a.org/lecture/Note6.pdf>Notes 6, page 3</a>
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>For any .$n \times n$ matrix .$M$, we can perform Gaussian elimination on the augmented matrix:</li><li>If at termination of Gaussian elimination, we end up with an identity matrix on the left, then the matrix on the right is the inverse of the matrix .$M$
-<ul>
-<li>If we don’t end up with an identity matrix on the left, we will have a row of zeros, (which indicates that the rows of .$M$ are linearly dependent) and that the matrix is not invertible</li></ul></li></ul></div><div class="flex-even markdown-inner">
-<p>$$\begin{bmatrix}
+<a href=https://eecs16a.org/lecture/Note6.pdf>Notes 6, page 3</a><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>For any .$n \times n$ matrix .$M$, we can perform Gaussian elimination on the augmented matrix:</li><li>If at termination of Gaussian elimination, we end up with an identity matrix on the left, then the matrix on the right is the inverse of the matrix .$M$<ul><li>If we don’t end up with an identity matrix on the left, we will have a row of zeros, (which indicates that the rows of .$M$ are linearly dependent) and that the matrix is not invertible</li></ul></li></ul></div><div class="flex-even markdown-inner"><p>$$\begin{bmatrix}
 & & | & & \\
 & M & | & I_n & \\
 & & | & & \\
 \end{bmatrix}
-$$
-<br></p><p>$$
+$$<br></p><p>$$
 \begin{bmatrix}
 & & | & & \\
 & I_n & | & M^{-1} & \\
 & & | & & \\
-\end{bmatrix}$$</p></div></div></li></ul></li></ul><h2 id=inverse-of-a-2x2-matrix>
-Inverse of a 2x2 matrix
-<a class=anchor href=#inverse-of-a-2x2-matrix>#</a>
-</h2><ul>
-<li>You can derive this via Gaussian elimination (flip .$a$ with .$d$, negate .$b$ and .$c$, then divide by .$ad-bc$)
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<p>$$A = \begin{bmatrix}
+\end{bmatrix}$$</p></div></div></li></ul></li></ul><h2 id=inverse-of-a-2x2-matrix>Inverse of a 2x2 matrix
+<a class=anchor href=#inverse-of-a-2x2-matrix>#</a></h2><ul><li>You can derive this via Gaussian elimination (flip .$a$ with .$d$, negate .$b$ and .$c$, then divide by .$ad-bc$)<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><p>$$A = \begin{bmatrix}
 a & b\\
 c & d\\
-\end{bmatrix}$$
-</div><div class="flex-even markdown-inner">
-<p>$$A^{-1} = \frac{1}{ad-bc} \begin{bmatrix}
+\end{bmatrix}$$</div><div class="flex-even markdown-inner"><p>$$A^{-1} = \frac{1}{ad-bc} \begin{bmatrix}
 d & -b\\
 -c & a\\
-\end{bmatrix}$$
-</div></div></li><li>.$ad-bc$ is the determinant, so we can check quickly if an inverse exists for a square matrix by checking if they determinant exists
-<ul>
-<li>
-<a href="https://eecs16a.org/lecture/Lecture4B_Slides.pdf#page=8">See slide 8</a></li><li>Determinant is the area the vectors form. So if they vectors form some zero-area (or volume in 3D) then it&rsquo;s not one-to-one and thus not invertible</li></ul></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/Ip3X9LOh2dk style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><h2 id=theorems>
-Theorems
-<a class=anchor href=#theorems>#</a>
-</h2><h3 id=theorem-note-61>
-Theorem Note 6.1
-<a class=anchor href=#theorem-note-61>#</a>
-</h3><blockquote>
-<p>If .$A$ is an invertible matrix, then its inverse must be unique</p></blockquote><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Suppose .$B_1, B_2$ are both inverses of the matrix .$A$. Then we have</li></ul><hr>
-<ul>
-<li>Notice that by associativity of matrix multiplication, the left hand side of the equation above becomes</li><li>We see that .$B_1 = B_2$, so the inverse of any invertible matrix is unique.</li></ul></div><div class="flex-even markdown-inner">
-<p>$$AB_1 = B_1 A = I$$
-$$AB_2 = B_2 A = I$$</p><hr>
-<p>$$AB_1 = I \Longrightarrow B_2(AB_1) = B_2 I = B_2$$
+\end{bmatrix}$$</div></div></li><li>.$ad-bc$ is the determinant, so we can check quickly if an inverse exists for a square matrix by checking if they determinant exists<ul><li><a href="https://eecs16a.org/lecture/Lecture4B_Slides.pdf#page=8">See slide 8</a></li><li>Determinant is the area the vectors form. So if they vectors form some zero-area (or volume in 3D) then it&rsquo;s not one-to-one and thus not invertible</li></ul></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/Ip3X9LOh2dk style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h2 id=theorems>Theorems
+<a class=anchor href=#theorems>#</a></h2><h3 id=theorem-note-61>Theorem Note 6.1
+<a class=anchor href=#theorem-note-61>#</a></h3><blockquote><p>If .$A$ is an invertible matrix, then its inverse must be unique</p></blockquote><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Suppose .$B_1, B_2$ are both inverses of the matrix .$A$. Then we have</li></ul><hr><ul><li>Notice that by associativity of matrix multiplication, the left hand side of the equation above becomes</li><li>We see that .$B_1 = B_2$, so the inverse of any invertible matrix is unique.</li></ul></div><div class="flex-even markdown-inner"><p>$$AB_1 = B_1 A = I$$
+$$AB_2 = B_2 A = I$$</p><hr><p>$$AB_1 = I \Longrightarrow B_2(AB_1) = B_2 I = B_2$$
 $$B_2 (AB_1) = (B_2 A)B_1 = IB_1 = B_1$$
-$$\therefore B_1 = B_2$$</p></div></div><ul>
-<li>Another important property of inverses is that the “left” inverse and the “right” inverse are equal to each other. In particular&mldr;</li></ul><h3 id=theorem-note-62>
-Theorem Note 6.2
-<a class=anchor href=#theorem-note-62>#</a>
-</h3><blockquote>
-<p>If .$QP = I$ and .$RQ = I$, then .$P = R$. The matrix .$P$ can be thought of as the “right” inverse of .$Q$ and the matrix .$R$ can be thought of as the “left” inverse of .$Q$.</p></blockquote><ul>
-<li>We start the proof by noticing that we know two things .$QP = I$ and .$RQ = I$. To move ahead, we can try setting .$QP = RQ$, but we cannot proceed from here, since the multiplication by .$Q$ is on different sides. So instead we take the equation .$QP = I$ and multiply both sides on the left by .$R$. This gives
+$$\therefore B_1 = B_2$$</p></div></div><ul><li>Another important property of inverses is that the “left” inverse and the “right” inverse are equal to each other. In particular&mldr;</li></ul><h3 id=theorem-note-62>Theorem Note 6.2
+<a class=anchor href=#theorem-note-62>#</a></h3><blockquote><p>If .$QP = I$ and .$RQ = I$, then .$P = R$. The matrix .$P$ can be thought of as the “right” inverse of .$Q$ and the matrix .$R$ can be thought of as the “left” inverse of .$Q$.</p></blockquote><ul><li>We start the proof by noticing that we know two things .$QP = I$ and .$RQ = I$. To move ahead, we can try setting .$QP = RQ$, but we cannot proceed from here, since the multiplication by .$Q$ is on different sides. So instead we take the equation .$QP = I$ and multiply both sides on the left by .$R$. This gives
 $$R(QP) = R(I) = R$$</li><li>Now, using the associative property of matrix multiplication we have that
-$$R(QP) + (RQ)P = IP = P$$</li><li>Here we used .$RQ = I$. Combining these two equations, we have that .$R = P$, and we are done</li></ul><h3 id=theorem-note-63>
-Theorem Note 6.3
-<a class=anchor href=#theorem-note-63>#</a>
-</h3><blockquote>
-<p>If a matrix A is invertible, there exists a unique solution to the equation .$A \vec x = \vec b$ for all possible vectors .$\vec b$.</p></blockquote><ul>
-<li>Let’s try to prove this. To do so, we need to prove two statements:
-<ol>
-<li>That there exists <em>at least one</em> solution to the equation .$A \vec x = \vec b$, and that</li><li>There exists <em>no more than one</em> solution to the equation .$A \vec x = \vec b$.</li></ol></li><li>For both of the above statements, .$\vec b$ can be any vector in .$\mathbb{R}^{n}$</li><li>Let’s prove the first statement first. Imagine we are given a vector .$\vec b$. Consider the candidate solution .$\vec x = A^{−1} \vec b$. Observe that
+$$R(QP) + (RQ)P = IP = P$$</li><li>Here we used .$RQ = I$. Combining these two equations, we have that .$R = P$, and we are done</li></ul><h3 id=theorem-note-63>Theorem Note 6.3
+<a class=anchor href=#theorem-note-63>#</a></h3><blockquote><p>If a matrix A is invertible, there exists a unique solution to the equation .$A \vec x = \vec b$ for all possible vectors .$\vec b$.</p></blockquote><ul><li>Let’s try to prove this. To do so, we need to prove two statements:<ol><li>That there exists <em>at least one</em> solution to the equation .$A \vec x = \vec b$, and that</li><li>There exists <em>no more than one</em> solution to the equation .$A \vec x = \vec b$.</li></ol></li><li>For both of the above statements, .$\vec b$ can be any vector in .$\mathbb{R}^{n}$</li><li>Let’s prove the first statement first. Imagine we are given a vector .$\vec b$. Consider the candidate solution .$\vec x = A^{−1} \vec b$. Observe that
 $$A \vec x = A(A^{-1} \vec b) = (AA^{-1}) \vec b = \vec b$$</li><li>Thus, our candidate solution satisfies the equation .$A \vec x = \vec b$, so there exists at least one solution to that equation!</li><li>Now, let’s show the second statement &ndash; that no more than one solution to the equation .$A \vec x = \vec b$ can exist. Consider a particular solution .$\vec x$, so .$A \vec x = \vec b$. Pre-multiplying both sides of this equation by .$A^{−1}$, we obtain
-$$A^{-1}(A \vec x) = A^{-1} \vec b \Longrightarrow \vec x = A^{-1} \vec b$$</li><li>Therefore, if .$\vec x$ exists, it must be the particular vector .$A^{−1} \vec b$. In other words, there exists at most one solution to the equation .$A \vec x = \vec b$, so we have proven the second statement</li></ul><h3 id=theorem-note-64>
-Theorem Note 6.4
-<a class=anchor href=#theorem-note-64>#</a>
-</h3><blockquote>
-<p>If a matrix .$A$ is invertible, its columns are linearly independent.</p></blockquote><ul>
-<li>Let’s prove this theorem. We know that the statement “the columns of .$A$ are linearly independent” is equivalent to the statement “.$A \vec x = \vec 0$ only when .$ \vec x = \vec 0$.” This fact follows from the definition of linear independence: by definition, if .$\vec v_1, \dots, \vec v_n$ are linearly independent, then .$\sum_{i=1}^n x_i \vec v_i$ is only .$\vec 0$ when .$x_i = 0$.</li><li>Using the column perspective of matrix multiplication (covered in Note 3), .$A \vec x = \sum_{i=1}^n x_i \vec v_i$ where .$\vec v_i$ is the .$i$th column of .$A$. Therefore, .$A \vec x = \vec 0$ only when all .$x_i = 0$.</li><li>Therefore, we can rephrase what we’re trying to prove as
+$$A^{-1}(A \vec x) = A^{-1} \vec b \Longrightarrow \vec x = A^{-1} \vec b$$</li><li>Therefore, if .$\vec x$ exists, it must be the particular vector .$A^{−1} \vec b$. In other words, there exists at most one solution to the equation .$A \vec x = \vec b$, so we have proven the second statement</li></ul><h3 id=theorem-note-64>Theorem Note 6.4
+<a class=anchor href=#theorem-note-64>#</a></h3><blockquote><p>If a matrix .$A$ is invertible, its columns are linearly independent.</p></blockquote><ul><li>Let’s prove this theorem. We know that the statement “the columns of .$A$ are linearly independent” is equivalent to the statement “.$A \vec x = \vec 0$ only when .$ \vec x = \vec 0$.” This fact follows from the definition of linear independence: by definition, if .$\vec v_1, \dots, \vec v_n$ are linearly independent, then .$\sum_{i=1}^n x_i \vec v_i$ is only .$\vec 0$ when .$x_i = 0$.</li><li>Using the column perspective of matrix multiplication (covered in Note 3), .$A \vec x = \sum_{i=1}^n x_i \vec v_i$ where .$\vec v_i$ is the .$i$th column of .$A$. Therefore, .$A \vec x = \vec 0$ only when all .$x_i = 0$.</li><li>Therefore, we can rephrase what we’re trying to prove as
 $$A^{-1} \text{ exists } \Longrightarrow A \vec x = \vec 0 \text{ only when } \vec x = \vec 0$$</li><li>To prove this, assume that .$A$ is invertible. Let .$\vec v$ be some vector such that .$A \vec x = \vec 0$:
 $$A \vec x = \vec 0 \text{ left-multiply by } A^{-1}$$
 $$A^{-1} A \vec v = I \vec v = \vec 0$$
-$$\vec v = \vec 0$$</li></ul><h3 id=theorem-lecture>
-Theorem Lecture
-<a class=anchor href=#theorem-lecture>#</a>
-</h3><blockquote>
-<p>.$A$ is invertible, iff the columns of are linearly independent.</p></blockquote><ul>
-<li>That is,
-<ol>
-<li>If columns of .$A$ are liner dependent then .$A^{-1}$ does not exist</li><li>If .$A^{-1}$ exists, then the cols. of .$A$ are linearly independent</li></ol></li><li>Proof concept: Assume linear dependence and invertibility and show that it is a contradiction
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>From linear dependence: .$\exists \vec \alpha \neq 0$ such that .$A \vec \alpha = 0$:</li></ul><br>
-<ul>
-<li>But .$\vec \alpha \neq 0$, hence, .$A^{-1}$ DNE</li></ul></div><div class="flex-even markdown-inner">
-<p>$$A \vec \alpha = 0$$
+$$\vec v = \vec 0$$</li></ul><h3 id=theorem-lecture>Theorem Lecture
+<a class=anchor href=#theorem-lecture>#</a></h3><blockquote><p>.$A$ is invertible, iff the columns of are linearly independent.</p></blockquote><ul><li>That is,<ol><li>If columns of .$A$ are liner dependent then .$A^{-1}$ does not exist</li><li>If .$A^{-1}$ exists, then the cols. of .$A$ are linearly independent</li></ol></li><li>Proof concept: Assume linear dependence and invertibility and show that it is a contradiction<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>From linear dependence: .$\exists \vec \alpha \neq 0$ such that .$A \vec \alpha = 0$:</li></ul><br><ul><li>But .$\vec \alpha \neq 0$, hence, .$A^{-1}$ DNE</li></ul></div><div class="flex-even markdown-inner"><p>$$A \vec \alpha = 0$$
 $$A^{-1} A \vec \alpha = A^{-1} 0$$
-$$I \vec \alpha = 0$$
-</div></div></li><li>Thus, the following statements are equivalent:
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Matrix .$A$ is invertible</li><li>.$A$ has linearly independent columns
-<ul>
-<li>.$A$ is
-<a href=https://en.wikipedia.org/wiki/Rank_%28linear_algebra%29>full rank</a></li></ul></li></ul></div><div class="flex-even markdown-inner">
-<ul>
-<li>.$A \vec x = \vec b$ has a unique solution</li><li>.$A$ has a trivial
+$$I \vec \alpha = 0$$</div></div></li><li>Thus, the following statements are equivalent:<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Matrix .$A$ is invertible</li><li>.$A$ has linearly independent columns<ul><li>.$A$ is
+<a href=https://en.wikipedia.org/wiki/Rank_%28linear_algebra%29>full rank</a></li></ul></li></ul></div><div class="flex-even markdown-inner"><ul><li>.$A \vec x = \vec b$ has a unique solution</li><li>.$A$ has a trivial
 <a href=https://en.wikipedia.org/wiki/Kernel_%28linear_algebra%29>nullspace</a></li><li>The
-<a href=https://en.wikipedia.org/wiki/Determinant>determinant</a> of is not zero</li></ul></div></div></li></ul></article><footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener>
-<img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>March 4, 2022</span>
-</a>
-</div><div>
-<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/3.md target=_blank rel=noopener>
-<img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span>
-</a>
-</div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-</footer><div class=book-comments>
-</div><label for=menu-control class="hidden book-menu-overlay"></label>
-</div><aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#02-08-matrix-transformations>02-08: Matrix Transformations</a>
-<ul>
-<li><a href=#linear-transformations>Linear Transformations</a></li><li><a href=#state-transformation>State Transformation</a></li></ul></li><li><a href=#02-10-inverse>02-10: Inverse</a>
-<ul>
-<li><a href=#matrix-inverse>Matrix Inverse</a></li><li><a href=#inverse-of-a-2x2-matrix>Inverse of a 2x2 matrix</a></li><li><a href=#theorems>Theorems</a>
-<ul>
-<li><a href=#theorem-note-61>Theorem Note 6.1</a></li><li><a href=#theorem-note-62>Theorem Note 6.2</a></li><li><a href=#theorem-note-63>Theorem Note 6.3</a></li><li><a href=#theorem-note-64>Theorem Note 6.4</a></li><li><a href=#theorem-lecture>Theorem Lecture</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>
+<a href=https://en.wikipedia.org/wiki/Determinant>determinant</a> of is not zero</li></ul></div></div></li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>March 4, 2022</span></a></div><div><a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/eecs-16a/3.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#02-08-matrix-transformations>02-08: Matrix Transformations</a><ul><li><a href=#linear-transformations>Linear Transformations</a></li><li><a href=#state-transformation>State Transformation</a></li></ul></li><li><a href=#02-10-inverse>02-10: Inverse</a><ul><li><a href=#matrix-inverse>Matrix Inverse</a></li><li><a href=#inverse-of-a-2x2-matrix>Inverse of a 2x2 matrix</a></li><li><a href=#theorems>Theorems</a><ul><li><a href=#theorem-note-61>Theorem Note 6.1</a></li><li><a href=#theorem-note-62>Theorem Note 6.2</a></li><li><a href=#theorem-note-63>Theorem Note 6.3</a></li><li><a href=#theorem-note-64>Theorem Note 6.4</a></li><li><a href=#theorem-lecture>Theorem Lecture</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

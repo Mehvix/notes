@@ -1,551 +1,65 @@
-<!doctype html><html lang=en dir=ltr>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="01-25: Fundamentals of graphical communication #  Evolution of graphical visualization #   Hand drawing Instrument drawing (using mechanical things to measure distances) 2D CAD (initially only able to draw side views) 3D CAD (solid modeling)  Automatic generation of 2D working drawings Enable easy communication of measurements between designer and manufacturer Created with the assumption that manufactured objects are made up of elementary objects, geons? Now we have the ability to run algos to analyze models, removing unnecessary bits We&rsquo;re moving towards computer-generated geometry that&rsquo;s contained by human input     #     Increasingly complex geometries   Topological optimization Internal lattices The way we interface with drawings has to keep up with this   New interfaces  Virtual and augmented reality for visualizing designs    Why bother sketching by hand?">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Week 1: Fundamentals of Graphical Communication & Subtractive Processes">
-<meta property="og:description" content="01-25: Fundamentals of graphical communication #  Evolution of graphical visualization #   Hand drawing Instrument drawing (using mechanical things to measure distances) 2D CAD (initially only able to draw side views) 3D CAD (solid modeling)  Automatic generation of 2D working drawings Enable easy communication of measurements between designer and manufacturer Created with the assumption that manufactured objects are made up of elementary objects, geons? Now we have the ability to run algos to analyze models, removing unnecessary bits We&rsquo;re moving towards computer-generated geometry that&rsquo;s contained by human input     #     Increasingly complex geometries   Topological optimization Internal lattices The way we interface with drawings has to keep up with this   New interfaces  Virtual and augmented reality for visualizing designs    Why bother sketching by hand?">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://notes.mehvix.com/e-29/1/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-03-04T00:21:26-08:00">
-<title>Week 1: Fundamentals of Graphical Communication & Subtractive Processes | notes.mehvix.com</title><link rel=manifest href=/manifest.json>
-<link rel=icon href=/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous>
-<script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.9a289e1704b278e6f1129793c61041ff35cf4dbd068093f92d38b53a0dcaace3.js integrity="sha256-miieFwSyeObxEpeTxhBB/zXPTb0GgJP5LTi1Og3KrOM=" crossorigin=anonymous></script>
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="01-25: Fundamentals of graphical communication #  Evolution of graphical visualization #   Hand drawing Instrument drawing (using mechanical things to measure distances) 2D CAD (initially only able to draw side views) 3D CAD (solid modeling)  Automatic generation of 2D working drawings Enable easy communication of measurements between designer and manufacturer Created with the assumption that manufactured objects are made up of elementary objects, geons? Now we have the ability to run algos to analyze models, removing unnecessary bits We&rsquo;re moving towards computer-generated geometry that&rsquo;s contained by human input     #     Increasingly complex geometries   Topological optimization Internal lattices The way we interface with drawings has to keep up with this   New interfaces  Virtual and augmented reality for visualizing designs    Why bother sketching by hand?"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Week 1: Fundamentals of Graphical Communication & Subtractive Processes"><meta property="og:description" content="01-25: Fundamentals of graphical communication #  Evolution of graphical visualization #   Hand drawing Instrument drawing (using mechanical things to measure distances) 2D CAD (initially only able to draw side views) 3D CAD (solid modeling)  Automatic generation of 2D working drawings Enable easy communication of measurements between designer and manufacturer Created with the assumption that manufactured objects are made up of elementary objects, geons? Now we have the ability to run algos to analyze models, removing unnecessary bits We&rsquo;re moving towards computer-generated geometry that&rsquo;s contained by human input     #     Increasingly complex geometries   Topological optimization Internal lattices The way we interface with drawings has to keep up with this   New interfaces  Virtual and augmented reality for visualizing designs    Why bother sketching by hand?"><meta property="og:type" content="article"><meta property="og:url" content="http://notes.mehvix.com/e-29/1/"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2022-03-04T00:21:26-08:00"><title>Week 1: Fundamentals of Graphical Communication & Subtractive Processes | notes.mehvix.com</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.8f4aaeb02c9f2d788b552eb377e1c25355d744990b594dc9559353fc2364d113.js integrity="sha256-j0qusCyfLXiLVS6zd+HCU1XXRJkLWU3JVZNT/CNk0RM=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
-<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]]}}</script>
-<script id=MathJax-script async src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
-<link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css>
-</head><body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/><span>notes.mehvix.com</span>
-</a>
-</h2><div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
-<li>
-<input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
-<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between">
-<a role=button>CogSci C100</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a>
-</li><li>
-<a href=http://notes.mehvix.com/cogsci-c100/memory/>Memory</a>
-</li></ul></li><li>
-<input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle>
-<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between">
-<a role=button>EECS 16A</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a>
-</li><li>
-<a href=http://notes.mehvix.com/eecs-16a/6/>Week 6: Voltage Dividers & Measurement</a>
-</li></ul></li><li>
-<input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle checked>
-<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between">
-<a role=button>Engineering 29</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/1/ class=active>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a>
-</li><li>
-<a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a>
-</li></ul></li><li>
-<input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
-<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/math-53/>Math 53</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a>
-</li><li>
-<a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a>
-</li></ul></li><li>
-<input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
-<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between">
-<a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a>
-</li><li>
-<a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a>
-</li></ul></li><li>
-<a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a>
-</li><li>
-<input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
-<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between">
-<a role=button>AP Notes</a>
-</label>
-<ul>
-<li>
-<a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a>
-</li><li>
-<a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a>
-</li><li>
-<a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a>
-</li></ul></li></ul><ul>
-<li>
-<a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>
-CS61A (Anto's)
-</a>
-</li><li>
-<a href=# target=_blank rel=noopener>
-—
-</a>
-</li><li>
-<a href=https://www.mehvix.com target=_blank rel=noopener>
-w³.mehvix.com
-</a>
-</li><li>
-<a href=https://pass.mehvix.com target=_blank rel=noopener>
-pass.mehvix.com
-</a>
-</li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-</div></aside><div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/svg/menu.svg class=book-icon alt=Menu>
-</label>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>MathJax={tex:{inlineMath:[["$","$"],[".$","$"]],processEscapes:!0,processEnvironments:!0,macros:{bigsup:["#1{^{\\vbox{\\hbox{$\\scriptstyle#1$}\\nointerlineskip\\hbox{}}}}",1]}},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script><script id=MathJax-script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js?config=TeX-AMS_CHTML" integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:".$",right:"$",display:!1},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script><link rel=stylesheet href=http://notes.mehvix.com/css/custom_styling.css></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>notes.mehvix.com</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-254493c648c1f0be4cf9348c45ddbe37 class=toggle>
+<label for=section-254493c648c1f0be4cf9348c45ddbe37 class="flex justify-between"><a role=button>CogSci C100</a></label><ul><li><a href=http://notes.mehvix.com/cogsci-c100/intro/>Introduction</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/perception/>Perception</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/non-visual/>Non-Visual Perception</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/attention/>Attention</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/sleep/>Sleep & Dreams</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/consciousness/>Consciousness</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/mindfulness/>Mindfulness</a></li><li><a href=http://notes.mehvix.com/cogsci-c100/memory/>Memory</a></li></ul></li><li><input type=checkbox id=section-20c391324c82ffdef893b60d754b7005 class=toggle>
+<label for=section-20c391324c82ffdef893b60d754b7005 class="flex justify-between"><a role=button>EECS 16A</a></label><ul><li><a href=http://notes.mehvix.com/eecs-16a/0/>Week 0: System Design & Linear Equations</a></li><li><a href=http://notes.mehvix.com/eecs-16a/1/>Week 1: Gaussian Elim. & Matrices + Vectors</a></li><li><a href=http://notes.mehvix.com/eecs-16a/2/>Week 2: (In)dependence & Circuit Analysis</a></li><li><a href=http://notes.mehvix.com/eecs-16a/3/>Week 3: Transformations & Inverse</a></li><li><a href=http://notes.mehvix.com/eecs-16a/4/>Week 4: Vector Spaces & Eigenstuff</a></li><li><a href=http://notes.mehvix.com/eecs-16a/5/>Week 5: Basis & Circuit Analysis</a></li><li><a href=http://notes.mehvix.com/eecs-16a/6/>Week 6: Voltage Dividers & Measurement</a></li><li><a href=http://notes.mehvix.com/eecs-16a/7/>Week 7: 2D Touchscreens & Superposition + Equivalence</a></li></ul></li><li><input type=checkbox id=section-7571d6f544c6ffc847948b0f74d82ef1 class=toggle checked>
+<label for=section-7571d6f544c6ffc847948b0f74d82ef1 class="flex justify-between"><a role=button>Engineering 29</a></label><ul><li><a href=http://notes.mehvix.com/e-29/0/>Week 0: Intro & Tolerancing</a></li><li><a href=http://notes.mehvix.com/e-29/1/ class=active>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</a></li><li><a href=http://notes.mehvix.com/e-29/2/>Week 2: Cutting-based Processes & Other Subtractive Processes</a></li><li><a href=http://notes.mehvix.com/e-29/3/>Week 3: Additive Processes: Intro & Extrusion</a></li><li><a href=http://notes.mehvix.com/e-29/4/>Week 4: Additive Processes: Light-based, etc.</a></li><li><a href=http://notes.mehvix.com/e-29/5/>Weeks 5 & 6: Forming Processes</a></li><li><a href=http://notes.mehvix.com/e-29/6/>Weeks 6 & 7: Joining processes</a></li><li><a href=http://notes.mehvix.com/e-29/7/>Week 7-8: Visualization</a></li></ul></li><li><input type=checkbox id=section-32aba3efd274a559b3dccd4e800c9d4b class=toggle>
+<label for=section-32aba3efd274a559b3dccd4e800c9d4b class="flex justify-between"><a href=http://notes.mehvix.com/docs/math-53/>Math 53</a></label><ul><li><a href=http://notes.mehvix.com/math-53/10/>10: Parametric Equations and Polar Coordinates</a></li><li><a href=http://notes.mehvix.com/math-53/12/>12: Vectors & Geometry of Space</a></li><li><a href=http://notes.mehvix.com/math-53/13/>13: Vector Functions</a></li><li><a href=http://notes.mehvix.com/math-53/14/>14: Partial Derivatives</a></li><li><a href=http://notes.mehvix.com/math-53/15/>15: Multiple Integrals</a></li><li><a href=http://notes.mehvix.com/math-53/16/>16: Vector Calculus</a></li><li><a href=http://notes.mehvix.com/math-53/trig/>Trig Identities</a></li><li><a href=http://notes.mehvix.com/math-53/trig-calc/>Trig Calculus</a></li></ul></li><li><input type=checkbox id=section-98c46cabf82aecebcca8f97f2965f738 class=toggle>
+<label for=section-98c46cabf82aecebcca8f97f2965f738 class="flex justify-between"><a href=http://notes.mehvix.com/docs/physics-7b/>Physics 7B</a></label><ul><li><a href=http://notes.mehvix.com/physics-7b/17/>17: Temperature, Thermal Expansion, & Ideal Gas Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/18/>18: Kinetic Theory of Gases</a></li><li><a href=http://notes.mehvix.com/physics-7b/19/>19: Heat & First Law of Thermo</a></li><li><a href=http://notes.mehvix.com/physics-7b/20/>20: Second Law of Thermo</a></li><li><a href=http://notes.mehvix.com/physics-7b/21/>21: Electric Charges & Fields</a></li><li><a href=http://notes.mehvix.com/physics-7b/22/>22: Flux & Gauss's Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/23/>23: Electric Potential</a></li><li><a href=http://notes.mehvix.com/physics-7b/24/>24: Capacitance, Dielectrics, Electric Energy Storage</a></li><li><a href=http://notes.mehvix.com/physics-7b/25/>25: Electric Current and Resistance</a></li><li><a href=http://notes.mehvix.com/physics-7b/26/>26: DC Circuits</a></li><li><a href=http://notes.mehvix.com/physics-7b/27/>27: Magnetism</a></li><li><a href=http://notes.mehvix.com/physics-7b/28/>28: Sources of Magnetic Field</a></li><li><a href=http://notes.mehvix.com/physics-7b/29/>29: Electromagnetic Induction & Faraday's Law</a></li><li><a href=http://notes.mehvix.com/physics-7b/30/>30: Inductance, Electromagnetic Oscillations, & AC Circuits</a></li></ul></li><li><a href=http://notes.mehvix.com/asamst-20a/>ASAMST 20A</a></li><li><input type=checkbox id=section-a18e6d23bfa638ffa382e954bd79207f class=toggle>
+<label for=section-a18e6d23bfa638ffa382e954bd79207f class="flex justify-between"><a role=button>AP Notes</a></label><ul><li><a href=http://notes.mehvix.com/ap/huge/>AP Human Geography</a></li><li><a href=http://notes.mehvix.com/ap/cmech/>AP Physics C: Mechanics</a></li><li><a href=http://notes.mehvix.com/ap/stats/>AP Statistics</a></li></ul></li></ul><ul><li><a href=https://cs61a.rouxl.es/ target=_blank rel=noopener>CS61A (Anto's)</a></li><li><a href=# target=_blank rel=noopener>—</a></li><li><a href=https://www.mehvix.com target=_blank rel=noopener>w³.mehvix.com</a></li><li><a href=https://pass.mehvix.com target=_blank rel=noopener>pass.mehvix.com</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Week 1: Fundamentals of Graphical Communication & Subtractive Processes</strong>
-<label for=toc-control>
-<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div><aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#01-25-fundamentals-of-graphical-communication>01-25: Fundamentals of graphical communication</a>
-<ul>
-<li><a href=#evolution-of-graphical-visualization>Evolution of graphical visualization</a>
-<ul>
-<li><a href=#why-bother-sketching-by-hand>Why bother sketching by hand?</a></li><li><a href=#essentials-of-2d-sketching>Essentials of 2D sketching</a></li></ul></li><li><a href=#3d-pictorial-approaches>3D pictorial approaches</a>
-<ul>
-<li><a href=#isometric-drawing>Isometric drawing</a></li><li><a href=#coded-plans-for-practicing-isometric-sketching>Coded plans for practicing isometric sketching</a></li><li><a href=#axonometric-drawing>Axonometric drawing</a></li><li><a href=#oblique-drawings>Oblique drawings</a></li></ul></li><li><a href=#introduction-to-sketching-tools>Introduction to sketching tools</a>
-<ul>
-<li><a href=#possible-ways-of-enhancing-3d-sketches>Possible ways of enhancing 3D sketches</a></li></ul></li></ul></li><li><a href=#01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>01-27: Subtractive processes: types of subtractive process; mechanics of cutting</a></li><li><a href=#subtractive-manufacturing-processes>Subtractive manufacturing processes</a>
-<ul>
-<li><a href=#types-of-subtractive-process>Types of subtractive process</a>
-<ul>
-<li><a href=#how-can-we-cut-away-material-some-possibilities>How can we cut away material? Some possibilities:</a></li><li><a href=#why-would-we-choose-a-subtractive-process>Why would we choose a subtractive process</a></li></ul></li><li><a href=#mechanics-of-lathe-turning-of-metals>Mechanics of lathe turning of metals</a>
-<ul>
-<li><a href=#terminology>Terminology</a></li><li><a href=#a-close-look-at-a-metal-cutting-operation>A close look at a metal cutting operation</a></li><li><a href=#material-removed>Material Removed</a></li><li><a href=#cutting-depends-on-material-properties>Cutting depends on material properties</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=01-25-fundamentals-of-graphical-communication>
-01-25: Fundamentals of graphical communication
-<a class=anchor href=#01-25-fundamentals-of-graphical-communication>#</a>
-</h1><h2 id=evolution-of-graphical-visualization>
-Evolution of graphical visualization
-<a class=anchor href=#evolution-of-graphical-visualization>#</a>
-</h2><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Hand drawing</li><li>Instrument drawing (using mechanical things to measure distances)</li><li>2D CAD (initially only able to draw side views)</li><li>3D CAD (solid modeling)
-<ul>
-<li>Automatic generation of 2D working drawings</li><li>Enable easy communication of measurements between designer and manufacturer</li><li>Created with the assumption that manufactured objects are made up of elementary objects,
-<a href=/cogsci-c100/perception/#recognition-by-components-model>geons?</a></li><li>Now we have the ability to run algos to analyze models, removing unnecessary bits</li><li>We&rsquo;re moving towards computer-generated geometry that&rsquo;s contained by human input</li></ul></li></ul></div><div class="flex-even markdown-inner">
-<h2 id=docse-291evo2png>
-<img src=/docs/e-29/1/evo2.png alt>
-<a class=anchor href=#docse-291evo2png>#</a>
-</h2></div></div><ul>
-<li>Increasingly complex geometries
-<ul>
-<li>
-<a href=https://en.wikipedia.org/wiki/Topology_optimization>Topological optimization</a></li><li>Internal lattices</li><li>The way we interface with drawings has to keep up with this</li></ul></li><li>New interfaces
-<ul>
-<li>Virtual and augmented reality for visualizing designs</li></ul></li></ul><h3 id=why-bother-sketching-by-hand>
-Why bother sketching by hand?
-<a class=anchor href=#why-bother-sketching-by-hand>#</a>
-</h3><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/evo1.png alt>
-</div><div class="flex-even markdown-inner">
-<ul>
-<li>Why not go straight to CAD?</li><li>Some possible reasons:
-<ul>
-<li>There is a connection between drawing and your own creativity; a feedback loop of sorts</li><li>CAD bottlenecks you to designing a certain way</li><li>Find one’s own distinctive style</li><li>Avoid making detailed decisions too early</li><li>Keep geometries more freeform</li><li>Ideas may come to mind anywhere, anytime</li><li>Potentially quicker</li></ul></li></ul></div></div><details><summary>Sketch Examples</summary>
-<div class=markdown-inner>
-<ul>
-<li>Leonardo da Vinci: “helicopter” (c. 1489)
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#01-25-fundamentals-of-graphical-communication>01-25: Fundamentals of graphical communication</a><ul><li><a href=#evolution-of-graphical-visualization>Evolution of graphical visualization</a><ul><li><a href=#why-bother-sketching-by-hand>Why bother sketching by hand?</a></li><li><a href=#essentials-of-2d-sketching>Essentials of 2D sketching</a></li></ul></li><li><a href=#3d-pictorial-approaches>3D pictorial approaches</a><ul><li><a href=#isometric-drawing>Isometric drawing</a></li><li><a href=#coded-plans-for-practicing-isometric-sketching>Coded plans for practicing isometric sketching</a></li><li><a href=#axonometric-drawing>Axonometric drawing</a></li><li><a href=#oblique-drawings>Oblique drawings</a></li></ul></li><li><a href=#introduction-to-sketching-tools>Introduction to sketching tools</a><ul><li><a href=#possible-ways-of-enhancing-3d-sketches>Possible ways of enhancing 3D sketches</a></li></ul></li></ul></li><li><a href=#01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>01-27: Subtractive processes: types of subtractive process; mechanics of cutting</a></li><li><a href=#subtractive-manufacturing-processes>Subtractive manufacturing processes</a><ul><li><a href=#types-of-subtractive-process>Types of subtractive process</a><ul><li><a href=#how-can-we-cut-away-material-some-possibilities>How can we cut away material? Some possibilities:</a></li><li><a href=#why-would-we-choose-a-subtractive-process>Why would we choose a subtractive process</a></li></ul></li><li><a href=#mechanics-of-lathe-turning-of-metals>Mechanics of lathe turning of metals</a><ul><li><a href=#terminology>Terminology</a></li><li><a href=#a-close-look-at-a-metal-cutting-operation>A close look at a metal cutting operation</a></li><li><a href=#material-removed>Material Removed</a></li><li><a href=#cutting-depends-on-material-properties>Cutting depends on material properties</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=01-25-fundamentals-of-graphical-communication>01-25: Fundamentals of graphical communication
+<a class=anchor href=#01-25-fundamentals-of-graphical-communication>#</a></h1><h2 id=evolution-of-graphical-visualization>Evolution of graphical visualization
+<a class=anchor href=#evolution-of-graphical-visualization>#</a></h2><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Hand drawing</li><li>Instrument drawing (using mechanical things to measure distances)</li><li>2D CAD (initially only able to draw side views)</li><li>3D CAD (solid modeling)<ul><li>Automatic generation of 2D working drawings</li><li>Enable easy communication of measurements between designer and manufacturer</li><li>Created with the assumption that manufactured objects are made up of elementary objects,
+<a href=/cogsci-c100/perception/#recognition-by-components-model>geons?</a></li><li>Now we have the ability to run algos to analyze models, removing unnecessary bits</li><li>We&rsquo;re moving towards computer-generated geometry that&rsquo;s contained by human input</li></ul></li></ul></div><div class="flex-even markdown-inner"><h2 id=docse-291evo2png><img src=/docs/e-29/1/evo2.png alt>
+<a class=anchor href=#docse-291evo2png>#</a></h2></div></div><ul><li>Increasingly complex geometries<ul><li><a href=https://en.wikipedia.org/wiki/Topology_optimization>Topological optimization</a></li><li>Internal lattices</li><li>The way we interface with drawings has to keep up with this</li></ul></li><li>New interfaces<ul><li>Virtual and augmented reality for visualizing designs</li></ul></li></ul><h3 id=why-bother-sketching-by-hand>Why bother sketching by hand?
+<a class=anchor href=#why-bother-sketching-by-hand>#</a></h3><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/evo1.png alt></div><div class="flex-even markdown-inner"><ul><li>Why not go straight to CAD?</li><li>Some possible reasons:<ul><li>There is a connection between drawing and your own creativity; a feedback loop of sorts</li><li>CAD bottlenecks you to designing a certain way</li><li>Find one’s own distinctive style</li><li>Avoid making detailed decisions too early</li><li>Keep geometries more freeform</li><li>Ideas may come to mind anywhere, anytime</li><li>Potentially quicker</li></ul></li></ul></div></div><details><summary>Sketch Examples</summary><div class=markdown-inner><ul><li>Leonardo da Vinci: “helicopter” (c. 1489)
 <img src=/docs/e-29/1/heli.png alt></li><li>Charles and Ray Eames: chair
 <img src=/docs/e-29/1/chair.png alt></li><li>Renzo Piano + Richard Rogers: Pompidou Center
-<img src=/docs/e-29/1/piano.png alt></li></ul><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Philippe Starck: lemon squeezer
-<img src=/docs/e-29/1/lem1.png alt>
-<ul>
-<li>Aside: how is it made?
-<p><img src=/docs/e-29/1/lem3.png alt></li></p></ul></li></ul></div><div class="flex-even markdown-inner">
-<h2 id=docse-291lem2png>
-<img src=/docs/e-29/1/lem2.png alt>
-<a class=anchor href=#docse-291lem2png>#</a>
-</h2></div></div><ul>
-<li>Jonathan Ive/Apple design team: iPhone
+<img src=/docs/e-29/1/piano.png alt></li></ul><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Philippe Starck: lemon squeezer
+<img src=/docs/e-29/1/lem1.png alt><ul><li>Aside: how is it made?<p><img src=/docs/e-29/1/lem3.png alt></li></p></ul></li></ul></div><div class="flex-even markdown-inner"><h2 id=docse-291lem2png><img src=/docs/e-29/1/lem2.png alt>
+<a class=anchor href=#docse-291lem2png>#</a></h2></div></div><ul><li>Jonathan Ive/Apple design team: iPhone
 <img src=/docs/e-29/1/iphone.png alt></li><li>Burj Khalifa: Adrian Smith
 <img src=/docs/e-29/1/tower.png alt></li><li>Tesla Model 3: Franz Holzhausen
 <img src=/docs/e-29/1/tesla.png alt></li><li>Concept drawing for Berkeley Engineering
-<img src=/docs/e-29/1/cal.png alt></li></ul></div></details>
-<h3 id=essentials-of-2d-sketching>
-Essentials of 2D sketching
-<a class=anchor href=#essentials-of-2d-sketching>#</a>
-</h3><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Line types matters
-<ul>
-<li><strong>Solid:</strong> edges</li><li><strong>Dashed:</strong> hidden detail</li><li><strong>Chain:</strong> centerline.
-<ul>
-<li><code>- . - . </code> &mldr;</li></ul></li><li><strong>Faint:</strong> construction
-<ul>
-<li>Align, but don&rsquo;t touch, features</li></ul></li><li><strong>Dimension lines:</strong>
-<ul>
-<li>Fainter than edges, and not connected.</li><li>Long, thin arrows.</li><li>Lots of differing standards, just be consistent</li></ul></li></ul></li></ul></div><div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/sketch.png alt>
-</div></div><h2 id=3d-pictorial-approaches>
-3D pictorial approaches
-<a class=anchor href=#3d-pictorial-approaches>#</a>
-</h2><h3 id=isometric-drawing>
-Isometric drawing
-<a class=anchor href=#isometric-drawing>#</a>
-</h3><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>&lsquo;iso&rsquo; = same, &lsquo;metric&rsquo; = measure
-<ul>
-<li>Any lines parallel .$x,y,z$ on the lines are equal length</li></ul></li><li>Orthogonal edges of a 3D object map to:
-<ul>
-<li>Vertical lines</li><li>Lines at .$\pm 30^\circ$ to horizontal</li></ul></li><li>Enables creating reasonably realistic drawings fairly easily</li><li>Dimensions in these orthogonal directions are preserved on page</li><li>Dimensions in other directions are not preserved on page</li></ul></div><div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/iso-sketch.png alt>
-</div></div><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Circles in isometric
-<ul>
-<li>Use construction lines for bounding box</li><li>Mark midpoints</li><li>Draw longer quadrants first</li><li>Through holes: use construction lines for obscured circle; darken later</li><li>What if circle is not on an orthogonal face?</li></ul></li></ul></div><div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/iso-circ.png alt>
-</div></div><h3 id=coded-plans-for-practicing-isometric-sketching>
-Coded plans for practicing isometric sketching
-<a class=anchor href=#coded-plans-for-practicing-isometric-sketching>#</a>
-</h3><ul>
-<li>Principle: number in cell gives height of column to be drawn</li><li>Codes could be given on isometric or square grid (
-<a href=https://en.wikipedia.org/wiki/Plan_%28drawing%29>plan view</a>)</li><li>Square grid: viewpoint explicitly specified
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/plan-iso.png alt>
-</div><div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/plan-grid.png alt>
-</div></div></li><li>Different views / perspectives may obscure different features. Chose the one that minimizes information loss / ambiguity</li><li>You can shade certain surface to convey shadow (and thus depth, 3D information)
-<details><summary>Plan View Draw Example</summary>
-<div class=markdown-inner>
-<img src=/docs/e-29/1/draw-ex.png alt>
-</div></details>
-</li></ul><h3 id=axonometric-drawing>
-Axonometric drawing
-<a class=anchor href=#axonometric-drawing>#</a>
-</h3><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Orthogonal edges are represented by:
-<ul>
-<li>Vertical lines</li><li>Lines at .$\pm 45^\circ$ to horizontal</li></ul></li><li>Advantage:
-<ul>
-<li>Floorplans are not skewed/distorted</li></ul></li><li>Disadvantage:
-<ul>
-<li>Areas of equal orthogonal faces are not equal on drawing</li><li>Can look more &ldquo;distorted&rdquo;</li></ul></li></ul><h2 id=docse-291axo-expng>
-<img src=/docs/e-29/1/axo-ex.png alt>
-<a class=anchor href=#docse-291axo-expng>#</a>
-</h2></div><div class="flex-even markdown-inner">
-<blockquote>
-<p>
-<img src=/docs/e-29/1/axoeg.png alt>
-Example of axonometric drawing</p><ul>
-<li>Sometimes called “planometric”</li><li>Popular in architecture to preserve floorplans</li></ul></blockquote></div></div><h3 id=oblique-drawings>
-Oblique drawings
-<a class=anchor href=#oblique-drawings>#</a>
-</h3><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Front view is undistorted</li><li>Conveys lots of information of a single face</li><li>Angles are arbitrary (here they&rsquo;re ~45)</li><li>Receding lines drawn at a constant angle</li><li>Judgement needed to select scale for receding direction</li></ul></div><div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/obl.png alt>
-</div></div><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<h3 id=perspective-drawing>
-Perspective drawing
-<a class=anchor href=#perspective-drawing>#</a>
-</h3><br>
-<ul>
-<li>Simulates how the eye sees 3D objects: further away objects/details are smaller</li><li>Much more challenging than other methods
-<ul>
-<li>Receding lines not parallel</li><li>But CAD software can generate</li></ul></li><li>Horizon line</li><li>Vanishing point(s)
-<ul>
-<li>One point: dimensions referenced from closest surface</li><li>Two points: dimensions referenced from closest edge</li></ul></li></ul></div><div class="flex-even markdown-inner">
-<h2 id=docse-291ex-perppng>
-<img src=/docs/e-29/1/ex-perp.png alt>
-<a class=anchor href=#docse-291ex-perppng>#</a>
-</h2></div></div><h2 id=introduction-to-sketching-tools>
-Introduction to sketching tools
-<a class=anchor href=#introduction-to-sketching-tools>#</a>
-</h2><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<h3 id=digital-sketching-tools>
-Digital sketching tools
-<a class=anchor href=#digital-sketching-tools>#</a>
-</h3><ul>
-<li>Autodesk Sketchbook
-<ul>
-<li>Now discontinued! :(
-<ul>
-<li>OneNote is an alright alternative</li></ul></li><li>Import isometric grid on Layer 2</li><li>Draw on Layer 1</li></ul></li><li>Google Jamboard</li><li>Adobe Photoshop, Illustrator</li><li>Software resource page in bCourses</li></ul></div><div class="flex-even markdown-inner">
-<h3 id=analog-sketching-tools>
-Analog sketching tools
-<a class=anchor href=#analog-sketching-tools>#</a>
-</h3><ul>
-<li>Set square/drawing triangle</li><li>Pencils:
-<ul>
-<li>Various hardness/softness</li><li>Mechanical vs traditional</li></ul></li><li>Pens
-<ul>
-<li>Ballpoint</li><li>Felt tip</li><li>Technical</li></ul></li></ul></div></div><h3 id=possible-ways-of-enhancing-3d-sketches>
-Possible ways of enhancing 3D sketches
-<a class=anchor href=#possible-ways-of-enhancing-3d-sketches>#</a>
-</h3><p><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Shading &ndash; simulate the effect of light falling on object
-<ul>
-<li>e.x shadows, glare,</li></ul></li><li>Visual clarity &ndash; edges bolder: example of how it clears confusion</li><li>Suggesting motion, sound, texture, etc.</li></ul></div><div class="flex-even markdown-inner">
-<h2 id=docse-291pouncepng>
-<img src=/docs/e-29/1/pounce.png alt>
-<a class=anchor href=#docse-291pouncepng>#</a>
-</h2></div></div><figure><img src=/docs/e-29/1/motion.webp>
-</figure></p><hr>
-<h1 id=01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>
-01-27: Subtractive processes: types of subtractive process; mechanics of cutting
-<a class=anchor href=#01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>#</a>
-</h1><h1 id=subtractive-manufacturing-processes>
-Subtractive manufacturing processes
-<a class=anchor href=#subtractive-manufacturing-processes>#</a>
-</h1><ul>
-<li>Subtractive processes are those that begin with standard stock material (in rod, bar, sheet, plate form etc) and remove material to impart shape</li></ul><h2 id=types-of-subtractive-process>
-Types of subtractive process
-<a class=anchor href=#types-of-subtractive-process>#</a>
-</h2><ul>
-<li>Material comes in range of mediums: billet (below, left), sheet, foil, wire, pellets, etc.</li><li>A subtractive process removes material from a larger piece of material to define the geometry needed
-<ul>
-<li>Subtractive processes therefore generate waste material</li><li>How we deal with this is important</li></ul></li><li>Take 5 minutes to brainstorm all the ways you can think of to remove material in a controlled way from a solid piece of stock to create a geometry
-<ul>
-<li>Also think about what could happen to the waste material What are some ways of removing material? Can we re-use the extra material?
-<img src=/docs/e-29/1/al.png alt></li></ul></li></ul><h3 id=how-can-we-cut-away-material-some-possibilities>
-How can we cut away material? Some possibilities:
-<a class=anchor href=#how-can-we-cut-away-material-some-possibilities>#</a>
-</h3><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Cutting &ndash; taking a sharp edge to material
-<ul>
-<li>Drilling, boring, reaming</li><li>Milling</li><li>Lathe operations: turning, facing, tapping</li><li>Shearing/punching/puncturing</li><li>Sawing</li><li>Chiseling</li><li>Collectively: “machining”</li></ul></li><li>Electric field
-<ul>
-<li>Electrical discharge machining (EDM): electrode, wire</li></ul></li></ul></div><div class="flex-even markdown-inner">
-<ul>
-<li>Localized melting or vaporization
-<ul>
-<li>Laser cutting, laser ablation</li><li>Flame, plasma cutting</li><li>Hot wire (typically used for plastics)</li><li><em>Aside:</em> is melting really subtractive?</li></ul></li><li>Misc
-<ul>
-<li>Chemical methods (
-<a href=https://en.wikipedia.org/wiki/Etching#Industrial_uses>Etching</a>)</li><li>Explosives (think mining)</li><li>Forcing apart (using physical force)</li></ul></li></ul></div></div><ul>
-<li>Abrasion &ndash; rough, abrasive wheels rotate at high speed across the surface of the component, removing particles of the workpiece. This approach is well suited even to the hardest of materials, although control of geometry is not as great as in cutting operations, for example.
-<ul>
-<li>Grinding, sanding, lapping, polishing, filing</li><li>Abrasive jet (water jet)
-- Sand blasting</li></ul></li></ul><h3 id=why-would-we-choose-a-subtractive-process>
-Why would we choose a subtractive process
-<a class=anchor href=#why-would-we-choose-a-subtractive-process>#</a>
-</h3><ul>
-<li>Instead of an additive process? Instead of a forming process, e.g. casting?</li></ul><div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<h4 id=some-possible-reasons-to>
-Some possible reasons to:
-<a class=anchor href=#some-possible-reasons-to>#</a>
-</h4><ul>
-<li>Stock materials tend to be readily available (and inexpensive compared with the specialist powders that are used in some additive processes such as selective laser melting</li><li>Precision and finish are exceptionally good – probably better than any other family of processes</li><li>Need strength / structure</li><li>Material cannot be molded (it&rsquo;s the only feasible process)</li><li>Doesn&rsquo;t alter heat treatment (if feed and speed isn&rsquo;t too high)</li><li>Short runs &ndash; no <em>specialized</em> tooling costs</li><li>Easy customization & More control for iterative product development – every component produced can be different if needed
-<ul>
-<li>All you need is to generate new <code>.gcode</code>; versus a whole mold</li></ul></li></ul></div><div class="flex-even markdown-inner">
-<h4 id=why-not-choose-subtractive>
-Why not choose subtractive?
-<a class=anchor href=#why-not-choose-subtractive>#</a>
-</h4><ul>
-<li>Slow for large run sizes compared to forming processes
-<ul>
-<li>Most processes are “serial”, meaning that each feature on the component needs to be produced sequentially, making the processes slow. This is in contrast, for example, to molding/casting operations where the entire component is produced in approximately one step.</li></ul></li><li>Fairly costly in comparison
-<ul>
-<li>Large amount of waste generated (low efficiency)</li><li>High operator skill is often demanded, raising processing costs</li></ul></li><li>Cuts across metal grains &ndash; not as strong as forged or possibly cast components focus on material cutting Cutting operations rely on wedge-shaped teeth</li></ul></div></div><h2 id=mechanics-of-lathe-turning-of-metals>
-Mechanics of lathe turning of metals
-<a class=anchor href=#mechanics-of-lathe-turning-of-metals>#</a>
-</h2><ul>
-<li>To understand the key concepts of metal cutting, we focus specifically on lathe turning
-<ul>
-<li>i.e. a reduction in the diameter of a cylindrical component using a cutting tool.</li></ul></li><li>We focus on the turning of metals and their alloys, although turning is also widely used to process polymeric materials and even composite materials (wood being one “composite” that is regularly turned).</li><li>Cutting operations rely on wedge-shaped teeth
-<blockquote>
-<p>
-<img src=/docs/e-29/1/teeth.png alt>
-Lectures 4 and 5 will focus on cutting-based operations; Lecture 6 will look at some of the others A close look at a metal cutting operation</p></blockquote></li></ul><h3 id=terminology>
-Terminology
-<a class=anchor href=#terminology>#</a>
-</h3><ul>
-<li>The workpiece (or simply work — the solid material that is to be reduced in diameter) is held firmly at one end in a chuck, whose jaws are tightened against the workpiece enough that the friction between the work and the chuck is always enough to resist the torques experienced by the work during cutting.</li><li>The work is rotated, using an electric motor, at angular velocity .$\omega$, which is typically hundreds or even thousands of revolutions per minute. Let us call the axis of rotation z. If the radius of the workpiece is a at the location of cutting, then the linear, tangential velocity of the work relative to the tool is .$V_\text{cut} = \omega a$, provided that .$\omega$ is expressed in radians/second (to convert from rev/min to rad/sec multiply by .$2\pi/50$).</li><li>The cutting tool is mounted on a <em>cross-slide/carriage</em> assembly, which enables precise control of the cutting edge along the z axis and also radially outwards from the z axis (let us call this radial direction the x axis). The carriage and cross-slide could be moved by manual screws or by computer-controlled motors with positional feedback.</li><li>Once the work is rotating at its target speed, the tool is positioned slightly to the right of the end of the work and the tool is moved inwards in the x direction (towards the rotational z axis) by a distance .$d$, called the <em>depth of cut</em>. The tool is then moved from right to left along the workpiece at a velocity called the <em>feed rate</em> given by .$V_\text{feed} = f\omega$, where .$f$ is the feed, or the distance moved by the tool along the z axis in one revolution of the work.
-<ul>
-<li>Feed rate is a velocity, while feed is a distance per revolution — this subtlety of terminology is important to note. Note that in almost any turning process, .$V_\text{cut} &#187; V_\text{feed}$</li></ul></li></ul><h3 id=a-close-look-at-a-metal-cutting-operation>
-A close look at a metal cutting operation
-<a class=anchor href=#a-close-look-at-a-metal-cutting-operation>#</a>
-</h3><blockquote>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/bdD57NeOuio style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><p>High-speed video: cutting tool moves across surface</p></blockquote><ul>
-<li>Teeth are at a specific, optimal wedge angle wrt the material to shave away stock</li><li>Material is sheared off the workpiece (like butter and knife)</li><li>Quality of cut depends on rake angle (front angle), .$\alpha$, of tool
-<div class="book-columns flex flex-wrap">
-<div class="flex-even markdown-inner">
-<ul>
-<li>Rake angle vertical (.$\alpha = 0$): material piles up and lot of heat is generated</li><li>Rake angle too large: tool is fragile, can dig into material</li><li>Rake angle just right: cutting happens close to tool</li><li>What is “just right” for the rake angle .$\alpha$?
-<ul>
-<li>.$30^\circ$ is a good
-<a href=https://en.wikipedia.org/wiki/Magic_number_%28programming%29>magic</a> starting value</li></ul></li><li>Clearance angle should be non-zero
-<ul>
-<li>Allows you to run the tool in reverse over the material without cutting</li></ul></li></ul></div><div class="flex-even markdown-inner">
-<p>
-<img src=/docs/e-29/1/ang.png alt>
-</div></div></li></ul><h3 id=material-removed>
-Material Removed
-<a class=anchor href=#material-removed>#</a>
-</h3><ul>
-<li>The metal that is cut, or shaved, away from the workpiece is called the chip, and depending on (1) how brittle or ductile the work material is, (2) the shape of the cutting tool, and (3) the speed of cutting, the chip may be either a fairly continuous spiral or a series of small chips that regularly fracture.</li><li>Many small chips are desirable from a practical perspective because, unlike very long continuous chips, they do not tend to become tangled around the work and potentially scratch it.</li><li>Cutting tools will often have protrusions on their front surface that are designed to break up a chip as it comes off the workpiece.</li><li>So in turning, a spiral of material is being removed from the work that has initial cross-section .$d \times f$ and with the tool sweeping through the material with velocity .$V$. Thus, the volumetric removal rate of material is .$R_\text{MR} = Vdf$.</li></ul><h3 id=cutting-depends-on-material-properties>
-Cutting depends on material properties
-<a class=anchor href=#cutting-depends-on-material-properties>#</a>
-</h3><ul>
-<li>More <em>ductile</em> materials (aluminum, mild steel, copper etc): long, spiral-shaped chips of material</li><li>More brittle materials (e.g. cast iron): comes off in short chips
-<blockquote>
-<p><figure><img src=/docs/e-29/1/mat.png>
-</figure>Basic types of chips produced in metal cutting and their micrographs:<br>
-(a) continuous chip with narrow, straight primary shear zone;<br>
-(b) secondary shear zone at the tool-chip interface; <br>
-(c) continuous chip with built-up edge;<br>
-(d) segmented or nonhomogeneous chip; and<br>
-(e) discontinuous chip.</p></blockquote><hr>
-</li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src="https://www.youtube.com/embed/GVLP-IXPEt0?t=141" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div></article><footer class=book-footer>
-<div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener>
-<img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>March 4, 2022</span>
-</a>
-</div><div>
-<a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/e-29/1.md target=_blank rel=noopener>
-<img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span>
-</a>
-</div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-</footer><div class=book-comments>
-</div><label for=menu-control class="hidden book-menu-overlay"></label>
-</div><aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#01-25-fundamentals-of-graphical-communication>01-25: Fundamentals of graphical communication</a>
-<ul>
-<li><a href=#evolution-of-graphical-visualization>Evolution of graphical visualization</a>
-<ul>
-<li><a href=#why-bother-sketching-by-hand>Why bother sketching by hand?</a></li><li><a href=#essentials-of-2d-sketching>Essentials of 2D sketching</a></li></ul></li><li><a href=#3d-pictorial-approaches>3D pictorial approaches</a>
-<ul>
-<li><a href=#isometric-drawing>Isometric drawing</a></li><li><a href=#coded-plans-for-practicing-isometric-sketching>Coded plans for practicing isometric sketching</a></li><li><a href=#axonometric-drawing>Axonometric drawing</a></li><li><a href=#oblique-drawings>Oblique drawings</a></li></ul></li><li><a href=#introduction-to-sketching-tools>Introduction to sketching tools</a>
-<ul>
-<li><a href=#possible-ways-of-enhancing-3d-sketches>Possible ways of enhancing 3D sketches</a></li></ul></li></ul></li><li><a href=#01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>01-27: Subtractive processes: types of subtractive process; mechanics of cutting</a></li><li><a href=#subtractive-manufacturing-processes>Subtractive manufacturing processes</a>
-<ul>
-<li><a href=#types-of-subtractive-process>Types of subtractive process</a>
-<ul>
-<li><a href=#how-can-we-cut-away-material-some-possibilities>How can we cut away material? Some possibilities:</a></li><li><a href=#why-would-we-choose-a-subtractive-process>Why would we choose a subtractive process</a></li></ul></li><li><a href=#mechanics-of-lathe-turning-of-metals>Mechanics of lathe turning of metals</a>
-<ul>
-<li><a href=#terminology>Terminology</a></li><li><a href=#a-close-look-at-a-metal-cutting-operation>A close look at a metal cutting operation</a></li><li><a href=#material-removed>Material Removed</a></li><li><a href=#cutting-depends-on-material-properties>Cutting depends on material properties</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>
+<img src=/docs/e-29/1/cal.png alt></li></ul></div></details><h3 id=essentials-of-2d-sketching>Essentials of 2D sketching
+<a class=anchor href=#essentials-of-2d-sketching>#</a></h3><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Line types matters<ul><li><strong>Solid:</strong> edges</li><li><strong>Dashed:</strong> hidden detail</li><li><strong>Chain:</strong> centerline.<ul><li><code>- . - .</code> &mldr;</li></ul></li><li><strong>Faint:</strong> construction<ul><li>Align, but don&rsquo;t touch, features</li></ul></li><li><strong>Dimension lines:</strong><ul><li>Fainter than edges, and not connected.</li><li>Long, thin arrows.</li><li>Lots of differing standards, just be consistent</li></ul></li></ul></li></ul></div><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/sketch.png alt></div></div><h2 id=3d-pictorial-approaches>3D pictorial approaches
+<a class=anchor href=#3d-pictorial-approaches>#</a></h2><h3 id=isometric-drawing>Isometric drawing
+<a class=anchor href=#isometric-drawing>#</a></h3><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>&lsquo;iso&rsquo; = same, &lsquo;metric&rsquo; = measure<ul><li>Any lines parallel .$x,y,z$ on the lines are equal length</li></ul></li><li>Orthogonal edges of a 3D object map to:<ul><li>Vertical lines</li><li>Lines at .$\pm 30^\circ$ to horizontal</li></ul></li><li>Enables creating reasonably realistic drawings fairly easily</li><li>Dimensions in these orthogonal directions are preserved on page</li><li>Dimensions in other directions are not preserved on page</li></ul></div><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/iso-sketch.png alt></div></div><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Circles in isometric<ul><li>Use construction lines for bounding box</li><li>Mark midpoints</li><li>Draw longer quadrants first</li><li>Through holes: use construction lines for obscured circle; darken later</li><li>What if circle is not on an orthogonal face?</li></ul></li></ul></div><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/iso-circ.png alt></div></div><h3 id=coded-plans-for-practicing-isometric-sketching>Coded plans for practicing isometric sketching
+<a class=anchor href=#coded-plans-for-practicing-isometric-sketching>#</a></h3><ul><li>Principle: number in cell gives height of column to be drawn</li><li>Codes could be given on isometric or square grid (
+<a href=https://en.wikipedia.org/wiki/Plan_%28drawing%29>plan view</a>)</li><li>Square grid: viewpoint explicitly specified<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/plan-iso.png alt></div><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/plan-grid.png alt></div></div></li><li>Different views / perspectives may obscure different features. Chose the one that minimizes information loss / ambiguity</li><li>You can shade certain surface to convey shadow (and thus depth, 3D information)
+<details><summary>Plan View Draw Example</summary><div class=markdown-inner><img src=/docs/e-29/1/draw-ex.png alt></div></details></li></ul><h3 id=axonometric-drawing>Axonometric drawing
+<a class=anchor href=#axonometric-drawing>#</a></h3><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Orthogonal edges are represented by:<ul><li>Vertical lines</li><li>Lines at .$\pm 45^\circ$ to horizontal</li></ul></li><li>Advantage:<ul><li>Floorplans are not skewed/distorted</li></ul></li><li>Disadvantage:<ul><li>Areas of equal orthogonal faces are not equal on drawing</li><li>Can look more &ldquo;distorted&rdquo;</li></ul></li></ul><h2 id=docse-291axo-expng><img src=/docs/e-29/1/axo-ex.png alt>
+<a class=anchor href=#docse-291axo-expng>#</a></h2></div><div class="flex-even markdown-inner"><blockquote><p><img src=/docs/e-29/1/axoeg.png alt>
+Example of axonometric drawing</p><ul><li>Sometimes called “planometric”</li><li>Popular in architecture to preserve floorplans</li></ul></blockquote></div></div><h3 id=oblique-drawings>Oblique drawings
+<a class=anchor href=#oblique-drawings>#</a></h3><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Front view is undistorted</li><li>Conveys lots of information of a single face</li><li>Angles are arbitrary (here they&rsquo;re ~45)</li><li>Receding lines drawn at a constant angle</li><li>Judgement needed to select scale for receding direction</li></ul></div><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/obl.png alt></div></div><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><h3 id=perspective-drawing>Perspective drawing
+<a class=anchor href=#perspective-drawing>#</a></h3><br><ul><li>Simulates how the eye sees 3D objects: further away objects/details are smaller</li><li>Much more challenging than other methods<ul><li>Receding lines not parallel</li><li>But CAD software can generate</li></ul></li><li>Horizon line</li><li>Vanishing point(s)<ul><li>One point: dimensions referenced from closest surface</li><li>Two points: dimensions referenced from closest edge</li></ul></li></ul></div><div class="flex-even markdown-inner"><h2 id=docse-291ex-perppng><img src=/docs/e-29/1/ex-perp.png alt>
+<a class=anchor href=#docse-291ex-perppng>#</a></h2></div></div><h2 id=introduction-to-sketching-tools>Introduction to sketching tools
+<a class=anchor href=#introduction-to-sketching-tools>#</a></h2><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><h3 id=digital-sketching-tools>Digital sketching tools
+<a class=anchor href=#digital-sketching-tools>#</a></h3><ul><li>Autodesk Sketchbook<ul><li>Now discontinued! :(<ul><li>OneNote is an alright alternative</li></ul></li><li>Import isometric grid on Layer 2</li><li>Draw on Layer 1</li></ul></li><li>Google Jamboard</li><li>Adobe Photoshop, Illustrator</li><li>Software resource page in bCourses</li></ul></div><div class="flex-even markdown-inner"><h3 id=analog-sketching-tools>Analog sketching tools
+<a class=anchor href=#analog-sketching-tools>#</a></h3><ul><li>Set square/drawing triangle</li><li>Pencils:<ul><li>Various hardness/softness</li><li>Mechanical vs traditional</li></ul></li><li>Pens<ul><li>Ballpoint</li><li>Felt tip</li><li>Technical</li></ul></li></ul></div></div><h3 id=possible-ways-of-enhancing-3d-sketches>Possible ways of enhancing 3D sketches
+<a class=anchor href=#possible-ways-of-enhancing-3d-sketches>#</a></h3><p><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Shading &ndash; simulate the effect of light falling on object<ul><li>e.x shadows, glare,</li></ul></li><li>Visual clarity &ndash; edges bolder: example of how it clears confusion</li><li>Suggesting motion, sound, texture, etc.</li></ul></div><div class="flex-even markdown-inner"><h2 id=docse-291pouncepng><img src=/docs/e-29/1/pounce.png alt>
+<a class=anchor href=#docse-291pouncepng>#</a></h2></div></div><figure><img src=/docs/e-29/1/motion.webp></figure></p><hr><h1 id=01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>01-27: Subtractive processes: types of subtractive process; mechanics of cutting
+<a class=anchor href=#01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>#</a></h1><h1 id=subtractive-manufacturing-processes>Subtractive manufacturing processes
+<a class=anchor href=#subtractive-manufacturing-processes>#</a></h1><ul><li>Subtractive processes are those that begin with standard stock material (in rod, bar, sheet, plate form etc) and remove material to impart shape</li></ul><h2 id=types-of-subtractive-process>Types of subtractive process
+<a class=anchor href=#types-of-subtractive-process>#</a></h2><ul><li>Material comes in range of mediums: billet (below, left), sheet, foil, wire, pellets, etc.</li><li>A subtractive process removes material from a larger piece of material to define the geometry needed<ul><li>Subtractive processes therefore generate waste material</li><li>How we deal with this is important</li></ul></li><li>Take 5 minutes to brainstorm all the ways you can think of to remove material in a controlled way from a solid piece of stock to create a geometry<ul><li>Also think about what could happen to the waste material What are some ways of removing material? Can we re-use the extra material?
+<img src=/docs/e-29/1/al.png alt></li></ul></li></ul><h3 id=how-can-we-cut-away-material-some-possibilities>How can we cut away material? Some possibilities:
+<a class=anchor href=#how-can-we-cut-away-material-some-possibilities>#</a></h3><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Cutting &ndash; taking a sharp edge to material<ul><li>Drilling, boring, reaming</li><li>Milling</li><li>Lathe operations: turning, facing, tapping</li><li>Shearing/punching/puncturing</li><li>Sawing</li><li>Chiseling</li><li>Collectively: “machining”</li></ul></li><li>Electric field<ul><li>Electrical discharge machining (EDM): electrode, wire</li></ul></li></ul></div><div class="flex-even markdown-inner"><ul><li>Localized melting or vaporization<ul><li>Laser cutting, laser ablation</li><li>Flame, plasma cutting</li><li>Hot wire (typically used for plastics)</li><li><em>Aside:</em> is melting really subtractive?</li></ul></li><li>Misc<ul><li>Chemical methods (
+<a href=https://en.wikipedia.org/wiki/Etching#Industrial_uses>Etching</a>)</li><li>Explosives (think mining)</li><li>Forcing apart (using physical force)</li></ul></li></ul></div></div><ul><li>Abrasion &ndash; rough, abrasive wheels rotate at high speed across the surface of the component, removing particles of the workpiece. This approach is well suited even to the hardest of materials, although control of geometry is not as great as in cutting operations, for example.<ul><li>Grinding, sanding, lapping, polishing, filing</li><li>Abrasive jet (water jet)
+- Sand blasting</li></ul></li></ul><h3 id=why-would-we-choose-a-subtractive-process>Why would we choose a subtractive process
+<a class=anchor href=#why-would-we-choose-a-subtractive-process>#</a></h3><ul><li>Instead of an additive process? Instead of a forming process, e.g. casting?</li></ul><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><h4 id=some-possible-reasons-to>Some possible reasons to:
+<a class=anchor href=#some-possible-reasons-to>#</a></h4><ul><li>Stock materials tend to be readily available (and inexpensive compared with the specialist powders that are used in some additive processes such as selective laser melting</li><li>Precision and finish are exceptionally good – probably better than any other family of processes</li><li>Need strength / structure</li><li>Material cannot be molded (it&rsquo;s the only feasible process)</li><li>Doesn&rsquo;t alter heat treatment (if feed and speed isn&rsquo;t too high)</li><li>Short runs &ndash; no <em>specialized</em> tooling costs</li><li>Easy customization & More control for iterative product development – every component produced can be different if needed<ul><li>All you need is to generate new <code>.gcode</code>; versus a whole mold</li></ul></li></ul></div><div class="flex-even markdown-inner"><h4 id=why-not-choose-subtractive>Why not choose subtractive?
+<a class=anchor href=#why-not-choose-subtractive>#</a></h4><ul><li>Slow for large run sizes compared to forming processes<ul><li>Most processes are “serial”, meaning that each feature on the component needs to be produced sequentially, making the processes slow. This is in contrast, for example, to molding/casting operations where the entire component is produced in approximately one step.</li></ul></li><li>Fairly costly in comparison<ul><li>Large amount of waste generated (low efficiency)</li><li>High operator skill is often demanded, raising processing costs</li></ul></li><li>Cuts across metal grains &ndash; not as strong as forged or possibly cast components focus on material cutting Cutting operations rely on wedge-shaped teeth</li></ul></div></div><h2 id=mechanics-of-lathe-turning-of-metals>Mechanics of lathe turning of metals
+<a class=anchor href=#mechanics-of-lathe-turning-of-metals>#</a></h2><ul><li>To understand the key concepts of metal cutting, we focus specifically on lathe turning<ul><li>i.e. a reduction in the diameter of a cylindrical component using a cutting tool.</li></ul></li><li>We focus on the turning of metals and their alloys, although turning is also widely used to process polymeric materials and even composite materials (wood being one “composite” that is regularly turned).</li><li>Cutting operations rely on wedge-shaped teeth<blockquote><p><img src=/docs/e-29/1/teeth.png alt>
+Lectures 4 and 5 will focus on cutting-based operations; Lecture 6 will look at some of the others A close look at a metal cutting operation</p></blockquote></li></ul><h3 id=terminology>Terminology
+<a class=anchor href=#terminology>#</a></h3><ul><li>The workpiece (or simply work — the solid material that is to be reduced in diameter) is held firmly at one end in a chuck, whose jaws are tightened against the workpiece enough that the friction between the work and the chuck is always enough to resist the torques experienced by the work during cutting.</li><li>The work is rotated, using an electric motor, at angular velocity .$\omega$, which is typically hundreds or even thousands of revolutions per minute. Let us call the axis of rotation z. If the radius of the workpiece is a at the location of cutting, then the linear, tangential velocity of the work relative to the tool is .$V_\text{cut} = \omega a$, provided that .$\omega$ is expressed in radians/second (to convert from rev/min to rad/sec multiply by .$2\pi/50$).</li><li>The cutting tool is mounted on a <em>cross-slide/carriage</em> assembly, which enables precise control of the cutting edge along the z axis and also radially outwards from the z axis (let us call this radial direction the x axis). The carriage and cross-slide could be moved by manual screws or by computer-controlled motors with positional feedback.</li><li>Once the work is rotating at its target speed, the tool is positioned slightly to the right of the end of the work and the tool is moved inwards in the x direction (towards the rotational z axis) by a distance .$d$, called the <em>depth of cut</em>. The tool is then moved from right to left along the workpiece at a velocity called the <em>feed rate</em> given by .$V_\text{feed} = f\omega$, where .$f$ is the feed, or the distance moved by the tool along the z axis in one revolution of the work.<ul><li>Feed rate is a velocity, while feed is a distance per revolution — this subtlety of terminology is important to note. Note that in almost any turning process, .$V_\text{cut} &#187; V_\text{feed}$</li></ul></li></ul><h3 id=a-close-look-at-a-metal-cutting-operation>A close look at a metal cutting operation
+<a class=anchor href=#a-close-look-at-a-metal-cutting-operation>#</a></h3><blockquote><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/bdD57NeOuio style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><p>High-speed video: cutting tool moves across surface</p></blockquote><ul><li>Teeth are at a specific, optimal wedge angle wrt the material to shave away stock</li><li>Material is sheared off the workpiece (like butter and knife)</li><li>Quality of cut depends on rake angle (front angle), .$\alpha$, of tool<div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><ul><li>Rake angle vertical (.$\alpha = 0$): material piles up and lot of heat is generated</li><li>Rake angle too large: tool is fragile, can dig into material</li><li>Rake angle just right: cutting happens close to tool</li><li>What is “just right” for the rake angle .$\alpha$?<ul><li>.$30^\circ$ is a good
+<a href=https://en.wikipedia.org/wiki/Magic_number_%28programming%29>magic</a> starting value</li></ul></li><li>Clearance angle should be non-zero<ul><li>Allows you to run the tool in reverse over the material without cutting</li></ul></li></ul></div><div class="flex-even markdown-inner"><p><img src=/docs/e-29/1/ang.png alt></div></div></li></ul><h3 id=material-removed>Material Removed
+<a class=anchor href=#material-removed>#</a></h3><ul><li>The metal that is cut, or shaved, away from the workpiece is called the chip, and depending on (1) how brittle or ductile the work material is, (2) the shape of the cutting tool, and (3) the speed of cutting, the chip may be either a fairly continuous spiral or a series of small chips that regularly fracture.</li><li>Many small chips are desirable from a practical perspective because, unlike very long continuous chips, they do not tend to become tangled around the work and potentially scratch it.</li><li>Cutting tools will often have protrusions on their front surface that are designed to break up a chip as it comes off the workpiece.</li><li>So in turning, a spiral of material is being removed from the work that has initial cross-section .$d \times f$ and with the tool sweeping through the material with velocity .$V$. Thus, the volumetric removal rate of material is .$R_\text{MR} = Vdf$.</li></ul><h3 id=cutting-depends-on-material-properties>Cutting depends on material properties
+<a class=anchor href=#cutting-depends-on-material-properties>#</a></h3><ul><li>More <em>ductile</em> materials (aluminum, mild steel, copper etc): long, spiral-shaped chips of material</li><li>More brittle materials (e.g. cast iron): comes off in short chips<blockquote><p><figure><img src=/docs/e-29/1/mat.png></figure>Basic types of chips produced in metal cutting and their micrographs:<br>(a) continuous chip with narrow, straight primary shear zone;<br>(b) secondary shear zone at the tool-chip interface;<br>(c) continuous chip with built-up edge;<br>(d) segmented or nonhomogeneous chip; and<br>(e) discontinuous chip.</p></blockquote><hr></li></ul><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src="https://www.youtube.com/embed/GVLP-IXPEt0?t=141" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/Mehvix/notes/commit/5698073d2411f8eda860c966b8261a7be289eb93 title="Last modified by Max Vogel | March 4, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>March 4, 2022</span></a></div><div><a class="flex align-center" href=https://github.com/Mehvix/notes/edit/master/hugo/content/docs/e-29/1.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#01-25-fundamentals-of-graphical-communication>01-25: Fundamentals of graphical communication</a><ul><li><a href=#evolution-of-graphical-visualization>Evolution of graphical visualization</a><ul><li><a href=#why-bother-sketching-by-hand>Why bother sketching by hand?</a></li><li><a href=#essentials-of-2d-sketching>Essentials of 2D sketching</a></li></ul></li><li><a href=#3d-pictorial-approaches>3D pictorial approaches</a><ul><li><a href=#isometric-drawing>Isometric drawing</a></li><li><a href=#coded-plans-for-practicing-isometric-sketching>Coded plans for practicing isometric sketching</a></li><li><a href=#axonometric-drawing>Axonometric drawing</a></li><li><a href=#oblique-drawings>Oblique drawings</a></li></ul></li><li><a href=#introduction-to-sketching-tools>Introduction to sketching tools</a><ul><li><a href=#possible-ways-of-enhancing-3d-sketches>Possible ways of enhancing 3D sketches</a></li></ul></li></ul></li><li><a href=#01-27-subtractive-processes-types-of-subtractive-process-mechanics-of-cutting>01-27: Subtractive processes: types of subtractive process; mechanics of cutting</a></li><li><a href=#subtractive-manufacturing-processes>Subtractive manufacturing processes</a><ul><li><a href=#types-of-subtractive-process>Types of subtractive process</a><ul><li><a href=#how-can-we-cut-away-material-some-possibilities>How can we cut away material? Some possibilities:</a></li><li><a href=#why-would-we-choose-a-subtractive-process>Why would we choose a subtractive process</a></li></ul></li><li><a href=#mechanics-of-lathe-turning-of-metals>Mechanics of lathe turning of metals</a><ul><li><a href=#terminology>Terminology</a></li><li><a href=#a-close-look-at-a-metal-cutting-operation>A close look at a metal cutting operation</a></li><li><a href=#material-removed>Material Removed</a></li><li><a href=#cutting-depends-on-material-properties>Cutting depends on material properties</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>
