@@ -1,28 +1,60 @@
+<!-- Favicon -->
 <link
-	rel="icon"
-	href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
 />
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<!-- MathJax -->
 <script>
-	MathJax = {
-		tex: {
-			inlineMath: [
-				["$", "$"],
-				[".$", "$"],
-			],
-		},
-	};
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ["$", "$"],
+                [".$", "$"],
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            macros: {
+                bigsup: [
+                    "#1{^{\\vbox{\\hbox{$\\scriptstyle#1$}\\nointerlineskip\\hbox{}}}}",
+                    1,
+                ],
+            },
+        },
+        options: {
+            skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
+        },
+    };
 </script>
 
 <script
-	id="MathJax-script"
-	async
-	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"
-	integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
-	crossorigin="anonymous"
-	referrerpolicy="no-referrer"
+    id="MathJax-script"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js?config=TeX-AMS_CHTML"
+    integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
 ></script>
 
+<!-- Katex -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            // https://katex.org/docs/autorender.html
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: ".$", right: "$", display: false },
+                { left: "$", right: "$", display: false },
+            ],
+            // • rendering keys, e.g.:
+            throwOnError: false,
+        });
+    });
+</script>
+
+<!-- Custom CSS -->
 {{ range .Site.Params.custom_css -}}
 <link rel="stylesheet" href="{{ . | absURL }}" />
 {{- end }}
