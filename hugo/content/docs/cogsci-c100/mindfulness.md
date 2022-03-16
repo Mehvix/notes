@@ -355,7 +355,7 @@ weight: 7
 1. Find a time when you can sit for half an hour without interruption.
 2. Assume a comfortable erect position with back erect, chin slightly tucked in towards the chest, both feet flat on the floor (if sitting in chair), and hands quietly resting on thighs.
 3. Tense and release the muscles from your toes to your head.
-4. Observe your breath and remain in tune with feeling the air pass in and out of your nostrils with each inhalation and exhalation as you continue the meditation. (Continued on next slide)
+4. Observe your breath and remain in tune with feeling the air pass in and out of your nostrils with each inhalation and exhalation as you continue the meditation.
 	- Mindfulness-Based Stress Reduction (MBSR) programs incorporate a number of mindfulnessrelated practices, such as Mountain Meditation and Lovingkindness Meditation
 5. Visualize a mountain and then become that mountain
     - Imagine yourself as being that majestic mountain with your summit in the clouds. Imagine how solid and strong and how connected to the earth you are, for you, the mountain, have stood for thousands of years.

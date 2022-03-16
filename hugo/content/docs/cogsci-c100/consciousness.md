@@ -16,8 +16,8 @@ weight: 6
 
 ### Monism:
 > There is only one kind of substance in the universe
-- *Idealism:* Everything – including the material world – is actually mind
-- *Materialism:* Everything that exists – including mind – is physical
+- *[Idealism](https://plato.stanford.edu/entries/idealism/):* Everything – including the material world – is actually mind
+- *[Materialism](https://plato.stanford.edu/entries/materialism-eliminative/):* Everything that exists – including mind – is physical
     - In some fundamental sense, the mind just is the brain, so that everything that happens in the mind is happening in the brain
     - Aristotle: The brain is like a lump of clay; the different thoughts the mind can take on when it undergoes different patterns of activity are like the shapes the clay can assume
     - Most cognitive scientists hold this view
@@ -118,27 +118,27 @@ weight: 6
 
 ## Global Neuronal Workspace Theory
 
-- **Global workspace theory:** Explains how information is made accessible for high-level cognition, action, and speech
-    - When we are conscious of something, many different parts of our brain have access to that information
-        - E.x. the language/motor/planning module will all have access to this information
-    - When we act unconsciously, that information is localized to the specific sensory motor system involved
-        - Ex: When you type fast, you do so with little conscious awareness, so that, if asked how you do it, you would not know
-            - Information is localized in brain circuits linking your eyes to rapid finger movements
-            - The modules don't know the meaning of the information given to them (they're unconscious)
-            - Low level, implies that this is subconscious
+> **Global workspace theory:** Explains how information is made accessible for high-level cognition, action, and speech
+- When we are conscious of something, many different parts of our brain have access to that information
+    - E.x. the language/motor/planning module will all have access to this information
+- When we act unconsciously, that information is localized to the specific sensory motor system involved
+    - Ex: When you type fast, you do so with little conscious awareness, so that, if asked how you do it, you would not know
+        - Information is localized in brain circuits linking your eyes to rapid finger movements
+        - The modules don't know the meaning of the information given to them (they're unconscious)
+        - Low level, implies that this is subconscious
 
-    {{< columns >}}<!-- mathjax fix -->
+{{< columns >}}<!-- mathjax fix -->
 - Global workspace theory maintains that consciousness forms when specialized programs or modules access a shared repository of information or “blackboard”
     - Data written onto this blackboard becomes available to a host of subsidiary processes, such as working memory, language, the planning module, etc.
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/perception/global.png)
     {{< /columns >}}
-    - **Consciousness emerges when incoming sensory information, inscribed onto the blackboard, is broadcast _globally_ to multiple cognitive systems**
+> **Consciousness emerges when incoming sensory information, inscribed onto the blackboard, is broadcast _globally_ to multiple cognitive systems**
 
 ### Global _Neuronal_ Workspace (GNW) Theory
 
 - Evolved from global workspace theory
-- The network of neurons that broadcasts messages widely (as described in previous slide) is hypothesized to be located in the frontal and parietal lobes
+- The network of neurons that broadcasts messages widely is hypothesized to be located in the frontal and parietal lobes
 
 {{< columns >}}<!-- mathjax fix -->
 - Theory proposes a distributed network of high-level processors, most likely in the prefrontal, parieto-temporal, and cingulate cortices
@@ -156,26 +156,26 @@ weight: 6
 ## Cortical regions important in consciousness
 
 
-### Frontal and parietal
 
+### Frontal and parietal
 {{< columns >}}<!-- mathjax fix -->
 - Evidence that network of neurons that broadcast messages widely is located in the frontal and parietal lobes:
 - Various types of nonconscious processing are associated with deficits in these areas, including....
 
-#### 1. Hypnosis
-
-- Hypnosis is associated with
-    1. Decreased activity in the dorsal [anterior cingulate](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex)
-        - When hypnotized, you are in a state so absorbed in listening that one is not thinking about anything else
-        - No [selective attention](attention/#selective-attention)
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/consciousness/lobes.png)
 ---
 
     {{< /columns >}}
+
+#### 1. Hypnosis
+- Hypnosis is associated with
+    1. Decreased activity in the dorsal [anterior cingulate](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex)
+        - When hypnotized, you are in a state so absorbed in listening that one is not thinking about anything else
+        - No [selective attention](attention/#selective-attention)
     2. Reduced connections between the dorsolateral prefrontal cortex  (motor actions) and the **default mode network** (awareness of one’s actions), which includes the medial prefrontal and the posterior cingulate cortex -- why you do not recall being hypnotized
 
-#### 2. Repression and dissociation
+#### 2. Repression and Dissociation
 
 - **Repressed memories**
     - Recovered memories of child abuse
@@ -248,7 +248,7 @@ weight: 6
         - Posterior hot zone may play critical role in this
         - This is what David Chalmers has called the _“hard problem”_ of consciousness
             - Why and how is it that sentient organisms have _qualia_ or phenomenal experiences?
-            - Why and how is it that some internal states are felt states (e.g., heat or pain, rather than unfelt states (e.g., a thermostat or a toaster)?
+            - Why and how is it that some internal states are felt states (e.g., heat or pain), rather than unfelt states (e.g., seeing a thermostat or a toaster)?
 
 ----
 
@@ -283,12 +283,16 @@ weight: 6
     - A network of EEG sensors recorded those electrical signals, and as they unfolded over time, yielded a movie
     - The data from the movie was compressed using an algorithm commonly used to “zip” computer files
     - Zipping yielded an estimate of the complexity of the brain’s response
+    > **Loss and recovery of integration and information in thalamocortical networks:**
     > ![](/docs/cogsci-c100/consciousness/data.png)
-    > Loss and recovery of integration and information in thalamocortical networks:
-    >
-    > A: Wakefulness<br>
-    > B: Anesthesia<br>
-    > C: Vegetative state: UWS – unresponsive wakefulness syndrome, MCS – minimally conscious state, LIS – locked-in syndrome<br>
+    > {{< columns >}}<!-- mathjax fix -->
+A: Wakefulness<br>
+B: Anesthesia<br>
+<---><!-- mathjax fix -->
+C: Vegetative state: UWS (unresponsive wakefulness syndrome), MCS (minimally conscious state), LIS (locked-in syndrome)<br>
+    {{< /columns >}}
+    
+---
 - Research findings from zap and zip:
     - Volunteers who were awake had a “perturbational complexity index” significantly highly than when deeply asleep or anesthetized
     - Method was subsequently able to correctly determine whether patients were conscious or in a vegetative state
@@ -328,7 +332,7 @@ weight: 6
 - To really prove his theory’s worth, more sophisticated tools will be required that can precisely measure processing in any kind of brain
 - One problem is that, using previous techniques, the time taken to measure information integration across a network increases “super exponentially” with the number of nodes under consideration
     - Even with the best technology, the computation could last longer than the lifespan of the universe
-    - Daniel Toker at UCB has recently proposed a shortcut for the mathematical calculations necessary to test the theory
+    - [Daniel Toker at UCB has recently proposed a shortcut for the mathematical calculations necessary to test the theory](https://www.pnas.org/doi/10.1073/pnas.2024455119)
 
 #### Controversies in CogSci:
 
@@ -371,19 +375,19 @@ weight: 6
 - A table and pliers are made available
 - At some point, the researcher walks into the room and accidentally sets one of the strings swinging
 - Invariably, within a few minutes, the participant would figure out the solution to the problem...
+    > When interviewed afterwards though, they said that the idea “just came to them” (Maier, 1931)
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/consciousness/rope.png)
     {{< /columns >}}
-    > When interviewed afterwards though, they said that the idea “just came to them” (Maier, 1931)
 
 ----
 
 - Surgery patients in double-blind study wore earphones during their operations, listening to either
     1. Soothing background music and
     2. Positive suggestions about the safety and success of the procedure
-- Results: Compared to controls, experimental group
-    - Woke up feeling significantly less pain (25% on average)
-    - Required less pain medication post-surgery (70 required no opiates at all, compared with 39 in the control group) (Nowak, Zech, Asmussen, et al., 2020 )
+    - **Results:** Compared to controls, experimental group
+        - Woke up feeling significantly less pain (25% on average)
+        - Required less pain medication post-surgery (70 required no opiates at all, compared with 39 in the control group) (Nowak, Zech, Asmussen, et al., 2020 )
 
 
 ### Unconscious communication
@@ -423,6 +427,9 @@ weight: 6
     - They were given the researcher’s telephone number in case they had questions later
         - Those in first condition were much more likely to call to ask for a date afterwards
         - **Participants had no idea their attraction was influenced by the situation** (Meston & Frohlich, 2003)
+        - Powerful idea (beyond sexual attraction)
+            - You don't know how green the grass is on the other side (how much better things really are) if you never make the effort (choose free will)
+            - If you are already where the grass is greener, you don't recognize or fully appreciate the processes that lead you here
 
 {{< hint "info" >}}<!-- mathjax fix -->
 ## Unconscious learning (Extra)
@@ -477,7 +484,7 @@ weight: 6
 - **Hypnotherapy:** Clinical applications of hypnosis
     - Hypnosis quite successful in treating physical disorder (e.g., warts, headaches,  asthma)
     - Not so successful in treating psychological disorders (e.g., smoking, overeating, alcoholism)
-    - Recovery rate for latter increases though when combined with other therapies like systematic desensitization
+    - Recovery rate for latter increases though when combined with other therapies like [systematic desensitization](https://en.wikipedia.org/wiki/Systematic_desensitization)
 
 #### Hidden observer
 
@@ -562,7 +569,7 @@ weight: 6
 ### Psychedelic therapy
 
 - Abram Hoffer study in the 1960’s
-    - Gave alcoholics a small dose of mescaline, then deliberately induced peak experiences by means of music, poetry, painting – whatever used to produce peak experiences before the person became alcoholic
+    - Gave alcoholics a small dose of [mescaline](https://en.wikipedia.org/wiki/Mescaline), then deliberately induced peak experiences by means of music, poetry, painting – whatever used to produce peak experiences before the person became alcoholic
         - 50% were supposedly permanently cured
 - Moratorium on research in this area from early 1970s to early 2000s due to war on drugs
 - However, resurgence of interest and research in this area in recent years, in particular with regard to use of hallucinogens – especially MDMA and LSD – to treat substance abuse, PTSD, obsessive-compulsive disorder, depression, cluster headaches, and emotional suffering associated with terminal illness
@@ -608,6 +615,8 @@ weight: 6
 - **Near Death Experience:** an altered state of consciousness reported after a close brush with death
     - Reported by about 10 to 15 percent of those revived from cardiac arrest
     - Many describe visions of tunnels, bright lights or beings of light, a replay of old memories, and out-of-body sensations
+- Physiological explanation
+    > They suggest that damage to the bilateral occipital cortex may lead to visual features of NDEs such as seeing a tunnel or lights, and "damage to unilateral or bilateral temporal lobe structures such as the hippocampus and amygdala" may lead to emotional experiences, memory flashbacks or a life review. They concluded that future neuroscientific studies are likely to reveal the neuroanatomical basis of the NDE which will lead to the demystification of the subject without needing paranormal explanations
 - Typical report:
     > “I was left with an awareness that something more was going on in life than just the physical part of it...  There is more than just consuming life, more than just what we can buy.  There comes a point when you have to give in to it...  The typical near-death survivor emerges from his experience with a heightened appreciation for life, determined to live life to the fullest.  He has a purpose in living even though he cannot articulate just what the purpose is.”
 

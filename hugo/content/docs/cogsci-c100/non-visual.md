@@ -38,7 +38,7 @@ weight: 3
 
 ### Specificity of music
 - No enhancement in performance on spatial temporal tests was shown after listening to minimalist or oldtime pop music
-      - In fact, one experiment found that heavy metal _increased_ amount of time it took for mice to run a maze by 20 minutes -- and the mice also started killing each other!
+    - In fact, one experiment found that heavy metal _increased_ amount of time it took for mice to run a maze by 20 minutes -- and the mice also started killing each other!
 - Other types of music that resemble Mozart’s in high degree of long-term periodicity, especially within the 10-60s range (e.g., Bach), also found to be effective
 
 ### The Mozart effect on epilepsy
@@ -83,23 +83,24 @@ weight: 3
 # Individual Differences In Perception
 
 {{< columns >}}<!-- mathjax fix -->
-
-
-
 - Introverts vs. Extroverts 🍋
     - Introverts salivate more to lemon juice -- both by self-report and experimentally
     - Introverts tend to retain elevated heart rate for a longer time period after exposure to noxious odors
     - Introverts are more sensitive to pain -- and are able to learn more quickly from punishment
+- At the same time, extroverts are more likely to drink/smoke to much and end up in jail
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/non-visual/ichart.png)
 {{< /columns >}}
-- At the same time, extroverts are more likely to drink/smoke to much and end up in jail
 
 ## Synesthesia
 
+{{< columns >}}<!-- mathjax fix -->
 - **Synesthesia:** stimulation of one modality leads to perceptual experience in another
-- Color grapheme (seeing specific letters or numbers in specific colors) synesthesia is most common type of synesthesia
-    ![](/docs/cogsci-c100/non-visual/two-five.png)
+    - Color grapheme (seeing specific letters or numbers in specific colors) synesthesia is most common type of synesthesia
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/non-visual/two-five.png)
+{{< /columns >}}
+
 - We all have some sense of underlying synesthesia:
 {{< columns >}}<!-- mathjax fix -->
 - Which is a dog barking _'woof woof'_, doorbell ringing _'ding ding'_, and a furnace billowing _'woosh wooosh'_?
@@ -122,10 +123,11 @@ weight: 3
 ### Two theories of synesthesia
 1. Brain architecture of synesthetes is equipped with more connections between neurons, causing the usual modularity to break down
     - Says the brain is made of many modules, and synesthetes have more connections between these modules
-2. “Feed-backward” connections that carry information from high-level multisensory areas of the brain back to single sense areas are not properly inhibited
+
 {{< columns >}}<!-- mathjax fix -->
-- Normally, information processed in such multisensory areas is allowed to return only to its appropriate singlesense area
-- In synesthetes’ brains, that inhibition is disrupted, allowing the different senses to become jumbled
+2. “Feed-backward” connections that carry information from high-level multisensory areas of the brain back to single sense areas are not properly inhibited
+   - Normally, information processed in such multisensory areas is allowed to return only to its appropriate singlesense area
+   - In synesthetes’ brains, that inhibition is disrupted, allowing the different senses to become jumbled
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/non-visual/net.png)
 {{< /columns >}}

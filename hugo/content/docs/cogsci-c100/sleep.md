@@ -128,7 +128,7 @@ weight: 5
         - Stimulation of person's hand with vibrator caused activation of contralateral somatosensory cortex: more delta activity was shown in that region the next night
 - On the other hand, regions involved in **consolidation of memories** show an increase in activity during sleep
     - The same patterns of activation of hippocampal neurons that occur during learning are repeated when animal is sleeping
-- The greater the hippocampal activity during sleep after a training experience, the better the next day’s memory
+    - The greater the hippocampal activity during sleep after a training experience, the better the next day’s memory
 - Also, the glymphatic system pushes cerebrospinal fluid through the brain to flush out toxins during sleep
     - Sleep clears brain of damaging molecules associated with neurodegeneration
 
@@ -138,33 +138,35 @@ weight: 5
 
 ## Stages of sleep
 
-{{< columns >}}<!-- mathjax fix -->
 - Waking state
     - Alpha activity: regular, medium-frequency waves of 8–12 Hz; associated with a state of relaxation
     - Beta activity: irregular, low-amplitude waves of 13–30 Hz; associated with a state of arousal or alertness
+
+{{< columns >}}<!-- mathjax fix -->
 - Stage 1 Sleep
-    - Theta activity: transition between sleep and wakefulness (nodding off, hynagogic stage)
+    - Theta activity: transition between sleep and wakefulness (nodding off, hypnagogic stage)
 - Stage 2 Sleep
     - Characterized by sleep spindles: bursts of waves, thought to be important in cognitive processing and...
     - K-complexes: sudden sharp waveforms when you hear a loud noise--you brains senses remain active
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/sleep/pattrns.png)
-![](/docs/cogsci-c100/sleep/patt2.png)
     {{< /columns >}}
 - Stages 3 and 4 Sleep (slow-wave sleep)
     - Delta activity: regular, low-frequency, high-amplitude waves of less than 4 Hz; occurs during deepest stages of sleep
     - Person cannot be easily awakened, and when awakened, s/he acts groggy and confused (you don't think you're sleeping in stage 3)
-- Sleep cycles
+
+###  Sleep cycles
 {{< columns >}}<!-- mathjax fix -->
 - Each cycle of REM and non-REM sleep lasts approximately 90 minutes
     - Most slow wave sleep occurs during first half of night
     - Later cycles contain more stage 2 and REM sleep
 - 90-minute cycles of rest and activity ([basic rest-activity cycle](https://en.wikipedia.org/wiki/Basic_rest%E2%80%93activity_cycle)) have also been found for activities such as infant feeding, eating, drinking, smoking, heart rate, oxygen consumption, etc.
+- It is actually impossible to totally deprive someone of sleep for prolonged period
+    - EEG shows that people start to have “microsleeps” of two or three seconds
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/sleep/cycle.png)
+![](/docs/cogsci-c100/sleep/patt2.png)
 {{< /columns >}}
-    - It is actually impossible to totally deprive someone of sleep for prolonged period
-        - EEG shows that people start to have “microsleeps” of two or three seconds
 - Dreams and REM sleep
     - **Dreams occur during REM sleep**: even those who claim they don’t dream, if awakened during REM, will usually recall a dream when awakened from REM
     - Dreams also occur in non-REM (NREM) sleep
@@ -182,16 +184,16 @@ weight: 5
 - Why Do We Dream? Theories through the times...
 
 {{< columns >}}<!-- mathjax fix -->
-
-- Freud’s wish-fulfillment theory of dreams: dreams are a safety valve that discharges otherwise unacceptable feelings/desires
-- Modern psychodynamic view
-    - Dreams reflect what is going on in our lives, our hidden impulses and desires, and underlying conflicts
-    - Dreams give clues to the solution of our underlying conflicts and problems
+- Freud’s wish-fulfillment theory of dreams: 
+    - Dreams are a safety valve that discharges otherwise unacceptable feelings/desires
 - Hobson & McCarley’s activation-synthesis hypothesis
     - Dreams serve no purpose -- just side effect of random firing of neurons that serve to develop and preserve neural pathways through stimulation
         - Not scientific, can't disprove -- same with Freudian views
     - Pons sends randomly generated electrical signals to the frontal cortex (activation). The frontal cortex then weaves these signals into a coherent story (synthesis)
 <---><!-- mathjax fix -->
+- Modern psychodynamic view
+    - Dreams reflect what is going on in our lives, our hidden impulses and desires, and underlying conflicts
+    - Dreams give clues to the solution of our underlying conflicts and problems
 - Cognitive development theory of dreams
     - The neural activation associated with dreaming aids cognitive development
         - Peak of REM sleep occurs in 30-week-old fetus, who spends almost 24 hours a day in this state
