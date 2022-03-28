@@ -43,6 +43,7 @@ weight: 7
 ---
 
 * Study on spider phobia (Kircanski, Lieberman, & Craske, 2012)
+	- Researchers recruited participants who had a spider phobia and exposed them to spiders
 	- Four experimental conditions that differed in their instructions for what to do with the anxiety
         1. Label the anxiety felt about the spider
         2. Reappraisal: think differently of the spider so that it feels less threatening
@@ -50,8 +51,7 @@ weight: 7
         4. No specific instruction (control)
 	- Later (on Day 2 and Day 9), participants returned to the lab and were again exposed to spiders to test the long-term effects of their emotion manipulation
 	* Those who had been assigned to labeling their emotions had lower physiological reactivity to the spiders, as measured by skin conductance responses
-	* Within the affect labeling condition, participants who verbalized a larger number of fear and anxiety words had even fewer skin conductance responses
-	- Researchers recruited participants who had a spider phobia and exposed them to spiders
+	* Within the [affect](https://en.wikipedia.org/wiki/Affect_(psychology)) labeling condition, participants who verbalized a larger number of fear and anxiety words had even fewer skin conductance responses
 
 ### Limitations
 
@@ -69,13 +69,13 @@ weight: 7
         1. It is very difficult to be aware of ourselves and our surroundings if we are afflicted by "[monkey mind](https://en.wikipedia.org/wiki/Monkey_mind)"
         	* Focused meditation allows us to calm monkey mind
         2. Focused meditation ultimately enables us to connect with the nonmoving mind and the “suchness” of experience, which produces a sense of general “Okness”
-- Focused meditation is just **calmly abiding**, with the object of concentration -- not obsessive glomming
+- Focused meditation is just **calmly abiding**, with the object of concentration, [Dhāraṇā](https://en.wikipedia.org/wiki/Dh%C4%81ra%E1%B9%87%C4%81) -- not obsessive glomming
 	- There should be a relaxed connection with the object
 	- The aim is to “be present with the object,” not to lock onto it and grip it like a dog, or to concentrate on it the way you might concentrate on memorizing the details of an image
 	- As the meditation develops, allow your perception of the object to change as you are present with the object on more and more subtle levels…
         - The focus becomes just stillness itself, rather than the physical object
         - You find that there is something in you that is imperturbable and open, fundamentally calm
-        - Developing one-pointedness of concentration enables you to find one-pointedness in yourself, the non-moving mind, which resolves all things
+        - Developing one-pointedness ([Ekaggata](https://en.wikipedia.org/wiki/Ekaggata)) of concentration enables you to find one-pointedness in yourself, the non-moving mind, which resolves all things
     > Stilling the eyes is a way of stilling the mind
 
 ### Instructions
@@ -118,26 +118,25 @@ weight: 7
 - Results:
 	- Average American adult spends 47% of waking life not paying attention to what they’re doing
 	- When they were not paying attention, they were significantly less happy
-	    > “A Wandering Mind Is an Unhappy Mind” (Killingsworth)
 
 #### Meditation and the Default Mode Network
 
-- Mode Network (DMN) when meditating, as well as when they are not meditating
+- Meditators from various traditions show reduced activity in their Default Mode Network (DMN) when meditating, as well as when they are not meditating
 - The DMN or “task negative network”
 {{< columns >}}<!-- mathjax fix -->
 - Includes posterior cingulate cortex (PCC), medial prefrontal cortex (mPFC), and angular gyrus
 - __Is active when we are not focused on a particular task -- [rumination](https://en.wikipedia.org/wiki/Rumination_(psychology))__ 
 - Is involved in self-referencing, recognition of emotions in others, remembering the past, and imagining the future
 <---><!-- mathjax fix -->
-> Meditators from various traditions show reduced activity in their Default
 ![](/docs/cogsci-c100/mindfulness/def.png)
 {{< /columns >}}
     - Is associated with ruminating about the past, worrying about the future, thinking about what other people are thinking about you
+	    > “A Wandering Mind Is an Unhappy Mind” (Killingsworth)
 
 #### Mindfulness as a Two-Part Process
 
 - However, use of calm-abiding practice (focused awareness) to stabilize the mind is only the first step in mindfulness practice
-- This first step is what make the second step -- mindfulness or awareness of the present moment with acceptance (open monitoring) -- possible because...
+- This first step is what make the second step -- mindfulness or awareness of the [present moment](https://en.wikipedia.org/wiki/Present#In_Buddhism) with acceptance (open monitoring) -- possible because...
     - Calm-abiding practice connects you with the suchness of things, with the ground of reality, which imbues all things with a sense of “Okness”
     - This deep state causes the sense of judgment to naturally drop away, and there is a cognition that everything is exactly as it should be
         - Whatever is felt is meant to be felt, and whatever is thought is meant to be thought
@@ -190,18 +189,15 @@ weight: 7
 #### Working with Negative Emotions
 
 - If you are in an overall relatively positive frame of mind and the emotion is not very strong:
-	- Try to experience the emotion fully in your body-energy-mind, that is, focus on the energy and physical sensations of the emotion, but do not let yourself get caught up in the content, in the story associated with the emotion
-    	> You may not feel happy due to some event/circumstance that clouds your vision. Recognize these emotions-- what is this stimuli evoking that you wish to avoid? Try to focus on this emotion and realize that it is just that -- an emotion, sensations in your body. They are not the end-of-the-world, just sensations, and as such they are malleable and can be changed if you believe so.  
+	- Try to experience the emotion fully in your body-energy-mind, that is, focus on the **energy and physical sensations** of the emotion, but **do not let yourself get caught up in the content,** in the story associated with the emotion
 	- Initially, you should only try to do this very briefly
 		- This practice is not about analyzing thoughts or emotions
-		- If you are still thinking about the emotion or the situation that caused the emotion 30 seconds later, STOP (this is important -- you can harm yourself!)
-
----
-
-- Once you have substantial meditation experience, when you experience a negative emotion, you can...
-	- Look straight at the emotion and let it dissolve or “liberate” as it arises
-    	- It's easy to recognize this, and even tell yourself this -- it's another to truly embody this belief
-	- Instantaneously see the various factors that caused the emotion to arise
+		- If you are still thinking about the emotion or the situation that caused the emotion 30 seconds later, *STOP* (this is important -- you can harm yourself!)
+  	- It's easy to recognize this, and even tell yourself this -- it's another to truly embody this belief
+    	> You may not feel happy due to some event/circumstance that clouds your vision. Recognize these emotions-- what is this stimuli evoking that you wish to avoid? Try to focus on this emotion and realize that it is just that -- an emotion, sensations in your body. They are not the end-of-the-world, just sensations, and as such they are malleable and can be changed if you believe so.  
+    - Once you have substantial meditation experience, when you experience a negative emotion, you can...
+    	- Look straight at the emotion and let it dissolve or “liberate” as it arises
+    	- Instantaneously see the various factors that caused the emotion to arise
 - That is, mindfulness gives us **insight** into the narrative we have about ourselves
 	- Rather than holding beliefs (e.g., “I am worthless”) to be a true description of who we are, we see the narrative as a constellation of thoughts
 	- This can foster more breathing room and lead to increased well being
@@ -271,7 +267,7 @@ weight: 7
 - Participants were told that the purpose of the study was to understand the relationship between test performance and personality and asked to identify their biggest weakness
 - Then they took a difficult test (a 10-item version of the GRE antonyms test)
 - Afterwards, they were given an opportunity to study a list of words and definitions that would be on a subsequent 10-item antonyms test for as long as they wanted
-    - **Self-compassion group:** saw an additional statement embedded in the instructions that read, “If you had difficulty with the test you just took, you’re not alone. It’s common for students to have difficulty with tests like this. If you feel bad about how you did, try not to be too hard on yourself.”
+    - **[Self-compassion](https://en.wikipedia.org/wiki/Self-compassion) group:** saw an additional statement embedded in the instructions that read, “If you had difficulty with the test you just took, you’re not alone. It’s common for students to have difficulty with tests like this. If you feel bad about how you did, try not to be too hard on yourself.”
     - **Self-esteem control condition** saw an additional statement that read, “If you had difficulty with the test you just took, try not to feel bad about yourself—you must be intelligent if you got into Berkeley.”
 - Results:
 	- No one guessed the hypothesis that viewing test failure in a certain way might affect study time or effort
@@ -292,6 +288,7 @@ weight: 7
 
 {{< hint "info" >}}<!-- mathjax fix -->
 #### Obstacles (Optional)
+
 - **Mental elaborations** stand in stark contrast to the kind of open, nonjudgmental, direct awareness described above
     - As Rick Hanson points out, most of the negative emotions we feel do not come from actual aversive events, but from our reactions to them
     - Suppose you’re walking through a dark room at night and stub your toe on a chair
@@ -500,10 +497,10 @@ condition
 {{< columns >}}<!-- mathjax fix -->
 <br>
 
+### Left Right Brain Dancer
 * An early study found that less extensive meditation practice (40 minutes a day for 8-10 weeks) was also associated with a significant shift in hemispheric dominance
 * In addition, degree of shift in activity from right to left prefrontal was found to correlate with enhancement in immune system (resistance to flu virus) (Davidson, Kabat-Zinn, Schiumacher et al., 2003)
 <---><!-- mathjax fix -->
-### Left Right Brain Dancer
 
 ![](/docs/cogsci-c100/mindfulness/dancer.gif)
 {{< /columns >}}
@@ -531,7 +528,7 @@ condition
 
 ---
 
-- VBM study on long-term meditators found similar effects
+- [VBM](https://en.wikipedia.org/wiki/Voxel-based_morphometry) study on long-term meditators found similar effects
 	- Lay practitioners who had practiced meditation for 10-90 min daily for an average of 24 years
 	* Meditation was associated with increased gray matter volume in areas important in emotional regulation and memory, including
 		- Orbitofrontal cortex
@@ -563,17 +560,18 @@ condition
 	- Eating disorders (Kristeller & Hallett, 1999)
 	- Stress (Grossman, Niemann, Schmidt & Walach, 2004)
 - Effects of meditation on these psychological, as well as physical, conditions are probably mediated at least in part by reduction in cortisol levels
-- Research by Herbert Benson in the 1970s (primarily on transcendental meditation) found that meditation is associated with“a wakeful, hypometabolic state of parasympathetic activity” (fancy way of saying relaxed)
+- Research by Herbert Benson in the 1970s (primarily on transcendental meditation) found that meditation is associated with “a wakeful, hypometabolic state of parasympathetic activity” (fancy way of saying relaxed)
 
 ### Research
 
 - Research on use of mindfulness in treating psychological disorders in children and adolescents:
-	- 14-18 year olds who took an MBSR class reported a decrease in anxiety, depression, and somatic complaints, as well as an increase in sleep quality and self-esteem, compared with controls
-	- Meta-analysis of 15 studies on children and adolescents found that mindfulness was effective in treating anxiety disorders, ADHD, substance abuse, sleep disorders, and conduct disorder (Biegal, Brown, Shapiro, & Schubert, 2009)
-	- More recent reviews have found that meditation enhances ability to regulate emotions and attention in children (Burke, 2010) (Meeiklejohn, Phillips, Freedman et al., 2012; Cairncross & Miller, 2016)
+	- 14-18 year olds who took an [Mindfulness-based stress reduction](https://en.wikipedia.org/wiki/Mindfulness-based_stress_reduction) (MBSR) class reported a decrease in anxiety, depression, and somatic complaints, as well as an increase in sleep quality and self-esteem, compared with controls (Biegal, Brown, Shapiro, & Schubert, 2009)
+	- Meta-analysis of 15 studies on children and adolescents found that mindfulness was effective in treating anxiety disorders, ADHD, substance abuse, sleep disorders, and conduct disorder (Burke, 2010)
+	- More recent reviews have found that meditation enhances ability to regulate emotions and attention in children (Meeiklejohn, Phillips, Freedman et al., 2012; Cairncross & Miller, 2016)
 
 ### Mindfulness and Subjective Well-being
-- Research on mindfulness practice and subjective well-being (self-reported happiness)
+
+- Research on mindfulness practice and [subjective well-being](https://en.wikipedia.org/wiki/Subjective_well-being) (self-reported happiness)
 	- Brown (2009) found that a large discrepancy between financial desires and financial reality was correlated with low subjective well-being but that the accumulation of wealth did not tend to close the gap
 	- Mindfulness practice however was associated with a lower financial-desire discrepancy and thus higher subjective well-being
     	- Mindfulness may promote the perception of “having enough”
@@ -584,7 +582,7 @@ condition
 - 2014 meta-analysis published in JAMA Internal Medicine called into question the effectiveness of mindfulness training programs in improving mental health and reducing stress-related behavior
     - The meta-analysis examined 47 randomized controlled trials of mindfulness meditation programs, which included a total of 3,515 participants
 	- Studies were primarily 8-week-long mindfulness training programs that used psychological and behavioral assessments, rather than neuroimaging
-	- Along with mindfulness, meta-analysis included meditations that emphasized use of a mantra
+	- Along with mindfulness, meta-analysis included meditations that emphasized use of a [mantra](https://en.wikipedia.org/wiki/Mantra#Buddhism)
 		- **Mantra:** repetition of a word or phrase in such a way that it helps one transcend to an effortless state where focused attention is absent (Goyal, Singh, Sibinga et al., 2014)
 - Results:
 	- Meditation programs resulted in
@@ -605,16 +603,16 @@ condition
 
 ## Research Issues
 
-- The modest **psychological effects** found in studies of short-term mindfulness contrasts with the much larger effects of _neuroimaging and reaction time studies_ on long-term meditation practitioners
-	- This suggests that
-		- Results of meditation studies depend in part on amount of practice and amount of training/teaching received by practitioner
-		- Changes in brain function and structure may precede noticeable psychological and behavioral changes
-            * Even novice meditators showed increase in gamma waves during compassion meditation but effects endured past period of meditation only in long-term practitioners (Lutz, Greischar, & Rawlings, 2004)
+- The modest **psychological effects** found in studies of _short-term_ mindfulness contrasts with the much larger effects of **neuroimaging and reaction time studies** on _long-term_ meditation practitioners; This suggests that
+    - Results of meditation studies depend in part on amount of practice and amount of training/teaching received by practitioner
+    - Changes in brain function and structure may precede noticeable psychological and behavioral changes
+        * Even novice meditators showed increase in gamma waves during compassion meditation but effects endured past period of meditation only in long-term practitioners (Lutz, Greischar, & Rawlings, 2004)
 - One problem though that pertains even to the well-controlled studies with long-term meditators (e.g., showing increased left prefrontal activity in meditators and enhanced ability to detect microexpressions) is that it’s not clear precisely which meditation practice(s) may be contributing to those effects
     - Some recent studies try to address this problem by asking participants to engage in specific types of meditation practice while in the scanner
 - The problem of multiple practices is compounded by the fact that many of the long-term meditators practice within traditions that require extensive preliminary training involving
 	- Working with the mind, e.g., developing greater awareness of the **feeling tone of thoughts**
 	- **Ethical precepts:** just focusing on doing what you know at a deep level to be right is another doorway to great meditation experience
+    	- See the [Five precepts](https://en.wikipedia.org/wiki/Five_precepts).
         > “Right is right were wisdom in the scorn of consequence” -- Tennyson
 
 # Physical Effects of Mindfulness
@@ -623,15 +621,15 @@ condition
 ## Mortality Rates
 
 - Experimental study in which patients with mild hypertension were trained in meditation and followed for 19 years
-	- Meditation group showed a 23% decrease in overall mortality, a 30% decrease in rate of cardiovascular mortality and a 49% decrease in the rate of mortality due to cancer compared with controls
-- 73 residents of homes for elderly were assigned either to daily meditation (transcendental meditation or mindfulness), a relaxation group, or a no-treatment group
+	- Meditation group showed a 23% decrease in overall mortality, a 30% decrease in rate of cardiovascular mortality and a 49% decrease in the rate of mortality due to cancer compared with controls (Schneider, Alexander, Staggers, et al., 2005)
+- 73 residents of homes for elderly were assigned either to daily [transcendental meditation](https://en.wikipedia.org/wiki/Transcendental_Meditation) (TM or mindfulness), a relaxation group, or a no-treatment group
 	- After three years, survival rate was 100% for TM, 87% for mindfulness, 65% for relaxation, and 77% for no-treatment group
 		- Only differences between meditation and nonmeditation groups were significant
-- In general, there are more similarities than differences between psychological effects of different types of meditation (Schneider, Alexander, Staggers, et al., 2005) (Alexander, Langer, Newman et al., 1989)
+- In general, there are more similarities than differences between psychological effects of different types of meditation (Alexander, Langer, Newman et al., 1989)
 
 ## Gene Expression
 
-> Just one day (8 hours) of intensive practice of mindfulness meditation resulted in significant modulation of expression of proinflammatory genes (Kaliman, Alvarez-Lopez, Cosin-Tomas et al., 2014)
+> Just one day (8 hours) of intensive practice of mindfulness meditation resulted in significant modulation of expression of **proinflammatory genes** (Kaliman, Alvarez-Lopez, Cosin-Tomas et al., 2014)
 > ![](/docs/cogsci-c100/mindfulness/genes.png)
 
 

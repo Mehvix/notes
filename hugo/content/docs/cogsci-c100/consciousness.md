@@ -14,20 +14,21 @@ weight: 6
 
 ##  Different viewpoints
 
-### Monism:
+### Monism
 > There is only one kind of substance in the universe
 - *[Idealism](https://plato.stanford.edu/entries/idealism/):* Everything – including the material world – is actually mind
 - *[Materialism](https://plato.stanford.edu/entries/materialism-eliminative/):* Everything that exists – including mind – is physical
     - In some fundamental sense, the mind just is the brain, so that everything that happens in the mind is happening in the brain
     - Aristotle: The brain is like a lump of clay; the different thoughts the mind can take on when it undergoes different patterns of activity are like the shapes the clay can assume
     - Most cognitive scientists hold this view
-### Dualism:
+
+### Dualism
 > Belief in the existence of both mental (e.g., “soul”) and physical substances
 - The mind and brain are two separate and distinct things
     - Religious viewpoint
 - Few cognitive scientists are dualists
 
-### Functionalism:
+### Functionalism
 - What makes something a thought, desire, pain (or any other type of mental state) is solely its function, or the role it plays, in the cognitive system of which it is a part
 - More specifically, the identity of a mental state is said to be determined by its causal relations to sensory stimulations, other mental states, and behavior
 - Ex: _pain_ as a state that tends to be caused by bodily injury; to produce the belief that something is wrong with the body and desire to be out of that state; to produce anxiety
@@ -329,7 +330,7 @@ C: Vegetative state: UWS (unresponsive wakefulness syndrome), MCS (minimally con
 ### Criticism of IIT
 
 - Tononi’s methods (zap n zip) so far only offer a very crude “proxy” of the brain’s information integration
-- To really prove his theory’s worth, more sophisticated tools will be required that can precisely measure processing in any kind of brain
+    - To really prove his theory’s worth, more sophisticated tools will be required that can precisely measure processing in any kind of brain
 - One problem is that, using previous techniques, the time taken to measure information integration across a network increases “super exponentially” with the number of nodes under consideration
     - Even with the best technology, the computation could last longer than the lifespan of the universe
     - [Daniel Toker at UCB has recently proposed a shortcut for the mathematical calculations necessary to test the theory](https://www.pnas.org/doi/10.1073/pnas.2024455119)

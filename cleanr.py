@@ -13,17 +13,16 @@ DIR = os.path.dirname(os.path.realpath(__file__)) + "/"
 BASE = [
     (r"$", r""),  # https://stackoverflow.com/a/10913081/7833617
     (r" [–-]{1,2} ", r" -- "),
-    (r"[“”]", r'"'),
     # ======= #
     # Bullets #
     # ======= #
-    (r"\n\"(\w)", r' "\1'),
+    (r'^(\s)*"\s*([^"]*\n)(?:\s)*(. .)', r"\1- \2\1\t\3"),  # quotes
     (r"^(\d)+\) ", r"\1. "),  # digits formatting
     (r"^[✧#]\s*", r"- "),  # needs to preface header operations
-    (r"^(?:[!$]|\"\s+)\s*([^\[])", r"* \1"),
-    (r"^−\s*", r"\t\t- "),
-    (r"^[★☞➜➔]\s*", r"\t* "),
-    (r"^[–•]\s*|^o ([A-Z])", r"\t- \1"),
+    (r"^(?:[!²«$]|\"\s+)\s*([^\[])", r"* \1"),
+    (r"^[−Ø]\s*", r"\t\t- "),
+    (r"^\s*[★☞➜➔]\s*", r"\t* "),
+    (r"^\s*[–•]\s*|^o ([A-Z])", r"\t- \1"),
     (r"^\s*((?:.|\d+\.)? ?Results:)\n\t(. )", r"- \1\n\t\2"),  # results
     (r"\)\(", r")\n\t- ("),  # Parenthesis Unjoin (i.e sources)
     (r"\n\(", r" ("),  # Parenthesis 2
@@ -41,10 +40,20 @@ BASE = [
     # (r"(#.*$\n+[*-].*$)(?:\n\s(. .*))+", r"\1\n\t\2"),  # normalize two down
     (r"^([\s]*). (\d+\.)", r"\1\2"),  # point before numbers
     (r"^([A-Z].{20,})", r"- \1"),  # long lines
+    (r'^(\s*. )(.{3,45}?)(: *[^"])', r"\1**\2**:\3"),  # term/definition
+    (r"[““””]", r'"'),
+    (r"\n([,.])", r" \1"),
     # ========== #
     # Whitespace #
     # ========== #
-    (r"^((?:.|\d+\.) .*\n)\t{2,}((?:.|\d+\.) .*\n)", r"\1\t\2"),  # removes 2+ tab gaps
+    (
+        r"^(\s)*(. \*\*.+\*\*:.*\n)(?:\s)*(. .)",
+        r"\1\2\1\t\3",
+    ),
+    (  # indent next bp after term/definition
+        r"^((?:.|\d+\.) .*\n)\t{2,}((?:.|\d+\.) .*\n)",
+        r"\1\t\2",
+    ),  # removes 2+ tab gaps
     (
         r"^(\t(?:.|\d+\.) .*\n)\t{3,}((?:.|\d+\.) .*\n)",
         r"\1\t\2",
@@ -53,11 +62,15 @@ BASE = [
     (r" {2,}", r" "),
     (r"\n\n\t(.\s*)\b", r"\n\t\1"),
     (r"^(.){1,3}$", r"<!--\1-->"),  # remove lines with three or less characters
+    (r"^\s*\n(\t+. .)", r"\1"),  # gaps between bps
 ]
 
 STYLES = dict([(k, []) for k in {"C100", "16A", "E29"}])
 STYLES["C100"] = [
+    (r"\n[““””]", r' "'),
     (r'^\s*((?:.|\d+\.)? ?)(♫|(?:[“"].*[”"].*)$)', r"\t\1> \2"),  # quotes
+    (r"^(\s)*.(> )", r"\1\2"),  # botch
+    (r" v ", r"\n\t- "),
 ]
 STYLES["16A"] = [(r"~([\\a-Z])", r"\vec \1")]
 STYLES["E29"] = [

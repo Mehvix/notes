@@ -1,11 +1,11 @@
 ---
-title: "Memory"
+title: "Memory Process"
 weight: 8
 ---
 
 # Three-Stage Model of Memory
 
-- Three-stage modal model of memory (Atkinson-Shiffrin model): 
+- Three-stage modal model of memory; [Atkinson-Shiffrin model](https://en.wikipedia.org/wiki/Atkinson%E2%80%93Shiffrin_memory_model): 
 	1. Sensory memory
     2. Working memory or short-term memory
     3. Long-term memory
@@ -14,7 +14,7 @@ weight: 8
     - Short term is similar to attention
 - Interesting to study to see how our model evolved and how memories are processed 
 
-{{< figure  src="/docs/cogsci-c100/memory/three.png" >}}
+{{< figure  src="/docs/cogsci-c100/mem-process/three.png" >}}
 
 ## Sensory memory
 
@@ -27,7 +27,7 @@ weight: 8
 - Now often considered to be a part of perception
 <---><!-- mathjax fix -->
 > (a) was flashed, then (b), and people reported seeing (c) [Eriksen & Collins, 1967]
->{{< figure  src="/docs/cogsci-c100/memory/dots.png" >}}
+>{{< figure  src="/docs/cogsci-c100/mem-process/dots.png" >}}
 {{< /columns >}}
 
 - Two types of sensory memory:		
@@ -37,13 +37,15 @@ weight: 8
 
 ### Eidetic imagery (photographic memory):
 
-- Characterized by relatively long-lasting and detailed images of visual scenes that can sometimes be scanned and "looked at" as if they had real existence
+- [Eidetic memory](https://en.wikipedia.org/wiki/Eidetic_memory): Characterized by relatively long-lasting and detailed images of visual scenes that can sometimes be scanned and "looked at" as if they had real existence
+    > Examples of people with a photographic-like memory are rare. Eidetic imagery is the ability to remember an image in so much detail, clarity, and accuracy that it is as though the image were still being perceived. It is not perfect, as it is subject to distortions and additions (like episodic memory), and vocalization interferes with the memory
     - Eidetic imagery is relatively rare -- only 5% or so of tested schoolchildren have it and proportion is much smaller in adults
     - It is not an especially useful form of mental activity. 
         - Contrary to popular lore, memory experts don’t generally have eidetic imagery; their skill is in organizing material in memory, rather than in storing it in picture form.
 - Group of schoolchildren was shown a picture for 30 seconds. Picture was taken away, and children asked whether they could still see anything and, if so, to describe what they saw. Some children showed evidence of this kind of memory.
-{{< columns >}}<!-- mathjax fix -->
-- 10-year-old boy, looking at blank easel from which a picture of Alice in Wonderland had just been removed, is asked whether he sees something there (on the blank easel)
+    - 10-year-old boy, looking at blank easel from which a picture of Alice in Wonderland had just been removed, is asked whether he sees something there (on the blank easel)
+    
+    {{< columns >}}<!-- mathjax fix -->
 - Participant (P): I see the tree, gray tree with three limbs. I see the cat with stripes around its tail.
 - Experimenter (E): Can you count those stripes?
 - Participant (P): I see the tree, gray tree with three limbs. I see the cat with stripes around its tail.
@@ -52,7 +54,7 @@ weight: 8
 - E: You’re counting what?  Black, white or both?
 - P: Both.
 <---><!-- mathjax fix -->
-{{< figure  src="/docs/cogsci-c100/memory/alice.png" >}}
+{{< figure  src="/docs/cogsci-c100/mem-process/alice.png" >}}
 {{< /columns >}}
     - E: Tell me what else you see.
     - P: And I can see the flowers on the bottom. There’s about three stems but you can see two pairs of flowers. One on the right has green leaves, red flower on bottom with yellow on top. And I can see the girl with a green dress. She’s got blond hair and a red hair band and there are some leaves in the upper left-hand corner where the tree is. (Leask, Haber, & Haber, 1969)
@@ -78,7 +80,7 @@ weight: 8
 <---><!-- mathjax fix -->
 - **Episodic buffer:** another component of working memory that can hold and combine information from phonological loop, visuospatial sketchpad and long-term memory to form a story -- important in time sequencing
     - E.x. if you're trying to recall how someone reacted to a joke you made last night; you think about what you said / how you said it / how they reacted / etc.
-![](/docs/cogsci-c100/memory/working.png)
+![](/docs/cogsci-c100/mem-process/working.png)
 {{< /columns >}}
 - **Central executive:** integrates information from phonological loop, visuospatial sketchpad, and episodic buffer 
     - Similar to attention/sensory memory in Atkinson Shriffin model
@@ -94,14 +96,15 @@ weight: 8
 ### Serial position effect
 
 - Evidence for short-term memory and long- term memory: **serial position effect**
+- Also called primacy-recency effect
 - Six lists test (first five are fruits, last is animals)
 {{< columns >}}<!-- mathjax fix -->
 - There is a tendency for people to remember best the items learned first (because of LTM) and the items learned last (because of STM)
-- **Proactive interference:** words from previous lists interfere with your ability to learn new words of a similar nature (doing progressively worse on Lists 2-5)
-- **Release from PI** [proactive interference]: items are different so no interference memory for these items should be good (doing well on list 6)
-- **Retroactive interference:** words from later list interfere with recall of a prior list (difficulty recalling items from list 1 at the end)
+- **[Proactive interference](https://en.wikipedia.org/wiki/Interference_theory#Proactive_interference) (PI):** words from previous lists interfere with your ability to learn new words of a similar nature (doing progressively worse on Lists 2-5)
+- **Release from PI**: items are different so no interference memory for these items should be good (doing well on list 6)
+- **[Retroactive interference](https://en.wikipedia.org/wiki/Interference_theory#Retroactive_interference):** words from later list interfere with recall of a prior list (difficulty recalling items from list 1 at the end)
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/longt.png)
+![](/docs/cogsci-c100/mem-process/longt.png)
 {{< /columns >}}
 - Experiment also shows that semantic similarity of items affects recall
     - `VEGT` is harder to recall than `ANQR`
@@ -111,13 +114,13 @@ weight: 8
 
 
 {{< columns >}}<!-- mathjax fix -->
-- Medical applications of primacy-recency effect
+- Medical applications of serial position effect
 	- Our memories of how painful an experience was tends to depend on the peak intensity and how much pain was felt at the end
         * Participants in experiment were asked to immerse one hand in painfully cold ice water for 60 secs, then other hand in same ice water for 60 secs followed by a slightly less painful 30 secs more (Finn, 2011)
             - When asked which trial they would prefer to repeat, most participants preferred the longer trial, with more net pain -- but less pain at the end
 	- Strategy of tapering off pain (though this means increasing net pain experienced) has been implemented in painful medical procedures like colonoscopies
 <---><!-- mathjax fix -->
-- Primacy-recency can color our memory of pleasures too
+- Serial position can color our memory of pleasures too
 	- In one experiment, participants, on receiving a fifth and last piece of chocolate, were told it was their "next" one
 	- Others were told it was their "last" piece
 	- The latter liked the chocolate better and also rated the whole experiment as being more enjoyable (O’Brien & Elsworth, 2012)
@@ -138,14 +141,13 @@ weight: 8
     - **Procedural memory:** Recall of how to do things
     - Also includes conditioning effects -- see [Édouard Claparède's experiment](https://en.wikipedia.org/wiki/%C3%89douard_Clapar%C3%A8de#Trauma_experiment)
 <---><!-- mathjax fix -->
-{{< figure  src="/docs/cogsci-c100/memory/types.png" >}}
+{{< figure  src="/docs/cogsci-c100/mem-process/types.png" >}}
 {{< /columns >}}
-
 
 
 ## Implicit Association Test
 
-{{< figure  src="/docs/cogsci-c100/memory/IAT.png" >}}
+{{< figure  src="/docs/cogsci-c100/mem-process/IAT.png" >}}
 
 - [implicit.harvard.edu](https://implicit.harvard.edu/implicit/)
     - 80% of those who have ever taken the test end up having pro- white associations, including about 50% of African Americans
@@ -175,16 +177,15 @@ weight: 8
     	- Still performed better than brand new rat
     	* Thus, Memories do not reside in single, specific spots
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/maze.png)
+![](/docs/cogsci-c100/mem-process/maze.png)
 {{< /columns >}}
 
 ## Long-term potentiation (LTP)
 
-
 {{< columns >}}<!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/ltp.png)
+![](/docs/cogsci-c100/mem-process/ltp.png)
 <---><!-- mathjax fix -->
-- **Long-term potentiation (LTP):** mechanism through which learning occurs in brain
+- **[Long-term potentiation](https://en.wikipedia.org/wiki/Long-term_potentiation) (LTP):** mechanism through which learning occurs in brain
 	- A long-term increase in the excitability of a neuron to a particular synaptic input caused by repeated high-frequency activity of that input
     	* Stimulating a particular neural circuit will increase the sensitivity of neurons in that circuit, increasing the probability that they will fire again
 	- Process involves binding of glutamate to NMDA receptor
@@ -205,13 +206,11 @@ weight: 8
 >     – The House at Pooh Corner<br>
 
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/pooh.png)
+![](/docs/cogsci-c100/mem-process/pooh.png)
 {{< /columns >}}
     > **"Passing mental states become lasting neural traits"** -- Rick Hanson
 
-
-## The hippocampus and frontal lobes
-
+## The Hippocampus and Frontal Lobes
 
 - Two structures that play particularly important roles in the processing and storing of new explicit memories are
 	- **Frontal lobes:** recalling information and holding it in working memory
@@ -224,27 +223,27 @@ weight: 8
     - Removal 48 hours later does not (Tse, Langston, Kakeyama et al., 2007)
 - After a training experience, the greater one’s heart rate efficiency and hippocampus activity during sleep, the better the next day’s memory will be (Peigneux, Laureys, Fuchs et al., 2004; Whitehurst, Cellini, McDevitt et al., 2016)
 
-# Memory disorders: Evidence for separate memory systems 
+# Memory disorders: Evidence for Separate Memory Systems 
 
-- **Dissociation:** when brain damage affects two behaviors very differently, this suggests that the two behaviors are produced by different processes
-    - Clive Wearing, an English musician, suffered damage to his hippocampus as result of encephalitis
+- **[Dissociation](https://en.wikipedia.org/wiki/Dissociation_(psychology)):** when brain damage affects two behaviors very differently, this suggests that the two behaviors are produced by different processes
+    - Clive Wearing, an English musician, suffered damage to his hippocampus as result of [encephalitis](https://en.wikipedia.org/wiki/Encephalitis)
     	- If you walk out of the room, then come back 10 minutes late, he won’t remember you
     	- But, he can still conduct a choir and play the piano and harpsichord beautifully
     	- Due to damage to the hippocampus
     	- Ala [Memento](https://en.wikipedia.org/wiki/Memento_(film))
 
-## Explicit memories: the hippocampus 
+## Explicit Memories: Hippocampus 
 
 {{< columns >}}<!-- mathjax fix -->
 - The **hippocampus** is central to the formation of **explicit** memories
     - People with full temporal lobe amnesia (damage to the hippocampus and surrounding areas) cannot form new **explicit** memories though they can form new **implicit** memories
     - They often have normal IQs and can carry on a normal conversation but cannot remember anything that happened more than a few minutes previously
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/hippo.png)
+![](/docs/cogsci-c100/mem-process/hippo.png)
 {{< /columns >}}
 
 {{< columns >}}<!-- mathjax fix -->
-- The posterior hippocampus contains place cells, neurons involved in spatial navigation
+- The posterior hippocampus contains [place cells](https://en.wikipedia.org/wiki/Place_cell), neurons involved in spatial navigation
     * Volume of posterior hippocampus is positively correlated with amount of time spent as a taxi driver
     * Follow-up study
     	- London cabbies have to pass centuries old test, "[The Knowledge](https://en.wikipedia.org/wiki/Taxis_of_the_United_Kingdom#The_Knowledge)," to get their license
@@ -252,26 +251,26 @@ weight: 8
     	- Voxel-based morphometry (VBM) was used to assess hippocampal volume before and after learning
     	- Cabbies who passed the test showed significant growth in their **posterior hippocampus**, whereas controls did not (Maguire, Gadian, Johnsrude et al., 2000) (Woollett and Maguire, 2011)
 <---><!-- mathjax fix -->
-{{< figure  src="/docs/cogsci-c100/memory/taxi.png" >}}
+{{< figure  src="/docs/cogsci-c100/mem-process/taxi.png" >}}
 {{< /columns >}}
 
 ## Implicit memories
 
 {{< columns >}}<!-- mathjax fix -->
 - Two structures that play important roles in the formation of implicit memories are...
-> **Cerebellum:** involved in learning of procedural memories for skills
+> **[Cerebellum](https://en.wikipedia.org/wiki/Cerebellum):** involved in learning of procedural memories for skills
 >    - Makes sense, implicit is mostly procedural memories
-> ![](/docs/cogsci-c100/memory/cere.png)
+> ![](/docs/cogsci-c100/mem-process/basal.png)
 <---><!-- mathjax fix -->
-> **Basal ganglia:** deep brain structure important in motor sequencing
+> **[Basal ganglia](https://en.wikipedia.org/wiki/Basal_ganglia):** deep brain structure important in motor sequencing
 >    - Parkinson’s disease involves degeneration of parts of the basal ganglia
 >    - e.x. you want to get out of a chair but don't know how
-> ![](/docs/cogsci-c100/memory/basal.png)
+> ![](/docs/cogsci-c100/mem-process/cere.png)
 {{< /columns >}}
 - Cases of organic amnesia have provided evidence for the distinction between different memory systems (e.g., implicit and explicit)
 
-> ## **Summary**
-> {{< figure  src="/docs/cogsci-c100/memory/process.png" >}}
+> ## Summary
+> {{< figure  src="/docs/cogsci-c100/mem-process/process.png" >}}
 
 
 
@@ -281,13 +280,13 @@ weight: 8
 
 > To what extent is the mind modular, that is, organized in special information-processing modules?
 - If memory is modular, how do the modules interact?
-- How might this be represented in a computational model of mind?
+- How might this be represented in a [computational model of mind](https://en.wikipedia.org/wiki/Computational_theory_of_mind)?
 
 ---
 
 
 {{< columns >}}<!-- mathjax fix -->
-- **ACT-R:** One of the most famous cogsci models: about how memory/information is stored and organized
+- **[ACT-R](https://en.wikipedia.org/wiki/ACT-R):** One of the most famous cogsci models: about how memory/information is stored and organized
 - "Adaptive control of thought -- rational"
 - Cognitive architecture with modular organization that was developed by John R. Anderson in 1976
 - It is hybrid in sense that it incorporates both symbolic and subsymbolic information processing
@@ -300,7 +299,7 @@ weight: 8
 	- Motor module consists of speech module, manual module, etc.
     - E.x you can decide to move in a certain direction (motor movements, perceptual -- you choose what to look at)
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/actr.png)
+![](/docs/cogsci-c100/mem-process/actr.png)
 - Cognitive layer
     - Declarative memory is organized in "chunks"
 	- Procedural memory is encoded as production rules: actions for the system to perform, e.g., retrieve a chunk from memory, send a command to the motor module to perform an action
@@ -311,20 +310,21 @@ weight: 8
 
 ---
 
-- What makes ACT-R a hybrid architecture is that **the symbolic, modular architecture is run on a subsymbolic base**
-{{< columns >}}<!-- mathjax fix -->
+What makes ACT-R a hybrid architecture is that **the symbolic, modular architecture is run on a subsymbolic base**
 - ACT-R is designed to operate serially, so that at any given moment, only one production rule can be active, but how does it select that one?
-    - The pattern-matching module controls which production rule gains access to the buffer by working out which production rule has the highest utility at the moment of selection, as determined by 
-        - How likely the system is to achieve its current goal if the production rule is activated 
-        - The cost of activating the production rule
-    - **These calculations are subsymbolic and use an artificial neural networks approach**
+{{< columns >}}<!-- mathjax fix -->
+- The pattern-matching module controls which production rule gains access to the buffer by working out which production rule has the highest utility at the moment of selection, as determined by 
+    - How likely the system is to achieve its current goal if the production rule is activated 
+    - The cost of activating the production rule
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/symb.png)
+![](/docs/cogsci-c100/mem-process/symb.png)
 {{< /columns >}}
-    - Subsymbolic equations are also used to model **how accessible** information is in declarative memory
-        - The basic units of declarative memory are chunks, but each chunk is associated with a particular activation level, which is determined by 
-            - How useful the chunk has been in the past 
-            - How relevant the chunk is to the current situation and context
+    * **These calculations are subsymbolic and use an artificial neural networks approach**
+
+- Subsymbolic equations are also used to model **how accessible** information is in declarative memory
+    - The basic units of declarative memory are chunks, but each chunk is associated with a particular activation level, which is determined by 
+        - How useful the chunk has been in the past 
+        - How relevant the chunk is to the current situation and context
 
 ---
 
@@ -332,9 +332,16 @@ weight: 8
 - The general information processing that takes place in the buffers is symbolic
 - In contrast, the calculations that determine whether or not a particular item of knowledge ends up in a buffer are subsymbolic
 
-{{< figure  src="/docs/cogsci-c100/memory/table8.png" >}}
+<!-- {{< figure  src="/docs/cogsci-c100/mem-process/table8.png" >}} -->
 
-# Types of memory disorders
+| --                 | Performance Mechanisms                                          | --                                                              | Learning Mechanisms                      | --                                                                                       |
+| ------------------ | --------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------- |
+| ---                | **Symbolic**                                                    | **Sub-Symbolic**                                                | **Symbolic**                             | **Sub-Symbolic**                                                                         |
+| Declarative Chunks | Knowledge (usually facts) that can be directly verbalized       | Relative activation of the declaraitve chunks affects retrieval | Adding new declarative chunks to the set | Changing activations of declarative chunks and changing strength of links between chunks |
+| Production Rules   | Knoledge for taking particular actions in particular situations | Relative utility of production rules affecting choice           | Adding new production rules to the set   | Changing utility of production rules                                                     |
+
+
+# Types of Memory Disorders
 
 - **Anterograde amnesia:** inability to form lasting memories for _new_ experiences
 - **Retrograde amnesia:** inability to remember events that occurred _before_ the onset of condition
@@ -349,7 +356,7 @@ weight: 8
 - Patients tend to make things up (confabulate) rather than admit they can’t remember
     > N.B.: In most cases of trauma-induced organic amnesia, there is spontaneous recovery after matter of minutes or hours
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/alc.png)
+![](/docs/cogsci-c100/mem-process/alc.png)
 - Tends to affect women (despite most alcoholics being men) since they have less of an enzyme to metabolize the alcohol
 {{< /columns >}}
 
@@ -363,7 +370,7 @@ weight: 8
 - **Dissociative fugue:** disorder in which person has sudden, unexpected episode of travel from home during which he can’t remember some or all of his past life
     - Study found that incidence of this rises sharply whenever popular film depicting this subject is released
 <---><!-- mathjax fix -->
-{{< figure  src="/docs/cogsci-c100/memory/identity.png" >}}
+{{< figure  src="/docs/cogsci-c100/mem-process/identity.png" >}}
 {{< /columns >}}
 
 
@@ -378,7 +385,7 @@ weight: 8
 - Sometimes gets confused with dementia, parkinson's, or other disorders
 - Deficiencies of acetylcholine: failure to show eyeblink conditioning
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/alz1.png)
+![](/docs/cogsci-c100/mem-process/alz1.png)
 - Brains of patients contain many **amyloid plaques**, which contain a core of misfolded **b-amyloid** protein surrounded by degenerating axons and dendrites, and **neurofibrillary tangles**, dying neurons that contain twisted filaments of tau protein
 {{< /columns >}}
 
@@ -412,7 +419,7 @@ weight: 8
     * There have been cases where autopsies showed presence of disease but no symptoms had been present
 - Use it so you don’t lose it!
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/nun.png)
+![](/docs/cogsci-c100/mem-process/nun.png)
 {{< /columns >}}
 
 ### Do Plaques and Tangles Really Cause Alzheimer’s?
@@ -423,7 +430,7 @@ weight: 8
     - 40% of participants that they concluded had Alzheimer’s did not have any amyloid plaques or neurofibrillary tangles at death
     - On the other hand, about half of participants who died without symptoms of dementia had plaques and tangles
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/alz0.png)
+![](/docs/cogsci-c100/mem-process/alz0.png)
 {{< /columns >}}
 - Conclusion?
     - Maybe plaques and tangles have nothing to do Alzheimer’s (unlikely)
@@ -457,6 +464,6 @@ weight: 8
 - Associated with enlarged hippocampus and caudate nucleus: standard deviation of 7 or 8 -- equivalent to a 10-foot tall person, as opposed to 5’9"
 - Often associated with OCD type behavior; only 1 of 6 are married
 <---><!-- mathjax fix -->
-![](/docs/cogsci-c100/memory/struct.png)
+![](/docs/cogsci-c100/mem-process/struct.png)
 {{< /columns >}}
 
