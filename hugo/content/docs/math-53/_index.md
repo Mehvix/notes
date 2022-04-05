@@ -8,6 +8,3 @@ aliases:
 weight: 10
 ---
 
-# Chapters
-
-{{< lst "10" "12" "13" "14" "15" "16" >}}
