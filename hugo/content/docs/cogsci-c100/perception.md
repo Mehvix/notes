@@ -1,6 +1,6 @@
 ---
-title: "Perception"
-weight: 1
+title: "2: Perception"
+weight: 2
 ---
 
 # Definition of sensation and perception

@@ -1,5 +1,5 @@
 ---
-title: "Mindfulness"
+title: "7: Mindfulness"
 weight: 7
 ---
 

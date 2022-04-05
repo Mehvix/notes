@@ -1,5 +1,5 @@
 ---
-title: "Consciousness"
+title: "6: Consciousness"
 weight: 6
 ---
 

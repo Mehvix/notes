@@ -1,5 +1,5 @@
 ---
-title: "Non-Visual Perception"
+title: "3: Non-Visual Perception"
 weight: 3
 ---
 

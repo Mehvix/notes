@@ -1,5 +1,5 @@
 ---
-title: "Memory Strategies"
+title: "9: Memory Strategies"
 weight: 9
 ---
 
@@ -25,32 +25,35 @@ weight: 9
         - Organization of material during studying aids later recall
     	![](/docs/cogsci-c100/mem-strategies/tree.png)
 - **First-letter technique**: using the first letter of each word in a series to make up a phrase (acronyms)
-    - Roy G. Biv
-	- HOMES
-	- Please Excuse My Dear Aunt Sally
-	- King Henry Died Monday Drinking Chocolate Milk
-	- SOH-CAH-TOA
-	- Mother Very Earnestly Made Jelly Sandwiches Using No Peanuts
-	- King Peter Came Over From Germany Seeking Fortune
-	- Fat Cats Get Drunk After Eating Beans
-	- SACRED MANOR
-	- The knuckle trick for the number of days in each month
+{{< columns >}}<!-- mathjax fix -->
+  - Roy G. Biv
+- HOMES
+- Please Excuse My Dear Aunt Sally
+- King Henry Died Monday Drinking Chocolate Milk
+- SOH-CAH-TOA
+- SACRED MANOR
+<---><!-- mathjax fix -->
+- Mother Very Earnestly Made Jelly Sandwiches Using No Peanuts
+- King Peter Came Over From Germany Seeking Fortune
+- Fat Cats Get Drunk After Eating Beans
+- The knuckle trick for the number of days in each month
+{{< /columns >}}
+
+
 
 ## Imagery
 
 - Recall is best when information is encoded both visually and semantically
-	- **Key word method**
+>- **Key word method**
+>![](/docs/cogsci-c100/mem-strategies/image.png)
 
-### Method of loci
-
-- **Method of loci** technique or _mnemonic_ (memory technique)
-
-![](/docs/cogsci-c100/mem-strategies/image.png)
+> - **[Method of loci](https://en.wikipedia.org/wiki/Method_of_loci#Contemporary_usage)** technique or _mnemonic_ (memory technique)
+> > Involves creating imaginary locations (houses, palaces, roads, and cities) to which the same procedure is applied. It is accepted that there is a greater cost involved in the initial setup, but thereafter the performance is in line with the standard loci method. The purported advantage is to create towns and cities that each represent a topic or an area of study, thus offering an efficient filing of the information and an easy path for the regular review necessary for long term memory storage.
 
 
 ### Rhymes and songs
 
-- Homer’s Odyssey was transmitted by storytellers who relied solely on their memories
+- Homer’s [_Odyssey_](https://en.wikipedia.org/wiki/Odyssey) was transmitted by storytellers who relied solely on their memories
 	* The use of rhyme, rhythm, and repetition helped the storytellers remember
 - Even the simple addition of a familiar rhythm or melody can help students remember information
     - Many children learn the letters of the alphabet to the tune of "Twinkle, Twinkle, Little Star"
@@ -61,7 +64,8 @@ weight: 9
 
 ### Imagery and prospective memory
 
-* Use of imagery in enhancing **prospective memory**
+* Use of imagery in enhancing **[prospective memory](https://en.wikipedia.org/wiki/Prospective_memory)**
+    - Important in healthcare because old people have bad memory but have to take there medicine consistently 
     - Study on 60- to 81-year-old adults who needed to remember to test their blood sugar
     	- **Imagination condition**: pictured themselves taking blood sugar during activity they routinely engaged in, e.g., right after drinking morning orange juice
   		- **Rehearsal condition**: repeatedly reciting instructions out loud
@@ -73,13 +77,14 @@ weight: 9
 
 - **Review**: putting information into your own words and testing yourself to determine what you do not know is much more effective than passively reading over material
 	- Even more effective if you wait at least ten minutes after reading a selection before quizzing yourself
-    	* Talking to people about what you know and testing yourself (generation effect) is one of the most effective memory strategies!
+    	* Talking to people about what you know and testing yourself ([generation effect](https://en.wikipedia.org/wiki/Generation_effect)) is one of the most effective memory strategies!
 	- Taking lecture notes by hand, which requires summarizing material in your own words, leads to better retention than does verbatim laptop note taking (Mueller & Oppenheimer, 2014)
         > "The pen is mightier than the keyboard"
 
 ## Spacing effect
 
-- **Spacing effect**: information is retained better when study sessions are distributed over time rather than massed
+- **[Spacing effect](https://en.wikipedia.org/wiki/Spacing_effect)**: information is retained better when study sessions are distributed over time rather than massed
+    - Why cramming is bad
 	- Study compared students who learned 50 Spanish words
     	- in lessons spread one day apart
         - in lessons separated by 30 days
@@ -94,10 +99,11 @@ weight: 9
 	- They were taught by outstanding teachers
     	- Mozart started practicing the violin at the age of three, his father was an outstanding violin teacher, and he practiced on average 10 hours a day
     - A large number of studies have found a direct correlation between number of hours of practice and level of expertise in elite musicians, chess players, etc.
+        - E.x. Olympians
 
 ## Context effect
 
-- **Context effect** (encoding specificity effect or statedependent memory): recall is better where there is high degree of similarity between test environment and encoding environment
+- **[Context effect](https://en.wikipedia.org/wiki/Context_effect)** (encoding specificity effect or state dependent memory): recall is better where there is high degree of similarity between test environment and encoding environment
 {{< columns >}}<!-- mathjax fix -->
 - People who learned lists of words underwater showed better recall when tested under water; those who learned on land showed better recall when tested on beach (Godden & Baddeley, 1975)
 - Students who learned words in room that smelled of chocolate, cinnamon-apple, or mothballs performed better on recall test if same smell was again present (Schab, 1990) 
@@ -110,20 +116,27 @@ weight: 9
 
 > _Me! Me! Me!_
 
-- **Self-reference effect**: memory is enhanced by relating stimuli to one’s own personal experience
+- **[Self-reference effect](https://en.wikipedia.org/wiki/Self-reference_effect)**: memory is enhanced by relating stimuli to one’s own personal experience
 	- In advertising, people are more likely to recall the brand name of a product if they had been asked to imagine themselves using the product than if they had been given information about the product (Klein & Kihlstrom, 1986)
+	- Best if you imagine yourself as a participant in experiments 
 	- Asians exhibit greater self-referencing of Asian models, and this results in more favorable attitudes toward the ad and greater purchase intention (Martin, Lee, & Yang, 2004)
 
 ### Emotional arousal
 
-- **Emotional arousal**: arousal enhances learning and retention of memories
+- **[Emotional arousal](https://en.wikipedia.org/wiki/Emotion_and_memory#Arousal_and_valence_in_memory)**: arousal _enhances_ learning and retention of memories
 	- Arousal sears events into the brain
+    	- Why people recall their first kiss, political assignations, etc. 
     	- People given a drug that blocks the effects of stress hormones will later have more trouble remembering the details of an upsetting story
+      	- If you want to learn something, get excited about it
+          	- Why you can recall old childhood movies well
+      	- e.x. why most people (who lived through 9/11) can recall that day better than yesterday
 	- However excessive stress may corrode neural connections (e.g., posttraumatic stress disorder)
 
 ## Sleep
 
 - **Sleep**, especially REM sleep, is important for memory consolidation
+    - Information transfers from hippocampus to other regions
+    - Less interference when you're sleeping
 
 ## Timing factor
 
@@ -134,27 +147,29 @@ weight: 9
 
 ## Multimodal approach
 
-- **Multimodal approach**: paying attention to your mental and physical condition, as well as flexible use of memory strategies
+- **[Multimodal](https://en.wikipedia.org/wiki/Multimodality) approach**: paying attention to your mental and physical condition, and choosing what memory strategy(s) that will work best for you 
 
 ## Belief
 
 - **Belief**: anything that you believe will boost your memory will boost your memory!
-    * Researchers were able to use subliminal messages representing either senile behavior (e.g., "absent-minded," "senile") or "wise" behaviors (e.g., "sees all sides of issues," "smart" to manipulate performance of seniors on memory tests (Levy & Langer, 1994)
+    * Researchers were able to use subliminal messages representing either senile behavior (e.g., "absent-minded," "senile") or "wise" behaviors (e.g., "sees all sides of issues," "smart") to manipulate performance of seniors on memory tests (Levy & Langer, 1994)
 	* Issue of whether all memories are potentially retrievable is impossible to prove, but it’s probably advantageous to believe that they are
 
 # Other Factors Affecting Memory
 
 ## Schemas
 
-- **Schemas**: generalized mental representation or concept of a given class of objects, scenes, or events that can aid (or distort!) recall
+- **[Schemas](https://en.wikipedia.org/wiki/Schema_(psychology)#Schematic_processing)**: generalized mental representation or concept of a given class of objects, scenes, or events that can aid (or distort!) recall
 
 ## Mood-congruence effect
 
-- **Mood-congruence effect**: tendency to recall experiences that are consistent with one’s current good or bad mood
+- **[Mood-congruence effect](https://en.wikipedia.org/wiki/Emotion_and_memory#The_mood_congruence_effect)**: tendency to recall experiences that are consistent with one’s current good or bad mood
 	- Depressed people are likely to recall more negative experiences than positive experiences
 	- Currently depressed people recall their parents as rejecting, punitive, and guilt-promoting, whereas formerly depressed people describe their parents much as do those who have never suffered depression
-    * In the long run, people tend to recall pleasant events better than unpleasant ones
+    * In the long run, people tend to recall pleasant events better than unpleasant ones (negativity bias)
+        * E.x. you have a good day but recall the one bad experience as you're falling asleep
     * In the short run, we tend to experience a negativity bias 
+        * E.x. you recall your good gradeschool teachers, but not the bad ones
 
 ![](/docs/cogsci-c100/mem-strategies/mood.png)
 
@@ -165,30 +180,34 @@ weight: 9
 ## Introversion/extraversion factor
 
 - **Introversion/extraversion factor**: introverts are more easily distracted by outside noise/music during encoding than extraverts
+    - Explains why extroverts may enjoy studying at Cafes / with music
 
 # Factors Affecting Neurogenesis
 
-![](/docs/cogsci-c100/mem-strategies/factors.png)
 
+{{< columns >}}<!-- mathjax fix -->
 - Learning
-	- An enriched environment
-	- Exposure to estrogen
-	- Physical exercise
-- Studies involving mice, as well as people, show strong relationships between being physically active or fit and having greater brain volume and stronger cognitive abilities -- even when participants are young and healthy
-	- Recent research on mice indicates that the neurocognitive benefits of exercise derive in large from irisin
-		- Irisin is a hormone produced during endurance exercise that improves cognitive function, dampens neuroinflammation, ensures the healthy development of new neurons, and reduces risk of development of Alzheimer’s
-- Exercise, Neurogenesis, and Learning & Memory
+- An enriched environment
+    - E.x. rats in social environment have more dense brains 
+- Exposure to estrogen
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/mem-strategies/factors.png)
+{{< /columns >}}
 
 ## Physical exercise
-
+- Physical exercise
+    - Studies involving mice, as well as people, show strong relationships between being physically active or fit and having greater brain volume and stronger cognitive abilities -- even when participants are young and healthy
+    	- Recent research on mice indicates that the neurocognitive benefits of exercise derive in large from irisin
+    		- [Irisin](https://en.wikipedia.org/wiki/FNDC5): hormone produced during endurance exercise that improves cognitive function, dampens neuroinflammation, ensures the healthy development of new neurons, and reduces risk of development of Alzheimer’s
 - Muscle fiber contains a scaffold made of special proteins that hold these acetylcholine receptors in place
-- Rats that ran on a treadmill show increased levels of brain-derived neurotrophic factor (BDNF), which is known to support the health of existing neurons and coax the creation of new brain cells (Cassihas, Lee, Fernandes et al, 2012)
-- As little as 3 hours a week of aerobic exercise (brisk walking) triggers biochemical changes that increase production of new neurons; stretchers-and-toners do not show similar brain changes (Colcombe, Erickson, Paige et al, 2006)
+- **Rats that ran on a treadmill** show increased levels of brain-derived neurotrophic factor (BDNF), which is known to support the health of existing neurons and coax the creation of new brain cells (Cassihas, Lee, Fernandes et al, 2012)
+- As little as **3 hours a week of aerobic exercise** (brisk walking) triggers biochemical changes that increase production of new neurons; stretchers-and-toners do not show similar brain changes (Colcombe, Erickson, Paige et al, 2006)
 - Children who walked briskly or jogged on a treadmill for 20 min showed marked improvement in math and reading comprehension scores; those who read quietly for 20 min did not (Pontifex, Saliba, Laine et al, 2013)
 - Older women who walked or did weight training for 6 months performed significantly better on tests of spatial and verbal memory (Nagamatsu, Chan, Davis et al, 2013)
-- Sedentary behavior is associated with reduced thickness of medial temporal lobe, which contains hippocampus (Siddarth, Burggren, Eyre et al, 2018)
+- **Sedentary behavior is associated with brain shrinkage**: reduced thickness of **medial temporal lobe**, which contains hippocampus (Siddarth, Burggren, Eyre et al, 2018)
 
 ---
+
 - Rats in experimental and control groups were then placed in brightly lit maze with single, darkened chamber
 	- Rats gravitate toward dark places, so animals were expected to learn the location of the chamber and aim for it
     	- Bags of weighted pellets were gently taped to the rats’ rear ends
@@ -198,20 +217,27 @@ weight: 9
 	* Results:
 		- In first few tests, control animals were fastest and most accurate
 		- With a little practice though, the weight-trained animals, despite their induced cognitive impairments, caught up to and in some cases surpassed the speed and accuracy of the controls
+    		- You can perform better even if you have dementia if you exercise!
 		- Moreover, researchers found that the memory centers of the weight trainers now teemed with enzymes and genetic markers known to help kick-start the creation and survival of new neurons
+- Any amount of exercise is beneficial
+- Waking up and working out
+    - You have the most motivation at the start of the day
+    - [BDNF](https://en.wikipedia.org/wiki/Brain-derived_neurotrophic_factor) (clear your mind and help you make positive decisions) and [Endorphins](https://en.wikipedia.org/wiki/Endorphins) (minimize discomfort, block pain, feelings of pleasure) are released when you work out 
+        - Addictive, but good for you
 
-## Factors that inhibit neurogenesis
+## Factors that Inhibit Neurogenesis
 
-- **Stress** and **glucocorticoids** -- as little as a few hours of either in a rat!
-- Food additives?
+- **Stress** and **[glucocorticoids](https://en.wikipedia.org/wiki/Glucocorticoid)** -- as little as a few hours of either in a rat!
+- Potentially food additives, and in general unhealthy heating
 
 # Nootropics: Drugs that may enhance memory
 
 - **Caffeine**: anything that increases attention will tend to boost learning and memory
 - **Gingko biloba**: may enhance memory in Alzheimer’s patients
+    - Increases blood flow
 - **Experimental drugs**
-	- Drugs that boost production of CREB (e.g., phosphodiesterase inhibitors), which turns on genes that code for production of proteins important in formation of new synapses
+	- Drugs that boost production of [CREB](https://en.wikipedia.org/wiki/CREB) (e.g., phosphodiesterase inhibitors), which turns on genes that code for production of proteins important in formation of new synapses
         - Drawback: can produce really nasty side effects, such as severe nausea
 	- Drugs that increase levels of glutamate, a neurotransmitter that enhances LTP
-        - Drawback:: may increase risk of seizures and strokes
+        - Drawback: may increase risk of seizures and strokes
   	* At this point, it’s probably much more effective just to get more sleep!

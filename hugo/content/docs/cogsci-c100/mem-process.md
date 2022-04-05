@@ -1,5 +1,5 @@
 ---
-title: "Memory Process"
+title: "8: Memory Process"
 weight: 8
 ---
 
@@ -289,7 +289,7 @@ weight: 8
 - **[ACT-R](https://en.wikipedia.org/wiki/ACT-R):** One of the most famous cogsci models: about how memory/information is stored and organized
 - "Adaptive control of thought -- rational"
 - Cognitive architecture with modular organization that was developed by John R. Anderson in 1976
-- It is hybrid in sense that it incorporates both symbolic and subsymbolic information processing
+- It is hybrid in sense that it incorporates both symbolic (e.x. static rules) and subsymbolic (i.e. neural networks) information processing
 - ACT-R buffer 
     - Workspace: what you're paying attention to
     - Serves to integrate outer and inner, between modules on different layers
