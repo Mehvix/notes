@@ -9,7 +9,7 @@ html {
     margin-top: 2ch;
     margin-bottom: 2ch;
     max-height: 38ch;
-    min-width: 95%;
+    /* min-width: 95%; */
     background: white;
 }
 
