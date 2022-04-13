@@ -18,7 +18,7 @@ weight: 9
 - **Organization**: effective organization of material greatly enhances recall
 	- **Chunking:** organizing items into familiar, manageable units
     	- Chunking lists of numbers, letters, or names can enhance memory
-    	- E.x. 17761812186119141941 
+    	- E.x. 17761812186119141941
     	![](/docs/cogsci-c100/mem-strategies/chunk.png)
 	- **Hierarchical organization**: clustering chunks as a hierarchy
 		- Material organized in a hierarchical structure is recalled significantly better than disorganized material
@@ -65,7 +65,7 @@ weight: 9
 ### Imagery and prospective memory
 
 * Use of imagery in enhancing **[prospective memory](https://en.wikipedia.org/wiki/Prospective_memory)**
-    - Important in healthcare because old people have bad memory but have to take there medicine consistently 
+    - Important in healthcare because old people have bad memory but have to take there medicine consistently
     - Study on 60- to 81-year-old adults who needed to remember to test their blood sugar
     	- **Imagination condition**: pictured themselves taking blood sugar during activity they routinely engaged in, e.g., right after drinking morning orange juice
   		- **Rehearsal condition**: repeatedly reciting instructions out loud
@@ -106,7 +106,7 @@ weight: 9
 - **[Context effect](https://en.wikipedia.org/wiki/Context_effect)** (encoding specificity effect or state dependent memory): recall is better where there is high degree of similarity between test environment and encoding environment
 {{< columns >}}<!-- mathjax fix -->
 - People who learned lists of words underwater showed better recall when tested under water; those who learned on land showed better recall when tested on beach (Godden & Baddeley, 1975)
-- Students who learned words in room that smelled of chocolate, cinnamon-apple, or mothballs performed better on recall test if same smell was again present (Schab, 1990) 
+- Students who learned words in room that smelled of chocolate, cinnamon-apple, or mothballs performed better on recall test if same smell was again present (Schab, 1990)
 - Participants who were drunk when learning a word list performed better on recall test when they were again drunk (Weingartner, Adefris, Eich et al., 1976)
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/mem-strategies/recall.png)
@@ -118,14 +118,14 @@ weight: 9
 
 - **[Self-reference effect](https://en.wikipedia.org/wiki/Self-reference_effect)**: memory is enhanced by relating stimuli to one’s own personal experience
 	- In advertising, people are more likely to recall the brand name of a product if they had been asked to imagine themselves using the product than if they had been given information about the product (Klein & Kihlstrom, 1986)
-	- Best if you imagine yourself as a participant in experiments 
+	- Best if you imagine yourself as a participant in experiments
 	- Asians exhibit greater self-referencing of Asian models, and this results in more favorable attitudes toward the ad and greater purchase intention (Martin, Lee, & Yang, 2004)
 
 ### Emotional arousal
 
 - **[Emotional arousal](https://en.wikipedia.org/wiki/Emotion_and_memory#Arousal_and_valence_in_memory)**: arousal _enhances_ learning and retention of memories
 	- Arousal sears events into the brain
-    	- Why people recall their first kiss, political assignations, etc. 
+    	- Why people recall their first kiss, political assignations, etc.
     	- People given a drug that blocks the effects of stress hormones will later have more trouble remembering the details of an upsetting story
       	- If you want to learn something, get excited about it
           	- Why you can recall old childhood movies well
@@ -147,7 +147,7 @@ weight: 9
 
 ## Multimodal approach
 
-- **[Multimodal](https://en.wikipedia.org/wiki/Multimodality) approach**: paying attention to your mental and physical condition, and choosing what memory strategy(s) that will work best for you 
+- **[Multimodal](https://en.wikipedia.org/wiki/Multimodality) approach**: paying attention to your mental and physical condition, and choosing what memory strategy(s) that will work best for you
 
 ## Belief
 
@@ -164,19 +164,23 @@ weight: 9
 ## Mood-congruence effect
 
 - **[Mood-congruence effect](https://en.wikipedia.org/wiki/Emotion_and_memory#The_mood_congruence_effect)**: tendency to recall experiences that are consistent with one’s current good or bad mood
-	- Depressed people are likely to recall more negative experiences than positive experiences
-	- Currently depressed people recall their parents as rejecting, punitive, and guilt-promoting, whereas formerly depressed people describe their parents much as do those who have never suffered depression
-    * In the long run, people tend to recall pleasant events better than unpleasant ones (negativity bias)
-        * E.x. you have a good day but recall the one bad experience as you're falling asleep
-    * In the short run, we tend to experience a negativity bias 
-        * E.x. you recall your good gradeschool teachers, but not the bad ones
+- Depressed people are likely to recall more negative experiences than positive experiences
 
+{{< columns >}}<!-- mathjax fix -->
+- Currently depressed people recall their parents as rejecting, punitive, and guilt-promoting, whereas formerly depressed people describe their parents much as do those who have never suffered depression
+* In the long run, people tend to recall pleasant events better than unpleasant ones (positivity bias)
+    * E.x. you recall your good gradeschool teachers, but not the bad ones
+* In the short run, we tend to experience a negativity bias
+    * E.x. you have a good day but recall the one bad experience as you're falling asleep
+<---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/mem-strategies/mood.png)
+{{< /columns >}}
+
 
 ## Mood effect
 
 - **Mood effect**: people score more poorly on memory tests when they are depressed
-  
+
 ## Introversion/extraversion factor
 
 - **Introversion/extraversion factor**: introverts are more easily distracted by outside noise/music during encoding than extraverts
@@ -188,7 +192,7 @@ weight: 9
 {{< columns >}}<!-- mathjax fix -->
 - Learning
 - An enriched environment
-    - E.x. rats in social environment have more dense brains 
+    - E.x. rats in social environment have more dense brains
 - Exposure to estrogen
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/mem-strategies/factors.png)
@@ -222,7 +226,7 @@ weight: 9
 - Any amount of exercise is beneficial
 - Waking up and working out
     - You have the most motivation at the start of the day
-    - [BDNF](https://en.wikipedia.org/wiki/Brain-derived_neurotrophic_factor) (clear your mind and help you make positive decisions) and [Endorphins](https://en.wikipedia.org/wiki/Endorphins) (minimize discomfort, block pain, feelings of pleasure) are released when you work out 
+    - [BDNF](https://en.wikipedia.org/wiki/Brain-derived_neurotrophic_factor) (clear your mind and help you make positive decisions) and [Endorphins](https://en.wikipedia.org/wiki/Endorphins) (minimize discomfort, block pain, feelings of pleasure) are released when you work out
         - Addictive, but good for you
 
 ## Factors that Inhibit Neurogenesis
@@ -240,4 +244,4 @@ weight: 9
         - Drawback: can produce really nasty side effects, such as severe nausea
 	- Drugs that increase levels of glutamate, a neurotransmitter that enhances LTP
         - Drawback: may increase risk of seizures and strokes
-  	* At this point, it’s probably much more effective just to get more sleep!
+	* At this point, it’s probably much more effective just to get more sleep!
