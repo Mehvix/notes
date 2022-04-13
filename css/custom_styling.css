@@ -1,5 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+:root {
+    --gray-100: rgba(255, 255, 255, 0.1);
+    --gray-200: rgba(255, 255, 255, 0.2);
+    --gray-500: rgba(255, 255, 255, 0.5);
+    --color-link: #61afef;
+    --color-visited-link: #c678dd;
+    --body-background: #282c34;
+    --body-font-color: #c3c8d1;
+    --icon-filter: brightness(0) invert(1);
+    --hint-color-info: #61afef;
+    --hint-color-warning: #e5c07b;
+    --hint-color-danger: #be5046;
+}
+
+.markdown .book-hint.info {
+    border-color: var(--hint-color-info);
+    background-color: rgba(97, 175, 239, 0.1);
+}
+
+.markdown .book-hint.warning {
+    border-color: var(--hint-color-warning);
+    background-color: rgba(229, 192, 123, 0.1);
+}
+
+.markdown .book-hint.danger {
+    border-color: var(--hint-color-danger);
+    background-color: rgba(190, 80, 70, 0.1);
+}
+
 html {
     scroll-behavior: auto !important;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
 }
 
 .markdown img {
