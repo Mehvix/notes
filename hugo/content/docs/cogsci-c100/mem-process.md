@@ -5,14 +5,14 @@ weight: 8
 
 # Three-Stage Model of Memory
 
-- Three-stage modal model of memory; [Atkinson-Shiffrin model](https://en.wikipedia.org/wiki/Atkinson%E2%80%93Shiffrin_memory_model): 
+- Three-stage modal model of memory; [Atkinson-Shiffrin model](https://en.wikipedia.org/wiki/Atkinson%E2%80%93Shiffrin_memory_model):
 	1. Sensory memory
     2. Working memory or short-term memory
     3. Long-term memory
 - Old model that's not used today
     - Sensory memory is seen as a type of perception
     - Short term is similar to attention
-- Interesting to study to see how our model evolved and how memories are processed 
+- Interesting to study to see how our model evolved and how memories are processed
 
 {{< figure  src="/docs/cogsci-c100/mem-process/three.png" >}}
 
@@ -30,9 +30,9 @@ weight: 8
 >{{< figure  src="/docs/cogsci-c100/mem-process/dots.png" >}}
 {{< /columns >}}
 
-- Two types of sensory memory:		
-    - **Iconic memory (photographic memory):** visual sensory memory -- doesn't go away after four seconds but functions like sensory
-    - **Echoic memory:** auditory sensory memory 
+- Two types of sensory memory:
+    - **[Iconic memory](https://en.wikipedia.org/wiki/Iconic_memory) (photographic memory):** visual sensory memory -- doesn't go away after four seconds but functions like sensory
+    - **[Echoic memory](https://en.wikipedia.org/wiki/Echoic_memory):** auditory sensory memory
 
 
 ### Eidetic imagery (photographic memory):
@@ -40,11 +40,11 @@ weight: 8
 - [Eidetic memory](https://en.wikipedia.org/wiki/Eidetic_memory): Characterized by relatively long-lasting and detailed images of visual scenes that can sometimes be scanned and "looked at" as if they had real existence
     > Examples of people with a photographic-like memory are rare. Eidetic imagery is the ability to remember an image in so much detail, clarity, and accuracy that it is as though the image were still being perceived. It is not perfect, as it is subject to distortions and additions (like episodic memory), and vocalization interferes with the memory
     - Eidetic imagery is relatively rare -- only 5% or so of tested schoolchildren have it and proportion is much smaller in adults
-    - It is not an especially useful form of mental activity. 
+    - It is not an especially useful form of mental activity.
         - Contrary to popular lore, memory experts don’t generally have eidetic imagery; their skill is in organizing material in memory, rather than in storing it in picture form.
 - Group of schoolchildren was shown a picture for 30 seconds. Picture was taken away, and children asked whether they could still see anything and, if so, to describe what they saw. Some children showed evidence of this kind of memory.
     - 10-year-old boy, looking at blank easel from which a picture of Alice in Wonderland had just been removed, is asked whether he sees something there (on the blank easel)
-    
+
     {{< columns >}}<!-- mathjax fix -->
 - Participant (P): I see the tree, gray tree with three limbs. I see the cat with stripes around its tail.
 - Experimenter (E): Can you count those stripes?
@@ -63,7 +63,7 @@ weight: 8
 
 - Holds items that are actively being thought about
     - That is, intentionally rehearsing information
-- Has limited capacity 
+- Has limited capacity
     - **7 +/- 2 items**, e.g., letters, words, dots, though this number can vary by task
     - Number of words you can speak in 1.5 seconds (those who speak faster can recall more)
 - Also limited in time, but longer than sensory memory
@@ -72,9 +72,9 @@ weight: 8
 
 {{< columns >}}<!-- mathjax fix -->
 - Working memory (Baddeley) is now the preferred term because it emphasizes that this is an active, rather than a passive, process
-    - Includes a **phonological loop** (associated with the left hemisphere) that briefly stores sounds, and a **visuospatial sketchpad** (associated with the right hemisphere) that stores visual and spatial information 
+    - Includes a **phonological loop** (associated with the left hemisphere) that briefly stores sounds, and a **visuospatial sketchpad** (associated with the right hemisphere) that stores visual and spatial information
         - Just recall left is associated with language and right is generally 'wholistic'
-        - Two visuospatial tasks will interfere with each other if performed simultaneously, as will two items in the phonological loop 
+        - Two visuospatial tasks will interfere with each other if performed simultaneously, as will two items in the phonological loop
         - However, people can perform a verbal task and a spatial task simultaneously
         - Aside: [Feynman](http://www.cyberbore.com/puzzle/klok.html)
 <---><!-- mathjax fix -->
@@ -82,7 +82,7 @@ weight: 8
     - E.x. if you're trying to recall how someone reacted to a joke you made last night; you think about what you said / how you said it / how they reacted / etc.
 ![](/docs/cogsci-c100/mem-process/working.png)
 {{< /columns >}}
-- **Central executive:** integrates information from phonological loop, visuospatial sketchpad, and episodic buffer 
+- **Central executive:** integrates information from phonological loop, visuospatial sketchpad, and episodic buffer
     - Similar to attention/sensory memory in Atkinson Shriffin model
 
 
@@ -223,7 +223,7 @@ weight: 8
     - Removal 48 hours later does not (Tse, Langston, Kakeyama et al., 2007)
 - After a training experience, the greater one’s heart rate efficiency and hippocampus activity during sleep, the better the next day’s memory will be (Peigneux, Laureys, Fuchs et al., 2004; Whitehurst, Cellini, McDevitt et al., 2016)
 
-# Memory disorders: Evidence for Separate Memory Systems 
+# Memory disorders: Evidence for Separate Memory Systems
 
 - **[Dissociation](https://en.wikipedia.org/wiki/Dissociation_(psychology)):** when brain damage affects two behaviors very differently, this suggests that the two behaviors are produced by different processes
     - Clive Wearing, an English musician, suffered damage to his hippocampus as result of [encephalitis](https://en.wikipedia.org/wiki/Encephalitis)
@@ -232,7 +232,7 @@ weight: 8
     	- Due to damage to the hippocampus
     	- Ala [Memento](https://en.wikipedia.org/wiki/Memento_(film))
 
-## Explicit Memories: Hippocampus 
+## Explicit Memories: Hippocampus
 
 {{< columns >}}<!-- mathjax fix -->
 - The **hippocampus** is central to the formation of **explicit** memories
@@ -290,11 +290,11 @@ weight: 8
 - "Adaptive control of thought -- rational"
 - Cognitive architecture with modular organization that was developed by John R. Anderson in 1976
 - It is hybrid in sense that it incorporates both symbolic (e.x. static rules) and subsymbolic (i.e. neural networks) information processing
-- ACT-R buffer 
+- ACT-R buffer
     - Workspace: what you're paying attention to
     - Serves to integrate outer and inner, between modules on different layers
     - Acts like control system: Theres a feedback loop where you send a command/signal and then get information back which you use to adjust subsequent commands
-- Perceptual-motor layer 
+- Perceptual-motor layer
     - Perceptual module in turn consists of a visual module, audition module, etc.
 	- Motor module consists of speech module, manual module, etc.
     - E.x you can decide to move in a certain direction (motor movements, perceptual -- you choose what to look at)
@@ -313,8 +313,8 @@ weight: 8
 What makes ACT-R a hybrid architecture is that **the symbolic, modular architecture is run on a subsymbolic base**
 - ACT-R is designed to operate serially, so that at any given moment, only one production rule can be active, but how does it select that one?
 {{< columns >}}<!-- mathjax fix -->
-- The pattern-matching module controls which production rule gains access to the buffer by working out which production rule has the highest utility at the moment of selection, as determined by 
-    - How likely the system is to achieve its current goal if the production rule is activated 
+- The pattern-matching module controls which production rule gains access to the buffer by working out which production rule has the highest utility at the moment of selection, as determined by
+    - How likely the system is to achieve its current goal if the production rule is activated
     - The cost of activating the production rule
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/mem-process/symb.png)
@@ -322,8 +322,8 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
     * **These calculations are subsymbolic and use an artificial neural networks approach**
 
 - Subsymbolic equations are also used to model **how accessible** information is in declarative memory
-    - The basic units of declarative memory are chunks, but each chunk is associated with a particular activation level, which is determined by 
-        - How useful the chunk has been in the past 
+    - The basic units of declarative memory are chunks, but each chunk is associated with a particular activation level, which is determined by
+        - How useful the chunk has been in the past
         - How relevant the chunk is to the current situation and context
 
 ---
@@ -346,7 +346,7 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
 - **Anterograde amnesia:** inability to form lasting memories for _new_ experiences
 - **Retrograde amnesia:** inability to remember events that occurred _before_ the onset of condition
 
-## Organic amnesia: physical cause 
+## Organic amnesia: physical cause
 
 - Brain injury through accident or stroke
 - **Korsakoff’s amnesia** (Wernicke-Korsakoff syndrome): amnesia caused by brain damage resulting from thiamine deficiency, usually as a result of chronic alcoholism
@@ -361,7 +361,7 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
 {{< /columns >}}
 
 
-## Psychogenic ("hysterical") amnesia: psychological cause 
+## Psychogenic ("hysterical") amnesia: psychological cause
 
 {{< columns >}}<!-- mathjax fix -->
 - **Dissociative identity disorder** (multiple personality disorder): disorder in which a person exhibits two or more distinct and alternating personalities
@@ -380,7 +380,7 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
 - Disease occurring in latter part of life that is characterized by deterioration of memory, reasoning, and language abilities
 - Common form of **neurocognitive disorder** (deterioration of intellectual abilities; another common cause is vascular dementia)
 	- Occurs in 7% of population above age of 65 and up to 40% of people older than 80 years
-- Associated with loss of neurons in cortical and sub-cortical regions: ventricles may be enlarged -- patients might end up losing as much of **50% of their brain mass** 
+- Associated with loss of neurons in cortical and sub-cortical regions: ventricles may be enlarged -- patients might end up losing as much of **50% of their brain mass**
 	- Produces severe degeneration of large parts of the brain: can eventually destroy most of the hippocampus and cortical gray matter
 - Sometimes gets confused with dementia, parkinson's, or other disorders
 - Deficiencies of acetylcholine: failure to show eyeblink conditioning
@@ -405,7 +405,7 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
     - Anticholinergics include Tylenol PM, Benadryl, Claritin, Dimetapp, Paxil, and Xanax
         - Researchers concluded that these drugs could trigger or worsen Alzheimer’s (Gray, Anderson, Dublin et al., 2015)
     - Those on anticholinergics also showed poorer performance on cognitive tests
-- Also, studies have found that older people with tooth and gum disease score lower on memory and cognition tests 
+- Also, studies have found that older people with tooth and gum disease score lower on memory and cognition tests
     - Experts speculate that inflammation in diseased mouths migrates to the brain
 
 ### Preventing
@@ -450,7 +450,7 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
 >     - Some participants had hundreds or thousands of them
 
 > - Q: What caused symptoms of dementia in those who died without plaques and tangles?
-> - A: Not vitamins, not alcohol, not caffeine, not exercise.... but high blood pressure! 
+> - A: Not vitamins, not alcohol, not caffeine, not exercise.... but high blood pressure!
 >     - High blood pressure => less likely
 >     - Note though that this study focused exclusively on people over 90 years of age -- results may be different for younger people
 
