@@ -63,6 +63,8 @@ BASE = [
     (r"\n\n\t(.\s*)\b", r"\n\t\1"),
     (r"^(.){1,3}$", r"<!--\1-->"),  # remove lines with three or less characters
     (r"^\s*\n(\t+. .)", r"\1"),  # gaps between bps
+    (r" {1,3}\t",r"    "), # hidden tab
+    (r"\t",r"    "), # tab to four spaces
 ]
 
 STYLES = dict([(k, []) for k in {"C100", "16A", "E29"}])

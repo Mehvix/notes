@@ -29,6 +29,10 @@
     background-color: rgba(190, 80, 70, 0.1);
 }
 
+/* .book-columns :last-child {
+    max-width: fit-content;
+} */
+
 html {
     scroll-behavior: auto !important;
 }

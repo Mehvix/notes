@@ -6,7 +6,7 @@ weight: 8
 # Three-Stage Model of Memory
 
 - Three-stage modal model of memory; [Atkinson-Shiffrin model](https://en.wikipedia.org/wiki/Atkinson%E2%80%93Shiffrin_memory_model):
-	1. Sensory memory
+    1. Sensory memory
     2. Working memory or short-term memory
     3. Long-term memory
 - Old model that's not used today
@@ -115,16 +115,16 @@ weight: 8
 
 {{< columns >}}<!-- mathjax fix -->
 - Medical applications of serial position effect
-	- Our memories of how painful an experience was tends to depend on the peak intensity and how much pain was felt at the end
+    - Our memories of how painful an experience was tends to depend on the peak intensity and how much pain was felt at the end
         * Participants in experiment were asked to immerse one hand in painfully cold ice water for 60 secs, then other hand in same ice water for 60 secs followed by a slightly less painful 30 secs more (Finn, 2011)
             - When asked which trial they would prefer to repeat, most participants preferred the longer trial, with more net pain -- but less pain at the end
-	- Strategy of tapering off pain (though this means increasing net pain experienced) has been implemented in painful medical procedures like colonoscopies
+    - Strategy of tapering off pain (though this means increasing net pain experienced) has been implemented in painful medical procedures like colonoscopies
 <---><!-- mathjax fix -->
 - Serial position can color our memory of pleasures too
-	- In one experiment, participants, on receiving a fifth and last piece of chocolate, were told it was their "next" one
-	- Others were told it was their "last" piece
-	- The latter liked the chocolate better and also rated the whole experiment as being more enjoyable (O’Brien & Elsworth, 2012)
-	* Possible applications to romantic relationships?
+    - In one experiment, participants, on receiving a fifth and last piece of chocolate, were told it was their "next" one
+    - Others were told it was their "last" piece
+    - The latter liked the chocolate better and also rated the whole experiment as being more enjoyable (O’Brien & Elsworth, 2012)
+    * Possible applications to romantic relationships?
 {{< /columns >}}
 
 # Types of long-term memory
@@ -152,18 +152,18 @@ weight: 8
 - [implicit.harvard.edu](https://implicit.harvard.edu/implicit/)
     - 80% of those who have ever taken the test end up having pro- white associations, including about 50% of African Americans
 - Does the IAT correlate with specific behaviors?
-	- White college students who had more implicit negative stereotypes of Black people showed significantly more nonverbal signs of discomfort (e.g., standing further away, making less eye contact, stumbling over words more, smiling less) when interviewed by Black interviewers
-	- People with a stronger pro-White bias on the IAT were also more likely to perceive anger and apparent threat in Black faces (Greenwald, Banaji, & Nosek, 2015; Hugenberg & Bodenhausen, 2003)
+    - White college students who had more implicit negative stereotypes of Black people showed significantly more nonverbal signs of discomfort (e.g., standing further away, making less eye contact, stumbling over words more, smiling less) when interviewed by Black interviewers
+    - People with a stronger pro-White bias on the IAT were also more likely to perceive anger and apparent threat in Black faces (Greenwald, Banaji, & Nosek, 2015; Hugenberg & Bodenhausen, 2003)
 - How can implicit stereotyping be reduced?
     - In case of black-white implicit stereotyping, thinking about admired out-group member (Tiger Woods) and disliked in-group member (Jeffrey Dahmer) can reduce implicit IAT bias _for up to 24 hours_
-    	- Imagining counter-stereotypic women (e.g., strong women) similarly reduces implicit stereotyping
-	- Students enrolled in a prejudice and conflict seminar taught by a black professor show a reduction in implicit biases after participation in course, as compared with controls (Devine, P.G., 2001) (Rudman, Ashmore, & Gary, 2001)
-    	- Long-term impact
+        - Imagining counter-stereotypic women (e.g., strong women) similarly reduces implicit stereotyping
+    - Students enrolled in a prejudice and conflict seminar taught by a black professor show a reduction in implicit biases after participation in course, as compared with controls (Devine, P.G., 2001) (Rudman, Ashmore, & Gary, 2001)
+        - Long-term impact
 - The power of implicit attitudes: Newlyweds’ implicit and explicit attitudes toward their new spouses were measured
-	- Explicit measure: spouses asked to report extent to which they would describe their marriage using 15 pairs of opposing adjectives (e.g., "good" vs. "bad," "satisfied vs. "dissatisfied")
-	- Implicit measure: version of IAT that required spouse to indicate as quickly as possible the valence of positively and negative valenced words after being exposed to 300-ms primes of photos of their partner and various control individuals
-	- Marital satisfaction was tracked over 4 year period
-	* Implicit attitudes were a better predictor of future marital happiness than their explicit attitudes (McNulty, Olson, Meltzer et al., 2013)
+    - Explicit measure: spouses asked to report extent to which they would describe their marriage using 15 pairs of opposing adjectives (e.g., "good" vs. "bad," "satisfied vs. "dissatisfied")
+    - Implicit measure: version of IAT that required spouse to indicate as quickly as possible the valence of positively and negative valenced words after being exposed to 300-ms primes of photos of their partner and various control individuals
+    - Marital satisfaction was tracked over 4 year period
+    * Implicit attitudes were a better predictor of future marital happiness than their explicit attitudes (McNulty, Olson, Meltzer et al., 2013)
 
 # Neurobiology of memory processing
 
@@ -171,11 +171,11 @@ weight: 8
 
 {{< columns >}}<!-- mathjax fix -->
 - Karl Lashley (1950)
-	- Rats learn maze
-	- Lesion cortex (of different location each time)
-	- Test memory
-    	- Still performed better than brand new rat
-    	* Thus, Memories do not reside in single, specific spots
+    - Rats learn maze
+    - Lesion cortex (of different location each time)
+    - Test memory
+        - Still performed better than brand new rat
+        * Thus, Memories do not reside in single, specific spots
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/mem-process/maze.png)
 {{< /columns >}}
@@ -186,12 +186,12 @@ weight: 8
 ![](/docs/cogsci-c100/mem-process/ltp.png)
 <---><!-- mathjax fix -->
 - **[Long-term potentiation](https://en.wikipedia.org/wiki/Long-term_potentiation) (LTP):** mechanism through which learning occurs in brain
-	- A long-term increase in the excitability of a neuron to a particular synaptic input caused by repeated high-frequency activity of that input
-    	* Stimulating a particular neural circuit will increase the sensitivity of neurons in that circuit, increasing the probability that they will fire again
-	- Process involves binding of glutamate to NMDA receptor
-    	- More glutamate can be bound
-    	- More synapses can be formed
-    	- Make NMDA receptor more sensitive to binding
+    - A long-term increase in the excitability of a neuron to a particular synaptic input caused by repeated high-frequency activity of that input
+        * Stimulating a particular neural circuit will increase the sensitivity of neurons in that circuit, increasing the probability that they will fire again
+    - Process involves binding of glutamate to NMDA receptor
+        - More glutamate can be bound
+        - More synapses can be formed
+        - Make NMDA receptor more sensitive to binding
 {{< /columns >}}
 
 - What LTP means psychologically: Both positive and negative thoughts tend to be self-reinforcing
@@ -213,8 +213,8 @@ weight: 8
 ## The Hippocampus and Frontal Lobes
 
 - Two structures that play particularly important roles in the processing and storing of new explicit memories are
-	- **Frontal lobes:** recalling information and holding it in working memory
-	- **Hippocampus:** "save" button for explicit memories
+    - **Frontal lobes:** recalling information and holding it in working memory
+    - **Hippocampus:** "save" button for explicit memories
         - Used to believe that this is were memories were stored
         - We now understand the hippocampus acts as a 'loading dock' where the brain temporarily holds to-be-remembered information
         - Items then migrate for storage elsewhere in process called memory consolidation
@@ -227,10 +227,10 @@ weight: 8
 
 - **[Dissociation](https://en.wikipedia.org/wiki/Dissociation_(psychology)):** when brain damage affects two behaviors very differently, this suggests that the two behaviors are produced by different processes
     - Clive Wearing, an English musician, suffered damage to his hippocampus as result of [encephalitis](https://en.wikipedia.org/wiki/Encephalitis)
-    	- If you walk out of the room, then come back 10 minutes late, he won’t remember you
-    	- But, he can still conduct a choir and play the piano and harpsichord beautifully
-    	- Due to damage to the hippocampus
-    	- Ala [Memento](https://en.wikipedia.org/wiki/Memento_(film))
+        - If you walk out of the room, then come back 10 minutes late, he won’t remember you
+        - But, he can still conduct a choir and play the piano and harpsichord beautifully
+        - Due to damage to the hippocampus
+        - Ala [Memento](https://en.wikipedia.org/wiki/Memento_(film))
 
 ## Explicit Memories: Hippocampus
 
@@ -246,10 +246,10 @@ weight: 8
 - The posterior hippocampus contains [place cells](https://en.wikipedia.org/wiki/Place_cell), neurons involved in spatial navigation
     * Volume of posterior hippocampus is positively correlated with amount of time spent as a taxi driver
     * Follow-up study
-    	- London cabbies have to pass centuries old test, "[The Knowledge](https://en.wikipedia.org/wiki/Taxis_of_the_United_Kingdom#The_Knowledge)," to get their license
-    	- They spend 3-4 years memorizing 25,000 streets
-    	- Voxel-based morphometry (VBM) was used to assess hippocampal volume before and after learning
-    	- Cabbies who passed the test showed significant growth in their **posterior hippocampus**, whereas controls did not (Maguire, Gadian, Johnsrude et al., 2000) (Woollett and Maguire, 2011)
+        - London cabbies have to pass centuries old test, "[The Knowledge](https://en.wikipedia.org/wiki/Taxis_of_the_United_Kingdom#The_Knowledge)," to get their license
+        - They spend 3-4 years memorizing 25,000 streets
+        - Voxel-based morphometry (VBM) was used to assess hippocampal volume before and after learning
+        - Cabbies who passed the test showed significant growth in their **posterior hippocampus**, whereas controls did not (Maguire, Gadian, Johnsrude et al., 2000) (Woollett and Maguire, 2011)
 <---><!-- mathjax fix -->
 {{< figure  src="/docs/cogsci-c100/mem-process/taxi.png" >}}
 {{< /columns >}}
@@ -296,14 +296,14 @@ weight: 8
     - Acts like control system: Theres a feedback loop where you send a command/signal and then get information back which you use to adjust subsequent commands
 - Perceptual-motor layer
     - Perceptual module in turn consists of a visual module, audition module, etc.
-	- Motor module consists of speech module, manual module, etc.
+    - Motor module consists of speech module, manual module, etc.
     - E.x you can decide to move in a certain direction (motor movements, perceptual -- you choose what to look at)
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/mem-process/actr.png)
 - Cognitive layer
     - Declarative memory is organized in "chunks"
-	- Procedural memory is encoded as production rules: actions for the system to perform, e.g., retrieve a chunk from memory, send a command to the motor module to perform an action
-		- Production rules can be nested within each other, so that output of a given production rule will trigger firing of another production rule
+    - Procedural memory is encoded as production rules: actions for the system to perform, e.g., retrieve a chunk from memory, send a command to the motor module to perform an action
+        - Production rules can be nested within each other, so that output of a given production rule will trigger firing of another production rule
 {{< /columns >}}
 * All of the above modules are encoded in the form of **physical symbols**
 
@@ -379,9 +379,9 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
 - Organic
 - Disease occurring in latter part of life that is characterized by deterioration of memory, reasoning, and language abilities
 - Common form of **neurocognitive disorder** (deterioration of intellectual abilities; another common cause is vascular dementia)
-	- Occurs in 7% of population above age of 65 and up to 40% of people older than 80 years
+    - Occurs in 7% of population above age of 65 and up to 40% of people older than 80 years
 - Associated with loss of neurons in cortical and sub-cortical regions: ventricles may be enlarged -- patients might end up losing as much of **50% of their brain mass**
-	- Produces severe degeneration of large parts of the brain: can eventually destroy most of the hippocampus and cortical gray matter
+    - Produces severe degeneration of large parts of the brain: can eventually destroy most of the hippocampus and cortical gray matter
 - Sometimes gets confused with dementia, parkinson's, or other disorders
 - Deficiencies of acetylcholine: failure to show eyeblink conditioning
 <---><!-- mathjax fix -->
@@ -434,8 +434,8 @@ What makes ACT-R a hybrid architecture is that **the symbolic, modular architect
 {{< /columns >}}
 - Conclusion?
     - Maybe plaques and tangles have nothing to do Alzheimer’s (unlikely)
-	- There may be multiple factors (e.g., lack of physical exercise, lack of cognitive stimulation, history of head trauma, etc.) that contribute to the development of Alzheimer’s...
-    	* Whether people develop the disease may depend on the number of "hits" they take from these various factors
+    - There may be multiple factors (e.g., lack of physical exercise, lack of cognitive stimulation, history of head trauma, etc.) that contribute to the development of Alzheimer’s...
+        * Whether people develop the disease may depend on the number of "hits" they take from these various factors
 
 ### Q&A
 

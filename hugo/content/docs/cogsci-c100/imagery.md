@@ -19,7 +19,7 @@ weight: 12
 
 {{< columns >}}<!-- mathjax fix -->
 - Experiments on mental imagery by Roger Shepard and Jacqueline Metzler in early 1970s spawned the imagery debate
-	- Suggested that some types of cognitive information processing involve forms of representation that are very different from how information is represented in, and manipulated by, a digital computer
+    - Suggested that some types of cognitive information processing involve forms of representation that are very different from how information is represented in, and manipulated by, a digital computer
 - **Imagery and rotation studies**:
     - Rotate each object on the left to see if it matches the object on the right:
     * Amount of time it takes to rotate a mental image depends on the extent of the rotation
@@ -28,10 +28,10 @@ weight: 12
 {{< /columns >}}
 
 - One feature of digitally encoded information is that the length of time it takes to process a piece of information is typically a function only of the quantity of information (the number of bits that are required to encode it)
-	- The particular information that is encoded ought not to matter
+    - The particular information that is encoded ought not to matter
 - But what the mental rotation experiments show is that there are informationprocessing tasks that take varying amounts of time even though the quantity of information remains the same
-	* This suggests that mental rotation tasks tap into ways of encoding information that are very different from how information is encoded in a digital computer
-		- More specifically, the information may be encoded in pictorial form, similar to the way a map represents a geographical region (analog code), rather than as a description (propositional code)
+    * This suggests that mental rotation tasks tap into ways of encoding information that are very different from how information is encoded in a digital computer
+        - More specifically, the information may be encoded in pictorial form, similar to the way a map represents a geographical region (analog code), rather than as a description (propositional code)
 ![](/docs/cogsci-c100/imagery/map.png)
 
 
@@ -39,41 +39,40 @@ weight: 12
 
 ## Research support for analog code (pictorial representation)
 - **Imagery and size**:
-    - **Condition #1**: Imagine a rabbit standing next to an elephant
-    - **Condition #2**: Imagine a rabbit standing next to a fly
+    - Condition #1: Imagine a rabbit standing next to an elephant
+    - Condition #2: Imagine a rabbit standing next to a fly
     > "Does the rabbit have two front paws?"
     >![](/docs/cogsci-c100/imagery/ele.png)
-	- People make faster judgments about the characteristics of large mental images than of small mental images; also, they take longer to travel a large mental distance, whether that’s visual or auditory
-- **Imagery and interference**:
-- Create a clear mental image of a friend’s face
+    - People make faster judgments about the characteristics of large mental images than of small mental images; also, they take longer to travel a large mental distance, whether that’s visual or auditory
+- **Imagery and interference**: Create a clear mental image of a friend’s face
     - Keeping that image in mind, simultaneously let your eyes wander over the scene in front of you
     - Visual imagery activates about 70-90% of the same brain regions that are activated during visual perception
-- **Imagery and neuroimaging research**:
-- The primary visual cortex is activated when people work on tasks that require visual imagery
-	* Visual imagery may interfere with visual perception, and motor imagery with motor images (Kosslyn, Ganis, & Thompson, 2010)
-    	- Similar findings have been reported for auditory and motor imagery
+- **Imagery and neuroimaging research**: The primary visual cortex is activated when people work on tasks that require visual imagery
+    * Visual imagery may interfere with visual perception, and motor imagery with motor images (Kosslyn, Ganis, & Thompson, 2010)
+        - Similar findings have been reported for auditory and motor imagery
     - People with prosopagnosia cannot create a mental image of a face
 
-## Research support for propositional code (descriptive representation):
+## Research support for propositional code (descriptive representation)
 
-- **Imagery and parts of figures**:
-    - Look at the figure below, and form a clear mental image of the figure:
-    ![](/docs/cogsci-c100/imagery/star.png)
+{{< columns >}}<!-- mathjax fix -->
+- **Imagery and parts of figures**: Form a clear mental image of the figure to the right:
     - Without glancing back at the figure in the previous slide, consult your mental image. Does that mental image contain a parallelogram?
-    	* People have difficulty identifying that a part belongs to a whole if they have not included the part in their original verbal description of the whole
-- **Imagery and ambiguous figures**:
-	- Create a clear mental image of the figure below:
-	![](/docs/cogsci-c100/imagery/duck.png)
+    > People have difficulty identifying that a part belongs to a whole if they have not included the part in their original verbal description of the whole
+- **Imagery and ambiguous figures**: Create a clear mental image of the right figure:
     - Write down what the figure in the previous slide depicted.
     - Then give a second, different interpretation of the figure you saw
-    	* Some ambiguous figures are difficult to reinterpret in a mental image
+    > Some ambiguous figures are difficult to reinterpret in a mental image
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/imagery/star.png)
+![](/docs/cogsci-c100/imagery/duck.png)
+{{< /columns >}}
 
 ---
 
 - **So which viewpoint is correct**: analog or propositional?
-	* **The majority of research supports the analog viewpoint, but some people on some tasks use a propositional code**
+    * **The majority of research supports the analog viewpoint, but some people on some tasks use a propositional code**
 - In one study, researchers administered questionnaire to assess whether participants were more visualizers or verbalizers
-	- Magnetoencephalography (MEG) found that visualizers showed more activation in occipital region when visualizing famous landmark
+    - Magnetoencephalography (MEG) found that visualizers showed more activation in occipital region when visualizing famous landmark
     - Verbalizers showed more activation in areas associated with linguistic processing (Nishimura, Aoki, Inagawa et al., 2016)
 
 
@@ -87,7 +86,7 @@ weight: 12
     - "It is hard not to feel like a sociopath when you’re lying about how you spent your Monday and you don’t even know why."
 - When looking at and naming faces, normal regions of brain are active, but when asked to picture people’s faces, facial-recognition brain regions do not become active like they normally would
     - Aphantasia characterizes only voluntary visualizations; the aphantasiacs were still able to have involuntary visualizations (i.e., dreams)
-    	* Suggests that condition may involve neurological **deficits between frontal and visual cortex**
+        * Suggests that condition may involve neurological **deficits between frontal and visual cortex**
 
 # Imagery Rehearsal
 
@@ -95,19 +94,19 @@ weight: 12
 - Much of the research on visualization or imagery rehearsal/mental practice has focused on skills acquisition and performance enhancement in sports and in surgery (Arora, Aggarwal, Sirimanna et al., 2011)
 - Has also been used to improve musical/dramatic performance, etc.
 - May also improve academic performance
-	> Middle school students whose families struggle financially are more likely to earn high grades if they have a clear vision of themselves succeeding in school (Duckworth, 2016)
+    > Middle school students whose families struggle financially are more likely to earn high grades if they have a clear vision of themselves succeeding in school (Duckworth, 2016)
 
 ## Use in sports and other types of skills training
 
 - Many famous athletes have attributed their success to imagery rehearsal, and there is extensive empirical support for its effectiveness
-	- Imagery rehearsal can be used not only to perfect routines, but also to work on acquiring flexibility of action in the face of unusual or stressful situations
+    - Imagery rehearsal can be used not only to perfect routines, but also to work on acquiring flexibility of action in the face of unusual or stressful situations
         * The same neurological circuits are activated and the same type of LTP takes place during imagery rehearsal as during actual physical practice(Avanzino, Gueugneau, Bisio et al., 2015; Filgueiras, Conde, & Hall, 2017)
-	- Mental practice has become a standard part of training for Olympic athletes (Blumenstein & Orbach, 2012; Ungerleider, 2005)
+    - Mental practice has become a standard part of training for Olympic athletes (Blumenstein & Orbach, 2012; Ungerleider, 2005)
 - Ex: University of Tennessee women’s basketball team used imagery rehearsal to increase free-throw accuracy
     - 52% in games following standard physical practice
     - 65% after mental practice (Savoy & Beitel, 1996)
-	* Wound up winning the national championship game
-	- Players repeatedly imagined making free throws under various conditions, including being "trash-talked" by their opposition
+    * Wound up winning the national championship game
+    - Players repeatedly imagined making free throws under various conditions, including being "trash-talked" by their opposition
 * To be effective, imagery rehearsal should be a multisensory endeavor, which is why the term "imagery" is now often preferred to "visualization"
 * Visualization is also used in evidencebased psychotherapies, such as **Cognitive Behavioral Therapy** and **Stress Inoculation Therapy**, which is used to help clients prepare themselves to handle stressful events
 > "To feel cheerful, sit up cheerfully, look around cheerfully, and act as if cheerfulness were already there."
@@ -117,7 +116,7 @@ weight: 12
 ## Factors influencing effectiveness of visualization/imagery rehearsal
 - Imagery rehearsal is more effective if preceded by relaxation
 - Imagery rehearsal is more effective when one fully experiences the task, engaging all the senses, rather than merely "thinking about" or watching oneself perform the task
-	* The key is to make the sensory experience as **vivid** and **real** as possible and to focus on the **feelings** evoked by the scene, as well as the various **details**, e.g., how other people are responding to you, etc.
+    * The key is to make the sensory experience as **vivid** and **real** as possible and to focus on the **feelings** evoked by the scene, as well as the various **details**, e.g., how other people are responding to you, etc.
 - Spreading out imagery rehearsal sessions over a period of time is more effective than massing them
 - Experienced performers profit more from imagery rehearsal; beginners profit more from actual physical practice
     - Mental practice works better if the task is easy or well-practiced (Richard Suinn)
@@ -126,9 +125,9 @@ weight: 12
 ## Possible mechanisms of imagery rehearsal
 
 * **Neurobiological mechanism**:
-	- The same neurological circuits are activated and the same type of LTP takes place during imagery rehearsal as during actual physical practice (Avanzino, Gueugneau, Bisio et al., 2015; Filgueiras, Conde, & Hall, 2017)
+    - The same neurological circuits are activated and the same type of LTP takes place during imagery rehearsal as during actual physical practice (Avanzino, Gueugneau, Bisio et al., 2015; Filgueiras, Conde, & Hall, 2017)
 * **Possible psychological mechanism**:
-	- Visualization probably works in part by strengthening optimism, which in turn strengthens persistence and effectiveness
+    - Visualization probably works in part by strengthening optimism, which in turn strengthens persistence and effectiveness
 > "Belief must strengthen the imagination for imagination establishes the will." -- Paracelsus
 
 ---
@@ -141,7 +140,7 @@ weight: 12
 
 > **Cognitive therapy**: cognitive rehearsal or practicing a role under conditions that are supposed to represent the real situation
 - Client is asked to imagine going through all the steps necessary to obtain a goal
-	- Case of a depressed woman who had intended to take an exercise class the following day
+    - Case of a depressed woman who had intended to take an exercise class the following day
         - When therapist encouraged her to use imagery rehearsal, she realized that she lacked the proper clothes, might not have access to the car, etc.
 - Mental imagery can be a way of seeing and testing radically new ways of behaving and reacting
 - **Stress Inoculation Therapy**: used to help clients prepare themselves to handle stressful events
@@ -154,15 +153,15 @@ weight: 12
     * Recurrent nightmare of 14 years’ duration disappeared after patient relived the dream 3 times while awake, then wrote 3 accounts of the nightmare with "triumphant endings"
 - **Dream reentry technique**: Imagine yourself back in the dream and determine what else you can do -- come up with alternative ways of acting in the dream to effect a more favorable ending
     - Ex: Dream in which dreamer finds himself in a room in which walls are closing in, threatening to crush him. Door is locked.
-    	- **Dream reentry**: Dreamer imagines the dream again. He looks around the room and notices that there is no ceiling and climbs out.
+        - **Dream reentry**: Dreamer imagines the dream again. He looks around the room and notices that there is no ceiling and climbs out.
 
 
 ## Imagery and Marketing
 
 - Cable TV study
-	- **Group 1**: Residents were provided with information about benefits of cable television
+    - **Group 1**: Residents were provided with information about benefits of cable television
     - **Group 2**: Residents were asked to imagine how much more convenient and inexpensive the cable service would be
-	* 20% of people in the information condition ended up subscribing as opposed to 47% in imagination condition (Matlin, 1989)
+    * 20% of people in the information condition ended up subscribing as opposed to 47% in imagination condition (Matlin, 1989)
 - Red Cross study
     - Donations to Syrian refugees were 55 times greater in response to:
     - Publication of iconic photo of a child killed vs.

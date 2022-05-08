@@ -1906,7 +1906,7 @@ Five Case Studies Of Indigenous Stewardship Practices In California
     - PREPARE your family, home or business -- know your risk from bushfire and have a survival plan
     - ACT on the fire danger ratings - put your preparations into action, do not wait to get message on your phone or tablet
     - SURVIVE by monitoring conditions if a fire starts
-	- Know bushfire warning alert levels and what you will do if you are caught in a fire
+    - Know bushfire warning alert levels and what you will do if you are caught in a fire
 ## Summary
 - Exposure of human communities to fire in California is huge
 - Communities need to prepare better for fire -- UC Cooperative Extension program
