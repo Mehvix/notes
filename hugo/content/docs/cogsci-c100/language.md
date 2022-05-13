@@ -152,15 +152,14 @@ weight: 13
 ### Second Language Acquisition
 
 > How do we learn language?
-
 - **Skill building hypothesis**: Language is acquired as a result of learning language skills, such as vocabulary and grammar
     - **Use skill building**: learn grammar, study vocab lists, do drills, take tests
-    > "No pain, no gain"
     * General public (and government) believe this is the way to learn language
+        - "No pain, no gain"
 - **Comprehension hypothesis (Stephen Krashen)**: language skills such as vocabulary and grammar, result from language acquisition -- we acquire language in one and only one way: when we understand messages
     - **Use "comprehensible input"**: listen to stories, read books, have conversations, watch movies
     - **Immediate gratification**: have a good time -- the more you enjoy it, the better your comprehension will be
-* **Comprehensible input has won in pretty much every single study comparing the two methods**
+    * **Comprehensible input has won in pretty much every single study comparing the two methods**
 - Some evidence in support of comprehensible input
     - Complexity of language learning, e.g., of vocab and grammar, wipes out skill building as a possibility
         - Average native English speaker knows 40,000+ words

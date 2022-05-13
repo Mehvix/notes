@@ -18,6 +18,7 @@ git submodule update --init --recursive
 
 # todos
 
+- [ ] Anki links
 - [ ] HLJS -- will implement if I ever end up taking notes in a CS class
 - [ ] Hugo function to generate preview of each class's notes on the their respective 'home' pages
     - E.x notes.mehvix.com/e-29/ would show a compilation of every week's table of contents

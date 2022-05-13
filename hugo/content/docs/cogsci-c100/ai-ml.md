@@ -16,22 +16,22 @@ weight: 17
 ## Artificial Intelligence Formulations
 
 > There are a number of different artificial intelligence formulations
-- **Strong AI**: General purpose AI
+1. **Strong AI**: General purpose AI
     - Machines that possess artificial general intelligence (AGI)
     - Would be just as smart as humans across the board with the ability to understand and learn any task that a human can
-- **Applied AI**: AGI isn't going to be created any time soon, but machine learning has made it possible for machines to learn how to master complex tasks (expert systems), including
+2. **Applied AI**: AGI isn't going to be created any time soon, but machine learning has made it possible for machines to learn how to master complex tasks (expert systems), including
     - Playing the ancient Chinese board game Go
     - Identifying human faces
     - Translating text into practically every language
     - Driving cars
-- **Computer replication**: Understand how the mind works and replicate its functions in machine or organic form
+3. **Computer replication**: Understand how the mind works and replicate its functions in machine or organic form
 
 ## Machine Learning
 
 {{< figure  src="/docs/cogsci-c100/ai-ml/a.png" >}}
 
-- Problem: How can a computer learn to distinguish between pictures of dogs and cats?
-- Approach: You label pictures of dogs and cats with specific defining characteristics (e.g., length of ear, color of nose), then feed this structured data through the computer
+- **Problem:** How can a computer learn to distinguish between pictures of dogs and cats?
+- **Approach:** You label pictures of dogs and cats with specific defining characteristics (e.g., length of ear, color of nose), then feed this structured data through the computer
 
 ## Deep Learning
 
@@ -44,9 +44,9 @@ weight: 17
 
 ## Supervised, Unsupervised, and Deep Reinforcement Learning
 
-- In supervised learning, network receives explicit feedback on how successful it is
-- In unsupervised learning, network does not receive explicit feedback; instead it learns to detect patterns in data
-- Reinforcement learning is distinct from both of the above in that
+1. **Supervised learning:** network receives explicit feedback on how successful it is
+2. **Unsupervised learning:** network does not receive explicit feedback; instead it learns to detect patterns in data
+3. **Reinforcement learning:** distinct from both of the above in that...
     - It does depend upon a feedback signal
     - However, the feedback signal does not tell the network exactly what it has done wrong; instead, the network is driven by a reward signal
         - The job of the network is to maximize the reward, but it is not told how to do that
@@ -54,12 +54,13 @@ weight: 17
     - Ex: Atari breakout
 
 ### AlphaGo
+{{< katex />}}
 
 > In 2016 and 2017, AlphaGo program created by Google’s Deep Mind research group beat the world’s leading human experts at the game of Go
 - These victories were widely recognized as historic achievements for AI
 - Go is an abstract strategy board game for two players, in which the aim is to surround more territory than the opponent
     - It is one of world’s most complex games
-    - Chess has 10^123 possible moves; Go has 10^360
+    - Chess has $10^{123}$ possible moves; Go has $10^{360}$
 - AlphaGo used a mixture of supervised learning and reinforcement learning
     - Was initially trained on a database of 30 million moves from an online server using supervised learning -- received explicit feedback on how successful it was
     - Once AlphaGo had achieved a relatively high level of playing strength, training shifted to reinforcement learning
@@ -82,7 +83,7 @@ weight: 17
 
 - Diagnosis of disorders, e.g., IBM Watson
     - Computers found to be as good or better than doctors at detecting tiny lung cancers on CT scans
-    - **Potential hazard**: A radiologist who misreads a scan may harm one patient, but a flawed A.I. system in widespread use could injure many
+    - _Potential hazard_: A radiologist who misreads a scan may harm one patient, but a flawed A.I. system in widespread use could injure many
 - Determining optimal treatment, including
     - Type and dosage of drugs
     - Best diet for individual, e.g., to avoid glucose spikes after eating
@@ -103,10 +104,10 @@ weight: 17
 >{{< figure  src="/docs/cogsci-c100/ai-ml/g.png" >}}
 
 > Direct brain-to-brain communication in humans is also now possible
-- Two research participants are are positioned in two different buildings on campus
-    - The sender, left, thinks about firing a cannon at various points throughout a computer game
-    - That signal is sent over the Web directly to the brain of the receiver, right, whose hand hits a touchpad to fire the cannon (Rao, Stucco, Ryan et al., 2014)
-{{< figure  src="/docs/cogsci-c100/ai-ml/h.png" >}}
+>{{< figure  src="/docs/cogsci-c100/ai-ml/h.png" >}}
+>- Two research participants are are positioned in two different buildings on campus
+>    - The sender, left, thinks about firing a cannon at various points throughout a computer game
+>    - That signal is sent over the Web directly to the brain of the receiver, right, whose hand hits a touchpad to fire the cannon (Rao, Stucco, Ryan et al., 2014)
 
 ## Psychotherapy
 
@@ -158,7 +159,7 @@ weight: 17
   - Some believe that self-driving cars (and other autonomous vehicles, like drones) need more than sensitivity to patterns and the ability to learn from experience
     * They **need to be able to deal with the unexpected** -- completely unpredictable behavior from other drivers, pedestrians, cyclist, and even wild animals
   - Also, human drivers are constantly exploiting their knowledge of how physical objects move and behave (folk physics), as well as their knowledge of other drivers and road-users (mindreading)
-    * Perhaps a key challenge, perhaps the key challenge, for designers of self-driving cars is how to equip their vehicles with this kind of general knowledge
+    * Perhaps a key challenge for designers of self-driving cars is how to equip their vehicles with this kind of general knowledge
 
 {{< columns >}}<!-- mathjax fix -->
 - Pros:

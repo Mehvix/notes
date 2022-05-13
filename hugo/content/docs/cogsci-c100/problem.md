@@ -25,10 +25,11 @@ weight: 14
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/problem/words.png)
 {{< /columns >}}
+
 > **Heuristic**: a rule-of-thumb strategy that allows one to reduce the number of operations that are tried in solving a problem
-    - Looking only for pronounceable letter combinations (like "le" or "sa" when trying to solve an anagram)
+- Looking only for pronounceable letter combinations (like "le" or "sa" when trying to solve an anagram)
     - Most everyday problems are solved using heuristics
-- Heuristics are speedier but also more error-prone than algorithms
+- *Heuristics are speedier but also more error-prone than algorithms*
 
 ## Strategies for improving problem solving
 
@@ -54,13 +55,16 @@ weight: 14
 
 ### Means-end heuristic
 
-- **Means-end heuristic**: divide problem into sub-problems and try to reduce difference between initial state and goal state for each of sub-problems
-    * Newell and Simon developed General Problem Solver program (1957) asa way of solving complex problems using means-end analysis
-    - **Hobbits-and-Orcs Problem**: time. Moreover, whenever there are more Orcs than Hobbits on one side of the river, the Orcs will immediately attack the Hobbits and gobble them up.
-        - Imagine that 3 Hobbits and 3 Orcs all arrive at the right side of a riverbank, and they all want to cross to the left side. Fortunately, there is a boat. However, the boat is small, and it can hold only two creatures at one. Therefore, you must be absolutely certain that you never leave more Orcs than Hobbits on any riverbank. How would you solve this dilemma?
-        * Sometimes it may be necessary to move backwards (hobbits-and-orcs problem) -- problem-solvers are often unwilling to do this!
-    - Tower of Hanoi
-    ![](/docs/cogsci-c100/problem/hanoi.png)
+> **Means-end heuristic**: divide problem into sub-problems and try to reduce difference between initial state and goal state for each of sub-problems
+* Newell and Simon developed General Problem Solver program (1957) asa way of solving complex problems using means-end analysis
+- Hobbits-and-Orcs Problem:
+    > Imagine that 3 Hobbits and 3 Orcs all arrive at the right side of a riverbank, and they all want to cross to the left side. Fortunately, there is a boat. However, the boat is small, and it can hold only two creatures at one time. Moreover, whenever there are more Orcs than Hobbits on one side of the river, the Orcs will immediately attack the Hobbits and gobble them up.. Therefore, you must be absolutely certain that you never leave more Orcs than Hobbits on any riverbank. How would you solve this dilemma?
+
+    {{< details "Answer" >}}
+Sometimes it may be necessary to move backwards (hobbits-and-orcs problem) -- problem-solvers are often unwilling to do this!
+    {{< /details >}}
+- Tower of Hanoi
+![](/docs/cogsci-c100/problem/hanoi.png)
 
 ### Analogy approach
 
@@ -119,13 +123,13 @@ weight: 14
 
 - Why are people are better at reasoning with deontic conditionals?
     - Theory that when we solve problems with deontic conditionals, we are using a specialized module for monitoring social exchanges and detecting cheaters
-    - This is the cheater detection module (Cosmides and Tooby)
+    - This is the **cheater detection module** (Cosmides and Tooby)
 - Why should there be a cheater detection module?
     - Cooperative behavior presumably has a genetic basis
     - However, an individual who takes advantage of cooperators without reciprocating will likely do better than one who cooperates
-- Ex: They gain your trust, then steal all your bananas
+        - Ex: They gain your trust, then steal all your bananas
     - So how could the genes for cooperative behavior ever have become established?
-    * Enter the cheater detection module…
+        * Enter the cheater detection module…
 
 ### Confirmation Bias And Social Judgments
 
@@ -162,25 +166,29 @@ weight: 14
 
 ### Neural Basis of Insight
 
-- Some critical components of insight are preferentially associated with the right cerebral hemisphere
-    - Direct stimulation of right frontal-temporal cortex coupled with inhibition of left frontal- temporal cortex enhances solving of insight problems
-
-    {{< columns >}}<!-- mathjax fix -->
-- Insightful individuals show greater right hemisphere activity at rest, relative to analytic individuals
+{{< columns >}}<!-- mathjax fix -->
+- Some critical components of insight are preferentially associated with the **right cerebral hemisphere**
 - At the moment when people solve problems by insight, relative to solving identical problems by analytic processing:
     - EEG shows a burst of highfrequency gamma-band EEG activity over the right anterior temporal lobe
     - fMRI shows a corresponding change in blood flow in this area (Kounios and Beeman, 2014)
 <---><!-- mathjax fix -->
->![](/docs/cogsci-c100/problem/s.png)
+![](/docs/cogsci-c100/problem/s.png)
 {{< /columns >}}
-
+- Direct stimulation of right frontal-temporal cortex coupled with inhibition of left frontal- temporal cortex enhances solving of insight problems
+- Insightful individuals show greater right hemisphere activity at rest, relative to analytic individuals
+----
+{{< columns >}}<!-- mathjax fix -->
 - Performance is enhanced or unaffected if you verbalize strategies while solving non-insight problem
 - Performance is disrupted if you verbalize strategies while solving insight problem
----
-* Differences may perhaps be explained by hemispheric specialization – left hemisphere is especially skilled at logical reasoning and language processing; the right is more spatial and holistic
-    - Priming people to think about the **distant future** biases them to think abstractly, causing them to perform better on insight and creativity tasks
-    - Conversely, priming people to think about the **near future** biases them to think concretely, causing them to perform better on analytic tasks (Förster, Jens, Friedman et al, 2004)
-    ![](/docs/cogsci-c100/problem/q.png)
+> _Differences may perhaps be explained by hemispheric specialization – left hemisphere is especially skilled at logical reasoning and language processing; the right is more spatial and holistic_
+<---><!-- mathjax fix -->
+![](/docs/cogsci-c100/problem/q.png)
+{{< /columns >}}
+- Priming people to think about the **distant future** biases them to think abstractly, causing them to perform better on insight and creativity tasks
+- Conversely, priming people to think about the **near future** biases them to think concretely, causing them to perform better on analytic tasks (Förster, Jens, Friedman et al, 2004)
+
+----
+
 - Insightful individuals (Kounios and Beeman, 2014)
     - Show more externally oriented attention (reduced occipital alphaband EEG activity) than do analytical individuals during the resting state
     - Show **greater internal focus** of attention during the preparation phase prior to the presentation of the insight problem indicated by:
@@ -211,16 +219,20 @@ weight: 14
 
 ### Reduce anxiety
 
-- Extrinsic motivation (being offered a reward for being creative) can reduce creativity
-    - Conditions that increase anxiety (knowing that your work will be evaluated, having someone watch while you work, being offered a reward for being creative) tend to reduce creativity
+{{< columns >}}<!-- mathjax fix -->
+- Extrinsic motivation (being offered a reward for being creative) can reduce creativity (Glucksberg, 1962)
     - Participants who expected no particular reward for solving candle problem solved the problem more quickly than those who were told they might win a \$20 reward!
+<---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/problem/20.png)
+{{< /columns >}}
+
+> Conditions that increase anxiety (knowing that your work will be evaluated, having someone watch while you work, being offered a reward for being creative) tend to reduce creativity
 
 ### Promote lightheartedness
 
 {{< columns >}}<!-- mathjax fix -->
 - Conditions that promote lightheartedness tend to facilitate solution
-- Students who had just watched a comedy film were far more successful in solving candle problem than those who had seen either a serious film or no film (Glucksberg, 1962) (Isen, Daubman, &Nowicki, 1987)
+- Students who had just watched a comedy film were far more successful in solving candle problem than those who had seen either a serious film or no film(Isen, Daubman, &Nowicki, 1987)
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/problem/masks.png)
 {{< /columns >}}
@@ -288,7 +300,6 @@ weight: 14
 <---><!-- mathjax fix -->
 ![](/docs/cogsci-c100/problem/choice.png)
 {{< /columns >}}
-
 - Choosing to save for retirement
     - U.S. companies once required employees who wanted to contribute to a retirement plan to opt in by choosing a lower take-home pay
     - A new law allowed employers to automatically enroll their employees in the plan but with the option of opting out
@@ -326,6 +337,8 @@ $$P(A|B) = \frac{P(B|A)}{P(A)} = \frac{0.99 \times 0.01}{198/10,000} = 50\\% $$
 ![](/docs/cogsci-c100/problem/chart.png)
 
 - People generally do not answer the medical diagnosis question correctly, but there is evidence that biological systems, such as our visual perception, language learning, and reward systems may utilize Bayesian principles
+
+{{< youtube "HZGCoVF3YvM" >}}
 {{< /hint >}}
 
 ### Anchoring and adjustment bias
@@ -340,12 +353,12 @@ $$P(A|B) = \frac{P(B|A)}{P(A)} = \frac{0.99 \times 0.01}{198/10,000} = 50\\% $$
 
 > **Overconfidence**: tendency to overestimate the accuracy of one’s beliefs and judgments
 - Has many potentially detrimental effects
-    - Ex: In wars, each side tends to overestimate its own chances of success (Williams, Dunning & Kruger, 2013) (Kruger & Dunning, 1999)
+    - Ex: In wars, each side tends to overestimate its own chances of success
 
 > **Dunning-Kruger effect**: ignorance of one’s own incompetence
-- Students scoring at the low end of grammar and logic tests believed they had scored in the top half
+- Students scoring at the low end of grammar and logic tests believed they had scored in the top half (Williams, Dunning & Kruger, 2013)
 - In a set of six studies looking at people’s confidence in their performance on intellectual tasks, participants completed tests involving logical reasoning, intuitive physics, or financial investment
-    - Results: the more they approached such tasks in a "rational" (i.e., consistent, algorithmic) manner -- as opposed to more variable or ad hoc approaches -- the more confident they become, irrespective of whether they are correct
+    - Results: the more they approached such tasks in a "rational" (i.e., consistent, algorithmic) manner -- as opposed to more variable or ad hoc approaches -- the more confident they become, irrespective of whether they are correct (Kruger & Dunning, 1999)
 - However, overconfidence may have adaptive value
     - People who err on the side of overconfidence live more happily and find it easier to make tough decisions (Anderson, Brion, & Moore, 2012)
     - Depressed people actually tend to be more accurate in judging their beliefs and judgments, as well as their degree of control over a situation (Alloy & Abramson, 1979; Gotlib & Meltzer, 1987)
@@ -369,7 +382,10 @@ $$P(A|B) = \frac{P(B|A)}{P(A)} = \frac{0.99 \times 0.01}{198/10,000} = 50\\% $$
 
 > Feelings are indispensable for rational decisions!
 - Lack of emotional responses leads to poor decision-making
-- The orbital frontal cortex (OFC) connects three major regions of the brain: the cortex (the thinking brain), the amydala (the emotional brain), and the brain stem (the reptilian brain for automatic response)
+- The orbital frontal cortex (OFC) connects three major regions of the brain:
+    1. The cortex (the thinking brain)
+    2. The amydala (the emotional brain)
+    3. The brain stem (the reptilian brain for automatic response)
 - Patients with damage to the prefrontal-amygdala circuit
 {{< columns >}}<!-- mathjax fix -->
 - Make disastrous choices in their business and personal lives
