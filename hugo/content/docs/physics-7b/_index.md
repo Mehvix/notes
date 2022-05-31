@@ -5,5 +5,5 @@ bookHidden: false
 bookCollapseSection: true
 aliases:
     - /physics-7b/
-weight: 10
+weight: 25
 ---

@@ -5,5 +5,5 @@ bookHidden: false
 bookCollapseSection: true
 aliases:
     - /cogsci-c100/
-weight: 1
+weight: 24
 ---

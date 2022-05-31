@@ -1,9 +1,9 @@
 ---
-title: "EECS 16A"
+title: "MCB C61"
 bookFlatSection: false
 bookHidden: false
 bookCollapseSection: true
 aliases:
-    - /eecs-16a/
-weight: 24
+    - /mcb-c61/
+weight: 23
 ---
