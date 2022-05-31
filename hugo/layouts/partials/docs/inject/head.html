@@ -1,8 +1,6 @@
 <!-- Favicon -->
-<link
-    rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
-/>
+<link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>" />
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
@@ -30,14 +28,10 @@
     };
 </script>
 
-<script
-    id="MathJax-script"
-    async
+<script id="MathJax-script" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js?config=TeX-AMS_CHTML"
     integrity="sha512-9DkJEmXbL/Tdj8b1SxJ4H2p3RCAXKsu8RqbznEjhFYw0cFIWlII+PnGDU2FX3keyE9Ev6eFaDPyEAyAL2cEX0Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Katex -->
 <script>
@@ -59,3 +53,15 @@
 {{ range .Site.Params.custom_css -}}
 <link rel="stylesheet" href="{{ . | absURL }}" />
 {{- end }}
+
+<!-- HTML -->
+
+<div class="print" style="text-align: center">
+    <h1 id="print-location">Notes can be found as interactive webpage at </h1>
+</div>
+<script>
+    let a = document.createElement('a');
+    a.appendChild(document.createTextNode(`notes.mehvix.com${window.location.pathname}`));
+    a.href = "http://notes.mehvix.com" + window.location.pathname;
+    document.getElementById('print-location').appendChild(a);
+</script>
