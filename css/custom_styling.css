@@ -45,6 +45,10 @@ body {
     font-family: "PT Sans", sans-serif;
 }
 
+table {
+    display: inline !important;
+}
+
 .markdown img {
     display: block;
     margin-left: auto;
