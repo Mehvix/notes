@@ -643,7 +643,7 @@ Many students use “accurate” when they really mean “precise.” For exampl
 - Sometimes, we want to choose our sample size (n) so that we may estimate a proportion within a particular margin of error. We must choose our sample size before we start sampling.
     1. Conservative Approach: Use p .5 , because it maximizes the margin of error.
     2. Better Approach if Possible: Make a guess about the value of p based on prior knowledge, common knowledge, previous studies, etc.
-        $$Z^*\sqrt{\frac{p(1-p)}{n}} \leq ME, \text{and solve for n}$$
+        $$Z^\*\sqrt{\frac{p(1-p)}{n}} \leq ME, \text{and solve for n}$$
 - Sample Size for a Desired Margin of Error when Estimating μ
     - To determine the sample size n that will yield a C% confidence interval for a population mean with a specified margin of error ME:
         - Get a reasonable value for the population standard deviation σ from an earlier or pilot study.
