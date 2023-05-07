@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+:root {
+  --gray-100: rgba(255, 255, 255, 0.1);
+  --gray-200: rgba(255, 255, 255, 0.2);
+  --gray-500: rgba(255, 255, 255, 0.5);
+  --color-link: #61afef;
+  --color-visited-link: #c678dd;
+  --body-background: #282c34;
+  --body-font-color: #c3c8d1;
+  --icon-filter: brightness(0) invert(1);
+  --hint-color-info: #61afef;
+  --hint-color-warning: #e5c07b;
+  --hint-color-danger: #be5046;
+}
+
+.markdown.info,
+.book-hint.info {
+  border-color: var(--hint-color-info);
+  background-color: rgba(97, 175, 239, 0.1);
+}
+.markdown.warning,
+.book-hint.warning {
+  border-color: var(--hint-color-warning);
+  background-color: rgba(229, 192, 123, 0.1);
+}
+.markdown.danger,
+.book-hint.danger {
+  border-color: var(--hint-color-danger);
+  background-color: rgba(190, 80, 70, 0.1);
+}
+
+pre {
+  background: var(--gray-100) !important;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+table {
+  display: inline !important;
+}
+
+.markdown img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2ch;
+  margin-bottom: 2ch;
+  max-height: 38ch;
+  background: white;
+}
+
+.markdown figure {
+  margin: 0.25em !important;
+}
+.markdown figure > img {
+  max-height: 100%;
+}
+
+.book-toc-content,
+.book-menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16rem;
+}
+.book-toc-content > nav,
+.book-menu-content > nav {
+  margin: auto;
+  width: 100%;
+}
+
+input {
+  transition: height 200ms;
+}
+
+.book-toc a:hover,
+aside.book-menu > div a:hover {
+  color: #56b6c2;
+}
+
+aside.book-menu > div > nav > ul > li > ul > li > a.active:hover {
+  color: #98c379;
+}
+aside.book-menu > div > nav > ul > li #Frank\'s\ ASAMST\ 20A, aside.book-menu > div > nav > ul > li > ul.CS170 a,
+aside.book-menu > div > nav > ul > li #CS170, aside.book-menu > div > nav > ul > li > ul.MCB.C61 a,
+aside.book-menu > div > nav > ul > li #MCB\ C61 {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+a {
+  transition: all 300ms cubic-bezier(0.04, 0.4, 0.58, 1);
+}
+
+.book-toc a:hover,
+aside.book-menu a:hover {
+  opacity: 1;
+}
+
+.markdown .book-columns > div {
+  margin: 0 !important;
+}
+.markdown blockquote {
+  margin: 0.66rem 0 !important;
+  border-radius: 0 !important;
+}
+
+h3 {
+  font-size: 1.3em !important;
+}
+
+h4 {
+  font-size: 1.2em !important;
+  font-weight: normal !important;
+}
+
+.print {
+  display: none;
+}
+
+@media print {
+  .print {
+    display: unset;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
