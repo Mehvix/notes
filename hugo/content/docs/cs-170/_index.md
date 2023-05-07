@@ -1,9 +1,9 @@
 ---
-title: "CS 194"
+title: "CS170"
 bookFlatSection: false
 bookHidden: false
 bookCollapseSection: true
 aliases:
-    - /cs-194/
-weight: 22
+    - /cs-170/
+weight: 98
 ---

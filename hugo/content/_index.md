@@ -10,11 +10,13 @@ type: docs
 
 ## what
 
-These are my personal notes for courses I've taken at Berkeley. It varies from course-to-course, but I try to take notes from lecture content as well as supplemental notes (i.e. CSM, discussion, labs).
+These are my personal notes for courses I've taken at Berkeley. It varies from course-to-course, but I try to take notes from lecture content as well as supplemental notes (i.e. CSM, discussion, labs). I enjoy linking to other related pages, often Wikipedia, and try to remember to denote extra information that's not in scope of the course.
 
 These notes should serve as a supplement to course material, but no more than that. I believe you have to interact with the ideas yourself to truly understand them. That is, not rely solely on reading my notes.
 
-I enjoy linking to other related pages, often Wikipedia, and try to remember to denote extra information that's not in scope of the course.
+I no longer actively maintain this repository as I have found a better workflow that works for me -- taking physical notes during lecture and using [Anki](https://apps.ankiweb.net/) as a question bank.
+
+Notes that look like <span style='font-style: italic; opacity: 0.8'>this</span> are incomplete.
 
 
 ## how

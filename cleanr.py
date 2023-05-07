@@ -3,7 +3,6 @@ import os
 import sys
 import re
 import argparse
-import urllib.parse
 
 COURSE_PLACEHOLDER = "@COURSENAME"
 DEFAULT_FIN = "unclean.md"
@@ -44,7 +43,8 @@ parser.add_argument("--verbose",
 args = parser.parse_args()
 
 if not args.verbose:
-    print = lambda: ()
+    print = lambda **_: ()
+
 
 print("Verbose on!")
 
