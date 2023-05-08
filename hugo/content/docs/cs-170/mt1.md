@@ -1,6 +1,12 @@
 ---
 title: "Midterm 1: Cheat Sheet"
+weight: 1
 ---
+
+
+{{< hint "warning" >}}
+I never finished these. Consider checking out [Alec Li's notes](https://smartspot2.github.io/assets/pdf/CS170_Lecture_Notes.pdf) and [Jeffrey Shen's final cheatsheet](https://jshen13.github.io/notes/fa20/cs170_sg.pdf).
+{{< /hint >}}
 
 {{< katex />}}
 
