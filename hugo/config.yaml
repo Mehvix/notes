@@ -23,7 +23,7 @@ enableGitInfo: true
 
 # (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
 # You can remove related files with config below
-disableKinds: ["taxonomy", "taxonomyTerm"]
+disableKinds: ["taxonomy"] #"taxonomyTerm"
 
 # Needed for mermaid/katex shortcodes
 markup:
@@ -34,18 +34,21 @@ markup:
         startLevel: 1
 menu:
     after:
+        - name: "Hanji's MCB 61"
+          url: "https://docs.google.com/document/d/1iAIWATHN-SuUngw0EVUXLXbVmCQPAN-uoGRKvXh9lIU/"
+          weight: 1
         - name: "Anto's CS61A"
           url: "https://cs61a.rouxl.es/"
-          weight: 1
-        - name: "—"
           weight: 2
+        - name: "—"
+          weight: 3
           url: "#"
         - name: "w³.mehvix.com"
           url: "https://www.mehvix.com"
-          weight: 3
+          weight: 4
         - name: "pass.mehvix.com"
           url: "https://pass.mehvix.com"
-          weight: 4
+          weight: 5
 
 params:
     # custom_css: ["css/custom_styling.css"]
