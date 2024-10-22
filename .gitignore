@@ -5,7 +5,9 @@ tmp.md
 
 /*.md
 
-
 # GH automation sets up new branch with these folders, so we don't want them in the main branch
 ./docs
 ./public
+
+/_gen/
+/docs/
