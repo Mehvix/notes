@@ -1,14 +1,384 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math 53 on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/math-53/</link><description>Recent content in Math 53 on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/math-53/index.xml" rel="self" type="application/rss+xml"/><item><title>10: Parametric Equations and Polar Coordinates</title><link>http://notes.mehvix.com/math-53/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/10/</guid><description>10.1 Curves Defined by Parametric Equations # Parametric equations are written as .$(f(t), g(t))$ They define curves (not functions!) Time .$t \in [t_i, t_f]$ Initial point: .$\big(f(t_i), g(t_i)\big)$ Terminal point: .$\big(f(t_f), g(t_f)\big)$ For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle clockwise centered around the point .$(h,k)$ Likewise, .$(r \cdot \cos(t), r \cdot \sin(t))$ is counter clockwise Useful Desmos calculator If we need to graph an equation in form .</description></item><item><title>12: Vectors &amp; Geometry of Space</title><link>http://notes.mehvix.com/math-53/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/12/</guid><description>12.1 3D Coordinate Systems # Right hand rule: Index point to .$x$, thumb to .$z$, and write through .$y$ If you have point .$P(a,b,c)$ and drop a perpendicular dot on the .$xy$-plane at .$a,b,0$, you now have a projection of .$P$ onto the .$xy$-plane The distance .$|P_1 P_2|$ between two points .$P_1(x_1, y_1, z_1)$ and .$P_2(x_2, y_2, z_2)$ is $$|P_1 P_2| = \sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$$ We can define the equation for a sphere with a center at .</description></item><item><title>13: Vector Functions</title><link>http://notes.mehvix.com/math-53/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/13/</guid><description>13.1 Vector Functions and Space Curves # Vector Functions # We can write a vector function as $$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i + g(t) \hat j + h(t) \hat k$$ The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined The limit of a vector function is $$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$ .</description></item><item><title>14: Partial Derivatives</title><link>http://notes.mehvix.com/math-53/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/14/</guid><description>14.1 Functions of Several Variables # In the real world, most things don&amp;rsquo;t depend on a single variable Temperature may depend on the .$(x,y)$ (latitude/longitude) position Volume of a cylinder depends on radius .$r$ and height .$h$: .$V =\pi r^2 h$ Formal Definition: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .</description></item><item><title>15: Multiple Integrals</title><link>http://notes.mehvix.com/math-53/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/15/</guid><description>15.1 Double Integrals over Rectangles # We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$ Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$ To find the volume of this surface, we take a double integral $$V = \iint_R f(x,y)\ dA$$ Fubini&amp;rsquo;s Theorem: If .</description></item><item><title>16: Vector Calculus</title><link>http://notes.mehvix.com/math-53/16/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/16/</guid><description>16.1 Vector Fields # A vector field in .$\mathbb{R}^3$ is a function .$\vec F$ on region .$E \in \mathbb{R}^3$ that assigns each point .$(x,y,z)$ a vector .$F(x,y,z)$ .$\vec F$ is made up of component function: .$\vec F(x,y,z) = \langle P(x,y,z)\hat i, Q(x,y,z) \hat j, R(x,y,z) \hat k\rangle$ .$\vec F$ is continuos iff its component vectors are continuos .$\vec F$ is conservative (path taken doesn&amp;rsquo;t change work) iff potential function .</description></item><item><title>Trig Identities</title><link>http://notes.mehvix.com/math-53/trig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig/</guid><description>Reciprocal Identities # $$\sin(x)=\frac{1}{\csc(x)}$$
-$$\cos(x)=\frac{1}{\sec(x)}$$
-$$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$
-Pythagorean Identities # $$\sin^2(x) + \cos^2(x) = 1$$
-$$1+\tan^2(x) = \sec^2(x)$$
-$$1+\cot^2(x)=\csc^2(x)$$
-Cofunction Identities # $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$ $$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$
-$$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$
-$$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$ $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
-Even/Odd Identities # $$ \sin(-x) = -\sin(x)$$ $$ \csc(-x) = -\csc(x)$$
-$$ \cos(-x) = \cos(x)$$ $$ \sec(-x) = \sec(x)$$
-$$ \tan(-x) = - \tan(x)$$ $$ \cot(-x) = -\cot(x)$$
-Bonus fact: .</description></item><item><title>Trig Calculus</title><link>http://notes.mehvix.com/math-53/trig-calc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig-calc/</guid><description>Derivatives # $$\frac{d}{dx} \tan(x) = 1 + \tan^2(x) = \sec^2(x)$$ $$\frac{d}{dx} \csc(x) = -\cot(x) \cdot \csc(x)$$ $$\frac{d}{dx} \sec(x) = \frac{\sin(x)}{\cos^2(x)} = \tan(x) \cdot \sec(x)$$ $$\frac{d}{dx} \cot(x) = -\csc^2(x)$$ $$\frac{d}{dx} \log_a(x) = \frac{1}{x\cdot \ln(a)}$$ $$\frac{d}{dx} a^u = a^x \cdot \ln (a) du$$ $$\frac{d}{dx} \sin^2(x) = \sin(2x)$$ $$\frac{d}{dx} \cos^2(x) = -\sin(2x)$$ $$\frac{d}{dx} \tan^2(x) = 2\tan(x)\cdot \sec^2(x)$$
-Integrals # $$\int a^x dx = \bigg(\frac{1}{\ln(a)}\bigg) a^x + C $$ $$\int \tan(x) dx = -\ln\vert \cos(x) \vert + C$$ $$\int \tan^2(x) dx = \tan(x) - x + C$$ $$\int \csc(x) dx = \ln\vert \csc(x) - \cot(x)\vert + C = \ln \bigg\vert \tan\bigg(\frac{x}{2}\bigg)\bigg\vert + C$$ $$\int \csc^2(x) dx = -\cot(x) + C$$ $$\int \sec(x) dx = -\ln\vert \sec(x) + \tan(x)\vert + C$$ $$\int \sec^2(x) dx = \tan(x) + C$$ $$\int \cot(x) dx = \ln\vert \sin(x) \vert + C$$ $$\int \cot^2(x) dx = -\cot(x) - x + C$$ $$\int \frac{1}{\sin(ax)\cos(ax)} = \frac{1}{a} \ln\vert\tan(ax)\vert + C$$ $$\int \frac{1}{x\sqrt{x^2-a^2}} dx = \frac{1}{a} \sec^{-1}\bigg( \frac{\vert x \vert}{a}\bigg) + C$$ $$\int \frac{1}{\sqrt{a^2-x^2}} dx = \sin^{-1}\bigg( \frac{x}{a} \bigg) + C$$ $$\int \frac{1}{a^2 + x^2} dx = \frac{1}{a} \tan^{-1}\bigg( \frac{x}{a} \bigg) + C$$</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math 53 on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/math-53/</link><description>Recent content in Math 53 on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/math-53/index.xml" rel="self" type="application/rss+xml"/><item><title>10: Parametric Equations and Polar Coordinates</title><link>http://notes.mehvix.com/math-53/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/10/</guid><description>&lt;h1 id="101-curves-defined-by-parametric-equations">
+ 10.1 Curves Defined by Parametric Equations
+ &lt;a class="anchor" href="#101-curves-defined-by-parametric-equations">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Parametric equations are written as .$(f(t), g(t))$&lt;/li>
+&lt;li>They define curves (not functions!)&lt;/li>
+&lt;li>Time
+&lt;ul>
+&lt;li>.$t \in [t_i, t_f]$&lt;/li>
+&lt;li>Initial point: .$\big(f(t_i), g(t_i)\big)$&lt;/li>
+&lt;li>Terminal point: .$\big(f(t_f), g(t_f)\big)$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>For parametric equation in form .$\big(h + r \cdot \sin(t), k + r \cdot \cos(t)\big)$ on .$t \in [0, 2\pi]$ , the resulting curve is a circle &lt;em>clockwise&lt;/em> centered around the point .$(h,k)$
+&lt;ul>
+&lt;li>Likewise, .$(r \cdot \cos(t), r \cdot \sin(t))$ is &lt;em>counter clockwise&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+ &lt;a href="https://www.desmos.com/calculator/ksjcpazwa9">Useful Desmos calculator&lt;/a>&lt;/li>
+&lt;li>If we need to graph an equation in form .$x = g(y)$ , we can use parametric equations .$x = g(t)$ and .$y = t$&lt;/li>
+&lt;/ul>
+&lt;h1 id="102-calculus-with-parametric-curves">
+ 10.2 Calculus with Parametric Curves
+ &lt;a class="anchor" href="#102-calculus-with-parametric-curves">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="tangents">
+ Tangents
+ &lt;a class="anchor" href="#tangents">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Given .$x = f(t)$ and .$y = g(t)$ where both .$f$ and .$g$ are differentiable, we can get the tangent line to the curve by finding .$\frac{dy}{dx}$&lt;/li>
+&lt;li>We can find .$\frac{dy}{dt}$ using the chain rule:
+$$\frac{dy}{dx} \cdot \frac{dx}{dt}$$&lt;/li>
+&lt;li>If .$\frac{dx}{dt} \neq 0$ , then we can solve .$\frac{dy}{dt}$ :
+$$\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}}$$&lt;/li>
+&lt;li>Horizontal tangents exist when .$\frac{dy}{dt}= 0$ (assuming .$\frac{dx}{dt} \neq 0$ )&lt;/li>
+&lt;li>Vertical tangents exist when .$\frac{dx}{dt}= 0$ (assuming .$\frac{dy}{dt} \neq 0$ )&lt;/li>
+&lt;/ul>
+&lt;h2 id="double-derivative">
+ Double Derivative
+ &lt;a class="anchor" href="#double-derivative">#&lt;/a>
+&lt;/h2>
+&lt;p>$$\frac{d^2y}{dx^2} = \frac{d}{dx}\Big(\frac{dy}{dx}\Big) = \frac{d}{dt}\cdot\frac{dt}{dx}\Big(\frac{dy}{dx}\Big) = \frac{\frac{d}{dt}\Big(\frac{dy}{dx}\Big)}{\frac{dx}{dt}}$$&lt;/p></description></item><item><title>12: Vectors &amp; Geometry of Space</title><link>http://notes.mehvix.com/math-53/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/12/</guid><description>&lt;h1 id="121-3d-coordinate-systems">
+ 12.1 3D Coordinate Systems
+ &lt;a class="anchor" href="#121-3d-coordinate-systems">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Right hand rule: Index point to .$x$, thumb to .$z$, and write through .$y$&lt;/li>
+&lt;li>If you have point .$P(a,b,c)$ and drop a perpendicular dot on the .$xy$-plane at .$a,b,0$, you now have a projection of .$P$ onto the .$xy$-plane&lt;/li>
+&lt;li>The distance .$|P_1 P_2|$ between two points .$P_1(x_1, y_1, z_1)$ and .$P_2(x_2, y_2, z_2)$ is
+$$|P_1 P_2| = \sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$$&lt;/li>
+&lt;li>We can define the equation for a sphere with a center at .$C(h,k,l)$ and radius .$r$ as
+$$(x-h)^2 + (y-k)^2 + (z-l)^2 = r^2$$&lt;/li>
+&lt;/ul>
+&lt;h1 id="122-vectors">
+ 12.2 Vectors
+ &lt;a class="anchor" href="#122-vectors">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Written as .$\overrightarrow{AB}$&lt;/li>
+&lt;li>Has &lt;strong>initial point&lt;/strong> .$A$ at the tail and the a &lt;strong>terminal point&lt;/strong> .$B$ at the tip
+&lt;ul>
+&lt;li>If the initial point .$A$ is at .$(x_1, y_1, z_1)$ and terminal point .$B$ is at .$(x_2, y_2, z_2)$, then we can write .$\overrightarrow{AB} = \langle x_2 - x_1, y_2 - y_1, z_2 - z_1\rangle$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Vectors with the same length/magnitude are called equivalent or equal, despite not necessarily having the same initial/termination points&lt;/li>
+&lt;li>Vector addition (order doesn&amp;rsquo;t matter)
+$$ \overrightarrow{AC} = \overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{BC} + \overrightarrow{AB}$$
+$$ \vec u - \vec v = \vec u + (- \vec v)$$
+$$ \vec a + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$&lt;/li>
+&lt;li>Vector multiplication
+&lt;ul>
+&lt;li>Given scalar .$c$ and vector .$\vec v$, .$c\cdot\vec v$ is like .$\vec v$ but with length changed by a factor of .$\Vert c\Vert$&lt;/li>
+&lt;li>If .$c&amp;lt;0$, then the vector is flipped around&lt;/li>
+&lt;li>$$c\cdot\vec v = \langle cv_x, cv_y, cv_z\rangle$$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Magnitude for .$\vec a = \langle a_x, a_y, a_z \rangle$:
+&lt;ul>
+&lt;li>$$ \Vert \vec a \Vert = \sqrt{a_x^2 + a_y^2 + a_z^3}$$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Unit vector
+&lt;ul>
+&lt;li>Has length of one&lt;/li>
+&lt;li>If .$\vec a \neq 0$ then the unit vector .$\vec u$ in the same direction as .$\vec a$ is:
+&lt;ul>
+&lt;li>$$\vec u = \frac{\vec a}{\Vert \vec a \Vert} = \frac{1}{\Vert \vec a \Vert} \vec a$$&lt;/li>
+&lt;li>Notice that .$\frac{1}{\Vert \vec a \Vert}$ is a &lt;em>scalar&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="123-dot-product">
+ 12.3 Dot Product
+ &lt;a class="anchor" href="#123-dot-product">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>The dot product measures the extent which two vectors are parallel to one another
+&lt;ul>
+&lt;li>Two vectors are perpendicular/orthogonal .$\perp$ (.$90^\circ$ from one another) iff the dot product is 0&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>.$\vec a \cdot \vec b$ is the length of .$\vec a$ times the scalar projection of .$\vec b$ onto .$\vec a$&lt;/li>
+&lt;li>Notice that the dot product gives a &lt;em>scalar&lt;/em>
+$$\langle a_1, a_2, a_3 \rangle \cdot \langle b_1, b_2, b_3 \rangle = a_1b_1 + a_2b_2 + a_3b_3$$
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- begin -->
+&lt;p>$$\vec a \cdot (\vec b + \vec c) = \vec a \cdot \vec b + \vec a\cdot \vec c$$
+$$ \vec a \cdot \vec a = \Vert \vec a \Vert ^2$$
+$$ \vec a \cdot \vec b = \vec b \cdot \vec a $$
+$$ (c \vec a) \cdot \vec b = c (\vec a \cdot \vec b) = \vec a \cdot (c \vec b)$$&lt;/p></description></item><item><title>13: Vector Functions</title><link>http://notes.mehvix.com/math-53/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/13/</guid><description>&lt;h1 id="131-vector-functions-and-space-curves">
+ 13.1 Vector Functions and Space Curves
+ &lt;a class="anchor" href="#131-vector-functions-and-space-curves">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="vector-functions">
+ Vector Functions
+ &lt;a class="anchor" href="#vector-functions">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>We can write a vector function as
+$$\vec r(t) = \langle f(t), g(t), h(t) \rangle = f(t) \hat i + g(t) \hat j + h(t) \hat k$$&lt;/li>
+&lt;li>The domain of .$\vec r$ consists of all values of .$t$ for which each of the terms are defined&lt;/li>
+&lt;li>The limit of a vector function is
+$$\lim_{t\to a} \vec r(t) = \big\langle \lim_{t\to a} f(t), \lim_{t\to a} g(t), \lim_{t\to a} h(t) \big\rangle$$&lt;/li>
+&lt;li>.$\vec r$ is continuous at time .$a$ if .$\lim_{t\to a} \vec r(t) = \vec r(a)$&lt;/li>
+&lt;/ul>
+&lt;h2 id="space-curve">
+ Space Curve
+ &lt;a class="anchor" href="#space-curve">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The set .$C$ of all points defined by a vector function .$\vec r$ over interval .$I$ is called a space curve.&lt;/li>
+&lt;li>Think of .$C$ as being traced out by a moving particle whose position follows .$\vec r$&lt;/li>
+&lt;li>Space curves are parametrized by a vector function but isn&amp;rsquo;t necessarily that vector function!
+&lt;ul>
+&lt;li>E.x. .$\vec r(t) \langle \cos t, \sin t, t \rangle \neq \vec q(t) = \langle \cos 3t, \sin 3t, 3t \rangle$&lt;/li>
+&lt;li>Space curves exist on the same point, but don&amp;rsquo;t grow at the same rate&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="132-derivatives-and-integrals-of-vector-functions">
+ 13.2 Derivatives and Integrals of Vector Functions
+ &lt;a class="anchor" href="#132-derivatives-and-integrals-of-vector-functions">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="derivatives">
+ Derivatives
+ &lt;a class="anchor" href="#derivatives">#&lt;/a>
+&lt;/h2>
+&lt;p>$$\frac{d\vec r}{dt} = \vec r&amp;rsquo;(t) = \lim_{h \to 0} \frac{\vec r(t+h) - r(t)}{h}$$
+$$&amp;hellip; = \big\langle f&amp;rsquo;(t), g&amp;rsquo;(t), h&amp;rsquo;(t) \big\rangle$$&lt;/p></description></item><item><title>14: Partial Derivatives</title><link>http://notes.mehvix.com/math-53/14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/14/</guid><description>&lt;h1 id="141-functions-of-several-variables">
+ 14.1 Functions of Several Variables
+ &lt;a class="anchor" href="#141-functions-of-several-variables">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>In the real world, most things don&amp;rsquo;t depend on a single variable
+&lt;ul>
+&lt;li>Temperature may depend on the .$(x,y)$ (latitude/longitude) position&lt;/li>
+&lt;li>Volume of a cylinder depends on radius .$r$ and height .$h$: .$V =\pi r^2 h$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Formal Definition&lt;/strong>: A function .$f$ of two variables is a rule that assigns to each ordered pair of real numbers .$(x,y)$ in a set .$D$ a unique real number denoted by .$f(x,y)$. The set .$D$ is the &lt;strong>domain&lt;/strong> of .$f$ and its range is the set of values that .$f$ takes on, that is, .$\{f(x,y)\ |\ (x,y) \in D \}$.
+&lt;ul>
+&lt;li>E.x. for .$f(x,y) = \frac{\sqrt{x+y+1}}{x-1}$, the domain is .$D = \{(x,y)\ |\ x + y + 1 \geq 0, x \neq 1\}$ which can be graphed with a &lt;em>solid&lt;/em> line following .$y =-x-1$ with a &lt;em>dotted&lt;/em> line at .$x = 1$&lt;/li>
+&lt;li>E.x. for .$f(x,y) = x\ln(y^2-x)$, the domain is .$D =\{(x,y)\ |\ x&amp;lt;y^2\}$. This can be graphed with a &lt;em>dotted&lt;/em> line following the curve .$x = y^2$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>For the equation .$z = f(x,y)$, .$x,y$ are the independent variables and .$z$ is the dependent variable &amp;ndash; similar to single variable equations&lt;/li>
+&lt;li>We can visualize functions of two variables (i.e .$f(x,y)$) by graphing them in 3D as .$(x,y,f(x,y))$
+&lt;ul>
+&lt;li>We can then write &lt;strong>level curves&lt;/strong> for the function by setting .$f(x,y) = k$ for some .$k$onstant in the range of .$f$. This will result in a graph similar to a 
+ &lt;a href="https://en.wikipedia.org/wiki/Topographic_map">Topographic map&lt;/a>
+
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/level-curves.png" alt="Level Curves" />
+&lt;blockquote class="book-hint info">
+ &lt;strong>Level Curve:&lt;/strong> The level curves of a function .$f$ of two variables are the curves with equations .$f(x,y) = k$, where .$k$ is a constant (in the range of .$f$).
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="142-limits-and-continuity">
+ 14.2 Limits and Continuity
+ &lt;a class="anchor" href="#142-limits-and-continuity">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="limits">
+ Limits
+ &lt;a class="anchor" href="#limits">#&lt;/a>
+&lt;/h2>
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/vec-limit.png" alt="Vector Limit" />
+&lt;blockquote class="book-hint info">
+ &lt;strong>Vector Limit:&lt;/strong> Let .$f$ be a function of two variables whose domain .$D$ includes points arbitrarily close to .$(a, b)$. Then we say that the &lt;strong>limit of&lt;/strong> .$f(x, y)$ &lt;strong>as&lt;/strong> .$(x, y)$ &lt;strong>approaches&lt;/strong> .$a, b.$ is .$L$ and we write
+$$\lim_{(x,y)\to(a,b)} f(x,y) = L$$
+if for every number .$\varepsilon &amp;lt; 0$ there is a corresponding number .$\delta &amp;lt; 0$ such that if .$(x, y) \in D$ and .$0 &amp;lt; \sqrt{(x-a)^2 + (y-b)^2} &amp;lt; \delta$ then .$\vert f(x,y) - L \vert &amp;lt; \varepsilon$
+&lt;/blockquote>
+&lt;/p></description></item><item><title>15: Multiple Integrals</title><link>http://notes.mehvix.com/math-53/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/15/</guid><description>&lt;h1 id="151-double-integrals-over-rectangles">
+ 15.1 Double Integrals over Rectangles
+ &lt;a class="anchor" href="#151-double-integrals-over-rectangles">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>We describe closed rectangles in the form .$R = [a,b] \times [c,b] = \{(x,y) \in \mathbb{R}^2 \vert a \leq x \leq b, c \leq y \leq d\}$&lt;/li>
+&lt;li>Then we can write the solid .$S$ that lies above .$R$ as .$S = \{(x,y,z) \in \mathbb{R}^3 \vert 0 \leq z \leq f(x,y), (x,y) \in R\}$&lt;/li>
+&lt;li>To find the volume of this surface, we take a double integral
+$$V = \iint_R f(x,y)\ dA$$&lt;/li>
+&lt;/ul>
+&lt;blockquote class="book-hint info">
+ &lt;strong>Fubini&amp;rsquo;s Theorem:&lt;/strong> If .$f$ is continuous on the rectangle .$R = \{(x,y) \vert a \leq x \leq b, c \leq y \leq d\}$, then
+$$\iint_R f(x,y)\ dA = \int_a^b \int_c^d f(x,y)\ dy\ dx = \int_c^d \int_a^b f(x,y)\ dx\ dy$$
+More generally, this is true if we assume that .$f$ is bounded on .$R$, .$f$ is discontinuous only on a finite number of smooth curves, and the iterated integrals exist.
+&lt;/blockquote>
+
+&lt;h2 id="average-value">
+ Average Value
+ &lt;a class="anchor" href="#average-value">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>In the 2D case we could write the average as
+$$f_\text{avg} = \frac{1}{b-a} \int_a^b f(x) dx$$&lt;/li>
+&lt;li>For 3D, instead of dividing by the change in just .$y$ (which was .$b-a$), we divide over the total area:
+$$f_\text{avg} = \frac{1}{A(R)}\iint_R f(x,y)\ dA$$&lt;/li>
+&lt;/ul>
+&lt;h1 id="152-double-integrals-over-general-regions">
+ 15.2 Double Integrals over General Regions
+ &lt;a class="anchor" href="#152-double-integrals-over-general-regions">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="type-i">
+ Type I
+ &lt;a class="anchor" href="#type-i">#&lt;/a>
+&lt;/h2>
+&lt;blockquote class="book-hint info">
+ If .$f$ is continuous on a type I region .$D$ such that
+$$D = \{(x,y)\ \vert\ a \leq x \leq b,\ g_1(x) \leq y \leq g_2(x)\ \}$$
+then
+$$\int_D f(x,y)\ dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx$$
+&lt;/blockquote>
+
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/type1.png" alt="Type I" />&lt;/p></description></item><item><title>16: Vector Calculus</title><link>http://notes.mehvix.com/math-53/16/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/16/</guid><description>&lt;h1 id="161-vector-fields">
+ 16.1 Vector Fields
+ &lt;a class="anchor" href="#161-vector-fields">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>A vector field in .$\mathbb{R}^3$ is a function .$\vec F$ on region .$E \in \mathbb{R}^3$ that assigns each point .$(x,y,z)$ a vector .$F(x,y,z)$&lt;/li>
+&lt;li>.$\vec F$ is made up of &lt;strong>component function:&lt;/strong> .$\vec F(x,y,z) = \langle P(x,y,z)\hat i, Q(x,y,z) \hat j, R(x,y,z) \hat k\rangle$
+&lt;ul>
+&lt;li>.$\vec F$ is continuos iff its component vectors are continuos&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>.$\vec F$ is &lt;strong>
+ &lt;a href="https://en.wikipedia.org/wiki/Conservative_vector_field">conservative&lt;/a>&lt;/strong> (path taken doesn&amp;rsquo;t change work) iff potential function .$f(x,y,z)$ is a partial of .$\vec F$
+$$\vec F = \nabla f$$
+&lt;ul>
+&lt;li>Notice that the gradient lines are always perpendicular to the 
+ &lt;a href="https://en.wikipedia.org/wiki/Level_set#/media/File:Himmelblau_contour.svg">level sets&lt;/a>
+&lt;ul>
+&lt;li>If the function .$f$ is differentiable, .$\nabla f$ at a point is either zero or perpendicular to the level set of .$f$ at that point.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>That is, that the gradient of a function is called a gradient field which is always conservative (the fundamental theorem of calculus for line integrals)
+&lt;ul>
+&lt;li>Conversely, a (continuous) conservative vector field is always the gradient of a function&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="162-line-integrals">
+ 16.2 Line Integrals
+ &lt;a class="anchor" href="#162-line-integrals">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>We know that the distance (length) normally is .$L = \int_a^b \sqrt{(dx/dt)^2 + (dy/dt)^2}\ dt$&lt;/li>
+&lt;li>Over a vector field, we can think of the function being the density of the line (or height of particle). Therefore, we say .$ds = \int_a^b \sqrt{(dx/dt)^2 + (dy/dt)^2}\ dt$ and can write
+$$\int_C f(x,y) ds = \int_a^bf(x(t), y(t)) \cdot \sqrt{\bigg(\frac{dx}{dt}\bigg)^2 + \bigg(\frac{dy}{dt}\bigg)^2} dt$$
+and for 3D in a slightly different form:
+$$\int_a^b f (\vec r (t) ) \vert \vec r&amp;rsquo;(t) \vert \Longrightarrow \int_a^b f(x(t), y(t), z(t)) \cdot \sqrt{x&amp;rsquo;(t)^2 + y&amp;rsquo;(t)^2 + z&amp;rsquo;(t)^2} dt$$
+
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/line-int.gif" alt="Line Integral gif" />&lt;/li>
+&lt;li>We can write .$\vec a \to \vec b$ as .$(1-t)\vec a + t\vec b$ with .$t\in[0,1]$&lt;/li>
+&lt;li>Just like usual, we can break up un-integrable smooth curves, i.e
+$$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^z f_n(x,y)$$&lt;/li>
+&lt;/ul>
+&lt;h2 id="wrt-variable">
+ wrt variable
+ &lt;a class="anchor" href="#wrt-variable">#&lt;/a>
+&lt;/h2>
+&lt;p>Opposed to the line integrals on .$f$ along .$C$ with respect to .$x$ &lt;strong>both&lt;/strong> and .$y$, we can write line integral with respect to arc length as follows:&lt;/p></description></item><item><title>Trig Identities</title><link>http://notes.mehvix.com/math-53/trig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig/</guid><description>&lt;h2 id="reciprocal-identities">
+ Reciprocal Identities
+ &lt;a class="anchor" href="#reciprocal-identities">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- begin -->
+&lt;p>$$\sin(x)=\frac{1}{\csc(x)}$$&lt;/p>
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- separator -->
+&lt;p>$$\cos(x)=\frac{1}{\sec(x)}$$&lt;/p>
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- separator -->
+&lt;p>$$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$&lt;/p>
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="pythagorean-identities">
+ Pythagorean Identities
+ &lt;a class="anchor" href="#pythagorean-identities">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- begin -->
+&lt;p>$$\sin^2(x) + \cos^2(x) = 1$$&lt;/p>
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- separator -->
+&lt;p>$$1+\tan^2(x) = \sec^2(x)$$&lt;/p>
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- separator -->
+&lt;p>$$1+\cot^2(x)=\csc^2(x)$$&lt;/p>
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="cofunction-identities">
+ Cofunction Identities
+ &lt;a class="anchor" href="#cofunction-identities">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- begin -->
+&lt;p>$$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$
+$$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$&lt;/p>
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- separator -->
+&lt;p>$$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$
+$$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$&lt;/p></description></item><item><title>Trig Calculus</title><link>http://notes.mehvix.com/math-53/trig-calc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig-calc/</guid><description>&lt;h1 id="derivatives">
+ Derivatives
+ &lt;a class="anchor" href="#derivatives">#&lt;/a>
+&lt;/h1>
+&lt;p>$$\frac{d}{dx} \tan(x) = 1 + \tan^2(x) = \sec^2(x)$$
+$$\frac{d}{dx} \csc(x) = -\cot(x) \cdot \csc(x)$$
+$$\frac{d}{dx} \sec(x) = \frac{\sin(x)}{\cos^2(x)} = \tan(x) \cdot \sec(x)$$
+$$\frac{d}{dx} \cot(x) = -\csc^2(x)$$
+$$\frac{d}{dx} \log_a(x) = \frac{1}{x\cdot \ln(a)}$$
+$$\frac{d}{dx} a^u = a^x \cdot \ln (a) du$$
+$$\frac{d}{dx} \sin^2(x) = \sin(2x)$$
+$$\frac{d}{dx} \cos^2(x) = -\sin(2x)$$
+$$\frac{d}{dx} \tan^2(x) = 2\tan(x)\cdot \sec^2(x)$$&lt;/p>
+&lt;!-- $$\frac{d}{dx} $$ -->
+&lt;h1 id="integrals">
+ Integrals
+ &lt;a class="anchor" href="#integrals">#&lt;/a>
+&lt;/h1>
+&lt;p>$$\int a^x dx = \bigg(\frac{1}{\ln(a)}\bigg) a^x + C $$
+$$\int \tan(x) dx = -\ln\vert \cos(x) \vert + C$$
+$$\int \tan^2(x) dx = \tan(x) - x + C$$
+$$\int \csc(x) dx = \ln\vert \csc(x) - \cot(x)\vert + C = \ln \bigg\vert \tan\bigg(\frac{x}{2}\bigg)\bigg\vert + C$$
+$$\int \csc^2(x) dx = -\cot(x) + C$$
+$$\int \sec(x) dx = -\ln\vert \sec(x) + \tan(x)\vert + C$$
+$$\int \sec^2(x) dx = \tan(x) + C$$
+$$\int \cot(x) dx = \ln\vert \sin(x) \vert + C$$
+$$\int \cot^2(x) dx = -\cot(x) - x + C$$
+$$\int \frac{1}{\sin(ax)\cos(ax)} = \frac{1}{a} \ln\vert\tan(ax)\vert + C$$
+$$\int \frac{1}{x\sqrt{x^2-a^2}} dx = \frac{1}{a} \sec^{-1}\bigg( \frac{\vert x \vert}{a}\bigg) + C$$
+$$\int \frac{1}{\sqrt{a^2-x^2}} dx = \sin^{-1}\bigg( \frac{x}{a} \bigg) + C$$
+$$\int \frac{1}{a^2 + x^2} dx = \frac{1}{a} \tan^{-1}\bigg( \frac{x}{a} \bigg) + C$$&lt;/p></description></item></channel></rss>

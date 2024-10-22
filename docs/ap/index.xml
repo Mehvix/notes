@@ -1,5 +1,184 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AP Notes on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/ap/</link><description>Recent content in AP Notes on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/ap/index.xml" rel="self" type="application/rss+xml"/><item><title>AP Human Geography</title><link>http://notes.mehvix.com/ap/huge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/huge/</guid><description>The content of these notes are solid, but formatting is not since they&amp;rsquo;re exported from Notion.
-🗺️ Unit 1 — Thinking Geographically # Developing Understanding
-This first unit sets the foundation for the course by teaching students how geographers approach the study of places. Students are encouraged to reflect on the “why of where” to better understand geographic perspectives. Many other high school courses ask students to read and analyze data, but for this course, students also apply a spatial perspective when reading and analyzing qualitative and quantitative data.</description></item><item><title>AP Physics C: Mechanics</title><link>http://notes.mehvix.com/ap/cmech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/cmech/</guid><description>This are very disjoint notes I took long ago. I would recommend using this for practice qs and perhaps equation review after you have a solid understanding of the chapters. My other notes are much more comprehensive, I swear! :)
-1. Kinematics # Four Primary Equations # $$\Delta x=\frac{1}{2}(v_f-v_i)\Delta t \text{ &amp;ndash; no } a$$ $$v_f=v_i+a\Delta t \text{ &amp;ndash; no } x$$ $$\Delta x=v_i \Delta t+\frac{1}{2}a \Delta t^2 \text{ &amp;ndash; no } v_f$$ $$\Delta x=v_f \Delta t-\frac{1}{2}a \Delta t^2 \text{ &amp;ndash; no } v_i$$ $$v_f^2=v_i^2+2a \Delta x \text{ &amp;ndash; no } t$$ Used when .</description></item><item><title>AP Statistics</title><link>http://notes.mehvix.com/ap/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/stats/</guid><description>The content of these notes are solid, but formatting is not since they&amp;rsquo;re exported from Notion.
-Unit 1: Exploring One-Variable Data # Types of Variables # Categorical variables assigns labels that place each individual into a particular group, called a category. Zip code. hair color Quantitative variables takes number values that are quantities—counts or measurements. Height, GPA Explanatory x on graph independent variable — what we&amp;rsquo;re changing measures an outcome of a study.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AP Notes on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/ap/</link><description>Recent content in AP Notes on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/ap/index.xml" rel="self" type="application/rss+xml"/><item><title>AP Human Geography</title><link>http://notes.mehvix.com/ap/huge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/huge/</guid><description>&lt;blockquote class="book-hint warning">
+ &lt;!-- mathjax fix -->
+&lt;p>The content of these notes are solid, but formatting is not since they&amp;rsquo;re exported from Notion.&lt;/p>
+&lt;/blockquote>
+
+&lt;h1 id="-unit-1--thinking-geographically">
+ 🗺️ Unit 1 — Thinking Geographically
+ &lt;a class="anchor" href="#-unit-1--thinking-geographically">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;strong>Developing Understanding&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>This first unit sets the foundation for the course by teaching students how geographers approach the study of places. Students are encouraged to reflect on the “why of where” to better understand geographic perspectives. Many other high school courses ask students to read and analyze data, but for this course, students also apply a spatial perspective when reading and analyzing qualitative and quantitative data.
+Students learn the ways information from data sources such as maps, tables, charts, satellite images, and infographics informs policy decisions such as voting redistricting or expanding transportation networks. They also learn about how people influence and are influenced by their environment; the resulting impact on topography, natural resources, and climate; and the differences between and consequences of environmental determinism and possibilism.
+Finally, students are introduced to the language of geography, learning discipline-specific terminology and applying that language to contemporary, real-world scenarios so they can better study population processes and patterns in the next unit.&lt;/p></description></item><item><title>AP Physics C: Mechanics</title><link>http://notes.mehvix.com/ap/cmech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/cmech/</guid><description>&lt;blockquote class="book-hint warning">
+ &lt;!-- mathjax fix -->
+&lt;p>This are very disjoint notes I took long ago. I would recommend using this for practice qs and perhaps equation review after you have a solid understanding of the chapters. My other notes are much more comprehensive, I swear! :)&lt;/p>
+&lt;/blockquote>
+
+&lt;h1 id="1-kinematics">
+ 1. Kinematics
+ &lt;a class="anchor" href="#1-kinematics">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="four-primary-equations">
+ Four Primary Equations
+ &lt;a class="anchor" href="#four-primary-equations">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>$$\Delta x=\frac{1}{2}(v_f-v_i)\Delta t \text{ &amp;ndash; no } a$$&lt;/li>
+&lt;li>$$v_f=v_i+a\Delta t \text{ &amp;ndash; no } x$$&lt;/li>
+&lt;li>$$\Delta x=v_i \Delta t+\frac{1}{2}a \Delta t^2 \text{ &amp;ndash; no } v_f$$
+$$\Delta x=v_f \Delta t-\frac{1}{2}a \Delta t^2 \text{ &amp;ndash; no } v_i$$&lt;/li>
+&lt;li>$$v_f^2=v_i^2+2a \Delta x \text{ &amp;ndash; no } t$$&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Used when .$a$cceration is constant&lt;/li>
+&lt;/ul>
+&lt;h2 id="slope-and-area">
+ Slope and Area
+ &lt;a class="anchor" href="#slope-and-area">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/ap/mech/Untitled.png" alt="/docs/ap/mech/Untitled.png" />&lt;/p></description></item><item><title>AP Statistics</title><link>http://notes.mehvix.com/ap/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/stats/</guid><description>&lt;blockquote class="book-hint warning">
+ &lt;!-- mathjax fix -->
+&lt;p>The content of these notes are solid, but formatting is not since they&amp;rsquo;re exported from Notion.&lt;/p>
+&lt;/blockquote>
+
+&lt;h1 id="unit-1-exploring-one-variable-data">
+ Unit 1: Exploring One-Variable Data
+ &lt;a class="anchor" href="#unit-1-exploring-one-variable-data">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="types-of-variables">
+ Types of Variables
+ &lt;a class="anchor" href="#types-of-variables">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Categorical variables assigns labels that place each individual into a particular group, called a category.
+&lt;ul>
+&lt;li>Zip code. hair color&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Quantitative&lt;/strong> variables takes number values that are quantities—counts or measurements.
+&lt;ul>
+&lt;li>Height, GPA&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Explanatory
+&lt;ul>
+&lt;li>x on graph&lt;/li>
+&lt;li>independent variable — what we&amp;rsquo;re changing&lt;/li>
+&lt;li>measures an outcome of a study.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Response
+&lt;ul>
+&lt;li>y on graph&lt;/li>
+&lt;li>(potentially) dependent variable — what we&amp;rsquo;re measuring&lt;/li>
+&lt;li>may help predict or explain changes in a response variable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Confounding
+&lt;ul>
+&lt;li>Any factor that messes skews data&lt;/li>
+&lt;li>Confounding occurs when two variables are associated in such a way that their effects on a response variable cannot be distinguished from each other.&lt;/li>
+&lt;li>If you are asked to identify a possible confounding variable in a given setting, you are expected to explain how the variable you choose (1) is associated with the explanatory variable and (2) is associated with the response variable.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="frequencies">
+ Frequencies
+ &lt;a class="anchor" href="#frequencies">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>A &lt;strong>frequency table&lt;/strong> shows the number of individuals having each value.
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled.png" alt="/docs/ap/stats/Untitled.png" />&lt;/li>
+&lt;li>A &lt;strong>relative frequency table&lt;/strong> shows the proportion or percent of individuals having each value.&lt;/li>
+&lt;li>A &lt;strong>marginal relative frequency&lt;/strong> gives the percent or proportion of individuals that have a specific value for one Categorical variable.
+&lt;ul>
+&lt;li>What percent of people in the sample are environmental club members?
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled-1.png" alt="/docs/ap/stats/Untitled-1.png" />&lt;/li>
+&lt;li>What proportion of people in the sample never used a snowmobile?
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled-2.png" alt="/docs/ap/stats/Untitled-2.png" />&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A &lt;strong>joint relative frequency&lt;/strong> gives the percent or proportion of individuals that have a specific value for one Categorical variable and a specific value for another Categorical variable.
+&lt;ul>
+&lt;li>We can compute marginal relative frequencies for the row totals to give the distribution of snowmobile use for all the individuals in the sample:
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled-3.png" alt="/docs/ap/stats/Untitled-3.png" />&lt;/li>
+&lt;li>We can compute marginal relative frequencies for the column totals to give the distribution of environmental club membership in the entire sample of 1526 park visitors
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled-4.png" alt="/docs/ap/stats/Untitled-4.png" />&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A &lt;strong>conditional relative frequency&lt;/strong> gives the percent or proportion of individuals that have a specific value for one Categorical variable among individuals who share the same value of another Categorical variable (the condition).
+&lt;ul>
+&lt;li>What proportion of snowmobile renters in the sample are not environmental club members?
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled-5.png" alt="/docs/ap/stats/Untitled-5.png" />&lt;/li>
+&lt;li>What percent of environmental club members in the sample are snowmobile owners?
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled-6.png" alt="/docs/ap/stats/Untitled-6.png" />&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="types-of-graphs">
+ Types of Graphs
+ &lt;a class="anchor" href="#types-of-graphs">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Pie Chart — Categorical
+&lt;ul>
+&lt;li>Need frequency value and corresponding label
+&lt;ul>
+&lt;li>Doesn&amp;rsquo;t show sample size&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Bar Graph — Categorical
+&lt;ul>
+&lt;li>Needs bar labels, axis names, units, vertical axis scale should start at 0&lt;/li>
+&lt;li>A &lt;strong>side-by-side bar graph&lt;/strong> displays the distribution of a Categorical variable for each value of another Categorical variable. The bars are grouped together based on the values of one of the Categorical variables and placed side by side.&lt;/li>
+&lt;li>A &lt;strong>segmented bar graph&lt;/strong> displays the distribution of a Categorical variable as segments of a rectangle, with the area of each segment proportional to the percent of individuals in the corresponding category.
+&lt;ul>
+&lt;li>Doesn&amp;rsquo;t show sample size, only proportions
+&lt;ul>
+&lt;li>This can be fixed by using a mosaic plot which scales the width corresponding to size&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Dotplot — Quantitative
+&lt;ul>
+&lt;li>A dot plot shows each data value as a dot above its location on a number line.&lt;/li>
+&lt;li>Needs title, axis label, unit of measurement&lt;/li>
+&lt;li>How to find percentile
+&lt;ul>
+&lt;li>Percentile is the percent of people you&amp;rsquo;re better than, or percent of people that are worse than you&lt;/li>
+&lt;li>Find how many points the decided point is ahead of, then divide by sample size
+
+ &lt;img src="http://notes.mehvix.com/docs/ap/stats/Untitled-7.png" alt="/docs/ap/stats/Untitled-7.png" />
+The blue point is greater than 17 points, making it 17/20 —&amp;gt; in the 85% percentile&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Stemplot — Quantitative
+&lt;ul>
+&lt;li>A stemplot shows each data value separated into two parts: a stem, which consists of all but the final digit, and a leaf, the final digit. The stems are ordered from lowest to highest and arranged in a vertical column. The leaves are arranged in increasing order out from the appropriate stems.&lt;/li>
+&lt;li>Needs key and title
+&lt;ul>
+&lt;li>&lt;strong>Key should give context&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Key: 8|2 is a [context — student whose resting pulse rate] is 82 [beats per minute]&lt;/p></description></item></channel></rss>

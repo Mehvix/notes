@@ -1,7 +1,589 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EECS 16A on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/eecs-16a/</link><description>Recent content in EECS 16A on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/eecs-16a/index.xml" rel="self" type="application/rss+xml"/><item><title>0: System Design &amp; Linear Equations</title><link>http://notes.mehvix.com/eecs-16a/0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/0/</guid><description>01-18: Course Introduction # Slides Notes 0, 1A All logistics, no notes!
-01-20: Introduction to Imaging, Tomography, and Linear Equations # Slides Notes 1A, 1B System Design # We use devices, such as imagers, that provide information, such as a visual representation of a system Often, these devices don’t work alone &amp;ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.</description></item><item><title>1: Gaussian Elim. &amp; Matrices + Vectors</title><link>http://notes.mehvix.com/eecs-16a/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/1/</guid><description>01-25: Gaussian Elimination, Vectors # Slides Notes 2A, 2B Upper Triangular Systems # Consider the following equation $$x-y+2z=1$$ $$y-z=2$$ $$z=1$$ &amp;hellip;which can be represent as an augmented matrix: $$\begin{bmatrix} 1 &amp;amp; -1 &amp;amp; 2 &amp;amp; \text{|} &amp;amp; 1\\ 0 &amp;amp; 1 &amp;amp; -1 &amp;amp; \text{|} &amp;amp; 2\\ 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; \text{|} &amp;amp; 1 \end{bmatrix}$$
-These are called upper triangle matrices &amp;ndash; they are nice in that they&amp;rsquo;re easy to solve!</description></item><item><title>2: (In)dependence &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/2/</guid><description>02-01: Linear (in)dependance, Matrix Transformations # Slides Note 3 Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable.</description></item><item><title>3: Transformations &amp; Inverse</title><link>http://notes.mehvix.com/eecs-16a/3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/3/</guid><description>02-08: Matrix Transformations # Slides Note 4 Linear Transformations # Linear Transformation: In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation. Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector .$\vec b^{M \times 1}$ of outputs That is, matrices are operators that transform vectors Just as .</description></item><item><title>4: Vector Spaces &amp; Eigenstuff</title><link>http://notes.mehvix.com/eecs-16a/4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/4/</guid><description>02-15: Vector Spaces: Null Spaces and Columnspaces # Slides Notes 7 8 Important Jargon # Rank a matrix .$A$ is the number of linearly independent columns Nullspace of a matrix is the set of solutions to .$A \vec x = 0$ A vector space is a set of vectors connected by two operators: .$+, \times$ &amp;mdash; page 48 A vector subspace is a subset of vectors that have “nice properties” &amp;mdash; page 50 A basis for a vector space is a minimum set of vectors needed to represent all vectors in the space Dimension of a vector space is the number of basis vectors Column space is the span (range) of the columns of a matrix Row space is the span of the rows of a matrix Vector Spaces # A vector space .</description></item><item><title>5: Basis &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/5/</guid><description>02-22 Basis # Note 10 Slides Change of Basis # Previously we’ve seen that a basis for a vector space is a minimal spanning set of vectors. We can also define the standard basis vectors, e,x. the standard basis for .$ \mathbb{R}^{3}$ is the set .$\mathbb{E}$: $$\mathbb{E} = \big(\hat i, \hat j, \hat k \big)$$ $$\dots \equiv ( \vec e_1, \vec e_2, \vec e_3)$$ $$\dots \equiv \left( \begin{bmatrix} 1\\ 0\\ 0\\ \end{bmatrix}, \begin{bmatrix} 0\\ 1\\ 0\\ \end{bmatrix}, \begin{bmatrix} 0\\ 0\\ 1\\ \end{bmatrix}\right) $$</description></item><item><title>6: Voltage Dividers &amp; Measurement</title><link>http://notes.mehvix.com/eecs-16a/6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/6/</guid><description>\(\) 03-01: Voltage Dividers # Voltage Divider # The voltage divider circuit consists of a voltage source (.$V_S$) and two resistors (.$R_1$ and .$R_2$) Example: We label the node connected to the voltage supply as .$u_1 (= V_S)$, since the voltage supply goes between this node and ground. Label the remaining node as .$u_\text{mid}$ and the voltages and currents through every element in the circuit with .$V_i$ and .$I_i$ respectively Write KCL equations for all nodes with unknown voltage - in this case, this is just .</description></item><item><title>7: 2D Touchscreens &amp; Superp. + Equivalence</title><link>http://notes.mehvix.com/eecs-16a/7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/7/</guid><description>\(\) 03-08: 2D Resistive Touchscreens # Bottom Plate # Trivially, we see that if we add a wire connected to $u_\text{mid}$ that will have the same voltage across it (wires have zero voltage drop) So why have the bottom plate at all? It lets us take the measurement for $V_\text{out}$ using connection points on the edge of the plate instead of having to put a probe or wire at the actual touch point every time!</description></item><item><title>8: Capacitors &amp; Capacitive Touchscreen</title><link>http://notes.mehvix.com/eecs-16a/8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/8/</guid><description>\(\) 03/15 Capacitors # Structure and Physics # See also, 7B 24
-Capacitors is a circuit element that stores charge Positive charges build up on the (top) surface of the plate connected to the positive terminal and negative charges build up on the (bottom) surface of the plate connected to the negative terminal. Capacitors have an associated quantity, $C$apacitance (farads); the ratio of the amount of electric charge $Q$ (coulombs) stored on a conductor to a difference in electric potential $V$ Units: Farads, $F = \frac{C}{V}$.</description></item><item><title>9: Op-Amps, Comparators &amp; Charge Sharing</title><link>http://notes.mehvix.com/eecs-16a/9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/9/</guid><description>\(\) 03/29: Operational Amplifier and Comparator # Dependent Sources # As briefly mentioned before, the voltage and current sources covered so far have been independent sources, meaning they have a constant, fixed value. However, dependent sources also generate currents and voltages but their output depends on some other &amp;ldquo;controlling&amp;rdquo; current .$i_x$ or voltage .$v_x$ in the circuit.
-VCVS: Voltage-controlled voltage source .$V = f_a (v_x)$ Unitless.$^1$ voltage gain .$a$ E.</description></item><item><title>10: NFB, GRs &amp; Buffer + Loading</title><link>http://notes.mehvix.com/eecs-16a/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/10/</guid><description>\(\) 04/05: # Negative Feedback (NFB) # The main idea is &amp;lsquo;how do we get an op-amp to output a voltage that isn&amp;rsquo;t railing?&amp;rsquo; Negative feedback refers to the idea that there is some output amount that is the ideal or intended amount If the actual amount becomes larger than this reference, then the system must detect this deviation and bring it down to the reference. Similarly, if the actual amount drops too low, the system must bring it back up to the reference.</description></item><item><title>11: Locationing &amp; Trilateration</title><link>http://notes.mehvix.com/eecs-16a/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/11/</guid><description>\(\) Positioning Systems # Just read Note 21.1-2
-Vectors # Inner Products # The Euclidean inner product between two vectors $\vec u, \vec v$ is defined as&amp;hellip; $$\langle \vec u, \vec v \rangle \equiv \vec u \cdot \vec v \equiv \vec u^T \vec v$$
-$$\dots = \begin{bmatrix} v_1 v_2 \dots v_n \end{bmatrix}\begin{bmatrix} u_1\\ u_2\\ \vdots \\ u_n \end{bmatrix}$$ $$\dots = v_1 u_1 + v_2 u_2 + \dots v_n u_n$$ $$\dots = \sum_{i=1}^n v_i u_i$$</description></item><item><title>12-13: Least Squares &amp; ML</title><link>http://notes.mehvix.com/eecs-16a/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/12/</guid><description>\(\) Least Squares # Motivation # We want to find an approximate solution &amp;ndash; one that satisfies all the given equations/information as closely as possible to&amp;hellip; Minimize the impact of noise/errors Solve overdetermined systems &amp;ndash; we&amp;rsquo;ll often be collecting abundant information, thus we have more equations than unknowns Applications: Least squares is the fundamental idea behind data fitting and machine learning In data (curve) fitting, we find lines or curves that best match the data In machine learning, we use a best-fit curve to make predictions about new, unseen data.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EECS 16A on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/eecs-16a/</link><description>Recent content in EECS 16A on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/eecs-16a/index.xml" rel="self" type="application/rss+xml"/><item><title>0: System Design &amp; Linear Equations</title><link>http://notes.mehvix.com/eecs-16a/0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/0/</guid><description>&lt;h1 id="01-18-course-introduction">
+ 01-18: Course Introduction
+ &lt;a class="anchor" href="#01-18-course-introduction">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture0A_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>Notes 
+ &lt;a href="https://eecs16a.org/lecture/Note0.pdf">0&lt;/a>, 
+ &lt;a href="https://eecs16a.org/lecture/Note1A.pdf">1A&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>All logistics, no notes!&lt;/p>
+&lt;h1 id="01-20-introduction-to-imaging-tomography-and-linear-equations">
+ 01-20: Introduction to Imaging, Tomography, and Linear Equations
+ &lt;a class="anchor" href="#01-20-introduction-to-imaging-tomography-and-linear-equations">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture0B_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>Notes 
+ &lt;a href="https://eecs16a.org/lecture/Note1A.pdf">1A&lt;/a>, 
+ &lt;a href="https://eecs16a.org/lecture/Note1B.pdf">1B&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="system-design">
+ System Design
+ &lt;a class="anchor" href="#system-design">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>We use &lt;em>devices&lt;/em>, such as imagers, that provide &lt;em>information&lt;/em>, such as a visual representation of a system
+&lt;ul>
+&lt;li>Often, these devices don’t work alone &amp;ndash; they are part of a larger system that uses a combination of both physical sensors and signal processing techniques.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>When we take projections of images, we tend to need to take multiple measuring (pictures) from differing angles
+&lt;ul>
+&lt;li>Otherwise we have issues with overlap and ambiguity&lt;/li>
+&lt;li>To generate 3D models, we need these multiple perspectives&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>We ideally want to design a system that gives us a set of linear equations
+&lt;ul>
+&lt;li>Some times we can only approximate these linear equations&lt;/li>
+&lt;li>Lots of physical processes (i.e xrays!) are exponential so we just slap a log on it
+&lt;ul>
+&lt;li>.$\hat y = p \cdot (e^{x_1} + \dots + e^{x_n})$&lt;/li>
+&lt;li>.$y = -\log_e (\hat y \cdot p^{-1}) = x_1 + \dots + x_n$&lt;/li>
+&lt;li>.$\hat y$ is our measured energy value&lt;/li>
+&lt;li>.$x_n$ is the .$n$th &amp;lsquo;pixel&amp;rsquo;&lt;/li>
+&lt;li>.$p$ is the power of the energy source
+&lt;details >&lt;summary>Tomography Example&lt;/summary>
+ &lt;div class="markdown-inner">
+ &lt;img src="http://notes.mehvix.com/docs/eecs-16a/0/to.png" alt="" />
+ &lt;/div>
+&lt;/details>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>To solve, we need enough independent equations that do not contain redundant information, otherwise there will be multiple ambiguous solutions&lt;/li>
+&lt;li>Different models are made up of different configurations (of the energy source and measuring sensor) and result in different system of equations
+&lt;ul>
+&lt;li>We can obtain equations by moving both the energy source and measuring sensor (think document scanner) to get each individual pixel&lt;/li>
+&lt;li>We can also move the energy source alone instead &amp;ndash; think camera pointed at image with a projector used to light up certain (group of) pixel(s)
+&lt;ul>
+&lt;li>Different patterns have pros/cons &amp;ndash; speed, resolution, accuracy, number of measurements, energy use&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="linear-algebra">
+ Linear Algebra
+ &lt;a class="anchor" href="#linear-algebra">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The study of linear functions and linear equations, typically using vectors and matrices&lt;/li>
+&lt;li>Linearity is not always applicable, but can be a good first-order approximation&lt;/li>
+&lt;li>There exist good fast algorithms to solve these problems (and lots of fun properties!)&lt;/li>
+&lt;li>Consider .$f(x_1, \dots, x_n) : \mathbb{R}^n \to \mathbb{R}$; .$f$ is linear if the following hold&amp;hellip;
+&lt;ol>
+&lt;li>Homogeneity: .$f (\alpha x_1, \dots, \alpha x_n) = \alpha f(x_1, \dots, x_n)$
+&lt;ul>
+&lt;li>If I scale the input by a scalar (i.e. by a factor of 2) then the output should also scale by the same factor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Super position (distributivity): if .$x_i = y_i + z_i$ then .$f(y_1 + z_1, \dots, y_n + z_n) = f(y_1, \dots y_n) + f(z_1, \dots z_n)$
+&lt;ul>
+&lt;li>2 possible inputs:
+&lt;ol>
+&lt;li>Pass the first input through the system to get a value.&lt;/li>
+&lt;li>Pass another input through the system, and get another value.&lt;/li>
+&lt;li>Add those two values to get a result.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>1 possible input:
+&lt;ol>
+&lt;li>Pass the summation of value 1 and value 2 through the system to get a result.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>If the result of both approaches are equal, then distributivity holds. Otherwise, distributivity does not hold.
+&lt;blockquote class="book-hint info">
+ &lt;!-- mathjax fix -->
+&lt;p>We can account for both Homogeneity and Super position by proving the function holds under the following equation:
+$$\alpha_1 f(x_1, \dots x_n) + \dots + \alpha_n f(y_1, \dots, y_n) = f(\alpha_1 x_1 +\alpha_n y_1, \dots, \alpha_1 x_n + \alpha_n y_n)$$
+where .$y_n$ is a some scalar&lt;/p></description></item><item><title>1: Gaussian Elim. &amp; Matrices + Vectors</title><link>http://notes.mehvix.com/eecs-16a/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/1/</guid><description>&lt;h1 id="01-25-gaussian-elimination-vectors">
+ 01-25: Gaussian Elimination, Vectors
+ &lt;a class="anchor" href="#01-25-gaussian-elimination-vectors">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture1A_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>Notes 
+ &lt;a href="https://eecs16a.org/lecture/Note2A.pdf">2A&lt;/a>, 
+ &lt;a href="https://eecs16a.org/lecture/Note2B.pdf">2B&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="upper-triangular-systems">
+ Upper Triangular Systems
+ &lt;a class="anchor" href="#upper-triangular-systems">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;ul>
+&lt;li>Consider the following equation
+$$x-y+2z=1$$
+$$y-z=2$$
+$$z=1$$&lt;/li>
+&lt;/ul>
+
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>&amp;hellip;which can be represent as an 
+ &lt;a href="https://en.wikipedia.org/wiki/Augmented_matrix">augmented matrix&lt;/a>:
+$$\begin{bmatrix}
+1 &amp;amp; -1 &amp;amp; 2 &amp;amp; \text{|} &amp;amp; 1\\
+0 &amp;amp; 1 &amp;amp; -1 &amp;amp; \text{|} &amp;amp; 2\\
+0 &amp;amp; 0 &amp;amp; 1 &amp;amp; \text{|} &amp;amp; 1
+\end{bmatrix}$$&lt;/p>
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>These are called 
+ &lt;a href="https://en.wikipedia.org/wiki/Triangular_matrix">&lt;strong>upper triangle matrices&lt;/strong>&lt;/a> &amp;ndash; they are nice in that they&amp;rsquo;re easy to solve!
+&lt;ul>
+&lt;li>The solution is reached when the diagonal is all one, the remaining is zero (excluding the rightmost &amp;lsquo;answer&amp;rsquo; colum)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="row-echelon-form">
+ Row Echelon Form
+ &lt;a class="anchor" href="#row-echelon-form">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>More precisely, a matrix is in 
+ &lt;a href="https://en.wikipedia.org/wiki/Row_echelon_form">&lt;strong>row echelon form&lt;/strong>&lt;/a> when the following criteria are met:
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;ul>
+&lt;li>All nonzero rows are above all zero rows.&lt;/li>
+&lt;li>The leading coefficient of a non-zero row is always to the right of the leading coefficient of the row above it.&lt;/li>
+&lt;/ul>
+
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>$$\begin{bmatrix}
+1 &amp;amp; * &amp;amp; * &amp;amp; * &amp;amp; \text{|} &amp;amp; *\\
+0 &amp;amp; 1 &amp;amp; * &amp;amp; * &amp;amp; \text{|} &amp;amp; *\\
+0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; \text{|} &amp;amp; *\\
+0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; \text{|} &amp;amp; 0\\
+\end{bmatrix}$$&lt;/p></description></item><item><title>2: (In)dependence &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/2/</guid><description>&lt;h1 id="02-01-linear-independance-matrix-transformations">
+ 02-01: Linear (in)dependance, Matrix Transformations
+ &lt;a class="anchor" href="#02-01-linear-independance-matrix-transformations">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture1B_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Note3.pdf">Note 3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Recall the simple tomography example from Note 1, in which we tried to determine the composition of a box of bottles by shining light at different angles and measuring light absorption. The Gaussian elimination algorithm implied that we needed to take at least 9 measurements to properly identify the 9 bottles in a box so that we had at least one equation per variable. However, will taking any 9 measurements guarantee that we can find a solution? Answering this question requires an understanding of linear dependence. In this note, we will define linear dependence (and independence), and take a look at what it implies for systems of linear equations.&lt;/p></description></item><item><title>3: Transformations &amp; Inverse</title><link>http://notes.mehvix.com/eecs-16a/3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/3/</guid><description>&lt;h1 id="02-08-matrix-transformations">
+ 02-08: Matrix Transformations
+ &lt;a class="anchor" href="#02-08-matrix-transformations">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture3A_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Note4.pdf">Note 4&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="linear-transformations">
+ Linear Transformations
+ &lt;a class="anchor" href="#linear-transformations">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Linear Transformation:&lt;/strong> In the previous practice set, we discussed the idea of a matrix .$A^{M \times N}$ as a linear transformation.
+&lt;ul>
+&lt;li>Effectively, in the equation .$A \vec x = \vec b$, the matrix itself can be considered a transformation .$f : \mathbb{R}^{N} \to \mathbb{R}^{M}$ which takes a vector .$\vec x^{N \times 1}$ of inputs and returns a vector .$\vec b^{M \times 1}$ of outputs
+&lt;ul>
+&lt;li>That is, matrices are operators that transform vectors&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;ul>
+&lt;li>Just as .$f$ is a linear transformation iff 
+ &lt;a href="http://notes.mehvix.com/eecs-16a/0/#linear-algebra">homogeneity and super position hold&lt;/a>, matrix-vector multiplications satisfy linear transformation:&lt;/li>
+&lt;/ul>
+
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>$$A \cdot (\alpha \vec x) = \alpha A \vec x$$
+$$A \cdot (\vec x + \vec y) = A \vec x + A \vec y $$&lt;/p></description></item><item><title>4: Vector Spaces &amp; Eigenstuff</title><link>http://notes.mehvix.com/eecs-16a/4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/4/</guid><description>&lt;h1 id="02-15-vector-spaces-null-spaces-and-columnspaces">
+ 02-15: Vector Spaces: Null Spaces and Columnspaces
+ &lt;a class="anchor" href="#02-15-vector-spaces-null-spaces-and-columnspaces">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture4A_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>Notes 
+ &lt;a href="https://eecs16a.org/lecture/Note7.pdf">7&lt;/a> 
+ &lt;a href="https://eecs16a.org/lecture/Note8.pdf">8&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="important-jargon">
+ Important Jargon
+ &lt;a class="anchor" href="#important-jargon">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Rank&lt;/strong> a matrix .$A$ is the number of linearly independent columns&lt;/li>
+&lt;li>&lt;strong>Nullspace&lt;/strong> of a matrix is the set of solutions to .$A \vec x = 0$&lt;/li>
+&lt;li>A &lt;strong>vector space&lt;/strong> is a set of vectors connected by two operators: .$+, \times$ &amp;mdash; 
+ &lt;a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=48">page 48&lt;/a>&lt;/li>
+&lt;li>A vector &lt;strong>subspace&lt;/strong> is a subset of vectors that have “nice properties” &amp;mdash; 
+ &lt;a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf#page=50">page 50&lt;/a>&lt;/li>
+&lt;li>A &lt;strong>basis&lt;/strong> for a vector space is a minimum set of vectors needed to represent all vectors in the space&lt;/li>
+&lt;li>&lt;strong>Dimension&lt;/strong> of a vector space is the number of basis vectors&lt;/li>
+&lt;li>&lt;strong>Column space&lt;/strong> is the span (range) of the columns of a matrix&lt;/li>
+&lt;li>&lt;strong>Row space&lt;/strong> is the span of the rows of a matrix&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="vector-spaces">
+ Vector Spaces
+ &lt;a class="anchor" href="#vector-spaces">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>A vector space .$\mathbb{V}$ is a set of vectors and two operators .$+, \cdot$ that satisfy:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>&lt;strong>Vector Addition&lt;/strong>&lt;/p></description></item><item><title>5: Basis &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/5/</guid><description>&lt;h1 id="02-22-basis">
+ 02-22 Basis
+ &lt;a class="anchor" href="#02-22-basis">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Note 
+ &lt;a href="https://eecs16a.org/lecture/Note10.pdf">10&lt;/a>&lt;/li>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture5A_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;/ul>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/P2LTAUO1TdA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;hr>
+&lt;h2 id="change-of-basis">
+ Change of Basis
+ &lt;a class="anchor" href="#change-of-basis">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;ul>
+&lt;li>Previously we’ve seen that a basis for a vector space is a minimal spanning set of vectors.&lt;/li>
+&lt;li>We can also define the standard basis vectors, e,x. the standard basis for .$ \mathbb{R}^{3}$ is the set .$\mathbb{E}$:&lt;/li>
+&lt;/ul>
+
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>$$\mathbb{E} = \big(\hat i, \hat j, \hat k \big)$$
+$$\dots \equiv ( \vec e_1, \vec e_2, \vec e_3)$$
+$$\dots \equiv \left( \begin{bmatrix}
+1\\
+0\\
+0\\
+\end{bmatrix}, \begin{bmatrix}
+0\\
+1\\
+0\\
+\end{bmatrix}, \begin{bmatrix}
+0\\
+0\\
+1\\
+\end{bmatrix}\right) $$&lt;/p></description></item><item><title>6: Voltage Dividers &amp; Measurement</title><link>http://notes.mehvix.com/eecs-16a/6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/6/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
+&lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="03-01-voltage-dividers">
+ 03-01: Voltage Dividers
+ &lt;a class="anchor" href="#03-01-voltage-dividers">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="voltage-divider">
+ Voltage Divider
+ &lt;a class="anchor" href="#voltage-divider">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The 
+ &lt;a href="https://en.wikipedia.org/wiki/Voltage_divider">voltage divider circuit&lt;/a> consists of a voltage source (.$V_S$) and two resistors (.$R_1$ and .$R_2$)&lt;/li>
+&lt;li>Example:
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;ol>
+&lt;li>We label the node connected to the voltage supply as .$u_1 (= V_S)$, since the voltage supply goes between this node and ground.&lt;/li>
+&lt;li>Label the remaining node as .$u_\text{mid}$ and the voltages and currents through every element in the circuit with .$V_i$ and .$I_i$ respectively&lt;/li>
+&lt;li>Write KCL equations for all nodes with unknown voltage - in this case, this is just .$u_\text{mid}$, since .$u_1 = V_S$.
+&lt;ul>
+&lt;li>The current entering that node is .$I_{R_1}$ and the current leaving it is .$I_{R_2}$&lt;/li>
+&lt;li>Since these currents must be equal, .$I_{R_1} = I_{R_2}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/eecs-16a/6/volt2.png" alt="" />&lt;/p></description></item><item><title>7: 2D Touchscreens &amp; Superp. + Equivalence</title><link>http://notes.mehvix.com/eecs-16a/7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/7/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
+&lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="03-08-2d-resistive-touchscreens">
+ 03-08: 2D Resistive Touchscreens
+ &lt;a class="anchor" href="#03-08-2d-resistive-touchscreens">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="bottom-plate">
+ Bottom Plate
+ &lt;a class="anchor" href="#bottom-plate">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;ul>
+&lt;li>Trivially, we see that if we add a wire connected to $u_\text{mid}$ that will have the same voltage across it (wires have zero voltage drop)&lt;/li>
+&lt;li>So why have the bottom plate at all? It lets us take the measurement for $V_\text{out}$ using connection points on the edge of the plate instead of having to put a probe or wire at the actual touch point every time!&lt;/li>
+&lt;/ul>
+
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/eecs-16a/7/wire.png" alt="" />&lt;/p></description></item><item><title>8: Capacitors &amp; Capacitive Touchscreen</title><link>http://notes.mehvix.com/eecs-16a/8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/8/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
+&lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="0315-capacitors">
+ 03/15 Capacitors
+ &lt;a class="anchor" href="#0315-capacitors">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="structure-and-physics">
+ Structure and Physics
+ &lt;a class="anchor" href="#structure-and-physics">#&lt;/a>
+&lt;/h2>
+&lt;blockquote class="book-hint info">
+ &lt;!-- mathjax fix -->
+&lt;p>See also, 
+ &lt;a href="http://notes.mehvix.com/physics-7b/24/">7B 24&lt;/a>&lt;/p>
+&lt;/blockquote>
+
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;ul>
+&lt;li>
+ &lt;a href="https://en.wikipedia.org/wiki/Capacitor">Capacitors&lt;/a> is a circuit element that stores charge&lt;/li>
+&lt;li>Positive 
+ &lt;a href="https://en.wikipedia.org/wiki/Charge_%28physics%29">charges&lt;/a> build up on the (top) surface of the plate connected to the positive terminal and negative charges build up on the (bottom) surface of the plate connected to the negative terminal.&lt;/li>
+&lt;li>Capacitors have an associated quantity, 
+ &lt;a href="https://en.wikipedia.org/wiki/Capacitance">&lt;strong>$C$apacitance&lt;/strong>&lt;/a> (farads); the ratio of the amount of 
+ &lt;a href="https://en.wikipedia.org/wiki/Electric_charge">electric charge&lt;/a> $Q$ (coulombs) stored on a conductor to a difference in electric potential $V$
+&lt;ul>
+&lt;li>Units: 
+ &lt;a href="https://en.wikipedia.org/wiki/Farad">Farads&lt;/a>, $F = \frac{C}{V}$.&lt;/li>
+&lt;li>Depends on the physical geometry of a capacitor
+$$C = \varepsilon_0 \frac{A}{d}$$
+&lt;ul>
+&lt;li>$A$: Area of plates&lt;/li>
+&lt;li>$d$: Distance between plates&lt;/li>
+&lt;li>$\varepsilon_0$: 
+ &lt;a href="https://en.wikipedia.org/wiki/Permittivity">Permittivity&lt;/a> of 
+ &lt;a href="https://en.wikipedia.org/wiki/Vacuum_permittivity">free space&lt;/a>, $8.854\cdot 10^{-12} \frac{\text{F}}{\text{m}}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;blockquote>
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/eecs-16a/8/cap.png" alt="" />
+A physical diagram of a capacitor, with 2 metal plates and a 
+ &lt;a href="https://en.wikipedia.org/wiki/Dielectric">dielectric&lt;/a> (commonly air) between them&lt;/p></description></item><item><title>9: Op-Amps, Comparators &amp; Charge Sharing</title><link>http://notes.mehvix.com/eecs-16a/9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/9/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
+&lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="0329-operational-amplifier-and-comparator">
+ 03/29: Operational Amplifier and Comparator
+ &lt;a class="anchor" href="#0329-operational-amplifier-and-comparator">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="dependent-sources">
+ Dependent Sources
+ &lt;a class="anchor" href="#dependent-sources">#&lt;/a>
+&lt;/h2>
+&lt;blockquote>
+&lt;p>As briefly mentioned before, the voltage and current sources covered so far have been independent sources, meaning they have a constant, fixed value. However, 
+ &lt;a href="https://en.wikipedia.org/wiki/Dependent_source">dependent sources&lt;/a> also generate currents and voltages but their output depends on some other &amp;ldquo;controlling&amp;rdquo; current .$i_x$ or voltage .$v_x$ in the circuit.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;blockquote>
+&lt;p>&lt;strong>VCVS:&lt;/strong> Voltage-controlled voltage source
+
+ &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Voltage_controlled_voltage_source_circuit.svg/200px-Voltage_controlled_voltage_source_circuit.svg.png" alt="" />&lt;/p></description></item><item><title>10: NFB, GRs &amp; Buffer + Loading</title><link>http://notes.mehvix.com/eecs-16a/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/10/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
+&lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="0405">
+ 04/05:
+ &lt;a class="anchor" href="#0405">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="negative-feedback-nfb">
+ Negative Feedback (NFB)
+ &lt;a class="anchor" href="#negative-feedback-nfb">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The main idea is &amp;lsquo;how do we get an op-amp to output a voltage that isn&amp;rsquo;t railing?&amp;rsquo;&lt;/li>
+&lt;li>
+ &lt;a href="https://en.wikipedia.org/wiki/Negative_feedback">Negative feedback&lt;/a> refers to the idea that there is some output amount that is the ideal or intended amount
+&lt;ul>
+&lt;li>If the actual amount becomes larger than this reference, then the system must detect this deviation and bring it down to the reference.&lt;/li>
+&lt;li>Similarly, if the actual amount drops too low, the system must bring it back up to the reference.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+ &lt;a href="https://en.wikipedia.org/wiki/Negative-feedback_amplifier">Negative-feedback amplifiers&lt;/a> helps maintain the output voltage at a constant level despite the fact that the op-amp wants to rail the output.
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>$$\begin{aligned}
+V_{out} &amp;amp;= A(U_+ − U_−) \\
+V_{out} &amp;amp;= A(V_{in} − V_{out}) \\
+V_{out} + A \cdot V_{out} &amp;amp;= A \cdot V_{in} \\
+V_{out}(1 + A) &amp;amp;= A \cdot V_{in} \\
+V_{out} &amp;amp;= V_{in} \frac{A}{A+1} \\
+V_{out} &amp;amp;\approx V_{in}\ \text{ for }\ A \approx \infty
+\end{aligned}$$&lt;/p></description></item><item><title>11: Locationing &amp; Trilateration</title><link>http://notes.mehvix.com/eecs-16a/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/11/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
+&lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="positioning-systems">
+ Positioning Systems
+ &lt;a class="anchor" href="#positioning-systems">#&lt;/a>
+&lt;/h1>
+&lt;p>Just read 
+ &lt;a href="https://eecs16a.org/lecture/Note21.pdf">Note 21.1-2&lt;/a>&lt;/p>
+&lt;h1 id="vectors">
+ Vectors
+ &lt;a class="anchor" href="#vectors">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="inner-products">
+ Inner Products
+ &lt;a class="anchor" href="#inner-products">#&lt;/a>
+&lt;/h2>
+&lt;blockquote>
+&lt;p>The 
+ &lt;a href="https://en.wikipedia.org/wiki/Euclidean_space#Euclidean_vector_space">Euclidean&lt;/a> 
+ &lt;a href="https://en.wikipedia.org/wiki/Inner_product_space">inner product&lt;/a> between two vectors $\vec u, \vec v$ is defined as&amp;hellip;
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>$$\langle \vec u, \vec v \rangle \equiv \vec u \cdot \vec v \equiv \vec u^T \vec v$$&lt;/p>
+ &lt;/div>
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>$$\dots = \begin{bmatrix}
+v_1 v_2 \dots v_n
+\end{bmatrix}\begin{bmatrix}
+u_1\\
+u_2\\
+\vdots \\
+u_n
+\end{bmatrix}$$
+$$\dots = v_1 u_1 + v_2 u_2 + \dots v_n u_n$$
+$$\dots = \sum_{i=1}^n v_i u_i$$&lt;/p></description></item><item><title>12-13: Least Squares &amp; ML</title><link>http://notes.mehvix.com/eecs-16a/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/12/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
+&lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="least-squares">
+ Least Squares
+ &lt;a class="anchor" href="#least-squares">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="motivation">
+ Motivation
+ &lt;a class="anchor" href="#motivation">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>We want to find an approximate solution &amp;ndash; one that satisfies all the given equations/information &lt;em>as closely&lt;/em> as possible to&amp;hellip;
+&lt;ul>
+&lt;li>Minimize the impact of noise/errors&lt;/li>
+&lt;li>Solve 
+ &lt;a href="https://en.wikipedia.org/wiki/Overdetermined_system">overdetermined systems&lt;/a> &amp;ndash; we&amp;rsquo;ll often be collecting abundant information, thus we have more equations than unknowns&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Applications:&lt;/strong> Least squares is the fundamental idea behind data fitting and machine learning
+&lt;ul>
+&lt;li>In 
+ &lt;a href="https://en.wikipedia.org/wiki/Curve_fitting">data (curve) fitting&lt;/a>, we find lines or curves that best match the data&lt;/li>
+&lt;li>In 
+ &lt;a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning&lt;/a>, we use a best-fit curve to make predictions about new, unseen data.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="what">
+ What
+ &lt;a class="anchor" href="#what">#&lt;/a>
+&lt;/h2>
+&lt;blockquote>
+&lt;div class="book-columns flex flex-wrap">
+
+ &lt;div class="flex-even markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;p>The goal of least squares is to minimize the error vector&amp;rsquo;s magnitude (norm) &amp;ndash; the square of each of it&amp;rsquo;s components:&lt;/p></description></item></channel></rss>
