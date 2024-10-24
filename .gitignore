@@ -9,5 +9,5 @@ tmp.md
 ./docs
 ./public
 
-/_gen/
+_gen/
 /docs/
