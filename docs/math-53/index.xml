@@ -290,9 +290,9 @@ $$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^
  wrt variable
  &lt;a class="anchor" href="#wrt-variable">#&lt;/a>
 &lt;/h2>
-&lt;p>Opposed to the line integrals on .$f$ along .$C$ with respect to .$x$ &lt;strong>both&lt;/strong> and .$y$, we can write line integral with respect to arc length as follows:&lt;/p></description></item><item><title>Trig Identities</title><link>http://notes.mehvix.com/math-53/trig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig/</guid><description>&lt;h2 id="reciprocal-identities">
- Reciprocal Identities
- &lt;a class="anchor" href="#reciprocal-identities">#&lt;/a>
+&lt;p>Opposed to the line integrals on .$f$ along .$C$ with respect to .$x$ &lt;strong>both&lt;/strong> and .$y$, we can write line integral with respect to arc length as follows:&lt;/p></description></item><item><title>Trig Identities</title><link>http://notes.mehvix.com/math-53/trig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig/</guid><description>&lt;h2 id="reciprocal">
+ Reciprocal
+ &lt;a class="anchor" href="#reciprocal">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
 
@@ -313,9 +313,9 @@ $$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^
 
 &lt;/div>
 
-&lt;h2 id="pythagorean-identities">
- Pythagorean Identities
- &lt;a class="anchor" href="#pythagorean-identities">#&lt;/a>
+&lt;h2 id="pythagorean">
+ Pythagorean
+ &lt;a class="anchor" href="#pythagorean">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
 
@@ -336,9 +336,9 @@ $$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^
 
 &lt;/div>
 
-&lt;h2 id="cofunction-identities">
- Cofunction Identities
- &lt;a class="anchor" href="#cofunction-identities">#&lt;/a>
+&lt;h2 id="cofunction">
+ Cofunction
+ &lt;a class="anchor" href="#cofunction">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
 
@@ -355,30 +355,33 @@ $$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$&lt;/p></description></item><item><ti
  Derivatives
  &lt;a class="anchor" href="#derivatives">#&lt;/a>
 &lt;/h1>
-&lt;p>$$\frac{d}{dx} \tan(x) = 1 + \tan^2(x) = \sec^2(x)$$
-$$\frac{d}{dx} \csc(x) = -\cot(x) \cdot \csc(x)$$
-$$\frac{d}{dx} \sec(x) = \frac{\sin(x)}{\cos^2(x)} = \tan(x) \cdot \sec(x)$$
-$$\frac{d}{dx} \cot(x) = -\csc^2(x)$$
-$$\frac{d}{dx} \log_a(x) = \frac{1}{x\cdot \ln(a)}$$
-$$\frac{d}{dx} a^u = a^x \cdot \ln (a) du$$
-$$\frac{d}{dx} \sin^2(x) = \sin(2x)$$
-$$\frac{d}{dx} \cos^2(x) = -\sin(2x)$$
-$$\frac{d}{dx} \tan^2(x) = 2\tan(x)\cdot \sec^2(x)$$&lt;/p>
-&lt;!-- $$\frac{d}{dx} $$ -->
+&lt;p>$$\begin{align*}
+\frac{d}{dx} \tan(x) &amp;amp;= 1 + \tan^2(x) = \sec^2(x) \\
+\frac{d}{dx} \csc(x) &amp;amp;= -\cot(x) \cdot \csc(x) \\
+\frac{d}{dx} \sec(x) &amp;amp;= \frac{\sin(x)}{\cos^2(x)} = \tan(x) \cdot \sec(x) \\
+\frac{d}{dx} \cot(x) &amp;amp;= -\csc^2(x) \\
+\frac{d}{dx} \log_a(x) &amp;amp;= \frac{1}{x\cdot \ln(a)} \\
+\frac{d}{dx} a^u &amp;amp;= a^x \cdot \ln (a) du \\
+\frac{d}{dx} \sin^2(x) &amp;amp;= \sin(2x) \\
+\frac{d}{dx} \cos^2(x) &amp;amp;= -\sin(2x) \\
+\frac{d}{dx} \tan^2(x) &amp;amp;= 2\tan(x)\cdot \sec^2(x)
+\end{align*}$$&lt;/p>
 &lt;h1 id="integrals">
  Integrals
  &lt;a class="anchor" href="#integrals">#&lt;/a>
 &lt;/h1>
-&lt;p>$$\int a^x dx = \bigg(\frac{1}{\ln(a)}\bigg) a^x + C $$
-$$\int \tan(x) dx = -\ln\vert \cos(x) \vert + C$$
-$$\int \tan^2(x) dx = \tan(x) - x + C$$
-$$\int \csc(x) dx = \ln\vert \csc(x) - \cot(x)\vert + C = \ln \bigg\vert \tan\bigg(\frac{x}{2}\bigg)\bigg\vert + C$$
-$$\int \csc^2(x) dx = -\cot(x) + C$$
-$$\int \sec(x) dx = -\ln\vert \sec(x) + \tan(x)\vert + C$$
-$$\int \sec^2(x) dx = \tan(x) + C$$
-$$\int \cot(x) dx = \ln\vert \sin(x) \vert + C$$
-$$\int \cot^2(x) dx = -\cot(x) - x + C$$
-$$\int \frac{1}{\sin(ax)\cos(ax)} = \frac{1}{a} \ln\vert\tan(ax)\vert + C$$
-$$\int \frac{1}{x\sqrt{x^2-a^2}} dx = \frac{1}{a} \sec^{-1}\bigg( \frac{\vert x \vert}{a}\bigg) + C$$
-$$\int \frac{1}{\sqrt{a^2-x^2}} dx = \sin^{-1}\bigg( \frac{x}{a} \bigg) + C$$
-$$\int \frac{1}{a^2 + x^2} dx = \frac{1}{a} \tan^{-1}\bigg( \frac{x}{a} \bigg) + C$$&lt;/p></description></item></channel></rss>
+&lt;p>$$\begin{align*}
+\int a^x dx &amp;amp;= \bigg(\frac{1}{\ln(a)}\bigg) a^x + C \\
+\int \tan(x) dx &amp;amp;= -\ln\vert \cos(x) \vert + C \\
+\int \tan^2(x) dx &amp;amp;= \tan(x) - x + C \\
+\int \csc(x) dx &amp;amp;= \ln\vert \csc(x) - \cot(x)\vert + C = \ln \bigg\vert \tan\bigg(\frac{x}{2}\bigg)\bigg\vert + C \\
+\int \csc^2(x) dx &amp;amp;= -\cot(x) + C \\
+\int \sec(x) dx &amp;amp;= -\ln\vert \sec(x) + \tan(x)\vert + C \\
+\int \sec^2(x) dx &amp;amp;= \tan(x) + C \\
+\int \cot(x) dx &amp;amp;= \ln\vert \sin(x) \vert + C \\
+\int \cot^2(x) dx &amp;amp;= -\cot(x) - x + C \\
+\int \frac{1}{\sin(ax)\cos(ax)} &amp;amp;= \frac{1}{a} \ln\vert\tan(ax)\vert + C \\
+\int \frac{1}{x\sqrt{x^2-a^2}} dx &amp;amp;= \frac{1}{a} \sec^{-1}\bigg( \frac{\vert x \vert}{a}\bigg) + C \\
+\int \frac{1}{\sqrt{a^2-x^2}} dx &amp;amp;= \sin^{-1}\bigg( \frac{x}{a} \bigg) + C \\
+\int \frac{1}{a^2 + x^2} dx &amp;amp;= \frac{1}{a} \tan^{-1}\bigg( \frac{x}{a} \bigg) + C
+\end{align*}$$&lt;/p></description></item></channel></rss>
