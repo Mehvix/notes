@@ -3,7 +3,7 @@ title: "Trig Identities"
 weight: 99
 ---
 
-## Reciprocal Identities
+## Reciprocal
 
 {{< columns >}} <!-- begin -->
 $$\sin(x)=\frac{1}{\csc(x)}$$
@@ -13,7 +13,7 @@ $$\cos(x)=\frac{1}{\sec(x)}$$
 $$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$
 {{< /columns >}}
 
-## Pythagorean Identities
+## Pythagorean
 
 {{< columns >}} <!-- begin -->
 $$\sin^2(x) + \cos^2(x) = 1$$
@@ -23,7 +23,7 @@ $$1+\tan^2(x) = \sec^2(x)$$
 $$1+\cot^2(x)=\csc^2(x)$$
 {{< /columns >}}
 
-## Cofunction Identities
+## Cofunction
 
 {{< columns >}} <!-- begin -->
 $$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$
@@ -36,7 +36,7 @@ $$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$
 $$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
 {{< /columns >}}
 
-## Even/Odd Identities
+## Even/Odd
 
 {{< columns >}} <!-- begin -->
 $$ \sin(-x) = -\sin(x)$$
@@ -53,13 +53,13 @@ $$ \cot(-x) = -\cot(x)$$
 Bonus fact: .$\int_{-A}^A \text{[odd]}(x)\ dx = 0$; .$\int_{-A}^A \text{[even]}(x)\ dx = \int_0^A \text{[even]}(x)\ dx$
 {{% /center %}}
 
-## Sum and Difference Formulas
+## Sum and Difference
 
 $$ \sin(u \pm v) = \sin(u) \cdot \cos(v) \pm \cos(u) \cdot \sin(v)$$
 $$ \cos(u \pm v) = \cos(u) \cdot \cos(v) \pm \sin(u) \cdot \sin(v)$$
-$$\tan(u \pm v) = \frac{\tan(u) \pm \tan(v)}{1 \mp \tan(u) \tan(v)}$$
+$$ \tan(u \pm v) = \frac{\tan(u) \pm \tan(v)}{1 \mp \tan(u) \tan(v)}$$
 
-## Double-Angle Formula
+## Double-Angle
 
 {{< columns >}} <!-- begin -->
 $$ \sin(2u) = 2 \sin(u) \cos(u)$$
@@ -71,7 +71,7 @@ $$ ... = \cos^2(u) - \sin^2(u) $$
 $$ \tan(2u) = \frac{2 \tan(u)}{1 - \tan^2(u)}$$
 {{< /columns >}}
 
-## Power Reducing Formulas
+## Power Reducing
 
 {{< columns >}} <!-- begin -->
 $$\sin^2(u) = \frac{1 - \cos(2u)}{2}$$
@@ -81,16 +81,22 @@ $$\cos^2(u) = \frac{1 + \cos(2u)}{2}$$
 $$\tan^2(u) = \frac{1 - \cos(2u)}{1 + \cos(2u)}$$
 {{< /columns >}}
 
-## Sum to Product Formulas
+## Sum-to-Product
 
-$$\sin(u) + \sin(v) = 2\sin\bigg(\frac{u + v}{2}\bigg) \cos\bigg(\frac{u - v}{2}\bigg)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $$
-$$\sin(u) - \sin(v) = 2\cos\bigg(\frac{u + v}{2}\bigg) \sin\bigg(\frac{u - v}{2}\bigg)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $$
-$$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \cos(u) + \cos(v) = 2\cos\bigg(\frac{u + v}{2}\bigg) \cos\bigg(\frac{u - v}{2}\bigg)$$
-$$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \cos(u) - \cos(v) = -2\sin\bigg(\frac{u + v}{2}\bigg) \sin\bigg(\frac{u - v}{2}\bigg)$$
+$$\begin{align*}
+\sin(u) + \sin(v) &= 2\sin\bigg(\frac{u + v}{2}\bigg) \cos\bigg(\frac{u - v}{2}\bigg) \\\
+\sin(u) - \sin(v) &= 2\cos\bigg(\frac{u + v}{2}\bigg) \sin\bigg(\frac{u - v}{2}\bigg) \\\
+\cos(u) + \cos(v) &= 2\cos\bigg(\frac{u + v}{2}\bigg) \cos\bigg(\frac{u - v}{2}\bigg) \\\
+\cos(u) - \cos(v) &= -2\sin\bigg(\frac{u + v}{2}\bigg) \sin\bigg(\frac{u - v}{2}\bigg)
+\end{align*}$$
 
-## Product to Sum Formulas
 
-$$\sin(u) \sin(v) = \frac{1}{2}\Big[\cos(u - v) - \cos(u + v)\Big]\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $$
-$$\sin(u) \cos(v) = \frac{1}{2}\Big[\sin(u + v) + \sin(u - v)\Big]\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $$
-$$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \cos(u) \sin(v) = \frac{1}{2}\Big[\sin(u + v) - \sin(u - v)\Big]$$
-$$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \cos(u) \cos(v) = \frac{1}{2}\Big[\cos(u - v) + \cos(u + v)\Big]$$
+## Product-to-Sum
+
+$$\begin{align*}
+\sin(u) \sin(v) &= \frac{1}{2}\Big[\cos(u - v) - \cos(u + v)\Big] \\\
+\sin(u) \cos(v) &= \frac{1}{2}\Big[\sin(u + v) + \sin(u - v)\Big] \\\
+\cos(u) \sin(v) &= \frac{1}{2}\Big[\sin(u + v) - \sin(u - v)\Big] \\\
+\cos(u) \cos(v) &= \frac{1}{2}\Big[\cos(u - v) + \cos(u + v)\Big] \\\
+\end{align*}$$
+
