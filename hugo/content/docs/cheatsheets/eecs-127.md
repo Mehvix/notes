@@ -1,5 +1,5 @@
 ---
-title: "EECS 127"
+title: "EECS 127, FA23"
 weight: 1
 ---
 

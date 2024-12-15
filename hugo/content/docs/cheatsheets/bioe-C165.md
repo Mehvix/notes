@@ -1,5 +1,5 @@
 ---
-title: "BioE C165"
+title: "BioE C165, FA24"
 weight: 1
 ---
 

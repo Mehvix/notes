@@ -1,5 +1,5 @@
 ---
-title: "EECS 16B"
+title: "EECS 16B, SU22"
 weight: 1
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "EECS 151"
+title: "EECS 151, FA24"
 weight: 1
 ---
 
