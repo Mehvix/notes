@@ -108,13 +108,238 @@ $$ \vec a + (\vec b + \vec c) = (\vec a + \vec b) + \vec c$$&lt;/li>
 &lt;li>Notice that the dot product gives a &lt;em>scalar&lt;/em>
 $$\langle a_1, a_2, a_3 \rangle \cdot \langle b_1, b_2, b_3 \rangle = a_1b_1 + a_2b_2 + a_3b_3$$
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- begin -->
-&lt;p>$$\vec a \cdot (\vec b + \vec c) = \vec a \cdot \vec b + \vec a\cdot \vec c$$
+$$\vec a \cdot (\vec b + \vec c) = \vec a \cdot \vec b + \vec a\cdot \vec c$$
 $$ \vec a \cdot \vec a = \Vert \vec a \Vert ^2$$
 $$ \vec a \cdot \vec b = \vec b \cdot \vec a $$
-$$ (c \vec a) \cdot \vec b = c (\vec a \cdot \vec b) = \vec a \cdot (c \vec b)$$&lt;/p></description></item><item><title>13: Vector Functions</title><link>http://notes.mehvix.com/math-53/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/13/</guid><description>&lt;h1 id="131-vector-functions-and-space-curves">
+$$ (c \vec a) \cdot \vec b = c (\vec a \cdot \vec b) = \vec a \cdot (c \vec b)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+$$\vec a \cdot \vec b = \Vert\vec a\Vert\ \Vert\vec b\Vert \cos \theta$$
+$$\Vert\vec a - \vec b \Vert^2 = \Vert\vec a\Vert^2+\Vert\vec b\Vert^2 - 2\Vert\vec a\Vert \Vert\vec b\Vert \cos\theta\ $$
+$$... = \Vert\vec a\Vert\ \Vert\vec b\Vert \cos \theta$$
+$$\cos\theta = \frac{\vec a \cdot \vec b}{\Vert\vec a\Vert\ \Vert\vec b\Vert}$$
+
+ &lt;/div>
+
+&lt;/div>
+
+$$\cos \theta = \frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \Longrightarrow \cos^{-1}\bigg(\frac{\vec a}{\Vert \vec a \Vert} \cdot \frac{\vec b}{\Vert \vec b \Vert} \bigg) = \theta $$
+
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/dot-general.png" alt="Dot Product" />&lt;/li>
+&lt;/ul>
+&lt;h2 id="direction-vectors">
+ Direction Vectors
+ &lt;a class="anchor" href="#direction-vectors">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The direction angles of a nonzero vector .$\vec a$ are the .$\alpha, \beta, \gamma$ that a makes with the positive .$x,y,z$-axes respectively
+$$\cos\alpha = \frac{\vec a \cdot \vec i}{\Vert \vec a \Vert \Vert \vec i \Vert} = \frac{a_1}{\Vert \vec a \Vert}$$
+$$\vec a = \Vert \vec a \Vert \langle \cos \alpha, \cos \beta, \cos \gamma \rangle$$&lt;/li>
+&lt;/ul>
+&lt;h2 id="projections">
+ Projections
+ &lt;a class="anchor" href="#projections">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Scalar projection of .$\vec b$ onto .$\vec a$:
+$$\text{comp}_\vec a\vec b = \frac{\vec a\cdot\vec b}{\Vert\vec a\Vert}$$&lt;/li>
+&lt;li>Vector projection of .$\vec b$ onto .$\vec a$:
+$$\text{proj}_\vec a\vec b = \bigg(\frac{\vec a\cdot\vec b}{\Vert\vec a\Vert}\bigg)\frac{\vec a}{\Vert\vec a\Vert} = \frac{\vec a\cdot\vec b}{\Vert\vec a\Vert^2}\vec a$$
+
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/dot.png" alt="Dot Product" />&lt;/li>
+&lt;/ul>
+&lt;h1 id="124-cross-product">
+ 12.4 Cross Product
+ &lt;a class="anchor" href="#124-cross-product">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>The cross product measures how orthogonal two vectors are
+&lt;ul>
+&lt;li>Therefore, .$(\vec a \times \vec b) \cdot \vec b = 0$ because measures how similar (close to .$0^\circ$) two vectors are and cross product outputs a vector orthogonal (.$90^\circ$ to both .$\vec a, \vec b$)&lt;/li>
+&lt;li>Two nonzero vectors are only parallel iff their cross product is zero&lt;/li>
+&lt;li>The magnitude is also the &lt;strong>area of a parallelogram&lt;/strong> formed by the two vectors
+&lt;ul>
+&lt;li>We can find the volume of the 3D parallelogram formed by three vectors with the following equation:
+$$\vec a \cdot (\vec b \times \vec c) = (\vec a \times \vec b) \cdot \vec c$$
+
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/3d-paral.png" alt="3D Parallelogram" />&lt;/li>
+&lt;li>Realize that if the resulting area is .$0$, then all of the points exist on the same plane&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Notice that the cross product gives a &lt;em>vector&lt;/em> that is orthogonal to both original vectors
+&lt;ul>
+&lt;li>Direction is determined with the right-hand rule&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>We can also calculate the 
+ &lt;a href="https://en.wikipedia.org/wiki/Determinant">determinant&lt;/a> with the unit vectors .$\langle \hat i, \hat j, \hat k \rangle$to find the cross product
+$$\langle a_1, a_2, a_3 \rangle \times \langle b_1, b_2, b_3 \rangle = \langle a_2b_3 - a_3 b_2, -(a1_b3 - a_3 b_1), a_1b_2 - a_2 b_1 \rangle$$
+$$\vec a \times \vec b = \Vert \vec a \Vert \Vert \vec b \Vert \sin\theta$$
+$$(\vec a \times \vec b) \times \vec c \neq \vec a \times (\vec b \times \vec c) \Longrightarrow \vec a \times (\vec b \times \vec c) = (\vec a \cdot \vec c) \vec b - (\vec a \cdot \vec b ) \vec c$$
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- begin -->
+$$\vec a \times \vec b \neq \vec b \times \vec b \Longrightarrow \vec a \times \vec b = - \vec b \times \vec a$$
+$$(c \vec a) \times \vec b = c(\vec a \times \vec b) = \vec a \times (c \vec b)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+$$\vec a \times (\vec b + \vec c) = \vec a \times \vec b + \vec a \times \vec c$$
+$$(\vec a + \vec b) \times \vec c = \vec a \times \vec c + \vec b \times \vec c$$
+
+ &lt;/div>
+
+&lt;/div>
+
+$$\Vert \vec a \times \vec b \Vert ^2 = \Vert \vec a \Vert^2 \Vert \vec b \Vert^2 - (\vec a \cdot \vec b)^2 = \Vert \vec a \Vert^2 \Vert \vec b \Vert^2 \sin^2 \theta$$
+$$&amp;hellip; \Longrightarrow \Vert \vec a \times \vec b \Vert \Vert \vec a \Vert \Vert \vec b \Vert \sin \theta$$&lt;/li>
+&lt;/ul>
+&lt;h1 id="125-equation-of-lines-and-planes">
+ 12.5 Equation of Lines and Planes
+ &lt;a class="anchor" href="#125-equation-of-lines-and-planes">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="line">
+ Line
+ &lt;a class="anchor" href="#line">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>If given a point .$P_0 (x_0, y_0, z_0)$ and a vector .$\vec v = \langle a,b,c \rangle$ that passes through said point (parallel), we can write a line equation as:
+$$\langle x, y, z \rangle = P_0 + t \vec v = \langle x_0 + ta, y_0 +tb, z_0 + tc \rangle;\ \ t \in \mathbb{R}$$&lt;/li>
+&lt;li>We can then isolate .$t$ to find the symmetric equation of the line
+$$ t = \frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c} $$&lt;/li>
+&lt;li>And we can extrapolate this to write an equation we can use to verify if two points are on a line:
+$$ t = \frac{x-x_0}{x_1-x_0} = \frac{y-y_0}{y_1-y_0} = \frac{z-z_0}{z_1-z_0} $$
+&lt;ul>
+&lt;li>&lt;strong>Note&lt;/strong>: If we have no change in an axis (such as .$x$), then .$x_1-x_0$ is zero. Therefore, we can write .$x = x_0$ (because we know it never changes) and the other relations for .$y$ and .$z$ still work&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>We can also write our original equation in vector form as
+$$\vec r(t) = \vec r_0 + t\vec v$$&lt;/li>
+&lt;li>Which we can use to write a specific line between point .$A$ and .$B$ from .$t \in [0,1]$ as
+$$\overrightarrow{AB} = \langle x_1 - x_0, y_1 - y_0, z_1 - z_0 \rangle$$
+$$r(t) = \vec A(1-t) + \vec B(t)$$&lt;/li>
+&lt;li>Two vectors are &lt;strong>equal&lt;/strong> iff corresponding components are equal&lt;/li>
+&lt;li>3D Lines can be parallel (same direction vector), intersect at one point (.$r_1 = r_2\ @\ t_1, t_2$), or skew (not intersecting nor parallel &amp;ndash; not possible in 2D)&lt;/li>
+&lt;/ul>
+&lt;h2 id="planes">
+ Planes
+ &lt;a class="anchor" href="#planes">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Planes need a point and direction
+&lt;ul>
+&lt;li>Point .$P_0 (x_0, y_0, z_0)$ is trivial; a plane is a set of various points&lt;/li>
+&lt;li>Direction is described by the &lt;strong>normal vector&lt;/strong> .$\vec n = \langle a,b,c \rangle$; only one normal unit vector per plane
+&lt;ul>
+&lt;li>Given three points .$P_1, P_2, P_3$ on the plane, we can write two vectors .$\vec a = \overrightarrow{P_1 P_2}, \vec b = \overrightarrow{P_1, P_3}$ as we can find the normal vector as .$\vec n = \vec a \times \vec b$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Knowing this, we can write a vector equation:
+$$ \vec n \cdot \overrightarrow{P_0 P} = 0$$
+$$ \vec n \cdot (\vec r - \vec r_0) = 0$$&lt;/li>
+&lt;li>This can also be parameterized as both the scalar and linear equation respectively:
+$$a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$$
+$$ax + yz + cz + d = 0$$&lt;/li>
+&lt;li>Planes are parallel if their normal vectors are parallel&lt;/li>
+&lt;li>Otherwise, they intersect and form a straight line&lt;/li>
+&lt;/ul>
+&lt;h2 id="common-questions">
+ Common Questions
+ &lt;a class="anchor" href="#common-questions">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Intersection point(s) of plane and parametric curve
+&lt;ul>
+&lt;li>Given parametric curve .$C = \langle \alpha + a\cdot t, \beta + b\cdot t, \gamma + c \cdot t \rangle$ and plane equation .$P = x + y + z + d = 0$ &amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>Plug in each component of .$C$ as .$x,y,z$ in the .$P$ equation&lt;/li>
+&lt;li>Solve for .$t$(s), then plug (it/them) into the prior equation to get intersection point(s)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Angle between planes
+&lt;ul>
+&lt;li>Given two planes with .$\vec n_1, \vec n_2$ respectively&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>Use .$\theta = \cos^{-1}\Big(\frac{\vec n_1 \cdot \vec n_2}{\Vert \vec n_1 \Vert \Vert \vec n_2 \Vert}\Big)$ to find .$\theta$&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Angle between parametric lines that intercept at point .$P_3$
+&lt;ul>
+&lt;li>Given parametric equations .$L_1 = P_1 + t\vec v_1$ and .$L_2 = P_2 + s\vec v_2$&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>Find the .$t_3$ and .$s_3$ for when .$L_1 = P_3$ and .$L_2 = P_3$ (point of intersection)&lt;/li>
+&lt;li>Use .$\theta = \cos^{-1}\Big(\frac{\vec v_1&amp;rsquo;(t_3) \cdot \vec v_2&amp;rsquo;(s_3)}{\Vert \vec v_1&amp;rsquo;(t_3) \Vert \Vert \vec v_2&amp;rsquo;(s_3) \Vert}\Big)$ to find .$\theta$&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Intersection of two lines:
+&lt;ul>
+&lt;li>.$L_1: \langle x_1, y_1, z_1 \rangle + t \cdot \langle a_1, b_1, c_1\rangle; L_2: \langle x_2, y_2, z_2 \rangle + s \cdot \langle a_2, b_2, c_2 \rangle;$&lt;/li>
+&lt;li>First, check if they are parallel by checking if the directions of the two lines are scalar multiples of one another.&lt;/li>
+&lt;li>Second, check if they intersect by setting the two parametric equations equal to one another:
+&lt;ul>
+&lt;li>.$x_1 + t a_1 = x_2 + s a_2; y_1 + t b_1 = y_2 + s b_2; z_1 + t c_1 = z_2 + s c_2$&lt;/li>
+&lt;li>If an equation exists (that is, there is a valid .$t$ and .$s$) then they intersect at .$L_1(t)$ or .$L_2(s)$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Intersection line .$L$ of two planes
+&lt;ol>
+&lt;li>Set one of the 3D variables to zero (e.x. .$z = 0$) to find where the two planes intersect the remaining plane (in this case the .$z$ plane)&lt;/li>
+&lt;li>We find the intersection point .$P (\alpha, \beta, 0)$ by solving when our plane equations in the prior equation are equal&lt;/li>
+&lt;li>Since the line .$L$ is orthogonal to both planes&amp;rsquo; normal vectors, our direction vector is .$\vec v = n_1 \times n_2 = \langle a,b,c \rangle$&lt;/li>
+&lt;li>We can then plug in everything into the symmetric equation: .$\frac{x-\alpha}{a} = \frac{y-\beta}{b} = \frac{z-0}{c}$&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Distance from point to plane
+&lt;ul>
+&lt;li>Given point .$P_1(x_1, y_1, z_1)$ and plane .$ax+by+cz+d = 0$
+$$D = \Vert \text{comp}_{\vec n}{\vec b} \Vert = \frac{\vert ax_1 + by_1 + cz_1 +d\vert}{\sqrt{a^2 + b^2 + c^2}}$$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Distance from skew line to skew line
+&lt;ul>
+&lt;li>Given .$L_1 = \langle x_1, y_1, z_1 \rangle + t \vec v_1$ and .$L_2 = &amp;hellip;$&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>Find the plane containing .$L_2$ that is parallel to .$L_1$.
+.$P_3 = \langle x- x_2, y - y_2, z - z_2 \rangle \cdot (v_1 \times v_2)$&lt;/li>
+&lt;li>Find the .$D$istance from .$x_1, y_1, z_1$ on .$L_1$ to the plane .$P_3$ above
+$$D = \frac{\vert a_3 x_1 + b_3 y_1 + c_3 z_1 +d\vert}{\sqrt{a_3^2 + b_3^2 + c_3^2}}$$&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Distance from point to line
+&lt;ul>
+&lt;li>Given line .$L = \langle x_0, y_0, z_0 \rangle + \langle a, b, c \rangle$ and point .$P = \langle P_x, P_y, P_z \rangle$&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>Write a distance equation as .$D^2 = ((x_0 + ta) - P_x)^2 + ((y_0 + tb) - P_y)^2 + ((z_0 + tc) - P_z)^2$&lt;/li>
+&lt;li>Find the minimum value of .$t$ and plug in into the equation above and find .$D$ (but not .$D^2$!)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="126-cylinders-and-quadratic-surfaces">
+ 12.6 Cylinders and Quadratic Surfaces
+ &lt;a class="anchor" href="#126-cylinders-and-quadratic-surfaces">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="traces">
+ Traces
+ &lt;a class="anchor" href="#traces">#&lt;/a>
+&lt;/h2>
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/traces.png" alt="Quadratic Traces" />&lt;/p></description></item><item><title>13: Vector Functions</title><link>http://notes.mehvix.com/math-53/13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/13/</guid><description>&lt;h1 id="131-vector-functions-and-space-curves">
  13.1 Vector Functions and Space Curves
  &lt;a class="anchor" href="#131-vector-functions-and-space-curves">#&lt;/a>
 &lt;/h1>
@@ -178,7 +403,9 @@ $$&amp;hellip; = \big\langle f&amp;rsquo;(t), g&amp;rsquo;(t), h&amp;rsquo;(t) \
 
  &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/level-curves.png" alt="Level Curves" />
 &lt;blockquote class="book-hint info">
- &lt;strong>Level Curve:&lt;/strong> The level curves of a function .$f$ of two variables are the curves with equations .$f(x,y) = k$, where .$k$ is a constant (in the range of .$f$).
+ 
+**Level Curve:** The level curves of a function .$f$ of two variables are the curves with equations .$f(x,y) = k$, where .$k$ is a constant (in the range of .$f$).
+
 &lt;/blockquote>
 &lt;/li>
 &lt;/ul>
@@ -195,9 +422,11 @@ $$&amp;hellip; = \big\langle f&amp;rsquo;(t), g&amp;rsquo;(t), h&amp;rsquo;(t) \
 &lt;p>
  &lt;img src="http://notes.mehvix.com/docs/math-53/imgs/vec-limit.png" alt="Vector Limit" />
 &lt;blockquote class="book-hint info">
- &lt;strong>Vector Limit:&lt;/strong> Let .$f$ be a function of two variables whose domain .$D$ includes points arbitrarily close to .$(a, b)$. Then we say that the &lt;strong>limit of&lt;/strong> .$f(x, y)$ &lt;strong>as&lt;/strong> .$(x, y)$ &lt;strong>approaches&lt;/strong> .$a, b.$ is .$L$ and we write
+ 
+**Vector Limit:** Let .$f$ be a function of two variables whose domain .$D$ includes points arbitrarily close to .$(a, b)$. Then we say that the **limit of** .$f(x, y)$ **as** .$(x, y)$ **approaches** .$a, b.$ is .$L$ and we write
 $$\lim_{(x,y)\to(a,b)} f(x,y) = L$$
-if for every number .$\varepsilon &amp;lt; 0$ there is a corresponding number .$\delta &amp;lt; 0$ such that if .$(x, y) \in D$ and .$0 &amp;lt; \sqrt{(x-a)^2 + (y-b)^2} &amp;lt; \delta$ then .$\vert f(x,y) - L \vert &amp;lt; \varepsilon$
+if for every number .$\varepsilon &lt; 0$ there is a corresponding number .$\delta &lt; 0$ such that if .$(x, y) \in D$ and .$0 &lt; \sqrt{(x-a)^2 + (y-b)^2} &lt; \delta$ then .$\vert f(x,y) - L \vert &lt; \varepsilon$
+
 &lt;/blockquote>
 &lt;/p></description></item><item><title>15: Multiple Integrals</title><link>http://notes.mehvix.com/math-53/15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/15/</guid><description>&lt;h1 id="151-double-integrals-over-rectangles">
  15.1 Double Integrals over Rectangles
@@ -210,9 +439,12 @@ if for every number .$\varepsilon &amp;lt; 0$ there is a corresponding number .$
 $$V = \iint_R f(x,y)\ dA$$&lt;/li>
 &lt;/ul>
 &lt;blockquote class="book-hint info">
- &lt;strong>Fubini&amp;rsquo;s Theorem:&lt;/strong> If .$f$ is continuous on the rectangle .$R = \{(x,y) \vert a \leq x \leq b, c \leq y \leq d\}$, then
+ 
+
+**Fubini's Theorem:** If .$f$ is continuous on the rectangle .$R = \\{(x,y) \vert a \leq x \leq b, c \leq y \leq d\\}$, then
 $$\iint_R f(x,y)\ dA = \int_a^b \int_c^d f(x,y)\ dy\ dx = \int_c^d \int_a^b f(x,y)\ dx\ dy$$
 More generally, this is true if we assume that .$f$ is bounded on .$R$, .$f$ is discontinuous only on a finite number of smooth curves, and the iterated integrals exist.
+
 &lt;/blockquote>
 
 &lt;h2 id="average-value">
@@ -234,10 +466,12 @@ $$f_\text{avg} = \frac{1}{A(R)}\iint_R f(x,y)\ dA$$&lt;/li>
  &lt;a class="anchor" href="#type-i">#&lt;/a>
 &lt;/h2>
 &lt;blockquote class="book-hint info">
- If .$f$ is continuous on a type I region .$D$ such that
-$$D = \{(x,y)\ \vert\ a \leq x \leq b,\ g_1(x) \leq y \leq g_2(x)\ \}$$
+ 
+If .$f$ is continuous on a type I region .$D$ such that
+$$D = \\{(x,y)\ \vert\ a \leq x \leq b,\ g_1(x) \leq y \leq g_2(x)\ \\}$$
 then
 $$\int_D f(x,y)\ dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx$$
+
 &lt;/blockquote>
 
 &lt;p>
@@ -295,20 +529,20 @@ $$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^
  &lt;a class="anchor" href="#reciprocal">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- begin -->
-&lt;p>$$\sin(x)=\frac{1}{\csc(x)}$$&lt;/p>
- &lt;/div>
+$$\sin(x)=\frac{1}{\csc(x)}$$
 
- &lt;div class="flex-even markdown-inner">
- &lt;!-- separator -->
-&lt;p>$$\cos(x)=\frac{1}{\sec(x)}$$&lt;/p>
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- separator -->
-&lt;p>$$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$&lt;/p>
+$$\cos(x)=\frac{1}{\sec(x)}$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+$$\tan(x)=\frac{\sin(x)}{\cos(x)}=\frac{1}{\cot(x)}$$
+
  &lt;/div>
 
 &lt;/div>
@@ -318,20 +552,20 @@ $$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^
  &lt;a class="anchor" href="#pythagorean">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- begin -->
-&lt;p>$$\sin^2(x) + \cos^2(x) = 1$$&lt;/p>
- &lt;/div>
+$$\sin^2(x) + \cos^2(x) = 1$$
 
- &lt;div class="flex-even markdown-inner">
- &lt;!-- separator -->
-&lt;p>$$1+\tan^2(x) = \sec^2(x)$$&lt;/p>
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- separator -->
-&lt;p>$$1+\cot^2(x)=\csc^2(x)$$&lt;/p>
+$$1+\tan^2(x) = \sec^2(x)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+$$1+\cot^2(x)=\csc^2(x)$$
+
  &lt;/div>
 
 &lt;/div>
@@ -341,17 +575,63 @@ $$\int_a^z f (x,y) = \int_a^b f_1(x,y) + \int_b^c f_2(x,y) + \dots \int_{\dots}^
  &lt;a class="anchor" href="#cofunction">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- begin -->
-&lt;p>$$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$
-$$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$&lt;/p>
+$$\sin\Big(\frac{\pi}{2}-x\Big) = \cos(x)$$
+$$\csc\Big(\frac{\pi}{2}-x\Big) = \sec(x)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+$$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$
+$$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+$$\tan\Big(\frac{\pi}{2}-x\Big) = \cot(x)$$
+$$\cot\Big(\frac{\pi}{2}-x\Big) = \tan(x)$$
+
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+&lt;/div>
+
+&lt;h2 id="evenodd">
+ Even/Odd
+ &lt;a class="anchor" href="#evenodd">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- begin -->
+$$ \sin(-x) = -\sin(x)$$
+$$ \csc(-x) = -\csc(x)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- separator -->
-&lt;p>$$\cos\Big(\frac{\pi}{2}-x\Big) = \sin(x)$$
-$$\sec\Big(\frac{\pi}{2}-x\Big) = \csc(x)$$&lt;/p></description></item><item><title>Trig Calculus</title><link>http://notes.mehvix.com/math-53/trig-calc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig-calc/</guid><description>&lt;h1 id="derivatives">
+$$ \cos(-x) = \cos(x)$$
+$$ \sec(-x) = \sec(x)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+$$ \tan(-x) = - \tan(x)$$
+$$ \cot(-x) = -\cot(x)$$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;div style="text-align: center">
+Bonus fact: .$\int_{-A}^A \text{[odd]}(x)\ dx = 0$; .$\int_{-A}^A \text{[even]}(x)\ dx = \int_0^A \text{[even]}(x)\ dx$
+&lt;/div>
+&lt;h2 id="sum-and-difference">
+ Sum and Difference
+ &lt;a class="anchor" href="#sum-and-difference">#&lt;/a>
+&lt;/h2>
+&lt;p>$$ \sin(u \pm v) = \sin(u) \cdot \cos(v) \pm \cos(u) \cdot \sin(v)$$
+$$ \cos(u \pm v) = \cos(u) \cdot \cos(v) \pm \sin(u) \cdot \sin(v)$$
+$$ \tan(u \pm v) = \frac{\tan(u) \pm \tan(v)}{1 \mp \tan(u) \tan(v)}$$&lt;/p></description></item><item><title>Trig Calculus</title><link>http://notes.mehvix.com/math-53/trig-calc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/math-53/trig-calc/</guid><description>&lt;h1 id="derivatives">
  Derivatives
  &lt;a class="anchor" href="#derivatives">#&lt;/a>
 &lt;/h1>

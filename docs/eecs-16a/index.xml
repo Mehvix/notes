@@ -51,7 +51,9 @@
 &lt;li>.$p$ is the power of the energy source
 &lt;details >&lt;summary>Tomography Example&lt;/summary>
  &lt;div class="markdown-inner">
- &lt;img src="http://notes.mehvix.com/docs/eecs-16a/0/to.png" alt="" />
+ 
+![](/docs/eecs-16a/0/to.png)
+
  &lt;/div>
 &lt;/details>
 &lt;/li>
@@ -103,9 +105,31 @@
 &lt;li>If the result of both approaches are equal, then distributivity holds. Otherwise, distributivity does not hold.
 &lt;blockquote class="book-hint info">
  &lt;!-- mathjax fix -->
-&lt;p>We can account for both Homogeneity and Super position by proving the function holds under the following equation:
+We can account for both Homogeneity and Super position by proving the function holds under the following equation:
 $$\alpha_1 f(x_1, \dots x_n) + \dots + \alpha_n f(y_1, \dots, y_n) = f(\alpha_1 x_1 +\alpha_n y_1, \dots, \alpha_1 x_n + \alpha_n y_n)$$
-where .$y_n$ is a some scalar&lt;/p></description></item><item><title>1: Gaussian Elim. &amp; Matrices + Vectors</title><link>http://notes.mehvix.com/eecs-16a/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/1/</guid><description>&lt;h1 id="01-25-gaussian-elimination-vectors">
+where .$y_n$ is a some scalar
+ 
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Linear functions can always be expressed as .$f(x_1, \dots, x_n) = c_1 x_1 + \dots + c_n x_n$
+&lt;ul>
+&lt;li>For .$\mathbb{R}^2$, that is, .$f(x_1, x_2) = c_1 x_1 + c_2 x_2$&lt;/li>
+&lt;li>We know this system is linear so it follows these two rules above. So we should set up an equation where we can apply these properties.
+&lt;blockquote>
+&lt;p>$$\begin{align}
+x_1 &amp;amp;= 1 \cdot x_1 + 0 \cdot x_2;\ &amp;amp;x_2 = 0 \cdot x_1 + 1 \cdot x_2 \\
+\text{Let}\quad y_1 &amp;amp;= 1, z_1 = 0; &amp;amp;y_2 = 0, z_2 = 1 \\
+\Longrightarrow x_1 &amp;amp;= x_1 y_1 + x_1 z_1;\ &amp;amp;x_2 = x_2 y_2 + x_2 z_2 \\
+\Longrightarrow x_1 &amp;amp;= x_1 (y_1 + z_1);\ &amp;amp;x_2 = x_2 (y_2 + z_2) \end{align}$$
+$$\begin{align} \text{Therefore, } f(x_1, x_2) &amp;amp;= f(x_1 y_1 + x_2 z_1, x_1 y_2 + x_2 z_2) \\
+&amp;amp;= x_1f(y_1, y_2) + x_2f(z_1, z_2) \\
+&amp;amp;= x_1f(1, 0) + x_2f(0, 1) \\
+&amp;amp;= c_1 x_1 + c_2 x_2\ \blacksquare
+\end{align}$$&lt;/p></description></item><item><title>1: Gaussian Elim. &amp; Matrices + Vectors</title><link>http://notes.mehvix.com/eecs-16a/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/1/</guid><description>&lt;h1 id="01-25-gaussian-elimination-vectors">
  01-25: Gaussian Elimination, Vectors
  &lt;a class="anchor" href="#01-25-gaussian-elimination-vectors">#&lt;/a>
 &lt;/h1>
@@ -122,27 +146,23 @@ where .$y_n$ is a some scalar&lt;/p></description></item><item><title>1: Gaussia
  &lt;a class="anchor" href="#upper-triangular-systems">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Consider the following equation
+- Consider the following equation
 $$x-y+2z=1$$
 $$y-z=2$$
-$$z=1$$&lt;/li>
-&lt;/ul>
+$$z=1$$
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>&amp;hellip;which can be represent as an 
- &lt;a href="https://en.wikipedia.org/wiki/Augmented_matrix">augmented matrix&lt;/a>:
+...which can be represent as an [augmented matrix](https://en.wikipedia.org/wiki/Augmented_matrix):
 $$\begin{bmatrix}
-1 &amp;amp; -1 &amp;amp; 2 &amp;amp; \text{|} &amp;amp; 1\\
-0 &amp;amp; 1 &amp;amp; -1 &amp;amp; \text{|} &amp;amp; 2\\
-0 &amp;amp; 0 &amp;amp; 1 &amp;amp; \text{|} &amp;amp; 1
-\end{bmatrix}$$&lt;/p>
+ 1 &amp; -1 &amp; 2 &amp; \text{|} &amp; 1\\\
+ 0 &amp; 1 &amp; -1 &amp; \text{|} &amp; 2\\\
+ 0 &amp; 0 &amp; 1 &amp; \text{|} &amp; 1
+\end{bmatrix}$$
+
  &lt;/div>
 
 &lt;/div>
@@ -163,24 +183,175 @@ $$\begin{bmatrix}
 &lt;li>More precisely, a matrix is in 
  &lt;a href="https://en.wikipedia.org/wiki/Row_echelon_form">&lt;strong>row echelon form&lt;/strong>&lt;/a> when the following criteria are met:
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>All nonzero rows are above all zero rows.&lt;/li>
-&lt;li>The leading coefficient of a non-zero row is always to the right of the leading coefficient of the row above it.&lt;/li>
-&lt;/ul>
+* All nonzero rows are above all zero rows.
+* The leading coefficient of a non-zero row is always to the right of the leading coefficient of the row above it.
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$\begin{bmatrix}
+ 1 &amp; * &amp; * &amp; * &amp; \text{|} &amp; *\\\
+ 0 &amp; 1 &amp; * &amp; * &amp; \text{|} &amp; *\\\
+ 0 &amp; 0 &amp; 0 &amp; 1 &amp; \text{|} &amp; *\\\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \text{|} &amp; 0\\\
+\end{bmatrix}$$
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+&lt;/div>
+
+&lt;ul>
+&lt;li>The leading coefficient of every non-zero row (which we call the &lt;strong>
+ &lt;a href="https://en.wikipedia.org/wiki/Pivot_element">pivot&lt;/a>&lt;/strong>, and say is in the pivot position) is 1.
+&lt;ul>
+&lt;li>Some textbooks will require this third property, others don&amp;rsquo;t&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="reduced-row-echelon-form">
+ Reduced Row Echelon Form
+ &lt;a class="anchor" href="#reduced-row-echelon-form">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>
+ &lt;a href="https://en.wikipedia.org/wiki/Row_echelon_form#Reduced_row_echelon_form">Reduced Row Echelon Form&lt;/a>:&lt;/strong> requires that, in addition to the upwards propagation of variables in step (3), we will obtain a matrix with the following properties, in addition to the two mentioned above:
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>$$\begin{bmatrix}
-1 &amp;amp; * &amp;amp; * &amp;amp; * &amp;amp; \text{|} &amp;amp; *\\
-0 &amp;amp; 1 &amp;amp; * &amp;amp; * &amp;amp; \text{|} &amp;amp; *\\
-0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; \text{|} &amp;amp; *\\
-0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; \text{|} &amp;amp; 0\\
-\end{bmatrix}$$&lt;/p></description></item><item><title>2: (In)dependence &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/2/</guid><description>&lt;h1 id="02-01-linear-independance-matrix-transformations">
+1. The matrix is in row echelon form.
+2. The leading coefficient of every non-zero row (which we call the pivot, and say is in the pivot position) is 1.
+3. Each column with an element that is in the pivot position of some row has 0s everywhere else.
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$\begin{bmatrix}
+ 1 &amp; 0 &amp; * &amp; 0 &amp; \text{|} &amp; *\\\
+ 0 &amp; 1 &amp; * &amp; 0 &amp; \text{|} &amp; *\\\
+ 0 &amp; 0 &amp; 0 &amp; 1 &amp; \text{|} &amp; *\\\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \text{|} &amp; 0\\\
+\end{bmatrix}$$
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;li>Sometimes abbreviated (especially in programming) as &lt;code>rref&lt;/code>.&lt;/li>
+&lt;li>By construction, the Gaussian elimination algorithm always results in a matrix that is in reduced row echelon form.
+&lt;ul>
+&lt;li>Once an augmented matrix is reduced to reduced row echelon form, variables corresponding to columns containing leading entries are called &lt;strong>basic variables&lt;/strong>, and the remaining variables are called &lt;strong>
+ &lt;a href="https://en.wikipedia.org/wiki/Free_variables_and_bound_variables">free variables&lt;/a>&lt;/strong>
+&lt;ul>
+&lt;li>If there just isn&amp;rsquo;t enough information and the equations do not contradict each other, then there exist an infinite number of solutions.&lt;/li>
+&lt;li>When this happens, choose some variable (ideally, which is in most of the equations) and then solve each equation in terms of that variable (e.x. .$z$ is in all equations, so now write .$x,y,\dots$ in terms of .$z$).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;details >&lt;summary>Example&lt;/summary>
+ &lt;div class="markdown-inner">
+ &lt;!-- mathjax fix -->
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+We start with the following system:
+$$x-y+2z=1$$
+$$2x+y+z=8$$
+$$-4x+5y = 7$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+...which we can write as a matrix
+$$\begin{bmatrix}
+ 1 &amp; -1 &amp; 2 &amp; \text{|} &amp; 1\\\
+ 2 &amp; 1 &amp; 1 &amp; \text{|} &amp; 8\\\
+ -4 &amp; 5 &amp; 0 &amp; \text{|} &amp; 7
+\end{bmatrix}$$
+
+ &lt;/div>
+
+&lt;/div>
+
+...and we can **row-reduce** to upper triangle (Row echelon)
+&lt;!-- - add .$-2 (1)$ to row two and .$4 (1)$ to row three
+$$\begin{bmatrix}
+ 1 &amp; -1 &amp; 2 &amp; \text{|} &amp; 1\\\
+ 2-(2\cdot 1) &amp; 1-(2\cdot -1) &amp; 1-(2\cdot 2) &amp; \text{|} &amp; 8-(2\cdot 1)\\\
+ 0 &amp; 1 &amp; 8 &amp; \text{|} &amp; 11
+\end{bmatrix}$$-->
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/tri.png">
+&lt;/figure>
+
+...which we can use [**back substitution**](https://en.wikipedia.org/wiki/Triangular_matrix#Forward_and_back_substitution) to solve
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/back.png">
+&lt;/figure>
+
+
+ &lt;/div>
+&lt;/details>
+
+&lt;details >&lt;summary>Tomograph Example&lt;/summary>
+ &lt;div class="markdown-inner">
+ 
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/tom1.png">
+&lt;/figure>
+
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/tom2.png">
+&lt;/figure>
+
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/tom3.png">
+&lt;/figure>
+
+
+ &lt;/div>
+&lt;/details>
+
+&lt;h2 id="error">
+ Error
+ &lt;a class="anchor" href="#error">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>In real systems, we will always have noise (error) that makes our systems slightly skewed
+&lt;ul>
+&lt;li>So what if we repeat the example above, but have a measurement of .$+0.1$&amp;hellip; are there any solutions?
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/err.png">
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="graphing">
+ Graphing
+ &lt;a class="anchor" href="#graphing">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>We can represent our solution as a set of linear equations, meaning we can represent them graphically
+
+ &lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/single.png" alt="" />
+
+ &lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/no-sol.png" alt="" />
+
+ &lt;img src="http://notes.mehvix.com/docs/eecs-16a/1/inf.png" alt="" />&lt;/li>
+&lt;/ul>
+&lt;h1 id="01-27-vectors-matrices-multiplications-and-span">
+ 01-27: Vectors, Matrices, Multiplications, And Span
+ &lt;a class="anchor" href="#01-27-vectors-matrices-multiplications-and-span">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture1B_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>Notes 
+ &lt;a href="https://eecs16a.org/lecture/Note2A.pdf">2A&lt;/a>, 
+ &lt;a href="https://eecs16a.org/lecture/Note2B.pdf">2B&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Last lecture, we showed how vectors and matrices could be used as a way of writing systems of linear equations more compactly, demonstrating through our tomography example that modeling a set of measurements as a system of equations can be a powerful tool.&lt;/p></description></item><item><title>2: (In)dependence &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/2/</guid><description>&lt;h1 id="02-01-linear-independance-matrix-transformations">
  02-01: Linear (in)dependance, Matrix Transformations
  &lt;a class="anchor" href="#02-01-linear-independance-matrix-transformations">#&lt;/a>
 &lt;/h1>
@@ -218,20 +389,246 @@ $$\begin{bmatrix}
 &lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Just as .$f$ is a linear transformation iff 
- &lt;a href="http://notes.mehvix.com/eecs-16a/0/#linear-algebra">homogeneity and super position hold&lt;/a>, matrix-vector multiplications satisfy linear transformation:&lt;/li>
-&lt;/ul>
+- Just as .$f$ is a linear transformation iff [homogeneity and super position hold](0#linear-algebra), matrix-vector multiplications satisfy linear transformation:
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$A \cdot (\alpha \vec x) = \alpha A \vec x$$
+$$A \cdot (\vec x + \vec y) = A \vec x + A \vec y $$
+
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+&lt;/div>
+
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/kYB8IZa5AuE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="state-transformation">
+ State Transformation
+ &lt;a class="anchor" href="#state-transformation">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>As such, we can think about matrices as state transformations;
+&lt;ul>
+&lt;li>If we have a list of inputs representing some current state at some timestep .$n$ (given by .$\vec x(n)$), then when a matrix .$A$ operates on that state, it transforms it into a new state at the next time step (.$\vec x(n + 1)$).&lt;/li>
+&lt;li>Consider a timestep to be a very small unit of time. Our systems here will be discrete, meaning that the transition of water happens exactly at each timestep, and not between timesteps
+&lt;ul>
+&lt;li>Aside: But in reality, water is flowing continuously! To model this rigorously, we need linear differential equations, but for now, if the timestep we take is very small, the discrete model is quite good as an approximation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Example:&lt;/strong> Water Pulps (
+ &lt;a href="https://eecs16a.org/lecture/Note5.pdf">Note5&lt;/a> )
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>$$A \cdot (\alpha \vec x) = \alpha A \vec x$$
-$$A \cdot (\vec x + \vec y) = A \vec x + A \vec y $$&lt;/p></description></item><item><title>4: Vector Spaces &amp; Eigenstuff</title><link>http://notes.mehvix.com/eecs-16a/4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/4/</guid><description>&lt;h1 id="02-15-vector-spaces-null-spaces-and-columnspaces">
+- At each time step, some portion of the water in each pump goes to itself, and some portion goes to each of the other pumps. The general state transition matrix formula for an .$n$-state system (assuming the initial and final state vectors have the same length .$n$) is as follows:
+
+$$
+\begin{bmatrix}
+ \vec P_{1 \to \dots} &amp; \vec P_{2 \to \dots} &amp; \dots &amp; \vec P_{N \to \dots} \\\
+\end{bmatrix}$$
+$$\equiv$$
+$$\begin{bmatrix}
+ P_{1 \to 1} &amp; P_{2 \to 1} &amp; ... &amp; P_{N \to 1}\\\
+ P_{1 \to 2} &amp; P_{2 \to 2} &amp; ... &amp; P_{N \to 2}\\\
+ \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\\
+ P_{1 \to N} &amp; P_{2 \to N} &amp; ... &amp; P_{N \to N}
+\end{bmatrix}
+$$
+
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+> ![](/docs/eecs-16a/2/fournode.png)
+> $$\begin{bmatrix}
+ 0.4 &amp; 0.1 &amp; 0.4 &amp; 0.1\\\
+ 0.1 &amp; 0.2 &amp; 0.1 &amp; 0.4\\\
+ 0.2 &amp; 0.3 &amp; 0.2 &amp; 0.2\\\
+ 0.3 &amp; 0.4 &amp; 0.3 &amp; 0.3
+\end{bmatrix}$$
+ 
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>Notice that all of the water goes somewhere and none comes up out of thin air; that is, the water is a &lt;strong>conserved&lt;/strong> quantity. We don’t have any leakage or generation of water in the system.
+&lt;ul>
+&lt;li>This isn’t always true, but the idea of conservation will largely hold true, especially for systems based in 
+ &lt;a href="https://en.wikipedia.org/wiki/Conservation_of_energy">physical reality&lt;/a>.&lt;/li>
+&lt;li>We can tell if the transformation is conservative by looking at each column’s values describe the movement of water from a specific node to other nodes. If any column’s values do not sum to exactly 1, then something is being lost or created in the system as a whole.
+&lt;ul>
+&lt;li>In addition, if a specific column’s sum is greater than 1, matter is entering the system through that node; conversely, if a specific column sum is less than 1, matter is leaving the system through that node.&lt;/li>
+&lt;li>Recognize that, given information about only a single node’s column sum, we can never definitely say if the overall system is conservative or not; we only know if it might be conservative, based on other nodes.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Diagram .$\to$ Matrix:
+&lt;ul>
+&lt;li>Given a state transition diagram, we can create the corresponding state transition matrix by reading the values at each arrow, noting the directionality (these are &lt;em>directed&lt;/em> edges) and populating the rows one by one.&lt;/li>
+&lt;li>Similarly, given a matrix, we can draw the appropriate number of nodes and label arrows going to/from each node with the values as indicated by the matrix.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>How do we go back in time?
+&lt;ul>
+&lt;li>That is, we want some transition matrix .$B$ such that .$\vec x (t-1) = B \vec x(t)$&lt;/li>
+&lt;li>Flipping the direction of the edges won&amp;rsquo;t work&amp;hellip;&lt;/li>
+&lt;li>Transpose won&amp;rsquo;t either&amp;hellip;&lt;/li>
+&lt;li>Which leads us to&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="02-10-inverse">
+ 02-10: Inverse
+ &lt;a class="anchor" href="#02-10-inverse">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture3B_Slides.pdf">Slides&lt;/a>&lt;/li>
+&lt;li>Notes 
+ &lt;a href="https://eecs16a.org/lecture/Note5.pdf">5&lt;/a>, 
+ &lt;a href="https://eecs16a.org/lecture/Note6.pdf">6&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="matrix-inverse">
+ Matrix Inverse
+ &lt;a class="anchor" href="#matrix-inverse">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Purpose
+&lt;ul>
+&lt;li>We know that .$\vec x(t+1) = Q \vec x (t)$ and want some reverse-matrix .$P$ such that .$\vec x (t) = P \vec x (t+1)$
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$P \vec x(t+1) = PQ\vec x(t)$$
+$$P \vec x(t+1) = I \vec x(t)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$\vec x(t+1) = Q \vec x(t)$$
+$$\vec x(t+1) = Q(P \vec x(t+1))$$
+$$\vec x(t+1) = I \vec x(t+1)$$
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Consider .$A$ as an operator on any vector .$\vec x \in \mathbb{R}^{n}$:
+&lt;ul>
+&lt;li>What does it mean for .$A$ to have an inverse? It suggests that we can find a matrix that &amp;ldquo;undoes&amp;rdquo; the effect of matrix .$A$ operating on any vector .$\vec x \in \mathbb{R}^{n}$. What property should .$A$ have in order for this to be possible?&lt;/li>
+&lt;li>A should map any two distinct vectors to distinct vectors in .$ \mathbb{R}^{n}$, i.e., .$A \vec x_1 \neq A \vec x_2$ for vectors .$\vec x_1, \vec x_2$ such that .$\vec x_1 \neq \vec x_2$.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Definition: Let .$P, Q \in \mathbb{R}^{N \times N}$ be square matrices (we tackle non-square in 16B)
+&lt;ul>
+&lt;li>.$P$ is the inverse of .$Q$ if .$PQ = QP = I$&lt;/li>
+&lt;li>We say .$P = Q^{-1}$ and .$Q = P^{-1}$&lt;/li>
+&lt;li>Steps to solve with Gaussian Elimination are shown on 
+ &lt;a href="https://eecs16a.org/lecture/Lecture3A_Slides.pdf#page=50">slide 50&lt;/a> or &amp;lsquo;more&amp;rsquo; formally in 
+ &lt;a href="https://eecs16a.org/lecture/Note6.pdf">Notes 6, page 3&lt;/a>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- For any .$n \times n$ matrix .$M$, we can perform Gaussian elimination on the augmented matrix:
+- If at termination of Gaussian elimination, we end up with an identity matrix on the left, then the matrix on the right is the inverse of the matrix .$M$
+- If we don’t end up with an identity matrix on the left, we will have a row of zeros, (which indicates that the rows of .$M$ are linearly dependent) and that the matrix is not invertible
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$\begin{bmatrix}
+&amp; &amp; | &amp; &amp; \\\
+&amp; M &amp; | &amp; I_n &amp; \\\
+&amp; &amp; | &amp; &amp; \\\
+\end{bmatrix}
+$$
+&lt;br>
+
+$$
+\begin{bmatrix}
+&amp; &amp; | &amp; &amp; \\\
+&amp; I_n &amp; | &amp; M^{-1} &amp; \\\
+&amp; &amp; | &amp; &amp; \\\
+\end{bmatrix}$$
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="inverse-of-a-2x2-matrix">
+ Inverse of a 2x2 matrix
+ &lt;a class="anchor" href="#inverse-of-a-2x2-matrix">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>You can derive this via Gaussian elimination (flip .$a$ with .$d$, negate .$b$ and .$c$, then divide by .$ad-bc$)
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$A = \begin{bmatrix}
+ a &amp; b\\\
+ c &amp; d\\\
+\end{bmatrix}$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$A^{-1} = \frac{1}{ad-bc} \begin{bmatrix}
+ d &amp; -b\\\
+ -c &amp; a\\\
+\end{bmatrix}$$
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;li>.$ad-bc$ is the determinant, so we can check quickly if an inverse exists for a square matrix by checking if they determinant exists
+&lt;ul>
+&lt;li>
+ &lt;a href="https://eecs16a.org/lecture/Lecture4B_Slides.pdf#page=8">See slide 8&lt;/a>&lt;/li>
+&lt;li>Determinant is the area the vectors form. So if they vectors form some zero-area (or volume in 3D) then it&amp;rsquo;s not one-to-one and thus not invertible&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Ip3X9LOh2dk?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="theorems">
+ Theorems
+ &lt;a class="anchor" href="#theorems">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="theorem-note-61">
+ Theorem Note 6.1
+ &lt;a class="anchor" href="#theorem-note-61">#&lt;/a>
+&lt;/h3>
+&lt;blockquote>
+&lt;p>If .$A$ is an invertible matrix, then its inverse must be unique&lt;/p></description></item><item><title>4: Vector Spaces &amp; Eigenstuff</title><link>http://notes.mehvix.com/eecs-16a/4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/4/</guid><description>&lt;h1 id="02-15-vector-spaces-null-spaces-and-columnspaces">
  02-15: Vector Spaces: Null Spaces and Columnspaces
  &lt;a class="anchor" href="#02-15-vector-spaces-null-spaces-and-columnspaces">#&lt;/a>
 &lt;/h1>
@@ -267,10 +664,35 @@ $$A \cdot (\vec x + \vec y) = A \vec x + A \vec y $$&lt;/p></description></item>
 &lt;li>A vector space .$\mathbb{V}$ is a set of vectors and two operators .$+, \cdot$ that satisfy:&lt;/li>
 &lt;/ul>
 &lt;p>&lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>&lt;strong>Vector Addition&lt;/strong>&lt;/p></description></item><item><title>5: Basis &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/5/</guid><description>&lt;h1 id="02-22-basis">
+**Vector Addition**
+- Associative: .$\vec u + (\vec v + \vec w) = (\vec u + \vec v) + \vec w$
+- Commutative: .$\vec u + \vec v = \vec v + \vec u$
+- Additive Identity: There exists an additive identity .$\vec 0 \in \mathbb{V}$ such that .$\vec v + \vec 0 = \vec v$
+- Additive Inverse: There exists .$- \vec v \in \mathbb{V}$ such that .$\vec v + (-\vec v) = \vec 0$. We call .$-\vec v$ the additive inverse of .$\vec v$.
+- Closure under vector addition: The sum .$\vec v + \vec u$ must also be in .$\mathbb{V}$
+
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+**Scalar Multiplication**
+
+- Associative: .$\vec \alpha(\beta \vec v) = (\alpha \beta) \vec v$
+- Multiplicative Identity: There exists .$1 \in \mathbb{R}$ where .$1 \cdot \vec v = \vec v$
+- Distributive in vector addition: .$\alpha (\vec u + \vec v) = \alpha \vec u + \alpha \vec v$
+- Distributive in scalar addition: .$(\alpha + \beta)\vec v = \alpha \vec v + \beta \vec v$
+- Closure under scalar multiplication: The product .$\alpha \vec v$ must also be in .$\mathbb{V}$.
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;div style="text-align: center">
+ ... for any .$\vec v, \vec u, \vec w \in \mathbb{V}; \alpha, \beta \in \mathbb{R}$
+&lt;/div>
+&lt;/p></description></item><item><title>5: Basis &amp; Circuit Analysis</title><link>http://notes.mehvix.com/eecs-16a/5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/5/</guid><description>&lt;h1 id="02-22-basis">
  02-22 Basis
  &lt;a class="anchor" href="#02-22-basis">#&lt;/a>
 &lt;/h1>
@@ -294,33 +716,37 @@ $$A \cdot (\vec x + \vec y) = A \vec x + A \vec y $$&lt;/p></description></item>
  &lt;a class="anchor" href="#change-of-basis">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Previously we’ve seen that a basis for a vector space is a minimal spanning set of vectors.&lt;/li>
-&lt;li>We can also define the standard basis vectors, e,x. the standard basis for .$ \mathbb{R}^{3}$ is the set .$\mathbb{E}$:&lt;/li>
-&lt;/ul>
+- Previously we’ve seen that a basis for a vector space is a minimal spanning set of vectors.
+- We can also define the standard basis vectors, e,x. the standard basis for .$ \mathbb{R}^{3}$ is the set .$\mathbb{E}$:
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$\mathbb{E} = \big(\hat i, \hat j, \hat k \big)$$
+$$\dots \equiv ( \vec e_1, \vec e_2, \vec e_3)$$
+$$\dots \equiv \left( \begin{bmatrix}
+ 1\\\
+ 0\\\
+ 0\\\
+\end{bmatrix}, \begin{bmatrix}
+ 0\\\
+ 1\\\
+ 0\\\
+\end{bmatrix}, \begin{bmatrix}
+ 0\\\
+ 0\\\
+ 1\\\
+\end{bmatrix}\right) $$
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
- &lt;!-- mathjax fix -->
-&lt;p>$$\mathbb{E} = \big(\hat i, \hat j, \hat k \big)$$
-$$\dots \equiv ( \vec e_1, \vec e_2, \vec e_3)$$
-$$\dots \equiv \left( \begin{bmatrix}
-1\\
-0\\
-0\\
-\end{bmatrix}, \begin{bmatrix}
-0\\
-1\\
-0\\
-\end{bmatrix}, \begin{bmatrix}
-0\\
-0\\
-1\\
-\end{bmatrix}\right) $$&lt;/p></description></item><item><title>6: Voltage Dividers &amp; Measurement</title><link>http://notes.mehvix.com/eecs-16a/6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/6/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;/div>
+
+&lt;ul>
+&lt;li>
+&lt;p>We can represent any set of vectors that form as basis as a linear combination of the &lt;em>standard&lt;/em> .$ \mathbb{R}^{3}$ basis vectors&lt;/p></description></item><item><title>6: Voltage Dividers &amp; Measurement</title><link>http://notes.mehvix.com/eecs-16a/6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/6/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -339,26 +765,110 @@ $$\dots \equiv \left( \begin{bmatrix}
  &lt;a href="https://en.wikipedia.org/wiki/Voltage_divider">voltage divider circuit&lt;/a> consists of a voltage source (.$V_S$) and two resistors (.$R_1$ and .$R_2$)&lt;/li>
 &lt;li>Example:
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ol>
-&lt;li>We label the node connected to the voltage supply as .$u_1 (= V_S)$, since the voltage supply goes between this node and ground.&lt;/li>
-&lt;li>Label the remaining node as .$u_\text{mid}$ and the voltages and currents through every element in the circuit with .$V_i$ and .$I_i$ respectively&lt;/li>
-&lt;li>Write KCL equations for all nodes with unknown voltage - in this case, this is just .$u_\text{mid}$, since .$u_1 = V_S$.
-&lt;ul>
-&lt;li>The current entering that node is .$I_{R_1}$ and the current leaving it is .$I_{R_2}$&lt;/li>
-&lt;li>Since these currents must be equal, .$I_{R_1} = I_{R_2}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
+1. We label the node connected to the voltage supply as .$u_1 (= V_S)$, since the voltage supply goes between this node and ground.
+2. Label the remaining node as .$u_\text{mid}$ and the voltages and currents through every element in the circuit with .$V_i$ and .$I_i$ respectively
+3. Write KCL equations for all nodes with unknown voltage - in this case, this is just .$u_\text{mid}$, since .$u_1 = V_S$.
+ - The current entering that node is .$I_{R_1}$ and the current leaving it is .$I_{R_2}$
+ - Since these currents must be equal, .$I_{R_1} = I_{R_2}$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/eecs-16a/6/volt2.png)
+ 
+ &lt;/div>
+
+&lt;/div>
+
+4. Find expressions for element currents for all elements (except the voltage source) &amp;ndash; all steps on 
+ &lt;a href="https://eecs16a.org/lecture/Note12.pdf#page=3">page 3&lt;/a>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$I_{R_1} = \frac{V_S - u_\text{mid}}{R_1}$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$I_{R_2} = \frac{u_\text{mid}}{R_2}$$
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+&lt;/div>
+
+5. Substitute the element currents into our KCL equation. We have
+$$I_{R_1} = I_{R_2} \Longrightarrow \frac{V_S - u_\text{mid}}{R_1} = \frac{u_\text{mid}}{R_2}$$
+7. Solve the above equation. Rearranging, we find that
+$$V_S R_2 −u_\text{mid}R_2 = u_\text{mid}R_1$$
+$$ \Longrightarrow u_\text{mid}(R_1 +R_2) = V_SR_2$$
+$$ \Longrightarrow u_\text{mid} = \frac{R_2}{R_1 + R_2} V_S = \frac{1}{1+ \frac{R_1}{R_2}} V_S = \alpha V_S$$
+&lt;blockquote class="book-hint info">
  &lt;!-- mathjax fix -->
+The reason this circuit is called a "voltage divider" is that _we can create any output voltage_ of .$u_\text{mid} = \alpha V_S$ for any .$\alpha \in [0,1]$ (assuming that all of the resistance values are non-negative) by varying the ratio of the resistor values .$R_1/R_2$. As we will see shortly, varying this ratio is exactly the mechanism we will use to convert the relative position of a user’s touch to a voltage.
+
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote class="book-hint info">
+ &lt;!-- mathjax fix -->
+.$R_2$, the **resistor in the numerator**, is the one next to ground. .$R_1$ is connected to a non-zero voltage node (in this case .$u_1 = V_S$).
+
+&lt;/blockquote>
+
+&lt;h2 id="capacitor-divider">
+ Capacitor Divider
+ &lt;a class="anchor" href="#capacitor-divider">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+The capacitor divider is similar, differing in that the numerator is now the component closest to $V_{in}$ rather than closest to ground (as in the voltage divider with resistors)
+$$V_{out} = \frac{C_1}{C_1 + C_2} V_{in}$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Impedance_voltage_divider.svg/330px-Impedance_voltage_divider.svg.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="current-divider">
+ Current Divider
+ &lt;a class="anchor" href="#current-divider">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+Current $I_X$ in a resistor $R_X$ that is in parallel with a combination of other resistors of total resistance $R_T$ is
+$$I_X = \frac{R_T}{R_X + R_T}I_T$$
+- $I_T$ is the total current entering the combined network of $R_X$ in parallel with $R_T$
+- $R_T$: Total resistance of the circuit to the right of resistor $R_X$
+
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Current_division_example.svg/375px-Current_division_example.svg.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h1 id="03-03-power-and-voltagecurrent-measurement">
+ 03-03: Power and Voltage/Current Measurement
+ &lt;a class="anchor" href="#03-03-power-and-voltagecurrent-measurement">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="physics-of-circuits">
+ Physics of Circuits
+ &lt;a class="anchor" href="#physics-of-circuits">#&lt;/a>
+&lt;/h2>
+&lt;blockquote>
 &lt;p>
- &lt;img src="http://notes.mehvix.com/docs/eecs-16a/6/volt2.png" alt="" />&lt;/p></description></item><item><title>7: 2D Touchscreens &amp; Superp. + Equivalence</title><link>http://notes.mehvix.com/eecs-16a/7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/7/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+ &lt;a href="http://notes.mehvix.com/physics-7b/25/#252-electric-current">Read 7B 25.2 - 5&lt;/a>&lt;/p></description></item><item><title>7: 2D Touchscreens &amp; Superp. + Equivalence</title><link>http://notes.mehvix.com/eecs-16a/7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/7/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -373,20 +883,103 @@ $$\dots \equiv \left( \begin{bmatrix}
  &lt;a class="anchor" href="#bottom-plate">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Trivially, we see that if we add a wire connected to $u_\text{mid}$ that will have the same voltage across it (wires have zero voltage drop)&lt;/li>
-&lt;li>So why have the bottom plate at all? It lets us take the measurement for $V_\text{out}$ using connection points on the edge of the plate instead of having to put a probe or wire at the actual touch point every time!&lt;/li>
-&lt;/ul>
+- Trivially, we see that if we add a wire connected to $u_\text{mid}$ that will have the same voltage across it (wires have zero voltage drop)
+- So why have the bottom plate at all? It lets us take the measurement for $V_\text{out}$ using connection points on the edge of the plate instead of having to put a probe or wire at the actual touch point every time!
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/eecs-16a/7/wire.png)
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+&lt;/div>
+
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/eecs-16a/7/wire.png" alt="" />&lt;/p></description></item><item><title>8: Capacitors &amp; Capacitive Touchscreen</title><link>http://notes.mehvix.com/eecs-16a/8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/8/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+![](/docs/eecs-16a/7/imperf.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+### What if this bottom plate is non-ideal? That is, $R \neq 0$ ?
+- Both of these resistors are followed by an open circuit. From the definition of an open circuit, we know that zero current will flow through it.
+- If $i_\text{mid} = i_{R4} +i_{R3}$ from KCL, and $i_{R4} = i_{R3} = 0$ from the definition of an open circuit (Ohm’s Law says that $0V = R \cdot 0A$), the voltage across these new resistors will be $0$.
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>This means that, even with an imperfectly conductive bottom plate, the voltage $V_\text{out}$ will still be equal to $u_\text{mid}$, even with the addition of these new resistors.&lt;/li>
+&lt;li>To measure an output voltage, we need to put some device at the open circuit labeled $V_\text{out}$.&lt;/li>
+&lt;/ul>
+&lt;h2 id="interesting-circuit">
+ Interesting Circuit
+ &lt;a class="anchor" href="#interesting-circuit">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>These are two parallel voltage dividers, thus we can write:
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$u_2 = \frac{kR_1}{R_1 + k R_1} V_s = \frac{k}{1+k}V_S$$
+$$u_3 = \frac{kR_2}{R_2 + k R_2} V_S = \frac{k}{1+k}V_S$$
+- We see that regardless of the resistances $R_1$ and $R_2$, the potentials $u_2$ and $u_3$ are the same! This holds as long as $k$ is constant:
+$$u_2 = u_3 = \frac{k}{1+k}V_S$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/eecs-16a/7/interesting.png)
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/eecs-16a/7/int2.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- We can add $R_3$ and it won't change the circuit behavior
+- Since $u_2 = u_3$, there is no $\Delta V$, thus no current flows through the resistor.
+ - We can also find this with KCL: $R_3 i_3 = u_2 - u_3 = 0 \therefore i_3 = 0$
+- This means that $R_3$ is at the special $(0, 0)$ point on the $I$-$V$ plot, where it behaves the same way as a wire or open circuit
+ - That is, we could replace $R_3$ with an open circuit and nothing would change
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="2d-resistive-touchscreen">
+ 2D Resistive Touchscreen
+ &lt;a class="anchor" href="#2d-resistive-touchscreen">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Now, let’s introduce the physical structure of a 2D touchscreen: it consists of a top red plate and a bottom black plate. When a finger touches the screen, the top red plate is pushed into contact with the bottom black plate at the touch point.
+- The top and bottom ends of the top red plate as well as the left and right ends of the bottom black plate are made of materials that have very low resistivities $\rho$, we can treat them as ideal wires ($\rho = 0$). The materials of the transparent screen that we touch in the middle have much higher resistivity.
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+
+![](/docs/eecs-16a/7/2d1.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;br>&lt;/p></description></item><item><title>8: Capacitors &amp; Capacitive Touchscreen</title><link>http://notes.mehvix.com/eecs-16a/8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/8/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -402,48 +995,117 @@ $$\dots \equiv \left( \begin{bmatrix}
 &lt;/h2>
 &lt;blockquote class="book-hint info">
  &lt;!-- mathjax fix -->
-&lt;p>See also, 
- &lt;a href="http://notes.mehvix.com/physics-7b/24/">7B 24&lt;/a>&lt;/p>
+See also, [7B 24](../physics-7b/24.md)
+
 &lt;/blockquote>
 
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>
- &lt;a href="https://en.wikipedia.org/wiki/Capacitor">Capacitors&lt;/a> is a circuit element that stores charge&lt;/li>
-&lt;li>Positive 
- &lt;a href="https://en.wikipedia.org/wiki/Charge_%28physics%29">charges&lt;/a> build up on the (top) surface of the plate connected to the positive terminal and negative charges build up on the (bottom) surface of the plate connected to the negative terminal.&lt;/li>
-&lt;li>Capacitors have an associated quantity, 
- &lt;a href="https://en.wikipedia.org/wiki/Capacitance">&lt;strong>$C$apacitance&lt;/strong>&lt;/a> (farads); the ratio of the amount of 
- &lt;a href="https://en.wikipedia.org/wiki/Electric_charge">electric charge&lt;/a> $Q$ (coulombs) stored on a conductor to a difference in electric potential $V$
-&lt;ul>
-&lt;li>Units: 
- &lt;a href="https://en.wikipedia.org/wiki/Farad">Farads&lt;/a>, $F = \frac{C}{V}$.&lt;/li>
-&lt;li>Depends on the physical geometry of a capacitor
-$$C = \varepsilon_0 \frac{A}{d}$$
-&lt;ul>
-&lt;li>$A$: Area of plates&lt;/li>
-&lt;li>$d$: Distance between plates&lt;/li>
-&lt;li>$\varepsilon_0$: 
- &lt;a href="https://en.wikipedia.org/wiki/Permittivity">Permittivity&lt;/a> of 
- &lt;a href="https://en.wikipedia.org/wiki/Vacuum_permittivity">free space&lt;/a>, $8.854\cdot 10^{-12} \frac{\text{F}}{\text{m}}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+- [Capacitors](https://en.wikipedia.org/wiki/Capacitor) is a circuit element that stores charge
+- Positive [charges](https://en.wikipedia.org/wiki/Charge_(physics)) build up on the (top) surface of the plate connected to the positive terminal and negative charges build up on the (bottom) surface of the plate connected to the negative terminal.
+- Capacitors have an associated quantity, [**$C$apacitance**](https://en.wikipedia.org/wiki/Capacitance) (farads); the ratio of the amount of [electric charge](https://en.wikipedia.org/wiki/Electric_charge) $Q$ (coulombs) stored on a conductor to a difference in electric potential $V$
+ - Units: [Farads](https://en.wikipedia.org/wiki/Farad), $F = \frac{C}{V}$.
+ - Depends on the physical geometry of a capacitor
+ $$C = \varepsilon_0 \frac{A}{d}$$
+ - $A$: Area of plates
+ - $d$: Distance between plates
+ - $\varepsilon_0$: [Permittivity](https://en.wikipedia.org/wiki/Permittivity) of [free space](https://en.wikipedia.org/wiki/Vacuum_permittivity), $8.854\cdot 10^{-12} \frac{\text{F}}{\text{m}}$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+>![](/docs/eecs-16a/8/cap.png)
+>A physical diagram of a capacitor, with 2 metal plates and a [dielectric](https://en.wikipedia.org/wiki/Dielectric) (commonly air) between them
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+&lt;/div>
+
+&lt;ul>
+&lt;li>For most purposes, capacitors do not have polarity&amp;ndash; their orientation doesn’t impact their behavior.
+&lt;ul>
+&lt;li>The plate that corresponds to the &amp;ldquo;+&amp;rdquo; terminal, stores $+Q = +CV$ and the plate that corresponds to the &amp;ldquo;-&amp;rdquo; terminal stores $−Q = −CV$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The amount of charge $Q$ on a capacitor is related to its geometrical structure (capacitance $C$) and the voltage applied to it $V$:
+$$Q=CV$$
+&lt;ul>
+&lt;li>When we apply a voltage across the conductive plates, we create a potential difference, and so charges will build up on the plates&lt;/li>
+&lt;li>They will not build up indefinitely because this potential difference is not infinitely strong&lt;/li>
+&lt;li>At some point, an additional positive charge will be ambivalent about joining the plate; while there is a potential difference $V_+ − V_−$ between the plates attracting the charge, there are also repulsive forces from the charges that already exist on the plate&lt;/li>
+&lt;li>After this amount of critical charge forms on the plate, no additional charge will enter&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Geometry
+&lt;ul>
+&lt;li>The more the &lt;strong>$A$rea&lt;/strong>, the more the total charge that can fit on the plate because the individual charges can spread out more, decreasing the repulsive forces&lt;/li>
+&lt;li>Smaller the &lt;strong>$d$istance between the plates&lt;/strong>, the more strongly the $+$ and $−$ charges attract each other
+&lt;ul>
+&lt;li>That is, for the same voltage, decreasing the distance of plate separation increases the charge that will build up on the plate&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
+## Energy Storage
+
+> When we apply a potential difference, charges build up on the plates; these charges are the reason that a capacitor stores energy. The repulsion between charges on a given plate means that moving a charge onto the plate takes energy (supplied by the voltage source). **The more charge already on a plate, the more energy it takes to push another charge on.**
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$V = \frac{dE}{dQ}$$
+$$dE = V dQ$$
+$$dE = V \cdot d (CV)$$
+$$\int dE = C \int_0^V V\ dV$$
+$$ \Longrightarrow E = \frac{1}{2}CV^2$$
+This is the energy of a capacitor when it is fully charged, holding
+the complete $Q$ determined by $C$ and $V$.
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="i-v-relationship-and-behavior">
+ $I$-$V$ Relationship and Behavior
+ &lt;a class="anchor" href="#i-v-relationship-and-behavior">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="current">
+ Current
+ &lt;a class="anchor" href="#current">#&lt;/a>
+&lt;/h3>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$Q = CV$$
+$$\frac{dQ}{dt} = \frac{dCV}{dt}$$
+$$ \Longrightarrow I = C \frac{dV}{dt}$$
+- **Current is only flowing through the capacitor if the voltage across the capacitor is changing with time**
+ - If the voltage is no longer changing, then the current through the capacitor will equal 0.
+ - That is, in [steady state](https://en.wikipedia.org/wiki/Steady_state#Electrical_engineering) (after the current has been running for a very long time), direct current (DC) capacitors act as open circuits
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/eecs-16a/8/graph.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>If the voltage across it is constant, then the plates are already full of charge for that voltage
+&lt;ul>
+&lt;li>That is, any additional charge will feel the repulsive forces of the existing charges and will not want to enter the plate.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;blockquote>
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/eecs-16a/8/cap.png" alt="" />
-A physical diagram of a capacitor, with 2 metal plates and a 
- &lt;a href="https://en.wikipedia.org/wiki/Dielectric">dielectric&lt;/a> (commonly air) between them&lt;/p></description></item><item><title>9: Op-Amps, Comparators &amp; Charge Sharing</title><link>http://notes.mehvix.com/eecs-16a/9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/9/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;p>Note that the negative charges build up on the bottom plate; this happens because the positive charges on the top plate push the positive charges away from the bottom plate. This means that in reality, the charges entering the top plate are not the same exact physical charges that exit the bottom plate, but it doesn’t matter! From the perspective of the other circuit elements (and for our purposes), current flows just the same&lt;/p></description></item><item><title>9: Op-Amps, Comparators &amp; Charge Sharing</title><link>http://notes.mehvix.com/eecs-16a/9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/9/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -462,13 +1124,44 @@ A physical diagram of a capacitor, with 2 metal plates and a
  &lt;a href="https://en.wikipedia.org/wiki/Dependent_source">dependent sources&lt;/a> also generate currents and voltages but their output depends on some other &amp;ldquo;controlling&amp;rdquo; current .$i_x$ or voltage .$v_x$ in the circuit.&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;blockquote>
-&lt;p>&lt;strong>VCVS:&lt;/strong> Voltage-controlled voltage source
+>**VCVS:** Voltage-controlled voltage source
+>![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Voltage_controlled_voltage_source_circuit.svg/200px-Voltage_controlled_voltage_source_circuit.svg.png)
+>* .$V = f_a (v_x)$
+>* [Unitless](https://en.wikipedia.org/wiki/Dimensionless_quantity).$^1$ voltage gain .$a$
+>* E.x. [Voltage amplifier](https://en.wikipedia.org/wiki/Amplifier#Ideal)
+>* Input, output impedance: .$\infty, 0$
 
- &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Voltage_controlled_voltage_source_circuit.svg/200px-Voltage_controlled_voltage_source_circuit.svg.png" alt="" />&lt;/p></description></item><item><title>10: NFB, GRs &amp; Buffer + Loading</title><link>http://notes.mehvix.com/eecs-16a/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/10/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+>**CCCS:** Current-controlled current source
+>![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Current_controlled_current_source.svg/200px-Current_controlled_current_source.svg.png)
+>* .$I = f_c (i_x)$
+>* [Unitless](https://en.wikipedia.org/wiki/Dimensionless_quantity).$^1$ voltage gain .$c$
+>* E.x. [Current amplifier](https://en.wikipedia.org/wiki/Amplifier#Ideal)
+>* Input, output impedance: .$0, \infty$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+>**VCCS:** Voltage-controlled current source
+>![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Voltage_controlled_current_source.svg/200px-Voltage_controlled_current_source.svg.png)
+>* .$I = f_b (v_x)$
+>* Units: [Siemens](https://en.wikipedia.org/wiki/Siemens_(unit)), .$S$; .$\Omega^{-1}, \mho$
+>* E.x. [Transconductance](https://en.wikipedia.org/wiki/Transconductance) amplifier with conductance .$b$
+>* Input, output impedance: .$\infty, \infty$
+
+>**CCVS:** Current-controlled voltage source
+>![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Current_controlled_voltage_source.svg/200px-Current_controlled_voltage_source.svg.png)
+>* .$V = f_d (i_x)$
+>* Unit: Ohms
+>* E.x. [Transresistor](https://en.wikipedia.org/wiki/Transconductance#Transresistance) with resistance .$d$
+>* Input, output impedance: .$0, 0$
+
+ &lt;/div>
+
+&lt;/div>
+
+$^1$The proportionality constant between dependent and independent variables is unit/dimension-less if they are both currents (or both voltages)&lt;/p></description></item><item><title>10: NFB, GRs &amp; Buffer + Loading</title><link>http://notes.mehvix.com/eecs-16a/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/10/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -494,17 +1187,56 @@ A physical diagram of a capacitor, with 2 metal plates and a
 &lt;li>
  &lt;a href="https://en.wikipedia.org/wiki/Negative-feedback_amplifier">Negative-feedback amplifiers&lt;/a> helps maintain the output voltage at a constant level despite the fact that the op-amp wants to rail the output.
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>$$\begin{aligned}
-V_{out} &amp;amp;= A(U_+ − U_−) \\
-V_{out} &amp;amp;= A(V_{in} − V_{out}) \\
-V_{out} + A \cdot V_{out} &amp;amp;= A \cdot V_{in} \\
-V_{out}(1 + A) &amp;amp;= A \cdot V_{in} \\
-V_{out} &amp;amp;= V_{in} \frac{A}{A+1} \\
-V_{out} &amp;amp;\approx V_{in}\ \text{ for }\ A \approx \infty
-\end{aligned}$$&lt;/p></description></item><item><title>11: Locationing &amp; Trilateration</title><link>http://notes.mehvix.com/eecs-16a/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/11/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+$$\begin{aligned}
+V_{out} &amp;= A(U_+ − U_−) \\\
+V_{out} &amp;= A(V_{in} − V_{out}) \\\
+V_{out} + A \cdot V_{out} &amp;= A \cdot V_{in} \\\
+V_{out}(1 + A) &amp;= A \cdot V_{in} \\\
+V_{out} &amp;= V_{in} \frac{A}{A+1} \\\
+V_{out} &amp;\approx V_{in}\ \text{ for }\ A \approx \infty
+\end{aligned}$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+> ![](/docs/eecs-16a/10/nfb.png)
+> To incorporate negative feedback into our op-amp design, we must create a connection that goes from the output into the negative input
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>So when $V_{in} \in [V_{SS}, V_{DD}]$ we get a non-clipped output
+&lt;ul>
+&lt;li>Therefore, it&amp;rsquo;s common to omit the supply terminals when the op-amp is in negative feedback&lt;/li>
+&lt;li>When the op-amp is acting as a comparator (i.e. not in negative feedback) the output voltage is basically always either $V_{DD}$ or $V_{SS}$&lt;/li>
+&lt;li>However, when an op-amp is in negative feedback, the output voltage is generally independent of the supply
+&lt;ul>
+&lt;li>We are implicitly stating that the supply voltages are large enough that we never clip&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>That is, when negative feedback is applied around an amplifier with high 
+ &lt;a href="https://en.wikipedia.org/wiki/Open-loop_gain">open-loop gain&lt;/a> it reduces the overall gain of the complete circuit to a desired value due to the 
+ &lt;a href="https://en.wikipedia.org/wiki/Loop_gain">loop gain&lt;/a>
+&lt;ul>
+&lt;li>
+ &lt;a href="https://en.wikipedia.org/wiki/Negative-feedback_amplifier#Summary_of_terms">Summary of terms&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="checking-for-nfb">
+ Checking for NFB
+ &lt;a class="anchor" href="#checking-for-nfb">#&lt;/a>
+&lt;/h3>
+&lt;blockquote>
+&lt;p>One convenient method is to check what happens if the output voltage happens to fluctuate by a little bit above the desired output; when this change occurs and propagates back to the input of the op-amp, does it cause the output to come back down to the desired level? If so, the system is in negative feedback.&lt;/p></description></item><item><title>11: Locationing &amp; Trilateration</title><link>http://notes.mehvix.com/eecs-16a/11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/11/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -529,24 +1261,29 @@ V_{out} &amp;amp;\approx V_{in}\ \text{ for }\ A \approx \infty
  &lt;a href="https://en.wikipedia.org/wiki/Euclidean_space#Euclidean_vector_space">Euclidean&lt;/a> 
  &lt;a href="https://en.wikipedia.org/wiki/Inner_product_space">inner product&lt;/a> between two vectors $\vec u, \vec v$ is defined as&amp;hellip;
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>$$\langle \vec u, \vec v \rangle \equiv \vec u \cdot \vec v \equiv \vec u^T \vec v$$&lt;/p>
+$$\langle \vec u, \vec v \rangle \equiv \vec u \cdot \vec v \equiv \vec u^T \vec v$$
+
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>$$\dots = \begin{bmatrix}
-v_1 v_2 \dots v_n
+
+$$\dots = \begin{bmatrix}
+ v_1 v_2 \dots v_n
 \end{bmatrix}\begin{bmatrix}
-u_1\\
-u_2\\
-\vdots \\
-u_n
+ u_1\\\
+ u_2\\\
+ \vdots \\\
+ u_n
 \end{bmatrix}$$
 $$\dots = v_1 u_1 + v_2 u_2 + \dots v_n u_n$$
-$$\dots = \sum_{i=1}^n v_i u_i$$&lt;/p></description></item><item><title>12-13: Least Squares &amp; ML</title><link>http://notes.mehvix.com/eecs-16a/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/12/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+$$\dots = \sum_{i=1}^n v_i u_i$$
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/p></description></item><item><title>12-13: Least Squares &amp; ML</title><link>http://notes.mehvix.com/eecs-16a/12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/eecs-16a/12/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -583,7 +1320,89 @@ $$\dots = \sum_{i=1}^n v_i u_i$$&lt;/p></description></item><item><title>12-13: 
 &lt;/h2>
 &lt;blockquote>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>The goal of least squares is to minimize the error vector&amp;rsquo;s magnitude (norm) &amp;ndash; the square of each of it&amp;rsquo;s components:&lt;/p></description></item></channel></rss>
+The goal of least squares is to minimize the error vector's magnitude (norm) -- the square of each of it's components:
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$\Vert \vec e \Vert = \sqrt{\sum_{i=1}^n e_i^2 }$$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;/blockquote>
+&lt;ul>
+&lt;li>With $m$ measurements (equations) and $n$ unknowns; $m &amp;gt; n$
+&lt;ul>
+&lt;li>$\text{col}(A)$ is an $n$-dimensional subspace within the larger $m$-dimensional space that $\vec b$ lies in&lt;/li>
+&lt;li>That is, $\vec b$ cannot be exactly reached by $A\vec x$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+
+
+- $\vec x$: Best-guess that minimizes $\Vert \vec e \Vert$
+ - $\vec x \in \mathbb{R}^{n}$
+- $\vec e = \vec b - A\vec x = \vec b - \hat x$: Error vector
+ - $\vec e \in \mathbb{R}^{n}$
+ - We want to find $\vec x$ where $\vec e \perp \text{col}(A)$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- $\vec b$: Actual, observed values
+ - $\vec b \in \mathbb{R}^{m}$
+- $\hat x = A \vec x = A (A^T A)^{-1} A^T \vec b$: Predicted values
+ - $A \in \mathbb{R}^{m \times n}; A\vec x, \hat x \in \mathbb{R}^{m}$
+ - Can be thought of a linear combination of the columns of $A$, with $\vec x$ acting as weights
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="proof">
+ Proof
+ &lt;a class="anchor" href="#proof">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>We know from the last section that the projection of $\vec a$ onto $\vec b$ results in a vector within the span of $\vec b$ that is &lt;strong>closest&lt;/strong> &lt;em>and&lt;/em> &lt;strong>orthogonal&lt;/strong> to $\vec a$
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- So we'll project $\vec b$ onto $\text{col}(A)$ to find the smallest possible $\vec e$
+- That is, we know that $\vec e \perp \text{col}(A)$ $\Longrightarrow \vec e \perp \vec a_i $ for each column of $A$ so we can write:
+$$\langle \vec a_i, \vec e \rangle = 0$$
+$$\langle \vec a_i, \vec b - A\vec x \rangle = 0$$
+$$\vec a_i^T (\vec b - A\vec x) = 0$$
+$$\therefore A^T (\vec b - A \vec x) = \vec 0$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Then solving for $\vec x$ in terms of the known $A$ and $\vec b$:
+$$A^T (\vec b - A \vec x) = \vec 0$$
+$$A^T \vec b - A^T A \vec x = \vec 0$$
+$$A^T \vec b = A^T A \vec x$$
+$$ \therefore \vec x = (A^T A )^{-1} A^T \vec b$$
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="theorems">
+ Theorems
+ &lt;a class="anchor" href="#theorems">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="theorem-231">
+ Theorem 23.1
+ &lt;a class="anchor" href="#theorem-231">#&lt;/a>
+&lt;/h2>
+&lt;blockquote>
+&lt;p>Vector $\vec e$ is orthogonal to every vector in the column space of $A$ iff it is orthogonal to each of the columns $\vec a_i$ that form the basis of its column space&lt;/p></description></item></channel></rss>

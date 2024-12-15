@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AP Notes on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/ap/</link><description>Recent content in AP Notes on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/ap/index.xml" rel="self" type="application/rss+xml"/><item><title>AP Human Geography</title><link>http://notes.mehvix.com/ap/huge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/huge/</guid><description>&lt;blockquote class="book-hint warning">
  &lt;!-- mathjax fix -->
-&lt;p>The content of these notes are solid, but formatting is not since they&amp;rsquo;re exported from Notion.&lt;/p>
+The content of these notes are solid, but formatting is not since they're exported from Notion.
+
 &lt;/blockquote>
 
 &lt;h1 id="-unit-1--thinking-geographically">
@@ -13,7 +14,8 @@
 Students learn the ways information from data sources such as maps, tables, charts, satellite images, and infographics informs policy decisions such as voting redistricting or expanding transportation networks. They also learn about how people influence and are influenced by their environment; the resulting impact on topography, natural resources, and climate; and the differences between and consequences of environmental determinism and possibilism.
 Finally, students are introduced to the language of geography, learning discipline-specific terminology and applying that language to contemporary, real-world scenarios so they can better study population processes and patterns in the next unit.&lt;/p></description></item><item><title>AP Physics C: Mechanics</title><link>http://notes.mehvix.com/ap/cmech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/cmech/</guid><description>&lt;blockquote class="book-hint warning">
  &lt;!-- mathjax fix -->
-&lt;p>This are very disjoint notes I took long ago. I would recommend using this for practice qs and perhaps equation review after you have a solid understanding of the chapters. My other notes are much more comprehensive, I swear! :)&lt;/p>
+This are very disjoint notes I took long ago. I would recommend using this for practice qs and perhaps equation review after you have a solid understanding of the chapters. My other notes are much more comprehensive, I swear! :)
+
 &lt;/blockquote>
 
 &lt;h1 id="1-kinematics">
@@ -39,13 +41,126 @@ $$\Delta x=v_f \Delta t-\frac{1}{2}a \Delta t^2 \text{ &amp;ndash; no } v_i$$&lt
  &lt;a class="anchor" href="#slope-and-area">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![/docs/ap/mech/Untitled.png](/docs/ap/mech/Untitled.png)
 
- &lt;div class="flex-even markdown-inner">
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/ap/mech/Untitled.png" alt="/docs/ap/mech/Untitled.png" />&lt;/p></description></item><item><title>AP Statistics</title><link>http://notes.mehvix.com/ap/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/stats/</guid><description>&lt;blockquote class="book-hint warning">
+Top is .$x$, middle is .$v$, bottom is .$a$
+![/docs/ap/mech/Untitled-2.png](/docs/ap/mech/Untitled-2.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="projectile-motion">
+ Projectile Motion
+ &lt;a class="anchor" href="#projectile-motion">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Half of parabolic flight time:
+$$t_\text{top}=\frac{v_i*\sin\theta}{g}$$&lt;/li>
+&lt;li>Peak in .$y$ direction:
+$$y_\text{max}=\frac{v_i*\sin^2\theta}{2g}$$&lt;/li>
+&lt;li>Distance traveled in .$x$ direction:
+$$x_\text{max}=\frac{v_i*\sin2\theta}{g}$$&lt;/li>
+&lt;li>Desmos tools
+&lt;ul>
+&lt;li>
+ &lt;a href="https://www.desmos.com/calculator/gjnco6mzjo">Projectile motion&lt;/a>&lt;/li>
+&lt;li>
+ &lt;a href="https://www.desmos.com/calculator/z9xgzjmhfp">Displacement, Velocity, and Acceleration&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="practice">
+ Practice
+ &lt;a class="anchor" href="#practice">#&lt;/a>
+&lt;/h2>
+&lt;details >&lt;summary>FRQs to study&lt;/summary>
+ &lt;div class="markdown-inner">
+ 
+- Graphs
+![/docs/ap/mech/Untitled-3.png](/docs/ap/mech/Untitled-3.png)
+- Changing Acceleration / Velocity
+![/docs/ap/mech/Untitled-4.png](/docs/ap/mech/Untitled-4.png)
+
+ &lt;/div>
+&lt;/details>
+
+&lt;details >&lt;summary>Example Qs&lt;/summary>
+ &lt;div class="markdown-inner">
+ 
+1.![/docs/ap/mech/Untitled-5.png](/docs/ap/mech/Untitled-5.png)
+![/docs/ap/mech/Untitled-6.png](/docs/ap/mech/Untitled-6.png)
+2.![/docs/ap/mech/Untitled-7.png](/docs/ap/mech/Untitled-7.png)
+![/docs/ap/mech/Untitled-8.png](/docs/ap/mech/Untitled-8.png)
+3.![/docs/ap/mech/Untitled-9.png](/docs/ap/mech/Untitled-9.png)
+![/docs/ap/mech/Untitled-10.png](/docs/ap/mech/Untitled-10.png)
+4.![/docs/ap/mech/Untitled-11.png](/docs/ap/mech/Untitled-11.png)
+![/docs/ap/mech/Untitled-12.png](/docs/ap/mech/Untitled-12.png)
+5.![/docs/ap/mech/Untitled-13.png](/docs/ap/mech/Untitled-13.png)
+![/docs/ap/mech/Untitled-14.png](/docs/ap/mech/Untitled-14.png)
+6.![/docs/ap/mech/Untitled-15.png](/docs/ap/mech/Untitled-15.png)
+![/docs/ap/mech/Untitled-16.png](/docs/ap/mech/Untitled-16.png)
+7.![/docs/ap/mech/Untitled-17.png](/docs/ap/mech/Untitled-17.png)
+![/docs/ap/mech/Untitled-18.png](/docs/ap/mech/Untitled-18.png)
+8.![/docs/ap/mech/Untitled-19.png](/docs/ap/mech/Untitled-19.png)
+![/docs/ap/mech/Untitled-20.png](/docs/ap/mech/Untitled-20.png)
+1. ![/docs/ap/mech/Untitled-21.png](/docs/ap/mech/Untitled-21.png)
+![/docs/ap/mech/Untitled-22.png](/docs/ap/mech/Untitled-22.png)
+
+ &lt;/div>
+&lt;/details>
+
+&lt;h1 id="2-forces">
+ 2. Forces
+ &lt;a class="anchor" href="#2-forces">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>.$N = \text{kg m/s}^2$ &amp;ndash; a force of 1N causes a 1kg mass to accelerate at 1ms.$^{-2}$&lt;/li>
+&lt;li>Normal doesn&amp;rsquo;t always equal mg!&lt;/li>
+&lt;/ul>
+&lt;h2 id="friction">
+ Friction
+ &lt;a class="anchor" href="#friction">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Kinetic friction only acts when the force breaks past the static friction threshold&lt;/li>
+&lt;li>The friction force is always the &lt;strong>lesser&lt;/strong> of .$\mu \cdot N$ or the force it&amp;rsquo;s resisting
+$$F_s \le \mu_s \cdot F_N$$&lt;/li>
+&lt;/ul>
+&lt;h2 id="spring">
+ Spring
+ &lt;a class="anchor" href="#spring">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>The content of these notes are solid, but formatting is not since they&amp;rsquo;re exported from Notion.&lt;/p>
+$$F_\text{spring} = -kx$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$k=\frac{\Delta F}{\Delta x}$$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>Thus, the slope .$\Delta y / \Delta x$ of a force vs. distance is .$k$&lt;/li>
+&lt;/ul>
+&lt;h2 id="centripital">
+ Centripital
+ &lt;a class="anchor" href="#centripital">#&lt;/a>
+&lt;/h2>
+&lt;p>$$F_\text{centripetal} = \frac{mv^2}{r}$$&lt;/p></description></item><item><title>AP Statistics</title><link>http://notes.mehvix.com/ap/stats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/ap/stats/</guid><description>&lt;blockquote class="book-hint warning">
+ &lt;!-- mathjax fix -->
+The content of these notes are solid, but formatting is not since they're exported from Notion.
+
 &lt;/blockquote>
 
 &lt;h1 id="unit-1-exploring-one-variable-data">

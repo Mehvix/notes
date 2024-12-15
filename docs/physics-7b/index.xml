@@ -173,11 +173,136 @@ $$\frac{F}{A} = \Delta l \cdot E \cdot \frac{1}{l_0} = (\alpha l_0 \Delta T) E \
 &lt;li>Assume that gasses aren&amp;rsquo;t too dense (so .$P \sim$ atmospheric pressure) and that they aren&amp;rsquo;t close to liquefaction (boiling) point either (for oxygen, this is .$~183^\circ \text{C}$.)&lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/ideal.png" alt="Ideal Gas Law Relation Equation" />&lt;/p></description></item><item><title>18: Kinetic Theory of Gases</title><link>http://notes.mehvix.com/physics-7b/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/18/</guid><description>&lt;h1 id="181-ideal-gas-laws-and-molecular-interpolation">
+![Ideal Gas Law Relation Equation](/docs/physics-7b/imgs/ideal.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- **[Boyle's Law](https://en.wikipedia.org/wiki/Boyle's_law)**
+ - .$V \propto P^{-1}$ [Constant Temperature]
+ - .$P$ is absolute, not gauge, pressure
+ - Alternatively, .$PV =$ const or .$P_1V_1 = P_2V_2$
+- **[Charles's Law](https://en.wikipedia.org/wiki/Charles%27s_law)**
+ - .$V \propto T$ [Constant Pressure]
+ - Alternatively, .$\frac{V_1}{T_1} = \frac{V_2}{T_2}$
+- **[Gay Lussac's Law](https://en.wikipedia.org/wiki/Gay-Lussac%27s_law)**
+ - .$P \propto T$ [Constant Volume]
+ - Alternatively, .$\frac{P_1}{T_1} = \frac{P_2}{T_2}$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h1 id="177-ideal-gas-law">
+ 17.7 Ideal Gas Law
+ &lt;a class="anchor" href="#177-ideal-gas-law">#&lt;/a>
+&lt;/h1>
+&lt;blockquote class="book-hint info">
+ &lt;!-- mathjax fix -->
+$$PV = nRT = n k_B N_a T = N k_B T$$
+
+&lt;/blockquote>
+
+&lt;ul>
+&lt;li>.$P$ is the pressure of the gas [Pascals]&lt;/li>
+&lt;li>.$V$ is the volume of the gas [Cubic Meters]&lt;/li>
+&lt;li>.$T$ is the &lt;strong>absolute&lt;/strong> temperature of the gas [Kelvins]&lt;/li>
+&lt;li>.$N$ is the number of molecules of gas&lt;/li>
+&lt;/ul>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- .$n$ is the amount of substance of gas (number of moles) \[Moles]
+- .$R$ is the ideal, or universal, gas constant, equal to .$k_B \cdot N_a = 8.314 \frac{J}{K\cdot \text{mol}}$
+ - Using mass of a gas, different gasses have different proportionality constants
+ - So we used number of moles, in which case .$R$ becomes the constant for all gasses
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- .$k_B $ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant)
+ - Relates the average relative kinetic energy of particles in a gas with the thermodynamic temperature of the gas
+- .$N_a$ is the [Avogadro constant](https://en.wikipedia.org/wiki/Avogadro_constant)
+ - The number of particles that are contained in one mole of gas
+ - .$n = N/N_A$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>This equation is &lt;em>Ideal&lt;/em> in that the equation only works for gasses around atmospheric pressure and not excessive temperatures&lt;/li>
+&lt;/ul>
+&lt;h2 id="moles">
+ Moles
+ &lt;a class="anchor" href="#moles">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Mole is the SI unit for amount of substance&lt;/li>
+&lt;li>1 mole = Number of particles in .$\text{12g}$ of Carbon&lt;/li>
+&lt;li>1 mole = Number of grams of a substance numerically equal to the molar mass
+$$n \text{(moles)} = \frac{\text{mass (grams)}}{\text{molecular mass (g/mol)}}$$&lt;/li>
+&lt;/ul>
+&lt;h1 id="178-problem-solving-with-pv--nrt">
+ 17.8 Problem Solving with .$PV = nRT$
+ &lt;a class="anchor" href="#178-problem-solving-with-pv--nrt">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="stp-standard-temperature-and-pressure">
+ STP: Standard Temperature and Pressure
+ &lt;a class="anchor" href="#stp-standard-temperature-and-pressure">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>.$T = 273 \text{K}$&lt;/li>
+&lt;li>.$P = 1.00 \text{atm} = 1.013\cdot10^5 \text{N/m}^2 = 101.3 \text{kPA}$&lt;/li>
+&lt;li>.$1 \text{mol of ideal gas} = 22.4\text{L}$ in volume&lt;/li>
+&lt;li>If P is in liters and V is in atm, then we can use .$R = 0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}$&lt;/li>
+&lt;li>Since .$n$ and .$R$ are constants, we can say:
+$$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$&lt;/li>
+&lt;/ul>
+&lt;h1 id="179-ideal-gas-with-avogadros-number">
+ 17.9 Ideal Gas with Avogadro&amp;rsquo;s Number
+ &lt;a class="anchor" href="#179-ideal-gas-with-avogadros-number">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Avogadro&amp;rsquo;s hypothesis:
+&lt;ul>
+&lt;li>Equal volume of gas with the same .$P$ and .$T$ have an equal .$n$ umber of particles (molecules)&lt;/li>
+&lt;li>.$N_a$ is avogadro&amp;rsquo;s number: the number of particles that are contained in one mole of gas (or one gram of hydrogen).
+&lt;ul>
+&lt;li>.$N_a = 6.022 \cdot 10^{23}\ \text{particles/mole}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Therefore, if .$N$ is the number of molecules of a gas sample and .$n$ is the number of moles, then
+$$N = n\cdot N_A \Longrightarrow n = \frac{N}{N_A} \Longrightarrow PV = \frac{N}{N_A}RT = Nk_B T$$
+where .$k_B $ is Boltzmann&amp;rsquo;s constant .$\frac{R}{N_A} = 1.38 \cdot 10^{-23} \frac{\text{J}}{\text{K}}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="1710-ideal-gas-temperature">
+ 17.10 Ideal Gas Temperature
+ &lt;a class="anchor" href="#1710-ideal-gas-temperature">#&lt;/a>
+&lt;/h1>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- _Triple point_: A precise temperature and pressure where the three phases (gas, liquid, and solid) of a substance can coexist in thermodynamic equilibrium.
+- .$P_3 = 4.88\ \text{torr};\ T_3 = 0.01^\circ C$ for water
+- Ideal Gas, constant volume:
+$$T = (273.16 K)\bigg(\frac{P}{P_3}\bigg)$$
+- Constant volume:
+$$T = (273.16 K)\lim_{P_3 \to 0}\bigg(\frac{P}{P_3}\bigg)$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+>![Phase Diagram](/docs/physics-7b/imgs/phase-diagram.png)
+>A typical phase diagram. The solid green line applies to most substances; the dashed green line gives the anomalous behavior of water. For more see [18.4](18.md/#vapor-pressure)
+
+ &lt;/div>
+
+&lt;/div></description></item><item><title>18: Kinetic Theory of Gases</title><link>http://notes.mehvix.com/physics-7b/18/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/18/</guid><description>&lt;h1 id="181-ideal-gas-laws-and-molecular-interpolation">
  18.1 Ideal Gas Laws and Molecular Interpolation
  &lt;a class="anchor" href="#181-ideal-gas-laws-and-molecular-interpolation">#&lt;/a>
 &lt;/h1>
@@ -233,37 +358,23 @@ $$E_{\text{int}} = N\cdot \frac{1}{2}m\bar{v}^2 \Longrightarrow PV = \frac{Nm}{3
  &lt;a class="anchor" href="#units">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Heat unit is calorie (cal)
-&lt;ul>
-&lt;li>The amount of heat needed to raise the temperature of 1 gram of water by 1 celsius
-$$4.186 \text{ J} = 1 \text{ cal}$$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Kilocalorie (kcal, Calorie) is more common
-&lt;ul>
-&lt;li>Amount of heat needed to raise 1 kg of water by 1 celsius
-$$4.186 \text{ kJ} = 1 \text{ kcal}$$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+- Heat unit is calorie (cal)
+ - The amount of heat needed to raise the temperature of 1 gram of water by 1 celsius
+ $$4.186 \text{ J} = 1 \text{ cal}$$
+- Kilocalorie (kcal, Calorie) is more common
+ - Amount of heat needed to raise 1 kg of water by 1 celsius
+ $$4.186 \text{ kJ} = 1 \text{ kcal}$$
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>British system of units has British thermal units (Btu)
-&lt;ul>
-&lt;li>One Btu is the heat needed to raise the temperature of 1 lb of water by 1 Fahrenheit
-$$1 \text{ Btu} = 0.252 \text{ kcal} = 1056 \text{ J}$$&lt;/li>
-&lt;li>Gas companies use the unit therm: .$10^5 \text{ Btu}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+- British system of units has British thermal units (Btu)
+ - One Btu is the heat needed to raise the temperature of 1 lb of water by 1 Fahrenheit
+ $$1 \text{ Btu} = 0.252 \text{ kcal} = 1056 \text{ J}$$
+ - Gas companies use the unit therm: .$10^5 \text{ Btu}$
+
 
  &lt;/div>
 
@@ -471,32 +582,20 @@ $$\Delta Q_{\text{total}} = m_L c \Delta T + m_S L$$
 &lt;li>Internal energy and temperature are both proportional to heat and work though with the &lt;strong>First law equation&lt;/strong>:
 $$\Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\text{int, 1}} \ \ \ \text{[First Law of Thermo.]}$$
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>.$W$ is net &lt;strong>work done by&lt;/strong> the system
-&lt;ul>
-&lt;li>Work done &lt;em>by&lt;/em> system is .$\texttt{+}$&lt;/li>
-&lt;li>Work done &lt;em>on&lt;/em> the system is .$\texttt{-}$&lt;/li>
-&lt;li>Gas expands .$\Longrightarrow$ sys looses energy&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+- .$W$ is net **work done by** the system
+ - Work done *by* system is .$\texttt{+}$
+ - Work done *on* the system is .$\texttt{-}$
+ - Gas expands .$\Longrightarrow$ sys looses energy
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>.$Q$ is net &lt;strong>heat added&lt;/strong> to the system
-&lt;ul>
-&lt;li>Heat &lt;em>added&lt;/em> is .$\texttt{+}$&lt;/li>
-&lt;li>Heat &lt;em>lost&lt;/em> is .$\texttt{-}$&lt;/li>
-&lt;li>Gas is heated .$\Longrightarrow$ sys gains energy&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+- .$Q$ is net **heat added** to the system
+ - Heat *added* is .$\texttt{+}$
+ - Heat *lost* is .$\texttt{-}$
+ - Gas is heated .$\Longrightarrow$ sys gains energy
 
  &lt;/div>
 
@@ -640,25 +739,22 @@ $$\Delta K + \Delta U + \Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\
 &lt;li>
  &lt;a href="https://en.wikipedia.org/wiki/Electroscope">Electroscope&lt;/a>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
- &lt;ul>
-&lt;li>.$\vec F \propto \text{angle of deflection}$&lt;/li>
-&lt;li>.$y$-axis: .$F_{T1} \sin \theta_1 = F_{21}$&lt;/li>
-&lt;li>.$x$-axis: .$F_{T1} \cos \theta_0 = m_1 g$&lt;/li>
-&lt;li>.$F_{21} = m_1 g \tan \theta_1 \approx m_1 g \theta_1$&lt;/li>
-&lt;li>.$F_{21} = - F_{12}$ (
- &lt;a href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton%27s_third_law">Newton&amp;rsquo;s Third&lt;/a>)
-.$ \Longrightarrow \theta_1/\theta_2 = m_2/m_1$&lt;/li>
-&lt;li>.$d = l (\theta_1 + \theta_2)$&lt;/li>
-&lt;/ul>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- .$\vec F \propto \text{angle of deflection}$
+- .$y$-axis: .$F_{T1} \sin \theta_1 = F_{21}$
+- .$x$-axis: .$F_{T1} \cos \theta_0 = m_1 g$
+- .$F_{21} = m_1 g \tan \theta_1 \approx m_1 g \theta_1$
+- .$F_{21} = - F_{12}$ ([Newton's Third](https://en.wikipedia.org/wiki/Newton's_laws_of_motion#Newton's_third_law))
+.$ \Longrightarrow \theta_1/\theta_2 = m_2/m_1$
+- .$d = l (\theta_1 + \theta_2)$
 
  &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Forces Diagram](/docs/physics-7b/imgs/electroscope-diag1.png)
+![Distance](/docs/physics-7b/imgs/electroscope-diag2.png)
 
- &lt;div class="flex-even markdown-inner">
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/electroscope-diag1.png" alt="Forces Diagram" />
-
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/electroscope-diag2.png" alt="Distance" />
  &lt;/div>
 
 &lt;/div>
@@ -669,9 +765,11 @@ $$\Delta K + \Delta U + \Delta E_{\text{int}} = Q - W = E_{\text{int, 2}} - E_{\
  &lt;a class="anchor" href="#215-coulombs-law">#&lt;/a>
 &lt;/h1>
 &lt;blockquote class="book-hint info">
- &lt;strong>Coulomb&amp;rsquo;s Law:&lt;/strong>
+ 
+**Coulomb's Law:**
 $$E_\text{source} = k \frac{Q_\text{source}}{r^2} \Longrightarrow F = EQ = \bigg(k \frac{Q_1}{r^2}\bigg) (Q_2) = k\frac{Q_1 Q_2}{r^2}$$
 where .$k$ is a constant equal to .$\frac{1}{4\pi\varepsilon_0} = 8.988 \cdot 10^9 \text{ N m$^2$/C$^2$}$
+
 &lt;/blockquote>
 
 &lt;ul>
@@ -753,7 +851,199 @@ $$\overrightarrow E = \int d \overrightarrow E = k \int \frac{1}{r^2}\ dq = \fra
 &lt;/ul>
 &lt;blockquote class="book-hint warning">
  &lt;!-- mathjax fix -->
-&lt;p>&lt;strong>Calculating field generated by a continuous charge distribution&lt;/strong>&lt;/p></description></item><item><title>22: Flux &amp; Gauss's Law</title><link>http://notes.mehvix.com/physics-7b/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/22/</guid><description>&lt;h1 id="221-electric-flux">
+**Calculating field generated by a continuous charge distribution**
+1. Draw an arbitrary "piece" of charge distribution; don't choose a special point such as the end or exact middle. The piece should be infinitesimally long and/or wide. Thus, its length or width will be something like .$dx$ or .$ds$
+2. Write an expression for .$dq$, the corresponding infinitesimal charge of that piece in terms of .$dx$ or .$ds$ or whatever. Recall .$dq = \frac{\text{total charge}}{\text{total length}} \times \text{(tiny length of piece)}$
+3. Using Coulomb's law, find the infinitesimal electric field at that point of interest (e.x. some point .$P$) generated by the piece chosen in step 1. When necessary, break .$d\vec E$ into components, .$dE_x$ and .$dE_y$
+4. Integrate .$dE_x$ or .$dE_y$ over the whole charge distribution to obtain the total electric field in the .$x$ or .$y$ direction respectively
+
+&lt;/blockquote>
+
+&lt;ul>
+&lt;li>When solving problems, it&amp;rsquo;s a good idea to use symmetry, check charge direction, and (when applicable) use bounds of .$r \in [0, \infty]$&lt;/li>
+&lt;li>We can write equation for an infinite plane holding a uniform surface charge density .$\sigma$
+$$2A \cdot \overrightarrow E = \frac{\sigma A}{\varepsilon_0} \Longrightarrow \overrightarrow E = \frac{\sigma}{2\varepsilon_0}$$
+&lt;ul>
+&lt;li>This also applies in the case where a charge is close to an infinite surface (so that the distance to the surface is much greater than the distance to the edges)&lt;/li>
+&lt;li>In the case where there are two oppositely charged sheets parallel to one another, the field is .$\vec E = \frac{\sigma}{\varepsilon_0}$ since there are two charges creating the field&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The case involving an infinitely long wire can be written generally as
+$$\overrightarrow E \cdot 2\pi RL = \frac{\lambda L}{\varepsilon_0} \Longrightarrow \overrightarrow E = \frac{\lambda}{2\pi\varepsilon_0 \cdot r}$$
+&lt;ul>
+&lt;li>.$r$ is the distance from a particle to the wire&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="218-field-lines">
+ 21.8 Field Lines
+ &lt;a class="anchor" href="#218-field-lines">#&lt;/a>
+&lt;/h1>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- To visualize electric fields, we draw **electric field lines** or **lines of force**
+- Three properties of Electric Field Lines:
+ 1. Electric field lines **indicate the direction of the electric field**; the field points are in the direction tangent to the field line at any point -- see point .$P$ in .$\text{(a)}$
+ 2. The lines are drawn so that the magnitude of the electric field, .$E$, is proportional to the number of lines crossing unit area perpendicular to the lines (i.e. a circle 'hugging' a point charge). **The closer together the lines, the stronger the field.**
+ 3. Electric field lines start on positive charges and end on negative charges; and **the number starting or ending is proportional to the magnitude of the charge**.
+ - .$\text{Density} = \frac{\text{number of lines crossing surface}}{\text{area surface}}$
+ - .$\text{1 Coulomb} = \frac{1}{\varepsilon_0} \cdot \text{ lines}$
+ - .$\therefore \text{Density} = \frac{q}{\varepsilon_0 4\pi r^2} \Longrightarrow \vec E$
+- In the case of two oppositely charged parallel &amp; equally spaces plates -- such as case .$\text{(d)}$ -- we can write the field as
+ $$\overrightarrow E =\text{const.} = \frac{\sigma}{\varepsilon_0}=\frac{Q}{\varepsilon_0 A}$$
+ - .$Q =\sigma A$ is the charge on one plate of area .$A$
+- Field lines never cross because it wouldn't make sense for an electric field to have two directions at the same point.
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/field-lines.png">
+&lt;/figure>
+
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="electric-dipole">
+ Electric Dipole
+ &lt;a class="anchor" href="#electric-dipole">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>A combination of two equal but opposite charges next to one another &amp;ndash; see .$(\text{a})$ above&lt;/li>
+&lt;li>
+ &lt;a href="https://en.wikipedia.org/wiki/Electric_dipole_moment">Dipole Moment&lt;/a> is when represented by vector .$\vec{p}$ of magnitude .$Ql$
+&lt;ul>
+&lt;li>Molecules that have dipole moments are called &lt;strong>polar molecules&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Dipole](/docs/physics-7b/imgs/dipole.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- A dipole in a uniform electric field feels no net force, but does have a net torque (unless .$\vec p \parallel \vec E$)
+- If .$\vec p \not \parallel \vec E$, .$W =\int_{\theta_1}^{\theta_2} \tau d\theta$ where .$\tau = -\vec p\vec E\sin\theta = \vec p \times \vec E$
+ - Simplifies to .$W =\vec p\vec E(\cos\theta_2 - \cos\theta_1)$
+ - Thus, work/torque is most at .$\theta = 90^\circ$ or .$180^\circ$ depending on .$\vec E$ direction
+ - Pay attention to right hand rule when solving
+- If .$r \gg l \Longrightarrow \overrightarrow E \propto 1/r^3$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h1 id="219-electric-fields-and-conductors">
+ 21.9 Electric Fields and Conductors
+ &lt;a class="anchor" href="#219-electric-fields-and-conductors">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>The static electric field inside a conductor is zero (in static situations where electrons have had time to stop moving)
+&lt;ul>
+&lt;li>For that reason, any net charge on a conductor distributes itself on the surface&lt;/li>
+&lt;li>Charges inside conductors act as if the conductor isn&amp;rsquo;t there&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>All the electric field lines just outside a charged conductor are perpendicular to the surface&lt;/li>
+&lt;/ul>
+&lt;h1 id="2110-motion-of-charged-particle">
+ 21.10 Motion of Charged Particle
+ &lt;a class="anchor" href="#2110-motion-of-charged-particle">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Vector Form of Forces
+$$\overrightarrow F_{12} = k \frac{q_1 q_2}{r^2} \cdot \widehat r_{21}$$
+&lt;ul>
+&lt;li>Notation:
+&lt;ul>
+&lt;li>.$\overrightarrow F_{12}$ means force on .$q_1$ by .$q_2$ since .$q_2$ is the source charge&lt;/li>
+&lt;li>.$\widehat r_{21} = - \widehat r_{12} \Longrightarrow \overrightarrow F_{12} = -\overrightarrow F_{21}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Direction
+&lt;ul>
+&lt;li>If .$q_1 q_2 &amp;gt; 0$ (same sign, repulse), then the force and unitary vectors both point away from the two charges
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Same Signs 12](/docs/physics-7b/imgs/repel-12.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+![Same Signs 21](/docs/physics-7b/imgs/repel-21.png)
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>If .$q_1 q_2 &amp;lt; 0$ (opposite sign, attract), then the force vector points towards the two charges and the unitary direction vector still points away from the two charges
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Opposite Signs 12](/docs/physics-7b/imgs/attractive-12.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+![Opposite Signs 21](/docs/physics-7b/imgs/attractive-21.png)
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;li>Superposition Principle
+&lt;ul>
+&lt;li>In a system considering multiple (3+) charges, forces acting on .$q_1$ by .$q_2$ (.$F_{12}$) is independent from whether other charges are present&lt;/li>
+&lt;li>Total forces acting on .$Q_1$ can be written as .$\overrightarrow F = \overrightarrow F_{12} + \overrightarrow F_{13} + \dots$
+&lt;ul>
+&lt;li>Remember to break down the vectors into .$x/y$ components when adding them
+&lt;ul>
+&lt;li>E.x. .$F_{1x} = F_{12x} + F_{13x} + \dots$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Realize that the axis are arbitrary&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>.$\theta = \tan^{-1}\Big(\frac{F_x}{F_y}\Big)$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Charges in Fields
+&lt;ol>
+&lt;li>Charge moving with .$\vec v$ that is parallel to uniform field .$\overrightarrow E$
+&lt;ul>
+&lt;li>.$\overrightarrow F = q \overrightarrow E = m \vec a \Longrightarrow a_x = \frac{q}{m}\overrightarrow E = \text{const.}$&lt;/li>
+&lt;li>.$\vec v = \sqrt{2a_x \vec d} = \sqrt{\frac{2q}{m}\overrightarrow E_x \vec d}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Charge moving with .$\vec v$ that is orthogonal to uniform field .$\overrightarrow E$
+&lt;ul>
+&lt;li>Similar to projectile in gravitational field: .$\vec g \sim \overrightarrow E$&lt;/li>
+&lt;li>.$\overrightarrow F_x = 0 \Longrightarrow v_{x2} = v_{x1};\ \ a_x = 0$&lt;/li>
+&lt;li>.$\overrightarrow F_y = q \overrightarrow E = m a_y;\ \ a_y = \vec a = \frac{q}{m}\overrightarrow E = \text{const.}$&lt;/li>
+&lt;li>.$y(t) = \frac{1}{2} \frac{q\overrightarrow E}{m}t^2$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="2111-electric-dipoles">
+ 21.11 Electric Dipoles
+ &lt;a class="anchor" href="#2111-electric-dipoles">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Notes for this chapter are under 
+ &lt;a href="http://notes.mehvix.com/physics-7b/21/#electric-dipole">21.8 &amp;ndash; Electric Dipole&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>22: Flux &amp; Gauss's Law</title><link>http://notes.mehvix.com/physics-7b/22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/22/</guid><description>&lt;h1 id="221-electric-flux">
  22.1 Electric Flux
  &lt;a class="anchor" href="#221-electric-flux">#&lt;/a>
 &lt;/h1>
@@ -777,24 +1067,53 @@ $$\Phi_\vec{E} = \oint_A \vec E \cdot d\vec A$$&lt;/li>
 &lt;/li>
 &lt;li>Direction:
 &lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- For closed surfaces, .$\vec A$ points outwards from the enclosed volume, so flux is positive
+- Further, .$\theta$ (angle between .$d\vec A$ and .$E$) should always be, for electric field...
+ - Leaving the volume: Less than .$\pi/2$ (so .$\cos\theta > 0$) and .$\Phi > 0$)
+ - Entering the volume: Greater than .$\pi/2$ (so .$\cos\theta &lt; 0$ and .$\Phi &lt; 0$)
 
- &lt;div class="flex-even markdown-inner">
- &lt;ul>
-&lt;li>For closed surfaces, .$\vec A$ points outwards from the enclosed volume, so flux is positive&lt;/li>
-&lt;li>Further, .$\theta$ (angle between .$d\vec A$ and .$E$) should always be, for electric field&amp;hellip;
-&lt;ul>
-&lt;li>Leaving the volume: Less than .$\pi/2$ (so .$\cos\theta &amp;gt; 0$) and .$\Phi &amp;gt; 0$)&lt;/li>
-&lt;li>Entering the volume: Greater than .$\pi/2$ (so .$\cos\theta &amp;lt; 0$ and .$\Phi &amp;lt; 0$)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- separator -->
+![Flux Direction](/docs/physics-7b/imgs/flux-dir.png)
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+&lt;/div>
+&lt;/li>
+&lt;li>Net Flux
+&lt;ul>
+&lt;li>In the example above, every line that enters also leaves so .$\Phi = 0$ meaning there is no net flux into or out of the enclosed surface&lt;/li>
+&lt;li>Flux will only be nonzero if one of more lines start or end within the surface
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+> Flux through .$A_1$ is positive, .$A_2$ is negative
+![Dipole Flux](/docs/physics-7b/imgs/dipole-flux.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- separator -->
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/flux-dir.png" alt="Flux Direction" />&lt;/p></description></item><item><title>23: Electric Potential</title><link>http://notes.mehvix.com/physics-7b/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/23/</guid><description>&lt;h1 id="231-electric-potential-energy-and-difference">
+> Net flux through .$A$ is negative
+![Negative Flux](/docs/physics-7b/imgs/neg-flux.png)
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="222-gausss-law">
+ 22.2 Gauss&amp;rsquo;s Law
+ &lt;a class="anchor" href="#222-gausss-law">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Gauss&amp;rsquo;s Law:&lt;/strong> We can relate flux through a surface and net charge enclosed within said surface by
+$$\Phi = \oint \vec E \cdot d\vec A = \frac{Q_\text{enclosed}}{\varepsilon_0}$$&lt;/p></description></item><item><title>23: Electric Potential</title><link>http://notes.mehvix.com/physics-7b/23/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/23/</guid><description>&lt;h1 id="231-electric-potential-energy-and-difference">
  23.1 Electric Potential Energy and Difference
  &lt;a class="anchor" href="#231-electric-potential-energy-and-difference">#&lt;/a>
 &lt;/h1>
@@ -893,7 +1212,129 @@ $$C = \frac{Q}{V} = \varepsilon_0 \cdot \frac{A}{d}$$&lt;/li>
 &lt;/ul>
 &lt;blockquote class="book-hint warning">
  &lt;!-- mathjax fix -->
-&lt;p>&lt;strong>Capacitance-finding strategy&lt;/strong>&lt;/p></description></item><item><title>25: Electric Current and Resistance</title><link>http://notes.mehvix.com/physics-7b/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/25/</guid><description>&lt;h1 id="251-the-electric-battery">
+**Capacitance-finding strategy**
+1. Assign an arbitrary charge .$\pm q$ to the two plates.
+2. Using Gauss's law or other techniques, calculate the electric field between these two plates
+3. From that electric field, calculate the potential difference between the plates, .$V = -\int \vec E \cdot d \vec s$
+4. Calculate the capacitance using .$C = q/V$. The arbitrary charge .$q$ from (1) should cancel out.
+
+&lt;/blockquote>
+
+&lt;h1 id="243-capacitors-in-series-and-parallel">
+ 24.3 Capacitors in Series and Parallel
+ &lt;a class="anchor" href="#243-capacitors-in-series-and-parallel">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="series">
+ Series
+ &lt;a class="anchor" href="#series">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The &lt;strong>current/charge&lt;/strong> on each capacitor has the same magnitude:
+$$Q = Q_1 = Q_2 = \dots$$&lt;/li>
+&lt;/ul>
+&lt;!-- - The **resistance** is equal to the sum of each component:
+$$R_\text{Total} = R_1 + R_2 + \dots$$ -->
+&lt;ul>
+&lt;li>The total &lt;strong>voltage&lt;/strong> across all capacitors is sumo of the voltage drops of the individual components:
+$$V = V_1 + V_2 + \dots = I(R_1 + R_2 + \dots)$$&lt;/li>
+&lt;li>And since .$V = Q/C$, &lt;strong>capacitance&lt;/strong> is then
+$$\frac{Q}{C_\text{eq}} = \frac{Q}{C_1} + \frac{Q}{C_2} + \dots \Longrightarrow \frac{1}{C_\text{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + \dots $$
+&lt;ul>
+&lt;li>Notice that the equivalence capacitance is smaller than the smallest contributing capacitance&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="parallel">
+ Parallel
+ &lt;a class="anchor" href="#parallel">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The total &lt;strong>current/charge&lt;/strong> is the sum of the currents flowing through each component
+$$Q = Q_1 + Q_2 + \dots = V (R^{-1}_1 + R^{-1}_2 + \dots)$$&lt;/li>
+&lt;/ul>
+&lt;!-- - **Resistance** is equal to the sum of the reciprocals of each component
+$$ \frac{1}{R_\text{Total}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots$$ -->
+&lt;ul>
+&lt;li>&lt;strong>Voltage&lt;/strong> (potential difference) is the same across all paths/capacitors
+$$V = V_1 = V_2 = \dots$$&lt;/li>
+&lt;li>Therefore, we can use .$V = Q/C$ to write the equivalent &lt;strong>capacitance&lt;/strong> as
+$$Q = C_1 V + C_2 V + \dots$$
+$$Q = C_\text{eq} V = (C_1 + \dots)V \Longrightarrow C_\text{eq} = C_1 + \dots$$
+&lt;ul>
+&lt;li>The net effect of connecting capacitors in parallel is to increase the capacitance
+&lt;ul>
+&lt;li>Makes sense: We&amp;rsquo;re essentially increasing area of the plates&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The &lt;em>overall&lt;/em> working voltage is always &lt;em>limited by the smallest working voltage&lt;/em> of an individual capacitor.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="244-storage-of-electric-energy">
+ 24.4 Storage of Electric Energy
+ &lt;a class="anchor" href="#244-storage-of-electric-energy">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>The energy stored in a capacitor is equal to the work done to charge it.
+&lt;ul>
+&lt;li>Initially, an uncharged capacitor requires no work to move the first few bits of charge&lt;/li>
+&lt;li>As more charge is stored, more work is needed to add more charge of the same sign because of the electric repulsion&lt;/li>
+&lt;li>That is, the more charge already on a plate, the more work required to add additional charge&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Since we know .$dW = V\ dq$ and .$V = q/C$, we can write the work needed to store charge .$Q$ as
+$$W = \int_0^Q V\ dq = \frac{1}{C}\int_0^Q q \ dq = \frac{1}{2} \frac{Q^2}{C}$$&lt;/li>
+&lt;li>Since .$U = W$ and .$Q = CV$, we can write the energy stored in a capacitor with charges .$+Q$ and .$-Q$ on its two conductors as
+$$U = \frac{1}{2} \frac{Q^2}{C} = \frac{1}{2}CV^2 = \frac{1}{2}QV$$&lt;/li>
+&lt;li>It is useful to think of the energy stored in a capacitor as being stored in the electric field between the plates.
+&lt;ul>
+&lt;li>E.x. lets find the energy stored in a parallel-plate capacitor in terms of the electric field
+&lt;ul>
+&lt;li>We know for two close parallel plates we can find the potential difference as .$V = Ed$ where .$d$ is distance between plates&lt;/li>
+&lt;li>We also know .$C = \varepsilon_0 A/d$ for parallel plate capacitors, thus we can write
+$$U = \frac{1}{2}CV^2 = \frac{1}{2}\bigg(\frac{\varepsilon_0 A}{d}\bigg)(E^2 d^2) = \frac{1}{2} \varepsilon_0 E^2 Ad$$&lt;/li>
+&lt;li>We can recognize .$Ad$ as the volume between the plates where .$E$ exists&lt;/li>
+&lt;li>If we divide both sides of by this volume, we can an equation for the energy density .$u$:
+$$u = \frac{\text{energy}}{\text{volume}} = \frac{1}{2}\varepsilon_0 E^2$$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Thus, &lt;em>electric energy stored per unit volume in any region of space is proportional to the square of the electric field&lt;/em>&lt;/li>
+&lt;li>We proved this with parallel plates, but this can be shown for any region with an electric field&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="245-dielectrics">
+ 24.5 Dielectrics
+ &lt;a class="anchor" href="#245-dielectrics">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Dielectrics are the insulating material sheet placed between conductors&lt;/li>
+&lt;li>They serve to
+&lt;ol>
+&lt;li>Because they don&amp;rsquo;t break down, they allow electric charge to flow as easily as air so higher voltages can be applied without charge passing across the gap&lt;/li>
+&lt;li>Allow the plates to be placed closer together without touching, allowing an increased capacitance because the thickness .$d$ is smaller&lt;/li>
+&lt;li>Dielectrics increase the capacitance by a factor .$K$ (known as the dielectric constant)
+$$C = KC_0$$
+&lt;ul>
+&lt;li>.$C_0$ is the capacitance when the space is a vacuum/air&lt;/li>
+&lt;li>.$C$ is the capacitance with the dielectric filling the space&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>For parallel-plate capacitors, we use .$C = Q/V = \varepsilon_0 A/d$ and .$C = KC_0$
+$$C = K \varepsilon_0 \frac{A}{d}$$&lt;/li>
+&lt;li>Energy density also changes with a dielectric as
+$$u = \frac{1}{2}K \varepsilon_0 E^2 = \frac{1}{2}\varepsilon E^2$$&lt;/li>
+&lt;li>Likewise, .$E$ and .$V$ are both also altered:
+&lt;ul>
+&lt;li>With no dielectric, the field is .$E_0 = \frac{V_0}{d}$ where .$V_0$ is the potential difference&lt;/li>
+&lt;li>If the capacitor is isolated (i.e. not connected to a battery) so that the charge stays constant, potential difference drops: .$V = V_0/K$&lt;/li>
+&lt;li>Therefore, .$E = \frac{V}{d} = \frac{V_0}{Kd} = \frac{E_0}{K}$&lt;/li>
+&lt;li>.$\varepsilon$ is the &lt;strong>permittivity&lt;/strong> of the dielectric material defined as .$\varepsilon = K \varepsilon_0$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>25: Electric Current and Resistance</title><link>http://notes.mehvix.com/physics-7b/25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/25/</guid><description>&lt;h1 id="251-the-electric-battery">
  25.1 The Electric Battery
  &lt;a class="anchor" href="#251-the-electric-battery">#&lt;/a>
 &lt;/h1>
@@ -909,19 +1350,25 @@ $$C = \frac{Q}{V} = \varepsilon_0 \cdot \frac{A}{d}$$&lt;/li>
 &lt;li>These electrodes are emersed in the &lt;strong>electrolyte:&lt;/strong> a solution such as a dilute acid&lt;/li>
 &lt;/ul>
 &lt;blockquote class="book-hint warning">
- &lt;div class="book-columns flex flex-wrap">
- &lt;div class="flex-even markdown-inner">
- &lt;p>&lt;strong>Chemical Process:&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>The acid dissolve the zinc electrode, causing zinc atoms to leave two electrons behind on the electrode and enters the solution as a positive ion. The zinc electrode thus acquires a &lt;em>negative charge&lt;/em>.&lt;/li>
-&lt;li>Then the electrolyte becomes positively charged and can pull electrons off the carbon electrode. Thus the carbon electrode becomes &lt;em>positively charged&lt;/em>.&lt;/li>
-&lt;li>Because there is an opposite charge on the two electrodes, there is a &lt;em>potential difference&lt;/em> between the two terminals.&lt;/li>
-&lt;/ol>
+ 
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+**Chemical Process:**
+1. The acid dissolve the zinc electrode, causing zinc atoms to leave two electrons behind on the electrode and enters the solution as a positive ion. The zinc electrode thus acquires a _negative charge_.
+2. Then the electrolyte becomes positively charged and can pull electrons off the carbon electrode. Thus the carbon electrode becomes _positively charged_.
+3. Because there is an opposite charge on the two electrodes, there is a _potential difference_ between the two terminals.
+
  &lt;/div>
- &lt;div class="flex-even markdown-inner">
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/battery.png" alt="Battery" />
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Battery](/docs/physics-7b/imgs/battery.png)
+
  &lt;/div>
+
 &lt;/div>
+
+
 &lt;/blockquote>
 
 &lt;ul>
@@ -939,28 +1386,238 @@ $$C = \frac{Q}{V} = \varepsilon_0 \cdot \frac{A}{d}$$&lt;/li>
  &lt;a class="anchor" href="#252-electric-current">#&lt;/a>
 &lt;/h1>
 &lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- When a circuit is formed, charge can move (flow) through the wires from one terminal to the other
+ - Any flow of charge is called an **electric current**
+ - Flow can only occur on a continuos conducting path (a complete circuit)
+ - If there's any break, our circuit is called an open circuit and no current flows
+- The symbol for battery is the following:
+ ![Battery Symbol](/docs/physics-7b/imgs/battery-symb.png)
 
- &lt;div class="flex-even markdown-inner">
- &lt;ul>
-&lt;li>When a circuit is formed, charge can move (flow) through the wires from one terminal to the other
-&lt;ul>
-&lt;li>Any flow of charge is called an &lt;strong>electric current&lt;/strong>&lt;/li>
-&lt;li>Flow can only occur on a continuos conducting path (a complete circuit)&lt;/li>
-&lt;li>If there&amp;rsquo;s any break, our circuit is called an open circuit and no current flows&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>The symbol for battery is the following:
-
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/battery-symb.png" alt="Battery Symbol" />&lt;/li>
-&lt;/ul>
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+>Conventional current from .$+$ to .$-$ is equivalent to a negative electron flow from .$-$ to .$+$
+![Flow Direction](/docs/physics-7b/imgs/flow-direction.gif)
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
- &lt;blockquote>
-&lt;p>Conventional current from .$+$ to .$-$ is equivalent to a negative electron flow from .$-$ to .$+$
+&lt;/div>
 
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/flow-direction.gif" alt="Flow Direction" />&lt;/p></description></item><item><title>26: DC Circuits</title><link>http://notes.mehvix.com/physics-7b/26/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/26/</guid><description>&lt;h1 id="261-emf-and-terminal-voltage">
+&lt;ul>
+&lt;li>Current in a wire is defined as the net amount of charge that passes through the wire&amp;rsquo;s full cross section at any point in time:
+$$\bar I = \frac{\Delta Q}{\Delta t} \Longrightarrow I = \frac{dQ}{dt}$$&lt;/li>
+&lt;li>Current is measured in coulombs per second; ampere (amp): .$\text{1 A = 1 C/s}$&lt;/li>
+&lt;/ul>
+&lt;h1 id="253-ohms-law-resistance-and-resistors">
+ 25.3 Ohm&amp;rsquo;s Law: Resistance and Resistors
+ &lt;a class="anchor" href="#253-ohms-law-resistance-and-resistors">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>For a current to exist, there must be a potential difference (e.g. between the terminals of a battery)&lt;/li>
+&lt;li>That is, the current is proportional to the potential difference:
+$$I \propto V$$
+&lt;ul>
+&lt;li>E.x., a wire connected to a .$6V$ battery results in a current twice that of a .$3V$ battery&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The current depends on the resistance that the wires offers
+&lt;ul>
+&lt;li>The electron flow is impeded partly due to the atoms in the wire&lt;/li>
+&lt;li>.$R$ is this proportionality factor between voltage and current&lt;/li>
+&lt;li>Thus, we get &lt;strong>Ohm&amp;rsquo;s Law:&lt;/strong>
+$$V = IR$$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ohm&amp;rsquo;s law only works for when .$R$ is a constant, i.e a metal conductor
+&lt;ul>
+&lt;li>In reality, .$R$ isn&amp;rsquo;t constant if temperature changes much&lt;/li>
+&lt;li>Materials that follow Ohm&amp;rsquo;s law are labeled as &amp;ldquo;ohmic&amp;rdquo;&lt;/li>
+&lt;li>Resistance has the units/notation .$\text{1 $\Omega$ = 1 V/A}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Resistors are used to limit/control the current in a circuit&lt;/li>
+&lt;li>
+ &lt;a href="https://toolbox.mehvix.com/resistor/">toolbox.mehvix.com/resistor&lt;/a>&lt;/li>
+&lt;li>As a current passes through a resistor, the charge/current stays the same but the electric potential decreases&lt;/li>
+&lt;/ul>
+&lt;blockquote class="book-hint info">
+ 
+**Clarifications of Behavior**
+- Current's magnitude depends on that device's resistance
+ - Can be though of as the "response" to the voltage: increases if voltage increases or resistance decreases
+ - Current is constant -- it's energy so it cannot be destroyed by components and it's not created by a battery
+- Resistance is a property of the device/wire
+- Voltage is external to the wire of device -- it's applied across the two ends of the wire
+ - Batteries maintain a constant potential difference -- act as a source of voltage
+
+&lt;/blockquote>
+
+&lt;h1 id="254-resistivity">
+ 25.4 Resistivity
+ &lt;a class="anchor" href="#254-resistivity">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Resistivity has experimentally been found as
+$$R = \rho \frac{l}{A}$$
+&lt;ul>
+&lt;li>.$\rho$ is the &lt;strong>resistivity&lt;/strong> (constant of proportionality) and depends on the material
+&lt;ul>
+&lt;li>Has units .$\Omega \cdot \text{m = V/A $\cdot $ m}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>.$l$ is the wire length&lt;/li>
+&lt;li>.$A$ is the cross-section area&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The reciprocal of resistivity is &lt;strong>conductivity&lt;/strong>: .$\sigma = \rho^{-1}$&lt;/li>
+&lt;/ul>
+&lt;h2 id="temperature">
+ Temperature
+ &lt;a class="anchor" href="#temperature">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Resistivity varies (generally increasing) with temperature
+$$\rho_T = \rho_0 = \bigg[ 1+ \alpha (T-T_0)\bigg]$$
+&lt;ul>
+&lt;li>.$\rho_0$ is the resistivity at some reference temperature .$T_0$ (i.e .$0^\circ \text{ C}$)&lt;/li>
+&lt;li>.$\rho_T$ is the new resistivity at the current (higher) temperature .$T$&lt;/li>
+&lt;li>.$\alpha$ is the &lt;strong>temperature coefficient of resistivity&lt;/strong> that depends on material&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Note that the temperature coefficient for semiconductors can be negative.
+&lt;ul>
+&lt;li>At higher temperatures, some of the electrons that are normally not free in a semiconductor can become free and contribute to the current.&lt;/li>
+&lt;li>Thus, the resistance of a semiconductor can decrease with an increase in temperature.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="255-electric-power">
+ 25.5 Electric Power
+ &lt;a class="anchor" href="#255-electric-power">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Electric energy is transformed into thermal energy (and light) in stove burners, toasters, etc.
+&lt;ul>
+&lt;li>The current creates collisions between the moving electrons and the atoms in the wire&lt;/li>
+&lt;li>That is, the KE from the wire&amp;rsquo;s atoms increases meaning the temperature increases too
+$$P = \frac{dU}{dt} = \frac{dq}{dt}\cdot V$$
+&lt;ul>
+&lt;li>This is because energy is transformed when a tiny charge .$dq$ moves through a potential difference .$V$ is .$dU = V\ dq$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The charge that flows per second, .$dq/dt$, is the electric current .$I$:
+$$P = IV = I^2 R = \frac{V^2}{R}$$
+&lt;ul>
+&lt;li>The SI unit for power is the watt: .$\text{1 W = 1 J/s}$&lt;/li>
+&lt;li>We get the last two equations by plugging in .$V = IR$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="257-alternating-current">
+ 25.7 Alternating Current
+ &lt;a class="anchor" href="#257-alternating-current">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>When a battery is connected to a circuit, the current moves steadily in one direction (DC: Direct Current)&lt;/li>
+&lt;li>Electric generators at power plants produce AC: alternating current
+&lt;ul>
+&lt;li>Reverses direction many times per second and is commonly sinusoidal
+$$V = V_0 \sin(2\pi ft) = V_0 \sin(\omega t)$$&lt;/li>
+&lt;li>.$\omega$ = .$2\pi f$&lt;/li>
+&lt;li>.$f$ is the frequency: number of complete oscillations per second
+&lt;ul>
+&lt;li>Commonly .$\text{60 Hz}$ in NA&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Potential .$V$ oscillates between .$\pm V_0$, the &lt;strong>peak voltage&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Current equation still works:
+$$I = \frac{V}{R} = \frac{V_0}{R}\sin\omega t = I_0 \sin\omega t$$
+&lt;ul>
+&lt;li>.$I_0 = V_0/R$ is the &lt;strong>peak current&lt;/strong>&lt;/li>
+&lt;li>Avg current is 0; it&amp;rsquo;s positive and negative for an equal amount of time
+&lt;ul>
+&lt;li>Doesn&amp;rsquo;t mean that no heat is created or no power is needed&lt;/li>
+&lt;li>Electrons are still moving though!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Power is also consistent
+$$P = I^2R = I_0^2 R \sin\omega t = \frac{V_0^2}{R} \sin\omega t$$
+&lt;ul>
+&lt;li>Power is always positive because current is squared&lt;/li>
+&lt;li>Since the .$\sin\dots$ oscillates between 1 and 0, the average power is
+$$\overline P = \frac{1}{2}I_0^2R = \frac{1}{2} \frac{V_0^2}{R}$$&lt;/li>
+&lt;li>This can also be calculated by using the RMS values for .$I$ and .$V$
+$$I_\text{rms} = \sqrt{\overline I^2} = \frac{I_0}{\sqrt{2}} \approx 0.707 I_0$$
+$$V_\text{rms} = \sqrt{\overline V^2} = \frac{V_0}{\sqrt{2}} \approx 0.707 V_0$$
+$$\dots \Longrightarrow \overline P = I_\text{rms} V_\text{rms} = I_\text{rms}^2 R = \frac{V_\text{rms}^2}{R}$$&lt;/li>
+&lt;li>Fun fact: we can use the rms of a value to find the peak of it, e.x.
+$$V_0 = \sqrt{2} V_\text{rms}$$&lt;/li>
+&lt;li>Keep in mind that this is the average power. Instantaneous power varies from .$0$ to .$2\overline P$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="258-microscopic-view-of-current">
+ 25.8 Microscopic View of Current
+ &lt;a class="anchor" href="#258-microscopic-view-of-current">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>We&amp;rsquo;ve seen that electric current can be carried by negatively charged electrons in metal wires, and that in liquid solutions current can also be carried by positive and/or negatively charged ions&lt;/li>
+&lt;li>When a potential difference is applied to the two ends of a wire, the direction of the electric field .$\vec E$ is parallel to the walls of the wire
+&lt;ul>
+&lt;li>This field within the conducting wire does not contradict our earlier result that .$\vec E = 0$ inside a conductor in the electrostatic case, as we are no longer dealing with the static case.&lt;/li>
+&lt;li>That is, charges are free to move in a conductor, and hence can move under the action of the electric field.
+&lt;ul>
+&lt;li>If all the charges are at rest, then .$\vec E = 0$
+
+ &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/wire.png" alt="Current flow through a wire" />&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="current-density">
+ Current Density
+ &lt;a class="anchor" href="#current-density">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Current density, .$\vec j$, is the current per area
+$$j = \frac{I}{A} \Longrightarrow I = \int \vec j \cdot d \vec A$$
+&lt;ul>
+&lt;li>.$I$ is the current through the whole surface&lt;/li>
+&lt;li>.$d\vec A$ is an element of surface area over which the integration is taken&lt;/li>
+&lt;li>Direction of the density is the same direction as .$\vec E$ &amp;ndash; the direction that a positive charge would move&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="drift-speed">
+ Drift Speed
+ &lt;a class="anchor" href="#drift-speed">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Inside a wire, we can imagine the free electrons as moving about randomly at high speeds, bouncing off the metal atoms of the wire
+&lt;ul>
+&lt;li>Somewhat like the molecules of a gas&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>When an electric field exists in the wire the electrons feel a force and initially begin to accelerate but they soon reach a more or less steady average speed, known as their &lt;strong>drift speed&lt;/strong> .$v_d$
+&lt;ul>
+&lt;li>Collisions with atoms in the wire keep them from accelerating further&lt;/li>
+&lt;li>The drift speed is normally very much smaller than the electrons&amp;rsquo; average random speed inside the metal wire&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Black zagged line represents the motion of an electron in a metal wire due to an electric field. The field .$\vec E$ gives electrons in random motion a net drift velocity .$\vec v_d$. Its direction (the net charge flow) is in the opposite direction of .$\vec E$ because electrons have a negative charge and .$\vec F = q \vec E$
+
+ &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/drift.png" alt="Drift" />&lt;/p></description></item><item><title>26: DC Circuits</title><link>http://notes.mehvix.com/physics-7b/26/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/26/</guid><description>&lt;h1 id="261-emf-and-terminal-voltage">
  26.1 EMF and Terminal Voltage
  &lt;a class="anchor" href="#261-emf-and-terminal-voltage">#&lt;/a>
 &lt;/h1>
@@ -1104,23 +1761,18 @@ $$ \frac{1}{R_\text{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots$$&lt;/li>
  &lt;a class="anchor" href="#281-magnetic-field-due-to-a-straight-wire">#&lt;/a>
 &lt;/h1>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
- &lt;ul>
-&lt;li>Magnetic fields due to the electric current in a long straight wire forms circles with the wire at the center&lt;/li>
-&lt;li>This field is proportional directly with current .$I$ and inversely with distance .$r$:
-$$B = \frac{\mu_0}{2\pi} \cdot \frac{I}{r}$$
-&lt;ul>
-&lt;li>.$\mu_0 = 4\pi \times 10^{-7} \text{ T$\cdot$m/A}$ is the 
- &lt;a href="https://en.wikipedia.org/wiki/Vacuum_permeability">permeability of free space&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- Magnetic fields due to the electric current in a long straight wire forms circles with the wire at the center
+- This field is proportional directly with current .$I$ and inversely with distance .$r$:
+ $$B = \frac{\mu_0}{2\pi} \cdot \frac{I}{r}$$
+ - .$\mu_0 = 4\pi \times 10^{-7} \text{ T$\cdot$m/A}$ is the [permeability of free space](https://en.wikipedia.org/wiki/Vacuum_permeability)
 
  &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Single Wire](/docs/physics-7b/imgs/28/one-wire.png)
 
- &lt;div class="flex-even markdown-inner">
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/28/one-wire.png" alt="Single Wire" />
  &lt;/div>
 
 &lt;/div>
@@ -1130,18 +1782,18 @@ $$B = \frac{\mu_0}{2\pi} \cdot \frac{I}{r}$$
  &lt;a class="anchor" href="#282-force-between-two-parallel-wires">#&lt;/a>
 &lt;/h1>
 &lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Double Wires](/docs/physics-7b/imgs/28/two-wires.png)
 
- &lt;div class="flex-even markdown-inner">
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/28/two-wires.png" alt="Double Wires" />
+
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
- &lt;ul>
-&lt;li>Since current-carrying wires feel a force in magnetic fields, and because current-carrying wires emit magnetic fields, current-carrying wires exert a force on one another&lt;/li>
-&lt;li>Magnetic field .$B_1$ produced by .$I_1$ is given by
-$$B_1 = \frac{\mu_0}{2\pi} \cdot \frac{I_1}{d}$$&lt;/li>
-&lt;li>Parallel currents in the same direction attract while antiparallel repel&lt;/li>
-&lt;/ul>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- Since current-carrying wires feel a force in magnetic fields, and because current-carrying wires emit magnetic fields, current-carrying wires exert a force on one another
+- Magnetic field .$B_1$ produced by .$I_1$ is given by
+$$B_1 = \frac{\mu_0}{2\pi} \cdot \frac{I_1}{d}$$
+- Parallel currents in the same direction attract while antiparallel repel
 
  &lt;/div>
 
@@ -1162,7 +1814,9 @@ $$F_2 = \frac{\mu_0}{2\pi} \cdot \frac{I_1 I_2}{d}l_2$$&lt;/li>
  &lt;a class="anchor" href="#283-definitions-of-the-ampere-and-the-coulomb">#&lt;/a>
 &lt;/h1>
 &lt;blockquote class="book-hint info">
- One ampere can be defined as that current flowing in each of two long parallel wires exactly 1 m apart, which results in a force of exactly .$2\times10^{-7}$ N per meter of length of each wire
+ 
+One ampere can be defined as that current flowing in each of two long parallel wires exactly 1 m apart, which results in a force of exactly .$2\times10^{-7}$ N per meter of length of each wire
+
 &lt;/blockquote>
 
 &lt;ul>
@@ -1178,24 +1832,20 @@ $$F_2 = \frac{\mu_0}{2\pi} \cdot \frac{I_1 I_2}{d}l_2$$&lt;/li>
  &lt;a class="anchor" href="#284-amp%c3%a8res-law">#&lt;/a>
 &lt;/h1>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
- &lt;ul>
-&lt;li>If we don&amp;rsquo;t have a straight line, we use ampere&amp;rsquo;s law given below&lt;/li>
-&lt;li>We take a infinite tiny segments and dot it with the field at the segment:
-$$\oint \vec B \cdot d \vec l = \mu_0 I_\text{encl}$$&lt;/li>
-&lt;li>Note that .$\vec B$ in Ampere&amp;rsquo;s law isn&amp;rsquo;t necessarily due only to the current .$I_\text{encl}$&lt;/li>
-&lt;li>As with Gauss&amp;rsquo;s law for the electric field, Ampere&amp;rsquo;s law practical value to calculate the magnetic field is limited, however, mainly to simple or symmetric situations.
-&lt;ul>
-&lt;li>Its importance is that it relates the magnetic field to the current in a direct and mathematically elegant way.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- If we don't have a straight line, we use ampere's law given below
+- We take a infinite tiny segments and dot it with the field at the segment:
+$$\oint \vec B \cdot d \vec l = \mu_0 I_\text{encl}$$
+- Note that .$\vec B$ in Ampere's law isn't necessarily due only to the current .$I_\text{encl}$
+- As with Gauss's law for the electric field, Ampere's law practical value to calculate the magnetic field is limited, however, mainly to simple or symmetric situations.
+ - Its importance is that it relates the magnetic field to the current in a direct and mathematically elegant way.
 
  &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Ampere's Law](/docs/physics-7b/imgs/28/ampere.png)
 
- &lt;div class="flex-even markdown-inner">
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/28/ampere.png" alt="Ampere&amp;rsquo;s Law" />
  &lt;/div>
 
 &lt;/div>
@@ -1204,16 +1854,13 @@ $$\oint \vec B \cdot d \vec l = \mu_0 I_\text{encl}$$&lt;/li>
 &lt;li>Ampère&amp;rsquo;s law is considered one of the basic laws of electricity and magnetism: It is valid for any situation where the currents and fields are steady and not changing in time, and no magnetic materials are present&lt;/li>
 &lt;/ul>
 &lt;blockquote class="book-hint warning">
- &lt;h2 id="problem-solving">
- &lt;strong>Problem Solving:&lt;/strong>
- &lt;a class="anchor" href="#problem-solving">#&lt;/a>
-&lt;/h2>
-&lt;ol>
-&lt;li>Ampère&amp;rsquo;s law, like Gauss&amp;rsquo;s law, is always a valid statement. But as a calculation tool it is limited mainly to systems with a high degree of symmetry. The first step in applying Ampère&amp;rsquo;s law is to identify useful &lt;strong>symmetry&lt;/strong>.&lt;/li>
-&lt;li>Choose an integration path that reflects the symmetry. Search for paths where .$\vec B$ has constant magnitude along the entire path or along segments of the path. Make sure your integration path passes through the point where you wish to evaluate the magnetic field.&lt;/li>
-&lt;li>Use symmetry to determine the direction of .$\vec B$ along the integration path. With a smart choice of path, .$\vec B$ will be either parallel or perpendicular to the path.&lt;/li>
-&lt;li>Determine the enclosed current, .$I_\text{encl}$. Be careful with signs. Let the fingers of your right hand curl along the direction of .$\vec B$ so that your thumb shows the direction of positive current. If you have a solid conductor and your integration path does not enclose the full current, you can use the current density (current per unit area) multiplied by the enclosed area.&lt;/li>
-&lt;/ol>
+ 
+## **Problem Solving:**
+
+1. Ampère's law, like Gauss's law, is always a valid statement. But as a calculation tool it is limited mainly to systems with a high degree of symmetry. The first step in applying Ampère's law is to identify useful **symmetry**.
+2. Choose an integration path that reflects the symmetry. Search for paths where .$\vec B$ has constant magnitude along the entire path or along segments of the path. Make sure your integration path passes through the point where you wish to evaluate the magnetic field.
+3. Use symmetry to determine the direction of .$\vec B$ along the integration path. With a smart choice of path, .$\vec B$ will be either parallel or perpendicular to the path.
+4. Determine the enclosed current, .$I_\text{encl}$. Be careful with signs. Let the fingers of your right hand curl along the direction of .$\vec B$ so that your thumb shows the direction of positive current. If you have a solid conductor and your integration path does not enclose the full current, you can use the current density (current per unit area) multiplied by the enclosed area.
 
 &lt;/blockquote>
 
@@ -1232,13 +1879,156 @@ $$\oint \vec B \cdot d \vec l = \mu_0 NI$$&lt;/li>
 &lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+> **Magnetic field due to a solenoid**
+> ![Solenoid](/docs/physics-7b/imgs/28/solenoid.png)
+> (a) a few loosely spaced loops; (b) for many closely spaced loops, the field is nearly uniform.
 
- &lt;div class="flex-even markdown-inner">
- &lt;blockquote>
-&lt;p>&lt;strong>Magnetic field due to a solenoid&lt;/strong>
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+> **Cross-sectional view into a solenoid.**
+> ![Cross Section of Solenoid](/docs/physics-7b/imgs/28/xsec.png)
+> The magnetic field inside is straight except at the ends. Red dashed lines indicate the path chosen for use in Ampère's law. .$\odot$ and .$\otimes$ are electric current direction (in the wire loops) out of the page and into the page.
 
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/28/solenoid.png" alt="Solenoid" />
-(a) a few loosely spaced loops; (b) for many closely spaced loops, the field is nearly uniform.&lt;/p></description></item><item><title>29: Electromagnetic Induction &amp; Faraday's Law</title><link>http://notes.mehvix.com/physics-7b/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/29/</guid><description>&lt;h1 id="291-induced-emf">
+$$\int_c^d \vec B \cdot d \vec l = Bl_{cd}$$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>With .$n = N/l$ is number of loops per unit length we can simplify to
+$$B = \mu_0 nI$$&lt;/li>
+&lt;li>Now, we see that the field does not depend on position within the solenoid, so .$\vec B$ is &lt;strong>uniform&lt;/strong>.
+&lt;ul>
+&lt;li>This is strictly true only for an infinite solenoid, but it is a good approximation for tightly wound real ones for points &lt;em>not&lt;/em> close to the ends.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="286-biot-savart-law">
+ 28.6 Biot-Savart Law
+ &lt;a class="anchor" href="#286-biot-savart-law">#&lt;/a>
+&lt;/h1>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- A current .$I$ flowing in any path can be considered as many tiny current elements, such as .$d \vec l$
+ - Then, .$d\vec B$ at any point .$P$ in space due to this element of current is given by **Biot-Savart law:**
+ $$d\vec B = \frac{\mu_0 I}{4\pi} \frac{d\vec l \times \hat r}{r^2} = \frac{\mu_0 I}{4\pi} \frac{dl \sin\theta}{r^2}$$
+ - .$\vec r$ is the displacement vector from the element .$d \vec l$ to the point .$P$
+ - .$\hat r$ is the unit vector in the direction .$\vec r$
+ - .$\theta$ is the angle between .$d\vec l$ and .$\vec r$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+> **Biot-Savart Law**
+> ![Boit-Savart](/docs/physics-7b/imgs/28/biot.png)
+> The field at P due to current element .$I d\vec l$ is .$d \vec B = (\mu_0 I/4\pi)(d\vec l \times \hat r/r^2)$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;ul>
+&lt;li>An important difference between the Biot-Savart law and Ampère&amp;rsquo;s law is that the later, .$\oint \vec B \cdot d\vec l = \mu_0 I_\text{encl}$, .$\vec B$ is not necessarily due only to the current enclosed by the path of integration.&lt;/li>
+&lt;li>But in the Biot-Savart law the field .$d\vec B$ is due only, and entirely, to the current element .$I d\vec l$ &amp;ndash; that is, to find the total .$\vec B$ at any point in space, it is necessary to include all currents.&lt;/li>
+&lt;/ul>
+&lt;blockquote class="book-hint warning">
+ &lt;!-- mathjax fix -->
+**Biot-Savart strategy for finding a magnetic field**
+1. Select some tiny piece of wire .$d \vec l$ and draw the vector .$\vec r$ pointing from said piece to the location at which you're finding the magnetic field
+2. Using Biot-Savart, calculate the magnitude and direction of the infinitesimal magnetic field .$d\vec B$ generated by that piece
+3. Add up all those magnetic field contributions by integrating over the wire, using vector components if needed.
+
+&lt;/blockquote>
+
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+## Straight Wire
+
+$$B = \frac{\mu_0 I}{4\pi}\int_{y =-\infty}^{+\infty} \frac{dy \sin\theta}{r^2}$$
+$$dy = dl; r^2 = R^2 + y^2$$
+$$dy = \dots = \frac{r^2 d\theta}{R}$$
+$$B = \frac{\mu_0 I}{4\pi}\frac{1}{R}\cdot \bigg[-\cos\theta\bigg]_{\theta = 0}^\pi $$
+$$\dots = B = \frac{\mu_0 I}{2\pi R}$$
+![Straight Wire](/docs/physics-7b/imgs/28/straight-wire.png)
+
+![1/4 Wire](/docs/physics-7b/imgs/28/wire-forth.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+## Current Loop
+
+$$dB = \frac{\mu_0 I dl}{4\pi r^2}$$
+$$d\vec l \perp \vec r; \vert d\vec l \times \hat r \vert = dl$$
+$$B = \int dB \cos \phi = \int dB \frac{R}{r}$$
+$$\dots = \int dB \frac{R}{(R^2 + x^2)^{\frac{1}{2}}}$$
+$$\dots = \frac{\mu_0 I}{4\pi}\frac{R}{(R^2 + x^2)^{\frac{3}{2}}} \bigg[L\bigg]_{L = 2\pi R}$$
+$$\dots = \frac{\mu_0 I}{2R}$$
+![Current Loop](/docs/physics-7b/imgs/28/current-loop.png)
+## Quarter Wire Segment
+
+$$dB = \frac{\mu_0 I}{4\pi}dl$$
+$$B = \frac{\mu_0 I}{4\pi} \bigg[L\bigg]_{L =\frac{1}{4}\cdot 2\pi R}$$
+$$\dots = \frac{\mu_0 I}{8 R}$$
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+## 28.6.1 Magnetic Dipole Field
+
+- Recall that a magnetic dipole is .$\mu = NIA$ (number of loops, current, and area of coil)
+- The magnetic field produced by magnetic dipoles is
+$$B = \frac{\mu_0 IR^2}{2(R^2 + x^2)^{\frac{3}{2}}}$$
+- This can be written in tirms of the magnetic dipole .$\mu = IA = I\pi R^2$ for one loop:
+$$B = \frac{\mu_0}{2\pi} \frac{\mu}{(R^2 +x^2)^{\frac{3}{2}}}$$
+and at distances far from the loop .$x \gg R$ this becomes
+$$B \approx \frac{\mu_0}{2\pi} \frac{\mu}{x^3}$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+![Circle Field](/docs/physics-7b/imgs/28/loop-field.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h1 id="287-magnetic-field-due-to-a-single-moving-charge">
+ 28.7 Magnetic Field Due to a Single Moving Charge
+ &lt;a class="anchor" href="#287-magnetic-field-due-to-a-single-moving-charge">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>Realize that Biot-Savart works only when considering constant currents that do not change in time significantly over a significant length of wire&lt;/li>
+&lt;li>Additionally, the law is difficult to confirm experimentally:
+&lt;ol>
+&lt;li>Particles would shoot out of the field before they (and thus the field) could be measured for any significant .$B$.
+&lt;ul>
+&lt;li>If .$v$ is slow enough to be measured, .$B$ is small enough it&amp;rsquo;s going to be drowned out by experimental noise&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>From the particles frame, it&amp;rsquo;s at rest (not moving wrt itself). And since it&amp;rsquo;s at rest, it &lt;strong>shouldn&amp;rsquo;t&lt;/strong> create a field. However, it&amp;rsquo;s moving because it&amp;rsquo;s creating a field!
+&lt;ul>
+&lt;li>Einstein explains this with special relativity&lt;/li>
+&lt;li>Observers in two different reference frames, moving relative to each other, will not observe the same .$\vec E$ and .$\vec B$ fields&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>
+ &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/28/particle-fields.png" alt="Particle Field" />
+What see from the perspective other than the particle: The magnetic field at one single instant due to a single positive charge .$q$ moving at velocity .$\vec v$.&lt;/p></description></item><item><title>29: Electromagnetic Induction &amp; Faraday's Law</title><link>http://notes.mehvix.com/physics-7b/29/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/physics-7b/29/</guid><description>&lt;h1 id="291-induced-emf">
  29–1 Induced EMF
  &lt;a class="anchor" href="#291-induced-emf">#&lt;/a>
 &lt;/h1>
@@ -1269,23 +2059,112 @@ $$\oint \vec B \cdot d \vec l = \mu_0 NI$$&lt;/li>
 &lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+- If the two coils are held in place then the total flux is proportional to the **mutual inductance**
+ $$M = \frac{N_2 \Phi_{21}}{I_1}$$
+ - .$\Phi_{21}$ is the total flux passing through coil 2 (induced by the current in coil 1, .$I_1$)
+ - .$M$ depends on “geometric” factors such as the size, shape, number of turns, and relative positions of the two coils, and whether a ferromagnetic material is present
+ - The SI unit for mutual inductance is the Henry; .$\text{1 H = 1 V$\cdot$s/A = 1$\Omega \cdot$s}$
 
- &lt;div class="flex-even markdown-inner">
- &lt;ul>
-&lt;li>If the two coils are held in place then the total flux is proportional to the &lt;strong>mutual inductance&lt;/strong>
-$$M = \frac{N_2 \Phi_{21}}{I_1}$$
-&lt;ul>
-&lt;li>.$\Phi_{21}$ is the total flux passing through coil 2 (induced by the current in coil 1, .$I_1$)&lt;/li>
-&lt;li>.$M$ depends on “geometric” factors such as the size, shape, number of turns, and relative positions of the two coils, and whether a ferromagnetic material is present&lt;/li>
-&lt;li>The SI unit for mutual inductance is the Henry; .$\text{1 H = 1 V$\cdot$s/A = 1$\Omega \cdot$s}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ 
+> ![Mutual Inductance](/docs/physics-7b/imgs/30/mutual.png)
+> A changing current in one coil will induce a current in the second coil.
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
- &lt;blockquote>
+&lt;/div>
+
+&lt;ul>
+&lt;li>The emf induced in coil 2 due to a change in current 1 can be written now as
+$$\mathscr{E_2} = -N_2 \frac{d\Phi_{21}}{dt} = -M \frac{dI_1}{dt}$$&lt;/li>
+&lt;/ul>
+&lt;h1 id="302-self-inductance-inductors">
+ 30.2 Self-Inductance; Inductors
+ &lt;a class="anchor" href="#302-self-inductance-inductors">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>This concept also applies to isolated coils too
+&lt;ul>
+&lt;li>When a changing current passes through a coil (or solenoid), a changing magnetic flux is produced inside the coil, and this in turn induces an emf in that same coil. This induced emf opposes the change in flux (Lenz&amp;rsquo;s law).
+&lt;ul>
+&lt;li>If the current through the coil is increasing, the increasing magnetic flux induces an emf that opposes the original current and tends to retard its increase.&lt;/li>
+&lt;li>If the current is decreasing in the coil, the decreasing flux induces an emf in the same direction as the current, thus tending to maintain the original current.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>If this inductance (coil) is in a circuit, it thus can provide a source of emf, in addition to any battery present or other sources of emf.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Self-inductance&lt;/strong> .$L$ and the emf it induces is given by
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax -->
+$$L = \frac{N\Phi_B}{I}$$
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax -->
+$$\mathscr{E} = -N \frac{d\Phi_B}{dt} = -L \frac{dI}{dt}$$
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;li>An ac circuit always contains some inductance, but often it is quite small unless the circuit contains a coil of many loops or turns. A coil that has significant self-inductance .$L$ is called an &lt;strong>inductor&lt;/strong>
+&lt;ul>
+&lt;li>Inductance can serve a useful purpose in certain circuits, but it&amp;rsquo;s often just a nuisance in a circuit.&lt;/li>
+&lt;li>If inductance is large, the change in the current will be small, and therefore the current itself if it is ac will be small.
+&lt;ul>
+&lt;li>The greater the inductance, the less the ac current.&lt;/li>
+&lt;li>An inductance thus acts something like a “resistance” to impede the flow of alternating current.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="solenoid-self-inductance">
+ Solenoid Self-Inductance
+ &lt;a class="anchor" href="#solenoid-self-inductance">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>The magnetic field of a solenoid is .$B = \mu_0 nI$ where .$n = N/l$&lt;/li>
+&lt;li>Thus, the flux is .$\Phi_B = BA = \mu_0 NIA/l$ so we can derive
+$$L = \frac{N \Phi_B}{I} = \frac{\mu_0 N^2 A}{l}$$&lt;/li>
+&lt;/ul>
+&lt;h1 id="303-energy-stored-in-a-magnetic-field">
+ 30.3 Energy Stored in a Magnetic Field
+ &lt;a class="anchor" href="#303-energy-stored-in-a-magnetic-field">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>When an inductor with inductance .$L$ is carrying current .$I$ which is changing at the rate .$dI/dt$, energy is being supplied to the inductor at the rate
+$$P = I \mathscr{E} = LI \frac{dI}{dt}$$&lt;/li>
+&lt;li>Thus, the work needed to increase the current in an inductor from zero to some .$I$ is
+$$W = \int P dt = \int_0^I LI\ dI = \frac{1}{2}LI^2$$
+&lt;ul>
+&lt;li>This is also the (potential) energy stored in a conductor when it is carrying current .$I$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Just as the energy stored in a capacitor can be considered to reside in the electric field between its plates, so the energy in an inductor can be considered to be stored in its magnetic field.
+&lt;ul>
+&lt;li>E.x. the energy stored in a solenoid is
+$$U = \frac{1}{2}LI^2 = \frac{1}{2} \bigg( \frac{\mu_0 N^2 A}{l} \bigg)\bigg( \frac{Bl}{\mu_0 N}\bigg)^2 = \frac{1}{2} \frac{B^2}{\mu_0}Al$$&lt;/li>
+&lt;li>We can think of this energy as residing in the volume enclosed by the windings; .$Al$&lt;/li>
+&lt;li>Then the &lt;strong>energy density&lt;/strong> (energy per unit volume) is
+$$u = \text{energy density} = \frac{1}{2}\frac{B^2}{\mu_0}$$
+&lt;ul>
+&lt;li>This equation is analogous to that for an electric field, .$ \frac{1}{2}ϵE^2$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="304-lr-circuits">
+ 30.4 LR Circuits
+ &lt;a class="anchor" href="#304-lr-circuits">#&lt;/a>
+&lt;/h1>
+&lt;blockquote>
 &lt;p>
- &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/30/mutual.png" alt="Mutual Inductance" />
-A changing current in one coil will induce a current in the second coil.&lt;/p></description></item></channel></rss>
+ &lt;img src="http://notes.mehvix.com/docs/physics-7b/imgs/30/lr-circuit.png" alt="LR Circuit" />
+(a) LR circuit; (b) growth of current when connected to battery.&lt;/p></description></item></channel></rss>

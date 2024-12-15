@@ -37,13 +37,32 @@
 &lt;li>Even if the process if outsourced, design is still done in the US. To design well, you have to have a base-level understanding of manufacturing&lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
 &lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/0/pew.png">
 &lt;/figure>
-&lt;blockquote>
-&lt;p>Manufacturing output and employment are rising&lt;/p></description></item><item><title>1: Fundamentals of Graphical Communication &amp; Subtractive Processes</title><link>http://notes.mehvix.com/e-29/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/1/</guid><description>&lt;h1 id="01-25-fundamentals-of-graphical-communication">
+
+> Manufacturing output and employment are rising
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/0/covid.png">
+&lt;/figure>
+
+> Many companies have regionalized their supply chains since the pandemic
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="processes">
+ Processes
+ &lt;a class="anchor" href="#processes">#&lt;/a>
+&lt;/h2>
+&lt;p>In this class we will consider multiple families of processes:
+
+ &lt;img src="http://notes.mehvix.com/docs/e-29/0/processes.png" alt="Processes" />&lt;/p></description></item><item><title>1: Fundamentals of Graphical Communication &amp; Subtractive Processes</title><link>http://notes.mehvix.com/e-29/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/1/</guid><description>&lt;h1 id="01-25-fundamentals-of-graphical-communication">
  01-25: Fundamentals of graphical communication
  &lt;a class="anchor" href="#01-25-fundamentals-of-graphical-communication">#&lt;/a>
 &lt;/h1>
@@ -52,34 +71,23 @@
  &lt;a class="anchor" href="#evolution-of-graphical-visualization">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Hand drawing&lt;/li>
-&lt;li>Instrument drawing (using mechanical things to measure distances)&lt;/li>
-&lt;li>2D CAD (initially only able to draw side views)&lt;/li>
-&lt;li>3D CAD (solid modeling)
-&lt;ul>
-&lt;li>Automatic generation of 2D working drawings&lt;/li>
-&lt;li>Enable easy communication of measurements between designer and manufacturer&lt;/li>
-&lt;li>Created with the assumption that manufactured objects are made up of elementary objects, 
- &lt;a href="../cogsci-c100/perception.md#recognition-by-components-model">geons?&lt;/a>&lt;/li>
-&lt;li>Now we have the ability to run algos to analyze models, removing unnecessary bits&lt;/li>
-&lt;li>We&amp;rsquo;re moving towards computer-generated geometry that&amp;rsquo;s contained by human input&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+- Hand drawing
+- Instrument drawing (using mechanical things to measure distances)
+- 2D CAD (initially only able to draw side views)
+- 3D CAD (solid modeling)
+ - Automatic generation of 2D working drawings
+ - Enable easy communication of measurements between designer and manufacturer
+ - Created with the assumption that manufactured objects are made up of elementary objects, [geons?](../cogsci-c100/perception.md#recognition-by-components-model)
+ - Now we have the ability to run algos to analyze models, removing unnecessary bits
+ - We're moving towards computer-generated geometry that's contained by human input
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;h2 id="docse-291evo2png">
- 
- &lt;img src="http://notes.mehvix.com/docs/e-29/1/evo2.png" alt="" />
- &lt;a class="anchor" href="#docse-291evo2png">#&lt;/a>
-&lt;/h2>
+![](/docs/e-29/1/evo2.png)
+---
 
  &lt;/div>
 
@@ -105,44 +113,342 @@
  &lt;a class="anchor" href="#why-bother-sketching-by-hand">#&lt;/a>
 &lt;/h3>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/e-29/1/evo1.png" alt="" />&lt;/p></description></item><item><title>2: Cutting-based Processes &amp; Other Subtractive Processes</title><link>http://notes.mehvix.com/e-29/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/2/</guid><description>&lt;h1 id="02-01-cutting-based-processes">
+![](/docs/e-29/1/evo1.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Why not go straight to CAD?
+- Some possible reasons:
+ - There is a connection between drawing and your own creativity; a feedback loop of sorts
+ - CAD bottlenecks you to designing a certain way
+ - Find one’s own distinctive style
+ - Avoid making detailed decisions too early
+ - Keep geometries more freeform
+ - Ideas may come to mind anywhere, anytime
+ - Potentially quicker
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;details >&lt;summary>Sketch Examples&lt;/summary>
+ &lt;div class="markdown-inner">
+ 
+- Leonardo da Vinci: “helicopter” (c. 1489)
+![](/docs/e-29/1/heli.png)
+- Charles and Ray Eames: chair
+![](/docs/e-29/1/chair.png)
+- Renzo Piano + Richard Rogers: Pompidou Center
+![](/docs/e-29/1/piano.png)
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Philippe Starck: lemon squeezer
+ ![](/docs/e-29/1/lem1.png)
+ - Aside: how is it made?
+ ![](/docs/e-29/1/lem3.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/lem2.png)
+---
+
+ &lt;/div>
+
+&lt;/div>
+
+- Jonathan Ive/Apple design team: iPhone
+![](/docs/e-29/1/iphone.png)
+- Burj Khalifa: Adrian Smith
+![](/docs/e-29/1/tower.png)
+- Tesla Model 3: Franz Holzhausen
+![](/docs/e-29/1/tesla.png)
+- Concept drawing for Berkeley Engineering
+![](/docs/e-29/1/cal.png)
+
+ &lt;/div>
+&lt;/details>
+
+&lt;h3 id="essentials-of-2d-sketching">
+ Essentials of 2D sketching
+ &lt;a class="anchor" href="#essentials-of-2d-sketching">#&lt;/a>
+&lt;/h3>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Line types matters
+ - **Solid:** edges
+ - **Dashed:** hidden detail
+ - **Chain:** centerline.
+ - `- . - . ` ...
+ - **Faint:** construction
+ - Align, but don't touch, features
+ - **Dimension lines:**
+ - Fainter than edges, and not connected.
+ - Long, thin arrows.
+ - Lots of differing standards, just be consistent
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/sketch.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="3d-pictorial-approaches">
+ 3D pictorial approaches
+ &lt;a class="anchor" href="#3d-pictorial-approaches">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="isometric-drawing">
+ Isometric drawing
+ &lt;a class="anchor" href="#isometric-drawing">#&lt;/a>
+&lt;/h3>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- 'iso' = same, 'metric' = measure
+ - Any lines parallel .$x,y,z$ on the lines are equal length
+- Orthogonal edges of a 3D object map to:
+ - Vertical lines
+ - Lines at .$\pm 30^\circ$ to horizontal
+- Enables creating reasonably realistic drawings fairly easily
+- Dimensions in these orthogonal directions are preserved on page
+- Dimensions in other directions are not preserved on page
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/iso-sketch.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Circles in isometric
+ - Use construction lines for bounding box
+ - Mark midpoints
+ - Draw longer quadrants first
+ - Through holes: use construction lines for obscured circle; darken later
+ - What if circle is not on an orthogonal face?
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/iso-circ.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h3 id="coded-plans-for-practicing-isometric-sketching">
+ Coded plans for practicing isometric sketching
+ &lt;a class="anchor" href="#coded-plans-for-practicing-isometric-sketching">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Principle: number in cell gives height of column to be drawn&lt;/li>
+&lt;li>Codes could be given on isometric or square grid (
+ &lt;a href="https://en.wikipedia.org/wiki/Plan_%28drawing%29">plan view&lt;/a>)&lt;/li>
+&lt;li>Square grid: viewpoint explicitly specified
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/plan-iso.png)
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/plan-grid.png)
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/li>
+&lt;li>Different views / perspectives may obscure different features. Chose the one that minimizes information loss / ambiguity&lt;/li>
+&lt;li>You can shade certain surface to convey shadow (and thus depth, 3D information)
+&lt;details >&lt;summary>Plan View Draw Example&lt;/summary>
+ &lt;div class="markdown-inner">
+ 
+![](/docs/e-29/1/draw-ex.png)
+
+ &lt;/div>
+&lt;/details>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="axonometric-drawing">
+ Axonometric drawing
+ &lt;a class="anchor" href="#axonometric-drawing">#&lt;/a>
+&lt;/h3>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Orthogonal edges are represented by:
+ - Vertical lines
+ - Lines at .$\pm 45^\circ$ to horizontal
+- Advantage:
+ - Floorplans are not skewed/distorted
+- Disadvantage:
+ - Areas of equal orthogonal faces are not equal on drawing
+ - Can look more "distorted"
+
+![](/docs/e-29/1/axo-ex.png)
+---
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+>![](/docs/e-29/1/axoeg.png)
+> Example of axonometric drawing
+> - Sometimes called “planometric”
+> - Popular in architecture to preserve floorplans
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h3 id="oblique-drawings">
+ Oblique drawings
+ &lt;a class="anchor" href="#oblique-drawings">#&lt;/a>
+&lt;/h3>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+- Front view is undistorted
+- Conveys lots of information of a single face
+- Angles are arbitrary (here they're ~45)
+- Receding lines drawn at a constant angle
+- Judgement needed to select scale for receding direction
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/obl.png)
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+### Perspective drawing
+&lt;br>
+
+- Simulates how the eye sees 3D objects: further away objects/details are smaller
+- Much more challenging than other methods
+ - Receding lines not parallel
+ - But CAD software can generate
+- Horizon line
+- Vanishing point(s)
+ - One point: dimensions referenced from closest surface
+ - Two points: dimensions referenced from closest edge
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+&lt;!-- ![](/docs/e-29/1/persp.png) -->
+![](/docs/e-29/1/ex-perp.png)
+---
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h2 id="introduction-to-sketching-tools">
+ Introduction to sketching tools
+ &lt;a class="anchor" href="#introduction-to-sketching-tools">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+### Digital sketching tools
+
+- Autodesk Sketchbook
+ - Now discontinued! :(
+ - OneNote is an alright alternative
+ - Import isometric grid on Layer 2
+ - Draw on Layer 1
+- Google Jamboard
+- Adobe Photoshop, Illustrator
+- Software resource page in bCourses
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+### Analog sketching tools
+
+- Set square/drawing triangle
+- Pencils:
+ - Various hardness/softness
+ - Mechanical vs traditional
+- Pens
+ - Ballpoint
+ - Felt tip
+ - Technical
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;h3 id="possible-ways-of-enhancing-3d-sketches">
+ Possible ways of enhancing 3D sketches
+ &lt;a class="anchor" href="#possible-ways-of-enhancing-3d-sketches">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;div class="book-columns flex flex-wrap">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+
+
+- Shading -- simulate the effect of light falling on object
+ - e.x shadows, glare,
+- Visual clarity -- edges bolder: example of how it clears confusion
+- Suggesting motion, sound, texture, etc.
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/1/pounce.png)
+---
+
+ &lt;/div>
+
+&lt;/div>
+
+&lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/1/motion.webp">
+&lt;/figure>
+&lt;/p></description></item><item><title>2: Cutting-based Processes &amp; Other Subtractive Processes</title><link>http://notes.mehvix.com/e-29/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/2/</guid><description>&lt;h1 id="02-01-cutting-based-processes">
  02-01 Cutting-based Processes
  &lt;a class="anchor" href="#02-01-cutting-based-processes">#&lt;/a>
 &lt;/h1>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;h2 id="modeling-of-material-cutting">
- Modeling of material cutting
- &lt;a class="anchor" href="#modeling-of-material-cutting">#&lt;/a>
-&lt;/h2>
+## Modeling of material cutting
+
 &lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/1/mat-cut.png">
 &lt;/figure>
-&lt;ul>
-&lt;li>Chips are created and separated from the work by plastic deformation, i.e. shearing, of the work.
-&lt;ul>
-&lt;li>Sheer plane is created by the tool (teal segment)&lt;/li>
-&lt;li>Throughout the shear plane, the shear stress must equal or exceed the shear strength of the work material for cutting to proceed.&lt;/li>
-&lt;li>The value of the shear angle is not something that we directly control, but depends on several factors.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+
+
+- Chips are created and separated from the work by plastic deformation, i.e. shearing, of the work.
+ - Sheer plane is created by the tool (teal segment)
+ - Throughout the shear plane, the shear stress must equal or exceed the shear strength of the work material for cutting to proceed.
+ - The value of the shear angle is not something that we directly control, but depends on several factors.
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;h2 id="lathe-operations">
- Lathe operations
- &lt;a class="anchor" href="#lathe-operations">#&lt;/a>
-&lt;/h2>
+## Lathe operations
 &lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/1/ops.png">
 &lt;/figure>
+
 
  &lt;/div>
 
@@ -217,40 +523,24 @@
 &lt;li>Unwanted bonding can be avoided by making the base oxygen-permeable (e.g. by making it out of an elastomeric material, as in the Carbon 3D systems) since oxygen inhibits the photocrosslinking reaction and an oxygen-rich layer will form in the resin just above the permeable window because of air diffusing through the window&lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Covalent bonds form between the molecules in the liquid, forming a solid material (this reaction is called photocrosslinking)
-&lt;ul>
-&lt;li>Absorption of photons as they pass through the liquid limits crosslinking to a small layer (typically tens of μm thick) at a time&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Parts are more 
- &lt;a href="https://en.wikipedia.org/wiki/Isotropy">isotropic&lt;/a> (versus FDM), have almost matte finish&lt;/li>
-&lt;li>Two machine design approaches:
-&lt;ol>
-&lt;li>Right: Light shines up through a window; part gradually drawn up out of a tray of resin
-&lt;ul>
-&lt;li>Requires more liquid&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Projection Printing (below): Light shines down onto liquid surface; platform moves down into the vat as the part builds up
-&lt;ul>
-&lt;li>Printed object drawn upwards out of tray of resin&lt;/li>
-&lt;li>Separation from tray: peeling or O2-inhibited dead layer&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ul>
+- Covalent bonds form between the molecules in the liquid, forming a solid material (this reaction is called photocrosslinking)
+ - Absorption of photons as they pass through the liquid limits crosslinking to a small layer (typically tens of μm thick) at a time
+- Parts are more [isotropic](https://en.wikipedia.org/wiki/Isotropy) (versus FDM), have almost matte finish
+- Two machine design approaches:
+ 1. Right: Light shines up through a window; part gradually drawn up out of a tray of resin
+ - Requires more liquid
+ 2. Projection Printing (below): Light shines down onto liquid surface; platform moves down into the vat as the part builds up
+ - Printed object drawn upwards out of tray of resin
+ - Separation from tray: peeling or O2-inhibited dead layer
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
 &lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/3/stero.png">
 &lt;/figure>
+
 
  &lt;/div>
 
@@ -290,21 +580,18 @@ $$E(z) = E_0 e^{-z/D_p}$$
 &lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>A newer, potentially faster, approach for processes that rely on photocrosslinking is to expose each 2D layer in one single exposure step, rather than scanning a beam of light. The digital micromirror devices that are an integral component of modern video projectors can be used to pattern the photocrosslinking wavelength of light. Even with this layer-by-layer approach, there is still a need to&lt;/li>
-&lt;li>Whether 3D printing will always involve this slicing approach is an open question. Since slicing often imparts anisotropic mechanical properties to printed components and limits their layer-to-layer strength, there may be a strong case for developing full 3D control over the material deposition process, so that, for example, the deposition head would move in the x, y and z directions simultaneously. Path planning to avoid collision between the machine and the component would be a significant challenge slice a 3D object into multiple 2D images.&lt;/li>
-&lt;/ul>
+- A newer, potentially faster, approach for processes that rely on photocrosslinking is to expose each 2D layer in one single exposure step, rather than scanning a beam of light. The digital micromirror devices that are an integral component of modern video projectors can be used to pattern the photocrosslinking wavelength of light. Even with this layer-by-layer approach, there is still a need to
+- Whether 3D printing will always involve this slicing approach is an open question. Since slicing often imparts anisotropic mechanical properties to printed components and limits their layer-to-layer strength, there may be a strong case for developing full 3D control over the material deposition process, so that, for example, the deposition head would move in the x, y and z directions simultaneously. Path planning to avoid collision between the machine and the component would be a significant challenge slice a 3D object into multiple 2D images.
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
 &lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/4/mirrors.png">
 &lt;/figure>
 
+ 
  &lt;/div>
 
 &lt;/div>
@@ -331,28 +618,22 @@ $$E(z) = E_0 e^{-z/D_p}$$
 &lt;/li>
 &lt;/ul>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Gelation just occurs at the &lt;strong>curing depth&lt;/strong>, .$D_c$ where the resin receives the &lt;strong>curing dose&lt;/strong>, .$E_c$:
-$$E_c = E_0 e^{-D_c/D_p} \Longrightarrow D_c = D_p \ln \bigg( \frac{E_0}{E_c} \bigg)$$&lt;/li>
-&lt;/ul>
+- Gelation just occurs at the **curing depth**, .$D_c$ where the resin receives the **curing dose**, .$E_c$:
+ $$E_c = E_0 e^{-D_c/D_p} \Longrightarrow D_c = D_p \ln \bigg( \frac{E_0}{E_c} \bigg)$$
 &lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/4/gelpoint.png">
 &lt;/figure>
 
- &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Cured material may not be very strong at curing depth, so layers typically overlap in .$z$ direction to ensure material is all well-gelled&lt;/li>
-&lt;/ul>
+- Cured material may not be very strong at curing depth, so layers typically overlap in .$z$ direction to ensure material is all well-gelled
 &lt;figure>&lt;img src="http://notes.mehvix.com/docs/e-29/4/saw.png">
 &lt;/figure>
-&lt;ul>
-&lt;li>Thermal and light curing are done to finish these surfaces&lt;/li>
-&lt;/ul>
+
+- Thermal and light curing are done to finish these surfaces
 
  &lt;/div>
 
@@ -387,12 +668,24 @@ $$E_c = E_0 e^{-D_c/D_p} \Longrightarrow D_c = D_p \ln \bigg( \frac{E_0}{E_c} \b
 &lt;/figure>
 &lt;/p></description></item><item><title>5-6: Forming Processes</title><link>http://notes.mehvix.com/e-29/5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/5/</guid><description>&lt;blockquote class="book-hint info">
  &lt;!-- mathjax fix -->
-&lt;h1 id="before">
- Before
- &lt;a class="anchor" href="#before">#&lt;/a>
+# Before
+
+> So far in the class, we have seen a wide range of additive and subtractive processes which are capable of creating components in metals, alloys, polymeric materials, ceramics, and composites. The one thing that these processes all have in common is that they are serial — meaning that one feature is produced after another in a predefined sequence. This serial nature inherently limits productivity and may require considerable operator skill. High operator skill, which leads to high overhead costs, is especially needed when a tool such as a lathe is manually operated, but may be needed even if the tool is computer numerically controlled, because work still has to be properly mounted and the machine correctly aligned to it. Subtractive processes have been used for centuries, both in the mass-production of precision components, and in one-off custom and prototyping jobs. Additive manufacturing has until recently been seen as a purely prototyping tool, although increasingly is being adopted for short-to-medium production runs.
+
+> Casting, and injection molding, on the other hand, form all features in a component almost simultaneously by forcing molten material into a mold, and potentially offer a faster, more affordable route to mass production. Injection molding is suitable only for mass production because of the high expense of the molds needed, and production runs of >10,000 are usually needed for economic operation. Casting comes in many flavors, from high pressure die-casting — which is really the equivalent of injection molding for processing metals — to gravity-driven sand-casting, which is used both for long production runs and for one-off fabrication jobs because of its ability to create very large components (> 1 m in some cases) with reasonable simplicity. The higher throughput of casting comes at the expense of lower achievable tolerances than machining (considerable fractions of a millimeter, as opposed to tolerances of a few micrometers). Forming processes such as casting are thus often followed by subtractive secondary processing to bring key features within tolerance. In this module we will highlight some of the attributes of casting and injection molding.
+
+&lt;/blockquote>
+
+&lt;h1 id="forming-of-polymers-molding-processes">
+ Forming of Polymers (Molding Processes)
+ &lt;a class="anchor" href="#forming-of-polymers-molding-processes">#&lt;/a>
 &lt;/h1>
+&lt;h2 id="injection-molding">
+ Injection molding
+ &lt;a class="anchor" href="#injection-molding">#&lt;/a>
+&lt;/h2>
 &lt;blockquote>
-&lt;p>So far in the class, we have seen a wide range of additive and subtractive processes which are capable of creating components in metals, alloys, polymeric materials, ceramics, and composites. The one thing that these processes all have in common is that they are serial — meaning that one feature is produced after another in a predefined sequence. This serial nature inherently limits productivity and may require considerable operator skill. High operator skill, which leads to high overhead costs, is especially needed when a tool such as a lathe is manually operated, but may be needed even if the tool is computer numerically controlled, because work still has to be properly mounted and the machine correctly aligned to it. Subtractive processes have been used for centuries, both in the mass-production of precision components, and in one-off custom and prototyping jobs. Additive manufacturing has until recently been seen as a purely prototyping tool, although increasingly is being adopted for short-to-medium production runs.&lt;/p></description></item><item><title>6-7: Joining processes</title><link>http://notes.mehvix.com/e-29/6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/6/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+&lt;p>An injection molding machine consists of a mechanism to melt and extrude the polymer, and a molding unit. Injection molding is the workhorse of plastics manufacturing and can achieve cycle times of under a minute. Most plastics that are injection molded are thermoplastics, meaning that they can be reversibly changed between solid and fluid states by heating and cooling. Injection molding, however, can also be used to inject materials that covalently crosslink when heated (thermosetting plastics), making components that are more heat-resistant than thermoplastics. Injection molding has even been adapted to mold metal powders which are then sintered inside the mold (powder injection molding).&lt;/p></description></item><item><title>6-7: Joining processes</title><link>http://notes.mehvix.com/e-29/6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/6/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)
@@ -416,37 +709,24 @@ $$E_c = E_0 e^{-D_c/D_p} \Longrightarrow D_c = D_p \ln \bigg( \frac{E_0}{E_c} \b
  &lt;a class="anchor" href="#formal-working-drawings-purpose">#&lt;/a>
 &lt;/h2>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;ul>
-&lt;li>Need a formal way of documenting designs
-&lt;ul>
-&lt;li>Legal documents i.e patents; contracts may rely on them&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Must stand on their own &amp;ndash; readable to any human
-&lt;ul>
-&lt;li>No subsequent explanation&lt;/li>
-&lt;li>No verbal assists&lt;/li>
-&lt;li>No ambiguity&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Solution: multi-view 
- &lt;a href="https://en.wikipedia.org/wiki/Orthographic_projection">orthographic projection&lt;/a>
-&lt;ul>
-&lt;li>World-wide engineering standard&lt;/li>
-&lt;li>Can easily include tolerances&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+- Need a formal way of documenting designs
+ - Legal documents i.e patents; contracts may rely on them
+- Must stand on their own -- readable to any human
+ - No subsequent explanation
+ - No verbal assists
+ - No ambiguity
+- Solution: multi-view [orthographic projection](https://en.wikipedia.org/wiki/Orthographic_projection)
+ - World-wide engineering standard
+ - Can easily include tolerances
+
 
  &lt;/div>
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/e-29/7/purpose.png" alt="" />&lt;/p>
+![](/docs/e-29/7/purpose.png)
+
  &lt;/div>
 
 &lt;/div>
@@ -458,12 +738,21 @@ $$E_c = E_0 e^{-D_c/D_p} \Longrightarrow D_c = D_p \ln \bigg( \frac{E_0}{E_c} \b
 &lt;blockquote>
 &lt;p>Projection of a 3D object’s edge onto a 2D plane by rays perpendicular to that plane such that they are parallel to one another (unlike real-world)
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;p>
- &lt;img src="http://notes.mehvix.com/docs/e-29/7/proj1.png" alt="" />
-Dashed lines represent hidden detials&lt;/p></description></item><item><title>10: Metrology</title><link>http://notes.mehvix.com/e-29/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/10/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
+![](/docs/e-29/7/proj1.png)
+Dashed lines represent hidden detials
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+![](/docs/e-29/7/proj2.png)
+Projections are independent of projection distance
+
+ &lt;/div>
+
+&lt;/div>
+&lt;/p></description></item><item><title>10: Metrology</title><link>http://notes.mehvix.com/e-29/10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/e-29/10/</guid><description>&lt;link rel="stylesheet" href="http://notes.mehvix.com/katex/katex.min.css" />
 &lt;script defer src="http://notes.mehvix.com/katex/katex.min.js">&lt;/script>
 &lt;script defer src="http://notes.mehvix.com/katex/auto-render.min.js" onload="renderMathInElement(document.body);">&lt;/script>&lt;span>
  \(\)

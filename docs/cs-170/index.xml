@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CS170 on notes.mehvix.com</title><link>http://notes.mehvix.com/docs/cs-170/</link><description>Recent content in CS170 on notes.mehvix.com</description><generator>Hugo</generator><language>en-us</language><atom:link href="http://notes.mehvix.com/docs/cs-170/index.xml" rel="self" type="application/rss+xml"/><item><title>Midterm 1: Cheat Sheet</title><link>http://notes.mehvix.com/cs-170/mt1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://notes.mehvix.com/cs-170/mt1/</guid><description>&lt;blockquote class="book-hint warning">
- I never finished these. Consider checking out 
- &lt;a href="https://smartspot2.github.io/assets/pdf/CS170_Lecture_Notes.pdf">Alec Li&amp;rsquo;s notes&lt;/a> and 
- &lt;a href="https://jshen13.github.io/notes/fa20/cs170_sg.pdf">Jeffrey Shen&amp;rsquo;s final cheatsheet&lt;/a>.
+ 
+I never finished these. Consider checking out [Alec Li's notes](https://smartspot2.github.io/assets/pdf/CS170_Lecture_Notes.pdf) and [Jeffrey Shen's final cheatsheet](https://jshen13.github.io/notes/fa20/cs170_sg.pdf).
+
 &lt;/blockquote>
 
 
@@ -16,50 +16,52 @@
  &lt;a class="anchor" href="#asymptotic-bound">#&lt;/a>
 &lt;/h1>
 &lt;div class="book-columns flex flex-wrap">
-
- &lt;div class="flex-even markdown-inner">
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
  &lt;!-- mathjax fix -->
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Notation&lt;/th>
- &lt;th>Meaning&lt;/th>
- &lt;th>Definition&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>$$\mathcal O(\cdot)$$&lt;/td>
- &lt;td>$$\le$$&lt;/td>
- &lt;td>$$\lim_{n \to \infty} \dfrac{f(n)}{g(n)} &amp;lt; \infty$$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$$\Theta (\cdot)$$&lt;/td>
- &lt;td>$$=$$&lt;/td>
- &lt;td>$$\lim_{n \to \infty} \dfrac{f(n)}{g(n)} = c$$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$$\Omega(\cdot)$$&lt;/td>
- &lt;td>$$\ge$$&lt;/td>
- &lt;td>$$\lim_{n \to \infty} \dfrac{f(n)}{g(n)}&amp;gt; 0$$&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
+| Notation | Meaning | Definition |
+| --------------------- | ------- | --------------------------------------------------- |
+| $$\mathcal O(\cdot)$$ | $$\le$$ | $$\lim_{n \to \infty} \dfrac{f(n)}{g(n)} &lt; \infty$$ |
+| $$\Theta (\cdot)$$ | $$=$$ | $$\lim_{n \to \infty} \dfrac{f(n)}{g(n)} = c$$ |
+| $$\Omega(\cdot)$$ | $$\ge$$ | $$\lim_{n \to \infty} \dfrac{f(n)}{g(n)}> 0$$ |
+
+ &lt;/div>
+&lt;div class="flex-even markdown-inner" style="flex-grow: 1;">
+ &lt;!-- mathjax fix -->
+$$\begin{aligned}
+c &amp;&lt; \log^\star n \\\
+&amp;&lt; \log n \\\
+&amp;&lt; n^{1/3}\\\
+&amp;&lt; n^{1/2} = \sqrt n\\\
+&amp;&lt; 2^{\log{n}} = n\\\
+&amp;&lt; n \log (n) = \log(n!) \\\
+&amp;&lt; n^3\\\
+&amp;&lt; 2^{\sqrt{n}}\\\
+&amp;&lt; 2^n\\\
+&amp;&lt; 3^n\\\
+&amp;&lt; n!
+\end{aligned}$$
 
  &lt;/div>
 
- &lt;div class="flex-even markdown-inner">
- &lt;!-- mathjax fix -->
+&lt;/div>
+
+&lt;h2 id="master-theorem">
+ Master Theorem
+ &lt;a class="anchor" href="#master-theorem">#&lt;/a>
+&lt;/h2>
 &lt;p>$$\begin{aligned}
-c &amp;amp;&amp;lt; \log^\star n \\
-&amp;amp;&amp;lt; \log n \\
-&amp;amp;&amp;lt; n^{1/3}\\
-&amp;amp;&amp;lt; n^{1/2} = \sqrt n\\
-&amp;amp;&amp;lt; 2^{\log{n}} = n\\
-&amp;amp;&amp;lt; n \log (n) = \log(n!) \\
-&amp;amp;&amp;lt; n^3\\
-&amp;amp;&amp;lt; 2^{\sqrt{n}}\\
-&amp;amp;&amp;lt; 2^n\\
-&amp;amp;&amp;lt; 3^n\\
-&amp;amp;&amp;lt; n!
+T(n) &amp;amp;= \overbrace{a\cdot T\left(\frac n b\right)}^\text{Divide into $a$ parts $\sim\ b^{-1}$} + \overbrace{C \cdot n^d}^{\text{Combining Work}} \\
+\text{Level 0: } &amp;amp; n^d \\
+\text{Level 1: } &amp;amp; n^d \frac a {b^d} \\
+\text{Level 2: } &amp;amp; n^d \left(\frac a {b^d}\right)^2
+\\ &amp;amp; \vdots \\
+\text{Level }k:\ &amp;amp; n^d \left(\frac a {b^d}\right)^k \qquad \text{(Base: } \frac n {b^k} \leq 1 \Longrightarrow k = \log_b n)\\
+\text{Total Work:}\ &amp;amp; n^d \cdot \sum_{i=0}^k \left(\frac a {b^d}\right)^i
+\\
+\therefore\ T(n) &amp;amp;=
+\begin{cases}
+\Theta (n^d) &amp;amp; \dfrac a {b^d} &amp;lt; 1\ \equiv\ d&amp;gt;\log_b a\\
+\Theta (n^d \cdot \log n) &amp;amp; \dfrac a {b^d} = 1\ \equiv\ d= \log_b a \\
+\Theta (n^{\log_b a}) &amp;amp; \dfrac a {b^d} &amp;gt; 1\ \equiv\ d &amp;lt; \log_b a
+\end{cases}
 \end{aligned}$$&lt;/p></description></item></channel></rss>
